@@ -25,7 +25,7 @@ npm run lint
 
 ## Architecture Overview
 
-This is a Next.js 15 template with App Router, built by Shadcnblocks.com. The project uses static export (`output: 'export'` in next.config.ts) which generates static HTML/CSS/JS files suitable for deployment to any static hosting service.
+This is the Cerbello website - an AI & Automation solutions company. Built with Next.js 15 App Router, the project uses static export (`output: 'export'` in next.config.ts) which generates static HTML/CSS/JS files suitable for deployment to any static hosting service.
 
 ### Key Technologies
 - **Next.js 15** with App Router and Turbopack

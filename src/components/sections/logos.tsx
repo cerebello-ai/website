@@ -74,10 +74,10 @@ export default function Logos() {
     <section className="bg-sand-100 overflow-hidden py-12 md:py-20 lg:py-24">
       <div className="container text-center">
         <h2 className="text-xl font-semibold tracking-tight text-balance lg:text-3xl">
-          Powering the world&apos;s best product teams.
+          Trusted by industry leaders for AI transformation.
           <br />
           <span className="text-muted-foreground">
-            From next-gen startups to established enterprises.
+            From innovative startups to Fortune 500 companies.
           </span>
         </h2>
       </div>

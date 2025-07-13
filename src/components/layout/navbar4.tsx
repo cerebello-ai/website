@@ -8,7 +8,6 @@ import {
   Book,
   Building,
   Building2,
-  Calculator,
   Calendar,
   CheckCircle2,
   Clock,
@@ -57,75 +56,75 @@ import {
 const solutions = [
   {
     id: 'solution-1',
-    title: 'Team Management',
-    description: 'Streamline team collaboration and project workflows.',
+    title: 'AI Scans',
+    description: 'In-depth assessment to identify optimal AI implementation opportunities.',
     href: '#',
     subpages: [
       {
         id: 'subpage-1',
-        title: 'Task Management',
+        title: 'Process Analysis',
         href: '#',
-        icon: File,
+        icon: Search,
       },
       {
         id: 'subpage-2',
-        title: 'Team Planning',
+        title: 'Data Assessment',
         href: '#',
         icon: Building,
       },
       {
         id: 'subpage-3',
-        title: 'Resource Allocation',
+        title: 'ROI Evaluation',
         href: '#',
-        icon: Search,
+        icon: DollarSign,
       },
       {
         id: 'subpage-4',
-        title: 'Time Tracking',
+        title: 'Implementation Roadmap',
         href: '#',
-        icon: File,
+        icon: Clock,
       },
       {
         id: 'subpage-5',
-        title: 'Team Analytics',
+        title: 'Risk Analysis',
         href: '#',
-        icon: UserPlus,
+        icon: ShieldCheck,
       },
     ],
   },
   {
     id: 'solution-2',
-    title: 'Project Management',
-    description: 'Plan, track, and deliver projects with confidence.',
+    title: 'Custom AI Solutions',
+    description: 'Tailored AI solutions designed for your specific business needs.',
     href: '#',
     subpages: [
       {
         id: 'subpage-6',
-        title: 'Project Templates',
+        title: 'Machine Learning Models',
         href: '#',
         icon: CheckCircle2,
       },
       {
         id: 'subpage-7',
-        title: 'Timeline Views',
+        title: 'Natural Language Processing',
+        href: '#',
+        icon: Speech,
+      },
+      {
+        id: 'subpage-8',
+        title: 'Computer Vision',
         href: '#',
         icon: UserRound,
       },
       {
-        id: 'subpage-8',
-        title: 'Risk Management',
-        href: '#',
-        icon: ShieldCheck,
-      },
-      {
         id: 'subpage-9',
-        title: 'Budget Tracking',
+        title: 'Predictive Analytics',
         href: '#',
-        icon: Scale,
+        icon: PieChart,
       },
       {
         id: 'subpage-10',
-        title: 'Global Teams',
+        title: 'AI Integration',
         href: '#',
         icon: Globe,
       },
@@ -133,65 +132,103 @@ const solutions = [
   },
   {
     id: 'solution-3',
-    title: 'Workflow Automation',
-    description: 'Automate repetitive tasks and focus on what matters.',
+    title: 'Process Automation',
+    description: 'Intelligent automation that transforms your workflows.',
     href: '#',
     subpages: [
       {
         id: 'subpage-11',
-        title: 'Custom Workflows',
+        title: 'Robotic Process Automation',
         href: '#',
         icon: Globe2,
       },
       {
         id: 'subpage-12',
-        title: 'Process Templates',
+        title: 'Workflow Optimization',
         href: '#',
         icon: Clock,
       },
       {
         id: 'subpage-13',
-        title: 'Business Rules',
+        title: 'Business Rules Engine',
         href: '#',
-        icon: DollarSign,
+        icon: Building,
       },
       {
         id: 'subpage-14',
-        title: 'Integrations',
+        title: 'System Integration',
         href: '#',
         icon: Phone,
       },
       {
         id: 'subpage-15',
-        title: 'API Access',
+        title: 'API Management',
         href: '#',
-        icon: Speech,
+        icon: File,
       },
     ],
   },
   {
     id: 'solution-4',
-    title: 'Enterprise Solutions',
-    description: 'Scale your organization with enterprise-grade features.',
+    title: 'AI Center of Excellence',
+    description: 'Establish internal AI competency to lead your industry.',
     href: '#',
     subpages: [
       {
         id: 'subpage-16',
-        title: 'Advanced Analytics',
+        title: 'AI Strategy Development',
+        href: '#',
+        icon: Scale,
+      },
+      {
+        id: 'subpage-17',
+        title: 'Team Training & Upskilling',
+        href: '#',
+        icon: UserPlus,
+      },
+      {
+        id: 'subpage-18',
+        title: 'Governance Framework',
+        href: '#',
+        icon: Table,
+      },
+    ],
+  },
+  {
+    id: 'solution-5',
+    title: 'Custom Portals & Applications',
+    description: 'Tailored digital solutions built for your specific business needs.',
+    href: '#',
+    subpages: [
+      {
+        id: 'subpage-19',
+        title: 'Web Portals',
+        href: '#',
+        icon: Globe2,
+      },
+      {
+        id: 'subpage-20',
+        title: 'Mobile Applications',
+        href: '#',
+        icon: Phone,
+      },
+      {
+        id: 'subpage-21',
+        title: 'Dashboard Development',
         href: '#',
         icon: PieChart,
       },
       {
-        id: 'subpage-17',
-        title: 'Security Controls',
+        id: 'subpage-22',
+        title: 'System Integration',
         href: '#',
-        icon: Calculator,
+        icon: AppWindow,
       },
       {
-        id: 'subpage-18',
-        title: 'Custom Reporting',
+        id: 'subpage-23',
+        title: 'User Experience Design',
         href: '#',
-        icon: Table,
+        icon: UserRound,
       },
     ],
   },
@@ -200,19 +237,19 @@ const solutions = [
 const solutionTechnologies = [
   {
     id: 'technology-1',
-    title: 'Integration Platform',
+    title: 'AI Platform',
     href: '#',
     icon: Puzzle,
   },
   {
     id: 'technology-2',
-    title: 'Enterprise Security',
+    title: 'Data Security',
     href: '#',
     icon: Lock,
   },
   {
     id: 'technology-3',
-    title: 'Developer API',
+    title: 'Custom Development',
     href: '#',
     icon: Code,
   },
@@ -1149,10 +1186,10 @@ const Navbar4 = () => {
                 src="/images/layout/logo.svg"
                 alt="Streamline"
                 className="h-7 w-auto"
-              />
-              <span className="text-lg font-semibold tracking-tighter">
-                Streamline
-              </span>
+              // />
+              // <span className="text-lg font-semibold tracking-tighter">
+              //   Cerbello
+              // </span>
             </a>
             <div className="flex items-center gap-2 xl:gap-8">
               <NavigationMenuList className="hidden lg:flex">
@@ -1166,7 +1203,7 @@ const Navbar4 = () => {
                 </NavigationMenuItem>
                 <NavigationMenuItem>
                   <NavigationMenuTrigger className="text-xs xl:text-sm">
-                    Products
+                    Services
                   </NavigationMenuTrigger>
                   <NavigationMenuContent className="min-w-[calc(100vw-4rem)] p-12 2xl:min-w-[calc(1400px-4rem)]">
                     <ProductsMenu />
@@ -1174,7 +1211,7 @@ const Navbar4 = () => {
                 </NavigationMenuItem>
                 <NavigationMenuItem>
                   <NavigationMenuTrigger className="text-xs xl:text-sm">
-                    Company
+                    About
                   </NavigationMenuTrigger>
                   <NavigationMenuContent className="min-w-[calc(100vw-4rem)] p-12 2xl:min-w-[calc(1400px-4rem)]">
                     <GlobalGuidanceMenu />
@@ -1182,7 +1219,7 @@ const Navbar4 = () => {
                 </NavigationMenuItem>
                 <NavigationMenuItem>
                   <NavigationMenuTrigger className="text-xs xl:text-sm">
-                    Customers
+                    Case Studies
                   </NavigationMenuTrigger>
                   <NavigationMenuContent className="min-w-[calc(100vw-4rem)] p-12 2xl:min-w-[calc(1400px-4rem)]">
                     <CustomersMenu />
@@ -1190,7 +1227,7 @@ const Navbar4 = () => {
                 </NavigationMenuItem>
                 <NavigationMenuItem>
                   <NavigationMenuTrigger className="text-xs xl:text-sm">
-                    Partners
+                    AI Center of Excellence
                   </NavigationMenuTrigger>
                   <NavigationMenuContent className="min-w-[calc(100vw-4rem)] p-12 2xl:min-w-[calc(1400px-4rem)]">
                     <PartnersMenu />
@@ -1207,7 +1244,7 @@ const Navbar4 = () => {
               </NavigationMenuList>
             </div>
             <div className="flex items-center gap-2">
-              <Button className="hidden md:block" size="sm">Get Started</Button>
+              <Button className="hidden md:block" size="sm">Schedule AI Scan</Button>
               <Button
                 variant="ghost"
                 size="icon"
@@ -1258,7 +1295,7 @@ const Navbar4 = () => {
                     className="border-border flex w-full items-center border-b px-8 py-6 text-left"
                     onClick={() => setSubmenu('products')}
                   >
-                    <span className="flex-1 text-sm font-medium">Products</span>
+                    <span className="flex-1 text-sm font-medium">Services</span>
                     <span className="shrink-0">
                       <ArrowRight className="size-4" />
                     </span>
@@ -1268,7 +1305,7 @@ const Navbar4 = () => {
                     className="border-border flex w-full items-center border-b px-8 py-6 text-left"
                     onClick={() => setSubmenu('global')}
                   >
-                    <span className="flex-1 text-sm font-medium">Company</span>
+                    <span className="flex-1 text-sm font-medium">About</span>
                     <span className="shrink-0">
                       <ArrowRight className="size-4" />
                     </span>
@@ -1279,7 +1316,7 @@ const Navbar4 = () => {
                     onClick={() => setSubmenu('customers')}
                   >
                     <span className="flex-1 text-sm font-medium">
-                      Customers
+                      Case Studies
                     </span>
                     <span className="shrink-0">
                       <ArrowRight className="size-4" />
@@ -1290,7 +1327,7 @@ const Navbar4 = () => {
                     className="border-border flex w-full items-center border-b px-8 py-6 text-left"
                     onClick={() => setSubmenu('partners')}
                   >
-                    <span className="flex-1 text-sm font-medium">Partners</span>
+                    <span className="flex-1 text-sm font-medium">AI Center of Excellence</span>
                     <span className="shrink-0">
                       <ArrowRight className="size-4" />
                     </span>
@@ -1347,7 +1384,7 @@ const Navbar4 = () => {
               )}
               {/* Mobile menu footer */}
               <div className="mx-[2rem] mt-auto flex flex-col items-center gap-8 py-24">
-                <Button size="sm">Get Started</Button>
+                <Button size="sm">Schedule AI Scan</Button>
                 <div className="flex flex-col items-center gap-2">
                   <a
                     href="/contact"

@@ -24,31 +24,31 @@ import { cn } from '@/lib/utils';
 
 const features = [
   {
-    title: 'Tailored workflows',
-    description: 'Track progress across custom issue flows for your team.',
+    title: 'AI Scans',
+    description: 'In-depth assessment to identify optimal AI implementation opportunities.',
     icon: CircleDot,
   },
   {
-    title: 'Milestones',
-    description: 'Break projects down into concrete phases.',
+    title: 'Custom AI Solutions',
+    description: 'Tailored AI solutions for your specific business needs.',
     icon: Diamond,
   },
   {
-    title: 'Cross-team projects',
-    description: 'Collaborate across teams and departments.',
+    title: 'Process Automation',
+    description: 'Intelligent automation that transforms your workflows.',
     icon: Blend,
   },
   {
-    title: 'Progress insights',
-    description: 'Track scope, velocity, and progress over time.',
+    title: 'AI Center of Excellence',
+    description: 'Establish internal AI competency to lead your industry.',
     icon: ChartNoAxesColumn,
   },
 ];
 
 const SLIDES = [
-  { image: '/images/homepage/hero.webp', label: 'Kanban' },
-  { image: '/images/homepage/hero2.webp', label: 'Issues' },
-  { image: '/images/homepage/hero3.webp', label: 'Add Issues' },
+  { image: '/images/homepage/hero.webp', label: 'AI Dashboard' },
+  { image: '/images/homepage/hero2.webp', label: 'Automation' },
+  { image: '/images/homepage/hero3.webp', label: 'Analytics' },
 ];
 
 const Hero = () => {
@@ -74,12 +74,11 @@ const Hero = () => {
         <div className="space-y-8 lg:space-y-12">
           <div>
             <h1 className="text-3xl font-semibold tracking-tight sm:text-4xl md:text-5xl lg:text-6xl">
-              Strategy guides product
+              Smarter Operations, Unlock efficiency
             </h1>
 
             <p className="text-sand-700 font-inter-tight mt-3 text-3xl leading-13 font-medium md:text-4xl lg:text-5xl">
-              Streamline is the fit-for-purpose tool for planning and building
-              modern software products.
+              We empower companies to work smarter through intelligent automation and AI.
             </p>
           </div>
 
@@ -107,15 +106,15 @@ const Hero = () => {
           </div>
 
           <div className="flex flex-wrap items-center gap-4">
-            <Button aria-label="Get started">Get started</Button>
-            <Link href="#Streamline-news">
+            <Button aria-label="Schedule AI Scan">Schedule AI Scan</Button>
+            <Link href="#cerbello-solutions">
               <Button
-                aria-label="Streamline raises $12M from Roba Ventures"
+                aria-label="Learn about our AI Center of Excellence"
                 variant="outline"
                 className="max-sm:hidden"
               >
                 <span className="flex items-center gap-2 text-start whitespace-pre-wrap">
-                  Streamline raises $12M from Roba Ventures{' '}
+                  Discover our AI Center of Excellence{' '}
                   <ArrowRight className="size-4 stroke-3" />
                 </span>
               </Button>
@@ -146,7 +145,7 @@ const Hero = () => {
                   <div className="relative size-full min-h-[30rem] overflow-hidden rounded-t-xl">
                     <Image
                       src={slide.image}
-                      alt={`Streamline product interface showing ${slide.label}`}
+                      alt={`Cerbello AI platform showing ${slide.label}`}
                       fill
                       className="object-cover object-left-top"
                       priority={index === 0}

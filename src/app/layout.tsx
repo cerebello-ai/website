@@ -19,24 +19,26 @@ const interTight = Inter_Tight({
 
 export const metadata: Metadata = {
   title: {
-    default: 'Streamline - Modern Next.js Template',
-    template: '%s | Streamline',
+    default: 'Cerbello - AI & Automation Solutions',
+    template: '%s | Cerbello',
   },
   description:
-    'A modern, fully featured Next.js template built with Shadcn/UI, TailwindCSS and TypeScript, perfect for your next web application.',
+    'Empower your company to work smarter through automation and AI. Custom AI & Automation solutions that drive efficiency and unlock growth opportunities.',
   keywords: [
-    'Next.js',
-    'React',
-    'JavaScript',
-    'TypeScript',
-    'TailwindCSS',
-    'Template',
-    'Shadcn/UI',
-    'Web Development',
+    'AI Solutions',
+    'Artificial Intelligence',
+    'Automation',
+    'RPA',
+    'Machine Learning',
+    'Data Management',
+    'Business Intelligence',
+    'Digital Transformation',
+    'Low-code Development',
+    'iPaaS Integration',
   ],
-  authors: [{ name: 'Streamline Team' }],
-  creator: 'Streamline Team',
-  publisher: 'Streamline',
+  authors: [{ name: 'Cerbello Team' }],
+  creator: 'Cerbello',
+  publisher: 'Cerbello',
   robots: {
     index: true,
     follow: true,
@@ -53,26 +55,26 @@ export const metadata: Metadata = {
     shortcut: [{ url: '/favicon/favicon.ico' }],
   },
   openGraph: {
-    title: 'Streamline - Modern Next.js Template',
+    title: 'Cerbello - AI & Automation Solutions',
     description:
-      'A modern, fully featured Next.js template built with Shadcn/UI, TailwindCSS and TypeScript, perfect for your next web application.',
-    siteName: 'Streamline',
+      'Empower your company to work smarter through automation and AI. Custom AI & Automation solutions that drive efficiency and unlock growth opportunities.',
+    siteName: 'Cerbello',
     images: [
       {
         url: '/og-image.jpg',
         width: 1200,
         height: 630,
-        alt: 'Streamline - Modern Next.js Template',
+        alt: 'Cerbello - AI & Automation Solutions',
       },
     ],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Streamline - Modern Next.js Template',
+    title: 'Cerbello - AI & Automation Solutions',
     description:
-      'A modern, fully featured Next.js template built with Shadcn/UI, TailwindCSS and TypeScript, perfect for your next web application.',
+      'Empower your company to work smarter through automation and AI. Custom AI & Automation solutions that drive efficiency and unlock growth opportunities.',
     images: ['/og-image.jpg'],
-    creator: '@streamline',
+    creator: '@cerbello',
   },
 };
 

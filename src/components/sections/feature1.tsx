@@ -1,21 +1,21 @@
-import { Bug, Bell, Sparkles } from 'lucide-react';
+import { Brain, Zap, TrendingUp } from 'lucide-react';
 
 export const Feature1 = () => {
   const ITEMS = [
     {
-      value: '100%',
-      label: 'More bugs',
-      icon: Bug,
+      value: '75%',
+      label: 'Efficiency Increase',
+      icon: Zap,
     },
     {
-      value: '121%',
-      label: 'More notifications',
-      icon: Bell,
+      value: '60%',
+      label: 'Cost Reduction',
+      icon: TrendingUp,
     },
     {
-      value: '2x',
-      label: 'More chaotic',
-      icon: Sparkles,
+      value: '3x',
+      label: 'Faster Insights',
+      icon: Brain,
     },
   ];
 
@@ -24,12 +24,10 @@ export const Feature1 = () => {
       <div className="container">
         <div className="flex flex-col gap-3 md:flex-row">
           <h2 className="flex-1 text-3xl leading-tight font-semibold tracking-tight text-balance md:text-4xl lg:text-5xl">
-            Tailor made for post-modern product teams
+            AI & Automation tailored for modern enterprises
           </h2>
           <p className="text-muted-foreground flex-1 text-lg font-medium md:max-w-md md:self-end">
-            Streamline is built on the habits that make the best product teams
-            successful: staying focused, moving quickly, and always aiming for
-            high-quality work.
+            Cerbello merges AI with data management to transform challenges into growth opportunities. Our tailored, ethical solutions unlock insights and drive sustainable success.
           </p>
         </div>
 
@@ -55,7 +53,7 @@ export const Feature1 = () => {
         </div>
 
         <div className="text-muted-foreground mt-6 text-end text-sm">
-          *average increase in comparison to Jira
+          *average improvement based on client implementations
         </div>
       </div>
     </section>

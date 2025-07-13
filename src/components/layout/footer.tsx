@@ -6,31 +6,35 @@ import { Button } from '@/components/ui/button';
 
 const navigation = [
   {
-    title: 'Product',
+    title: 'AI Solutions',
     links: [
-      { name: 'Home', href: '/' },
-      { name: 'Feature1', href: '/#feature1' },
-      { name: 'Feature2', href: '/#feature2' },
-      { name: 'Feature3', href: '/#feature3' },
+      { name: 'AI Scans', href: '/ai-scans' },
+      { name: 'Custom AI Solutions', href: '/custom-ai' },
+      { name: 'AI Center of Excellence', href: '/ai-center' },
+      { name: 'Automation', href: '/automation' },
+    ],
+  },
+  {
+    title: 'Services',
+    links: [
+      { name: 'Artificial Intelligence', href: '/services/ai' },
+      { name: 'Robotic Process Automation', href: '/services/rpa' },
+      { name: 'Low-code Apps', href: '/services/low-code' },
+      { name: 'Integration iPaaS', href: '/services/ipaas' },
     ],
   },
   {
     title: 'Company',
     links: [
       { name: 'About', href: '/about' },
-      { name: 'Pricing', href: '/pricing' },
-    ],
-  },
-  {
-    title: 'Support',
-    links: [
-      { name: 'FAQ', href: '/faq' },
+      { name: 'Case Studies', href: '/case-studies' },
       { name: 'Contact', href: '/contact' },
     ],
   },
   {
-    title: 'Service',
+    title: 'Resources',
     links: [
+      { name: 'FAQ', href: '/faq' },
       { name: 'Terms of service', href: '/terms' },
       { name: 'Privacy policy', href: '/privacy' },
     ],
@@ -49,11 +53,11 @@ export const Footer = () => {
       <div className="bg-primary">
         <div className="border-sand-600 mx-auto flex max-w-[95vw] flex-col items-center border-b py-10 text-center md:py-14 lg:py-20">
           <h2 className="max-w-[800px] text-5xl leading-none font-semibold tracking-tight text-balance lg:text-6xl">
-            Streamline starts now.{' '}
-            <span className="text-sand-600">Your future won&apos;t wait.</span>
+            Transform your business with AI.{' '}
+            <span className="text-sand-600">Your digital future starts today.</span>
           </h2>
           <Button asChild variant="secondary" size="lg" className="mt-9">
-            <Link href="/get-started">Get started with 7 days free</Link>
+            <Link href="/contact">Schedule Your AI Scan</Link>
           </Button>
         </div>
 
@@ -84,14 +88,7 @@ export const Footer = () => {
         <div className="container py-8">
           <div className="flex flex-wrap items-center justify-between gap-2">
             <p className="font-medium">
-              © {new Date().getFullYear()} Streamline -{' '}
-              <Link
-                href="https://shadcnblocks.com"
-                className="underline transition-opacity hover:opacity-80"
-                target="_blank"
-              >
-                Shadcnblocks.com
-              </Link>
+              © {new Date().getFullYear()} Cerbello. All rights reserved.
             </p>
             <div className="flex items-center gap-6">
               {socialLinks.map((link) => (
