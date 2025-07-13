@@ -57,7 +57,8 @@ const solutions = [
   {
     id: 'solution-1',
     title: 'AI Scans',
-    description: 'In-depth assessment to identify optimal AI implementation opportunities.',
+    description:
+      'In-depth assessment to identify optimal AI implementation opportunities.',
     href: '#',
     subpages: [
       {
@@ -95,7 +96,8 @@ const solutions = [
   {
     id: 'solution-2',
     title: 'Custom AI Solutions',
-    description: 'Tailored AI solutions designed for your specific business needs.',
+    description:
+      'Tailored AI solutions designed for your specific business needs.',
     href: '#',
     subpages: [
       {
@@ -197,7 +199,8 @@ const solutions = [
   {
     id: 'solution-5',
     title: 'Custom Portals & Applications',
-    description: 'Tailored digital solutions built for your specific business needs.',
+    description:
+      'Tailored digital solutions built for your specific business needs.',
     href: '#',
     subpages: [
       {
@@ -938,7 +941,7 @@ const CustomersMenu = () => (
     <div className="col-span-1">
       <a
         href="#"
-        className="group flex h-full flex-col-reverse overflow-hidden rounded-lg bg-accent text-accent-foreground md:flex-col lg:rounded-xl"
+        className="group bg-accent text-accent-foreground flex h-full flex-col-reverse overflow-hidden rounded-lg md:flex-col lg:rounded-xl"
       >
         <div className="border-border mb-5 flex justify-between border-y pl-6 md:mt-12 md:mb-0">
           <div className="border-border relative aspect-square w-16 border-x p-4">
@@ -1174,22 +1177,19 @@ const Navbar4 = () => {
     | null
   >(null);
   return (
-    <header className="relative z-50 bg-sand-100">
+    <header className="bg-sand-100 relative z-50">
       <div className="container">
         <NavigationMenu className="min-w-full">
           <div className="flex w-full justify-between gap-2 py-4">
-            <a
-              href="/"
-              className="flex items-center gap-2"
-            >
+            <a href="/" className="flex items-center gap-2">
               <img
                 src="/images/layout/logo.svg"
                 alt="Streamline"
                 className="h-7 w-auto"
-              // />
-              // <span className="text-lg font-semibold tracking-tighter">
-              //   Cerbello
-              // </span>
+              />
+              <span className="text-lg font-semibold tracking-tighter">
+                Cerbello
+              </span>
             </a>
             <div className="flex items-center gap-2 xl:gap-8">
               <NavigationMenuList className="hidden lg:flex">
@@ -1244,7 +1244,9 @@ const Navbar4 = () => {
               </NavigationMenuList>
             </div>
             <div className="flex items-center gap-2">
-              <Button className="hidden md:block" size="sm">Schedule AI Scan</Button>
+              <Button className="hidden md:block" size="sm">
+                Schedule AI Scan
+              </Button>
               <Button
                 variant="ghost"
                 size="icon"
@@ -1267,7 +1269,7 @@ const Navbar4 = () => {
 
           {/* Mobile Menu */}
           {open && (
-            <div className="fixed inset-0 top-[72px] flex h-[calc(100vh-72px)] w-full flex-col overflow-scroll border-t border-border bg-sand-100 lg:hidden">
+            <div className="border-border bg-sand-100 fixed inset-0 top-[72px] flex h-[calc(100vh-72px)] w-full flex-col overflow-scroll border-t lg:hidden">
               {submenu && (
                 <div className="mt-3 px-[1rem]">
                   <Button variant="link" onClick={() => setSubmenu(null)}>
@@ -1327,7 +1329,9 @@ const Navbar4 = () => {
                     className="border-border flex w-full items-center border-b px-8 py-6 text-left"
                     onClick={() => setSubmenu('partners')}
                   >
-                    <span className="flex-1 text-sm font-medium">AI Center of Excellence</span>
+                    <span className="flex-1 text-sm font-medium">
+                      AI Center of Excellence
+                    </span>
                     <span className="shrink-0">
                       <ArrowRight className="size-4" />
                     </span>
