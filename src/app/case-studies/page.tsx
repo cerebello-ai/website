@@ -4,7 +4,7 @@ import { Cta22 } from '@/components/shadcnblocks/cta/cta22';
 import { Feature63 } from '@/components/shadcnblocks/feature/feature63';
 import { Feature64 } from '@/components/shadcnblocks/feature/feature64';
 import { Hero32 } from '@/components/shadcnblocks/hero/hero32';
-import { Testimonial22 } from '@/components/shadcnblocks/testimonial/testimonial22';
+import { Testimonial21 } from '@/components/shadcnblocks/testimonial/testimonial21';
 
 export const metadata: Metadata = {
   title: 'Case Studies | Cerebello',
@@ -18,7 +18,7 @@ export default function CaseStudiesPage() {
       <Hero32 />
       <Feature63 />
       <Feature64 />
-      <Testimonial22 />
+      <Testimonial21 />
       <Cta22 />
     </>
   );

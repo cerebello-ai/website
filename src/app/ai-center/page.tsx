@@ -1,6 +1,6 @@
 import { Metadata } from 'next';
 
-import { Cta23 } from '@/components/shadcnblocks/cta/cta23';
+import { Cta22 } from '@/components/shadcnblocks/cta/cta22';
 import { Feature65 } from '@/components/shadcnblocks/feature/feature65';
 import { Feature66 } from '@/components/shadcnblocks/feature/feature66';
 import { Hero33 } from '@/components/shadcnblocks/hero/hero33';
@@ -19,7 +19,7 @@ export default function AICenterPage() {
       <Feature65 />
       <Feature66 />
       <Testimonial23 />
-      <Cta23 />
+      <Cta22 />
     </>
   );
 }

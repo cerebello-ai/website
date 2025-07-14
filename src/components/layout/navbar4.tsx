@@ -51,10 +51,8 @@ import {
 import {
   generateSolutionSlug,
   generateServiceSlug,
-  generateAboutSlug,
   generateResourceSlug,
   generateCaseStudySlug,
-  generateAICenterSlug,
 } from '@/lib/utils/slugify';
 
 const solutions = [
@@ -352,109 +350,6 @@ const globalCategories = [
         description: 'Align teams and track company objectives.',
         href: '#',
         icon: Flag,
-      },
-    ],
-  },
-];
-
-const regions = [
-  {
-    title: 'Asia-Pacific',
-    locations: [
-      {
-        title: 'China',
-        href: '#',
-        icon: '🇨🇳',
-      },
-      {
-        title: 'India',
-        href: '#',
-        icon: '🇮🇳',
-      },
-      {
-        title: 'Japan',
-        href: '#',
-        icon: '🇯🇵',
-      },
-      {
-        title: 'Thailand',
-        href: '#',
-        icon: '🇹🇭',
-      },
-    ],
-  },
-  {
-    title: 'Europe',
-    locations: [
-      {
-        title: 'Italy',
-        href: '#',
-        icon: '🇮🇹',
-      },
-      {
-        title: 'Germany',
-        href: '#',
-        icon: '🇩🇪',
-      },
-      {
-        title: 'Poland',
-        href: '#',
-        icon: '🇵🇱',
-      },
-      {
-        title: 'United Kingdom',
-        href: '#',
-        icon: '🇬🇧',
-      },
-    ],
-  },
-  {
-    title: 'Americas',
-    locations: [
-      {
-        title: 'Brazil',
-        href: '#',
-        icon: '🇧🇷',
-      },
-      {
-        title: 'Canada',
-        href: '#',
-        icon: '🇨🇦',
-      },
-      {
-        title: 'Mexico',
-        href: '#',
-        icon: '🇲🇽',
-      },
-      {
-        title: 'United States',
-        href: '#',
-        icon: '🇺🇸',
-      },
-    ],
-  },
-  {
-    title: 'Middle East/Africa',
-    locations: [
-      {
-        title: 'Egypt',
-        href: '#',
-        icon: '🇸🇦',
-      },
-      {
-        title: 'Nigeria',
-        href: '#',
-        icon: '🇳🇬',
-      },
-      {
-        title: 'Türkiye',
-        href: '#',
-        icon: '🇹🇷',
-      },
-      {
-        title: 'United Arab Emirates',
-        href: '#',
-        icon: '🇦🇪',
       },
     ],
   },

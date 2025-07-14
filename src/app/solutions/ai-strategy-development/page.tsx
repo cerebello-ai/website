@@ -1,5 +1,4 @@
 import Image from 'next/image';
-import Link from 'next/link';
 
 import { TrendingUp, Target, Zap } from 'lucide-react';
 import { Metadata } from 'next';
@@ -7,7 +6,6 @@ import { Metadata } from 'next';
 import { Cta7 } from '@/components/shadcnblocks/cta/cta7';
 import { Feature119 } from '@/components/shadcnblocks/feature/feature119';
 import { Feature43 } from '@/components/shadcnblocks/feature/feature43';
-import { Button } from '@/components/ui/button';
 
 export const metadata: Metadata = {
   title:
