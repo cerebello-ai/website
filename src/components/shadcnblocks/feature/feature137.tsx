@@ -1,53 +1,57 @@
-"use client";
+'use client';
 
-import { Infinity as InfinityIcon, Laptop, Zap, ZoomIn } from "lucide-react";
+import { Infinity as InfinityIcon, Laptop, Zap, ZoomIn } from 'lucide-react';
 
 const items1 = [
   {
-    title: "Team Spirit",
-    description: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-    imgSrc: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-dark-1.svg",
+    title: 'Team Spirit',
+    description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
+    imgSrc:
+      'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-dark-1.svg',
   },
   {
-    title: "Innovation",
-    description: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-    imgSrc: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-dark-2.svg",
+    title: 'Innovation',
+    description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
+    imgSrc:
+      'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-dark-2.svg',
   },
   {
-    title: "Quality",
-    description: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-    imgSrc: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-dark-3.svg",
+    title: 'Quality',
+    description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
+    imgSrc:
+      'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-dark-3.svg',
   },
   {
-    title: "Integrity",
-    description: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-    imgSrc: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-dark-1.svg",
+    title: 'Integrity',
+    description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
+    imgSrc:
+      'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-dark-1.svg',
   },
 ];
 
 const items2 = [
   {
-    title: "Support",
+    title: 'Support',
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe est aliquid exercitationem, quos explicabo repellat",
+      'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe est aliquid exercitationem, quos explicabo repellat',
     icon: <InfinityIcon className="size-8" />,
   },
   {
-    title: "Efficiency",
+    title: 'Efficiency',
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe est aliquid exercitationem, quos explicabo repellat",
+      'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe est aliquid exercitationem, quos explicabo repellat',
     icon: <Laptop className="size-8" />,
   },
   {
-    title: "Results",
+    title: 'Results',
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe est aliquid exercitationem, quos explicabo repellat",
+      'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe est aliquid exercitationem, quos explicabo repellat',
     icon: <Zap className="size-8" />,
   },
   {
-    title: "Experience",
+    title: 'Experience',
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe est aliquid exercitationem, quos explicabo repellat",
+      'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe est aliquid exercitationem, quos explicabo repellat',
     icon: <ZoomIn className="size-8" />,
   },
 ];
@@ -61,7 +65,7 @@ const Feature137 = () => {
         <div className="mt-12 grid grid-cols-1 gap-10 sm:grid-cols-2">
           {items1.map((item) => (
             <div
-              className="overflow-hidden rounded-2xl bg-muted pb-8"
+              className="bg-muted overflow-hidden rounded-2xl pb-8"
               key={item.title}
             >
               <img
@@ -72,7 +76,7 @@ const Feature137 = () => {
               <p className="mt-8 mb-4 px-10 text-2xl font-semibold">
                 {item.title}
               </p>
-              <p className="px-10 text-base text-muted-foreground">
+              <p className="text-muted-foreground px-10 text-base">
                 {item.description}
               </p>
             </div>
@@ -83,13 +87,13 @@ const Feature137 = () => {
           {items2.map((item, index) => (
             <div
               key={item.title}
-              className={`flex flex-col items-center justify-between gap-4 rounded-2xl p-8 sm:flex-row sm:gap-10 ${index % 2 !== 0 ? "bg-muted" : ""}`}
+              className={`flex flex-col items-center justify-between gap-4 rounded-2xl p-8 sm:flex-row sm:gap-10 ${index % 2 !== 0 ? 'bg-muted' : ''}`}
             >
               <div className="flex w-full gap-4">
                 {item.icon}
                 <p className="text-base font-semibold">{item.title}</p>
               </div>
-              <p className="w-full text-base text-muted-foreground">
+              <p className="text-muted-foreground w-full text-base">
                 {item.description}
               </p>
             </div>

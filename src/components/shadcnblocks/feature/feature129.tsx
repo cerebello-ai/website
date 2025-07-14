@@ -1,44 +1,48 @@
-"use client";
+'use client';
 
-import { useState } from "react";
+import { useState } from 'react';
 
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 
 const tabs = [
   {
     id: 1,
-    tabName: "Slack",
+    tabName: 'Slack',
     tabDescription:
-      "Communicate with your team, share updates, project discussions all in one place",
-    link: "#",
-    image: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/block-1.svg",
+      'Communicate with your team, share updates, project discussions all in one place',
+    link: '#',
+    image:
+      'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/block-1.svg',
   },
   {
     id: 2,
-    tabName: "Google Drive",
-    tabDescription: "Store, access, and collaborate on files with ease",
-    link: "#",
-    image: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/block-2.svg",
+    tabName: 'Google Drive',
+    tabDescription: 'Store, access, and collaborate on files with ease',
+    link: '#',
+    image:
+      'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/block-2.svg',
   },
   {
     id: 3,
-    tabName: "Dropbox",
-    tabDescription: "A reliable solution for file storage and sharing",
-    link: "#",
-    image: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/block-3.svg",
+    tabName: 'Dropbox',
+    tabDescription: 'A reliable solution for file storage and sharing',
+    link: '#',
+    image:
+      'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/block-3.svg',
   },
   {
     id: 4,
-    tabName: "Github",
+    tabName: 'Github',
     tabDescription:
-      "Manage your code repositories and collaborate on development projects",
-    link: "#",
-    image: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/block-4.svg",
+      'Manage your code repositories and collaborate on development projects',
+    link: '#',
+    image:
+      'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/block-4.svg',
   },
 ];
 
 const Feature129 = () => {
-  const [activeTab, setActiveTab] = useState("1");
+  const [activeTab, setActiveTab] = useState('1');
 
   return (
     <section className="py-32">
@@ -64,7 +68,7 @@ const Feature129 = () => {
                 <TabsTrigger
                   key={tab.id}
                   value={tab.id.toString()}
-                  className={`rounded-full border border-solid border-transparent px-4 py-2 text-sm font-semibold transition ${activeTab === tab.id.toString() ? "border-muted-2 border border-solid shadow-sm" : ""}`}
+                  className={`rounded-full border border-solid border-transparent px-4 py-2 text-sm font-semibold transition ${activeTab === tab.id.toString() ? 'border-muted-2 border border-solid shadow-sm' : ''}`}
                 >
                   {tab.tabName}
                 </TabsTrigger>
@@ -81,7 +85,7 @@ const Feature129 = () => {
                     <p className="text-sm">{tab.tabDescription}</p>
                     <a
                       href={tab.link}
-                      className="font-sm border-muted-2 whitespace-nowrap border-b-2 border-solid font-semibold"
+                      className="font-sm border-muted-2 border-b-2 border-solid font-semibold whitespace-nowrap"
                     >
                       Learn more
                     </a>

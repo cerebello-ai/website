@@ -1,7 +1,42 @@
-import { Badge } from "@/components/ui/badge";
-import { Separator } from "@/components/ui/separator";
+import { StatsProps, BenefitItem } from '../types/common';
 
-const Stats9 = () => {
+import { Badge } from '@/components/ui/badge';
+import { Separator } from '@/components/ui/separator';
+
+interface Stats9Props extends StatsProps {
+  badge?: string;
+  benefits?: BenefitItem[];
+}
+
+const Stats9 = ({
+  title = 'Transform Your Digital Experience Today Together',
+  description = 'Leverage cutting-edge technology to streamline your workflow and unlock new possibilities in the digital landscape.',
+  badge = 'Features',
+  stats = [
+    { label: 'Users Served', value: '2.5M +' },
+    { label: 'Uptime', value: '99.9%' },
+    { label: 'User Score', value: '4.8' },
+  ],
+  benefits = [
+    {
+      title: 'Cloud Integration',
+      description: 'Seamless cloud solutions for modern business needs',
+    },
+    {
+      title: '24/7 Monitoring',
+      description: 'Round-the-clock system monitoring and support',
+    },
+    {
+      title: 'AI-Powered Tools',
+      description:
+        'Advanced machine learning algorithms delivering intelligent insights',
+    },
+    {
+      title: 'Enterprise Security',
+      description: 'Military-grade encryption and advanced threat protection',
+    },
+  ],
+}: Stats9Props) => {
   return (
     <section className="py-32">
       <div className="container">
@@ -12,101 +47,50 @@ const Stats9 = () => {
                 variant="outline"
                 className="flex w-fit items-center gap-1"
               >
-                Features
+                {badge}
               </Badge>
               <h1 className="mb-5 text-4xl font-semibold text-pretty">
-                Transform Your Digital Experience Today Together
+                {title}
               </h1>
-              <p className="text-muted-foreground">
-                Leverage cutting-edge technology to streamline your workflow and
-                unlock new possibilities in the digital landscape.
-              </p>
+              <p className="text-muted-foreground">{description}</p>
             </div>
             <div className="mt-12 flex justify-center gap-7 lg:justify-start">
-              <div className="flex flex-col gap-1.5">
-                <p className="text-2xl font-bold text-foreground sm:text-3xl">
-                  2.5M +
-                </p>
-                <p className="text-muted-foreground">Users Served</p>
-              </div>
-              <Separator orientation="vertical" className="h-auto" />
-              <div className="flex flex-col gap-1.5">
-                <p className="text-2xl font-bold text-foreground sm:text-3xl">
-                  99.9%
-                </p>
-                <p className="text-muted-foreground">Uptime</p>
-              </div>
-              <Separator orientation="vertical" className="h-auto" />
-              <div className="flex flex-col gap-1.5">
-                <p className="text-2xl font-bold text-foreground sm:text-3xl">
-                  4.8
-                </p>
-                <p className="text-muted-foreground">User Score</p>
-              </div>
+              {stats.map((stat, index) => (
+                <div key={index}>
+                  <div className="flex flex-col gap-1.5">
+                    <p className="text-foreground text-2xl font-bold sm:text-3xl">
+                      {stat.value}
+                    </p>
+                    <p className="text-muted-foreground">{stat.label}</p>
+                  </div>
+                  {index < stats.length - 1 && (
+                    <Separator orientation="vertical" className="h-auto" />
+                  )}
+                </div>
+              ))}
             </div>
           </div>
           <div className="grid gap-2.5 text-left sm:grid-cols-2 sm:text-center lg:text-left">
-            <div className="flex items-center gap-5 rounded-lg border border-border bg-muted p-6 sm:flex-col sm:items-start sm:p-7">
-              <img
-                src="https://deifkwefumgah.cloudfront.net/shadcnblocks/block/block-1.svg"
-                alt="logo"
-                className="mx-0 size-12 sm:mx-auto lg:mx-0"
-              />
-              <div className="flex flex-col gap-1">
-                <p className="text-sm font-semibold text-foreground sm:text-base">
-                  Cloud Integration
-                </p>
-                <p className="text-sm text-muted-foreground sm:text-base">
-                  Seamless cloud solutions for modern business needs
-                </p>
+            {benefits.map((benefit, index) => (
+              <div
+                key={index}
+                className="border-border bg-muted flex items-center gap-5 rounded-lg border p-6 sm:flex-col sm:items-start sm:p-7"
+              >
+                <img
+                  src={`https://deifkwefumgah.cloudfront.net/shadcnblocks/block/block-${index + 1}.svg`}
+                  alt="feature icon"
+                  className="mx-0 size-12 sm:mx-auto lg:mx-0"
+                />
+                <div className="flex flex-col gap-1">
+                  <p className="text-foreground text-sm font-semibold sm:text-base">
+                    {benefit.title}
+                  </p>
+                  <p className="text-muted-foreground text-sm sm:text-base">
+                    {benefit.description}
+                  </p>
+                </div>
               </div>
-            </div>
-            <div className="flex items-center gap-5 rounded-lg border border-border bg-muted p-6 sm:flex-col sm:items-start sm:p-7">
-              <img
-                src="https://deifkwefumgah.cloudfront.net/shadcnblocks/block/block-2.svg"
-                alt="logo"
-                className="mx-0 size-12 sm:mx-auto lg:mx-0"
-              />
-              <div className="flex flex-col gap-1">
-                <p className="text-sm font-semibold text-foreground sm:text-base">
-                  24/7 Monitoring
-                </p>
-                <p className="text-sm text-muted-foreground sm:text-base">
-                  Round-the-clock system monitoring and support
-                </p>
-              </div>
-            </div>
-            <div className="flex items-center gap-5 rounded-lg border border-border bg-muted p-6 sm:flex-col sm:items-start sm:p-7">
-              <img
-                src="https://deifkwefumgah.cloudfront.net/shadcnblocks/block/block-3.svg"
-                alt="logo"
-                className="mx-0 size-12 sm:mx-auto lg:mx-0"
-              />
-              <div className="flex flex-col gap-1">
-                <p className="text-sm font-semibold text-foreground sm:text-base">
-                  AI-Powered Tools
-                </p>
-                <p className="text-sm text-muted-foreground sm:text-base">
-                  Advanced machine learning algorithms delivering intelligent
-                  insights
-                </p>
-              </div>
-            </div>
-            <div className="flex items-center gap-5 rounded-lg border border-border bg-muted p-6 sm:flex-col sm:items-start sm:p-7">
-              <img
-                src="https://deifkwefumgah.cloudfront.net/shadcnblocks/block/block-4.svg"
-                alt="logo"
-                className="mx-0 size-12 sm:mx-auto lg:mx-0"
-              />
-              <div className="flex flex-col gap-1">
-                <p className="text-sm font-semibold text-foreground sm:text-base">
-                  Enterprise Security
-                </p>
-                <p className="text-sm text-muted-foreground sm:text-base">
-                  Military-grade encryption and advanced threat protection
-                </p>
-              </div>
-            </div>
+            ))}
           </div>
         </div>
       </div>

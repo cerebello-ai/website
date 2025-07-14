@@ -1,6 +1,4 @@
-import { BarChart3, Briefcase, Cloud, Shield } from "lucide-react";
-
-import { cn } from "@/lib/utils";
+import { BarChart3, Briefcase, Cloud, Shield } from 'lucide-react';
 
 import {
   Table,
@@ -9,71 +7,72 @@ import {
   TableHead,
   TableHeader,
   TableRow,
-} from "@/components/ui/table";
+} from '@/components/ui/table';
+import { cn } from '@/lib/utils';
 
 const data = [
   {
     icon: <Shield strokeWidth={2} />,
-    category: "Security",
+    category: 'Security',
     description:
-      "Enterprise security solution providing advanced threat protection and monitoring",
+      'Enterprise security solution providing advanced threat protection and monitoring',
     year: 2024,
-    offer: "Free",
-    segment: "Business",
+    offer: 'Free',
+    segment: 'Business',
   },
   {
     icon: <Cloud strokeWidth={2} />,
-    category: "Technology",
+    category: 'Technology',
     description:
-      "Cloud-based platform offering scalable solutions for modern businesses",
+      'Cloud-based platform offering scalable solutions for modern businesses',
     year: 2023,
-    offer: "Professional",
-    segment: "Business",
+    offer: 'Professional',
+    segment: 'Business',
   },
   {
     icon: <Briefcase strokeWidth={2} />,
-    category: "Services",
+    category: 'Services',
     description:
-      "Comprehensive business management suite for growing organizations",
+      'Comprehensive business management suite for growing organizations',
     year: 2022,
-    offer: "Enterprise",
-    segment: "Enterprise",
+    offer: 'Enterprise',
+    segment: 'Enterprise',
   },
   {
     icon: <BarChart3 strokeWidth={2} />,
-    category: "Analytics",
+    category: 'Analytics',
     description:
-      "Real-time data analytics platform with customizable dashboards and reporting",
+      'Real-time data analytics platform with customizable dashboards and reporting',
     year: 2024,
-    offer: "Professional",
-    segment: "Business",
+    offer: 'Professional',
+    segment: 'Business',
   },
   {
     icon: <Shield strokeWidth={2} />,
-    category: "Security",
+    category: 'Security',
     description:
-      "Advanced endpoint protection system with AI-powered threat detection",
+      'Advanced endpoint protection system with AI-powered threat detection',
     year: 2023,
-    offer: "Professional",
-    segment: "Enterprise",
+    offer: 'Professional',
+    segment: 'Enterprise',
   },
   {
     icon: <Cloud strokeWidth={2} />,
-    category: "Technology",
+    category: 'Technology',
     description:
-      "Serverless computing platform with automatic scaling capabilities",
+      'Serverless computing platform with automatic scaling capabilities',
     year: 2024,
-    offer: "Enterprise",
-    segment: "Business",
+    offer: 'Enterprise',
+    segment: 'Business',
   },
   {
     icon: <Briefcase strokeWidth={2} />,
-    category: "Services",
+    category: 'Services',
     description:
-      "Professional consulting services for digital transformation initiatives",
+      'Professional consulting services for digital transformation initiatives',
     year: 2023,
-    offer: "Free",
-    segment: "Business",
+    offer: 'Free',
+    segment: 'Business',
   },
 ];
 
@@ -85,24 +84,24 @@ const List1 = () => {
           <TableHeader>
             <TableRow>
               <TableHead></TableHead>
-              <TableHead className="hidden font-bold text-primary md:table-cell">
+              <TableHead className="text-primary hidden font-bold md:table-cell">
                 Category
               </TableHead>
               <TableHead>
-                <span className="hidden font-bold text-primary md:block">
+                <span className="text-primary hidden font-bold md:block">
                   Description
                 </span>
-                <span className="block font-bold text-primary md:hidden">
+                <span className="text-primary block font-bold md:hidden">
                   Project
                 </span>
               </TableHead>
-              <TableHead className="hidden text-right font-bold text-primary md:table-cell">
+              <TableHead className="text-primary hidden text-right font-bold md:table-cell">
                 Year
               </TableHead>
-              <TableHead className="hidden font-bold text-primary md:table-cell">
+              <TableHead className="text-primary hidden font-bold md:table-cell">
                 Offer
               </TableHead>
-              <TableHead className="hidden font-bold text-primary md:table-cell">
+              <TableHead className="text-primary hidden font-bold md:table-cell">
                 Segment
               </TableHead>
             </TableRow>
@@ -125,23 +124,23 @@ const List1 = () => {
                         <span className="text-sm font-medium">
                           {item.category}
                         </span>
-                        <span className="text-sm text-muted-foreground">
+                        <span className="text-muted-foreground text-sm">
                           - {item.segment}
                         </span>
                         <span
                           className={cn(
-                            "ml-1 block h-1.5 w-4 rounded-full md:hidden",
-                            item.offer === "Free" && "bg-yellow-400",
-                            item.offer === "Professional" && "bg-green-400",
-                            item.offer === "Enterprise" && "bg-blue-400",
+                            'ml-1 block h-1.5 w-4 rounded-full md:hidden',
+                            item.offer === 'Free' && 'bg-yellow-400',
+                            item.offer === 'Professional' && 'bg-green-400',
+                            item.offer === 'Enterprise' && 'bg-blue-400',
                           )}
                         ></span>
                       </div>
-                      <span className="text-xs text-muted-foreground">
+                      <span className="text-muted-foreground text-xs">
                         {item.year}
                       </span>
                     </div>
-                    <p className="text-sm text-muted-foreground md:text-primary">
+                    <p className="text-muted-foreground md:text-primary text-sm">
                       {item.description}
                     </p>
                   </div>
@@ -153,10 +152,10 @@ const List1 = () => {
                   <div className="flex items-center gap-2">
                     <span
                       className={cn(
-                        "block h-6 w-1.5 rounded-full",
-                        item.offer === "Free" && "bg-yellow-400",
-                        item.offer === "Professional" && "bg-green-400",
-                        item.offer === "Enterprise" && "bg-blue-400",
+                        'block h-6 w-1.5 rounded-full',
+                        item.offer === 'Free' && 'bg-yellow-400',
+                        item.offer === 'Professional' && 'bg-green-400',
+                        item.offer === 'Enterprise' && 'bg-blue-400',
                       )}
                     ></span>
                     {item.offer}

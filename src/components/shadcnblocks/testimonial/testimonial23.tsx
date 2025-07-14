@@ -1,16 +1,16 @@
-"use client";
+'use client';
 import {
   BadgeCheck,
   ChevronRight,
   Clock,
   MessageSquareCode,
-} from "lucide-react";
-import Masonry, { ResponsiveMasonry } from "react-responsive-masonry";
+} from 'lucide-react';
+import Masonry, { ResponsiveMasonry } from 'react-responsive-masonry';
 
-import { Avatar, AvatarImage } from "@/components/ui/avatar";
-import { Badge } from "@/components/ui/badge";
-import { Button } from "@/components/ui/button";
-import { Card } from "@/components/ui/card";
+import { Avatar, AvatarImage } from '@/components/ui/avatar';
+import { Badge } from '@/components/ui/badge';
+import { Button } from '@/components/ui/button';
+import { Card } from '@/components/ui/card';
 
 interface DataItem {
   id: string;
@@ -23,82 +23,91 @@ interface DataItem {
 
 const DATA: DataItem[] = [
   {
-    id: "1",
-    name: "John Doe",
-    username: "johndoe",
-    date: "2023-10-05",
-    avatar: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/avatar-1.webp",
+    id: '1',
+    name: 'John Doe',
+    username: 'johndoe',
+    date: '2023-10-05',
+    avatar:
+      'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/avatar-1.webp',
     content:
       "This platform has completely transformed the way I manage my projects. The tools are not only intuitive but also incredibly powerful, allowing me to streamline my workflow like never before. It's a game-changer for productivity!",
   },
   {
-    id: "2",
-    name: "Jane Smith",
-    username: "janesmith",
-    date: "2023-09-30",
-    avatar: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/avatar-2.webp",
+    id: '2',
+    name: 'Jane Smith',
+    username: 'janesmith',
+    date: '2023-09-30',
+    avatar:
+      'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/avatar-2.webp',
     content:
-      "The collaboration features are truly outstanding, allowing my team and I to work together seamlessly no matter where we are, which has made remote work significantly easier. The real-time editing and intuitive sharing options have transformed how we operate, eliminating the headaches of version control and endless email chains.",
+      'The collaboration features are truly outstanding, allowing my team and I to work together seamlessly no matter where we are, which has made remote work significantly easier. The real-time editing and intuitive sharing options have transformed how we operate, eliminating the headaches of version control and endless email chains.',
   },
   {
-    id: "3",
-    name: "Alice Johnson",
-    username: "alicej",
-    date: "2023-09-25",
-    avatar: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/avatar-3.webp",
-    content: "The analytics are a game-changer!",
+    id: '3',
+    name: 'Alice Johnson',
+    username: 'alicej',
+    date: '2023-09-25',
+    avatar:
+      'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/avatar-3.webp',
+    content: 'The analytics are a game-changer!',
   },
   {
-    id: "4",
-    name: "Bob Brown",
-    username: "bobbrown",
-    date: "2023-09-20",
-    avatar: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/avatar-4.webp",
+    id: '4',
+    name: 'Bob Brown',
+    username: 'bobbrown',
+    date: '2023-09-20',
+    avatar:
+      'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/avatar-4.webp',
     content:
-      "I love how easy it is to integrate this platform with my existing tools. It has streamlined my workflow significantly, saving me hours every week.",
+      'I love how easy it is to integrate this platform with my existing tools. It has streamlined my workflow significantly, saving me hours every week.',
   },
   {
-    id: "5",
-    name: "Charlie Davis",
-    username: "charlied",
-    date: "2023-09-15",
-    avatar: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/avatar-5.webp",
+    id: '5',
+    name: 'Charlie Davis',
+    username: 'charlied',
+    date: '2023-09-15',
+    avatar:
+      'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/avatar-5.webp',
     content:
       "The design templates are fantastic. They've helped me deliver projects faster without compromising on quality. Highly recommend!",
   },
   {
-    id: "6",
-    name: "Eva Wilson",
-    username: "evawilson",
-    date: "2023-09-10",
-    avatar: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/avatar-6.webp",
+    id: '6',
+    name: 'Eva Wilson',
+    username: 'evawilson',
+    date: '2023-09-10',
+    avatar:
+      'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/avatar-6.webp',
     content:
       "This platform has made project management so much easier. It's intuitive, efficient, and keeps everyone on the same page.",
   },
   {
-    id: "7",
-    name: "Frank Miller",
-    username: "frankm",
-    date: "2023-09-05",
-    avatar: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/avatar-7.webp",
+    id: '7',
+    name: 'Frank Miller',
+    username: 'frankm',
+    date: '2023-09-05',
+    avatar:
+      'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/avatar-7.webp',
     content:
       "The branding tools are amazing. They've helped us maintain consistency across all our campaigns, which has been a huge win for our team.",
   },
   {
-    id: "8",
-    name: "Grace Lee",
-    username: "gracelee",
-    date: "2023-08-30",
-    avatar: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/avatar-8.webp",
+    id: '8',
+    name: 'Grace Lee',
+    username: 'gracelee',
+    date: '2023-08-30',
+    avatar:
+      'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/avatar-8.webp',
     content:
       "The vector editing tools are fantastic. They've made my creative process so much smoother and more enjoyable.",
   },
   {
-    id: "9",
-    name: "Henry Garcia",
-    username: "henryg",
-    date: "2023-08-25",
-    avatar: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/avatar-4.webp",
+    id: '9',
+    name: 'Henry Garcia',
+    username: 'henryg',
+    date: '2023-08-25',
+    avatar:
+      'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/avatar-4.webp',
     content:
       "The animation features are incredible. They've taken my projects to the next level, and I couldn't be happier with the results.",
   },
@@ -110,7 +119,7 @@ const Testimonial23 = () => {
       <div className="container">
         <div className="my-4 flex justify-center">
           <Badge variant="outline" className="rounded-sm py-2 shadow-md">
-            <MessageSquareCode className="mr-2 size-4 text-muted-foreground" />
+            <MessageSquareCode className="text-muted-foreground mr-2 size-4" />
             <span>Customer Feedback</span>
           </Badge>
         </div>
@@ -129,7 +138,7 @@ const Testimonial23 = () => {
           </div>
         </div>
 
-        <div className="relative mt-14 w-full px-4 after:absolute after:inset-x-0 after:-bottom-2 after:h-96 after:bg-linear-to-t after:from-background sm:px-8 md:px-16 lg:px-32">
+        <div className="after:from-background relative mt-14 w-full px-4 after:absolute after:inset-x-0 after:-bottom-2 after:h-96 after:bg-linear-to-t sm:px-8 md:px-16 lg:px-32">
           <ResponsiveMasonry
             columnsCountBreakPoints={{ 350: 1, 768: 2, 1024: 3 }}
           >
@@ -140,7 +149,7 @@ const Testimonial23 = () => {
                   className="relative rounded-xl p-5 shadow-sm"
                 >
                   <div className="flex items-center gap-4">
-                    <Avatar className="h-10 w-10 rounded-full ring-1 ring-muted">
+                    <Avatar className="ring-muted h-10 w-10 rounded-full ring-1">
                       <AvatarImage
                         src={testimonial.avatar}
                         alt={testimonial.name}
@@ -153,7 +162,7 @@ const Testimonial23 = () => {
                         </p>
                         <BadgeCheck className="h-4 w-4 fill-cyan-400 stroke-white" />
                       </div>
-                      <p className="mt-2 text-xs text-muted-foreground">
+                      <p className="text-muted-foreground mt-2 text-xs">
                         @{testimonial.username}
                       </p>
                     </div>
@@ -166,13 +175,13 @@ const Testimonial23 = () => {
                     </div>
                   </div>
 
-                  <div className="my-4 border-t border-dashed border-border" />
+                  <div className="border-border my-4 border-t border-dashed" />
 
-                  <div className="text-sm text-foreground">
+                  <div className="text-foreground text-sm">
                     <q>{testimonial.content}</q>
                   </div>
 
-                  <div className="mt-4 flex items-center gap-2 text-xs text-muted-foreground">
+                  <div className="text-muted-foreground mt-4 flex items-center gap-2 text-xs">
                     <Clock className="h-4 w-4" />
                     <span>{testimonial.date}</span>
                   </div>
@@ -182,13 +191,13 @@ const Testimonial23 = () => {
           </ResponsiveMasonry>
         </div>
         <div className="flex justify-center">
-          <Button className="mt-4 gap-2 rounded-lg px-5 py-3 text-sm shadow-sm transition-colors hover:bg-primary/90 focus:outline-none disabled:pointer-events-none disabled:opacity-50">
+          <Button className="hover:bg-primary/90 mt-4 gap-2 rounded-lg px-5 py-3 text-sm shadow-sm transition-colors focus:outline-none disabled:pointer-events-none disabled:opacity-50">
             <span className="flex items-center gap-1">
               <span>See More</span>
               <span className="text-muted/80">-</span>
               <span className="text-muted/80">Feedback</span>
             </span>
-            <ChevronRight className="h-4 w-4 text-muted-foreground/80" />
+            <ChevronRight className="text-muted-foreground/80 h-4 w-4" />
           </Button>
         </div>
       </div>

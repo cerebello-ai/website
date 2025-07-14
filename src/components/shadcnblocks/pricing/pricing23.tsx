@@ -1,14 +1,15 @@
-"use client";
+'use client';
 
-import { Check, ChevronsUpDown } from "lucide-react";
-import { useState } from "react";
+import { useState } from 'react';
 
-import { Button } from "@/components/ui/button";
+import { Check, ChevronsUpDown } from 'lucide-react';
+
+import { Button } from '@/components/ui/button';
 import {
   Collapsible,
   CollapsibleContent,
   CollapsibleTrigger,
-} from "@/components/ui/collapsible";
+} from '@/components/ui/collapsible';
 
 interface FeatureSection {
   category: string;
@@ -22,93 +23,93 @@ interface FeatureSection {
 
 const pricingPlans = [
   {
-    name: "Free",
+    name: 'Free',
     button: {
-      text: "Get started",
-      variant: "outline" as const,
+      text: 'Get started',
+      variant: 'outline' as const,
     },
   },
   {
-    name: "Startup",
+    name: 'Startup',
     button: {
-      text: "Get started",
-      variant: "outline" as const,
+      text: 'Get started',
+      variant: 'outline' as const,
     },
   },
   {
-    name: "Enterprise",
+    name: 'Enterprise',
     button: {
-      text: "Get a demo",
-      variant: "outline" as const,
+      text: 'Get a demo',
+      variant: 'outline' as const,
     },
   },
 ];
 
 const comparisonFeatures: FeatureSection[] = [
   {
-    category: "Usage",
+    category: 'Usage',
     features: [
       {
-        name: "Members",
-        free: "Unlimited",
-        startup: "Unlimited",
-        enterprise: "Unlimited",
+        name: 'Members',
+        free: 'Unlimited',
+        startup: 'Unlimited',
+        enterprise: 'Unlimited',
       },
       {
-        name: "Transactions",
-        free: "250",
-        startup: "Unlimited",
-        enterprise: "Unlimited",
+        name: 'Transactions',
+        free: '250',
+        startup: 'Unlimited',
+        enterprise: 'Unlimited',
       },
       {
-        name: "Teams",
-        free: "2",
-        startup: "Unlimited",
-        enterprise: "Unlimited",
+        name: 'Teams',
+        free: '2',
+        startup: 'Unlimited',
+        enterprise: 'Unlimited',
       },
     ],
   },
   {
-    category: "Features",
+    category: 'Features',
     features: [
       {
-        name: "Reporting",
+        name: 'Reporting',
         free: true,
         startup: true,
         enterprise: true,
       },
       {
-        name: "Analytics",
+        name: 'Analytics',
         free: true,
         startup: true,
         enterprise: true,
       },
       {
-        name: "Import and export",
+        name: 'Import and export',
         free: true,
         startup: true,
         enterprise: true,
       },
       {
-        name: "Integrations",
+        name: 'Integrations',
         free: true,
         startup: true,
         enterprise: true,
       },
       {
-        name: "Mainline AI",
+        name: 'Mainline AI',
         free: false,
         startup: true,
         enterprise: true,
       },
       {
-        name: "Admin roles",
+        name: 'Admin roles',
         free: false,
         startup: false,
         enterprise: false,
       },
       {
-        name: "Audit log",
+        name: 'Audit log',
         free: false,
         startup: false,
         enterprise: false,
@@ -116,22 +117,22 @@ const comparisonFeatures: FeatureSection[] = [
     ],
   },
   {
-    category: "Support",
+    category: 'Support',
     features: [
       {
-        name: "Priority Support",
+        name: 'Priority Support',
         free: true,
         startup: true,
         enterprise: true,
       },
       {
-        name: "Account Manager",
+        name: 'Account Manager',
         free: false,
         startup: false,
         enterprise: true,
       },
       {
-        name: "Uptime SLA",
+        name: 'Uptime SLA',
         free: false,
         startup: false,
         enterprise: true,
@@ -176,7 +177,7 @@ const PlanHeaders = ({
                 {pricingPlans[selectedPlan].name}
               </h3>
               <ChevronsUpDown
-                className={`size-5 transition-transform ${isOpen ? "rotate-180" : ""}`}
+                className={`size-5 transition-transform ${isOpen ? 'rotate-180' : ''}`}
               />
             </CollapsibleTrigger>
             <Button
@@ -228,13 +229,13 @@ const FeatureSections = ({ selectedPlan }: { selectedPlan: number }) => (
   <>
     {comparisonFeatures.map((section, sectionIndex) => (
       <div key={sectionIndex} className="">
-        <div className="border-b border-primary/40 py-4">
+        <div className="border-primary/40 border-b py-4">
           <h3 className="text-lg font-semibold">{section.category}</h3>
         </div>
         {section.features.map((feature, featureIndex) => (
           <div
             key={featureIndex}
-            className="grid grid-cols-2 font-medium text-primary max-md:border-b md:grid-cols-4"
+            className="text-primary grid grid-cols-2 font-medium max-md:border-b md:grid-cols-4"
           >
             <span className="inline-flex items-center py-4">
               {feature.name}
@@ -248,7 +249,7 @@ const FeatureSections = ({ selectedPlan }: { selectedPlan: number }) => (
                     feature.startup,
                     feature.enterprise,
                   ][selectedPlan];
-                  return typeof value === "boolean" ? (
+                  return typeof value === 'boolean' ? (
                     value ? (
                       <Check className="size-5" />
                     ) : null
@@ -269,7 +270,7 @@ const FeatureSections = ({ selectedPlan }: { selectedPlan: number }) => (
                     key={i}
                     className="flex items-center gap-1 border-b py-4"
                   >
-                    {typeof value === "boolean" ? (
+                    {typeof value === 'boolean' ? (
                       value ? (
                         <Check className="size-5" />
                       ) : null

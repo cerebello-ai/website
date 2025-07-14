@@ -1,4 +1,4 @@
-import { Mail, MapPin, MessageCircle, Phone } from "lucide-react";
+import { Mail, MapPin, MessageCircle, Phone } from 'lucide-react';
 
 interface Contact7Props {
   title?: string;
@@ -18,26 +18,26 @@ interface Contact7Props {
 }
 
 const Contact7 = ({
-  title = "Contact Us",
-  description = "Contact the support team at Shadcnblocks.",
-  emailLabel = "Email",
-  emailDescription = "We respond to all emails within 24 hours.",
-  email = "example@shadcnblocks.com",
-  officeLabel = "Office",
-  officeDescription = "Drop by our office for a chat.",
-  officeAddress = "1 Eagle St, Brisbane, QLD, 4000",
-  phoneLabel = "Phone",
+  title = 'Contact Us',
+  description = 'Contact the support team at Shadcnblocks.',
+  emailLabel = 'Email',
+  emailDescription = 'We respond to all emails within 24 hours.',
+  email = 'example@shadcnblocks.com',
+  officeLabel = 'Office',
+  officeDescription = 'Drop by our office for a chat.',
+  officeAddress = '1 Eagle St, Brisbane, QLD, 4000',
+  phoneLabel = 'Phone',
   phoneDescription = "We're available Mon-Fri, 9am-5pm.",
-  phone = "+123 456 7890",
-  chatLabel = "Live Chat",
-  chatDescription = "Get instant help from our support team.",
-  chatLink = "Start Chat",
+  phone = '+123 456 7890',
+  chatLabel = 'Live Chat',
+  chatDescription = 'Get instant help from our support team.',
+  chatLink = 'Start Chat',
 }: Contact7Props) => {
   return (
     <section className="bg-background py-32">
       <div className="container">
         <div className="mb-14">
-          <h1 className="mb-3 mt-2 text-balance text-3xl font-semibold md:text-4xl">
+          <h1 className="mt-2 mb-3 text-3xl font-semibold text-balance md:text-4xl">
             {title}
           </h1>
           <p className="text-muted-foreground max-w-xl text-lg">

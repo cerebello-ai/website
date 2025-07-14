@@ -1,9 +1,9 @@
-"use client";
+'use client';
 
-import { ArrowRight } from "lucide-react";
+import { ArrowRight } from 'lucide-react';
 
-import { Badge } from "@/components/ui/badge";
-import { Button } from "@/components/ui/button";
+import { Badge } from '@/components/ui/badge';
+import { Button } from '@/components/ui/button';
 
 const Feature152 = () => {
   const IconElem = ({ image, title }: { image: string; title: string }) => (
@@ -57,8 +57,14 @@ const Feature152 = () => {
             />
           </div>
           <div className="flex justify-evenly md:mb-[-30px]">
-            <IconElem image="https://deifkwefumgah.cloudfront.net/shadcnblocks/block/block-4.svg" title="Compliance" />
-            <IconElem image="https://deifkwefumgah.cloudfront.net/shadcnblocks/block/block-5.svg" title="Cash Flow" />
+            <IconElem
+              image="https://deifkwefumgah.cloudfront.net/shadcnblocks/block/block-4.svg"
+              title="Compliance"
+            />
+            <IconElem
+              image="https://deifkwefumgah.cloudfront.net/shadcnblocks/block/block-5.svg"
+              title="Cash Flow"
+            />
           </div>
           <div className="flex justify-between">
             <IconElem
@@ -76,16 +82,16 @@ const Feature152 = () => {
               key={index}
               className="absolute -bottom-2 left-1/2 z-[-2] aspect-square rounded-full border border-indigo-200"
               style={{
-                width: 60 + 80 * index + "px",
+                width: 60 + 80 * index + 'px',
                 opacity: 0.5,
-                filter: "saturate(10%)",
-                transform: "translateX(-50%) translateY(50%)",
+                filter: 'saturate(10%)',
+                transform: 'translateX(-50%) translateY(50%)',
               }}
             />
           ))}
-          <div className="bg-linear-to-b from-background absolute inset-0 z-[-1] via-transparent to-transparent" />
-          <div className="bg-linear-to-l from-background absolute inset-0 z-[-1] via-transparent to-transparent" />
-          <div className="bg-linear-to-r from-background absolute inset-0 z-[-1] via-transparent to-transparent" />
+          <div className="from-background absolute inset-0 z-[-1] bg-linear-to-b via-transparent to-transparent" />
+          <div className="from-background absolute inset-0 z-[-1] bg-linear-to-l via-transparent to-transparent" />
+          <div className="from-background absolute inset-0 z-[-1] bg-linear-to-r via-transparent to-transparent" />
           <div className="absolute bottom-0 left-0 z-[-2] h-[1px] w-full bg-indigo-200 opacity-50" />
         </div>
       </div>

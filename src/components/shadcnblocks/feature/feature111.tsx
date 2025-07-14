@@ -1,6 +1,6 @@
-import { ChevronRight } from "lucide-react";
+import { ChevronRight } from 'lucide-react';
 
-import { Badge } from "@/components/ui/badge";
+import { Badge } from '@/components/ui/badge';
 
 const Feature111 = () => {
   return (
@@ -23,7 +23,7 @@ const Feature111 = () => {
           </a>
         </div>
         <div className="mt-20 grid gap-10 md:grid-cols-2">
-          <div className="-mx-7 rounded-lg bg-muted px-14 pt-7 md:mx-0">
+          <div className="bg-muted -mx-7 rounded-lg px-14 pt-7 md:mx-0">
             <div className="mx-auto flex flex-col items-center gap-2.5 text-center md:gap-5">
               <Badge variant="outline" className="bg-background">
                 Premium
@@ -48,7 +48,7 @@ const Feature111 = () => {
               />
             </div>
           </div>
-          <div className="-mx-7 rounded-lg bg-muted px-14 pt-7 md:mx-0">
+          <div className="bg-muted -mx-7 rounded-lg px-14 pt-7 md:mx-0">
             <div className="mx-auto flex flex-col items-center gap-2.5 text-center md:gap-5">
               <Badge variant="outline" className="bg-background">
                 Featured

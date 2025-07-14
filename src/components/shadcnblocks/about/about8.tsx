@@ -1,10 +1,10 @@
-import { type SVGProps, useId } from "react";
+import { type SVGProps, useId } from 'react';
 
 import {
   Carousel,
   CarouselContent,
   CarouselItem,
-} from "@/components/ui/carousel";
+} from '@/components/ui/carousel';
 
 export const About8 = () => {
   return (
@@ -17,7 +17,7 @@ export const About8 = () => {
             <br />
             kind of bank.
           </h1>
-          <p className="mt-4 max-w-2xl text-2xl text-muted-foreground md:text-3xl">
+          <p className="text-muted-foreground mt-4 max-w-2xl text-2xl md:text-3xl">
             We&apos;re on a mission to transform financial services by
             harnessing vast amounts of untapped financial data.
           </p>
@@ -29,14 +29,14 @@ export const About8 = () => {
             <div className="bg-gradient-2/10 absolute top-0 right-0 size-[400px] rounded-full" />
           </div>
           <div className="absolute -inset-40 z-[-1] [mask-image:radial-gradient(circle_at_center,black_0%,black_20%,transparent_80%)]">
-            <PlusSigns className="h-full w-full text-foreground/[0.05]" />
+            <PlusSigns className="text-foreground/[0.05] h-full w-full" />
           </div>
         </>
       </section>
 
       {/* Stats Section */}
       <section className="container max-w-5xl border-y py-5">
-        <h2 className="font-mono text-sm font-semibold tracking-widest text-accent-foreground">
+        <h2 className="text-accent-foreground font-mono text-sm font-semibold tracking-widest">
           By the numbers
         </h2>
         <div className="mt-6 grid grid-cols-2 gap-8 md:grid-cols-4">
@@ -44,19 +44,19 @@ export const About8 = () => {
             <h3 className="text-4xl font-medium tracking-tight md:text-5xl lg:text-6xl">
               $150M
             </h3>
-            <p className="mt-1 font-medium text-muted-foreground">Raised</p>
+            <p className="text-muted-foreground mt-1 font-medium">Raised</p>
           </div>
           <div>
             <h3 className="text-4xl font-medium tracking-tight md:text-5xl lg:text-6xl">
               20K
             </h3>
-            <p className="mt-1 font-medium text-muted-foreground">Companies</p>
+            <p className="text-muted-foreground mt-1 font-medium">Companies</p>
           </div>
           <div>
             <h3 className="text-4xl font-medium tracking-tight md:text-5xl lg:text-6xl">
               1.3B
             </h3>
-            <p className="mt-1 font-medium text-muted-foreground">
+            <p className="text-muted-foreground mt-1 font-medium">
               Monthly transactions
             </p>
           </div>
@@ -64,7 +64,7 @@ export const About8 = () => {
             <h3 className="text-4xl font-medium tracking-tight md:text-5xl lg:text-6xl">
               1.5K
             </h3>
-            <p className="mt-1 font-medium text-muted-foreground">
+            <p className="text-muted-foreground mt-1 font-medium">
               Connections per minute
             </p>
           </div>
@@ -100,7 +100,7 @@ export const About8 = () => {
       <section className="my-5 pb-10 md:my-8 md:pb-12 lg:my-12 lg:pb-15">
         <Carousel
           opts={{
-            align: "start",
+            align: 'start',
           }}
         >
           <CarouselContent className="-ml-4">

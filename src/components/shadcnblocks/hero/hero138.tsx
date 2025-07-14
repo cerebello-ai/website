@@ -1,14 +1,14 @@
-import { ArrowRight } from "lucide-react";
+import { ArrowRight } from 'lucide-react';
 
-import { AspectRatio } from "@/components/ui/aspect-ratio";
-import { Button } from "@/components/ui/button";
+import { AspectRatio } from '@/components/ui/aspect-ratio';
+import { Button } from '@/components/ui/button';
 
 const Hero138 = () => {
   return (
-    <section className="dark relative overflow-hidden bg-background pt-12 before:absolute before:top-0 before:right-0 before:z-20 before:h-full before:w-[6.25rem] before:bg-linear-to-l before:from-background before:to-transparent before:content-[''] after:absolute after:bottom-0 after:left-0 after:z-20 after:block after:h-[200px] after:w-full after:bg-linear-to-t after:from-background after:to-transparent after:content-[''] md:pt-20 lg:before:w-[43.75rem]">
+    <section className="dark bg-background before:from-background after:from-background relative overflow-hidden pt-12 before:absolute before:top-0 before:right-0 before:z-20 before:h-full before:w-[6.25rem] before:bg-linear-to-l before:to-transparent before:content-[''] after:absolute after:bottom-0 after:left-0 after:z-20 after:block after:h-[200px] after:w-full after:bg-linear-to-t after:to-transparent after:content-[''] md:pt-20 lg:before:w-[43.75rem]">
       <div className="container w-full max-w-[75rem]">
         <div className="relative z-30">
-          <h1 className="text-3xl font-medium text-foreground md:text-6xl md:leading-tight xl:text-7xl">
+          <h1 className="text-foreground text-3xl font-medium md:text-6xl md:leading-tight xl:text-7xl">
             <span className="text-muted-2-foreground">
               The first comprehensive, all-inclusive toolkit
             </span>
@@ -27,24 +27,24 @@ const Hero138 = () => {
                 <Button
                   variant="ghost"
                   asChild
-                  className="group flex h-fit w-fit items-center gap-2 rounded-xl px-6 py-3 text-center text-sm font-medium text-foreground transition hover:bg-foreground/20"
+                  className="group text-foreground hover:bg-foreground/20 flex h-fit w-fit items-center gap-2 rounded-xl px-6 py-3 text-center text-sm font-medium transition"
                 >
                   <a href="#">
                     <div>See our guides</div>
-                    <ArrowRight className="h-[0.875rem]! w-[0.875rem]! stroke-foreground transition group-hover:translate-x-1" />
+                    <ArrowRight className="stroke-foreground h-[0.875rem]! w-[0.875rem]! transition group-hover:translate-x-1" />
                   </a>
                 </Button>
               </div>
-              <p className="mt-4 text-xs text-muted-foreground">
+              <p className="text-muted-foreground mt-4 text-xs">
                 Free until your first subscriber
               </p>
             </div>
             <div className="max-w-[32rem]">
-              <p className="text-lg leading-relaxed text-muted-foreground">
+              <p className="text-muted-foreground text-lg leading-relaxed">
                 Easily accept payments, manage tasks, communicate with clients,
                 and deliver top-notch service—all through your personalized
-                client portal.{" "}
-                <span className="font-medium text-foreground">
+                client portal.{' '}
+                <span className="text-foreground font-medium">
                   Get started in under 5 minutes.
                 </span>
               </p>
@@ -53,7 +53,7 @@ const Hero138 = () => {
         </div>
         <div className="relative mt-32 h-[18.75rem] w-full md:h-[37.5rem]">
           <div className="absolute left-0 z-10 h-full min-w-[50rem] md:min-w-[100rem]">
-            <div className="h-full overflow-hidden rounded-xl border border-background">
+            <div className="border-background h-full overflow-hidden rounded-xl border">
               <AspectRatio ratio={2.666666667 / 1}>
                 <img
                   src="https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-dark-8-wide.svg"

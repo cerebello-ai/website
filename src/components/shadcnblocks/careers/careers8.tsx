@@ -1,8 +1,8 @@
-"use client";
+'use client';
 
-import { useState } from "react";
+import { useState } from 'react';
 
-import { Label } from "@/components/ui/label";
+import { Label } from '@/components/ui/label';
 import {
   Select,
   SelectContent,
@@ -10,96 +10,96 @@ import {
   SelectItem,
   SelectTrigger,
   SelectValue,
-} from "@/components/ui/select";
+} from '@/components/ui/select';
 
 const JOBS = [
   {
-    category: "Engineering & Development",
+    category: 'Engineering & Development',
     openings: [
       {
-        title: "Software Engineer",
-        location: "San Francisco, CA | Remote",
-        link: "#",
+        title: 'Software Engineer',
+        location: 'San Francisco, CA | Remote',
+        link: '#',
       },
       {
-        title: "Backend Developer",
-        location: "San Francisco, CA | Remote",
-        link: "#",
+        title: 'Backend Developer',
+        location: 'San Francisco, CA | Remote',
+        link: '#',
       },
     ],
   },
   {
-    category: "Product Management",
+    category: 'Product Management',
     openings: [
       {
-        title: "Product Manager",
-        location: "Sydney, Australia",
-        link: "#",
+        title: 'Product Manager',
+        location: 'Sydney, Australia',
+        link: '#',
       },
       {
-        title: "Product Owner",
-        location: "Sydney, Australia",
-        link: "#",
+        title: 'Product Owner',
+        location: 'Sydney, Australia',
+        link: '#',
       },
       {
-        title: "Product Data Management Specialist",
-        location: "Sydney, Australia | Remote",
-        link: "#",
+        title: 'Product Data Management Specialist',
+        location: 'Sydney, Australia | Remote',
+        link: '#',
       },
       {
-        title: "Associate Product Manager",
-        location: "Sydney, Australia | Remote",
-        link: "#",
+        title: 'Associate Product Manager',
+        location: 'Sydney, Australia | Remote',
+        link: '#',
       },
       {
-        title: "Mobile Product Manager",
-        location: "Sydney, Australia | Remote",
-        link: "#",
+        title: 'Mobile Product Manager',
+        location: 'Sydney, Australia | Remote',
+        link: '#',
       },
       {
-        title: "AI Product Manager",
-        location: "Sydney, Australia | Remote",
-        link: "#",
+        title: 'AI Product Manager',
+        location: 'Sydney, Australia | Remote',
+        link: '#',
       },
     ],
   },
   {
-    category: "Design & User Experience",
+    category: 'Design & User Experience',
     openings: [
       {
-        title: "UX Designer",
-        location: "Sydney, Australia",
-        link: "#",
+        title: 'UX Designer',
+        location: 'Sydney, Australia',
+        link: '#',
       },
     ],
   },
   {
-    category: "Sales & Marketing",
+    category: 'Sales & Marketing',
     openings: [
       {
-        title: "Sales Executive",
-        location: "Sydney, Australia",
-        link: "#",
+        title: 'Sales Executive',
+        location: 'Sydney, Australia',
+        link: '#',
       },
     ],
   },
   {
-    category: "IT & Infrastructure",
+    category: 'IT & Infrastructure',
     openings: [
       {
-        title: "IT Support",
-        location: "Sydney, Australia",
-        link: "#",
+        title: 'IT Support',
+        location: 'Sydney, Australia',
+        link: '#',
       },
       {
-        title: "System Administrator",
-        location: "Sydney, Australia",
-        link: "#",
+        title: 'System Administrator',
+        location: 'Sydney, Australia',
+        link: '#',
       },
       {
-        title: "Network Engineer",
-        location: "Sydney, Australia",
-        link: "#",
+        title: 'Network Engineer',
+        location: 'Sydney, Australia',
+        link: '#',
       },
     ],
   },
@@ -107,28 +107,28 @@ const JOBS = [
 
 const options = [
   {
-    label: "All Departments",
-    value: "all",
+    label: 'All Departments',
+    value: 'all',
   },
   {
-    label: "Engineering & Development",
-    value: "engineering_&_development",
+    label: 'Engineering & Development',
+    value: 'engineering_&_development',
   },
   {
-    label: "Product Management",
-    value: "product_management",
+    label: 'Product Management',
+    value: 'product_management',
   },
   {
-    label: "Design & User Experience",
-    value: "design_&_user_experience",
+    label: 'Design & User Experience',
+    value: 'design_&_user_experience',
   },
   {
-    label: "Sales & Marketing",
-    value: "sales_&_marketing",
+    label: 'Sales & Marketing',
+    value: 'sales_&_marketing',
   },
   {
-    label: "IT & Infrastructure",
-    value: "IT_&_infrastructure",
+    label: 'IT & Infrastructure',
+    value: 'IT_&_infrastructure',
   },
 ];
 
@@ -136,7 +136,7 @@ const Careers8 = () => {
   const [filterValue, setFilterValue] = useState(options[0].value);
 
   const filterJobsByCategory = (category: string) => {
-    if (category === "All Departments") return JOBS;
+    if (category === 'All Departments') return JOBS;
     return JOBS.filter((job) => job.category === category);
   };
 
@@ -158,12 +158,12 @@ const Careers8 = () => {
                 <a
                   key={`job-${opening.title}`}
                   href={opening.link}
-                  className="block rounded-md bg-muted p-5 transition-colors hover:bg-muted-2"
+                  className="bg-muted hover:bg-muted-2 block rounded-md p-5 transition-colors"
                 >
                   <div className="mb-1 text-lg leading-normal font-semibold">
                     {opening.title}
                   </div>
-                  <div className="text-sm leading-normal text-muted-foreground">
+                  <div className="text-muted-foreground text-sm leading-normal">
                     {opening.location}
                   </div>
                 </a>
@@ -185,7 +185,7 @@ const Careers8 = () => {
           <div className="flex flex-wrap items-center justify-start gap-5">
             <Label
               htmlFor="terms"
-              className="text-base leading-normal font-semibold text-muted-foreground"
+              className="text-muted-foreground text-base leading-normal font-semibold"
             >
               Filter
             </Label>

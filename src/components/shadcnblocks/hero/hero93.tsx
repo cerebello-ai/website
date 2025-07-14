@@ -1,23 +1,23 @@
-import { AspectRatio } from "@/components/ui/aspect-ratio";
-import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
-import { Button } from "@/components/ui/button";
+import { AspectRatio } from '@/components/ui/aspect-ratio';
+import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
+import { Button } from '@/components/ui/button';
 
 const Hero93 = () => {
   return (
-    <section className="flex flex-col items-center bg-background px-4 py-28 text-center md:px-16">
-      <h1 className="max-w-7xl text-4xl leading-tight font-medium tracking-tighter text-foreground md:text-5xl lg:text-[88px]">
-        Company formation and{" "}
+    <section className="bg-background flex flex-col items-center px-4 py-28 text-center md:px-16">
+      <h1 className="text-foreground max-w-7xl text-4xl leading-tight font-medium tracking-tighter md:text-5xl lg:text-[88px]">
+        Company formation and{' '}
         <span className="font-serif font-normal">specialized financial</span>
         <span className="relative inline-block -space-x-[10%]">
-          <Avatar className="inline-block size-14 rounded-full border-4 border-muted align-middle lg:size-24">
+          <Avatar className="border-muted inline-block size-14 rounded-full border-4 align-middle lg:size-24">
             <AvatarImage src="https://deifkwefumgah.cloudfront.net/shadcnblocks/block/avatar-1.webp" />
             <AvatarFallback>A</AvatarFallback>
           </Avatar>
-          <Avatar className="inline-block size-14 rounded-full border-4 border-muted align-middle lg:size-24">
+          <Avatar className="border-muted inline-block size-14 rounded-full border-4 align-middle lg:size-24">
             <AvatarImage src="https://deifkwefumgah.cloudfront.net/shadcnblocks/block/avatar-2.webp" />
             <AvatarFallback>B</AvatarFallback>
           </Avatar>
-          <Avatar className="inline-block size-14 rounded-full border-4 border-muted align-middle lg:size-24">
+          <Avatar className="border-muted inline-block size-14 rounded-full border-4 align-middle lg:size-24">
             <AvatarImage src="https://deifkwefumgah.cloudfront.net/shadcnblocks/block/avatar-3.webp" />
             <AvatarFallback>C</AvatarFallback>
           </Avatar>

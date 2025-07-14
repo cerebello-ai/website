@@ -1,18 +1,18 @@
-import { Check } from "lucide-react";
+import { Check } from 'lucide-react';
 
-import { Button } from "@/components/ui/button";
-import { Card } from "@/components/ui/card";
+import { Button } from '@/components/ui/button';
+import { Card } from '@/components/ui/card';
 
 const features = [
-  "Automated backups",
-  "24/7 support",
-  "Unlimited projects",
-  "Unlimited users",
-  "Custom domain",
-  "Custom branding",
-  "Advanced analytics",
-  "Custom permissions",
-  "Advanced reports",
+  'Automated backups',
+  '24/7 support',
+  'Unlimited projects',
+  'Unlimited users',
+  'Custom domain',
+  'Custom branding',
+  'Advanced analytics',
+  'Custom permissions',
+  'Advanced reports',
 ];
 
 const Pricing8 = () => {
@@ -21,7 +21,7 @@ const Pricing8 = () => {
       <div className="container">
         <div className="flex flex-col items-center gap-4 text-center">
           <h2 className="mb-2 text-3xl font-medium lg:text-5xl">Pricing</h2>
-          <p className="max-w-lg text-muted-foreground">
+          <p className="text-muted-foreground max-w-lg">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Error ipsum
             dolorem asperiores expedita!
           </p>
@@ -36,7 +36,7 @@ const Pricing8 = () => {
                   16/month
                 </span>
               </div>
-              <p className="mt-1 text-sm text-muted-foreground">
+              <p className="text-muted-foreground mt-1 text-sm">
                 With a 7-day free trial
               </p>
             </div>

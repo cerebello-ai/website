@@ -1,29 +1,29 @@
-"use client";
+'use client';
 
-import { Check, ChevronsUpDown } from "lucide-react";
-import { useState } from "react";
+import { useState } from 'react';
 
-import { cn } from "@/lib/utils";
+import { Check, ChevronsUpDown } from 'lucide-react';
 
-import { Button } from "@/components/ui/button";
+import { Button } from '@/components/ui/button';
 import {
   Collapsible,
   CollapsibleContent,
   CollapsibleTrigger,
-} from "@/components/ui/collapsible";
+} from '@/components/ui/collapsible';
+import { cn } from '@/lib/utils';
 
-type PlanType = "free" | "startup" | "enterprise";
+type PlanType = 'free' | 'startup' | 'enterprise';
 
 interface Plan {
   name: string;
   type: PlanType;
   button: {
     text: string;
-    variant: "outline";
+    variant: 'outline';
     href: string;
   };
   features: {
-    [Category in "usage" | "features" | "support"]: {
+    [Category in 'usage' | 'features' | 'support']: {
       name: string;
       value: string | boolean;
     }[];
@@ -32,92 +32,92 @@ interface Plan {
 
 const plans: Plan[] = [
   {
-    name: "Free",
-    type: "free",
+    name: 'Free',
+    type: 'free',
     button: {
-      text: "Get started",
-      variant: "outline",
-      href: "/signup",
+      text: 'Get started',
+      variant: 'outline',
+      href: '/signup',
     },
     features: {
       usage: [
-        { name: "Members", value: "Unlimited" },
-        { name: "Transactions", value: "250" },
-        { name: "Teams", value: "2" },
+        { name: 'Members', value: 'Unlimited' },
+        { name: 'Transactions', value: '250' },
+        { name: 'Teams', value: '2' },
       ],
       features: [
-        { name: "Reporting", value: true },
-        { name: "Analytics", value: true },
-        { name: "Import and export", value: true },
-        { name: "Integrations", value: true },
-        { name: "Mainline AI", value: false },
-        { name: "Admin roles", value: false },
-        { name: "Audit log", value: false },
+        { name: 'Reporting', value: true },
+        { name: 'Analytics', value: true },
+        { name: 'Import and export', value: true },
+        { name: 'Integrations', value: true },
+        { name: 'Mainline AI', value: false },
+        { name: 'Admin roles', value: false },
+        { name: 'Audit log', value: false },
       ],
       support: [
-        { name: "Priority Support", value: true },
-        { name: "Account Manager", value: false },
-        { name: "Uptime SLA", value: false },
+        { name: 'Priority Support', value: true },
+        { name: 'Account Manager', value: false },
+        { name: 'Uptime SLA', value: false },
       ],
     },
   },
   {
-    name: "Basic",
-    type: "startup",
+    name: 'Basic',
+    type: 'startup',
     button: {
-      text: "Get started",
-      variant: "outline",
-      href: "/signup",
+      text: 'Get started',
+      variant: 'outline',
+      href: '/signup',
     },
     features: {
       usage: [
-        { name: "Members", value: "Unlimited" },
-        { name: "Transactions", value: "Unlimited" },
-        { name: "Teams", value: "Unlimited" },
+        { name: 'Members', value: 'Unlimited' },
+        { name: 'Transactions', value: 'Unlimited' },
+        { name: 'Teams', value: 'Unlimited' },
       ],
       features: [
-        { name: "Reporting", value: true },
-        { name: "Analytics", value: true },
-        { name: "Import and export", value: true },
-        { name: "Integrations", value: true },
-        { name: "Mainline AI", value: true },
-        { name: "Admin roles", value: false },
-        { name: "Audit log", value: false },
+        { name: 'Reporting', value: true },
+        { name: 'Analytics', value: true },
+        { name: 'Import and export', value: true },
+        { name: 'Integrations', value: true },
+        { name: 'Mainline AI', value: true },
+        { name: 'Admin roles', value: false },
+        { name: 'Audit log', value: false },
       ],
       support: [
-        { name: "Priority Support", value: true },
-        { name: "Account Manager", value: false },
-        { name: "Uptime SLA", value: false },
+        { name: 'Priority Support', value: true },
+        { name: 'Account Manager', value: false },
+        { name: 'Uptime SLA', value: false },
       ],
     },
   },
   {
-    name: "Ent",
-    type: "enterprise",
+    name: 'Ent',
+    type: 'enterprise',
     button: {
-      text: "Get a demo",
-      variant: "outline",
-      href: "/",
+      text: 'Get a demo',
+      variant: 'outline',
+      href: '/',
     },
     features: {
       usage: [
-        { name: "Members", value: "Unlimited" },
-        { name: "Transactions", value: "Unlimited" },
-        { name: "Teams", value: "Unlimited" },
+        { name: 'Members', value: 'Unlimited' },
+        { name: 'Transactions', value: 'Unlimited' },
+        { name: 'Teams', value: 'Unlimited' },
       ],
       features: [
-        { name: "Reporting", value: true },
-        { name: "Analytics", value: true },
-        { name: "Import and export", value: true },
-        { name: "Integrations", value: true },
-        { name: "Mainline AI", value: true },
-        { name: "Admin roles", value: false },
-        { name: "Audit log", value: false },
+        { name: 'Reporting', value: true },
+        { name: 'Analytics', value: true },
+        { name: 'Import and export', value: true },
+        { name: 'Integrations', value: true },
+        { name: 'Mainline AI', value: true },
+        { name: 'Admin roles', value: false },
+        { name: 'Audit log', value: false },
       ],
       support: [
-        { name: "Priority Support", value: true },
-        { name: "Account Manager", value: true },
-        { name: "Uptime SLA", value: true },
+        { name: 'Priority Support', value: true },
+        { name: 'Account Manager', value: true },
+        { name: 'Uptime SLA', value: true },
       ],
     },
   },
@@ -156,7 +156,7 @@ const MobilePricingTable = ({
           <CollapsibleTrigger className="flex items-center gap-2">
             <h3 className="text-2xl font-semibold">{plan.name}</h3>
             <ChevronsUpDown
-              className={`size-5 transition-transform ${isOpen ? "rotate-180" : ""}`}
+              className={`size-5 transition-transform ${isOpen ? 'rotate-180' : ''}`}
             />
           </CollapsibleTrigger>
           <Button variant={plan.button.variant} className="w-fit">
@@ -198,7 +198,7 @@ const MobilePricingTable = ({
                 >
                   <span className="border-b py-2">{feature.name}</span>
                   <div className="flex items-center gap-1 border-b py-2">
-                    {typeof feature.value === "boolean" ? (
+                    {typeof feature.value === 'boolean' ? (
                       feature.value ? (
                         <Check className="size-5" />
                       ) : (
@@ -261,7 +261,7 @@ const PricingColumn = ({
   plan: Plan;
   isHighlighted: boolean;
 }) => {
-  const columnClass = cn("px-6", isHighlighted && "bg-muted border rounded-xl");
+  const columnClass = cn('px-6', isHighlighted && 'bg-muted border rounded-xl');
 
   return (
     <div className={columnClass}>
@@ -282,7 +282,7 @@ const PricingColumn = ({
               key={featureIndex}
               className="flex items-center gap-1 border-b py-4"
             >
-              {typeof feature.value === "boolean" ? (
+              {typeof feature.value === 'boolean' ? (
                 feature.value ? (
                   <Check className="size-5" />
                 ) : (

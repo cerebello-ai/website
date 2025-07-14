@@ -1,8 +1,13 @@
-import { ArrowRight } from "lucide-react";
+import { ArrowRight } from 'lucide-react';
 
-import { Badge } from "@/components/ui/badge";
+import { Badge } from '@/components/ui/badge';
 
-const Feature103 = () => {
+const Feature103 = ({
+  title,
+  description,
+  features = [],
+  ...props
+}: FeatureProps = {}) => {
   return (
     <section className="py-32">
       <div className="container">
@@ -15,7 +20,7 @@ const Feature103 = () => {
         <div className="mt-10 grid gap-6 md:grid-cols-2">
           <a
             href="#"
-            className="flex flex-col gap-4 rounded-xl border p-6 hover:border-primary"
+            className="hover:border-primary flex flex-col gap-4 rounded-xl border p-6"
           >
             <div className="flex items-center justify-between gap-4">
               <h3 className="text-lg font-medium">
@@ -32,7 +37,7 @@ const Feature103 = () => {
           </a>
           <a
             href="#"
-            className="flex flex-col gap-4 rounded-xl border p-6 hover:border-primary"
+            className="hover:border-primary flex flex-col gap-4 rounded-xl border p-6"
           >
             <div className="flex items-center justify-between gap-4">
               <h3 className="text-lg font-medium">Effortless Rollbacks</h3>
@@ -47,7 +52,7 @@ const Feature103 = () => {
           <div className="grid gap-6 md:col-span-2 md:grid-cols-3">
             <a
               href="#"
-              className="flex flex-col gap-4 rounded-xl border p-6 hover:border-primary"
+              className="hover:border-primary flex flex-col gap-4 rounded-xl border p-6"
             >
               <div className="flex items-center justify-between gap-4">
                 <h3 className="text-lg font-medium">Configuration Insights</h3>
@@ -62,7 +67,7 @@ const Feature103 = () => {
             </a>
             <a
               href="#"
-              className="flex flex-col gap-4 rounded-xl border p-6 hover:border-primary"
+              className="hover:border-primary flex flex-col gap-4 rounded-xl border p-6"
             >
               <div className="flex items-center justify-between gap-4">
                 <h3 className="text-lg font-medium">Automated Monitoring</h3>
@@ -76,7 +81,7 @@ const Feature103 = () => {
             </a>
             <a
               href="#"
-              className="flex flex-col gap-4 rounded-xl border p-6 hover:border-primary"
+              className="hover:border-primary flex flex-col gap-4 rounded-xl border p-6"
             >
               <div className="flex items-center justify-between gap-4">
                 <h3 className="text-lg font-medium">Performance Metrics</h3>

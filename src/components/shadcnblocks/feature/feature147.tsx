@@ -1,43 +1,49 @@
-"use client";
+'use client';
 
-import { Card } from "@/components/ui/card";
+import { Card } from '@/components/ui/card';
 
 const integrations = [
   {
-    title: "Outreach",
+    title: 'Outreach',
     description:
-      "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam, corporis!",
-    image: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/block-1.svg",
+      'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam, corporis!',
+    image:
+      'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/block-1.svg',
   },
   {
-    title: "Typeform",
+    title: 'Typeform',
     description:
-      "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam, corporis!",
-    image: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/block-2.svg",
+      'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam, corporis!',
+    image:
+      'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/block-2.svg',
   },
   {
-    title: "Slack",
+    title: 'Slack',
     description:
-      "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam, corporis!",
-    image: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/block-3.svg",
+      'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam, corporis!',
+    image:
+      'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/block-3.svg',
   },
   {
-    title: "Mailchimp",
+    title: 'Mailchimp',
     description:
-      "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam, corporis!",
-    image: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/block-4.svg",
+      'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam, corporis!',
+    image:
+      'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/block-4.svg',
   },
   {
-    title: "Mixmax",
+    title: 'Mixmax',
     description:
-      "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam, corporis!",
-    image: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/block-5.svg",
+      'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam, corporis!',
+    image:
+      'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/block-5.svg',
   },
   {
-    title: "Webhooks",
+    title: 'Webhooks',
     description:
-      "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam, corporis!",
-    image: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/block-6.svg",
+      'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam, corporis!',
+    image:
+      'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/block-6.svg',
   },
 ];
 
@@ -67,7 +73,7 @@ const Feature147 = () => {
                 <h3 className="mt-4 mb-1 text-lg font-medium">
                   {integration.title}
                 </h3>
-                <p className="text-sm text-muted-foreground">
+                <p className="text-muted-foreground text-sm">
                   {integration.description}
                 </p>
               </Card>

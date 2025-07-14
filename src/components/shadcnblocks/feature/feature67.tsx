@@ -5,48 +5,48 @@ import {
   MessagesSquare,
   Rocket,
   Star,
-} from "lucide-react";
+} from 'lucide-react';
 
 const features = [
   {
-    id: "feature-1",
-    title: "Feature 1",
+    id: 'feature-1',
+    title: 'Feature 1',
     description:
-      "Quisque eu libero orci. Aliquam imperdiet magna nec massa consectetur.",
+      'Quisque eu libero orci. Aliquam imperdiet magna nec massa consectetur.',
     icon: Cloud,
   },
   {
-    id: "feature-2",
-    title: "Feature 2",
+    id: 'feature-2',
+    title: 'Feature 2',
     description:
-      "Quisque eu libero orci. Aliquam imperdiet magna nec massa consectetur.",
+      'Quisque eu libero orci. Aliquam imperdiet magna nec massa consectetur.',
     icon: Star,
   },
   {
-    id: "feature-3",
-    title: "Feature 3",
+    id: 'feature-3',
+    title: 'Feature 3',
     description:
-      "Quisque eu libero orci. Aliquam imperdiet magna nec massa consectetur.",
+      'Quisque eu libero orci. Aliquam imperdiet magna nec massa consectetur.',
     icon: Bolt,
   },
   {
-    id: "feature-4",
-    title: "Feature 4",
+    id: 'feature-4',
+    title: 'Feature 4',
     description:
-      "Quisque eu libero orci. Aliquam imperdiet magna nec massa consectetur.",
+      'Quisque eu libero orci. Aliquam imperdiet magna nec massa consectetur.',
     icon: MessagesSquare,
   },
   {
-    id: "feature-5",
-    title: "Feature 5",
-    description: "Nam vitae molestie arcu. Quisque eu libero orci.",
+    id: 'feature-5',
+    title: 'Feature 5',
+    description: 'Nam vitae molestie arcu. Quisque eu libero orci.',
     icon: Rocket,
   },
   {
-    id: "feature-6",
-    title: "Feature 6",
+    id: 'feature-6',
+    title: 'Feature 6',
     description:
-      "Quisque eu libero orci. Aliquam imperdiet magna nec massa consectetur.",
+      'Quisque eu libero orci. Aliquam imperdiet magna nec massa consectetur.',
     icon: Building,
   },
 ];
@@ -62,14 +62,14 @@ const Feature67 = () => {
           {features.map((feature) => (
             <div
               key={feature.id}
-              className="flex rounded-lg border border-border bg-accent p-6 md:p-8"
+              className="border-border bg-accent flex rounded-lg border p-6 md:p-8"
             >
               <feature.icon className="mr-3 size-5 shrink-0 lg:mr-6 lg:size-6" />
               <div>
-                <div className="mb-3 h-5 text-sm font-semibold text-accent-foreground md:text-base">
+                <div className="text-accent-foreground mb-3 h-5 text-sm font-semibold md:text-base">
                   {feature.title}
                 </div>
-                <div className="text-sm font-medium text-muted-foreground md:text-base">
+                <div className="text-muted-foreground text-sm font-medium md:text-base">
                   {feature.description}
                 </div>
               </div>

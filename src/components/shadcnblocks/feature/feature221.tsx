@@ -1,16 +1,15 @@
-import { ArrowRight } from "lucide-react";
+import { ArrowRight } from 'lucide-react';
 
-import { cn } from "@/lib/utils";
-
-import { Badge } from "@/components/ui/badge";
-import { Button } from "@/components/ui/button";
+import { Badge } from '@/components/ui/badge';
+import { Button } from '@/components/ui/button';
 import {
   Card,
   CardContent,
   CardFooter,
   CardHeader,
   CardTitle,
-} from "@/components/ui/card";
+} from '@/components/ui/card';
+import { cn } from '@/lib/utils';
 
 interface feature {
   title: string;
@@ -21,32 +20,32 @@ interface feature {
 
 const FEATURES: Array<feature> = [
   {
-    title: "AI-powered meeting assistant",
+    title: 'AI-powered meeting assistant',
     description:
-      "Schedule, summarize, and follow up on meetings automatically using our AI-driven productivity suite.",
-    link: "#",
-    gradient: "bg-linear-to-r from-[#00C9FF] to-[#92FE9D]",
+      'Schedule, summarize, and follow up on meetings automatically using our AI-driven productivity suite.',
+    link: '#',
+    gradient: 'bg-linear-to-r from-[#00C9FF] to-[#92FE9D]',
   },
   {
-    title: "Global CDN optimization",
+    title: 'Global CDN optimization',
     description:
-      "Accelerate your site’s performance with intelligent edge caching and worldwide server coverage.",
-    link: "#",
-    gradient: "bg-linear-to-r from-[#f8ff00] to-[#3ad59f]",
+      'Accelerate your site’s performance with intelligent edge caching and worldwide server coverage.',
+    link: '#',
+    gradient: 'bg-linear-to-r from-[#f8ff00] to-[#3ad59f]',
   },
   {
-    title: "Real-time user analytics",
+    title: 'Real-time user analytics',
     description:
-      "Track user behavior across platforms with live dashboards and actionable segmentation tools.",
-    link: "#",
-    gradient: "bg-linear-to-r from-[#d53369] to-[#daae51]",
+      'Track user behavior across platforms with live dashboards and actionable segmentation tools.',
+    link: '#',
+    gradient: 'bg-linear-to-r from-[#d53369] to-[#daae51]',
   },
   {
-    title: "Automated data cleaning",
+    title: 'Automated data cleaning',
     description:
-      "Enhance your datasets with AI enrichment, validation pipelines, and smart duplicate detection.",
-    link: "#",
-    gradient: "bg-linear-to-r from-[#FC466B] to-[#3F5EFB]",
+      'Enhance your datasets with AI enrichment, validation pipelines, and smart duplicate detection.',
+    link: '#',
+    gradient: 'bg-linear-to-r from-[#FC466B] to-[#3F5EFB]',
   },
 ];
 
@@ -56,10 +55,10 @@ const Feature221 = () => {
       <div className="container">
         <div className="flex w-full flex-col items-start justify-between gap-4 pb-16 lg:flex-row lg:items-end">
           <div className="flex w-full max-w-[32rem] flex-1 flex-col items-start gap-5">
-            <h2 className="text-[2rem] font-bold leading-none tracking-tight md:text-[2.75rem] lg:text-5xl">
+            <h2 className="text-[2rem] leading-none font-bold tracking-tight md:text-[2.75rem] lg:text-5xl">
               Discover how companies use Our Services
             </h2>
-            <p className="text-muted-foreground w-full max-w-[30rem] text-[1.15rem] font-medium leading-normal sm:text-xl">
+            <p className="text-muted-foreground w-full max-w-[30rem] text-[1.15rem] leading-normal font-medium sm:text-xl">
               Accelerate growth with a single platform that automates
               scheduling, routing, enrichment, and intent workflows.
             </p>
@@ -79,7 +78,7 @@ const Feature221 = () => {
             >
               <CardHeader className="flex w-full flex-col justify-between gap-4 p-0 lg:flex-row lg:items-center">
                 <CardTitle className="flex w-fit items-center justify-start gap-2.5">
-                  <h3 className="text-[1.75rem] font-bold leading-none tracking-tight">
+                  <h3 className="text-[1.75rem] leading-none font-bold tracking-tight">
                     {feature.title}
                   </h3>
                 </CardTitle>
@@ -88,7 +87,7 @@ const Feature221 = () => {
                 </Badge>
               </CardHeader>
               <CardContent className="p-0">
-                <p className="text-muted-foreground max-w-[20rem] text-base font-medium leading-[1.4]">
+                <p className="text-muted-foreground max-w-[20rem] text-base leading-[1.4] font-medium">
                   {feature.description}
                 </p>
               </CardContent>
@@ -104,7 +103,7 @@ const Feature221 = () => {
                 <div className="h-8 w-8">
                   <div
                     className={cn(
-                      "h-full w-full rounded-full",
+                      'h-full w-full rounded-full',
                       feature.gradient,
                     )}
                   ></div>

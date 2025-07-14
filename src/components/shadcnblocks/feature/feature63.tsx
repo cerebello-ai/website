@@ -1,39 +1,45 @@
 const features = [
   {
-    id: "feature-1",
-    title: "Feature 1",
-    description: "Nam vitae molestie arcu. Quisque eu libero orci.",
-    image: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-1.svg",
+    id: 'feature-1',
+    title: 'Feature 1',
+    description: 'Nam vitae molestie arcu. Quisque eu libero orci.',
+    image:
+      'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-1.svg',
   },
   {
-    id: "feature-2",
-    title: "Feature 2",
-    description: "Nam vitae molestie arcu. Quisque eu libero orci.",
-    image: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-2.svg",
+    id: 'feature-2',
+    title: 'Feature 2',
+    description: 'Nam vitae molestie arcu. Quisque eu libero orci.',
+    image:
+      'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-2.svg',
   },
   {
-    id: "feature-3",
-    title: "Feature 3",
-    description: "Nam vitae molestie arcu. Quisque eu libero orci.",
-    image: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-3.svg",
+    id: 'feature-3',
+    title: 'Feature 3',
+    description: 'Nam vitae molestie arcu. Quisque eu libero orci.',
+    image:
+      'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-3.svg',
   },
   {
-    id: "feature-4",
-    title: "Feature 4",
-    description: "Nam vitae molestie arcu. Quisque eu libero orci.",
-    image: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-4.svg",
+    id: 'feature-4',
+    title: 'Feature 4',
+    description: 'Nam vitae molestie arcu. Quisque eu libero orci.',
+    image:
+      'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-4.svg',
   },
   {
-    id: "feature-5",
-    title: "Feature 5",
-    description: "Nam vitae molestie arcu. Quisque eu libero orci.",
-    image: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-5.svg",
+    id: 'feature-5',
+    title: 'Feature 5',
+    description: 'Nam vitae molestie arcu. Quisque eu libero orci.',
+    image:
+      'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-5.svg',
   },
   {
-    id: "feature-6",
-    title: "Feature 6",
-    description: "Nam vitae molestie arcu. Quisque eu libero orci.",
-    image: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-6.svg",
+    id: 'feature-6',
+    title: 'Feature 6',
+    description: 'Nam vitae molestie arcu. Quisque eu libero orci.',
+    image:
+      'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-6.svg',
   },
 ];
 
@@ -55,7 +61,7 @@ const Feature63 = () => {
           {features.map((feature) => (
             <div
               key={feature.id}
-              className="rounded-lg border border-border bg-accent p-6 md:p-8"
+              className="border-border bg-accent rounded-lg border p-6 md:p-8"
             >
               <img
                 src="https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-1.svg"
@@ -66,7 +72,7 @@ const Feature63 = () => {
                 <p className="mb-2 text-sm font-semibold md:text-base">
                   {feature.title}
                 </p>
-                <p className="text-sm text-muted-foreground md:text-base">
+                <p className="text-muted-foreground text-sm md:text-base">
                   {feature.description}
                 </p>
               </div>

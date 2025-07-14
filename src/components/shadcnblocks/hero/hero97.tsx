@@ -1,22 +1,22 @@
-"use client";
-import { zodResolver } from "@hookform/resolvers/zod";
-import { useForm } from "react-hook-form";
-import { z } from "zod";
+'use client';
+import { zodResolver } from '@hookform/resolvers/zod';
+import { useForm } from 'react-hook-form';
+import { z } from 'zod';
 
-import { AspectRatio } from "@/components/ui/aspect-ratio";
-import { Button } from "@/components/ui/button";
+import { AspectRatio } from '@/components/ui/aspect-ratio';
+import { Button } from '@/components/ui/button';
 import {
   Form,
   FormControl,
   FormField,
   FormItem,
   FormMessage,
-} from "@/components/ui/form";
-import { Input } from "@/components/ui/input";
+} from '@/components/ui/form';
+import { Input } from '@/components/ui/input';
 
 const formSchema = z
   .object({
-    email: z.string().email({ message: "Invalid email address" }),
+    email: z.string().email({ message: 'Invalid email address' }),
   })
   .required({ email: true });
 
@@ -24,7 +24,7 @@ function HeroFrom() {
   const form = useForm<z.infer<typeof formSchema>>({
     resolver: zodResolver(formSchema),
     defaultValues: {
-      email: "",
+      email: '',
     },
   });
 
@@ -68,13 +68,13 @@ function HeroFrom() {
 
 const Hero97 = () => {
   return (
-    <section className="overflow-hidden bg-muted bg-[url('data:image/svg+xml,%3Csvg%20width%3D%2736%27%20height%3D%2736%27%20viewBox%3D%270%200%2036%2036%27%20fill%3D%27none%27%20xmlns%3D%27http%3A//www.w3.org/2000/svg%27%3E%3Ccircle%20opacity%3D%270.07%27%20cx%3D%2718%27%20cy%3D%2718%27%20r%3D%272%27%20fill%3D%27%230F0F0E%27/%3E%3C/svg%3E')] bg-repeat py-12 font-sans md:py-20">
+    <section className="bg-muted overflow-hidden bg-[url('data:image/svg+xml,%3Csvg%20width%3D%2736%27%20height%3D%2736%27%20viewBox%3D%270%200%2036%2036%27%20fill%3D%27none%27%20xmlns%3D%27http%3A//www.w3.org/2000/svg%27%3E%3Ccircle%20opacity%3D%270.07%27%20cx%3D%2718%27%20cy%3D%2718%27%20r%3D%272%27%20fill%3D%27%230F0F0E%27/%3E%3C/svg%3E')] bg-repeat py-12 font-sans md:py-20">
       <div className="flex flex-col items-center gap-20">
         <div className="mx-auto flex w-full max-w-[43.75rem] flex-col items-center gap-6 px-4">
-          <h1 className="text-center font-serif text-4xl text-foreground md:text-5xl">
+          <h1 className="text-foreground text-center font-serif text-4xl md:text-5xl">
             Where creators thrive
           </h1>
-          <p className="text-center text-xl/normal font-light text-balance text-muted-foreground">
+          <p className="text-muted-foreground text-center text-xl/normal font-light text-balance">
             We’re creating a fresh approach to organizing and collaborating on
             assets like design, web, video, and more.
           </p>

@@ -1,15 +1,16 @@
-"use client";
+'use client';
 
-import { ArrowLeft, ArrowRight, Sparkles } from "lucide-react";
-import { useEffect, useState } from "react";
+import { useEffect, useState } from 'react';
 
-import { Button } from "@/components/ui/button";
-import type { CarouselApi } from "@/components/ui/carousel";
+import { ArrowLeft, ArrowRight, Sparkles } from 'lucide-react';
+
+import { Button } from '@/components/ui/button';
+import type { CarouselApi } from '@/components/ui/carousel';
 import {
   Carousel,
   CarouselContent,
   CarouselItem,
-} from "@/components/ui/carousel";
+} from '@/components/ui/carousel';
 
 interface DataItem {
   id: string;
@@ -21,68 +22,76 @@ interface DataItem {
 
 const DATA: DataItem[] = [
   {
-    id: "feature-1",
-    title: "Smart AI Assistant",
+    id: 'feature-1',
+    title: 'Smart AI Assistant',
     description:
-      "Powered by advanced language models to handle complex queries, automate tasks, and provide intelligent responses with high accuracy.",
-    href: "https://www.shadcnblocks.com",
-    image: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/block-2.svg",
+      'Powered by advanced language models to handle complex queries, automate tasks, and provide intelligent responses with high accuracy.',
+    href: 'https://www.shadcnblocks.com',
+    image:
+      'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/block-2.svg',
   },
   {
-    id: "feature-2",
-    title: "Data Analytics",
+    id: 'feature-2',
+    title: 'Data Analytics',
     description:
-      "Transform raw data into actionable insights using machine learning algorithms and predictive analytics for informed decision-making.",
-    href: "https://www.shadcnblocks.com",
-    image: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/block-1.svg",
+      'Transform raw data into actionable insights using machine learning algorithms and predictive analytics for informed decision-making.',
+    href: 'https://www.shadcnblocks.com',
+    image:
+      'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/block-1.svg',
   },
   {
-    id: "feature-3",
-    title: "Process Automation",
+    id: 'feature-3',
+    title: 'Process Automation',
     description:
-      "Streamline workflows and automate repetitive tasks with intelligent process automation, increasing efficiency and reducing errors.",
-    href: "https://www.shadcnblocks.com",
-    image: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/block-3.svg",
+      'Streamline workflows and automate repetitive tasks with intelligent process automation, increasing efficiency and reducing errors.',
+    href: 'https://www.shadcnblocks.com',
+    image:
+      'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/block-3.svg',
   },
   {
-    id: "feature-4",
-    title: "Knowledge Base",
+    id: 'feature-4',
+    title: 'Knowledge Base',
     description:
-      "Access and manage comprehensive information with our AI-powered knowledge base that learns and improves from each interaction.",
-    href: "https://www.shadcnblocks.com",
-    image: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/block-4.svg",
+      'Access and manage comprehensive information with our AI-powered knowledge base that learns and improves from each interaction.',
+    href: 'https://www.shadcnblocks.com',
+    image:
+      'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/block-4.svg',
   },
   {
-    id: "feature-5",
-    title: "API Integration",
+    id: 'feature-5',
+    title: 'API Integration',
     description:
-      "Seamlessly integrate with existing systems through our robust API framework, enabling smooth data exchange and functionality extension.",
-    href: "https://www.shadcnblocks.com",
-    image: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/block-5.svg",
+      'Seamlessly integrate with existing systems through our robust API framework, enabling smooth data exchange and functionality extension.',
+    href: 'https://www.shadcnblocks.com',
+    image:
+      'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/block-5.svg',
   },
   {
-    id: "feature-6",
-    title: "Security & Compliance",
+    id: 'feature-6',
+    title: 'Security & Compliance',
     description:
-      "Ensure data security and compliance with industry standards through our comprehensive security measures and protocols.",
-    href: "https://www.shadcnblocks.com",
-    image: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/block-6.svg",
+      'Ensure data security and compliance with industry standards through our comprehensive security measures and protocols.',
+    href: 'https://www.shadcnblocks.com',
+    image:
+      'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/block-6.svg',
   },
   {
-    id: "feature-7",
-    title: "Customizable Dashboards",
+    id: 'feature-7',
+    title: 'Customizable Dashboards',
     description:
-      "Create and customize dashboards to visualize key metrics and performance indicators, providing real-time insights at a glance.",
-    href: "https://www.shadcnblocks.com",
-    image: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/block-4.svg",
+      'Create and customize dashboards to visualize key metrics and performance indicators, providing real-time insights at a glance.',
+    href: 'https://www.shadcnblocks.com',
+    image:
+      'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/block-4.svg',
   },
   {
-    id: "feature-8",
-    title: "Collaboration Tools",
+    id: 'feature-8',
+    title: 'Collaboration Tools',
     description:
-      "Enhance team collaboration with integrated tools for communication, project management, and file sharing.",
-    href: "https://www.shadcnblocks.com",
-    image: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/block-1.svg",
+      'Enhance team collaboration with integrated tools for communication, project management, and file sharing.',
+    href: 'https://www.shadcnblocks.com',
+    image:
+      'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/block-1.svg',
   },
 ];
 
@@ -100,9 +109,9 @@ const Gallery12 = () => {
       setCanScrollNext(carouselApi.canScrollNext());
     };
     updateSelection();
-    carouselApi.on("select", updateSelection);
+    carouselApi.on('select', updateSelection);
     return () => {
-      carouselApi.off("select", updateSelection);
+      carouselApi.off('select', updateSelection);
     };
   }, [carouselApi]);
 
@@ -114,7 +123,7 @@ const Gallery12 = () => {
           <h2 className="text-3xl font-medium tracking-tight md:text-4xl lg:text-5xl">
             Our features
           </h2>
-          <p className="mt-4 max-w-xl text-lg text-muted-foreground">
+          <p className="text-muted-foreground mt-4 max-w-xl text-lg">
             Lorem ipsum dolor sit amet consectetur adipiscing elidolor mattis
             sit phasellus mollis sit aliquam sit.
           </p>
@@ -125,16 +134,16 @@ const Gallery12 = () => {
           <Carousel
             setApi={setCarouselApi}
             opts={{
-              align: "start",
+              align: 'start',
               breakpoints: {
-                "(max-width: 768px)": {
+                '(max-width: 768px)': {
                   active: true,
                   dragFree: true,
                 },
-                "(min-width: 768px)": {
+                '(min-width: 768px)': {
                   active: true,
                 },
-                "(min-width: 1024px)": {
+                '(min-width: 1024px)': {
                   active: true,
                 },
               },
@@ -146,7 +155,7 @@ const Gallery12 = () => {
                   key={item.id}
                   className="pl-4 sm:basis-1/2 md:basis-1/3 xl:basis-1/4"
                 >
-                  <div className="group flex h-full flex-col justify-between rounded-xl border bg-muted">
+                  <div className="group bg-muted flex h-full flex-col justify-between rounded-xl border">
                     {/* Image Section */}
                     <div className="flex aspect-square items-center justify-center overflow-clip rounded-t-xl">
                       <img
@@ -162,7 +171,7 @@ const Gallery12 = () => {
                         <div className="mb-2 line-clamp-3 text-lg font-medium break-words md:text-xl lg:text-2xl">
                           {item.title}
                         </div>
-                        <div className="line-clamp-2 text-sm text-muted-foreground md:text-base">
+                        <div className="text-muted-foreground line-clamp-2 text-sm md:text-base">
                           {item.description}
                         </div>
                       </div>

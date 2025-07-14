@@ -1,4 +1,4 @@
-"use client";
+'use client';
 import {
   ArrowRight,
   BadgeCheck,
@@ -6,12 +6,11 @@ import {
   Pyramid,
   Sparkle,
   Zap,
-} from "lucide-react";
+} from 'lucide-react';
 
-import { cn } from "@/lib/utils";
-
-import { Badge } from "@/components/ui/badge";
-import { Button } from "@/components/ui/button";
+import { Badge } from '@/components/ui/badge';
+import { Button } from '@/components/ui/button';
+import { cn } from '@/lib/utils';
 
 interface DataItem {
   title: string;
@@ -22,31 +21,35 @@ interface DataItem {
 
 const DATA: DataItem[] = [
   {
-    title: "Seamless Integrations",
+    title: 'Seamless Integrations',
     description:
-      "Connect your favorite tools and services effortlessly for a unified workflow.",
-    image: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-1.svg",
+      'Connect your favorite tools and services effortlessly for a unified workflow.',
+    image:
+      'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-1.svg',
     icon: <Zap className="size-5" />,
   },
   {
-    title: "Advanced Analytics",
+    title: 'Advanced Analytics',
     description:
-      "Gain deep insights with powerful analytics to make data-driven decisions.",
-    image: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-2.svg",
+      'Gain deep insights with powerful analytics to make data-driven decisions.',
+    image:
+      'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-2.svg',
     icon: <Pyramid className="size-5" />,
   },
   {
-    title: "Smart Search & Filters",
+    title: 'Smart Search & Filters',
     description:
-      "Find exactly what you need with intelligent search and filtering options.",
-    image: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-3.svg",
+      'Find exactly what you need with intelligent search and filtering options.',
+    image:
+      'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-3.svg',
     icon: <Sparkle className="size-5" />,
   },
   {
-    title: "Enhanced Security",
+    title: 'Enhanced Security',
     description:
-      "Protect your data with top-notch security features and encryption.",
-    image: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-4.svg",
+      'Protect your data with top-notch security features and encryption.',
+    image:
+      'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-4.svg',
     icon: <BadgeCheck className="size-5" />,
   },
 ];
@@ -70,7 +73,7 @@ const Feature181 = () => {
           {DATA.map((feature, index) => (
             <div
               key={index}
-              className={cn("mt-0 flex flex-col border-l px-6 sm:mt-4 md:mt-6")}
+              className={cn('mt-0 flex flex-col border-l px-6 sm:mt-4 md:mt-6')}
             >
               {/* Masked Text */}
               <div className="relative">
@@ -81,7 +84,7 @@ const Feature181 = () => {
               </div>
 
               <p className="text-md mt-4 mb-2 font-semibold">{feature.title}</p>
-              <p className="text-md mb-6 text-muted-foreground">
+              <p className="text-md text-muted-foreground mb-6">
                 {feature.description}
               </p>
               <Badge variant="outline" className="w-fit gap-2 py-2">

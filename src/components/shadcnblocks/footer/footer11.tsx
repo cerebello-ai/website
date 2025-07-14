@@ -1,29 +1,29 @@
-import { Instagram, Linkedin, Twitter } from "lucide-react";
+import { Instagram, Linkedin, Twitter } from 'lucide-react';
 
 const sections = [
   {
-    title: "Product",
+    title: 'Product',
     links: [
-      { name: "Features", href: "#" },
-      { name: "Pricing", href: "#" },
-      { name: "Calendar", href: "#" },
-      { name: "Conferencing", href: "#" },
+      { name: 'Features', href: '#' },
+      { name: 'Pricing', href: '#' },
+      { name: 'Calendar', href: '#' },
+      { name: 'Conferencing', href: '#' },
     ],
   },
   {
-    title: "Company",
+    title: 'Company',
     links: [
-      { name: "Contact", href: "#" },
-      { name: "Faq", href: "#" },
-      { name: "Blog", href: "#" },
-      { name: "Pricing", href: "#" },
+      { name: 'Contact', href: '#' },
+      { name: 'Faq', href: '#' },
+      { name: 'Blog', href: '#' },
+      { name: 'Pricing', href: '#' },
     ],
   },
   {
-    title: "Legal",
+    title: 'Legal',
     links: [
-      { name: "Terms", href: "#" },
-      { name: "Privacy", href: "#" },
+      { name: 'Terms', href: '#' },
+      { name: 'Privacy', href: '#' },
     ],
   },
 ];
@@ -38,10 +38,10 @@ interface Footer11Props {
 }
 const Footer11 = ({
   logo = {
-    url: "https://www.shadcnblocks.com",
-    src: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/shadcnblockscom-icon.svg",
-    alt: "logo",
-    title: "Shadcnblocks.com",
+    url: 'https://www.shadcnblocks.com',
+    src: 'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/shadcnblockscom-icon.svg',
+    alt: 'logo',
+    title: 'Shadcnblocks.com',
   },
 }: Footer11Props) => {
   return (

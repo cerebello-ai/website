@@ -1,93 +1,118 @@
-import { Cpu, LayoutList, LocateFixed, Rocket, Users } from "lucide-react";
+import { Cpu, LayoutList, LocateFixed, Rocket, Users } from 'lucide-react';
 
-import { cn } from "@/lib/utils";
+import { TimelineProps } from '../types/common';
 
-import { Badge } from "@/components/ui/badge";
+import { Badge } from '@/components/ui/badge';
+import { cn } from '@/lib/utils';
 
-const DATA = [
+const DEFAULT_DATA = [
   {
-    title: "Get Organized",
+    title: 'Get Organized',
     description:
-      "Start strong by syncing your calendars and tools like Google Calendar, Trello, and Slack in one place.",
+      'Start strong by syncing your calendars and tools like Google Calendar, Trello, and Slack in one place.',
     icon: LayoutList,
     image: {
-      src: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-1.svg",
-      alt: "Get Organized",
+      src: 'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-1.svg',
+      alt: 'Get Organized',
     },
   },
   {
-    title: "Track Progress",
+    title: 'Track Progress',
     description:
-      "Monitor your performance with real-time dashboards and detailed analytics. Stay ahead with automated reports.",
+      'Monitor your performance with real-time dashboards and detailed analytics. Stay ahead with automated reports.',
     icon: LocateFixed,
     image: {
-      src: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-2.svg",
-      alt: "Track Progress",
+      src: 'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-2.svg',
+      alt: 'Track Progress',
     },
     reverse: true,
   },
   {
-    title: "Collaborate Seamlessly",
+    title: 'Collaborate Seamlessly',
     description:
-      "Empower your team with shared dashboards and instant communication tools. Keep everyone aligned with integrated platforms.",
+      'Empower your team with shared dashboards and instant communication tools. Keep everyone aligned with integrated platforms.',
     icon: Users,
     image: {
-      src: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-3.svg",
-      alt: "Collaborate Seamlessly",
+      src: 'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-3.svg',
+      alt: 'Collaborate Seamlessly',
     },
   },
   {
-    title: "Integrate Seamlessly",
+    title: 'Integrate Seamlessly',
     description:
-      "Integrate seamlessly across multiple platforms to enable smooth, automated task handovers.",
+      'Integrate seamlessly across multiple platforms to enable smooth, automated task handovers.',
     icon: Cpu,
     image: {
-      src: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-4.svg",
-      alt: "Integrate Seamlessly",
+      src: 'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-4.svg',
+      alt: 'Integrate Seamlessly',
     },
     reverse: true,
   },
 ];
 
-const Timeline4 = () => {
+interface Timeline4Props extends TimelineProps {
+  badge?: string;
+  badgeIcon?: any;
+}
+
+const Timeline4 = ({
+  title = 'Accelerate your planning journey',
+  description = 'Take control of your workflow step-by-step with smart tools, actionable insights, and seamless collaboration',
+  badge = 'Accelerate',
+  badgeIcon = Rocket,
+  steps,
+}: Timeline4Props) => {
+  const data = steps
+    ? steps.map((step, index) => ({
+        title: step.title,
+        description: step.description,
+        icon: LayoutList, // Default icon, could be customized
+        image: {
+          src: `https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-${index + 1}.svg`,
+          alt: step.title,
+        },
+        reverse: index % 2 === 1,
+      }))
+    : DEFAULT_DATA;
+
+  const BadgeIcon = badgeIcon;
   return (
     <section className="py-32">
       <div className="border-y">
         <div className="container flex flex-col gap-6 border-x py-4 max-lg:border-x lg:py-8">
           <Badge
             variant="outline"
-            className="w-fit gap-1 bg-card px-3 text-sm font-normal tracking-tight shadow-sm"
+            className="bg-card w-fit gap-1 px-3 text-sm font-normal tracking-tight shadow-sm"
           >
-            <Rocket className="size-4" />
-            <span>Accelerate</span>
+            <BadgeIcon className="size-4" />
+            <span>{badge}</span>
           </Badge>
           <h2 className="text-3xl leading-tight tracking-tight md:text-4xl lg:text-6xl">
-            Accelerate your planning journey
+            {title}
           </h2>
-          <p className="max-w-[600px] tracking-[-0.32px] text-muted-foreground">
-            Take control of your workflow step-by-step with smart tools,
-            actionable insights, and seamless collaboration
+          <p className="text-muted-foreground max-w-[600px] tracking-[-0.32px]">
+            {description}
           </p>
         </div>
       </div>
 
       <div className="container overflow-hidden border-x pb-40 lg:pt-20 [&>*:last-child]:pb-20 [&>div>div:first-child]:pt-20!">
-        {DATA.map((item, index) => (
+        {data.map((item, index) => (
           <div key={index} className="relative flex">
             <div
-              className={`flex w-full justify-center px-1 py-10 text-end md:gap-6 lg:gap-10 ${item?.reverse ? "lg:flex-row-reverse lg:text-start" : ""} `}
+              className={`flex w-full justify-center px-1 py-10 text-end md:gap-6 lg:gap-10 ${item?.reverse ? 'lg:flex-row-reverse lg:text-start' : ''} `}
             >
               <div className="flex-1 max-lg:hidden">
                 <h3 className="text-2xl tracking-[-0.96px]">{item.title}</h3>
                 <p
-                  className={`mt-2.5 max-w-[300px] tracking-[-0.32px] text-balance text-muted-foreground ${item?.reverse ? "" : "ml-auto"}`}
+                  className={`text-muted-foreground mt-2.5 max-w-[300px] tracking-[-0.32px] text-balance ${item?.reverse ? '' : 'ml-auto'}`}
                 >
                   {item.description}
                 </p>
               </div>
-              <div className="z-[-1] size-fit -translate-y-5 bg-background p-4 max-lg:-translate-x-4">
-                <div className="rounded-[10px] border bg-card p-[5px] shadow-md">
-                  <div className="size-fit rounded-md border bg-muted p-1">
+              <div className="bg-background z-[-1] size-fit -translate-y-5 p-4 max-lg:-translate-x-4">
+                <div className="bg-card rounded-[10px] border p-[5px] shadow-md">
+                  <div className="bg-muted size-fit rounded-md border p-1">
                     <item.icon className="size-4 shrink-0" />
                   </div>
                 </div>
@@ -95,12 +120,12 @@ const Timeline4 = () => {
               <div className="flex-1 max-lg:-translate-x-4">
                 <div className="text-start lg:pointer-events-none lg:hidden">
                   <h3 className="text-2xl tracking-[-0.96px]">{item.title}</h3>
-                  <p className="mt-2.5 mb-10 max-w-[300px] tracking-[-0.32px] text-balance text-muted-foreground">
+                  <p className="text-muted-foreground mt-2.5 mb-10 max-w-[300px] tracking-[-0.32px] text-balance">
                     {item.description}
                   </p>
                 </div>
                 <div className="flex items-start justify-start">
-                  <div className={` ${item?.reverse ? "lg:ml-auto" : ""}`}>
+                  <div className={` ${item?.reverse ? 'lg:ml-auto' : ''}`}>
                     <div className="px-6 lg:px-10">
                       <DiagonalPattern className="h-6 lg:h-10" />
                     </div>
@@ -123,10 +148,10 @@ const Timeline4 = () => {
               </div>
             </div>
             <div
-              className={`absolute z-[-2] h-full w-[3px] translate-x-5 rounded-full lg:left-1/2 lg:-translate-x-1/2 ${index === DATA.length - 1 ? "bg-linear-to-b from-foreground/10 via-foreground/10 to-transparent" : "bg-foreground/10"}`}
+              className={`absolute z-[-2] h-full w-[3px] translate-x-5 rounded-full lg:left-1/2 lg:-translate-x-1/2 ${index === data.length - 1 ? 'from-foreground/10 via-foreground/10 bg-linear-to-b to-transparent' : 'bg-foreground/10'}`}
             >
               {index == 0 && (
-                <div className="h-4 w-[3px] -translate-y-full bg-linear-to-b from-transparent to-foreground/10"></div>
+                <div className="to-foreground/10 h-4 w-[3px] -translate-y-full bg-linear-to-b from-transparent"></div>
               )}
             </div>
           </div>
@@ -144,7 +169,7 @@ export { Timeline4 };
 
 const DiagonalPattern = ({
   className,
-  patternColor = "hsl(var(--foreground))",
+  patternColor = 'hsl(var(--foreground))',
   patternOpacity = 0.15,
 }: {
   className?: string;
@@ -155,7 +180,7 @@ const DiagonalPattern = ({
 
   return (
     <div
-      className={cn("h-full w-full border-2 border-dashed", className)}
+      className={cn('h-full w-full border-2 border-dashed', className)}
       style={{
         backgroundImage: svgPattern,
       }}

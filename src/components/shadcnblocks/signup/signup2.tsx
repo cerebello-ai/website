@@ -1,8 +1,8 @@
-import { FcGoogle } from "react-icons/fc";
+import { FcGoogle } from 'react-icons/fc';
 
-import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
-import { Label } from "@/components/ui/label";
+import { Button } from '@/components/ui/button';
+import { Input } from '@/components/ui/input';
+import { Label } from '@/components/ui/label';
 
 interface Signup2Props {
   heading?: string;
@@ -20,18 +20,18 @@ interface Signup2Props {
 }
 
 const Signup2 = ({
-  heading = "Signup",
-  subheading = "Create a new account",
+  heading = 'Signup',
+  subheading = 'Create a new account',
   logo = {
-    url: "https://www.shadcnblocks.com",
-    src: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/block-1.svg",
-    alt: "logo",
-    title: "shadcnblocks.com",
+    url: 'https://www.shadcnblocks.com',
+    src: 'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/block-1.svg',
+    alt: 'logo',
+    title: 'shadcnblocks.com',
   },
-  googleText = "Sign up with Google",
-  signupText = "Create an account",
-  loginText = "Already have an account?",
-  loginUrl = "#",
+  googleText = 'Sign up with Google',
+  signupText = 'Create an account',
+  loginText = 'Already have an account?',
+  loginUrl = '#',
 }: Signup2Props) => {
   return (
     <section className="bg-muted h-screen">

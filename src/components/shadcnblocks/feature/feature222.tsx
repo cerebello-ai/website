@@ -1,7 +1,7 @@
-"use client";
-import { ArrowRight } from "lucide-react";
+'use client';
+import { ArrowRight } from 'lucide-react';
 
-import { Button } from "@/components/ui/button";
+import { Button } from '@/components/ui/button';
 
 type stat = {
   number: string;
@@ -18,67 +18,73 @@ interface CardData {
 const LIST: Array<CardData> = [
   {
     title: "TechCorp's Quantum Leap in AI",
-    link: "#",
-    background: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/photos/simone-hutsch-5oYbG-sEImY-unsplash.jpg",
+    link: '#',
+    background:
+      'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/photos/simone-hutsch-5oYbG-sEImY-unsplash.jpg',
     stats: [
       {
-        number: "30%",
-        text: "increase in processing speed",
+        number: '30%',
+        text: 'increase in processing speed',
       },
     ],
   },
   {
     title: "GreenTech's Path to Carbon Neutrality by 2025",
-    link: "#",
-    background: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/photos/simone-hutsch-o9F8dRoSucM-unsplash.jpg",
+    link: '#',
+    background:
+      'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/photos/simone-hutsch-o9F8dRoSucM-unsplash.jpg',
     stats: [
       {
-        number: "50%",
-        text: "reduction in carbon emissions",
+        number: '50%',
+        text: 'reduction in carbon emissions',
       },
     ],
   },
   {
     title: "FinServe's Blockchain Security Revolution",
-    link: "#",
-    background: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/photos/simone-hutsch-K1W9OjEgacI-unsplash.jpg",
+    link: '#',
+    background:
+      'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/photos/simone-hutsch-K1W9OjEgacI-unsplash.jpg',
     stats: [
       {
-        number: "60%",
-        text: "decrease in fraud cases",
+        number: '60%',
+        text: 'decrease in fraud cases',
       },
     ],
   },
   {
     title: "EduWorld's VR Learning Transformation",
-    link: "#",
-    background: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/photos/simone-hutsch-gDmVqxZt1hg-unsplash.jpg",
+    link: '#',
+    background:
+      'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/photos/simone-hutsch-gDmVqxZt1hg-unsplash.jpg',
     stats: [
       {
-        number: "80%",
-        text: "increase in student engagement",
+        number: '80%',
+        text: 'increase in student engagement',
       },
     ],
   },
   {
     title: "HealthPlus's Telemedicine Innovation",
-    link: "#",
-    background: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/photos/simone-hutsch-sutfgh5DNIU-unsplash.jpg",
+    link: '#',
+    background:
+      'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/photos/simone-hutsch-sutfgh5DNIU-unsplash.jpg',
     stats: [
       {
-        number: "25%",
-        text: "increase in patient satisfaction",
+        number: '25%',
+        text: 'increase in patient satisfaction',
       },
     ],
   },
   {
     title: "Ecolands's Sustainable Land Development",
-    link: "#",
-    background: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/photos/simone-hutsch-ZXLGP2Qh3Mo-unsplash.jpg",
+    link: '#',
+    background:
+      'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/photos/simone-hutsch-ZXLGP2Qh3Mo-unsplash.jpg',
     stats: [
       {
-        number: "30%",
-        text: "increase in land productivity",
+        number: '30%',
+        text: 'increase in land productivity',
       },
     ],
   },

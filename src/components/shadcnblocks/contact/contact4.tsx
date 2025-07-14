@@ -1,6 +1,6 @@
-"use client";
+'use client';
 
-import Fade from "embla-carousel-fade";
+import Fade from 'embla-carousel-fade';
 
 import {
   Carousel,
@@ -8,14 +8,14 @@ import {
   CarouselItem,
   CarouselNext,
   CarouselPrevious,
-} from "@/components/ui/carousel";
+} from '@/components/ui/carousel';
 
 const Contact4 = () => {
   return (
     <section className="py-32">
       <div className="container">
         <div className="max-w-xl">
-          <h1 className="mb-3 text-xl font-medium text-muted-foreground">
+          <h1 className="text-muted-foreground mb-3 text-xl font-medium">
             Contact us
           </h1>
           <p className="text-4xl font-medium text-balance md:text-5xl">
@@ -77,7 +77,7 @@ const Contact4 = () => {
                     alt="placeholder"
                     className="h-full w-full rounded-t-lg object-cover md:rounded-lg"
                   />
-                  <div className="bottom-8 left-8 flex flex-col justify-between gap-6 rounded-b-lg border-x border-b bg-background p-6 md:absolute md:max-w-96 md:rounded-lg md:border">
+                  <div className="bg-background bottom-8 left-8 flex flex-col justify-between gap-6 rounded-b-lg border-x border-b p-6 md:absolute md:max-w-96 md:rounded-lg md:border">
                     <div>
                       <h2 className="mb-4 text-xl font-medium md:text-2xl">
                         4 Locations Worldwide
@@ -99,7 +99,7 @@ const Contact4 = () => {
                     alt="placeholder"
                     className="h-full w-full rounded-t-lg object-cover md:rounded-lg"
                   />
-                  <div className="bottom-8 left-8 flex flex-col justify-between gap-6 rounded-b-lg border-x border-b bg-background p-6 md:absolute md:max-w-96 md:rounded-lg md:border">
+                  <div className="bg-background bottom-8 left-8 flex flex-col justify-between gap-6 rounded-b-lg border-x border-b p-6 md:absolute md:max-w-96 md:rounded-lg md:border">
                     <div>
                       <h2 className="mb-4 text-xl font-medium md:text-2xl">
                         New York, USA
@@ -121,7 +121,7 @@ const Contact4 = () => {
                     alt="placeholder"
                     className="h-full w-full rounded-t-lg object-cover md:rounded-lg"
                   />
-                  <div className="bottom-8 left-8 flex flex-col justify-between gap-6 rounded-b-lg border-x border-b bg-background p-6 md:absolute md:max-w-96 md:rounded-lg md:border">
+                  <div className="bg-background bottom-8 left-8 flex flex-col justify-between gap-6 rounded-b-lg border-x border-b p-6 md:absolute md:max-w-96 md:rounded-lg md:border">
                     <div>
                       <h2 className="mb-4 text-xl font-medium md:text-2xl">
                         Paris, France
@@ -143,7 +143,7 @@ const Contact4 = () => {
                     alt="placeholder"
                     className="h-full w-full rounded-t-lg object-cover md:rounded-lg"
                   />
-                  <div className="bottom-8 left-8 flex flex-col justify-between gap-6 rounded-b-lg border-x border-b bg-background p-6 md:absolute md:max-w-96 md:rounded-lg md:border">
+                  <div className="bg-background bottom-8 left-8 flex flex-col justify-between gap-6 rounded-b-lg border-x border-b p-6 md:absolute md:max-w-96 md:rounded-lg md:border">
                     <div>
                       <h2 className="mb-4 text-xl font-medium md:text-2xl">
                         Kyiv, Ukraine
@@ -165,7 +165,7 @@ const Contact4 = () => {
                     alt="placeholder"
                     className="h-full w-full rounded-t-lg object-cover md:rounded-lg"
                   />
-                  <div className="bottom-8 left-8 flex flex-col justify-between gap-6 rounded-b-lg border-x border-b bg-background p-6 md:absolute md:max-w-96 md:rounded-lg md:border">
+                  <div className="bg-background bottom-8 left-8 flex flex-col justify-between gap-6 rounded-b-lg border-x border-b p-6 md:absolute md:max-w-96 md:rounded-lg md:border">
                     <div>
                       <h2 className="mb-4 text-xl font-medium md:text-2xl">
                         Singapore, Singapore

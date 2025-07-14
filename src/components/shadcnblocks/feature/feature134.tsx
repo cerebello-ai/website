@@ -1,6 +1,6 @@
-import { ArrowRight, Flame } from "lucide-react";
+import { ArrowRight, Flame } from 'lucide-react';
 
-import { Badge } from "@/components/ui/badge";
+import { Badge } from '@/components/ui/badge';
 
 const Feature134 = () => {
   return (
@@ -17,7 +17,7 @@ const Feature134 = () => {
           <h2 className="text-center text-3xl font-semibold lg:text-4xl">
             Enhance Your Workflow
           </h2>
-          <p className="text-center text-muted-foreground lg:text-lg">
+          <p className="text-muted-foreground text-center lg:text-lg">
             Discover powerful tools to increase efficiency, simplify tasks, and
             reach your goals faster.
           </p>
@@ -29,7 +29,7 @@ const Feature134 = () => {
                 <h3 className="font-medium md:text-lg">
                   Easy Event Scheduling
                 </h3>
-                <p className="text-sm text-muted-foreground md:text-base">
+                <p className="text-muted-foreground text-sm md:text-base">
                   Plan effortlessly with integrated scheduling for smooth
                   collaboration.
                 </p>
@@ -53,7 +53,7 @@ const Feature134 = () => {
             <div className="flex justify-between p-6">
               <div className="flex flex-col gap-1">
                 <h3 className="font-medium md:text-lg">Unified Messaging</h3>
-                <p className="text-sm text-muted-foreground md:text-base">
+                <p className="text-muted-foreground text-sm md:text-base">
                   Keep everyone connected with seamless communication tools.
                 </p>
               </div>
@@ -73,7 +73,7 @@ const Feature134 = () => {
             <div className="flex justify-between p-6">
               <div className="flex flex-col gap-1">
                 <h3 className="font-medium md:text-lg">Smart Alerts</h3>
-                <p className="text-sm text-muted-foreground md:text-base">
+                <p className="text-muted-foreground text-sm md:text-base">
                   Get timely updates to stay organized and ahead.
                 </p>
               </div>
@@ -93,7 +93,7 @@ const Feature134 = () => {
             <div className="flex justify-between p-6">
               <div className="flex flex-col gap-1">
                 <h3 className="font-medium md:text-lg">Fast Feedback Cycles</h3>
-                <p className="text-sm text-muted-foreground md:text-base">
+                <p className="text-muted-foreground text-sm md:text-base">
                   Speed up progress with quick input and decisions.
                 </p>
               </div>
@@ -113,7 +113,7 @@ const Feature134 = () => {
             <div className="flex justify-between p-6">
               <div className="flex flex-col gap-1">
                 <h3 className="font-medium md:text-lg">File Sharing</h3>
-                <p className="text-sm text-muted-foreground md:text-base">
+                <p className="text-muted-foreground text-sm md:text-base">
                   Share and retrieve important documents with ease.
                 </p>
               </div>

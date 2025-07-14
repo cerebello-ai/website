@@ -1,13 +1,13 @@
-import { ArrowRight } from "lucide-react";
+import { ArrowRight } from 'lucide-react';
 
-import { Button } from "@/components/ui/button";
+import { Button } from '@/components/ui/button';
 
 const About7 = () => {
   return (
     <section className="bg-mint-[#E9EDE8] dark:bg-mint-[#2F332E] py-32">
       <div className="container">
         <div className="max-w-xl lg:translate-x-32">
-          <h2 className="mb-4 text-2xl font-semibold text-muted-foreground md:text-3xl">
+          <h2 className="text-muted-foreground mb-4 text-2xl font-semibold md:text-3xl">
             About Us
           </h2>
 

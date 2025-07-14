@@ -1,7 +1,7 @@
-"use client";
-import { ArrowRight, BadgeCheck, Pyramid, Sparkle, Zap } from "lucide-react";
+'use client';
+import { ArrowRight, BadgeCheck, Pyramid, Sparkle, Zap } from 'lucide-react';
 
-import { Button } from "@/components/ui/button";
+import { Button } from '@/components/ui/button';
 
 interface DataItem {
   title: string;
@@ -12,24 +12,27 @@ interface DataItem {
 
 const DATA: DataItem[] = [
   {
-    title: "Seamless Integrations",
+    title: 'Seamless Integrations',
     description:
-      "Connect your favorite tools and services effortlessly for a unified workflow.",
-    image: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-1.svg",
+      'Connect your favorite tools and services effortlessly for a unified workflow.',
+    image:
+      'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-1.svg',
     icon: <Zap className="size-6" />,
   },
   {
-    title: "Advanced Analytics",
+    title: 'Advanced Analytics',
     description:
-      "Gain deep insights with powerful analytics to make data-driven decisions.",
-    image: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-2.svg",
+      'Gain deep insights with powerful analytics to make data-driven decisions.',
+    image:
+      'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-2.svg',
     icon: <Pyramid className="size-6" />,
   },
   {
-    title: "Smart Search & Filters",
+    title: 'Smart Search & Filters',
     description:
-      "Find exactly what you need with intelligent search and filtering options.",
-    image: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-3.svg",
+      'Find exactly what you need with intelligent search and filtering options.',
+    image:
+      'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-3.svg',
     icon: <Sparkle className="size-6" />,
   },
 ];
@@ -63,7 +66,7 @@ const Feature182 = () => {
                 className="h-64 w-full rounded-lg object-cover"
               />
               <p className="mt-4 mb-2 text-xl font-bold">{feature.title}</p>
-              <p className="mb-6 text-sm text-muted-foreground">
+              <p className="text-muted-foreground mb-6 text-sm">
                 {feature.description}
               </p>
               <div className="w-fit rounded-lg border p-2 shadow-sm">

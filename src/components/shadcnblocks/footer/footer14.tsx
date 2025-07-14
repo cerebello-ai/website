@@ -1,39 +1,39 @@
-import { FaFacebook, FaLinkedin, FaXTwitter } from "react-icons/fa6";
+import { FaFacebook, FaLinkedin, FaXTwitter } from 'react-icons/fa6';
 
 const navigation = [
   {
-    title: "Products",
+    title: 'Products',
     links: [
-      { name: "VAR", href: "#" },
-      { name: "Credit Transfers", href: "#" },
-      { name: "Credit Accounts", href: "#" },
-      { name: "Loan Origination", href: "#" },
-      { name: "Loan Purchase", href: "#" },
+      { name: 'VAR', href: '#' },
+      { name: 'Credit Transfers', href: '#' },
+      { name: 'Credit Accounts', href: '#' },
+      { name: 'Loan Origination', href: '#' },
+      { name: 'Loan Purchase', href: '#' },
     ],
   },
   {
-    title: "Support",
+    title: 'Support',
     links: [
-      { name: "Pricing", href: "#" },
-      { name: "FAQ", href: "#" },
-      { name: "Demo", href: "#" },
-      { name: "Contact", href: "#" },
+      { name: 'Pricing', href: '#' },
+      { name: 'FAQ', href: '#' },
+      { name: 'Demo', href: '#' },
+      { name: 'Contact', href: '#' },
     ],
   },
   {
-    title: "Company",
+    title: 'Company',
     links: [
-      { name: "About", href: "#" },
-      { name: "Terms of Service", href: "#" },
-      { name: "Privacy Policy", href: "#" },
+      { name: 'About', href: '#' },
+      { name: 'Terms of Service', href: '#' },
+      { name: 'Privacy Policy', href: '#' },
     ],
   },
 ];
 
 const socialLinks = [
-  { name: "Twitter", icon: FaXTwitter, href: "https://twitter.com" },
-  { name: "Facebook", icon: FaFacebook, href: "https://facebook.com" },
-  { name: "LinkedIn", icon: FaLinkedin, href: "https://linkedin.com" },
+  { name: 'Twitter', icon: FaXTwitter, href: 'https://twitter.com' },
+  { name: 'Facebook', icon: FaFacebook, href: 'https://facebook.com' },
+  { name: 'LinkedIn', icon: FaLinkedin, href: 'https://linkedin.com' },
 ];
 
 export const Footer14 = () => {
@@ -50,7 +50,7 @@ export const Footer14 = () => {
                 className="mb-6 h-8 dark:invert"
               />
             </a>
-            <p className="mb-8 text-base text-muted-foreground">
+            <p className="text-muted-foreground mb-8 text-base">
               Building financial solutions for businesses and individuals around
               the globe.
             </p>
@@ -60,9 +60,9 @@ export const Footer14 = () => {
               <input
                 type="email"
                 placeholder="Your email"
-                className="flex h-12 flex-1 rounded-md border border-input bg-background px-4 py-2 text-base ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:outline-none disabled:cursor-not-allowed disabled:opacity-50 sm:h-10 sm:text-sm"
+                className="border-input bg-background ring-offset-background placeholder:text-muted-foreground focus-visible:ring-ring flex h-12 flex-1 rounded-md border px-4 py-2 text-base file:border-0 file:bg-transparent file:text-sm file:font-medium focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:outline-none disabled:cursor-not-allowed disabled:opacity-50 sm:h-10 sm:text-sm"
               />
-              <button className="inline-flex h-12 items-center justify-center rounded-md bg-primary px-6 py-2 text-base font-medium whitespace-nowrap text-primary-foreground ring-offset-background transition-colors hover:bg-primary/90 focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:outline-none disabled:pointer-events-none disabled:opacity-50 sm:h-10 sm:px-4 sm:text-sm">
+              <button className="bg-primary text-primary-foreground ring-offset-background hover:bg-primary/90 focus-visible:ring-ring inline-flex h-12 items-center justify-center rounded-md px-6 py-2 text-base font-medium whitespace-nowrap transition-colors focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:outline-none disabled:pointer-events-none disabled:opacity-50 sm:h-10 sm:px-4 sm:text-sm">
                 Subscribe
               </button>
             </div>
@@ -81,7 +81,7 @@ export const Footer14 = () => {
                       <li key={link.name}>
                         <a
                           href={link.href}
-                          className="inline-block py-1 text-muted-foreground transition-colors duration-200 hover:text-foreground active:text-primary"
+                          className="text-muted-foreground hover:text-foreground active:text-primary inline-block py-1 transition-colors duration-200"
                         >
                           {link.name}
                         </a>
@@ -102,7 +102,7 @@ export const Footer14 = () => {
                 key={link.href}
                 href={link.href}
                 aria-label={`Visit our ${link.name} page`}
-                className="rounded-full p-3 text-muted-foreground transition-all duration-200 hover:bg-accent hover:text-foreground active:bg-accent/70"
+                className="text-muted-foreground hover:bg-accent hover:text-foreground active:bg-accent/70 rounded-full p-3 transition-all duration-200"
                 rel="noopener noreferrer"
                 target="_blank"
               >
@@ -112,11 +112,11 @@ export const Footer14 = () => {
           </div>
 
           {/* Copyright - Below on mobile, left on desktop */}
-          <p className="order-2 text-center text-sm text-muted-foreground sm:text-left md:order-1">
-            © {new Date().getFullYear()} Charter. All rights reserved.{" "}
+          <p className="text-muted-foreground order-2 text-center text-sm sm:text-left md:order-1">
+            © {new Date().getFullYear()} Charter. All rights reserved.{' '}
             <a
               href="https://shadcnblocks.com"
-              className="text-foreground underline underline-offset-4 transition-colors hover:text-primary"
+              className="text-foreground hover:text-primary underline underline-offset-4 transition-colors"
               target="_blank"
             >
               Shadcnblocks.com

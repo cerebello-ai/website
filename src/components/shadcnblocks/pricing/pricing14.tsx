@@ -1,14 +1,14 @@
-import { Check } from "lucide-react";
+import { Check } from 'lucide-react';
 
-import { Badge } from "@/components/ui/badge";
-import { Button } from "@/components/ui/button";
-import { Separator } from "@/components/ui/separator";
+import { Badge } from '@/components/ui/badge';
+import { Button } from '@/components/ui/button';
+import { Separator } from '@/components/ui/separator';
 
 const Pricing14 = () => {
   return (
     <section className="py-32">
       <div className="container">
-        <div className="mx-auto max-w-5xl rounded-lg bg-muted p-6 md:p-10">
+        <div className="bg-muted mx-auto max-w-5xl rounded-lg p-6 md:p-10">
           <div className="mb-12 flex items-center gap-3">
             <span className="text-2xl font-bold">Standard Plan</span>
             <Badge
@@ -31,7 +31,7 @@ const Pricing14 = () => {
           </div>
           <Separator className="my-8" />
           <div>
-            <p className="mb-5 text-muted-foreground">
+            <p className="text-muted-foreground mb-5">
               Launch your project with the following features:
             </p>
             <div className="flex flex-col justify-between gap-10 md:flex-row md:gap-20">

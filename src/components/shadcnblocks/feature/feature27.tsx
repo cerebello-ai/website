@@ -1,4 +1,4 @@
-import { Badge } from "@/components/ui/badge";
+import { Badge } from '@/components/ui/badge';
 
 const Feature27 = () => {
   return (
@@ -9,7 +9,7 @@ const Feature27 = () => {
           <h2 className="mb-2 text-center text-3xl font-semibold lg:text-4xl">
             Built awesome websites with our blocks
           </h2>
-          <p className="text-center text-muted-foreground lg:text-lg">
+          <p className="text-muted-foreground text-center lg:text-lg">
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolores
             itaque modi quos hic placeat laudantium inventore reiciendis
             cupiditate, facilis aliquam.
@@ -50,7 +50,7 @@ const Feature27 = () => {
             <img
               src="https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-3.svg "
               alt="placholder"
-              className="aspect-video max-h-[480px] w-full rounded-lg border bg-muted"
+              className="bg-muted aspect-video max-h-[480px] w-full rounded-lg border"
             />
             <div className="px-4 pt-10">
               <h3 className="font-medium">Fully customizable</h3>

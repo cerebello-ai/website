@@ -1,4 +1,4 @@
-import { Separator } from "@/components/ui/separator";
+import { Separator } from '@/components/ui/separator';
 
 const Feature207 = () => {
   return (
@@ -12,7 +12,7 @@ const Feature207 = () => {
           <Separator />
           <div className="py-8">
             <div className="flex gap-4 md:items-center">
-              <span className="mt-0.5 font-mono text-muted-foreground md:mt-0">
+              <span className="text-muted-foreground mt-0.5 font-mono md:mt-0">
                 01
               </span>
               <div className="grid items-center gap-3 md:grid-cols-2 md:gap-8">
@@ -28,7 +28,7 @@ const Feature207 = () => {
           <Separator />
           <div className="py-8">
             <div className="flex gap-4 md:items-center">
-              <span className="mt-0.5 font-mono text-muted-foreground md:mt-0">
+              <span className="text-muted-foreground mt-0.5 font-mono md:mt-0">
                 02
               </span>
               <div className="grid items-center gap-3 md:grid-cols-2 md:gap-8">
@@ -44,7 +44,7 @@ const Feature207 = () => {
           <Separator />
           <div className="py-8">
             <div className="flex gap-4 md:items-center">
-              <span className="mt-0.5 font-mono text-muted-foreground md:mt-0">
+              <span className="text-muted-foreground mt-0.5 font-mono md:mt-0">
                 03
               </span>
               <div className="grid items-center gap-3 md:grid-cols-2 md:gap-8">

@@ -1,4 +1,4 @@
-import { ArrowRight } from "lucide-react";
+import { ArrowRight } from 'lucide-react';
 
 const Feature75 = () => {
   return (
@@ -8,7 +8,7 @@ const Feature75 = () => {
           <h2 className="mb-3 text-xl font-semibold md:mb-4 md:text-4xl lg:mb-6">
             Feature name
           </h2>
-          <p className="mb-8 text-muted-foreground lg:text-lg">
+          <p className="text-muted-foreground mb-8 lg:text-lg">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Elig
             doloremque mollitia fugiat omnis! Porro facilis quo animi
             consequatur. Explicabo.
@@ -17,49 +17,49 @@ const Feature75 = () => {
         <div className="grid gap-y-5 md:col-span-6 md:gap-y-[1.875rem] lg:col-start-7">
           <a
             href="#"
-            className="group flex flex-col justify-center overflow-clip rounded-2xl bg-accent px-6 py-8 md:px-8 md:py-10 lg:px-10 lg:py-12"
+            className="group bg-accent flex flex-col justify-center overflow-clip rounded-2xl px-6 py-8 md:px-8 md:py-10 lg:px-10 lg:py-12"
           >
             <p className="mb-3 text-xs font-medium tracking-wider uppercase">
               Tag Line
             </p>
-            <p className="mb-12 font-semibold text-muted-foreground lg:text-xl">
+            <p className="text-muted-foreground mb-12 font-semibold lg:text-xl">
               Nam vitae molestie arcu. Quisque eu libero orci. Aliquam imperdiet
               magna nec massa consectetur, id interdum ante congue.
             </p>
-            <div className="flex w-fit items-center gap-4 rounded-full border border-primary px-6 py-4 group-hover:bg-primary group-hover:text-primary-foreground">
-              <ArrowRight className="size-4 transition-transform group-hover:translate-x-1" />{" "}
+            <div className="border-primary group-hover:bg-primary group-hover:text-primary-foreground flex w-fit items-center gap-4 rounded-full border px-6 py-4">
+              <ArrowRight className="size-4 transition-transform group-hover:translate-x-1" />{' '}
               Learn more
             </div>
           </a>
           <a
             href="#"
-            className="group flex flex-col justify-center overflow-clip rounded-2xl bg-accent px-6 py-8 md:px-8 md:py-10 lg:px-10 lg:py-12"
+            className="group bg-accent flex flex-col justify-center overflow-clip rounded-2xl px-6 py-8 md:px-8 md:py-10 lg:px-10 lg:py-12"
           >
             <p className="mb-3 text-xs font-medium tracking-wider uppercase">
               Tag Line
             </p>
-            <p className="mb-12 font-semibold text-muted-foreground lg:text-xl">
+            <p className="text-muted-foreground mb-12 font-semibold lg:text-xl">
               Nam vitae molestie arcu. Quisque eu libero orci. Aliquam imperdiet
               magna nec massa consectetur, id interdum ante congue.
             </p>
-            <div className="flex w-fit items-center gap-4 rounded-full border border-primary px-6 py-4 group-hover:bg-primary group-hover:text-primary-foreground">
-              <ArrowRight className="size-4 transition-transform group-hover:translate-x-1" />{" "}
+            <div className="border-primary group-hover:bg-primary group-hover:text-primary-foreground flex w-fit items-center gap-4 rounded-full border px-6 py-4">
+              <ArrowRight className="size-4 transition-transform group-hover:translate-x-1" />{' '}
               Learn more
             </div>
           </a>
           <a
             href="#"
-            className="group flex flex-col justify-center overflow-clip rounded-2xl bg-accent px-6 py-8 md:px-8 md:py-10 lg:px-10 lg:py-12"
+            className="group bg-accent flex flex-col justify-center overflow-clip rounded-2xl px-6 py-8 md:px-8 md:py-10 lg:px-10 lg:py-12"
           >
             <p className="mb-3 text-xs font-medium tracking-wider uppercase">
               Tag Line
             </p>
-            <p className="mb-12 font-semibold text-muted-foreground lg:text-xl">
+            <p className="text-muted-foreground mb-12 font-semibold lg:text-xl">
               Nam vitae molestie arcu. Quisque eu libero orci. Aliquam imperdiet
               magna nec massa consectetur, id interdum ante congue.
             </p>
-            <div className="flex w-fit items-center gap-4 rounded-full border border-primary px-6 py-4 group-hover:bg-primary group-hover:text-primary-foreground">
-              <ArrowRight className="size-4 transition-transform group-hover:translate-x-1" />{" "}
+            <div className="border-primary group-hover:bg-primary group-hover:text-primary-foreground flex w-fit items-center gap-4 rounded-full border px-6 py-4">
+              <ArrowRight className="size-4 transition-transform group-hover:translate-x-1" />{' '}
               Learn more
             </div>
           </a>

@@ -1,10 +1,11 @@
-"use client";
+'use client';
 
-import { BadgeCheck, BadgeDollarSign, Briefcase, Building } from "lucide-react";
-import { useState } from "react";
+import { useState } from 'react';
 
-import { Badge } from "@/components/ui/badge";
-import { Button } from "@/components/ui/button";
+import { BadgeCheck, BadgeDollarSign, Briefcase, Building } from 'lucide-react';
+
+import { Badge } from '@/components/ui/badge';
+import { Button } from '@/components/ui/button';
 
 interface FeatureSection {
   category: string;
@@ -18,84 +19,84 @@ interface FeatureSection {
 
 const pricingPlans = [
   {
-    icon: "Rocket",
-    name: "Basic plan",
+    icon: 'Rocket',
+    name: 'Basic plan',
     price: {
       monthly: 19,
       yearly: 199,
     },
     features: [
-      "Basic task management tools",
-      "Calendar sync with limited integrations",
-      "Access to 1 dashboard for tracking tasks",
-      "Limited AI suggestions and insights",
-      "Basic support and community access",
+      'Basic task management tools',
+      'Calendar sync with limited integrations',
+      'Access to 1 dashboard for tracking tasks',
+      'Limited AI suggestions and insights',
+      'Basic support and community access',
     ],
   },
   {
     icon: Briefcase,
-    name: "Business plan",
+    name: 'Business plan',
     price: {
       monthly: 29,
       yearly: 299,
     },
     features: [
-      "All Free Plan features, plus:",
-      "Unlimited task lists",
-      "Advanced calendar sync",
-      "AI-driven insights",
-      "Access to custom dashboards",
-      "Priority email support",
+      'All Free Plan features, plus:',
+      'Unlimited task lists',
+      'Advanced calendar sync',
+      'AI-driven insights',
+      'Access to custom dashboards',
+      'Priority email support',
     ],
   },
   {
     icon: Building,
-    name: "Enterprise plan",
+    name: 'Enterprise plan',
     price: {
       monthly: 49,
       yearly: 499,
     },
     features: [
-      "All Pro Plan features, plus:",
-      "Dedicated account manager",
-      "Custom integrations",
-      "Real-time collaboration",
-      "Role-based permissions",
-      "24/7 priority support",
+      'All Pro Plan features, plus:',
+      'Dedicated account manager',
+      'Custom integrations',
+      'Real-time collaboration',
+      'Role-based permissions',
+      '24/7 priority support',
     ],
   },
 ];
 
 const comparisonFeatures: FeatureSection[] = [
   {
-    category: "Core Tools",
+    category: 'Core Tools',
     features: [
       {
-        name: "Task Management",
-        basic: "10",
-        business: "25",
-        enterprise: "Unlimited",
+        name: 'Task Management',
+        basic: '10',
+        business: '25',
+        enterprise: 'Unlimited',
       },
       {
-        name: "Calendar Sync",
+        name: 'Calendar Sync',
         basic: true,
         business: true,
         enterprise: true,
       },
       {
-        name: "Reminders",
+        name: 'Reminders',
         basic: true,
         business: true,
         enterprise: true,
       },
       {
-        name: "Collaboration",
+        name: 'Collaboration',
         basic: false,
         business: true,
         enterprise: true,
       },
       {
-        name: "Notifications",
+        name: 'Notifications',
         basic: false,
         business: false,
         enterprise: true,
@@ -103,34 +104,34 @@ const comparisonFeatures: FeatureSection[] = [
     ],
   },
   {
-    category: "Productivity Insights",
+    category: 'Productivity Insights',
     features: [
       {
-        name: "Analytics",
-        basic: "10 25 Unlimited",
-        business: "10 25 Unlimited",
-        enterprise: "10 25 Unlimited",
+        name: 'Analytics',
+        basic: '10 25 Unlimited',
+        business: '10 25 Unlimited',
+        enterprise: '10 25 Unlimited',
       },
       {
-        name: "Reports",
+        name: 'Reports',
         basic: true,
         business: true,
         enterprise: true,
       },
       {
-        name: "Time Tracking",
+        name: 'Time Tracking',
         basic: true,
         business: true,
         enterprise: true,
       },
       {
-        name: "Goal Tracking",
+        name: 'Goal Tracking',
         basic: false,
         business: true,
         enterprise: true,
       },
       {
-        name: "Trends",
+        name: 'Trends',
         basic: false,
         business: false,
         enterprise: true,
@@ -138,34 +139,34 @@ const comparisonFeatures: FeatureSection[] = [
     ],
   },
   {
-    category: "Workflow Automation",
+    category: 'Workflow Automation',
     features: [
       {
-        name: "Task Automation",
-        basic: "10",
-        business: "25",
-        enterprise: "Unlimited",
+        name: 'Task Automation',
+        basic: '10',
+        business: '25',
+        enterprise: 'Unlimited',
       },
       {
-        name: "Recurring Tasks",
+        name: 'Recurring Tasks',
         basic: true,
         business: true,
         enterprise: true,
       },
       {
-        name: "Integrations",
+        name: 'Integrations',
         basic: true,
         business: true,
         enterprise: true,
       },
       {
-        name: "API Access",
+        name: 'API Access',
         basic: false,
         business: true,
         enterprise: true,
       },
       {
-        name: "Workflow Templates",
+        name: 'Workflow Templates',
         basic: false,
         business: false,
         enterprise: true,
@@ -183,7 +184,7 @@ const Pricing21 = () => {
         <div className="container flex flex-col gap-6 border-x py-4 max-lg:border-x lg:py-8">
           <Badge
             variant="outline"
-            className="w-fit gap-1 bg-card px-3 text-sm font-normal tracking-tight shadow-sm"
+            className="bg-card w-fit gap-1 px-3 text-sm font-normal tracking-tight shadow-sm"
           >
             <BadgeDollarSign className="size-4" />
             <span>Spenders Lounge</span>
@@ -191,7 +192,7 @@ const Pricing21 = () => {
           <h2 className="text-3xl leading-tight tracking-tight md:text-4xl lg:text-6xl">
             Pricing for everyone
           </h2>
-          <p className="max-w-[600px] tracking-[-0.32px] text-muted-foreground">
+          <p className="text-muted-foreground max-w-[600px] tracking-[-0.32px]">
             Choose the Plan that Fits Your Productivity Need
           </p>
         </div>
@@ -202,14 +203,14 @@ const Pricing21 = () => {
           <div className="flex justify-center">
             <div className="inline-flex gap-[2px] rounded-md border p-[2px]">
               <Button
-                variant={isMonthly ? "default" : "outline"}
+                variant={isMonthly ? 'default' : 'outline'}
                 onClick={() => setIsMonthly(true)}
                 className="transition-colors"
               >
                 Monthly
               </Button>
               <Button
-                variant={!isMonthly ? "default" : "outline"}
+                variant={!isMonthly ? 'default' : 'outline'}
                 onClick={() => setIsMonthly(false)}
                 className="transition-colors"
               >
@@ -238,7 +239,7 @@ const PlanHeaders = ({ isMonthly }: { isMonthly: boolean }) => (
       {pricingPlans.map((plan, index) => (
         <div key={index} className="flex flex-col p-6">
           <div className="space-y-2 pb-6">
-            <div className="flex items-center gap-2.5 text-muted-foreground">
+            <div className="text-muted-foreground flex items-center gap-2.5">
               <plan.icon className="size-4" />
               <h3 className="text-xl tracking-[-0.8px]">{plan.name}</h3>
             </div>
@@ -248,7 +249,7 @@ const PlanHeaders = ({ isMonthly }: { isMonthly: boolean }) => (
                   ${isMonthly ? plan.price.monthly : plan.price.yearly}
                 </span>
                 <span className="text-muted-foreground-subtle text-2xl tracking-[-0.96px]">
-                  {isMonthly ? "/mo" : "/yr"}
+                  {isMonthly ? '/mo' : '/yr'}
                 </span>
               </div>
               <p className="text-muted-foreground">
@@ -270,7 +271,7 @@ const FeatureSections = () => (
     {comparisonFeatures.map((section, sectionIndex) => (
       <div
         key={sectionIndex}
-        className={`border-b first:border-t ${sectionIndex === 0 ? "border-t" : ""}`}
+        className={`border-b first:border-t ${sectionIndex === 0 ? 'border-t' : ''}`}
       >
         <div className="py-4">
           <h3 className="text-lg tracking-[-0.36px]">{section.category}</h3>
@@ -278,7 +279,7 @@ const FeatureSections = () => (
         {section.features.map((feature, featureIndex) => (
           <div
             key={featureIndex}
-            className="grid border-t tracking-[-0.32px] text-muted-foreground max-lg:grid-rows-[auto_1fr] lg:grid-cols-4"
+            className="text-muted-foreground grid border-t tracking-[-0.32px] max-lg:grid-rows-[auto_1fr] lg:grid-cols-4"
           >
             <span className="inline-flex items-center py-4">
               {feature.name}
@@ -290,9 +291,9 @@ const FeatureSections = () => (
                     key={i}
                     className="flex items-center justify-center py-4"
                   >
-                    {typeof value === "boolean" ? (
+                    {typeof value === 'boolean' ? (
                       value ? (
-                        <BadgeCheck className="mx-auto size-5 text-muted-foreground" />
+                        <BadgeCheck className="text-muted-foreground mx-auto size-5" />
                       ) : null
                     ) : (
                       <span className="text-muted-foreground-subtle font-semibold">

@@ -1,4 +1,4 @@
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "@radix-ui/react-tabs";
+import { Tabs, TabsContent, TabsList, TabsTrigger } from '@radix-ui/react-tabs';
 import {
   FileSpreadsheet,
   Flag,
@@ -8,9 +8,9 @@ import {
   Target,
   Timer,
   Wand,
-} from "lucide-react";
+} from 'lucide-react';
 
-import { Badge } from "@/components/ui/badge";
+import { Badge } from '@/components/ui/badge';
 
 const Feature105 = () => {
   return (
@@ -27,7 +27,7 @@ const Feature105 = () => {
           <h2 className="text-center text-3xl font-semibold lg:text-4xl">
             Steps to Achieve Your Goals
           </h2>
-          <p className="text-center text-muted-foreground lg:text-lg">
+          <p className="text-muted-foreground text-center lg:text-lg">
             Discover effective strategies to maximize your potential and enhance
             performance. Our platform is designed to help you achieve your
             goals.
@@ -39,66 +39,66 @@ const Feature105 = () => {
               <TabsList className="mx-auto flex w-fit justify-center gap-5 border-b">
                 <TabsTrigger
                   value="tab-1"
-                  className="group -mb-px flex flex-col items-center gap-1.5 px-1 pb-3.5 data-[state=active]:border-b data-[state=active]:border-primary"
+                  className="group data-[state=active]:border-primary -mb-px flex flex-col items-center gap-1.5 px-1 pb-3.5 data-[state=active]:border-b"
                 >
-                  <span className="flex size-12 items-center justify-center rounded-md bg-muted transition-colors duration-300 group-data-[state=active]:bg-primary group-data-[state=active]:text-background">
+                  <span className="bg-muted group-data-[state=active]:bg-primary group-data-[state=active]:text-background flex size-12 items-center justify-center rounded-md transition-colors duration-300">
                     <Target className="w-7" />
                   </span>
-                  <p className="text-sm text-muted-foreground">Aim</p>
+                  <p className="text-muted-foreground text-sm">Aim</p>
                 </TabsTrigger>
                 <TabsTrigger
                   value="tab-2"
-                  className="group -mb-px flex flex-col items-center gap-1.5 px-1 pb-3.5 data-[state=active]:border-b data-[state=active]:border-primary"
+                  className="group data-[state=active]:border-primary -mb-px flex flex-col items-center gap-1.5 px-1 pb-3.5 data-[state=active]:border-b"
                 >
-                  <span className="flex size-12 items-center justify-center rounded-md bg-muted transition-colors duration-300 group-data-[state=active]:bg-primary group-data-[state=active]:text-background">
+                  <span className="bg-muted group-data-[state=active]:bg-primary group-data-[state=active]:text-background flex size-12 items-center justify-center rounded-md transition-colors duration-300">
                     <Layout className="w-7" />
                   </span>
-                  <p className="text-sm text-muted-foreground">Plans</p>
+                  <p className="text-muted-foreground text-sm">Plans</p>
                 </TabsTrigger>
                 <TabsTrigger
                   value="tab-3"
-                  className="group -mb-px flex flex-col items-center gap-1.5 px-1 pb-3.5 data-[state=active]:border-b data-[state=active]:border-primary"
+                  className="group data-[state=active]:border-primary -mb-px flex flex-col items-center gap-1.5 px-1 pb-3.5 data-[state=active]:border-b"
                 >
-                  <span className="flex size-12 items-center justify-center rounded-md bg-muted transition-colors duration-300 group-data-[state=active]:bg-primary group-data-[state=active]:text-background">
+                  <span className="bg-muted group-data-[state=active]:bg-primary group-data-[state=active]:text-background flex size-12 items-center justify-center rounded-md transition-colors duration-300">
                     <Wand className="w-7" />
                   </span>
-                  <p className="text-sm text-muted-foreground">Execution</p>
+                  <p className="text-muted-foreground text-sm">Execution</p>
                 </TabsTrigger>
                 <TabsTrigger
                   value="tab-4"
-                  className="group -mb-px flex flex-col items-center gap-1.5 px-1 pb-3.5 data-[state=active]:border-b data-[state=active]:border-primary"
+                  className="group data-[state=active]:border-primary -mb-px flex flex-col items-center gap-1.5 px-1 pb-3.5 data-[state=active]:border-b"
                 >
-                  <span className="flex size-12 items-center justify-center rounded-md bg-muted transition-colors duration-300 group-data-[state=active]:bg-primary group-data-[state=active]:text-background">
+                  <span className="bg-muted group-data-[state=active]:bg-primary group-data-[state=active]:text-background flex size-12 items-center justify-center rounded-md transition-colors duration-300">
                     <FileSpreadsheet className="w-7" />
                   </span>
-                  <p className="text-sm text-muted-foreground">Files</p>
+                  <p className="text-muted-foreground text-sm">Files</p>
                 </TabsTrigger>
                 <TabsTrigger
                   value="tab-5"
-                  className="group -mb-px flex flex-col items-center gap-1.5 px-1 pb-3.5 data-[state=active]:border-b data-[state=active]:border-primary"
+                  className="group data-[state=active]:border-primary -mb-px flex flex-col items-center gap-1.5 px-1 pb-3.5 data-[state=active]:border-b"
                 >
-                  <span className="flex size-12 items-center justify-center rounded-md bg-muted transition-colors duration-300 group-data-[state=active]:bg-primary group-data-[state=active]:text-background">
+                  <span className="bg-muted group-data-[state=active]:bg-primary group-data-[state=active]:text-background flex size-12 items-center justify-center rounded-md transition-colors duration-300">
                     <Timer className="w-7" />
                   </span>
-                  <p className="text-sm text-muted-foreground">Monitor</p>
+                  <p className="text-muted-foreground text-sm">Monitor</p>
                 </TabsTrigger>
                 <TabsTrigger
                   value="tab-6"
-                  className="group -mb-px flex flex-col items-center gap-1.5 px-1 pb-3.5 data-[state=active]:border-b data-[state=active]:border-primary"
+                  className="group data-[state=active]:border-primary -mb-px flex flex-col items-center gap-1.5 px-1 pb-3.5 data-[state=active]:border-b"
                 >
-                  <span className="flex size-12 items-center justify-center rounded-md bg-muted transition-colors duration-300 group-data-[state=active]:bg-primary group-data-[state=active]:text-background">
+                  <span className="bg-muted group-data-[state=active]:bg-primary group-data-[state=active]:text-background flex size-12 items-center justify-center rounded-md transition-colors duration-300">
                     <MessagesSquare className="w-7" />
                   </span>
-                  <p className="text-sm text-muted-foreground">Comms</p>
+                  <p className="text-muted-foreground text-sm">Comms</p>
                 </TabsTrigger>
                 <TabsTrigger
                   value="tab-7"
-                  className="group -mb-px flex flex-col items-center gap-1.5 px-1 pb-3.5 data-[state=active]:border-b data-[state=active]:border-primary"
+                  className="group data-[state=active]:border-primary -mb-px flex flex-col items-center gap-1.5 px-1 pb-3.5 data-[state=active]:border-b"
                 >
-                  <span className="flex size-12 items-center justify-center rounded-md bg-muted transition-colors duration-300 group-data-[state=active]:bg-primary group-data-[state=active]:text-background">
+                  <span className="bg-muted group-data-[state=active]:bg-primary group-data-[state=active]:text-background flex size-12 items-center justify-center rounded-md transition-colors duration-300">
                     <Settings className="w-7" />
                   </span>
-                  <p className="text-sm text-muted-foreground">Settings</p>
+                  <p className="text-muted-foreground text-sm">Settings</p>
                 </TabsTrigger>
               </TabsList>
             </div>

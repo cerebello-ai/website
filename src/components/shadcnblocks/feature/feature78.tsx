@@ -1,34 +1,38 @@
-"use client";
+'use client';
 
-import { ArrowRight } from "lucide-react";
-import { useState } from "react";
+import { useState } from 'react';
 
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+import { ArrowRight } from 'lucide-react';
+
+import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 
 const features = [
   {
-    id: "feature-1",
-    tabLabel: "Feature 1",
-    title: "Feature 1",
+    id: 'feature-1',
+    tabLabel: 'Feature 1',
+    title: 'Feature 1',
     description:
-      "Nam vitae molestie arcu. Quisque eu libero orci. Aliquam imperdiet magna nec massa consectetur, id interdum ante congue.",
-    image: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-1.svg",
+      'Nam vitae molestie arcu. Quisque eu libero orci. Aliquam imperdiet magna nec massa consectetur, id interdum ante congue.',
+    image:
+      'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-1.svg',
   },
   {
-    id: "feature-2",
-    tabLabel: "Feature 2",
-    title: "Feature 2",
+    id: 'feature-2',
+    tabLabel: 'Feature 2',
+    title: 'Feature 2',
     description:
-      "Nam vitae molestie arcu. Quisque eu libero orci. Aliquam imperdiet magna nec massa consectetur.",
-    image: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-2.svg",
+      'Nam vitae molestie arcu. Quisque eu libero orci. Aliquam imperdiet magna nec massa consectetur.',
+    image:
+      'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-2.svg',
   },
   {
-    id: "feature-3",
-    tabLabel: "Feature 3",
-    title: "Feature 3",
+    id: 'feature-3',
+    tabLabel: 'Feature 3',
+    title: 'Feature 3',
     description:
-      "Nam vitae molestie arcu. Quisque eu libero orci. Aliquam imperdiet magna nec massa consectetur, id interdum ante congue.",
-    image: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-3.svg",
+      'Nam vitae molestie arcu. Quisque eu libero orci. Aliquam imperdiet magna nec massa consectetur, id interdum ante congue.',
+    image:
+      'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-3.svg',
   },
 ];
 
@@ -46,7 +50,7 @@ const Feature78 = () => {
               href="#"
               className="group flex items-center text-xs font-medium md:text-base lg:text-lg"
             >
-              Book a demo{" "}
+              Book a demo{' '}
               <ArrowRight className="ml-2 size-4 transition-transform group-hover:translate-x-1" />
             </a>
           </div>

@@ -1,9 +1,9 @@
-import { FaFacebook, FaGithub, FaGoogle } from "react-icons/fa";
+import { FaFacebook, FaGithub, FaGoogle } from 'react-icons/fa';
 
-import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
-import { Label } from "@/components/ui/label";
-import { Separator } from "@/components/ui/separator";
+import { Button } from '@/components/ui/button';
+import { Input } from '@/components/ui/input';
+import { Label } from '@/components/ui/label';
+import { Separator } from '@/components/ui/separator';
 interface Signup3Props {
   heading?: string;
   subheading?: string;
@@ -23,15 +23,15 @@ interface Signup3Props {
 
 const Signup3 = ({
   logo = {
-    url: "https://www.shadcnblocks.com",
-    src: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/shadcnblockscom-icon.svg",
-    alt: "logo",
-    title: "shadcnblocks.com",
+    url: 'https://www.shadcnblocks.com',
+    src: 'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/shadcnblockscom-icon.svg',
+    alt: 'logo',
+    title: 'shadcnblocks.com',
   },
-  googleText = "Google",
-  githubText = "Github",
-  facebookText = "Facebook",
-  signupText = "Signin",
+  googleText = 'Google',
+  githubText = 'Github',
+  facebookText = 'Facebook',
+  signupText = 'Signin',
 }: Signup3Props) => {
   return (
     <section className="h-screen">

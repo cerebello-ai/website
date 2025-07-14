@@ -1,6 +1,6 @@
-import { Combine, Gauge, Zap } from "lucide-react";
+import { Combine, Gauge, Zap } from 'lucide-react';
 
-import { Button } from "@/components/ui/button";
+import { Button } from '@/components/ui/button';
 
 const Feature204 = () => {
   return (
@@ -19,7 +19,7 @@ const Feature204 = () => {
               <h2 className="text-5xl font-medium text-balance lg:text-6xl">
                 Unlock Your Potential with Our Platform.
               </h2>
-              <p className="mt-6 text-lg text-muted-foreground">
+              <p className="text-muted-foreground mt-6 text-lg">
                 Discover powerful tools and resources designed to elevate your
                 projects and streamline your workflow effectively.
               </p>

@@ -1,4 +1,4 @@
-import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
+import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
 
 interface Testimonial10Props {
   quote?: string;
@@ -13,13 +13,13 @@ interface Testimonial10Props {
 }
 
 const Testimonial10 = ({
-  quote = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Elig doloremque mollitia fugiat omnis! Porro facilis quo animi consequatur. Explicabo.",
+  quote = 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Elig doloremque mollitia fugiat omnis! Porro facilis quo animi consequatur. Explicabo.',
   author = {
-    name: "Customer Name",
-    role: "Role",
+    name: 'Customer Name',
+    role: 'Role',
     avatar: {
-      src: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/avatar-1.webp",
-      alt: "Customer Name",
+      src: 'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/avatar-1.webp',
+      alt: 'Customer Name',
     },
   },
 }: Testimonial10Props) => {

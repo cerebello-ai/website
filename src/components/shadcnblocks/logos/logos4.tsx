@@ -1,38 +1,38 @@
-import { Badge } from "@/components/ui/badge";
-import { Button } from "@/components/ui/button";
+import { Badge } from '@/components/ui/badge';
+import { Button } from '@/components/ui/button';
 
 const logos = [
   {
-    name: "Astro",
-    logo: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/astro-wordmark.svg",
+    name: 'Astro',
+    logo: 'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/astro-wordmark.svg',
   },
   {
-    name: "Vercel",
-    logo: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/vercel-wordmark.svg",
+    name: 'Vercel',
+    logo: 'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/vercel-wordmark.svg',
   },
   {
-    name: "Supabase",
-    logo: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/supabase-wordmark.svg",
+    name: 'Supabase',
+    logo: 'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/supabase-wordmark.svg',
   },
   {
-    name: "Figma",
-    logo: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/figma-wordmark.svg",
+    name: 'Figma',
+    logo: 'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/figma-wordmark.svg',
   },
   {
-    name: "Astro",
-    logo: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/nextjs-wordmark.svg",
+    name: 'Astro',
+    logo: 'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/nextjs-wordmark.svg',
   },
   {
-    name: "Vercel",
-    logo: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/github-wordmark.svg",
+    name: 'Vercel',
+    logo: 'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/github-wordmark.svg',
   },
   {
-    name: "Astro",
-    logo: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/sketch-wordmark.svg",
+    name: 'Astro',
+    logo: 'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/sketch-wordmark.svg',
   },
   {
-    name: "Supabase",
-    logo: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/tailwind-wordmark.svg",
+    name: 'Supabase',
+    logo: 'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/tailwind-wordmark.svg',
   },
 ];
 

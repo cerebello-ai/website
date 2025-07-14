@@ -1,34 +1,37 @@
-"use client";
+'use client';
 
-import { useEffect, useState } from "react";
+import { useEffect, useState } from 'react';
 
-import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
-import { Button } from "@/components/ui/button";
-import type { CarouselApi } from "@/components/ui/carousel";
+import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
+import { Button } from '@/components/ui/button';
+import type { CarouselApi } from '@/components/ui/carousel';
 import {
   Carousel,
   CarouselContent,
   CarouselItem,
-} from "@/components/ui/carousel";
+} from '@/components/ui/carousel';
 
 const testimonials = [
   {
-    id: "testimonial-1",
-    text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Elig doloremque mollitia fugiat omnis! Porro facilis quo animi consequatur. Explicabo.",
-    name: "Customer Name",
-    avatar: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/avatar-1.webp",
+    id: 'testimonial-1',
+    text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Elig doloremque mollitia fugiat omnis! Porro facilis quo animi consequatur. Explicabo.',
+    name: 'Customer Name',
+    avatar:
+      'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/avatar-1.webp',
   },
   {
-    id: "testimonial-2",
-    text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Elig doloremque mollitia fugiat omnis! Porro facilis quo animi consequatur. Explicabo.",
-    name: "Customer Name",
-    avatar: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/avatar-2.webp",
+    id: 'testimonial-2',
+    text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Elig doloremque mollitia fugiat omnis! Porro facilis quo animi consequatur. Explicabo.',
+    name: 'Customer Name',
+    avatar:
+      'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/avatar-2.webp',
   },
   {
-    id: "testimonial-3",
-    text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Elig doloremque mollitia fugiat omnis! Porro facilis quo animi consequatur. Explicabo.",
-    name: "Customer Name",
-    avatar: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/avatar-3.webp",
+    id: 'testimonial-3',
+    text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Elig doloremque mollitia fugiat omnis! Porro facilis quo animi consequatur. Explicabo.',
+    name: 'Customer Name',
+    avatar:
+      'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/avatar-3.webp',
   },
 ];
 
@@ -45,9 +48,9 @@ const Testimonial14 = () => {
       setCurrent(api.selectedScrollSnap());
     };
 
-    api.on("select", updateCurrent);
+    api.on('select', updateCurrent);
     return () => {
-      api.off("select", updateCurrent);
+      api.off('select', updateCurrent);
     };
   }, [api]);
 
@@ -84,7 +87,7 @@ const Testimonial14 = () => {
             }}
           >
             <div
-              className={`size-2.5 rounded-full ${index === current ? "bg-primary" : "bg-input"}`}
+              className={`size-2.5 rounded-full ${index === current ? 'bg-primary' : 'bg-input'}`}
             />
           </Button>
         ))}

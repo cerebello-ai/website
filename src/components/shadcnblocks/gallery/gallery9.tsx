@@ -1,35 +1,36 @@
-"use client";
+'use client';
 
-import { Code, GitBranch, Sparkle } from "lucide-react";
-import { useEffect, useState } from "react";
+import { useEffect, useState } from 'react';
 
-import { Badge } from "@/components/ui/badge";
-import type { CarouselApi } from "@/components/ui/carousel";
+import { Code, GitBranch, Sparkle } from 'lucide-react';
+
+import { Badge } from '@/components/ui/badge';
+import type { CarouselApi } from '@/components/ui/carousel';
 import {
   Carousel,
   CarouselContent,
   CarouselItem,
   CarouselNext,
   CarouselPrevious,
-} from "@/components/ui/carousel";
+} from '@/components/ui/carousel';
 
 const sections = [
   {
-    img: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-1.svg",
-    title: "Design",
-    text: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi, autem.",
+    img: 'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-1.svg',
+    title: 'Design',
+    text: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi, autem.',
     logo: <Code className="h-5 w-5" />,
   },
   {
-    img: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-2.svg",
-    title: "Develop",
-    text: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi, autem.",
+    img: 'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-2.svg',
+    title: 'Develop',
+    text: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi, autem.',
     logo: <GitBranch className="h-5 w-5" />,
   },
   {
-    img: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-3.svg",
-    title: "Ship",
-    text: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi, autem.",
+    img: 'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-3.svg',
+    title: 'Ship',
+    text: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi, autem.',
     logo: <Sparkle className="h-5 w-5" />,
   },
 ];
@@ -47,7 +48,7 @@ const Gallery9 = () => {
     setCount(api.scrollSnapList().length);
     setCurrent(api.selectedScrollSnap() + 1);
 
-    api.on("select", () => {
+    api.on('select', () => {
       setCurrent(api.selectedScrollSnap() + 1);
     });
   }, [api]);
@@ -83,7 +84,7 @@ const Gallery9 = () => {
                 <div className="mt-8 flex cursor-pointer flex-col gap-2 md:hidden">
                   <div>{item.logo}</div>
                   <div className="text-lg font-medium">{item.title}</div>
-                  <div className="text-lg text-muted-foreground">
+                  <div className="text-muted-foreground text-lg">
                     {item.text}
                   </div>
                 </div>
@@ -100,7 +101,7 @@ const Gallery9 = () => {
                 <div>{section.logo}</div>
                 <div className="text-lg font-medium">{section.title}</div>
                 <div
-                  className={`text-lg ${index + 1 === current ? "text-muted-foreground" : "text-muted-foreground/50"} hover:text-muted-foreground`}
+                  className={`text-lg ${index + 1 === current ? 'text-muted-foreground' : 'text-muted-foreground/50'} hover:text-muted-foreground`}
                 >
                   {section.text}
                 </div>

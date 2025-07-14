@@ -1,103 +1,116 @@
-"use client";
+'use client';
 
-import AutoScroll from "embla-carousel-auto-scroll";
-import { useRef } from "react";
+import { useRef } from 'react';
 
-import { Avatar, AvatarImage } from "@/components/ui/avatar";
-import { Button } from "@/components/ui/button";
-import { Card } from "@/components/ui/card";
+import AutoScroll from 'embla-carousel-auto-scroll';
+
+import { Avatar, AvatarImage } from '@/components/ui/avatar';
+import { Button } from '@/components/ui/button';
+import { Card } from '@/components/ui/card';
 import {
   Carousel,
   CarouselContent,
   CarouselItem,
-} from "@/components/ui/carousel";
+} from '@/components/ui/carousel';
 
 const testimonials1 = [
   {
-    name: "John Doe",
-    role: "CEO & Founder",
-    avatar: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/avatar-1.webp",
+    name: 'John Doe',
+    role: 'CEO & Founder',
+    avatar:
+      'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/avatar-1.webp',
     content:
-      "Lorem ipsum dolor sit, amet Odio, incidunt. Ratione, ullam? Iusto id ut omnis repellat.",
+      'Lorem ipsum dolor sit, amet Odio, incidunt. Ratione, ullam? Iusto id ut omnis repellat.',
   },
   {
-    name: "Jane Doe",
-    role: "CTO",
-    avatar: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/avatar-2.webp",
+    name: 'Jane Doe',
+    role: 'CTO',
+    avatar:
+      'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/avatar-2.webp',
     content:
-      "Lorem ipsum dolor sit, amet Odio, incidunt. Ratione, ullam? Iusto id ut omnis repellat.",
+      'Lorem ipsum dolor sit, amet Odio, incidunt. Ratione, ullam? Iusto id ut omnis repellat.',
   },
   {
-    name: "John Smith",
-    role: "COO",
-    avatar: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/avatar-3.webp",
+    name: 'John Smith',
+    role: 'COO',
+    avatar:
+      'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/avatar-3.webp',
     content:
-      "Lorem ipsum dolor sit, amet Odio, incidunt. Ratione, ullam? Iusto id ut omnis repellat.",
+      'Lorem ipsum dolor sit, amet Odio, incidunt. Ratione, ullam? Iusto id ut omnis repellat.',
   },
   {
-    name: "Jane Smith",
-    role: "Tech Lead",
-    avatar: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/avatar-4.webp",
+    name: 'Jane Smith',
+    role: 'Tech Lead',
+    avatar:
+      'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/avatar-4.webp',
     content:
-      "Lorem ipsum dolor sit, amet Odio, incidunt. Ratione, ullam? Iusto id ut omnis repellat.",
+      'Lorem ipsum dolor sit, amet Odio, incidunt. Ratione, ullam? Iusto id ut omnis repellat.',
   },
   {
-    name: "Richard Doe",
-    role: "Designer",
-    avatar: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/avatar-5.webp",
+    name: 'Richard Doe',
+    role: 'Designer',
+    avatar:
+      'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/avatar-5.webp',
     content:
-      "Lorem ipsum dolor sit, amet Odio, incidunt. Ratione, ullam? Iusto id ut omnis repellat.",
+      'Lorem ipsum dolor sit, amet Odio, incidunt. Ratione, ullam? Iusto id ut omnis repellat.',
   },
   {
-    name: "Gordon Doe",
-    role: "Developer",
-    avatar: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/avatar-6.webp",
+    name: 'Gordon Doe',
+    role: 'Developer',
+    avatar:
+      'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/avatar-6.webp',
     content:
-      "Lorem ipsum dolor sit, amet Odio, incidunt. Ratione, ullam? Iusto id ut omnis repellat.",
+      'Lorem ipsum dolor sit, amet Odio, incidunt. Ratione, ullam? Iusto id ut omnis repellat.',
   },
 ];
 const testimonials2 = [
   {
-    name: "John Doe",
-    role: "CEO & Founder",
-    avatar: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/avatar-1.webp",
+    name: 'John Doe',
+    role: 'CEO & Founder',
+    avatar:
+      'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/avatar-1.webp',
     content:
-      "Lorem ipsum dolor sit, amet Odio, incidunt. Ratione, ullam? Iusto id ut omnis repellat.",
+      'Lorem ipsum dolor sit, amet Odio, incidunt. Ratione, ullam? Iusto id ut omnis repellat.',
   },
   {
-    name: "Jane Doe",
-    role: "CTO",
-    avatar: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/avatar-2.webp",
+    name: 'Jane Doe',
+    role: 'CTO',
+    avatar:
+      'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/avatar-2.webp',
     content:
-      "Lorem ipsum dolor sit, amet Odio, incidunt. Ratione, ullam? Iusto id ut omnis repellat.",
+      'Lorem ipsum dolor sit, amet Odio, incidunt. Ratione, ullam? Iusto id ut omnis repellat.',
   },
   {
-    name: "John Smith",
-    role: "COO",
-    avatar: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/avatar-3.webp",
+    name: 'John Smith',
+    role: 'COO',
+    avatar:
+      'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/avatar-3.webp',
     content:
-      "Lorem ipsum dolor sit, amet Odio, incidunt. Ratione, ullam? Iusto id ut omnis repellat.",
+      'Lorem ipsum dolor sit, amet Odio, incidunt. Ratione, ullam? Iusto id ut omnis repellat.',
   },
   {
-    name: "Jane Smith",
-    role: "Tech Lead",
-    avatar: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/avatar-4.webp",
+    name: 'Jane Smith',
+    role: 'Tech Lead',
+    avatar:
+      'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/avatar-4.webp',
     content:
-      "Lorem ipsum dolor sit, amet Odio, incidunt. Ratione, ullam? Iusto id ut omnis repellat.",
+      'Lorem ipsum dolor sit, amet Odio, incidunt. Ratione, ullam? Iusto id ut omnis repellat.',
   },
   {
-    name: "Richard Doe",
-    role: "Designer",
-    avatar: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/avatar-5.webp",
+    name: 'Richard Doe',
+    role: 'Designer',
+    avatar:
+      'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/avatar-5.webp',
     content:
-      "Lorem ipsum dolor sit, amet Odio, incidunt. Ratione, ullam? Iusto id ut omnis repellat.",
+      'Lorem ipsum dolor sit, amet Odio, incidunt. Ratione, ullam? Iusto id ut omnis repellat.',
   },
   {
-    name: "Gordon Doe",
-    role: "Developer",
-    avatar: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/avatar-6.webp",
+    name: 'Gordon Doe',
+    role: 'Developer',
+    avatar:
+      'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/avatar-6.webp',
     content:
-      "Lorem ipsum dolor sit, amet Odio, incidunt. Ratione, ullam? Iusto id ut omnis repellat.",
+      'Lorem ipsum dolor sit, amet Odio, incidunt. Ratione, ullam? Iusto id ut omnis repellat.',
   },
 ];
 
@@ -113,7 +126,7 @@ const Testimonial7 = () => {
     AutoScroll({
       startDelay: 500,
       speed: 0.7,
-      direction: "backward",
+      direction: 'backward',
     }),
   );
   return (
@@ -141,7 +154,7 @@ const Testimonial7 = () => {
                 <CarouselItem key={index} className="basis-auto">
                   <Card className="max-w-96 p-6 select-none">
                     <div className="mb-4 flex gap-4">
-                      <Avatar className="size-9 rounded-full ring-1 ring-input">
+                      <Avatar className="ring-input size-9 rounded-full ring-1">
                         <AvatarImage
                           src={testimonial.avatar}
                           alt={testimonial.name}
@@ -172,7 +185,7 @@ const Testimonial7 = () => {
                 <CarouselItem key={index} className="basis-auto">
                   <Card className="max-w-96 p-6 select-none">
                     <div className="mb-4 flex gap-4">
-                      <Avatar className="size-9 rounded-full ring-1 ring-input">
+                      <Avatar className="ring-input size-9 rounded-full ring-1">
                         <AvatarImage
                           src={testimonial.avatar}
                           alt={testimonial.name}

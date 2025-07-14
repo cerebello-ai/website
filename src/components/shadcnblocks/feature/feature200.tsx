@@ -1,38 +1,38 @@
-import { BarChart, Check, Shield, Zap } from "lucide-react";
+import { BarChart, Check, Shield, Zap } from 'lucide-react';
 
 const Feature200 = () => {
   const features = [
     {
-      title: "Cloud Storage",
+      title: 'Cloud Storage',
       icon: Zap,
-      iconColor: "text-purple-400/90",
-      bgGradient: "from-purple-500",
+      iconColor: 'text-purple-400/90',
+      bgGradient: 'from-purple-500',
       features: [
-        "Unlimited storage space",
-        "Automatic file backup",
-        "Fast retrieval times",
+        'Unlimited storage space',
+        'Automatic file backup',
+        'Fast retrieval times',
       ],
     },
     {
-      title: "Performance Scaling",
+      title: 'Performance Scaling',
       icon: BarChart,
-      iconColor: "text-teal-400/90",
-      bgGradient: "from-teal-500",
+      iconColor: 'text-teal-400/90',
+      bgGradient: 'from-teal-500',
       features: [
-        "Auto-scaling resources",
-        "Load balancing across servers",
-        "Real-time performance metrics",
+        'Auto-scaling resources',
+        'Load balancing across servers',
+        'Real-time performance metrics',
       ],
     },
     {
-      title: "Security Protection",
+      title: 'Security Protection',
       icon: Shield,
-      iconColor: "text-red-400/90",
-      bgGradient: "from-red-500",
+      iconColor: 'text-red-400/90',
+      bgGradient: 'from-red-500',
       features: [
-        "DDoS attack prevention",
-        "SSL certificate management",
-        "Daily security scanning",
+        'DDoS attack prevention',
+        'SSL certificate management',
+        'Daily security scanning',
       ],
     },
   ];
@@ -48,18 +48,18 @@ const Feature200 = () => {
             >
               <div className="absolute inset-0 h-full w-full bg-[radial-gradient(white_1px,transparent_1px)] [mask-image:radial-gradient(ellipse_at_80%_14%,#000,transparent_40%)] [background-size:3px_3px] opacity-35"></div>
               <div
-                className={`relative grid size-11 place-items-center rounded-full bg-gradient-to-b ${feature.bgGradient}/50 via-transparent to-${feature.bgGradient.split("-")[1]}/50 p-[2px]`}
+                className={`relative grid size-11 place-items-center rounded-full bg-gradient-to-b ${feature.bgGradient}/50 via-transparent to-${feature.bgGradient.split('-')[1]}/50 p-[2px]`}
               >
                 <div
-                  className={`grid size-full place-items-center rounded-full bg-zinc-950 bg-gradient-to-b ${feature.bgGradient}/30 via-transparent to-${feature.bgGradient.split("-")[1]}/30`}
+                  className={`grid size-full place-items-center rounded-full bg-zinc-950 bg-gradient-to-b ${feature.bgGradient}/30 via-transparent to-${feature.bgGradient.split('-')[1]}/30`}
                 >
                   <feature.icon className={feature.iconColor} />
                 </div>
               </div>
-              <h3 className="relative mt-10 text-lg font-semibold text-background">
+              <h3 className="text-background relative mt-10 text-lg font-semibold">
                 {feature.title}
               </h3>
-              <ul className="relative mt-4 space-y-3.5 text-sm text-background/70">
+              <ul className="text-background/70 relative mt-4 space-y-3.5 text-sm">
                 {feature.features.map((item, itemIndex) => (
                   <li key={itemIndex} className="flex items-center gap-2">
                     <Check className="text-text-background/70 mt-0.5 size-4 shrink-0" />

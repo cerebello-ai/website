@@ -1,85 +1,95 @@
-"use client";
+'use client';
 
-import AutoScroll from "embla-carousel-auto-scroll";
-
-import { cn } from "@/lib/utils";
+import AutoScroll from 'embla-carousel-auto-scroll';
 
 import {
   Carousel,
   CarouselContent,
   CarouselItem,
-} from "@/components/ui/carousel";
-import { Separator } from "@/components/ui/separator";
+} from '@/components/ui/carousel';
+import { Separator } from '@/components/ui/separator';
+import { cn } from '@/lib/utils';
 
 const Logos9 = () => {
   const logos = [
     {
-      id: "logo-1",
-      description: "Logo 1",
-      image: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/astro-wordmark.svg",
-      className: "h-7 w-auto",
+      id: 'logo-1',
+      description: 'Logo 1',
+      image:
+        'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/astro-wordmark.svg',
+      className: 'h-7 w-auto',
     },
     {
-      id: "logo-2",
-      description: "Logo 2",
-      image: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/company/fictional-company-logo-1.svg",
-      className: "h-7 w-auto",
+      id: 'logo-2',
+      description: 'Logo 2',
+      image:
+        'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/company/fictional-company-logo-1.svg',
+      className: 'h-7 w-auto',
     },
     {
-      id: "logo-3",
-      description: "Logo 3",
-      image: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/company/fictional-company-logo-2.svg",
-      className: "h-7 w-auto",
+      id: 'logo-3',
+      description: 'Logo 3',
+      image:
+        'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/company/fictional-company-logo-2.svg',
+      className: 'h-7 w-auto',
     },
     {
-      id: "logo-4",
-      description: "Logo 4",
-      image: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/company/fictional-company-logo-3.svg",
-      className: "h-7 w-auto",
+      id: 'logo-4',
+      description: 'Logo 4',
+      image:
+        'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/company/fictional-company-logo-3.svg',
+      className: 'h-7 w-auto',
     },
     {
-      id: "logo-5",
-      description: "Logo 5",
-      image: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/company/fictional-company-logo-4.svg",
-      className: "h-7 w-auto",
+      id: 'logo-5',
+      description: 'Logo 5',
+      image:
+        'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/company/fictional-company-logo-4.svg',
+      className: 'h-7 w-auto',
     },
     {
-      id: "logo-6",
-      description: "Logo 6",
-      image: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/company/fictional-company-logo-5.svg",
-      className: "h-5 w-auto",
+      id: 'logo-6',
+      description: 'Logo 6',
+      image:
+        'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/company/fictional-company-logo-5.svg',
+      className: 'h-5 w-auto',
     },
     {
-      id: "logo-7",
-      description: "Logo 7",
-      image: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/company/fictional-company-logo-6.svg",
-      className: "h-7 w-auto",
+      id: 'logo-7',
+      description: 'Logo 7',
+      image:
+        'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/company/fictional-company-logo-6.svg',
+      className: 'h-7 w-auto',
     },
     {
-      id: "logo-8",
-      description: "Logo 8",
-      image: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/company/fictional-company-logo-7.svg",
-      className: "h-7 w-auto",
+      id: 'logo-8',
+      description: 'Logo 8',
+      image:
+        'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/company/fictional-company-logo-7.svg',
+      className: 'h-7 w-auto',
     },
   ];
   const testimonials = [
     {
       quote:
         "AI search capabilities have revolutionized our team's knowledge sharing. A true productivity game changer.",
-      name: "Mercury, Head of Finance",
-      image: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/company/fictional-company-logo-3.svg",
+      name: 'Mercury, Head of Finance',
+      image:
+        'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/company/fictional-company-logo-3.svg',
     },
     {
       quote:
-        "Polished components and great docs have saved us countless hours while maintaining consistency.",
-      name: "Perplexity, Lead Machine Learning",
-      image: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/company/fictional-company-logo-7.svg",
+        'Polished components and great docs have saved us countless hours while maintaining consistency.',
+      name: 'Perplexity, Lead Machine Learning',
+      image:
+        'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/company/fictional-company-logo-7.svg',
     },
     {
       quote:
         "Perfect customization options - we've created a unique look while keeping battle-tested reliability.",
-      name: "Retool, Product Manager",
-      image: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/company/fictional-company-logo-5.svg",
+      name: 'Retool, Product Manager',
+      image:
+        'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/company/fictional-company-logo-5.svg',
     },
   ];
   return (
@@ -114,10 +124,10 @@ const Logos9 = () => {
             ))}
           </CarouselContent>
         </Carousel>
-        <div className="bg-linear-to-r from-background absolute inset-y-0 left-0 w-12 to-transparent"></div>
-        <div className="bg-linear-to-l from-background absolute inset-y-0 right-0 w-12 to-transparent"></div>
+        <div className="from-background absolute inset-y-0 left-0 w-12 bg-linear-to-r to-transparent"></div>
+        <div className="from-background absolute inset-y-0 right-0 w-12 bg-linear-to-l to-transparent"></div>
       </div>
-      <Separator className="my-15 mx-auto max-w-5xl" />
+      <Separator className="mx-auto my-15 max-w-5xl" />
 
       <div>
         <Carousel opts={{ loop: true }} className="mx-auto w-full max-w-6xl">
@@ -126,12 +136,12 @@ const Logos9 = () => {
               <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/3">
                 <div
                   className={cn(
-                    "relativ border-border w-full border-r px-12 text-center md:px-8 md:text-left",
-                    index == 0 && "lg:border-l",
+                    'relativ border-border w-full border-r px-12 text-center md:px-8 md:text-left',
+                    index == 0 && 'lg:border-l',
                   )}
                   key={index}
                 >
-                  <h5 className="text-muted-foreground mb-14 mt-5 line-clamp-3 text-lg tracking-tight md:mb-28">
+                  <h5 className="text-muted-foreground mt-5 mb-14 line-clamp-3 text-lg tracking-tight md:mb-28">
                     {testimonial.quote}
                   </h5>
                   <div className="mt-auto">

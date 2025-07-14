@@ -1,43 +1,49 @@
-"use client";
+'use client';
 
-import { Card } from "@/components/ui/card";
+import { Card } from '@/components/ui/card';
 
 const utilities = [
   {
-    title: "Pass deals to Customer Success",
+    title: 'Pass deals to Customer Success',
     description:
-      "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam, corporis!",
-    image: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-1.svg",
+      'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam, corporis!',
+    image:
+      'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-1.svg',
   },
   {
-    title: "Closed-won deal notification",
+    title: 'Closed-won deal notification',
     description:
-      "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam, corporis!",
-    image: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-2.svg",
+      'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam, corporis!',
+    image:
+      'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-2.svg',
   },
   {
-    title: "Closed won deal Slack message",
+    title: 'Closed won deal Slack message',
     description:
-      "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam, corporis!",
-    image: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-3.svg",
+      'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam, corporis!',
+    image:
+      'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-3.svg',
   },
   {
-    title: "Won and lost deal summary",
+    title: 'Won and lost deal summary',
     description:
-      "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam, corporis!",
-    image: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-4.svg",
+      'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam, corporis!',
+    image:
+      'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-4.svg',
   },
   {
-    title: "Customer renewal date autofill",
+    title: 'Customer renewal date autofill',
     description:
-      "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam, corporis!",
-    image: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-5.svg",
+      'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam, corporis!',
+    image:
+      'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-5.svg',
   },
   {
-    title: "Stay on top of customer churn",
+    title: 'Stay on top of customer churn',
     description:
-      "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam, corporis!",
-    image: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-6.svg",
+      'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam, corporis!',
+    image:
+      'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-6.svg',
   },
 ];
 

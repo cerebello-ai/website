@@ -1,8 +1,8 @@
-"use client";
+'use client';
 
-import { ArrowRight } from "lucide-react";
+import { ArrowRight } from 'lucide-react';
 
-import { Button } from "@/components/ui/button";
+import { Button } from '@/components/ui/button';
 
 interface DataItem {
   key: number;
@@ -16,89 +16,89 @@ interface DataItem {
 const DATA: DataItem[] = [
   {
     key: 1,
-    src: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/astro-icon.svg",
-    alt: "Astro",
-    href: "https://astro.build",
+    src: 'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/astro-icon.svg',
+    alt: 'Astro',
+    href: 'https://astro.build',
     width: 64,
     height: 64,
   },
   {
     key: 2,
-    src: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/github-icon.svg",
-    alt: "GitHub",
-    href: "https://github.com",
+    src: 'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/github-icon.svg',
+    alt: 'GitHub',
+    href: 'https://github.com',
     width: 64,
     height: 64,
   },
   {
     key: 3,
-    src: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/google-icon.svg",
-    alt: "Google",
-    href: "https://google.com",
+    src: 'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/google-icon.svg',
+    alt: 'Google',
+    href: 'https://google.com',
     width: 64,
     height: 64,
   },
   {
     key: 4,
-    src: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/notion-icon.svg",
-    alt: "Notion",
-    href: "https://notion.so",
+    src: 'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/notion-icon.svg',
+    alt: 'Notion',
+    href: 'https://notion.so',
     width: 64,
     height: 64,
   },
   {
     key: 5,
-    src: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/slack-icon.svg",
-    alt: "Slack",
-    href: "https://slack.com",
+    src: 'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/slack-icon.svg',
+    alt: 'Slack',
+    href: 'https://slack.com',
     width: 64,
     height: 64,
   },
   {
     key: 6,
-    src: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/tailwind-icon.svg",
-    alt: "Tailwind CSS",
-    href: "https://tailwindcss.com",
+    src: 'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/tailwind-icon.svg',
+    alt: 'Tailwind CSS',
+    href: 'https://tailwindcss.com',
     width: 64,
     height: 64,
   },
   {
     key: 8,
-    src: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/vscode-icon.svg",
-    alt: "VS Code",
-    href: "https://code.visualstudio.com",
+    src: 'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/vscode-icon.svg',
+    alt: 'VS Code',
+    href: 'https://code.visualstudio.com',
     width: 64,
     height: 64,
   },
   {
     key: 12,
-    src: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/react-icon.svg",
-    alt: "React",
-    href: "https://reactjs.org",
+    src: 'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/react-icon.svg',
+    alt: 'React',
+    href: 'https://reactjs.org',
     width: 64,
     height: 64,
   },
   {
     key: 13,
-    src: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/vue-icon.svg",
-    alt: "Vue.js",
-    href: "https://vuejs.org",
+    src: 'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/vue-icon.svg',
+    alt: 'Vue.js',
+    href: 'https://vuejs.org',
     width: 64,
     height: 64,
   },
   {
     key: 15,
-    src: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/spotify-icon.svg",
-    alt: "Spotify",
-    href: "https://spotify.com",
+    src: 'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/spotify-icon.svg',
+    alt: 'Spotify',
+    href: 'https://spotify.com',
     width: 64,
     height: 64,
   },
   {
     key: 16,
-    src: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/dropbox-icon.svg",
-    alt: "Dropbox",
-    href: "https://dropbox.com",
+    src: 'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/dropbox-icon.svg',
+    alt: 'Dropbox',
+    href: 'https://dropbox.com',
     width: 64,
     height: 64,
   },
@@ -113,7 +113,7 @@ const Integration2 = () => {
           <h4 className="text-3xl font-medium lg:text-4xl">
             Powering the world's best product teams
           </h4>
-          <p className="text-xl text-muted-foreground lg:-mt-1">
+          <p className="text-muted-foreground text-xl lg:-mt-1">
             From next-gen startups to established enterprises
           </p>
         </div>
@@ -122,7 +122,7 @@ const Integration2 = () => {
         <div className="relative my-20 overflow-hidden">
           <div className="flex w-full">
             {/* First marquee group */}
-            <div className="flex shrink-0 animate-marquee items-center gap-4">
+            <div className="animate-marquee flex shrink-0 items-center gap-4">
               {DATA.map((logo) => (
                 <a
                   href={logo.href}
@@ -141,7 +141,7 @@ const Integration2 = () => {
               ))}
             </div>
             {/* Second marquee group */}
-            <div className="flex shrink-0 animate-marquee items-center gap-4">
+            <div className="animate-marquee flex shrink-0 items-center gap-4">
               {DATA.map((logo) => (
                 <a
                   href={logo.href}
@@ -161,8 +161,8 @@ const Integration2 = () => {
             </div>
           </div>
           {/* Gradient overlays */}
-          <div className="absolute inset-y-0 left-0 w-24 bg-linear-to-r from-background to-transparent"></div>
-          <div className="absolute inset-y-0 right-0 w-24 bg-linear-to-l from-background to-transparent"></div>
+          <div className="from-background absolute inset-y-0 left-0 w-24 bg-linear-to-r to-transparent"></div>
+          <div className="from-background absolute inset-y-0 right-0 w-24 bg-linear-to-l to-transparent"></div>
         </div>
 
         {/* Explore Button */}

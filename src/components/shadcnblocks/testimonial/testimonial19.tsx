@@ -1,59 +1,66 @@
-"use client";
+'use client';
 
-import AutoScroll from "embla-carousel-auto-scroll";
-import { ChevronRight, Star, Zap } from "lucide-react";
-import { useRef } from "react";
+import { useRef } from 'react';
 
-import { Avatar, AvatarImage } from "@/components/ui/avatar";
-import { Card } from "@/components/ui/card";
+import AutoScroll from 'embla-carousel-auto-scroll';
+import { ChevronRight, Star, Zap } from 'lucide-react';
+
+import { Avatar, AvatarImage } from '@/components/ui/avatar';
+import { Card } from '@/components/ui/card';
 import {
   Carousel,
   CarouselContent,
   CarouselItem,
-} from "@/components/ui/carousel";
+} from '@/components/ui/carousel';
 
 const testimonials = [
   {
-    name: "Alice Johnson",
-    role: "CEO & Founder",
-    avatar: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/avatar-1.webp",
+    name: 'Alice Johnson',
+    role: 'CEO & Founder',
+    avatar:
+      'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/avatar-1.webp',
     content:
-      "This platform has revolutionized the way we manage projects. It is incredibly user-friendly and efficient.",
+      'This platform has revolutionized the way we manage projects. It is incredibly user-friendly and efficient.',
   },
   {
-    name: "David Lee",
-    role: "CTO",
-    avatar: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/avatar-2.webp",
+    name: 'David Lee',
+    role: 'CTO',
+    avatar:
+      'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/avatar-2.webp',
     content:
-      "I have been impressed with the seamless integration and functionality. It has made our tech operations much smoother.",
+      'I have been impressed with the seamless integration and functionality. It has made our tech operations much smoother.',
   },
   {
-    name: "Mark Thompson",
-    role: "COO",
-    avatar: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/avatar-3.webp",
+    name: 'Mark Thompson',
+    role: 'COO',
+    avatar:
+      'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/avatar-3.webp',
     content:
-      "Managing our day-to-day tasks has never been easier. The interface is intuitive and saves us a lot of time.",
+      'Managing our day-to-day tasks has never been easier. The interface is intuitive and saves us a lot of time.',
   },
   {
-    name: "Emily Carter",
-    role: "Tech Lead",
-    avatar: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/avatar-4.webp",
+    name: 'Emily Carter',
+    role: 'Tech Lead',
+    avatar:
+      'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/avatar-4.webp',
     content:
-      "The tools provided have significantly improved our team’s workflow and collaboration. Highly recommend it!",
+      'The tools provided have significantly improved our team’s workflow and collaboration. Highly recommend it!',
   },
   {
-    name: "Sophia Turner",
-    role: "Designer",
-    avatar: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/avatar-5.webp",
+    name: 'Sophia Turner',
+    role: 'Designer',
+    avatar:
+      'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/avatar-5.webp',
     content:
-      "From a design perspective, the flexibility and ease of use are outstanding. This has become an indispensable tool for our team.",
+      'From a design perspective, the flexibility and ease of use are outstanding. This has become an indispensable tool for our team.',
   },
   {
-    name: "James Wilson",
-    role: "Developer",
-    avatar: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/avatar-6.webp",
+    name: 'James Wilson',
+    role: 'Developer',
+    avatar:
+      'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/avatar-6.webp',
     content:
-      "As a developer, I appreciate the robust features and simplicity. It has streamlined our processes considerably.",
+      'As a developer, I appreciate the robust features and simplicity. It has streamlined our processes considerably.',
   },
 ];
 
@@ -69,13 +76,13 @@ const Testimonial19 = () => {
     <section className="py-32">
       <div className="container flex flex-col items-center gap-4">
         <div className="flex items-center gap-1 text-sm font-semibold">
-          <Zap className="h-6 w-auto fill-primary" />
+          <Zap className="fill-primary h-6 w-auto" />
           Rated 5 stars by 1000+ clients
         </div>
         <h2 className="text-center text-3xl font-semibold lg:text-4xl">
           Meet our happy clients
         </h2>
-        <p className="text-center text-muted-foreground lg:text-lg">
+        <p className="text-muted-foreground text-center lg:text-lg">
           Join a global network of thought leaders, product developers,
         </p>
         <a href="#" className="flex items-center gap-1 font-semibold">
@@ -91,7 +98,7 @@ const Testimonial19 = () => {
             }}
             plugins={[plugin.current]}
             onMouseLeave={() => plugin.current.play()}
-            className="relative before:absolute before:top-0 before:bottom-0 before:left-0 before:z-10 before:w-36 before:bg-linear-to-r before:from-background before:to-transparent after:absolute after:top-0 after:right-0 after:bottom-0 after:z-10 after:w-36 after:bg-linear-to-l after:from-background after:to-transparent"
+            className="before:from-background after:from-background relative before:absolute before:top-0 before:bottom-0 before:left-0 before:z-10 before:w-36 before:bg-linear-to-r before:to-transparent after:absolute after:top-0 after:right-0 after:bottom-0 after:z-10 after:w-36 after:bg-linear-to-l after:to-transparent"
           >
             <CarouselContent>
               {testimonials.map((testimonial, index) => (
@@ -99,7 +106,7 @@ const Testimonial19 = () => {
                   <Card className="max-w-96 p-6 select-none">
                     <div className="flex justify-between">
                       <div className="mb-4 flex gap-4">
-                        <Avatar className="size-14 rounded-full ring-1 ring-input">
+                        <Avatar className="ring-input size-14 rounded-full ring-1">
                           <AvatarImage
                             src={testimonial.avatar}
                             alt={testimonial.name}
@@ -107,7 +114,7 @@ const Testimonial19 = () => {
                         </Avatar>
                         <div>
                           <p className="font-medium">{testimonial.name}</p>
-                          <p className="text-sm text-muted-foreground">
+                          <p className="text-muted-foreground text-sm">
                             {testimonial.role}
                           </p>
                         </div>
@@ -120,7 +127,7 @@ const Testimonial19 = () => {
                         <Star className="size-5 fill-amber-500 text-amber-500" />
                       </div>
                     </div>
-                    <q className="leading-7 text-muted-foreground">
+                    <q className="text-muted-foreground leading-7">
                       {testimonial.content}
                     </q>
                   </Card>

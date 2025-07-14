@@ -1,13 +1,13 @@
-"use client";
+'use client';
 
-import { useState } from "react";
+import { useState } from 'react';
 
 import {
   Accordion,
   AccordionContent,
   AccordionItem,
   AccordionTrigger,
-} from "@/components/ui/accordion";
+} from '@/components/ui/accordion';
 
 interface ITabData {
   id: number;
@@ -19,36 +19,36 @@ interface ITabData {
 const tabsData: ITabData[] = [
   {
     id: 1,
-    title: "Title 1",
+    title: 'Title 1',
     imageSrc: [
-      "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-1.svg",
-      "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-1.svg",
-      "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-1.svg",
+      'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-1.svg',
+      'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-1.svg',
+      'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-1.svg',
     ],
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam repellat officiis culpa, quis veniam incidunt illum vitae saepe dolore doloremque magni exercitationem aut facere eos quam odit et voluptatum dolorem?",
+      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam repellat officiis culpa, quis veniam incidunt illum vitae saepe dolore doloremque magni exercitationem aut facere eos quam odit et voluptatum dolorem?',
   },
   {
     id: 2,
-    title: "Title 2",
+    title: 'Title 2',
     imageSrc: [
-      "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-2.svg",
-      "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-2.svg",
-      "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-2.svg",
+      'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-2.svg',
+      'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-2.svg',
+      'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-2.svg',
     ],
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam repellat officiis culpa, quis veniam incidunt illum vitae saepe dolore doloremque magni exercitationem aut facere eos quam odit et voluptatum dolorem?",
+      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam repellat officiis culpa, quis veniam incidunt illum vitae saepe dolore doloremque magni exercitationem aut facere eos quam odit et voluptatum dolorem?',
   },
   {
     id: 3,
-    title: "Title 3",
+    title: 'Title 3',
     imageSrc: [
-      "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-3.svg",
-      "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-3.svg",
-      "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-3.svg",
+      'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-3.svg',
+      'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-3.svg',
+      'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-3.svg',
     ],
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam repellat officiis culpa, quis veniam incidunt illum vitae saepe dolore doloremque magni exercitationem aut facere eos quam odit et voluptatum dolorem?",
+      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam repellat officiis culpa, quis veniam incidunt illum vitae saepe dolore doloremque magni exercitationem aut facere eos quam odit et voluptatum dolorem?',
   },
 ];
 
@@ -85,17 +85,17 @@ const Feature145 = () => {
                 <AccordionItem
                   key={tab.id}
                   value={`item-${tab.id}`}
-                  className={`hover:bg-accent border-b-0 border-t-2 px-2 transition ${tab.id === activeTabId && "border-foreground"}`}
+                  className={`hover:bg-accent border-t-2 border-b-0 px-2 transition ${tab.id === activeTabId && 'border-foreground'}`}
                 >
                   <AccordionTrigger
                     onClick={() => {
                       setActiveImage(tab.imageSrc);
                       setActiveTabId(tab.id);
                     }}
-                    className="no-underline! cursor-pointer py-5 transition"
+                    className="cursor-pointer py-5 no-underline! transition"
                   >
                     <h6
-                      className={`text-xl font-semibold ${tab.id === activeTabId ? "text-black" : "text-muted-foreground"}`}
+                      className={`text-xl font-semibold ${tab.id === activeTabId ? 'text-black' : 'text-muted-foreground'}`}
                     >
                       {tab.title}
                     </h6>
@@ -116,7 +116,7 @@ const Feature145 = () => {
               ))}
             </Accordion>
           </div>
-          <div className="bg-muted-foreground/5 before:bg-primary/50 relative m-auto hidden w-1/2 overflow-hidden rounded-xl px-10 py-12 before:absolute before:inset-0 before:z-[-1] before:[mask-image:url('https://deifkwefumgah.cloudfront.net/shadcnblocks/block/patterns/dot-pattern.svg')] before:[mask-repeat:repeat] before:[mask-size:15px] md:block">
+          <div className="bg-muted-foreground/5 before:bg-primary/50 relative m-auto hidden w-1/2 overflow-hidden rounded-xl px-10 py-12 before:absolute before:inset-0 before:z-[-1] before:[mask-image:url('https://deifkwefumgah.cloudfront.net/shadcnblocks/block/patterns/dot-pattern.svg')] before:[mask-size:15px] before:[mask-repeat:repeat] md:block">
             <div className="flex min-h-96 w-full items-center justify-center px-3">
               <img
                 src={activeImage[0]}

@@ -1,15 +1,16 @@
-"use client";
+'use client';
 
-import { MoveRight } from "lucide-react";
-import { useState } from "react";
+import { useState } from 'react';
+
+import { MoveRight } from 'lucide-react';
 
 import {
   Accordion,
   AccordionContent,
   AccordionItem,
   AccordionTrigger,
-} from "@/components/ui/accordion";
-import { Button } from "@/components/ui/button";
+} from '@/components/ui/accordion';
+import { Button } from '@/components/ui/button';
 
 interface ITabData {
   id: number;
@@ -21,45 +22,51 @@ interface ITabData {
 const tabsData: ITabData[] = [
   {
     id: 1,
-    title: "Performance",
-    imageSrc: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-1.svg",
+    title: 'Performance',
+    imageSrc:
+      'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-1.svg',
     description:
-      "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nesciunt, accusantium quam. Temporibus quae quos deserunt!",
+      'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nesciunt, accusantium quam. Temporibus quae quos deserunt!',
   },
   {
     id: 2,
-    title: "Innovation",
-    imageSrc: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-2.svg",
+    title: 'Innovation',
+    imageSrc:
+      'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-2.svg',
     description:
-      "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nesciunt, accusantium quam. Temporibus quae quos deserunt!",
+      'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nesciunt, accusantium quam. Temporibus quae quos deserunt!',
   },
   {
     id: 3,
-    title: "Quality",
-    imageSrc: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-3.svg",
+    title: 'Quality',
+    imageSrc:
+      'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-3.svg',
     description:
-      "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nesciunt, accusantium quam. Temporibus quae quos deserunt!",
+      'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nesciunt, accusantium quam. Temporibus quae quos deserunt!',
   },
   {
     id: 4,
-    title: "Accessibility",
-    imageSrc: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-4.svg",
+    title: 'Accessibility',
+    imageSrc:
+      'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-4.svg',
     description:
-      "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nesciunt, accusantium quam. Temporibus quae quos deserunt!",
+      'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nesciunt, accusantium quam. Temporibus quae quos deserunt!',
   },
   {
     id: 5,
-    title: "Affordability",
-    imageSrc: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-5.svg",
+    title: 'Affordability',
+    imageSrc:
+      'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-5.svg',
     description:
-      "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nesciunt, accusantium quam. Temporibus quae quos deserunt!",
+      'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nesciunt, accusantium quam. Temporibus quae quos deserunt!',
   },
   {
     id: 6,
-    title: "Customer Support",
-    imageSrc: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-6.svg",
+    title: 'Customer Support',
+    imageSrc:
+      'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-6.svg',
     description:
-      "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nesciunt, accusantium quam. Temporibus quae quos deserunt!",
+      'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nesciunt, accusantium quam. Temporibus quae quos deserunt!',
   },
 ];
 
@@ -70,14 +77,14 @@ const Feature126 = () => {
   return (
     <section className="py-32">
       <div className="container">
-        <span className="text-sm text-muted-foreground uppercase">
+        <span className="text-muted-foreground text-sm uppercase">
           Build with blocks
         </span>
         <h2 className="mt-4 mb-5 text-3xl font-extrabold">Our Core Features</h2>
         <div className="mb-20 flex flex-col items-start gap-1 md:flex-row md:items-center md:gap-8">
           <a
             href="#"
-            className="group flex items-center gap-2 text-muted-foreground hover:cursor-pointer"
+            className="group text-muted-foreground flex items-center gap-2 hover:cursor-pointer"
           >
             All blocks examples
             <span className="transform transition-transform duration-300 group-hover:translate-x-2">
@@ -86,7 +93,7 @@ const Feature126 = () => {
           </a>
           <a
             href="#"
-            className="group flex items-center gap-2 text-muted-foreground hover:cursor-pointer"
+            className="group text-muted-foreground flex items-center gap-2 hover:cursor-pointer"
           >
             All features examples
             <span className="transform transition-transform duration-300 group-hover:translate-x-2">
@@ -102,7 +109,7 @@ const Feature126 = () => {
                 <AccordionItem
                   key={tab.id}
                   value={`item-${tab.id}`}
-                  className={`border-t-2 border-b-0 px-2 transition hover:bg-accent ${tab.id === activeTabId && "border-foreground"}`}
+                  className={`hover:bg-accent border-t-2 border-b-0 px-2 transition ${tab.id === activeTabId && 'border-foreground'}`}
                 >
                   <AccordionTrigger
                     onClick={() => {
@@ -112,13 +119,13 @@ const Feature126 = () => {
                     className="cursor-pointer py-5 no-underline! transition"
                   >
                     <h6
-                      className={`text-xl font-semibold text-muted-foreground ${tab.id === activeTabId ? "text-black" : "text-muted-foreground"}`}
+                      className={`text-muted-foreground text-xl font-semibold ${tab.id === activeTabId ? 'text-black' : 'text-muted-foreground'}`}
                     >
                       {tab.title}
                     </h6>
                   </AccordionTrigger>
                   <AccordionContent>
-                    <p className="mt-3 text-muted-foreground">
+                    <p className="text-muted-foreground mt-3">
                       {tab.description}
                     </p>
                     <div className="mt-4 md:hidden">

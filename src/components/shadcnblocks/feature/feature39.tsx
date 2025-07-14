@@ -13,7 +13,7 @@ const Feature39 = () => {
               className="aspect-video max-h-96 w-full rounded-lg object-cover"
             />
             <p className="mt-8 mb-2 text-lg font-semibold">Integrations</p>
-            <p className="mb-4 text-muted-foreground">
+            <p className="text-muted-foreground mb-4">
               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse
               eaque corrupti illum sapiente!
             </p>
@@ -28,7 +28,7 @@ const Feature39 = () => {
               className="aspect-video max-h-96 w-full rounded-lg object-cover"
             />
             <p className="mt-8 mb-2 text-lg font-semibold">Analytics</p>
-            <p className="mb-4 text-muted-foreground">
+            <p className="text-muted-foreground mb-4">
               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse
               eaque corrupti illum sapiente!
             </p>
@@ -43,7 +43,7 @@ const Feature39 = () => {
               className="aspect-video max-h-96 w-full rounded-lg object-cover"
             />
             <p className="mt-8 mb-2 text-lg font-semibold">Search & Filter</p>
-            <p className="mb-4 text-muted-foreground">
+            <p className="text-muted-foreground mb-4">
               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse
               eaque corrupti illum sapiente!
             </p>

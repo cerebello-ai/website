@@ -1,46 +1,52 @@
-import { ArrowRight } from "lucide-react";
-import { Fragment } from "react";
+import { Fragment } from 'react';
 
-import { Avatar, AvatarImage } from "@/components/ui/avatar";
-import { Separator } from "@/components/ui/separator";
+import { ArrowRight } from 'lucide-react';
+
+import { Avatar, AvatarImage } from '@/components/ui/avatar';
+import { Separator } from '@/components/ui/separator';
 
 const news = [
   {
-    title: "TechFlow AI Platform now available on Azure Marketplace",
-    category: "Partnership",
-    avatar: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/avatar-1.webp",
-    date: "June 15, 2024",
-    link: "#",
+    title: 'TechFlow AI Platform now available on Azure Marketplace',
+    category: 'Partnership',
+    avatar:
+      'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/avatar-1.webp',
+    date: 'June 15, 2024',
+    link: '#',
   },
   {
-    title: "CodeSphere: the journey behind our latest developer tool",
-    category: "Press release",
-    avatar: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/avatar-2.webp",
-    date: "June 10, 2024",
-    link: "#",
-  },
-  {
-    title:
-      "DataViz & CloudNative announce collaboration on next-gen analytics tools",
-    category: "Partnership",
-    avatar: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/avatar-3.webp",
-    date: "May 28, 2024",
-    link: "#",
+    title: 'CodeSphere: the journey behind our latest developer tool',
+    category: 'Press release',
+    avatar:
+      'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/avatar-2.webp',
+    date: 'June 10, 2024',
+    link: '#',
   },
   {
     title:
-      "QuantumByte launches EdgeCompute: a revolutionary edge computing platform",
-    category: "News",
-    avatar: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/avatar-4.webp",
-    date: "May 12, 2024",
-    link: "#",
+      'DataViz & CloudNative announce collaboration on next-gen analytics tools',
+    category: 'Partnership',
+    avatar:
+      'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/avatar-3.webp',
+    date: 'May 28, 2024',
+    link: '#',
   },
   {
-    title: "Join us at DevCon Global Summit 2024 in Berlin",
-    category: "Press release",
-    avatar: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/avatar-5.webp",
-    date: "May 5, 2024",
-    link: "#",
+    title:
+      'QuantumByte launches EdgeCompute: a revolutionary edge computing platform',
+    category: 'News',
+    avatar:
+      'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/avatar-4.webp',
+    date: 'May 12, 2024',
+    link: '#',
+  },
+  {
+    title: 'Join us at DevCon Global Summit 2024 in Berlin',
+    category: 'Press release',
+    avatar:
+      'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/avatar-5.webp',
+    date: 'May 5, 2024',
+    link: '#',
   },
 ];
 
@@ -50,7 +56,7 @@ const News1 = () => {
       <div className="container">
         <div className="flex flex-col items-start justify-between gap-5 lg:flex-row lg:gap-2">
           <div className="flex w-full max-w-56 items-center gap-3 text-sm">
-            <span className="size-2 rounded-full bg-primary"></span>
+            <span className="bg-primary size-2 rounded-full"></span>
             News
           </div>
           <div className="flex-1">
@@ -67,23 +73,23 @@ const News1 = () => {
                 <Fragment key={idx}>
                   <a
                     href={item.link}
-                    className="group flex flex-col justify-between gap-10 py-6 transition-all duration-400 lg:flex-row lg:items-center lg:hover:bg-muted"
+                    className="group lg:hover:bg-muted flex flex-col justify-between gap-10 py-6 transition-all duration-400 lg:flex-row lg:items-center"
                   >
                     <div className="flex items-center gap-2 text-lg transition-all duration-400 lg:group-hover:translate-x-8">
-                      <p className="inline text-pretty text-primary">
+                      <p className="text-primary inline text-pretty">
                         {item.title}
-                        <ArrowRight className="ml-2 inline size-4 shrink-0 opacity-0 transition-all duration-400 lg:group-hover:text-primary lg:group-hover:opacity-100" />
+                        <ArrowRight className="lg:group-hover:text-primary ml-2 inline size-4 shrink-0 opacity-0 transition-all duration-400 lg:group-hover:opacity-100" />
                       </p>
                     </div>
                     <div className="flex w-full items-center justify-between transition-all duration-400 lg:max-w-72 lg:group-hover:-translate-x-4 xl:max-w-80">
-                      <p className="text-xs text-muted-foreground">
+                      <p className="text-muted-foreground text-xs">
                         {item.category}
                       </p>
                       <div className="flex items-center gap-2">
-                        <Avatar className="size-7 rounded-full border border-border">
+                        <Avatar className="border-border size-7 rounded-full border">
                           <AvatarImage src={item.avatar} />
                         </Avatar>
-                        <time className="text-xs text-muted-foreground">
+                        <time className="text-muted-foreground text-xs">
                           {item.date}
                         </time>
                       </div>

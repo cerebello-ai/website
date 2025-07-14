@@ -1,8 +1,9 @@
-import { Star } from "lucide-react";
-import React from "react";
+import React from 'react';
 
-import { Avatar, AvatarImage } from "@/components/ui/avatar";
-import { Button } from "@/components/ui/button";
+import { Star } from 'lucide-react';
+
+import { Avatar, AvatarImage } from '@/components/ui/avatar';
+import { Button } from '@/components/ui/button';
 
 interface Hero7Props {
   heading?: string;
@@ -22,35 +23,35 @@ interface Hero7Props {
 }
 
 const Hero7 = ({
-  heading = "A Collection of Components Built With Shadcn & Tailwind",
-  description = "Finely crafted components built with React, Tailwind and Shadcn UI. Developers can copy and paste these blocks directly into their project.",
+  heading = 'A Collection of Components Built With Shadcn & Tailwind',
+  description = 'Finely crafted components built with React, Tailwind and Shadcn UI. Developers can copy and paste these blocks directly into their project.',
   button = {
-    text: "Discover all components",
-    url: "https://www.shadcnblocks.com",
+    text: 'Discover all components',
+    url: 'https://www.shadcnblocks.com',
   },
   reviews = {
     count: 200,
     rating: 5.0,
     avatars: [
       {
-        src: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/avatar-1.webp",
-        alt: "Avatar 1",
+        src: 'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/avatar-1.webp',
+        alt: 'Avatar 1',
       },
       {
-        src: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/avatar-2.webp",
-        alt: "Avatar 2",
+        src: 'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/avatar-2.webp',
+        alt: 'Avatar 2',
       },
       {
-        src: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/avatar-3.webp",
-        alt: "Avatar 3",
+        src: 'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/avatar-3.webp',
+        alt: 'Avatar 3',
       },
       {
-        src: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/avatar-4.webp",
-        alt: "Avatar 4",
+        src: 'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/avatar-4.webp',
+        alt: 'Avatar 4',
       },
       {
-        src: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/avatar-5.webp",
-        alt: "Avatar 5",
+        src: 'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/avatar-5.webp',
+        alt: 'Avatar 5',
       },
     ],
   },

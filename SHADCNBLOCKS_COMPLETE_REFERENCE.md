@@ -3,6 +3,7 @@
 This comprehensive reference documents all 681 shadcnblocks components with their descriptions and file paths.
 
 **Note**: This reference only includes components with available descriptions. Components without descriptions have been filtered out.
+
 ## Overview
 
 - **Total Components**: 621 across 35 categories (with descriptions)
@@ -2547,10 +2548,10 @@ This comprehensive reference documents all 681 shadcnblocks components with thei
   - **Path**: `src/components/shadcnblocks/timeline/timeline12.tsx`
   - **URL**: [View Component](https://www.shadcnblocks.com/block/timeline12)
 
-
 ## Usage Instructions
 
 ### Import Components
+
 ```typescript
 // Import a specific component
 import Hero1 from '@/components/shadcnblocks/hero/hero1'
@@ -2566,15 +2567,3 @@ export default function HomePage() {
   )
 }
 ```
-
-### Installation
-Use the installation script to get all components:
-```bash
-chmod +x install-all-shadcnblocks-organized.sh
-./install-all-shadcnblocks-organized.sh
-```
-
----
-
-*This reference was generated automatically by fetching descriptions from shadcnblocks.com*
-*Generated on: $(date)*

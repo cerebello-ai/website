@@ -1,10 +1,10 @@
-import { ChevronRight, Star } from "lucide-react";
+import { ChevronRight, Star } from 'lucide-react';
 
-import { Button } from "@/components/ui/button";
+import { Button } from '@/components/ui/button';
 
 const Hero141 = () => {
   return (
-    <section className="dark relative h-svh max-h-[1400px] min-h-[600px] w-full overflow-hidden bg-background px-5 font-sans">
+    <section className="dark bg-background relative h-svh max-h-[1400px] min-h-[600px] w-full overflow-hidden px-5 font-sans">
       <div className="relative z-10 flex size-full">
         <div className="m-auto flex max-w-[25rem] flex-col items-center gap-9 sm:max-w-[31.25rem] md:max-w-[50rem]">
           <h1 className="bg-linear-to-br from-neutral-100 to-neutral-600 bg-clip-text text-center text-4xl leading-tight font-semibold text-transparent sm:text-5xl md:text-[4rem]">
@@ -27,13 +27,13 @@ const Hero141 = () => {
               <Star className="fill-muted2-foreground size-3" />
               <Star className="fill-muted2-foreground size-3" />
             </div>
-            <p className="mt-1.5 max-w-40 text-center text-xs leading-snug font-medium text-muted-2-foreground">
+            <p className="text-muted-2-foreground mt-1.5 max-w-40 text-center text-xs leading-snug font-medium">
               Trusted by 2,000+ high performing individuals
             </p>
           </div>
         </div>
       </div>
-      <div className="absolute inset-0 size-full before:absolute before:inset-0 before:bg-background/85 before:content-['']">
+      <div className="before:bg-background/85 absolute inset-0 size-full before:absolute before:inset-0 before:content-['']">
         <video
           src="https://deifkwefumgah.cloudfront.net/shadcnblocks/block/video-1.mp4"
           muted

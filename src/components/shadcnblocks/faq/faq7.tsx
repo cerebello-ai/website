@@ -3,34 +3,34 @@ import {
   AccordionContent,
   AccordionItem,
   AccordionTrigger,
-} from "@/components/ui/accordion";
-import { Button } from "@/components/ui/button";
+} from '@/components/ui/accordion';
+import { Button } from '@/components/ui/button';
 
 const faqs = [
   {
-    question: "What is a FAQ and why is it important?",
+    question: 'What is a FAQ and why is it important?',
     answer:
-      "FAQ stands for Frequently Asked Questions. It is a list that provides answers to common questions people may have about a specific product, service, or topic.",
+      'FAQ stands for Frequently Asked Questions. It is a list that provides answers to common questions people may have about a specific product, service, or topic.',
   },
   {
-    question: "Why should I use a FAQ on my website or app?",
+    question: 'Why should I use a FAQ on my website or app?',
     answer:
-      "Utilizing a FAQ section on your website or app is a practical way to offer instant assistance to your users or customers. Instead of waiting for customer support responses, they can find quick answers to commonly asked questions. ",
+      'Utilizing a FAQ section on your website or app is a practical way to offer instant assistance to your users or customers. Instead of waiting for customer support responses, they can find quick answers to commonly asked questions. ',
   },
   {
-    question: "How do I effectively create a FAQ section?",
+    question: 'How do I effectively create a FAQ section?',
     answer:
-      "Creating a FAQ section starts with gathering the most frequent questions you receive from your users or customers. Once you have a list, you need to write clear, detailed, and helpful answers to each question.",
+      'Creating a FAQ section starts with gathering the most frequent questions you receive from your users or customers. Once you have a list, you need to write clear, detailed, and helpful answers to each question.',
   },
   {
-    question: "What are the benefits of having a well-maintained FAQ section?",
+    question: 'What are the benefits of having a well-maintained FAQ section?',
     answer:
-      "There are numerous advantages to maintaining a robust FAQ section. Firstly, it provides immediate answers to common queries, which improves the user experience.",
+      'There are numerous advantages to maintaining a robust FAQ section. Firstly, it provides immediate answers to common queries, which improves the user experience.',
   },
   {
-    question: "How do I effectively create a FAQ section?",
+    question: 'How do I effectively create a FAQ section?',
     answer:
-      "Creating a FAQ section starts with gathering the most frequent questions you receive from your users or customers. Once you have a list, you need to write clear, detailed, and helpful answers to each question.",
+      'Creating a FAQ section starts with gathering the most frequent questions you receive from your users or customers. Once you have a list, you need to write clear, detailed, and helpful answers to each question.',
   },
 ];
 
@@ -47,7 +47,7 @@ const Faq7 = () => {
                 We&apos;re here to assist.
               </span>
             </h2>
-            <p className="text-lg text-muted-foreground md:text-xl">
+            <p className="text-muted-foreground text-lg md:text-xl">
               Still have questions? Feel free to contact our friendly
               <a href="#" className="mx-1 whitespace-nowrap underline">
                 support team

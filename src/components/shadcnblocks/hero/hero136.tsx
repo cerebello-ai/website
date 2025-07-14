@@ -1,6 +1,6 @@
-import { ArrowRight, Sparkles } from "lucide-react";
+import { ArrowRight, Sparkles } from 'lucide-react';
 
-import { Button } from "@/components/ui/button";
+import { Button } from '@/components/ui/button';
 
 const Hero136 = () => {
   return (
@@ -11,7 +11,7 @@ const Hero136 = () => {
             <Sparkles className="m-auto h-12 w-12 fill-white" />
           </div>
           <div className="max-w-[25rem] md:max-w-[31.25rem] lg:max-w-[43.75rem]">
-            <h1 className="text-foreground mb-6 text-center text-[2.75rem] font-semibold leading-tight md:text-[3.5rem] lg:text-[4.375rem]">
+            <h1 className="text-foreground mb-6 text-center text-[2.75rem] leading-tight font-semibold md:text-[3.5rem] lg:text-[4.375rem]">
               Unveil great design from the real world.
             </h1>
             <p className="text-muted-foreground text-center text-xl">
@@ -83,7 +83,7 @@ const Hero136 = () => {
             <img
               src="https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-1.svg"
               alt=""
-              className="object-top-left w-full object-cover"
+              className="w-full object-cover object-top-left"
             />
           </div>
         </div>

@@ -1,5 +1,5 @@
-import { AspectRatio } from "@/components/ui/aspect-ratio";
-import { Button } from "@/components/ui/button";
+import { AspectRatio } from '@/components/ui/aspect-ratio';
+import { Button } from '@/components/ui/button';
 
 const Hero86 = () => {
   return (
@@ -7,12 +7,12 @@ const Hero86 = () => {
       <div className="bg-muted pt-16 lg:pt-24">
         <div className="container flex flex-col items-center lg:flex-row lg:items-start">
           <div className="relative flex flex-col items-start gap-8 pb-20 lg:w-1/2">
-            <h2 className="text-3xl leading-tight font-bold tracking-tighter text-foreground lg:text-5xl">
-              Your ad campaigns excel with{" "}
+            <h2 className="text-foreground text-3xl leading-tight font-bold tracking-tighter lg:text-5xl">
+              Your ad campaigns excel with{' '}
               <span className="border-muted2 border-b-2">my expertise</span>,
               delivering optimized performance.
             </h2>
-            <p className="text-lg text-foreground">
+            <p className="text-foreground text-lg">
               I’ll maximize your ad campaigns' potential or teach you the
               strategies so you can manage them yourself!
             </p>
@@ -34,7 +34,7 @@ const Hero86 = () => {
               <AspectRatio ratio={2} className="relative">
                 <AspectRatio
                   ratio={1}
-                  className="absolute w-full rounded-full bg-muted-2"
+                  className="bg-muted-2 absolute w-full rounded-full"
                 />
               </AspectRatio>
             </div>

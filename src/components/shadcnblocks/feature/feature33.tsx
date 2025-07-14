@@ -4,30 +4,30 @@ import {
   CardFooter,
   CardHeader,
   CardTitle,
-} from "@/components/ui/card";
+} from '@/components/ui/card';
 
 const Feature33 = () => {
   const features = [
     {
-      title: "One Click Copy Paste from the Block Library",
+      title: 'One Click Copy Paste from the Block Library',
       description:
-        "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusantium nesciunt alias facere vitae necessitatibus quam obcaecati? Culpa praesentium consequuntur quasi.",
-      linkText: "Try Blocks Now",
-      linkHref: "#",
+        'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusantium nesciunt alias facere vitae necessitatibus quam obcaecati? Culpa praesentium consequuntur quasi.',
+      linkText: 'Try Blocks Now',
+      linkHref: '#',
     },
     {
-      title: "Build Your Website in Minutes with Blocks",
+      title: 'Build Your Website in Minutes with Blocks',
       description:
-        "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusantium nesciunt alias facere vitae necessitatibus quam obcaecati? Culpa praesentium consequuntur quasi.",
-      linkText: "Try Blocks Now",
-      linkHref: "#",
+        'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusantium nesciunt alias facere vitae necessitatibus quam obcaecati? Culpa praesentium consequuntur quasi.',
+      linkText: 'Try Blocks Now',
+      linkHref: '#',
     },
     {
-      title: "Get Started with Blocks Today and Save Time",
+      title: 'Get Started with Blocks Today and Save Time',
       description:
-        "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusantium nesciunt alias facere vitae necessitatibus quam obcaecati? Culpa praesentium consequuntur quasi.",
-      linkText: "Try Blocks Now",
-      linkHref: "#",
+        'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusantium nesciunt alias facere vitae necessitatibus quam obcaecati? Culpa praesentium consequuntur quasi.',
+      linkText: 'Try Blocks Now',
+      linkHref: '#',
     },
   ];
 
@@ -38,12 +38,12 @@ const Feature33 = () => {
           <h2 className="mb-8 text-4xl font-semibold lg:mb-12 lg:text-6xl">
             Get Started With Blocks Today
           </h2>
-          <p className="font-medium text-muted-foreground lg:text-lg">
+          <p className="text-muted-foreground font-medium lg:text-lg">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum
             sint eos voluptatem, commodi hic ab ad maxime adipisci.
           </p>
         </div>
-        <div className="mx-auto max-w-7xl rounded-lg bg-muted pt-10 pr-10 lg:pt-28 lg:pr-32">
+        <div className="bg-muted mx-auto max-w-7xl rounded-lg pt-10 pr-10 lg:pt-28 lg:pr-32">
           <img
             src="https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-dark-1.svg"
             alt="placeholder"

@@ -1,5 +1,7 @@
-"use client";
-import type { LucideIcon } from "lucide-react";
+'use client';
+import { useEffect, useState } from 'react';
+
+import type { LucideIcon } from 'lucide-react';
 import {
   Globe,
   Lock,
@@ -7,18 +9,17 @@ import {
   SlidersHorizontal,
   Sparkles,
   Workflow,
-} from "lucide-react";
-import { useEffect, useState } from "react";
+} from 'lucide-react';
 
-import { Card, CardContent } from "@/components/ui/card";
-import type { CarouselApi } from "@/components/ui/carousel";
+import { Card, CardContent } from '@/components/ui/card';
+import type { CarouselApi } from '@/components/ui/carousel';
 import {
   Carousel,
   CarouselContent,
   CarouselItem,
   CarouselNext,
   CarouselPrevious,
-} from "@/components/ui/carousel";
+} from '@/components/ui/carousel';
 
 interface feature {
   title: string;
@@ -30,45 +31,49 @@ interface feature {
 
 const FEATURES: Array<feature> = [
   {
-    title: "AI-Driven Analysis of Natural Patterns",
-    label: "Patterns Identified",
+    title: 'AI-Driven Analysis of Natural Patterns',
+    label: 'Patterns Identified',
     icon: Workflow,
     description:
-      "Utilize AI to seamlessly identify and analyze natural patterns across various ecosystems, enhancing our understanding of environmental dynamics.",
-    background: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/photos/jeremy-bishop-iEjCQtcsVPY-unsplash.jpg",
+      'Utilize AI to seamlessly identify and analyze natural patterns across various ecosystems, enhancing our understanding of environmental dynamics.',
+    background:
+      'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/photos/jeremy-bishop-iEjCQtcsVPY-unsplash.jpg',
   },
   {
-    title: "AI-Powered Security in Natural Environments",
-    label: "Security Enhanced",
+    title: 'AI-Powered Security in Natural Environments',
+    label: 'Security Enhanced',
     icon: Lock,
     description:
-      "AI technology ensures the protection of sensitive ecological data, preventing unauthorized access and maintaining the integrity of environmental research.",
-    background: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/photos/ivan-bandura-hqnUYXsN5oY-unsplash.jpg",
+      'AI technology ensures the protection of sensitive ecological data, preventing unauthorized access and maintaining the integrity of environmental research.',
+    background:
+      'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/photos/ivan-bandura-hqnUYXsN5oY-unsplash.jpg',
   },
   {
-    title: "Enterprise-Grade AI Safeguards for Ecology",
-    label: "Safeguards Activated",
+    title: 'Enterprise-Grade AI Safeguards for Ecology',
+    label: 'Safeguards Activated',
     icon: ShieldCheck,
     description:
-      "Advanced AI safeguards ensure the accuracy and relevance of ecological data, preventing misinformation and supporting sustainable practices.",
-    background: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/photos/sam-wermut-FiUuNWxnb3k-unsplash.jpg",
+      'Advanced AI safeguards ensure the accuracy and relevance of ecological data, preventing misinformation and supporting sustainable practices.',
+    background:
+      'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/photos/sam-wermut-FiUuNWxnb3k-unsplash.jpg',
   },
   {
-    title: "AI Interpretation of Natural Communication",
-    label: "Structure Analyzed",
+    title: 'AI Interpretation of Natural Communication',
+    label: 'Structure Analyzed',
     icon: SlidersHorizontal,
     description:
-      "AI systems adapt to various natural communication styles, ensuring accurate interpretation and analysis of ecological interactions.",
-    background: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/photos/ivan-bandura-Kj2tYAl4HZg-unsplash.jpg",
+      'AI systems adapt to various natural communication styles, ensuring accurate interpretation and analysis of ecological interactions.',
+    background:
+      'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/photos/ivan-bandura-Kj2tYAl4HZg-unsplash.jpg',
   },
   {
-    title: "Multilingual AI for Global Ecology Studies",
-    label: "Languages Supported",
+    title: 'Multilingual AI for Global Ecology Studies',
+    label: 'Languages Supported',
     icon: Globe,
     description:
-      "AI facilitates global ecological studies through automatic language detection and real-time translation, supporting research in diverse regions.",
+      'AI facilitates global ecological studies through automatic language detection and real-time translation, supporting research in diverse regions.',
     background:
-      "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/photos/vasilis-karkalas-LadCWrSL7X8-unsplash.jpg",
+      'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/photos/vasilis-karkalas-LadCWrSL7X8-unsplash.jpg',
   },
 ];
 
@@ -83,7 +88,7 @@ const Feature224 = () => {
 
     setCurrent(api.selectedScrollSnap() + 1);
 
-    api.on("select", () => {
+    api.on('select', () => {
       setCurrent(api.selectedScrollSnap() + 1);
     });
   }, [api]);
@@ -98,13 +103,13 @@ const Feature224 = () => {
     <section className="py-32">
       <div className="container">
         <div className="flex w-full flex-col items-center justify-center gap-4">
-          <h2 className="mx-auto max-w-[21.875rem] text-center text-4xl font-medium leading-none md:max-w-[28.125rem] md:text-5xl lg:max-w-[35rem] lg:text-6xl">
+          <h2 className="mx-auto max-w-[21.875rem] text-center text-4xl leading-none font-medium md:max-w-[28.125rem] md:text-5xl lg:max-w-[35rem] lg:text-6xl">
             Harness the power of AI in nature
           </h2>
         </div>
         <Carousel
           opts={{
-            align: "start",
+            align: 'start',
           }}
           className="w-full"
           setApi={setApi}
@@ -165,7 +170,7 @@ const Feature224 = () => {
                 className="h-4 w-full"
               >
                 <div
-                  className={` ${current == i + 1 ? "bg-primary" : "bg-muted-2"} my-auto h-1 w-full rounded-full`}
+                  className={` ${current == i + 1 ? 'bg-primary' : 'bg-muted-2'} my-auto h-1 w-full rounded-full`}
                 ></div>
               </button>
             ))}

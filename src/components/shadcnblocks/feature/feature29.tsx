@@ -1,4 +1,4 @@
-import { Separator } from "@/components/ui/separator";
+import { Separator } from '@/components/ui/separator';
 
 const Feature29 = () => {
   return (
@@ -26,7 +26,7 @@ const Feature29 = () => {
             />
           </div>
           <div className="order-2 -mt-6 max-w-[412px] md:order-3">
-            <p className="mb-6 text-sm text-muted-foreground md:mb-12">
+            <p className="text-muted-foreground mb-6 text-sm md:mb-12">
               Lorem ipsum dolor sit amet.
             </p>
             <h3 className="mb-3 text-2xl font-medium md:mb-6">
@@ -42,7 +42,7 @@ const Feature29 = () => {
             </a>
           </div>
           <div className="order-4 -mt-6 max-w-[412px] md:order-3">
-            <p className="mb-6 text-sm text-muted-foreground md:mb-12">
+            <p className="text-muted-foreground mb-6 text-sm md:mb-12">
               Lorem ipsum dolor sit amet.
             </p>
             <h3 className="mb-3 text-2xl font-medium md:mb-6">

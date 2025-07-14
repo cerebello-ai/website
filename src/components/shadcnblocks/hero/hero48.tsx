@@ -1,61 +1,61 @@
-"use client";
-import AutoScroll from "embla-carousel-auto-scroll";
-import Autoplay from "embla-carousel-autoplay";
+'use client';
+import AutoScroll from 'embla-carousel-auto-scroll';
+import Autoplay from 'embla-carousel-autoplay';
 
-import { Button } from "@/components/ui/button";
+import { Button } from '@/components/ui/button';
 import {
   Carousel,
   CarouselContent,
   CarouselItem,
-} from "@/components/ui/carousel";
+} from '@/components/ui/carousel';
 
 const trustedBy = [
   {
-    name: "React",
-    logo: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/react-wordmark-white.svg",
+    name: 'React',
+    logo: 'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/react-wordmark-white.svg',
   },
   {
-    name: "Shadcn UI",
-    logo: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/shadcn-ui-wordmark-white.svg",
+    name: 'Shadcn UI',
+    logo: 'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/shadcn-ui-wordmark-white.svg',
   },
   {
-    name: "Supabase",
-    logo: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/supabase-wordmark-white.svg",
+    name: 'Supabase',
+    logo: 'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/supabase-wordmark-white.svg',
   },
   {
-    name: "Tailwind",
-    logo: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/tailwind-wordmark-white.svg",
+    name: 'Tailwind',
+    logo: 'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/tailwind-wordmark-white.svg',
   },
   {
-    name: "Vercel",
-    logo: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/vercel-wordmark-white.svg",
+    name: 'Vercel',
+    logo: 'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/vercel-wordmark-white.svg',
   },
   {
-    name: "React",
-    logo: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/react-wordmark-white.svg",
+    name: 'React',
+    logo: 'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/react-wordmark-white.svg',
   },
   {
-    name: "Shadcn UI",
-    logo: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/shadcn-ui-wordmark-white.svg",
+    name: 'Shadcn UI',
+    logo: 'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/shadcn-ui-wordmark-white.svg',
   },
   {
-    name: "Supabase",
-    logo: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/supabase-wordmark-white.svg",
+    name: 'Supabase',
+    logo: 'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/supabase-wordmark-white.svg',
   },
   {
-    name: "Tailwind",
-    logo: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/tailwind-wordmark-white.svg",
+    name: 'Tailwind',
+    logo: 'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/tailwind-wordmark-white.svg',
   },
   {
-    name: "Vercel",
-    logo: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/vercel-wordmark-white.svg",
+    name: 'Vercel',
+    logo: 'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/vercel-wordmark-white.svg',
   },
 ];
 
 const Hero48 = () => {
   return (
     <section className="bg-background dark pt-28 text-center">
-      <div className="container relative mx-auto flex flex-col items-center">
+      <div className="relative container mx-auto flex flex-col items-center">
         <h2 className="text-foreground mb-6 max-w-5xl text-4xl leading-none lg:text-[5.5rem]">
           Transform client insights into client delight
         </h2>
@@ -76,7 +76,7 @@ const Hero48 = () => {
         <Carousel
           opts={{
             loop: true,
-            align: "center",
+            align: 'center',
           }}
           plugins={[
             AutoScroll({
@@ -87,7 +87,7 @@ const Hero48 = () => {
               delay: 1000,
             }),
           ]}
-          className="before:bg-linear-to-r before:from-background after:bg-linear-to-l after:from-background absolute -bottom-32 before:absolute before:left-0 before:top-0 before:z-10 before:h-full before:w-16 before:to-transparent before:content-[''] after:absolute after:right-0 after:top-0 after:z-10 after:h-full after:w-16 after:to-transparent after:content-['']"
+          className="before:from-background after:from-background absolute -bottom-32 before:absolute before:top-0 before:left-0 before:z-10 before:h-full before:w-16 before:bg-linear-to-r before:to-transparent before:content-[''] after:absolute after:top-0 after:right-0 after:z-10 after:h-full after:w-16 after:bg-linear-to-l after:to-transparent after:content-['']"
         >
           <CarouselContent className="items-center">
             {trustedBy.map((item, index) => (

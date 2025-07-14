@@ -1,13 +1,55 @@
-"use client";
+'use client';
 
-import NumberFlow from "@number-flow/react";
-import { motion, useInView } from "framer-motion";
-import { ArrowRight, RefreshCcw } from "lucide-react";
-import React, { useEffect, useMemo, useRef, useState } from "react";
+import React, { useEffect, useMemo, useRef, useState } from 'react';
 
-import { Button } from "@/components/ui/button";
+import NumberFlow from '@number-flow/react';
+import { motion, useInView } from 'framer-motion';
+import { ArrowRight, RefreshCcw } from 'lucide-react';
 
-const Stats12 = () => {
+import { StatsProps } from '../types/common';
+
+import { Button } from '@/components/ui/button';
+
+interface MonthlyYearlyStats {
+  TotalRevenue: number;
+  TotalUsers: number;
+  CompanyGrowth: number;
+  NewCustomers: number;
+  BigCorpClients: number;
+}
+
+interface Stats12Props extends StatsProps {
+  mainButtonText?: string;
+  toggleButtonText?: string;
+  monthlyStats?: MonthlyYearlyStats;
+  yearlyStats?: MonthlyYearlyStats;
+  showGraph?: boolean;
+  currency?: string;
+}
+
+const Stats12 = ({
+  title = "We don't just talk we Deliver Results",
+  description = 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde perferendis deserunt quis excepturi reiciendis nulla?',
+  mainButtonText = 'Get Started With Us',
+  toggleButtonText = 'Show Monthly Stats',
+  monthlyStats = {
+    TotalRevenue: 12.3,
+    TotalUsers: 0.3,
+    CompanyGrowth: 300,
+    NewCustomers: 100,
+    BigCorpClients: 10,
+  },
+  yearlyStats = {
+    TotalRevenue: 105,
+    TotalUsers: 50,
+    CompanyGrowth: 30,
+    NewCustomers: 1.5,
+    BigCorpClients: 75,
+  },
+  showGraph = true,
+  currency = '$',
+  className,
+}: Stats12Props) => {
   const [showMonthlyStats, setShowMonthlyStats] = useState(false);
   const [stats, setStats] = useState({
     monthly: {
@@ -31,22 +73,10 @@ const Stats12 = () => {
 
   const finalStats = useMemo(
     () => ({
-      monthly: {
-        TotalRevenue: 12.3,
-        TotalUsers: 0.3,
-        CompanyGrowth: 300,
-        NewCustomers: 100,
-        BigCorpClients: 10,
-      },
-      yearly: {
-        TotalRevenue: 105,
-        TotalUsers: 50,
-        CompanyGrowth: 30,
-        NewCustomers: 1.5,
-        BigCorpClients: 75,
-      },
+      monthly: monthlyStats,
+      yearly: yearlyStats,
     }),
-    [],
+    [monthlyStats, yearlyStats],
   );
 
   useEffect(() => {
@@ -56,27 +86,28 @@ const Stats12 = () => {
   }, [isInView, finalStats]);
 
   return (
-    <section className="py-32">
+    <section className={`py-32 ${className || ''}`}>
       <div className="container flex justify-center">
         <div className="flex w-full flex-col justify-between gap-4 lg:flex-row">
           <div className="w-full lg:w-1/3">
-            <h1 className="w-full font-calSans text-6xl font-medium">
-              We don't just talk we Deliver Results
+            <h1 className="font-calSans w-full text-6xl font-medium">
+              {title}
             </h1>
-            <p className="my-4 text-lg tracking-tight text-muted-foreground">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde
-              perferendis deserunt quis excepturi reiciendis nulla?
+            <p className="text-muted-foreground my-4 text-lg tracking-tight">
+              {description}
             </p>
             <Button
               variant="secondary"
               className="group text-md mt-10 flex w-fit items-center justify-center gap-2 rounded-full px-6 py-1 tracking-tight shadow-none"
             >
-              <span>Get Started With Us</span>
+              <span>{mainButtonText}</span>
               <ArrowRight className="size-4 -rotate-45 transition-all ease-out group-hover:ml-3 group-hover:rotate-0" />
             </Button>
-            <div className="mt-10 lg:w-[115%]">
-              <Graph />
-            </div>
+            {showGraph && (
+              <div className="mt-10 lg:w-[115%]">
+                <Graph />
+              </div>
+            )}
           </div>
           <div ref={ref} className="flex w-full flex-col items-end lg:w-1/2">
             <h1 className="font-calSans text-8xl leading-0 lg:text-[10rem]">
@@ -86,7 +117,7 @@ const Stats12 = () => {
                     ? stats.monthly.TotalRevenue
                     : stats.yearly.TotalRevenue
                 }
-                prefix="$"
+                prefix={currency}
                 suffix="M"
                 className="font-calSans"
               />
@@ -98,7 +129,7 @@ const Stats12 = () => {
                 className="group text-md flex w-fit items-center justify-center gap-2 rounded-full px-6 py-1 tracking-tight shadow-none transition-all duration-300 ease-out active:scale-95"
                 onClick={() => setShowMonthlyStats(!showMonthlyStats)}
               >
-                <span>Show Monthly Stats</span>
+                <span>{toggleButtonText}</span>
                 <RefreshCcw className="size-4 -rotate-45 transition-all ease-out group-hover:ml-3 group-hover:rotate-0" />
               </Button>
             </div>
@@ -174,14 +205,14 @@ function Graph() {
         fill="none"
         viewBox="0 0 644 388"
         initial={{
-          clipPath: "inset(0px 100% 0px 0px)",
+          clipPath: 'inset(0px 100% 0px 0px)',
         }}
         animate={{
-          clipPath: "inset(0px 0% 0px 0px)",
+          clipPath: 'inset(0px 0% 0px 0px)',
         }}
         transition={{
           duration: 1,
-          type: "spring",
+          type: 'spring',
           damping: 18,
         }}
       >

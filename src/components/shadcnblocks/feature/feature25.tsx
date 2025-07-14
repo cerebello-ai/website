@@ -1,49 +1,49 @@
-import { Check } from "lucide-react";
+import { Check } from 'lucide-react';
 
-import { Badge } from "@/components/ui/badge";
-import { Separator } from "@/components/ui/separator";
+import { Badge } from '@/components/ui/badge';
+import { Separator } from '@/components/ui/separator';
 
 const sections = [
   {
-    title: "Manage your projects",
+    title: 'Manage your projects',
     items: [
-      "Lorem ipsum dolor sit",
-      "Amet consectetur adipisicing elit",
-      "Dolores itaque modi quos",
-      "Hic placeat laudantium inventore",
-      "Odio dignissimos quibusdam",
-      "Autem quae eveniet voluptatibus",
-      "Similique illum. Iure perspiciatis",
-      "Impedit culpa error earum in quas",
-      "Nisi inventore minus voluptatem",
+      'Lorem ipsum dolor sit',
+      'Amet consectetur adipisicing elit',
+      'Dolores itaque modi quos',
+      'Hic placeat laudantium inventore',
+      'Odio dignissimos quibusdam',
+      'Autem quae eveniet voluptatibus',
+      'Similique illum. Iure perspiciatis',
+      'Impedit culpa error earum in quas',
+      'Nisi inventore minus voluptatem',
     ],
   },
   {
-    title: "Customize your website easily",
+    title: 'Customize your website easily',
     items: [
-      "Lorem ipsum dolor sit",
-      "Amet consectetur adipisicing elit",
-      "Dolores itaque modi quos",
-      "Hic placeat laudantium inventore",
-      "Odio dignissimos quibusdam",
-      "Autem quae eveniet voluptatibus",
-      "Similique illum. Iure perspiciatis",
-      "Impedit culpa error earum in quas",
-      "Nisi inventore minus voluptatem",
+      'Lorem ipsum dolor sit',
+      'Amet consectetur adipisicing elit',
+      'Dolores itaque modi quos',
+      'Hic placeat laudantium inventore',
+      'Odio dignissimos quibusdam',
+      'Autem quae eveniet voluptatibus',
+      'Similique illum. Iure perspiciatis',
+      'Impedit culpa error earum in quas',
+      'Nisi inventore minus voluptatem',
     ],
   },
   {
-    title: "Style your components",
+    title: 'Style your components',
     items: [
-      "Lorem ipsum dolor sit",
-      "Amet consectetur adipisicing elit",
-      "Dolores itaque modi quos",
-      "Hic placeat laudantium inventore",
-      "Odio dignissimos quibusdam",
-      "Autem quae eveniet voluptatibus",
-      "Similique illum. Iure perspiciatis",
-      "Impedit culpa error earum in quas",
-      "Nisi inventore minus voluptatem",
+      'Lorem ipsum dolor sit',
+      'Amet consectetur adipisicing elit',
+      'Dolores itaque modi quos',
+      'Hic placeat laudantium inventore',
+      'Odio dignissimos quibusdam',
+      'Autem quae eveniet voluptatibus',
+      'Similique illum. Iure perspiciatis',
+      'Impedit culpa error earum in quas',
+      'Nisi inventore minus voluptatem',
     ],
   },
 ];
@@ -57,7 +57,7 @@ const Feature25 = () => {
           <h2 className="mb-2 text-center text-3xl font-semibold lg:text-4xl">
             Built awesome websites with our blocks
           </h2>
-          <p className="text-center text-muted-foreground lg:text-lg">
+          <p className="text-muted-foreground text-center lg:text-lg">
             Lorem ipsum dolor sit, amet consectetur adipisicing elit dolores
             itaque.
           </p>
@@ -72,7 +72,7 @@ const Feature25 = () => {
                 </h3>
                 <ul className="col-span-3 grid gap-x-10 gap-y-4 lg:grid-cols-3">
                   {section.items.map((item, idx) => (
-                    <li key={idx} className="flex gap-1 text-muted-foreground">
+                    <li key={idx} className="text-muted-foreground flex gap-1">
                       <Check className="mr-2 inline-block w-4" />
                       {item}
                     </li>

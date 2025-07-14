@@ -1,4 +1,6 @@
-"use client";
+'use client';
+
+import { useState } from 'react';
 
 import {
   BadgeCheck,
@@ -6,58 +8,57 @@ import {
   Briefcase,
   Building,
   Rocket,
-} from "lucide-react";
-import { useState } from "react";
+} from 'lucide-react';
 
-import { Badge } from "@/components/ui/badge";
-import { Button } from "@/components/ui/button";
+import { Badge } from '@/components/ui/badge';
+import { Button } from '@/components/ui/button';
 
 const pricingPlans = [
   {
     icon: Rocket,
-    name: "Basic plan",
+    name: 'Basic plan',
     price: {
       monthly: 19,
       yearly: 199,
     },
     features: [
-      "Basic task management tools",
-      "Calendar sync with limited integrations",
-      "Access to 1 dashboard for tracking tasks",
-      "Limited AI suggestions and insights",
-      "Basic support and community access",
+      'Basic task management tools',
+      'Calendar sync with limited integrations',
+      'Access to 1 dashboard for tracking tasks',
+      'Limited AI suggestions and insights',
+      'Basic support and community access',
     ],
   },
   {
     icon: Briefcase,
-    name: "Business plan",
+    name: 'Business plan',
     price: {
       monthly: 29,
       yearly: 299,
     },
     features: [
-      "All Free Plan features, plus:",
-      "Unlimited task lists",
-      "Advanced calendar sync",
-      "AI-driven insights",
-      "Access to custom dashboards",
-      "Priority email support",
+      'All Free Plan features, plus:',
+      'Unlimited task lists',
+      'Advanced calendar sync',
+      'AI-driven insights',
+      'Access to custom dashboards',
+      'Priority email support',
     ],
   },
   {
     icon: Building,
-    name: "Enterprise plan",
+    name: 'Enterprise plan',
     price: {
       monthly: 49,
       yearly: 499,
     },
     features: [
-      "All Pro Plan features, plus:",
-      "Dedicated account manager",
-      "Custom integrations",
-      "Real-time collaboration",
-      "Role-based permissions",
-      "24/7 priority support",
+      'All Pro Plan features, plus:',
+      'Dedicated account manager',
+      'Custom integrations',
+      'Real-time collaboration',
+      'Role-based permissions',
+      '24/7 priority support',
     ],
   },
 ];
@@ -71,7 +72,7 @@ const Pricing20 = () => {
         <div className="container flex flex-col gap-6 border-x py-4 max-lg:border-x lg:py-8">
           <Badge
             variant="outline"
-            className="w-fit gap-1 bg-card px-3 text-sm font-normal tracking-tight shadow-sm"
+            className="bg-card w-fit gap-1 px-3 text-sm font-normal tracking-tight shadow-sm"
           >
             <BadgeDollarSign className="size-4" />
             <span>Spenders Lounge</span>
@@ -79,7 +80,7 @@ const Pricing20 = () => {
           <h2 className="text-3xl leading-tight tracking-tight md:text-4xl lg:text-6xl">
             Pricing for everyone
           </h2>
-          <p className="max-w-[600px] tracking-[-0.32px] text-muted-foreground">
+          <p className="text-muted-foreground max-w-[600px] tracking-[-0.32px]">
             Choose the Plan that Fits Your Productivity Need
           </p>
         </div>
@@ -90,7 +91,7 @@ const Pricing20 = () => {
           {pricingPlans.map((plan, index) => (
             <div key={index} className="flex flex-col justify-between p-6">
               <div className="space-y-2 border-b pb-6">
-                <div className="flex items-center gap-2.5 text-muted-foreground">
+                <div className="text-muted-foreground flex items-center gap-2.5">
                   <plan.icon className="size-4" />
                   <h3 className="text-xl tracking-[-0.8px]">{plan.name}</h3>
                 </div>
@@ -101,7 +102,7 @@ const Pricing20 = () => {
                       ${isMonthly ? plan.price.monthly : plan.price.yearly}
                     </span>
                     <span className="text-muted-foreground-subtle text-2xl tracking-[-0.96px]">
-                      {isMonthly ? "/mo" : "/yr"}
+                      {isMonthly ? '/mo' : '/yr'}
                     </span>
                   </div>
                   <p className="text-muted-foreground">
@@ -119,8 +120,8 @@ const Pricing20 = () => {
                 <ul className="mt-4 space-y-4">
                   {plan.features.map((feature, index) => (
                     <li key={index} className="flex items-center gap-4">
-                      <BadgeCheck className="size-6 text-muted-foreground" />
-                      <span className="tracking-[-0.32px] text-muted-foreground">
+                      <BadgeCheck className="text-muted-foreground size-6" />
+                      <span className="text-muted-foreground tracking-[-0.32px]">
                         {feature}
                       </span>
                     </li>
@@ -129,7 +130,7 @@ const Pricing20 = () => {
               </div>
 
               <Button
-                variant={index === 1 ? "default" : "secondary"}
+                variant={index === 1 ? 'default' : 'secondary'}
                 className="mt-12"
               >
                 Get started

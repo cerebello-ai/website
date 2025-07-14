@@ -1,21 +1,23 @@
-import { ArrowDownRight } from "lucide-react";
+import { ArrowDownRight } from 'lucide-react';
 
-import { cn } from "@/lib/utils";
-
-import { Card, CardContent } from "@/components/ui/card";
+import { Card, CardContent } from '@/components/ui/card';
+import { cn } from '@/lib/utils';
 
 const items = [
   {
-    title: "Data driven design",
-    image: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-1.svg",
+    title: 'Data driven design',
+    image:
+      'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-1.svg',
   },
   {
-    title: "Manage projects end-to-end",
-    image: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-2.svg",
+    title: 'Manage projects end-to-end',
+    image:
+      'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-2.svg',
   },
   {
-    title: "Build momentum and healthy habits",
-    image: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-3.svg",
+    title: 'Build momentum and healthy habits',
+    image:
+      'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-3.svg',
   },
 ];
 
@@ -26,7 +28,7 @@ const Feature171 = () => {
         {/* Top dashed line with text */}
         <div className="relative flex items-center justify-center">
           <DashedLine className="text-muted-foreground" />
-          <span className="absolute bg-secondary px-3 font-mono text-sm font-medium tracking-wide text-muted-foreground max-lg:hidden">
+          <span className="bg-secondary text-muted-foreground absolute px-3 font-mono text-sm font-medium tracking-wide max-lg:hidden">
             MEASURE TWICE. CUT ONCE.
           </span>
         </div>
@@ -36,7 +38,7 @@ const Feature171 = () => {
           <h2 className="text-2xl font-semibold tracking-tight md:text-4xl lg:text-5xl">
             Made for modern product teams
           </h2>
-          <p className="leading-snug font-medium text-muted-foreground">
+          <p className="text-muted-foreground leading-snug font-medium">
             Mainline is built on the habits that make the best product teams
             successful: staying focused, moving quickly, and always aiming for
             high-quality work.
@@ -55,7 +57,7 @@ const Feature171 = () => {
                       alt={`${item.title} interface`}
                       className="aspect-[1.28/1] overflow-hidden rounded-tl-xl object-cover"
                     />
-                    <div className="absolute inset-0 bg-linear-to-t from-background via-transparent to-transparent" />
+                    <div className="from-background absolute inset-0 bg-linear-to-t via-transparent to-transparent" />
                   </div>
                   <a
                     href="#"
@@ -89,21 +91,21 @@ const Feature171 = () => {
 export { Feature171 };
 
 interface DashedLineProps {
-  orientation?: "horizontal" | "vertical";
+  orientation?: 'horizontal' | 'vertical';
   className?: string;
 }
 
 const DashedLine = ({
-  orientation = "horizontal",
+  orientation = 'horizontal',
   className,
 }: DashedLineProps) => {
-  const isHorizontal = orientation === "horizontal";
+  const isHorizontal = orientation === 'horizontal';
 
   return (
     <div
       className={cn(
-        "relative text-muted-foreground",
-        isHorizontal ? "h-px w-full" : "h-full w-px",
+        'text-muted-foreground relative',
+        isHorizontal ? 'h-px w-full' : 'h-full w-px',
         className,
       )}
     >
@@ -111,14 +113,14 @@ const DashedLine = ({
         className={cn(
           isHorizontal
             ? [
-                "h-px w-full",
-                "bg-[repeating-linear-gradient(90deg,transparent,transparent_4px,currentColor_4px,currentColor_10px)]",
-                "[mask-image:linear-gradient(90deg,transparent,black_25%,black_45%,transparent)]",
+                'h-px w-full',
+                'bg-[repeating-linear-gradient(90deg,transparent,transparent_4px,currentColor_4px,currentColor_10px)]',
+                '[mask-image:linear-gradient(90deg,transparent,black_25%,black_45%,transparent)]',
               ]
             : [
-                "h-full w-px",
-                "bg-[repeating-linear-gradient(180deg,transparent,transparent_4px,currentColor_4px,currentColor_8px)]",
-                "[mask-image:linear-gradient(180deg,transparent,black_25%,black_45%,transparent)]",
+                'h-full w-px',
+                'bg-[repeating-linear-gradient(180deg,transparent,transparent_4px,currentColor_4px,currentColor_8px)]',
+                '[mask-image:linear-gradient(180deg,transparent,black_25%,black_45%,transparent)]',
               ],
         )}
       />

@@ -1,6 +1,6 @@
-import { Star } from "lucide-react";
+import { Star } from 'lucide-react';
 
-import { Button } from "@/components/ui/button";
+import { Button } from '@/components/ui/button';
 
 const Hero29 = () => {
   return (
@@ -69,7 +69,7 @@ const Hero29 = () => {
         <h1 className="my-3 text-2xl font-bold text-pretty sm:text-4xl md:my-6 lg:text-5xl">
           Welcome to Our Website
         </h1>
-        <p className="mb-6 max-w-xl text-muted-foreground md:mb-12 lg:text-xl">
+        <p className="text-muted-foreground mb-6 max-w-xl md:mb-12 lg:text-xl">
           Elig doloremque mollitia fugiat omnis! Porro facilis quo animi
           consequatur.
         </p>
@@ -77,20 +77,20 @@ const Hero29 = () => {
           <div className="flex items-start gap-4">
             <div className="flex flex-col items-center gap-2">
               <Button variant="outline">Try our product for free</Button>
-              <p className="text-xs text-muted-foreground">
+              <p className="text-muted-foreground text-xs">
                 No credit card required
               </p>
             </div>
             <Button>Book a demo</Button>
           </div>
-          <div className="flex w-full items-center justify-between rounded-full bg-background px-4 py-2 shadow">
+          <div className="bg-background flex w-full items-center justify-between rounded-full px-4 py-2 shadow">
             <div className="flex items-center">
               <span className="flex items-center gap-x-0.5">
-                <Star className="size-3 fill-accent-foreground stroke-accent-foreground" />
-                <Star className="size-3 fill-accent-foreground stroke-accent-foreground" />
-                <Star className="size-3 fill-accent-foreground stroke-accent-foreground" />
-                <Star className="size-3 fill-accent-foreground stroke-accent-foreground" />
-                <Star className="size-3 fill-accent-foreground stroke-accent-foreground" />
+                <Star className="fill-accent-foreground stroke-accent-foreground size-3" />
+                <Star className="fill-accent-foreground stroke-accent-foreground size-3" />
+                <Star className="fill-accent-foreground stroke-accent-foreground size-3" />
+                <Star className="fill-accent-foreground stroke-accent-foreground size-3" />
+                <Star className="fill-accent-foreground stroke-accent-foreground size-3" />
               </span>
               <span className="ml-2 text-xs">4.8 starts</span>
             </div>
@@ -99,7 +99,7 @@ const Hero29 = () => {
         </div>
       </div>
       <div className="relative container -mb-48 overflow-hidden">
-        <div className="mx-auto aspect-4/3 max-w-3xl rounded-xl border border-background/40 bg-background/20 p-4">
+        <div className="border-background/40 bg-background/20 mx-auto aspect-4/3 max-w-3xl rounded-xl border p-4">
           <img
             src="https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-1.svg"
             alt="placeholder hero"

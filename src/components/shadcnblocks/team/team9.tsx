@@ -1,22 +1,22 @@
-"use client";
+'use client';
 
-import { TabsTrigger } from "@radix-ui/react-tabs";
-import { SearchIcon } from "lucide-react";
-import { useState } from "react";
+import { useState } from 'react';
 
-import { cn } from "@/lib/utils";
+import { TabsTrigger } from '@radix-ui/react-tabs';
+import { SearchIcon } from 'lucide-react';
 
-import { Input } from "@/components/ui/input";
-import { Separator } from "@/components/ui/separator";
-import { Tabs, TabsList } from "@/components/ui/tabs";
+import { Input } from '@/components/ui/input';
+import { Separator } from '@/components/ui/separator';
+import { Tabs, TabsList } from '@/components/ui/tabs';
+import { cn } from '@/lib/utils';
 
 const categories = [
-  "Engineering",
-  "Design",
-  "Marketing",
-  "Sales",
-  "Support",
-  "Leadership",
+  'Engineering',
+  'Design',
+  'Marketing',
+  'Sales',
+  'Support',
+  'Leadership',
 ] as const;
 
 interface Member {
@@ -29,207 +29,236 @@ interface Member {
 
 const members: Member[] = [
   {
-    name: "John Smith",
-    image: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/avatar-1.webp",
-    role: "CEO",
+    name: 'John Smith',
+    image:
+      'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/avatar-1.webp',
+    role: 'CEO',
     yearsOfExperience: 15,
-    categories: "Leadership",
+    categories: 'Leadership',
   },
   {
-    name: "Sarah Johnson",
-    image: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/avatar-2.webp",
-    role: "Lead Designer",
+    name: 'Sarah Johnson',
+    image:
+      'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/avatar-2.webp',
+    role: 'Lead Designer',
     yearsOfExperience: 8,
-    categories: "Design",
+    categories: 'Design',
   },
   {
-    name: "Michael Chen",
-    image: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/avatar-3.webp",
-    role: "Senior Engineer",
+    name: 'Michael Chen',
+    image:
+      'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/avatar-3.webp',
+    role: 'Senior Engineer',
     yearsOfExperience: 10,
-    categories: "Engineering",
+    categories: 'Engineering',
   },
   {
-    name: "Emily Brown",
-    image: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/avatar-4.webp",
-    role: "Marketing Director",
+    name: 'Emily Brown',
+    image:
+      'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/avatar-4.webp',
+    role: 'Marketing Director',
     yearsOfExperience: 12,
-    categories: "Marketing",
+    categories: 'Marketing',
   },
   {
-    name: "David Wilson",
-    image: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/avatar-5.webp",
-    role: "Sales Manager",
+    name: 'David Wilson',
+    image:
+      'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/avatar-5.webp',
+    role: 'Sales Manager',
     yearsOfExperience: 7,
-    categories: "Sales",
+    categories: 'Sales',
   },
   {
-    name: "Jessica Lee",
-    image: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/avatar-6.webp",
-    role: "Customer Success Lead",
+    name: 'Jessica Lee',
+    image:
+      'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/avatar-6.webp',
+    role: 'Customer Success Lead',
     yearsOfExperience: 5,
-    categories: "Support",
+    categories: 'Support',
   },
   {
-    name: "Robert Taylor",
-    image: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/avatar-7.webp",
-    role: "CTO",
+    name: 'Robert Taylor',
+    image:
+      'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/avatar-7.webp',
+    role: 'CTO',
     yearsOfExperience: 20,
-    categories: "Leadership",
+    categories: 'Leadership',
   },
   {
-    name: "Amanda Martinez",
-    image: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/avatar-8.webp",
-    role: "Product Designer",
+    name: 'Amanda Martinez',
+    image:
+      'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/avatar-8.webp',
+    role: 'Product Designer',
     yearsOfExperience: 6,
-    categories: "Design",
+    categories: 'Design',
   },
   {
-    name: "James Anderson",
-    image: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/avatar-1.webp",
-    role: "Frontend Engineer",
+    name: 'James Anderson',
+    image:
+      'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/avatar-1.webp',
+    role: 'Frontend Engineer',
     yearsOfExperience: 4,
-    categories: "Engineering",
+    categories: 'Engineering',
   },
   {
-    name: "Lisa Wong",
-    image: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/avatar-2.webp",
-    role: "Marketing Specialist",
+    name: 'Lisa Wong',
+    image:
+      'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/avatar-2.webp',
+    role: 'Marketing Specialist',
     yearsOfExperience: 3,
-    categories: "Marketing",
+    categories: 'Marketing',
   },
   {
-    name: "Kevin Park",
-    image: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/avatar-3.webp",
-    role: "Sales Representative",
+    name: 'Kevin Park',
+    image:
+      'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/avatar-3.webp',
+    role: 'Sales Representative',
     yearsOfExperience: 5,
-    categories: "Sales",
+    categories: 'Sales',
   },
   {
-    name: "Rachel Green",
-    image: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/avatar-4.webp",
-    role: "Support Specialist",
+    name: 'Rachel Green',
+    image:
+      'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/avatar-4.webp',
+    role: 'Support Specialist',
     yearsOfExperience: 2,
-    categories: "Support",
+    categories: 'Support',
   },
   {
-    name: "Thomas Wright",
-    image: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/avatar-5.webp",
-    role: "Backend Engineer",
+    name: 'Thomas Wright',
+    image:
+      'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/avatar-5.webp',
+    role: 'Backend Engineer',
     yearsOfExperience: 8,
-    categories: "Engineering",
+    categories: 'Engineering',
   },
   {
-    name: "Michelle Kim",
-    image: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/avatar-6.webp",
-    role: "UI Designer",
+    name: 'Michelle Kim',
+    image:
+      'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/avatar-6.webp',
+    role: 'UI Designer',
     yearsOfExperience: 4,
-    categories: "Design",
+    categories: 'Design',
   },
   {
-    name: "Daniel Garcia",
-    image: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/avatar-7.webp",
-    role: "Marketing Manager",
+    name: 'Daniel Garcia',
+    image:
+      'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/avatar-7.webp',
+    role: 'Marketing Manager',
     yearsOfExperience: 9,
-    categories: "Marketing",
+    categories: 'Marketing',
   },
   {
-    name: "Jennifer Lopez",
-    image: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/avatar-8.webp",
-    role: "Sales Director",
+    name: 'Jennifer Lopez',
+    image:
+      'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/avatar-8.webp',
+    role: 'Sales Director',
     yearsOfExperience: 11,
-    categories: "Sales",
+    categories: 'Sales',
   },
   {
-    name: "Andrew Wilson",
-    image: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/avatar-1.webp",
-    role: "Support Manager",
+    name: 'Andrew Wilson',
+    image:
+      'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/avatar-1.webp',
+    role: 'Support Manager',
     yearsOfExperience: 6,
-    categories: "Support",
+    categories: 'Support',
   },
   {
-    name: "Patricia Moore",
-    image: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/avatar-2.webp",
-    role: "COO",
+    name: 'Patricia Moore',
+    image:
+      'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/avatar-2.webp',
+    role: 'COO',
     yearsOfExperience: 18,
-    categories: "Leadership",
+    categories: 'Leadership',
   },
   {
-    name: "Ryan Thompson",
-    image: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/avatar-3.webp",
-    role: "Systems Engineer",
+    name: 'Ryan Thompson',
+    image:
+      'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/avatar-3.webp',
+    role: 'Systems Engineer',
     yearsOfExperience: 7,
-    categories: "Engineering",
+    categories: 'Engineering',
   },
   {
-    name: "Sophie Turner",
-    image: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/avatar-4.webp",
-    role: "UX Designer",
+    name: 'Sophie Turner',
+    image:
+      'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/avatar-4.webp',
+    role: 'UX Designer',
     yearsOfExperience: 5,
-    categories: "Design",
+    categories: 'Design',
   },
   {
-    name: "Chris Evans",
-    image: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/avatar-5.webp",
-    role: "Content Marketing",
+    name: 'Chris Evans',
+    image:
+      'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/avatar-5.webp',
+    role: 'Content Marketing',
     yearsOfExperience: 4,
-    categories: "Marketing",
+    categories: 'Marketing',
   },
   {
-    name: "Maria Rodriguez",
-    image: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/avatar-6.webp",
-    role: "Sales Team Lead",
+    name: 'Maria Rodriguez',
+    image:
+      'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/avatar-6.webp',
+    role: 'Sales Team Lead',
     yearsOfExperience: 8,
-    categories: "Sales",
+    categories: 'Sales',
   },
   {
-    name: "Steven Clark",
-    image: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/avatar-7.webp",
-    role: "Technical Support",
+    name: 'Steven Clark',
+    image:
+      'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/avatar-7.webp',
+    role: 'Technical Support',
     yearsOfExperience: 3,
-    categories: "Support",
+    categories: 'Support',
   },
   {
-    name: "Elizabeth Chen",
-    image: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/avatar-8.webp",
-    role: "CFO",
+    name: 'Elizabeth Chen',
+    image:
+      'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/avatar-8.webp',
+    role: 'CFO',
     yearsOfExperience: 16,
-    categories: "Leadership",
+    categories: 'Leadership',
   },
   {
-    name: "Alex Turner",
-    image: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/avatar-1.webp",
-    role: "DevOps Engineer",
+    name: 'Alex Turner',
+    image:
+      'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/avatar-1.webp',
+    role: 'DevOps Engineer',
     yearsOfExperience: 6,
-    categories: "Engineering",
+    categories: 'Engineering',
   },
   {
-    name: "Nina Patel",
-    image: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/avatar-2.webp",
-    role: "Motion Designer",
+    name: 'Nina Patel',
+    image:
+      'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/avatar-2.webp',
+    role: 'Motion Designer',
     yearsOfExperience: 4,
-    categories: "Design",
+    categories: 'Design',
   },
   {
-    name: "Sam Roberts",
-    image: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/avatar-3.webp",
-    role: "Cloud Engineer",
+    name: 'Sam Roberts',
+    image:
+      'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/avatar-3.webp',
+    role: 'Cloud Engineer',
     yearsOfExperience: 5,
-    categories: "Engineering",
+    categories: 'Engineering',
   },
   {
-    name: "Julia Zhang",
-    image: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/avatar-4.webp",
-    role: "Security Engineer",
+    name: 'Julia Zhang',
+    image:
+      'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/avatar-4.webp',
+    role: 'Security Engineer',
     yearsOfExperience: 7,
-    categories: "Engineering",
+    categories: 'Engineering',
   },
   {
-    name: "Marcus Johnson",
-    image: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/avatar-5.webp",
-    role: "Mobile Engineer",
+    name: 'Marcus Johnson',
+    image:
+      'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/avatar-5.webp',
+    role: 'Mobile Engineer',
     yearsOfExperience: 6,
-    categories: "Engineering",
+    categories: 'Engineering',
   },
 ];
 
@@ -237,7 +266,7 @@ const Team9 = () => {
   const [selectedCategory, setSelectedCategory] = useState<string>(
     categories[0],
   );
-  const [searchQuery, setSearchQuery] = useState("");
+  const [searchQuery, setSearchQuery] = useState('');
 
   const filteredMembers = members.filter((member) => {
     const matchesCategory = selectedCategory === member.categories;
@@ -253,7 +282,7 @@ const Team9 = () => {
       <div className="container">
         <div className="flex flex-col gap-8">
           <h2 className="text-4xl md:text-5xl">Meet Our Team</h2>
-          <p className="max-w-2xl text-muted-foreground">
+          <p className="text-muted-foreground max-w-2xl">
             Our diverse group of professionals brings together expertise from
             design, engineering, and technology to deliver innovative solutions
             that transform ideas into reality.
@@ -266,18 +295,18 @@ const Team9 = () => {
               onValueChange={setSelectedCategory}
               className="-mx-8 overflow-x-auto px-8"
             >
-              <TabsList className="flex h-auto justify-start gap-4 bg-background md:flex-wrap">
+              <TabsList className="bg-background flex h-auto justify-start gap-4 md:flex-wrap">
                 {categories.map((category) => (
                   <TabsTrigger
                     key={category}
                     value={category}
-                    className="relative flex flex-col items-center gap-2 overflow-visible whitespace-nowrap data-[state=active]:text-foreground"
+                    className="data-[state=active]:text-foreground relative flex flex-col items-center gap-2 overflow-visible whitespace-nowrap"
                   >
                     {category}
                     <span
                       className={cn(
-                        "absolute -bottom-1 h-0.5 w-full bg-primary opacity-0",
-                        selectedCategory === category && "opacity-100",
+                        'bg-primary absolute -bottom-1 h-0.5 w-full opacity-0',
+                        selectedCategory === category && 'opacity-100',
                       )}
                     />
                   </TabsTrigger>
@@ -291,7 +320,7 @@ const Team9 = () => {
                 value={searchQuery}
                 onChange={(e) => setSearchQuery(e.target.value)}
               />
-              <div className="absolute inset-y-0 flex items-center justify-center pl-3 text-muted-foreground/80">
+              <div className="text-muted-foreground/80 absolute inset-y-0 flex items-center justify-center pl-3">
                 <SearchIcon className="size-4" />
               </div>
             </div>
@@ -300,21 +329,21 @@ const Team9 = () => {
             {filteredMembers.map((member, idx) => (
               <div
                 key={idx}
-                className="rounded-2xl border border-border bg-background p-7 text-center"
+                className="border-border bg-background rounded-2xl border p-7 text-center"
               >
                 <img
                   src={member.image}
                   alt={member.name}
-                  className="mx-auto size-28 rounded-full border border-border"
+                  className="border-border mx-auto size-28 rounded-full border"
                 />
                 <div className="mt-6 flex flex-col justify-center">
-                  <p className="text-xl font-medium text-primary">
+                  <p className="text-primary text-xl font-medium">
                     {member.name}
                   </p>
-                  <p className="text-sm text-muted-foreground">{member.role}</p>
+                  <p className="text-muted-foreground text-sm">{member.role}</p>
                 </div>
-                <Separator className="my-6 bg-linear-to-r from-background via-border to-background" />
-                <p className="text-sm text-muted-foreground">
+                <Separator className="from-background via-border to-background my-6 bg-linear-to-r" />
+                <p className="text-muted-foreground text-sm">
                   {member.yearsOfExperience} years of experience
                 </p>
               </div>

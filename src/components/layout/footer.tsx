@@ -54,7 +54,9 @@ export const Footer = () => {
         <div className="border-sand-600 mx-auto flex max-w-[95vw] flex-col items-center border-b py-10 text-center md:py-14 lg:py-20">
           <h2 className="max-w-[800px] text-5xl leading-none font-semibold tracking-tight text-balance lg:text-6xl">
             Transform your business with AI.{' '}
-            <span className="text-sand-600">Your digital future starts today.</span>
+            <span className="text-sand-600">
+              Your digital future starts today.
+            </span>
           </h2>
           <Button asChild variant="secondary" size="lg" className="mt-9">
             <Link href="/contact">Schedule Your AI Scan</Link>

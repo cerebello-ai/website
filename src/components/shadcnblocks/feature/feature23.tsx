@@ -1,6 +1,6 @@
-import { ChevronRight } from "lucide-react";
+import { ChevronRight } from 'lucide-react';
 
-import { Badge } from "@/components/ui/badge";
+import { Badge } from '@/components/ui/badge';
 
 const Feature23 = () => {
   return (
@@ -11,14 +11,14 @@ const Feature23 = () => {
           <h2 className="text-4xl font-medium">
             Various integrations to help you grow your business
           </h2>
-          <p className="text-lg text-muted-foreground">
+          <p className="text-muted-foreground text-lg">
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sapiente
             sunt deleniti aliquid voluptates, nihil culpa enim.
           </p>
         </div>
         <div className="mt-20 grid gap-10 lg:grid-cols-3 xl:gap-20">
           <div className="flex flex-col lg:block">
-            <div className="h-full max-h-[500px] rounded-lg border bg-muted p-3">
+            <div className="bg-muted h-full max-h-[500px] rounded-lg border p-3">
               <img
                 src="https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-dark-1.svg"
                 alt="placeholder"
@@ -38,7 +38,7 @@ const Feature23 = () => {
             </div>
           </div>
           <div className="flex flex-col lg:block">
-            <div className="h-full max-h-[500px] rounded-lg border bg-muted p-3">
+            <div className="bg-muted h-full max-h-[500px] rounded-lg border p-3">
               <img
                 src="https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-dark-2.svg"
                 alt="placeholder"
@@ -60,7 +60,7 @@ const Feature23 = () => {
             </div>
           </div>
           <div className="flex flex-col lg:block">
-            <div className="h-full max-h-[500px] rounded-lg border bg-muted p-3">
+            <div className="bg-muted h-full max-h-[500px] rounded-lg border p-3">
               <img
                 src="https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-dark-3.svg"
                 alt="placeholder"

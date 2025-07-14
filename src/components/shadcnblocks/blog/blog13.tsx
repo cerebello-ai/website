@@ -1,6 +1,6 @@
-import { Calendar, ChevronRight } from "lucide-react";
+import { Calendar, ChevronRight } from 'lucide-react';
 
-import { Badge } from "@/components/ui/badge";
+import { Badge } from '@/components/ui/badge';
 
 const Blog13 = () => {
   return (
@@ -30,7 +30,7 @@ const Blog13 = () => {
               />
               <Badge
                 variant="secondary"
-                className="absolute top-4 right-4 bg-background/70 px-3 py-1 text-sm backdrop-blur-sm"
+                className="bg-background/70 absolute top-4 right-4 px-3 py-1 text-sm backdrop-blur-sm"
               >
                 Business
               </Badge>
@@ -40,7 +40,7 @@ const Blog13 = () => {
                 How to build a successful brand and business
               </h2>
               <div className="flex justify-between gap-6 text-sm">
-                <span className="flex items-center gap-1 text-muted-foreground">
+                <span className="text-muted-foreground flex items-center gap-1">
                   <Calendar className="h-4 w-4" />
                   September, 23, 2024
                 </span>
@@ -60,7 +60,7 @@ const Blog13 = () => {
               />
               <Badge
                 variant="secondary"
-                className="absolute top-4 right-4 bg-background/70 px-3 py-1 text-sm backdrop-blur-sm"
+                className="bg-background/70 absolute top-4 right-4 px-3 py-1 text-sm backdrop-blur-sm"
               >
                 Design
               </Badge>
@@ -70,7 +70,7 @@ const Blog13 = () => {
                 The difference between UI and UX
               </h2>
               <div className="flex justify-between gap-6 text-sm">
-                <span className="flex items-center gap-1 text-muted-foreground">
+                <span className="text-muted-foreground flex items-center gap-1">
                   <Calendar className="h-4 w-4" />
                   April, 07, 2024
                 </span>
@@ -90,7 +90,7 @@ const Blog13 = () => {
               />
               <Badge
                 variant="secondary"
-                className="absolute top-4 right-4 bg-background/70 px-3 py-1 text-sm backdrop-blur-sm"
+                className="bg-background/70 absolute top-4 right-4 px-3 py-1 text-sm backdrop-blur-sm"
               >
                 Marketing
               </Badge>
@@ -100,7 +100,7 @@ const Blog13 = () => {
                 Optimizing your website for SEO and getting more traffic
               </h2>
               <div className="flex justify-between gap-6 text-sm">
-                <span className="flex items-center gap-1 text-muted-foreground">
+                <span className="text-muted-foreground flex items-center gap-1">
                   <Calendar className="h-4 w-4" />
                   August, 31, 2024
                 </span>

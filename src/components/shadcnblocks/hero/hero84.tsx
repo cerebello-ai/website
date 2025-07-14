@@ -1,5 +1,5 @@
-import { AspectRatio } from "@/components/ui/aspect-ratio";
-import { Badge } from "@/components/ui/badge";
+import { AspectRatio } from '@/components/ui/aspect-ratio';
+import { Badge } from '@/components/ui/badge';
 
 const Hero84 = () => {
   return (
@@ -21,21 +21,21 @@ const Hero84 = () => {
           </div>
         </div>
         <div className="relative mx-auto aspect-[2.488709677/1] max-w-[87.5rem]">
-          <div className="absolute bottom-0 right-0 z-10 w-[27%] overflow-hidden">
+          <div className="absolute right-0 bottom-0 z-10 w-[27%] overflow-hidden">
             <AspectRatio ratio={0.924193548 / 1}>
               <img
                 src="https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-1.svg"
                 alt=""
-                className="object-top-left block size-full object-cover"
+                className="block size-full object-cover object-top-left"
               />
             </AspectRatio>
           </div>
-          <div className="absolute bottom-0 right-[14%] z-20 w-[32%] overflow-hidden shadow-xl">
+          <div className="absolute right-[14%] bottom-0 z-20 w-[32%] overflow-hidden shadow-xl">
             <AspectRatio ratio={0.924193548 / 1}>
               <img
                 src="https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-2.svg"
                 alt=""
-                className="object-top-left block size-full object-cover"
+                className="block size-full object-cover object-top-left"
               />
             </AspectRatio>
           </div>
@@ -44,7 +44,7 @@ const Hero84 = () => {
               <img
                 src="https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-3.svg"
                 alt=""
-                className="object-top-left block size-full object-cover"
+                className="block size-full object-cover object-top-left"
               />
             </AspectRatio>
           </div>
@@ -53,7 +53,7 @@ const Hero84 = () => {
               <img
                 src="https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-4.svg"
                 alt=""
-                className="object-top-left block size-full object-cover"
+                className="block size-full object-cover object-top-left"
               />
             </AspectRatio>
           </div>
@@ -62,7 +62,7 @@ const Hero84 = () => {
               <img
                 src="https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-5.svg"
                 alt=""
-                className="object-top-left block size-full object-cover"
+                className="block size-full object-cover object-top-left"
               />
             </AspectRatio>
           </div>

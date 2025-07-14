@@ -3,32 +3,35 @@ import {
   ChartNoAxesCombined,
   PocketKnife,
   SquarePen,
-} from "lucide-react";
+} from 'lucide-react';
 
-import { Badge } from "@/components/ui/badge";
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+import { Badge } from '@/components/ui/badge';
+import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 
 const FEATURES_DATA = [
   {
-    title: "Smart Task Management",
+    title: 'Smart Task Management',
     description:
-      "Create, prioritize, and delegate tasks effortlessly. AI helps you identify what matters most with smart recommendations and automated workflows.",
+      'Create, prioritize, and delegate tasks effortlessly. AI helps you identify what matters most with smart recommendations and automated workflows.',
     icon: SquarePen,
-    image: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/block-1.svg",
+    image:
+      'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/block-1.svg',
   },
   {
-    title: "Automated Scheduling",
+    title: 'Automated Scheduling',
     description:
-      "Let AI find the best time slots for meetings, reminders, and tasks based on your calendar and working habits. Stay organized without the hassle.",
+      'Let AI find the best time slots for meetings, reminders, and tasks based on your calendar and working habits. Stay organized without the hassle.',
     icon: CalendarClock,
-    image: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/block-2.svg",
+    image:
+      'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/block-2.svg',
   },
   {
-    title: "Personalized Insights",
+    title: 'Personalized Insights',
     description:
-      "Track your productivity with AI-powered insights. Get weekly summaries and actionable tips to improve your workflow and manage workloads better.",
+      'Track your productivity with AI-powered insights. Get weekly summaries and actionable tips to improve your workflow and manage workloads better.',
     icon: ChartNoAxesCombined,
-    image: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/block-3.svg",
+    image:
+      'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/block-3.svg',
   },
 ];
 const Feature167 = () => {
@@ -38,7 +41,7 @@ const Feature167 = () => {
         <div className="container flex flex-col gap-6 border-x py-4 max-lg:border-x lg:py-8">
           <Badge
             variant="outline"
-            className="w-fit gap-1 bg-card px-3 text-sm font-normal tracking-tight shadow-sm"
+            className="bg-card w-fit gap-1 px-3 text-sm font-normal tracking-tight shadow-sm"
           >
             <PocketKnife className="size-4" />
             <span>Features</span>
@@ -47,7 +50,7 @@ const Feature167 = () => {
           <h2 className="text-3xl leading-tight tracking-tight md:text-4xl lg:text-6xl">
             Smart productivity with AI
           </h2>
-          <p className="max-w-[600px] tracking-[-0.32px] text-muted-foreground">
+          <p className="text-muted-foreground max-w-[600px] tracking-[-0.32px]">
             Unlock smarter productivity with features that help you manage
             tasks, time, and focus—seamlessly.
           </p>
@@ -65,7 +68,7 @@ const Feature167 = () => {
                 key={item.title}
                 value={item.title}
                 className={`group relative flex w-full rounded-none px-4 py-4 text-start whitespace-normal data-[state=active]:shadow-none lg:px-6 lg:py-5 ${
-                  index !== array.length - 1 ? "border-b" : ""
+                  index !== array.length - 1 ? 'border-b' : ''
                 }`}
               >
                 <div className="absolute bottom-[-1px] left-0 z-10 h-[2px] w-0 bg-linear-to-r from-blue-600 via-sky-300 to-transparent transition-all duration-300 group-data-[state=active]:w-1/2" />
@@ -74,7 +77,7 @@ const Feature167 = () => {
                     <item.icon className="size-4" />
                     <h3 className="text-lg tracking-[-0.36px]">{item.title}</h3>
                   </div>
-                  <p className="mt-2.5 text-sm tracking-[-0.32px] text-muted-foreground lg:text-base">
+                  <p className="text-muted-foreground mt-2.5 text-sm tracking-[-0.32px] lg:text-base">
                     {item.description}
                   </p>
                 </div>
@@ -96,7 +99,7 @@ const Feature167 = () => {
                       alt={item.title}
                       width={400}
                       height={400}
-                      className="h-full w-full bg-muted object-contain p-6 lg:p-12 dark:invert"
+                      className="bg-muted h-full w-full object-contain p-6 lg:p-12 dark:invert"
                     />
                   </div>
                 </TabsContent>

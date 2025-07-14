@@ -1,21 +1,21 @@
-import { MoveRight } from "lucide-react";
+import { MoveRight } from 'lucide-react';
 
-import { AspectRatio } from "@/components/ui/aspect-ratio";
-import { Button } from "@/components/ui/button";
+import { AspectRatio } from '@/components/ui/aspect-ratio';
+import { Button } from '@/components/ui/button';
 
 const Hero117 = () => {
   return (
     <section className="bg-background">
       <div className="container flex flex-col justify-between gap-10 py-12 lg:flex-row">
         <div className="flex flex-col items-start gap-6 lg:w-[45%]">
-          <p className="flex items-center gap-2 text-lg font-medium text-foreground">
+          <p className="text-foreground flex items-center gap-2 text-lg font-medium">
             <span>We raise a $10 million Series B</span>
             <MoveRight className="size-6" />
           </p>
-          <h1 className="text-4xl font-semibold text-foreground md:text-6xl">
+          <h1 className="text-foreground text-4xl font-semibold md:text-6xl">
             Simplify Invoicing and Payments
           </h1>
-          <p className="text-lg font-medium text-muted-foreground">
+          <p className="text-muted-foreground text-lg font-medium">
             Simplified invoice processing, revenue collection and cash flow
             enhancement, unified in a single user-friendly system for small to
             medium enterprises, financial advisors and ledger specialists

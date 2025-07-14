@@ -1,55 +1,56 @@
-import { ArrowRight, ChevronRight } from "lucide-react";
-import React from "react";
+import React from 'react';
 
-import { Button } from "@/components/ui/button";
-import { Separator } from "@/components/ui/separator";
+import { ArrowRight, ChevronRight } from 'lucide-react';
+
+import { Button } from '@/components/ui/button';
+import { Separator } from '@/components/ui/separator';
 
 const data = [
   {
-    team: "Acme",
-    logo: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/block-1.svg",
-    date: "22 November 2024",
-    title: "The future of digital transformation: embracing new technologies.",
-    link: "#",
+    team: 'Acme',
+    logo: 'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/block-1.svg',
+    date: '22 November 2024',
+    title: 'The future of digital transformation: embracing new technologies.',
+    link: '#',
     categories: [
       {
-        name: "Technology",
-        link: "#",
+        name: 'Technology',
+        link: '#',
       },
       {
-        name: "Innovation",
-        link: "#",
+        name: 'Innovation',
+        link: '#',
       },
       {
-        name: "Business",
-        link: "#",
+        name: 'Business',
+        link: '#',
       },
     ],
   },
   {
-    team: "Advent corporation",
-    logo: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/block-2.svg",
-    date: "07 November 2024",
-    title: "Building sustainable solutions for tomorrow’s challenges.",
-    link: "#",
+    team: 'Advent corporation',
+    logo: 'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/block-2.svg',
+    date: '07 November 2024',
+    title: 'Building sustainable solutions for tomorrow’s challenges.',
+    link: '#',
     categories: [
       {
-        name: "Sustainability",
-        link: "#",
+        name: 'Sustainability',
+        link: '#',
       },
-      { name: "Innovation", link: "#" },
-      { name: "Business", link: "#" },
+      { name: 'Innovation', link: '#' },
+      { name: 'Business', link: '#' },
     ],
   },
   {
-    team: "Ace",
-    logo: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/block-3.svg",
-    date: "30 October 2024",
-    title: "How modern technologies are reshaping business landscapes.",
-    link: "#",
+    team: 'Ace',
+    logo: 'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/block-3.svg',
+    date: '30 October 2024',
+    title: 'How modern technologies are reshaping business landscapes.',
+    link: '#',
     categories: [
-      { name: "Technology", link: "#" },
-      { name: "Business", link: "#" },
+      { name: 'Technology', link: '#' },
+      { name: 'Business', link: '#' },
     ],
   },
 ];
@@ -77,13 +78,13 @@ const Blog16 = () => {
                     />
                     <div className="flex flex-col gap-1">
                       <span className="font-semibold">{item.team}</span>
-                      <span className="text-sm text-muted-foreground">
+                      <span className="text-muted-foreground text-sm">
                         Team
                       </span>
                     </div>
                   </div>
                   <div className="col-span-2 max-w-xl">
-                    <span className="mb-2 text-sm font-medium text-muted-foreground">
+                    <span className="text-muted-foreground mb-2 text-sm font-medium">
                       {item.date}
                       <span className="inline lg:hidden"> - {item.team}</span>
                     </span>
@@ -95,10 +96,10 @@ const Blog16 = () => {
                         <a
                           key={index}
                           href={category.link}
-                          className="flex items-center gap-1.5 rounded-full border px-3 py-1.5 text-sm font-medium transition-colors hover:bg-muted"
+                          className="hover:bg-muted flex items-center gap-1.5 rounded-full border px-3 py-1.5 text-sm font-medium transition-colors"
                         >
                           {category.name}
-                          <ChevronRight className="h-4 w-4 text-muted-foreground" />
+                          <ChevronRight className="text-muted-foreground h-4 w-4" />
                         </a>
                       ))}
                     </div>

@@ -1,6 +1,6 @@
-import { BarChart, Heart, Monitor, Plus, TrendingUp } from "lucide-react";
+import { BarChart, Heart, Monitor, Plus, TrendingUp } from 'lucide-react';
 
-import { Button } from "@/components/ui/button";
+import { Button } from '@/components/ui/button';
 
 const Feature97 = () => {
   return (

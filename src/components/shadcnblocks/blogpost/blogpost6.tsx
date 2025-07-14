@@ -1,16 +1,17 @@
-"use client";
-import { Linkedin, LucideIcon, Twitter } from "lucide-react";
-import { Fragment, useEffect, useState } from "react";
+'use client';
+import { Fragment, useEffect, useState } from 'react';
 
-import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
+import { Linkedin, LucideIcon, Twitter } from 'lucide-react';
+
+import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
 import {
   Breadcrumb,
   BreadcrumbItem,
   BreadcrumbLink,
   BreadcrumbList,
   BreadcrumbSeparator,
-} from "@/components/ui/breadcrumb";
-import { Button } from "@/components/ui/button";
+} from '@/components/ui/breadcrumb';
+import { Button } from '@/components/ui/button';
 
 interface BreadcrumbItem {
   label: string;
@@ -33,54 +34,55 @@ interface AuthorType {
 }
 
 const AUTHOR: AuthorType = {
-  image: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/avatar-1.webp",
-  name: "Jane Doe",
-  job: "CEO & Cofounder",
+  image:
+    'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/avatar-1.webp',
+  name: 'Jane Doe',
+  job: 'CEO & Cofounder',
   description:
-    "An avid storyteller with a passion for crafting compelling narratives, love to explore the human experience through vivid characters and thought-provoking themes. ",
+    'An avid storyteller with a passion for crafting compelling narratives, love to explore the human experience through vivid characters and thought-provoking themes. ',
   socials: [
     {
       icon: Twitter,
-      url: "#",
+      url: '#',
     },
     {
       icon: Linkedin,
-      url: "#",
+      url: '#',
     },
   ],
 };
 
 const BREADCRUMB: Array<BreadcrumbItem> = [
   {
-    label: "Resources",
-    link: "#",
+    label: 'Resources',
+    link: '#',
   },
   {
-    label: "Blogs",
-    link: "#",
+    label: 'Blogs',
+    link: '#',
   },
 ];
 
 const SHARE_LINKS = [
   {
     icon: Twitter,
-    url: "#",
+    url: '#',
   },
   {
     icon: Linkedin,
-    url: "#",
+    url: '#',
   },
 ];
 
-const ARTICLE_DATE = "May 18, 2025";
-const ARTICLE_DURATION = "10 min read";
+const ARTICLE_DATE = 'May 18, 2025';
+const ARTICLE_DURATION = '10 min read';
 
 const Blogpost6 = () => {
   const [activeId, setActiveId] = useState<string | null>(null);
 
   useEffect(() => {
     // Query all h2 elements with IDs that match the chapter anchors
-    const chapterIds = ["heading-1", "heading-2", "heading-3"];
+    const chapterIds = ['heading-1', 'heading-2', 'heading-3'];
     const headingElements = chapterIds
       .map((id) => document.getElementById(id))
       .filter(Boolean) as HTMLElement[];
@@ -93,7 +95,7 @@ const Blogpost6 = () => {
         }
       },
       {
-        rootMargin: "0px 0px -30% 0px",
+        rootMargin: '0px 0px -30% 0px',
         threshold: 0.1,
       },
     );
@@ -116,10 +118,10 @@ const Blogpost6 = () => {
                   <div>|</div>
                   <div>{ARTICLE_DATE}</div>
                 </div>
-                <h1 className="text-center text-[2.5rem] font-semibold leading-[1.2] md:text-5xl lg:text-6xl">
+                <h1 className="text-center text-[2.5rem] leading-[1.2] font-semibold md:text-5xl lg:text-6xl">
                   Building Better Components
                 </h1>
-                <p className="text-foreground text-center text-xl font-semibold leading-[1.4]">
+                <p className="text-foreground text-center text-xl leading-[1.4] font-semibold">
                   The best blog is one that captivates readers with engaging,
                   well-researched content presented in a clear and relatable
                   way.
@@ -142,23 +144,23 @@ const Blogpost6 = () => {
         <div className="relative mx-auto w-full max-w-5xl items-start justify-between gap-20 lg:flex">
           {/* Chapters */}
           <div className="bg-background top-20 flex-1 pb-10 lg:sticky lg:pb-0">
-            <div className="text-xl font-medium leading-snug">Chapters</div>
-            <div className="flex flex-col gap-2 pl-2 pt-2">
+            <div className="text-xl leading-snug font-medium">Chapters</div>
+            <div className="flex flex-col gap-2 pt-2 pl-2">
               <a
                 href="#heading-1"
-                className={`text-muted-foreground block text-sm font-medium leading-normal transition duration-300 ${activeId === "heading-1" ? "lg:bg-muted lg:!text-primary lg:rounded-md lg:p-2 lg:font-bold" : "text-muted-foreground"}`}
+                className={`text-muted-foreground block text-sm leading-normal font-medium transition duration-300 ${activeId === 'heading-1' ? 'lg:bg-muted lg:!text-primary lg:rounded-md lg:p-2 lg:font-bold' : 'text-muted-foreground'}`}
               >
                 The Role of UI Components in Development
               </a>
               <a
                 href="#heading-2"
-                className={`text-muted-foreground block text-sm font-medium leading-normal transition duration-300 ${activeId === "heading-2" ? "lg:bg-muted lg:!text-primary lg:rounded-md lg:p-2 lg:font-bold" : "text-muted-foreground"}`}
+                className={`text-muted-foreground block text-sm leading-normal font-medium transition duration-300 ${activeId === 'heading-2' ? 'lg:bg-muted lg:!text-primary lg:rounded-md lg:p-2 lg:font-bold' : 'text-muted-foreground'}`}
               >
                 Core Types of UI Components
               </a>
               <a
                 href="#heading-3"
-                className={`text-muted-foreground block text-sm font-medium leading-normal transition duration-300 ${activeId === "heading-3" ? "lg:bg-muted lg:!text-primary lg:rounded-md lg:p-2 lg:font-bold" : "text-muted-foreground"}`}
+                className={`text-muted-foreground block text-sm leading-normal font-medium transition duration-300 ${activeId === 'heading-3' ? 'lg:bg-muted lg:!text-primary lg:rounded-md lg:p-2 lg:font-bold' : 'text-muted-foreground'}`}
               >
                 End Paragraph
               </a>
@@ -358,8 +360,8 @@ const Author = ({ author }: { author: AuthorType }) => {
         <AvatarFallback>{author.name}</AvatarFallback>
       </Avatar>
       <div>
-        <div className="text-sm font-normal leading-normal">{author.name}</div>
-        <div className="text-muted-foreground text-sm font-normal leading-normal">
+        <div className="text-sm leading-normal font-normal">{author.name}</div>
+        <div className="text-muted-foreground text-sm leading-normal font-normal">
           {author.job}
         </div>
       </div>

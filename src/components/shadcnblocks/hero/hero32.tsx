@@ -1,4 +1,4 @@
-import { Button } from "@/components/ui/button";
+import { Button } from '@/components/ui/button';
 
 interface Integration {
   id: string;
@@ -16,77 +16,152 @@ interface Hero32Props {
 }
 
 const Hero32 = ({
-  heading = "Blocks Built With Shadcn & Tailwind",
-  description = "Fully decomposable components, all the images and background patterns are individual images or svgs that can be replaced.",
+  heading = 'Blocks Built With Shadcn & Tailwind',
+  description = 'Fully decomposable components, all the images and background patterns are individual images or svgs that can be replaced.',
   button = {
-    text: "Discover all components",
-    url: "https://www.shadcnblocks.com",
+    text: 'Discover all components',
+    url: 'https://www.shadcnblocks.com',
   },
   integrations = [
     [
       {
-        id: "integration-1",
-        icon: <img alt="Integration" src="https://deifkwefumgah.cloudfront.net/shadcnblocks/block/block-1.svg" />,
+        id: 'integration-1',
+        icon: (
+          <img
+            alt="Integration"
+            src="https://deifkwefumgah.cloudfront.net/shadcnblocks/block/block-1.svg"
+          />
+        ),
       },
       {
-        id: "integration-2",
-        icon: <img alt="Integration" src="https://deifkwefumgah.cloudfront.net/shadcnblocks/block/block-2.svg" />,
+        id: 'integration-2',
+        icon: (
+          <img
+            alt="Integration"
+            src="https://deifkwefumgah.cloudfront.net/shadcnblocks/block/block-2.svg"
+          />
+        ),
       },
       {
-        id: "integration-3",
-        icon: <img alt="Integration" src="https://deifkwefumgah.cloudfront.net/shadcnblocks/block/block-3.svg" />,
+        id: 'integration-3',
+        icon: (
+          <img
+            alt="Integration"
+            src="https://deifkwefumgah.cloudfront.net/shadcnblocks/block/block-3.svg"
+          />
+        ),
       },
       {
-        id: "integration-4",
-        icon: <img alt="Integration" src="https://deifkwefumgah.cloudfront.net/shadcnblocks/block/block-4.svg" />,
+        id: 'integration-4',
+        icon: (
+          <img
+            alt="Integration"
+            src="https://deifkwefumgah.cloudfront.net/shadcnblocks/block/block-4.svg"
+          />
+        ),
       },
       {
-        id: "integration-5",
-        icon: <img alt="Integration" src="https://deifkwefumgah.cloudfront.net/shadcnblocks/block/block-5.svg" />,
+        id: 'integration-5',
+        icon: (
+          <img
+            alt="Integration"
+            src="https://deifkwefumgah.cloudfront.net/shadcnblocks/block/block-5.svg"
+          />
+        ),
       },
     ],
     [
       {
-        id: "integration-6",
-        icon: <img alt="Integration" src="https://deifkwefumgah.cloudfront.net/shadcnblocks/block/block-6.svg" />,
+        id: 'integration-6',
+        icon: (
+          <img
+            alt="Integration"
+            src="https://deifkwefumgah.cloudfront.net/shadcnblocks/block/block-6.svg"
+          />
+        ),
       },
       {
-        id: "integration-7",
-        icon: <img alt="Integration" src="https://deifkwefumgah.cloudfront.net/shadcnblocks/block/block-1.svg" />,
+        id: 'integration-7',
+        icon: (
+          <img
+            alt="Integration"
+            src="https://deifkwefumgah.cloudfront.net/shadcnblocks/block/block-1.svg"
+          />
+        ),
       },
       {
-        id: "integration-8",
-        icon: <img alt="Integration" src="https://deifkwefumgah.cloudfront.net/shadcnblocks/block/block-2.svg" />,
+        id: 'integration-8',
+        icon: (
+          <img
+            alt="Integration"
+            src="https://deifkwefumgah.cloudfront.net/shadcnblocks/block/block-2.svg"
+          />
+        ),
       },
       {
-        id: "integration-9",
-        icon: <img alt="Integration" src="https://deifkwefumgah.cloudfront.net/shadcnblocks/block/block-3.svg" />,
+        id: 'integration-9',
+        icon: (
+          <img
+            alt="Integration"
+            src="https://deifkwefumgah.cloudfront.net/shadcnblocks/block/block-3.svg"
+          />
+        ),
       },
       {
-        id: "integration-10",
-        icon: <img alt="Integration" src="https://deifkwefumgah.cloudfront.net/shadcnblocks/block/block-4.svg" />,
+        id: 'integration-10',
+        icon: (
+          <img
+            alt="Integration"
+            src="https://deifkwefumgah.cloudfront.net/shadcnblocks/block/block-4.svg"
+          />
+        ),
       },
     ],
     [
       {
-        id: "integration-11",
-        icon: <img alt="Integration" src="https://deifkwefumgah.cloudfront.net/shadcnblocks/block/block-5.svg" />,
+        id: 'integration-11',
+        icon: (
+          <img
+            alt="Integration"
+            src="https://deifkwefumgah.cloudfront.net/shadcnblocks/block/block-5.svg"
+          />
+        ),
       },
       {
-        id: "integration-12",
-        icon: <img alt="Integration" src="https://deifkwefumgah.cloudfront.net/shadcnblocks/block/block-6.svg" />,
+        id: 'integration-12',
+        icon: (
+          <img
+            alt="Integration"
+            src="https://deifkwefumgah.cloudfront.net/shadcnblocks/block/block-6.svg"
+          />
+        ),
       },
       {
-        id: "integration-13",
-        icon: <img alt="Integration" src="https://deifkwefumgah.cloudfront.net/shadcnblocks/block/block-1.svg" />,
+        id: 'integration-13',
+        icon: (
+          <img
+            alt="Integration"
+            src="https://deifkwefumgah.cloudfront.net/shadcnblocks/block/block-1.svg"
+          />
+        ),
       },
       {
-        id: "integration-14",
-        icon: <img alt="Integration" src="https://deifkwefumgah.cloudfront.net/shadcnblocks/block/block-2.svg" />,
+        id: 'integration-14',
+        icon: (
+          <img
+            alt="Integration"
+            src="https://deifkwefumgah.cloudfront.net/shadcnblocks/block/block-2.svg"
+          />
+        ),
       },
       {
-        id: "integration-15",
-        icon: <img alt="Integration" src="https://deifkwefumgah.cloudfront.net/shadcnblocks/block/block-3.svg" />,
+        id: 'integration-15',
+        icon: (
+          <img
+            alt="Integration"
+            src="https://deifkwefumgah.cloudfront.net/shadcnblocks/block/block-3.svg"
+          />
+        ),
       },
     ],
   ],
@@ -97,15 +172,15 @@ const Hero32 = ({
         <img
           alt="background"
           src="https://deifkwefumgah.cloudfront.net/shadcnblocks/block/patterns/square-alt-grid.svg"
-          className="opacity-90 [mask-image:radial-gradient(75%_75%_at_center,white,transparent)]"
+          className="[mask-image:radial-gradient(75%_75%_at_center,white,transparent)] opacity-90"
         />
       </div>
       <div className="relative">
-        <div className="md:-space-x-26 container relative flex flex-col items-start md:flex-row md:items-center">
+        <div className="relative container flex flex-col items-start md:flex-row md:items-center md:-space-x-26">
           <div className="bg-background z-20 -mx-4 w-full shrink-0 px-4 pt-32 md:w-1/2 md:bg-transparent md:pb-32">
             <div className="flex flex-col items-start text-left">
               <div className="max-w-sm">
-                <h1 className="my-6 text-pretty text-4xl font-bold lg:text-6xl">
+                <h1 className="my-6 text-4xl font-bold text-pretty lg:text-6xl">
                   {heading}
                 </h1>
                 <p className="text-muted-foreground">{description}</p>
@@ -116,13 +191,13 @@ const Hero32 = ({
             </div>
           </div>
           <div>
-            <div className="flex flex-col gap-16 pb-8 pt-12 md:py-32">
+            <div className="flex flex-col gap-16 pt-12 pb-8 md:py-32">
               {integrations.map((line, i) => (
-                <div key={i} className="gap-x-22 odd:-translate-x-22 flex">
+                <div key={i} className="flex gap-x-22 odd:-translate-x-22">
                   {line.map((integration) => (
                     <div
                       key={integration.id}
-                      className="size-22 border-background bg-background rounded-xl border shadow-xl"
+                      className="border-background bg-background size-22 rounded-xl border shadow-xl"
                     >
                       <div className="bg-muted/20 h-full w-full p-4">
                         {integration.icon}

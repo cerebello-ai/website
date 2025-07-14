@@ -1,33 +1,33 @@
-import { Calendar, ChevronRight, Terminal, Timer, Wallet } from "lucide-react";
+import { Calendar, ChevronRight, Terminal, Timer, Wallet } from 'lucide-react';
 
-import { Button } from "@/components/ui/button";
+import { Button } from '@/components/ui/button';
 import {
   Card,
   CardContent,
   CardDescription,
   CardHeader,
-} from "@/components/ui/card";
+} from '@/components/ui/card';
 
 const features = [
   {
-    description: "Faster than Wire, and more affordable, too.",
+    description: 'Faster than Wire, and more affordable, too.',
     icon: Timer,
-    href: "/pricing",
+    href: '/pricing',
   },
   {
-    description: "Send or request funds. FedNow does both.",
+    description: 'Send or request funds. FedNow does both.',
     icon: Wallet,
-    href: "/pricing",
+    href: '/pricing',
   },
   {
-    description: "API request to creation in seven minutes.",
+    description: 'API request to creation in seven minutes.',
     icon: Terminal,
-    href: "/pricing",
+    href: '/pricing',
   },
   {
-    description: "Settle any time, any day. What Bank holiday?",
+    description: 'Settle any time, any day. What Bank holiday?',
     icon: Calendar,
-    href: "/pricing",
+    href: '/pricing',
   },
 ];
 
@@ -36,14 +36,14 @@ export function Feature194() {
     <section className="relative py-32">
       <div className="container max-w-5xl">
         <div className="text-center">
-          <h3 className="font-mono text-sm font-semibold tracking-widest text-accent-foreground">
+          <h3 className="text-accent-foreground font-mono text-sm font-semibold tracking-widest">
             MORE COMPUTER FUGAZI
           </h3>
 
           <h2 className="mt-4 text-4xl font-semibold tracking-tight md:text-5xl lg:text-6xl">
             And we have an AI chatbot
           </h2>
-          <p className="mt-3 text-xl font-medium text-muted-foreground md:text-2xl">
+          <p className="text-muted-foreground mt-3 text-xl font-medium md:text-2xl">
             {`We're betting on agents replacing our staff next year.`}
           </p>
         </div>
@@ -52,8 +52,8 @@ export function Feature194() {
           {features.map((feature, index) => (
             <Card key={index} className="flex flex-col">
               <CardHeader className="max-md:p-3">
-                <feature.icon className="size-8 text-primary" />
-                <CardDescription className="mt-4 font-medium text-foreground">
+                <feature.icon className="text-primary size-8" />
+                <CardDescription className="text-foreground mt-4 font-medium">
                   {feature.description}
                 </CardDescription>
               </CardHeader>
@@ -61,12 +61,12 @@ export function Feature194() {
                 <Button
                   variant="outline"
                   asChild
-                  className="group w-[min(100%,300px)] border-border"
+                  className="group border-border w-[min(100%,300px)]"
                 >
                   <a href={feature.href}>
                     Learn more
                     <span className="sr-only">
-                      {" "}
+                      {' '}
                       about {feature.description.toLowerCase()}
                     </span>
                     <ChevronRight className="ml-1 size-4 transition-transform group-hover:translate-x-0.5" />

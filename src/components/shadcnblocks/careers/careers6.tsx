@@ -1,4 +1,4 @@
-"use client";
+'use client';
 
 import {
   Award,
@@ -9,75 +9,75 @@ import {
   GraduationCap,
   Map,
   Users,
-} from "lucide-react";
+} from 'lucide-react';
 
-import { Button } from "@/components/ui/button";
+import { Button } from '@/components/ui/button';
 
 const jobs = [
   {
     id: 1,
-    title: "Senior Software Engineer",
-    category: "Engineering",
-    department: "Product Development",
+    title: 'Senior Software Engineer',
+    category: 'Engineering',
+    department: 'Product Development',
     description:
-      "You will be responsible for the development of new and existing software products, leading technical initiatives, and mentoring junior developers.",
-    location: "Remote",
-    type: "Full-time",
-    salary: "$120k - $180k",
-    experience: "5+ years",
-    link: "#",
+      'You will be responsible for the development of new and existing software products, leading technical initiatives, and mentoring junior developers.',
+    location: 'Remote',
+    type: 'Full-time',
+    salary: '$120k - $180k',
+    experience: '5+ years',
+    link: '#',
   },
   {
     id: 2,
-    title: "Product Manager",
-    category: "Product",
-    department: "Product Management",
+    title: 'Product Manager',
+    category: 'Product',
+    department: 'Product Management',
     description:
-      "Help us build the next generation of Acme products by defining product strategy, roadmap, and working closely with engineering teams.",
-    location: "San Francisco, CA",
-    type: "Full-time",
-    salary: "$100k - $150k",
-    experience: "3+ years",
-    link: "#",
+      'Help us build the next generation of Acme products by defining product strategy, roadmap, and working closely with engineering teams.',
+    location: 'San Francisco, CA',
+    type: 'Full-time',
+    salary: '$100k - $150k',
+    experience: '3+ years',
+    link: '#',
   },
   {
     id: 3,
-    title: "QA Engineer",
-    category: "Engineering",
-    department: "Quality Assurance",
+    title: 'QA Engineer',
+    category: 'Engineering',
+    department: 'Quality Assurance',
     description:
-      "Ensure the quality of our software products through comprehensive testing, automation frameworks, and continuous improvement processes.",
-    location: "Remote",
-    type: "Full-time",
-    salary: "$80k - $120k",
-    experience: "2+ years",
-    link: "#",
+      'Ensure the quality of our software products through comprehensive testing, automation frameworks, and continuous improvement processes.',
+    location: 'Remote',
+    type: 'Full-time',
+    salary: '$80k - $120k',
+    experience: '2+ years',
+    link: '#',
   },
   {
     id: 4,
-    title: "Technical Support Specialist",
-    category: "Support",
-    department: "Customer Success",
+    title: 'Technical Support Specialist',
+    category: 'Support',
+    department: 'Customer Success',
     description:
-      "Provide exceptional technical support to our customers and internal teams, troubleshoot issues, and maintain customer satisfaction.",
-    location: "New York, NY",
-    type: "Full-time",
-    salary: "$60k - $90k",
-    experience: "1+ years",
-    link: "#",
+      'Provide exceptional technical support to our customers and internal teams, troubleshoot issues, and maintain customer satisfaction.',
+    location: 'New York, NY',
+    type: 'Full-time',
+    salary: '$60k - $90k',
+    experience: '1+ years',
+    link: '#',
   },
   {
     id: 5,
-    title: "Content Writer",
-    category: "Marketing",
-    department: "Content Marketing",
+    title: 'Content Writer',
+    category: 'Marketing',
+    department: 'Content Marketing',
     description:
-      "Create engaging, SEO-optimized content for our blog, website, and social media channels that drives traffic and conversions.",
-    location: "Remote",
-    type: "Full-time",
-    salary: "$50k - $80k",
-    experience: "2+ years",
-    link: "#",
+      'Create engaging, SEO-optimized content for our blog, website, and social media channels that drives traffic and conversions.',
+    location: 'Remote',
+    type: 'Full-time',
+    salary: '$50k - $80k',
+    experience: '2+ years',
+    link: '#',
   },
 ];
 

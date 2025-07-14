@@ -1,4 +1,4 @@
-import { Button } from "@/components/ui/button";
+import { Button } from '@/components/ui/button';
 
 const Hero63 = () => {
   return (
@@ -28,7 +28,7 @@ const Hero63 = () => {
         <div className="relative mx-auto my-6 max-w-[650px]">
           {/* Illustrations from https://icons8.com/illustrations/style--journal */}
           <div className="relative">
-            <div className="bg-linear-to-br from-primary/5 absolute inset-0 -z-10 rounded-3xl to-transparent opacity-70 blur-3xl"></div>
+            <div className="from-primary/5 absolute inset-0 -z-10 rounded-3xl bg-linear-to-br to-transparent opacity-70 blur-3xl"></div>
             <img
               src="https://deifkwefumgah.cloudfront.net/shadcnblocks/block/illustrations/tokyo-geolocation-signs-on-the-globe.svg"
               alt="Global payroll system visualization"
@@ -36,7 +36,7 @@ const Hero63 = () => {
             />
           </div>
 
-          <div className="bg-background/95 absolute left-4 top-28 flex flex-col items-center gap-2.5 rounded-xl p-5 text-xs shadow-lg backdrop-blur-sm transition-all hover:shadow-xl lg:text-sm">
+          <div className="bg-background/95 absolute top-28 left-4 flex flex-col items-center gap-2.5 rounded-xl p-5 text-xs shadow-lg backdrop-blur-sm transition-all hover:shadow-xl lg:text-sm">
             {/* Check svg */}
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -57,14 +57,14 @@ const Hero63 = () => {
             <div className="h-3 w-[90%] rounded-full bg-gray-200/80"></div>
           </div>
 
-          <div className="bg-background/95 absolute right-4 top-20 flex flex-col items-center gap-2.5 rounded-xl p-5 text-xs shadow-lg backdrop-blur-sm transition-all hover:shadow-xl lg:text-sm">
+          <div className="bg-background/95 absolute top-20 right-4 flex flex-col items-center gap-2.5 rounded-xl p-5 text-xs shadow-lg backdrop-blur-sm transition-all hover:shadow-xl lg:text-sm">
             <div className="flex items-center gap-2">
               <img
                 src="https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/slack-icon.svg"
                 alt="slack"
                 className="size-6"
               />
-              <span className="whitespace-nowrap font-medium">
+              <span className="font-medium whitespace-nowrap">
                 Slack Integration
               </span>
             </div>
@@ -73,14 +73,14 @@ const Hero63 = () => {
             </div>
           </div>
 
-          <div className="bg-background/95 absolute right-24 top-6 flex items-center gap-2.5 rounded-xl p-4 text-xs shadow-lg backdrop-blur-sm transition-all hover:shadow-xl lg:text-sm">
+          <div className="bg-background/95 absolute top-6 right-24 flex items-center gap-2.5 rounded-xl p-4 text-xs shadow-lg backdrop-blur-sm transition-all hover:shadow-xl lg:text-sm">
             <div className="relative">
               <img
                 src="https://deifkwefumgah.cloudfront.net/shadcnblocks/block/avatar-1.webp"
                 alt="Profile of John Doe"
                 className="border-muted size-8 rounded-full border object-cover"
               />
-              <span className="absolute -bottom-1 -right-1 size-3 rounded-full border-2 border-white bg-green-500"></span>
+              <span className="absolute -right-1 -bottom-1 size-3 rounded-full border-2 border-white bg-green-500"></span>
             </div>
             <span className="font-medium">John Doe</span>
           </div>

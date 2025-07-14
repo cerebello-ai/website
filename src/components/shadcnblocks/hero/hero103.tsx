@@ -1,14 +1,14 @@
-"use client";
-import AutoScroll from "embla-carousel-auto-scroll";
-import Autoplay from "embla-carousel-autoplay";
-import { ChevronRight } from "lucide-react";
+'use client';
+import AutoScroll from 'embla-carousel-auto-scroll';
+import Autoplay from 'embla-carousel-autoplay';
+import { ChevronRight } from 'lucide-react';
 
-import { Button } from "@/components/ui/button";
+import { Button } from '@/components/ui/button';
 import {
   Carousel,
   CarouselContent,
   CarouselItem,
-} from "@/components/ui/carousel";
+} from '@/components/ui/carousel';
 
 const Hero103 = () => {
   return (
@@ -30,7 +30,7 @@ const Hero103 = () => {
                   <div className="shrink-0">
                     <Button
                       asChild
-                      className="block h-fit w-fit rounded-full px-6 py-3.5 font-mono text-[0.8125rem] font-medium uppercase leading-4 tracking-widest"
+                      className="block h-fit w-fit rounded-full px-6 py-3.5 font-mono text-[0.8125rem] leading-4 font-medium tracking-widest uppercase"
                     >
                       <a href="#">Get a Demo</a>
                     </Button>
@@ -52,7 +52,7 @@ const Hero103 = () => {
             </div>
           </div>
           <div>
-            <div className="relative ml-auto mr-auto aspect-[1.28581291/1] w-full max-w-[37.25rem] lg:ml-auto lg:mr-0">
+            <div className="relative mr-auto ml-auto aspect-[1.28581291/1] w-full max-w-[37.25rem] lg:mr-0 lg:ml-auto">
               <div className="relative mx-auto aspect-[1.020365896/1] h-full w-[79.35%] max-w-[29.5625rem] overflow-hidden rounded-3xl">
                 <img
                   src="https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-1.svg"
@@ -60,21 +60,21 @@ const Hero103 = () => {
                   className="relative z-10 w-full object-cover"
                 />
               </div>
-              <div className="absolute -left-[-2%] top-[19.84%] z-30 aspect-[1.765043789/1] w-[30.49%] max-w-[11.875rem] overflow-hidden rounded-lg shadow-lg">
+              <div className="absolute top-[19.84%] -left-[-2%] z-30 aspect-[1.765043789/1] w-[30.49%] max-w-[11.875rem] overflow-hidden rounded-lg shadow-lg">
                 <img
                   src="https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-2.svg"
                   alt=""
                   className="size-full object-cover"
                 />
               </div>
-              <div className="absolute left-[0%] top-[55%] z-30 aspect-[1.776555024/1] w-[43.6%] max-w-[16.375rem] overflow-hidden rounded-lg shadow-lg">
+              <div className="absolute top-[55%] left-[0%] z-30 aspect-[1.776555024/1] w-[43.6%] max-w-[16.375rem] overflow-hidden rounded-lg shadow-lg">
                 <img
                   src="https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-3.svg"
                   alt=""
                   className="size-full object-cover"
                 />
               </div>
-              <div className="absolute right-[0%] top-[40%] z-30 aspect-[1.170212766/1] w-[26.48%] max-w-[10.3125rem] overflow-hidden rounded-lg shadow-lg">
+              <div className="absolute top-[40%] right-[0%] z-30 aspect-[1.170212766/1] w-[26.48%] max-w-[10.3125rem] overflow-hidden rounded-lg shadow-lg">
                 <img
                   src="https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-4.svg"
                   alt=""
@@ -92,7 +92,7 @@ const Hero103 = () => {
         <Carousel
           opts={{
             loop: true,
-            align: "center",
+            align: 'center',
           }}
           plugins={[
             AutoScroll({
@@ -103,7 +103,7 @@ const Hero103 = () => {
               delay: 1000,
             }),
           ]}
-          className="max-w-(--breakpoint-2xl) relative w-full overflow-hidden"
+          className="relative w-full max-w-(--breakpoint-2xl) overflow-hidden"
         >
           <CarouselContent className="items-center">
             <CarouselItem className="w-fit basis-auto px-7">

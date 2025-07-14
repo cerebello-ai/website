@@ -1,13 +1,13 @@
-"use client";
+'use client';
 
-import { useState } from "react";
+import { useState } from 'react';
 
 import {
   Accordion,
   AccordionContent,
   AccordionItem,
   AccordionTrigger,
-} from "@/components/ui/accordion";
+} from '@/components/ui/accordion';
 
 interface ITabData {
   id: number;
@@ -19,24 +19,27 @@ interface ITabData {
 const tabsData: ITabData[] = [
   {
     id: 1,
-    title: "Performance",
-    imageSrc: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-dark-1.svg",
+    title: 'Performance',
+    imageSrc:
+      'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-dark-1.svg',
     description:
-      "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nesciunt, accusantium quam. Temporibus quae quos deserunt!",
+      'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nesciunt, accusantium quam. Temporibus quae quos deserunt!',
   },
   {
     id: 2,
-    title: "Innovation",
-    imageSrc: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-dark-2.svg",
+    title: 'Innovation',
+    imageSrc:
+      'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-dark-2.svg',
     description:
-      "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nesciunt, accusantium quam. Temporibus quae quos deserunt!",
+      'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nesciunt, accusantium quam. Temporibus quae quos deserunt!',
   },
   {
     id: 3,
-    title: "Quality",
-    imageSrc: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-dark-3.svg",
+    title: 'Quality',
+    imageSrc:
+      'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-dark-3.svg',
     description:
-      "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nesciunt, accusantium quam. Temporibus quae quos deserunt!",
+      'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nesciunt, accusantium quam. Temporibus quae quos deserunt!',
   },
 ];
 
@@ -57,7 +60,7 @@ const Feature131 = () => {
               defaultValue="item-1"
               className="w-full"
               onValueChange={(value) => {
-                const id = parseInt(value.split("-")[1]);
+                const id = parseInt(value.split('-')[1]);
                 setActiveTabId(id);
                 setActiveImage(
                   tabsData.find((tab) => tab.id === id)?.imageSrc ||
@@ -71,23 +74,23 @@ const Feature131 = () => {
                   value={`item-${tab.id}`}
                   className={`border-t-2 border-b-0 px-2 transition-all duration-300 ${
                     tab.id === activeTabId
-                      ? "border-primary bg-accent/40"
-                      : "border-muted hover:bg-accent/20"
+                      ? 'border-primary bg-accent/40'
+                      : 'border-muted hover:bg-accent/20'
                   }`}
                 >
                   <AccordionTrigger className="cursor-pointer py-5 no-underline! transition-all">
                     <h6
                       className={`text-xl font-semibold transition-colors duration-300 ${
                         tab.id === activeTabId
-                          ? "text-primary"
-                          : "text-muted-foreground"
+                          ? 'text-primary'
+                          : 'text-muted-foreground'
                       }`}
                     >
                       {tab.title}
                     </h6>
                   </AccordionTrigger>
                   <AccordionContent className="animate-accordion-down">
-                    <p className="mt-3 leading-relaxed text-muted-foreground">
+                    <p className="text-muted-foreground mt-3 leading-relaxed">
                       {tab.description}
                     </p>
                     <div className="mt-6 md:hidden">
@@ -102,8 +105,8 @@ const Feature131 = () => {
               ))}
             </Accordion>
           </div>
-          <div className="relative hidden w-full overflow-hidden rounded-md bg-accent/30 md:block">
-            <div className="pointer-events-none absolute inset-0 bg-linear-to-br from-primary/5 to-transparent"></div>
+          <div className="bg-accent/30 relative hidden w-full overflow-hidden rounded-md md:block">
+            <div className="from-primary/5 pointer-events-none absolute inset-0 bg-linear-to-br to-transparent"></div>
             <div className="pt-12 pl-12">
               <img
                 src={activeImage}

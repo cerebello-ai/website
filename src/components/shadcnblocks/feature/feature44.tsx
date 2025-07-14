@@ -1,53 +1,61 @@
-import { Card } from "@/components/ui/card";
+import { Card } from '@/components/ui/card';
 
 const integrations = [
   {
-    title: "Slack",
+    title: 'Slack',
     description:
-      "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam, corporis!",
-    image: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/block-1.svg",
+      'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam, corporis!',
+    image:
+      'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/block-1.svg',
   },
   {
-    title: "Google Drive",
+    title: 'Google Drive',
     description:
-      "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam, corporis!",
-    image: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/block-2.svg",
+      'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam, corporis!',
+    image:
+      'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/block-2.svg',
   },
   {
-    title: "Dropbox",
+    title: 'Dropbox',
     description:
-      "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam, corporis!",
-    image: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/block-3.svg",
+      'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam, corporis!',
+    image:
+      'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/block-3.svg',
   },
   {
-    title: "Github",
+    title: 'Github',
     description:
-      "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam, corporis!",
-    image: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/block-4.svg",
+      'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam, corporis!',
+    image:
+      'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/block-4.svg',
   },
   {
-    title: "Figma",
+    title: 'Figma',
     description:
-      "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam, corporis!",
-    image: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/block-5.svg",
+      'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam, corporis!',
+    image:
+      'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/block-5.svg',
   },
   {
-    title: "Trello",
+    title: 'Trello',
     description:
-      "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam, corporis!",
-    image: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/block-6.svg",
+      'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam, corporis!',
+    image:
+      'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/block-6.svg',
   },
   {
-    title: "Asana",
+    title: 'Asana',
     description:
-      "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam, corporis!",
-    image: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/block-1.svg",
+      'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam, corporis!',
+    image:
+      'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/block-1.svg',
   },
   {
-    title: "Jira",
+    title: 'Jira',
     description:
-      "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam, corporis!",
-    image: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/block-2.svg",
+      'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam, corporis!',
+    image:
+      'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/block-2.svg',
   },
 ];
 
@@ -74,7 +82,7 @@ const Feature44 = () => {
                 <h3 className="mt-4 mb-1 text-lg font-medium">
                   {integration.title}
                 </h3>
-                <p className="text-sm text-muted-foreground">
+                <p className="text-muted-foreground text-sm">
                   {integration.description}
                 </p>
               </Card>

@@ -1,4 +1,4 @@
-import { ArrowRight } from "lucide-react";
+import { ArrowRight } from 'lucide-react';
 
 const Feature81 = () => {
   return (
@@ -11,7 +11,7 @@ const Feature81 = () => {
           <h3 className="mb-3 text-3xl font-semibold text-pretty md:mb-4 md:text-4xl lg:mb-6 lg:max-w-3xl lg:text-5xl">
             Feature group
           </h3>
-          <p className="mb-8 text-muted-foreground lg:text-lg">
+          <p className="text-muted-foreground mb-8 lg:text-lg">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Elig
             doloremque mollitia fugiat omnis! Porro facilis quo animi
             consequatur. Explicabo.
@@ -27,14 +27,14 @@ const Feature81 = () => {
               alt="placeholder"
               className="absolute h-full w-full object-cover object-center"
             />
-            <div className="relative flex h-full w-full flex-col items-start justify-between gap-4 bg-primary/60 px-4 py-5 text-primary-foreground transition-colors hover:bg-primary/70 sm:aspect-3/2 md:p-6 lg:p-8">
+            <div className="bg-primary/60 text-primary-foreground hover:bg-primary/70 relative flex h-full w-full flex-col items-start justify-between gap-4 px-4 py-5 transition-colors sm:aspect-3/2 md:p-6 lg:p-8">
               <img
                 src="https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/shadcn-ui-wordmark.svg"
                 alt="placeholder logo"
                 className="mb-8 h-6 max-w-48 invert sm:h-8 md:h-10"
               />
               <div className="flex items-center text-xs font-medium md:text-base lg:text-lg">
-                Read more{" "}
+                Read more{' '}
                 <ArrowRight className="ml-2 size-4 transition-transform group-hover:translate-x-1" />
               </div>
             </div>
@@ -45,14 +45,14 @@ const Feature81 = () => {
               alt="placeholder"
               className="absolute h-full w-full object-cover object-center"
             />
-            <div className="relative flex h-full w-full flex-col items-start justify-between gap-4 bg-primary/60 px-4 py-5 text-primary-foreground transition-colors hover:bg-primary/70 sm:aspect-3/2 md:p-6 lg:p-8">
+            <div className="bg-primary/60 text-primary-foreground hover:bg-primary/70 relative flex h-full w-full flex-col items-start justify-between gap-4 px-4 py-5 transition-colors sm:aspect-3/2 md:p-6 lg:p-8">
               <img
                 src="https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/astro-wordmark.svg"
                 alt="placeholder logo"
                 className="mb-8 h-6 invert sm:h-8 md:h-10"
               />
               <div className="flex items-center text-xs font-medium md:text-base lg:text-lg">
-                Read more{" "}
+                Read more{' '}
                 <ArrowRight className="ml-2 size-4 transition-transform group-hover:translate-x-1" />
               </div>
             </div>
@@ -63,9 +63,9 @@ const Feature81 = () => {
               alt="placeholder"
               className="absolute h-full w-full object-cover object-center"
             />
-            <div className="relative flex h-full w-full flex-col items-start justify-between gap-4 bg-primary/50 px-4 py-5 text-primary-foreground transition-colors hover:bg-primary/70 sm:aspect-2/1 sm:justify-end md:flex-row md:items-end md:justify-between md:gap-0 md:p-6 lg:p-8">
+            <div className="bg-primary/50 text-primary-foreground hover:bg-primary/70 relative flex h-full w-full flex-col items-start justify-between gap-4 px-4 py-5 transition-colors sm:aspect-2/1 sm:justify-end md:flex-row md:items-end md:justify-between md:gap-0 md:p-6 lg:p-8">
               <div className="flex h-full items-end justify-end text-xs font-medium md:w-min md:flex-1 md:items-end md:justify-start md:text-base lg:text-lg">
-                Read more{" "}
+                Read more{' '}
                 <ArrowRight className="ml-2 size-4 shrink-0 transition-transform group-hover:translate-x-1" />
               </div>
             </div>

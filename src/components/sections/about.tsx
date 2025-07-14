@@ -15,8 +15,8 @@ const About = () => {
           </h2>
 
           <h1 className="max-w-[600px] flex-1 text-3xl leading-13 font-semibold tracking-tight text-balance md:text-4xl lg:text-5xl">
-            We&apos;re Streamline. We&apos;re a different kind of planning tool
-            that enables builders to create the future now.
+            We&apos;re Cerebello. We&apos;re transforming how businesses work
+            through intelligent automation and AI.
           </h1>
         </div>
 
@@ -45,24 +45,25 @@ const About = () => {
         {/* Text Below Image */}
         <div className="mt-28 max-w-xl lg:mt-10 lg:translate-x-24">
           <p className="text-lg leading-6">
-            Tasks have changed, are changing, and will continue to change — for
-            the better. Now is the time for productivity to be user-first and
-            internet-first. But in order to do this — it needs a new foundation.
+            In today&apos;s rapidly evolving business landscape, AI and automation
+            are no longer optional — they&apos;re essential. We help organizations
+            navigate this transformation with confidence, turning complex technologies
+            into practical solutions that drive real results.
           </p>
         </div>
 
         <div className="mt-6 space-y-6 md:mt-8 md:space-y-8 lg:mt-10 lg:space-y-10">
           {/* Dynamic System Section */}
           <h2 className="max-w-xl text-2xl leading-8 font-semibold md:text-3xl lg:translate-x-24">
-            We were always told that to-do apps can&apos;t be dynamic systems.
+            We saw businesses struggling with outdated processes and untapped potential.
           </h2>
           <p className="max-w-xl text-lg lg:translate-x-24">
-            Everyone tried fixing the problem by adding features, integrations,
-            and layers of complexity. We have spent our careers using,
-            designing, and rethinking tools like Trello, Notion, and Asana,
-            encountering this problem firsthand. The existing solutions
-            don&apos;t work. We believe a to-do app needs to be a dynamic
-            system. But we had to start from ground zero.
+            Traditional consulting approaches weren&apos;t delivering the transformation
+            businesses needed. We&apos;ve spent years implementing AI and automation
+            solutions across industries, witnessing firsthand how the right technology
+            can revolutionize operations. We believe every business deserves access to
+            intelligent automation that actually works. That&apos;s why we built Cerebello
+            — to bridge the gap between AI&apos;s promise and practical reality.
           </p>
           <div className="grid gap-6 py-6 md:grid-cols-2 lg:py-10">
             <Image
@@ -81,33 +82,34 @@ const About = () => {
 
           {/* Timeline Section */}
           <p className="ml-auto max-w-xl text-lg leading-6 lg:-translate-x-24">
-            We started building Streamline in 2019 and launched in 2022. Every
-            single feature has been built from scratch — with no unnecessary
-            complexity or outdated tools. We are purpose-built to redefine
-            productivity for the next hundred years.
+            Founded in 2019, Cerebello emerged from a simple observation: while AI
+            was transforming industries, most businesses were being left behind.
+            We&apos;ve grown from a small team of AI enthusiasts to a trusted partner
+            for organizations worldwide, helping them harness the power of intelligent
+            automation to achieve operational excellence.
           </p>
 
           {/* Team Section */}
           <h2 className="ml-auto max-w-xl text-2xl leading-8 font-semibold md:text-3xl lg:-translate-x-24">
-            We are a bit of an unusual team — not your standard tech startup.
+            We combine deep technical expertise with business acumen.
           </h2>
           <div className="ml-auto max-w-xl text-lg leading-6 lg:-translate-x-24">
             <p>
-              We are 100% founder and team-owned, sustainable, and we keep our
-              team small. Over time, we&apos;ll make this page more polished,
-              but right now we&apos;re focused on delivering for our users. If
-              you&apos;d
-              <br />
-              like to collaborate, check out our open roles:
+              Our team brings together AI engineers, automation specialists, and
+              business strategists who understand both the technology and the
+              challenges you face. We&apos;re not just consultants — we&apos;re
+              partners in your transformation journey, committed to delivering
+              solutions that create lasting impact. Ready to unlock your
+              organization&apos;s potential?
             </p>
             <Button
               variant="outline"
               size="lg"
               className="border-foreground/20 mt-6 rounded-sm border md:mt-8 lg:mt-10"
             >
-              <Link href="#" className="">
+              <Link href="/contact" className="">
                 <span className="flex items-center gap-2 text-start whitespace-pre-wrap">
-                  View Open roles
+                  Start Your AI Journey
                   <ArrowRight className="size-4 stroke-3" />
                 </span>
               </Link>

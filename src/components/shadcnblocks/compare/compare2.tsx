@@ -1,6 +1,6 @@
-import { CheckCircle2, CircleMinus } from "lucide-react";
+import { CheckCircle2, CircleMinus } from 'lucide-react';
 
-import { Separator } from "@/components/ui/separator";
+import { Separator } from '@/components/ui/separator';
 
 const Compare2 = () => {
   return (
@@ -10,7 +10,7 @@ const Compare2 = () => {
           <h1 className="mb-6 text-4xl font-semibold md:text-7xl">
             Product A vs. Product B: Making the Right Choice
           </h1>
-          <p className="mx-auto max-w-4xl text-muted-foreground md:text-xl">
+          <p className="text-muted-foreground mx-auto max-w-4xl md:text-xl">
             Product A isn&apos;t just an alternative to Product B. It offers
             enhanced features and capabilities, making it easier to achieve your
             goals with a modern, intuitive interface designed for today&apos;s
@@ -19,7 +19,7 @@ const Compare2 = () => {
         </div>
         <div className="mt-28">
           <div className="mx-auto grid max-w-3xl gap-6 md:grid-cols-2">
-            <div className="rounded-xl border bg-background p-6 shadow">
+            <div className="bg-background rounded-xl border p-6 shadow">
               <span className="flex items-center justify-center gap-2 font-medium">
                 <img
                   src="https://deifkwefumgah.cloudfront.net/shadcnblocks/block/block-1.svg"
@@ -60,7 +60,7 @@ const Compare2 = () => {
                 </li>
               </ul>
             </div>
-            <div className="rounded-xl bg-border/40 p-6">
+            <div className="bg-border/40 rounded-xl p-6">
               <span className="flex items-center justify-center gap-2 font-medium">
                 <img
                   src="https://deifkwefumgah.cloudfront.net/shadcnblocks/block/block-2.svg"
@@ -83,19 +83,19 @@ const Compare2 = () => {
                   <CheckCircle2 className="h-5 w-5 shrink-0 text-emerald-700" />
                   Basic Features
                 </li>
-                <li className="flex items-center gap-2 text-muted-foreground line-through">
+                <li className="text-muted-foreground flex items-center gap-2 line-through">
                   <CircleMinus className="h-5 w-5 shrink-0 opacity-50" />
                   Partner Program
                 </li>
-                <li className="flex items-center gap-2 text-muted-foreground line-through">
+                <li className="text-muted-foreground flex items-center gap-2 line-through">
                   <CircleMinus className="h-5 w-5 shrink-0 opacity-50" />
                   Live Events
                 </li>
-                <li className="flex items-center gap-2 text-muted-foreground line-through">
+                <li className="text-muted-foreground flex items-center gap-2 line-through">
                   <CircleMinus className="h-5 w-5 shrink-0 opacity-50" />
                   Community Access
                 </li>
-                <li className="flex items-center gap-2 text-muted-foreground line-through">
+                <li className="text-muted-foreground flex items-center gap-2 line-through">
                   <CircleMinus className="h-5 w-5 shrink-0 opacity-50" />
                   Premium Support
                 </li>
@@ -107,7 +107,7 @@ const Compare2 = () => {
           <h2 className="mb-4 text-3xl font-semibold">
             Who is Product B suitable for?
           </h2>
-          <p className="leading-6 text-muted-foreground md:text-lg">
+          <p className="text-muted-foreground leading-6 md:text-lg">
             Product B is a reliable solution designed for basic needs and
             smaller teams. It provides essential functionality for those getting
             started or requiring fundamental features. While it offers a
@@ -118,7 +118,7 @@ const Compare2 = () => {
           <h2 className="mt-16 mb-4 text-3xl font-semibold">
             Key Differences and Considerations
           </h2>
-          <p className="leading-6 text-muted-foreground md:text-lg">
+          <p className="text-muted-foreground leading-6 md:text-lg">
             When choosing between Product A and Product B, consider your
             long-term needs and growth plans. Product A offers more advanced
             features, better scalability, and premium support options. While

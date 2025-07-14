@@ -1,4 +1,4 @@
-"use client";
+'use client';
 
 const Feature146 = () => {
   return (
@@ -16,13 +16,13 @@ const Feature146 = () => {
           </div>
         </div>
         <div className="flex justify-center">
-          <div className="relative flex w-full flex-col border border-solid border-muted-foreground/30 md:w-1/2 lg:w-full">
+          <div className="border-muted-foreground/30 relative flex w-full flex-col border border-solid md:w-1/2 lg:w-full">
             <div className="relative flex flex-col lg:flex-row">
-              <div className="absolute top-0 left-[-50px] h-[1px] w-12 border-b-[1px] border-dashed border-b-muted-foreground/30" />
-              <div className="absolute top-[-50px] left-0 h-12 w-[1px] border-r-[1px] border-dashed border-r-muted-foreground/30" />
-              <div className="absolute top-0 right-[-50px] h-[1px] w-12 border-b-[1px] border-dashed border-b-muted-foreground/30" />
-              <div className="absolute top-[-50px] right-0 h-12 w-[1px] border-r-[1px] border-dashed border-r-muted-foreground/30" />
-              <div className="flex flex-col justify-between gap-8 border-b border-solid border-muted-foreground/30 p-10 lg:w-2/5 lg:border-r lg:border-b-0">
+              <div className="border-b-muted-foreground/30 absolute top-0 left-[-50px] h-[1px] w-12 border-b-[1px] border-dashed" />
+              <div className="border-r-muted-foreground/30 absolute top-[-50px] left-0 h-12 w-[1px] border-r-[1px] border-dashed" />
+              <div className="border-b-muted-foreground/30 absolute top-0 right-[-50px] h-[1px] w-12 border-b-[1px] border-dashed" />
+              <div className="border-r-muted-foreground/30 absolute top-[-50px] right-0 h-12 w-[1px] border-r-[1px] border-dashed" />
+              <div className="border-muted-foreground/30 flex flex-col justify-between gap-8 border-b border-solid p-10 lg:w-2/5 lg:border-r lg:border-b-0">
                 <div>
                   <h2 className="font-semibold">Lorem ipsum dolor sit amet</h2>
                   <p className="text-muted-foreground">
@@ -51,11 +51,11 @@ const Feature146 = () => {
                 />
               </div>
             </div>
-            <div className="relative border-t border-solid border-muted-foreground/30">
-              <div className="absolute bottom-0 left-[-50px] h-[1px] w-12 border-b-[1px] border-dashed border-b-muted-foreground/30" />
-              <div className="absolute bottom-[-50px] left-0 h-12 w-[1px] border-r-[1px] border-dashed border-r-muted-foreground/30" />
-              <div className="absolute right-[-50px] bottom-0 h-[1px] w-12 border-b-[1px] border-dashed border-b-muted-foreground/30" />
-              <div className="absolute right-0 bottom-[-50px] h-12 w-[1px] border-r-[1px] border-dashed border-r-muted-foreground/30" />
+            <div className="border-muted-foreground/30 relative border-t border-solid">
+              <div className="border-b-muted-foreground/30 absolute bottom-0 left-[-50px] h-[1px] w-12 border-b-[1px] border-dashed" />
+              <div className="border-r-muted-foreground/30 absolute bottom-[-50px] left-0 h-12 w-[1px] border-r-[1px] border-dashed" />
+              <div className="border-b-muted-foreground/30 absolute right-[-50px] bottom-0 h-[1px] w-12 border-b-[1px] border-dashed" />
+              <div className="border-r-muted-foreground/30 absolute right-0 bottom-[-50px] h-12 w-[1px] border-r-[1px] border-dashed" />
               <div className="flex flex-col gap-8 p-10 lg:flex-row lg:items-center">
                 <div className="lg:w-1/3">
                   <h2 className="font-semibold">Lorem ipsum dolor sit amet</h2>

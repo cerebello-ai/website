@@ -25,7 +25,8 @@ import { cn } from '@/lib/utils';
 const features = [
   {
     title: 'AI Scans',
-    description: 'In-depth assessment to identify optimal AI implementation opportunities.',
+    description:
+      'In-depth assessment to identify optimal AI implementation opportunities.',
     icon: CircleDot,
   },
   {
@@ -46,9 +47,21 @@ const features = [
 ];
 
 const SLIDES = [
-  { image: '/images/homepage/hero.webp', label: 'AI Dashboard' },
-  { image: '/images/homepage/hero2.webp', label: 'Automation' },
-  { image: '/images/homepage/hero3.webp', label: 'Analytics' },
+  {
+    image:
+      'https://images.unsplash.com/photo-1661878326381-977a55bb8f0d?q=80&w=1287&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+    label: 'Automation',
+  },
+  {
+    image:
+      'https://images.unsplash.com/photo-1598257006458-087169a1f08d?q=80&w=2370&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+    label: 'Analytics',
+  },
+  // {
+  //   image:
+  //     'https://images.unsplash.com/photo-1568294027518-ac9ebc488a56?q=80&w=2370&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+  //   label: 'AI Dashboard',
+  // },
 ];
 
 const Hero = () => {
@@ -78,7 +91,8 @@ const Hero = () => {
             </h1>
 
             <p className="text-sand-700 font-inter-tight mt-3 text-3xl leading-13 font-medium md:text-4xl lg:text-5xl">
-              We empower companies to work smarter through intelligent automation and AI.
+              We empower companies to work smarter through intelligent
+              automation and AI.
             </p>
           </div>
 

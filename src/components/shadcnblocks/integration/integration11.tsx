@@ -1,10 +1,10 @@
-"use client";
+'use client';
 
-import React, { useState } from "react";
+import React, { useState } from 'react';
 
-import { Button } from "@/components/ui/button";
-import { Switch } from "@/components/ui/switch";
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+import { Button } from '@/components/ui/button';
+import { Switch } from '@/components/ui/switch';
+import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 
 interface Integration {
   id: number;
@@ -19,106 +19,106 @@ interface Integration {
 const INTEGRATIONS: Integration[] = [
   {
     id: 1,
-    icon: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/google-icon.svg",
-    title: "Google",
+    icon: 'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/google-icon.svg',
+    title: 'Google',
     description:
-      "Offers tools for lead generation, email marketing, and customer service.",
-    category: "Sales & Marketing Tools",
+      'Offers tools for lead generation, email marketing, and customer service.',
+    category: 'Sales & Marketing Tools',
     categoryDescription:
-      "Enhancing the efficiency and effectiveness of your sales and marketing activities",
+      'Enhancing the efficiency and effectiveness of your sales and marketing activities',
     connected: true,
   },
   {
     id: 2,
-    icon: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/github-icon.svg",
-    title: "Github",
+    icon: 'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/github-icon.svg',
+    title: 'Github',
     description:
-      "Provides comprehensive sales and customer relationship management.",
-    category: "Sales & Marketing Tools",
+      'Provides comprehensive sales and customer relationship management.',
+    category: 'Sales & Marketing Tools',
     categoryDescription:
-      "Enhancing the efficiency and effectiveness of your sales and marketing activities",
+      'Enhancing the efficiency and effectiveness of your sales and marketing activities',
     connected: false,
   },
   {
     id: 3,
-    icon: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/spotify-icon.svg",
-    title: "Spotify",
+    icon: 'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/spotify-icon.svg',
+    title: 'Spotify',
     description:
-      "Focuses on sales pipeline management with a visual pipeline management tool.",
-    category: "Sales & Marketing Tools",
+      'Focuses on sales pipeline management with a visual pipeline management tool.',
+    category: 'Sales & Marketing Tools',
     categoryDescription:
-      "Enhancing the efficiency and effectiveness of your sales and marketing activities",
+      'Enhancing the efficiency and effectiveness of your sales and marketing activities',
     connected: false,
   },
   {
     id: 4,
-    icon: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/slack-icon.svg",
-    title: "Slack",
+    icon: 'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/slack-icon.svg',
+    title: 'Slack',
     description:
-      "Enables real-time collaboration and updates on CRM activities.",
-    category: "Communication & Collaboration",
+      'Enables real-time collaboration and updates on CRM activities.',
+    category: 'Communication & Collaboration',
     categoryDescription:
-      "Enhancing the efficiency and effectiveness of team interactions and workflows",
+      'Enhancing the efficiency and effectiveness of team interactions and workflows',
     connected: true,
   },
   {
     id: 5,
-    icon: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/google-icon.svg",
-    title: "Google",
-    description: "Enhances communication and scheduling within the CRM.",
-    category: "Communication & Collaboration",
+    icon: 'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/google-icon.svg',
+    title: 'Google',
+    description: 'Enhances communication and scheduling within the CRM.',
+    category: 'Communication & Collaboration',
     categoryDescription:
-      "Enhancing the efficiency and effectiveness of team interactions and workflows",
+      'Enhancing the efficiency and effectiveness of team interactions and workflows',
     connected: true,
   },
   {
     id: 6,
-    icon: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/github-icon.svg",
-    title: "Github",
-    description: "Supports seamless integrated CRM inside Microsoft Teams.",
-    category: "Communication & Collaboration",
+    icon: 'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/github-icon.svg',
+    title: 'Github',
+    description: 'Supports seamless integrated CRM inside Microsoft Teams.',
+    category: 'Communication & Collaboration',
     categoryDescription:
-      "Enhancing the efficiency and effectiveness of team interactions and workflows",
+      'Enhancing the efficiency and effectiveness of team interactions and workflows',
     connected: false,
   },
   {
     id: 7,
-    icon: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/spotify-icon.svg",
-    title: "Spotify",
+    icon: 'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/spotify-icon.svg',
+    title: 'Spotify',
     description:
-      "Provides a unified view of customer interactions and schedules.",
-    category: "Communication & Collaboration",
+      'Provides a unified view of customer interactions and schedules.',
+    category: 'Communication & Collaboration',
     categoryDescription:
-      "Enhancing the efficiency and effectiveness of team interactions and workflows",
+      'Enhancing the efficiency and effectiveness of team interactions and workflows',
     connected: false,
   },
   {
     id: 8,
-    icon: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/github-icon.svg",
-    title: "Github",
+    icon: 'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/github-icon.svg',
+    title: 'Github',
     description:
-      "Tracks and manages customer support activities and performance.",
-    category: "Communication & Collaboration",
+      'Tracks and manages customer support activities and performance.',
+    category: 'Communication & Collaboration',
     categoryDescription:
-      "Enhancing the efficiency and effectiveness of team interactions and workflows",
+      'Enhancing the efficiency and effectiveness of team interactions and workflows',
     connected: false,
   },
   {
     id: 9,
-    icon: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/figma-icon.svg",
-    title: "Figma",
-    description: "Streamlines customer support and ticketing within the CRM.",
-    category: "Communication & Collaboration",
+    icon: 'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/figma-icon.svg',
+    title: 'Figma',
+    description: 'Streamlines customer support and ticketing within the CRM.',
+    category: 'Communication & Collaboration',
     categoryDescription:
-      "Enhancing the efficiency and effectiveness of team interactions and workflows",
+      'Enhancing the efficiency and effectiveness of team interactions and workflows',
     connected: false,
   },
 ];
 
 const TABS = [
-  { label: "All Applications", value: "all" },
-  { label: "Connected", value: "connected" },
-  { label: "Disconnected", value: "disconnected" },
+  { label: 'All Applications', value: 'all' },
+  { label: 'Connected', value: 'connected' },
+  { label: 'Disconnected', value: 'disconnected' },
 ];
 
 type CategoryGroup = {
@@ -143,7 +143,7 @@ function groupByCategory(data: Integration[]): CategoryGroup[] {
 }
 
 const Integration11 = () => {
-  const [tab, setTab] = useState<string>("all");
+  const [tab, setTab] = useState<string>('all');
   const [toggles, setToggles] = useState<Record<number, boolean>>(() => {
     const state: Record<number, boolean> = {};
     INTEGRATIONS.forEach((i) => {
@@ -153,8 +153,8 @@ const Integration11 = () => {
   });
 
   let filtered: Integration[] = INTEGRATIONS;
-  if (tab === "connected") filtered = INTEGRATIONS.filter((i) => toggles[i.id]);
-  if (tab === "disconnected")
+  if (tab === 'connected') filtered = INTEGRATIONS.filter((i) => toggles[i.id]);
+  if (tab === 'disconnected')
     filtered = INTEGRATIONS.filter((i) => !toggles[i.id]);
   const grouped = groupByCategory(filtered);
 
@@ -181,17 +181,17 @@ const Integration11 = () => {
                   <h2 className="mb-1 text-lg font-semibold">
                     {group.category}
                   </h2>
-                  <p className="mb-4 text-sm text-muted-foreground">
+                  <p className="text-muted-foreground mb-4 text-sm">
                     {group.categoryDescription}
                   </p>
                   <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
                     {group.integrations.map((integration) => (
                       <div
                         key={integration.id}
-                        className="flex min-h-[170px] flex-col justify-between rounded-xl border bg-background p-6 shadow-sm transition hover:shadow-md"
+                        className="bg-background flex min-h-[170px] flex-col justify-between rounded-xl border p-6 shadow-sm transition hover:shadow-md"
                       >
                         <div className="mb-4 flex items-center gap-4">
-                          <div className="flex h-12 w-12 flex-shrink-0 flex-grow-0 items-center justify-center rounded-md bg-muted p-2">
+                          <div className="bg-muted flex h-12 w-12 flex-shrink-0 flex-grow-0 items-center justify-center rounded-md p-2">
                             <img
                               src={integration.icon}
                               alt={integration.title}
@@ -204,7 +204,7 @@ const Integration11 = () => {
                             <div className="text-base leading-tight font-medium">
                               {integration.title}
                             </div>
-                            <div className="text-xs leading-snug text-muted-foreground">
+                            <div className="text-muted-foreground text-xs leading-snug">
                               {integration.description}
                             </div>
                           </div>

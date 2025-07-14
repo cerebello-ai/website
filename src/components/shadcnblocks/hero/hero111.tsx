@@ -1,23 +1,23 @@
-"use client";
-import { zodResolver } from "@hookform/resolvers/zod";
-import { CircleCheck } from "lucide-react";
-import { useForm } from "react-hook-form";
-import { z } from "zod";
+'use client';
+import { zodResolver } from '@hookform/resolvers/zod';
+import { CircleCheck } from 'lucide-react';
+import { useForm } from 'react-hook-form';
+import { z } from 'zod';
 
-import { AspectRatio } from "@/components/ui/aspect-ratio";
-import { Button } from "@/components/ui/button";
+import { AspectRatio } from '@/components/ui/aspect-ratio';
+import { Button } from '@/components/ui/button';
 import {
   Form,
   FormControl,
   FormField,
   FormItem,
   FormMessage,
-} from "@/components/ui/form";
-import { Input } from "@/components/ui/input";
+} from '@/components/ui/form';
+import { Input } from '@/components/ui/input';
 
 const formSchema = z
   .object({
-    email: z.string().email({ message: "Invalid email address" }),
+    email: z.string().email({ message: 'Invalid email address' }),
   })
   .required({ email: true });
 
@@ -25,7 +25,7 @@ function HeroFrom() {
   const form = useForm<z.infer<typeof formSchema>>({
     resolver: zodResolver(formSchema),
     defaultValues: {
-      email: "",
+      email: '',
     },
   });
 
@@ -77,10 +77,10 @@ const Hero111 = () => {
       <div className="container max-w-[80.5rem]">
         <div className="mx-auto flex max-w-[24.375rem] flex-col items-center justify-center gap-8 sm:max-w-[31.25rem] md:max-w-[37.5rem] xl:max-w-[43.125rem]">
           <div className="flex flex-col items-center justify-center gap-5">
-            <h1 className="font-outfit text-center text-3xl leading-tight font-medium text-primary sm:text-4xl md:text-5xl xl:text-6xl">
+            <h1 className="font-outfit text-primary text-center text-3xl leading-tight font-medium sm:text-4xl md:text-5xl xl:text-6xl">
               HR Management with advanced Hiring process
             </h1>
-            <p className="text-center text-lg text-primary/80">
+            <p className="text-primary/80 text-center text-lg">
               Simplify HR tasks and empower your team with our solution. Easily
               manage employee data and more—all from a single, centralized
               platform.
@@ -92,17 +92,17 @@ const Hero111 = () => {
           <div className="flex w-full flex-wrap items-center justify-center gap-6">
             <div className="flex items-center gap-3">
               <div className="relative h-6 w-6 shrink-0">
-                <CircleCheck className="absolute top-1/2 left-1/2 m-auto h-[108%] w-[108%] -translate-x-1/2 -translate-y-1/2 stroke-primary" />
+                <CircleCheck className="stroke-primary absolute top-1/2 left-1/2 m-auto h-[108%] w-[108%] -translate-x-1/2 -translate-y-1/2" />
               </div>
-              <p className="text-base text-muted-foreground">
+              <p className="text-muted-foreground text-base">
                 No Credit Card Required
               </p>
             </div>
             <div className="flex items-center gap-3">
               <div className="relative h-6 w-6 shrink-0">
-                <CircleCheck className="absolute top-1/2 left-1/2 m-auto h-[108%] w-[108%] -translate-x-1/2 -translate-y-1/2 stroke-primary" />
+                <CircleCheck className="stroke-primary absolute top-1/2 left-1/2 m-auto h-[108%] w-[108%] -translate-x-1/2 -translate-y-1/2" />
               </div>
-              <p className="text-base text-muted-foreground">Cancel Anytime</p>
+              <p className="text-muted-foreground text-base">Cancel Anytime</p>
             </div>
           </div>
         </div>
@@ -136,7 +136,7 @@ const Hero111 = () => {
           </div>
         </div>
         <div className="flex flex-col items-center justify-center gap-10">
-          <p className="text-center text-lg text-muted-foreground">
+          <p className="text-muted-foreground text-center text-lg">
             Trusted by 7+ million people at companies like
           </p>
           <div className="grid grid-cols-3 grid-rows-2 flex-wrap justify-between gap-8 md:grid-cols-6 md:grid-rows-1">

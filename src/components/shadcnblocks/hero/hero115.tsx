@@ -1,6 +1,6 @@
-import { Wifi, Zap } from "lucide-react";
+import { Wifi, Zap } from 'lucide-react';
 
-import { Button } from "@/components/ui/button";
+import { Button } from '@/components/ui/button';
 
 interface Hero115Props {
   icon?: React.ReactNode;
@@ -18,16 +18,16 @@ interface Hero115Props {
 
 const Hero115 = ({
   icon = <Wifi className="size-6" />,
-  heading = "Blocks built with Shadcn & Tailwind",
-  description = "Finely crafted components built with React, Tailwind and Shadcn UI. Developers can copy and paste these blocks directly into their project.",
+  heading = 'Blocks built with Shadcn & Tailwind',
+  description = 'Finely crafted components built with React, Tailwind and Shadcn UI. Developers can copy and paste these blocks directly into their project.',
   button = {
-    text: "Discover Features",
+    text: 'Discover Features',
     icon: <Zap className="ml-2 size-4" />,
-    url: "https://www.shadcnblocks.com",
+    url: 'https://www.shadcnblocks.com',
   },
-  trustText = "Trusted by 25.000+ Businesses Worldwide",
-  imageSrc = "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-1.svg",
-  imageAlt = "placeholder",
+  trustText = 'Trusted by 25.000+ Businesses Worldwide',
+  imageSrc = 'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-1.svg',
+  imageAlt = 'placeholder',
 }: Hero115Props) => {
   return (
     <section className="overflow-hidden py-32">
@@ -36,7 +36,7 @@ const Hero115 = ({
           <div className="relative flex flex-col gap-5">
             <div
               style={{
-                transform: "translate(-50%, -50%)",
+                transform: 'translate(-50%, -50%)',
               }}
               className="absolute top-1/2 left-1/2 -z-10 mx-auto size-[800px] rounded-full border [mask-image:linear-gradient(to_top,transparent,transparent,white,white,white,transparent,transparent)] p-16 md:size-[1300px] md:p-32"
             >
@@ -50,7 +50,7 @@ const Hero115 = ({
             <h2 className="mx-auto max-w-5xl text-center text-3xl font-medium text-balance md:text-6xl">
               {heading}
             </h2>
-            <p className="mx-auto max-w-3xl text-center text-muted-foreground md:text-lg">
+            <p className="text-muted-foreground mx-auto max-w-3xl text-center md:text-lg">
               {description}
             </p>
             <div className="flex flex-col items-center justify-center gap-3 pt-3 pb-12">
@@ -60,7 +60,7 @@ const Hero115 = ({
                 </a>
               </Button>
               {trustText && (
-                <div className="text-xs text-muted-foreground">{trustText}</div>
+                <div className="text-muted-foreground text-xs">{trustText}</div>
               )}
             </div>
           </div>

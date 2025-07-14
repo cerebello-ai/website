@@ -1,6 +1,6 @@
-import { Copy, ExternalLink, GitPullRequest, Maximize2 } from "lucide-react";
+import { Copy, ExternalLink, GitPullRequest, Maximize2 } from 'lucide-react';
 
-import { Button } from "@/components/ui/button";
+import { Button } from '@/components/ui/button';
 import {
   Dialog,
   DialogContent,
@@ -8,28 +8,29 @@ import {
   DialogHeader,
   DialogTitle,
   DialogTrigger,
-} from "@/components/ui/dialog";
+} from '@/components/ui/dialog';
 import {
   Tooltip,
   TooltipContent,
   TooltipProvider,
   TooltipTrigger,
-} from "@/components/ui/tooltip";
+} from '@/components/ui/tooltip';
 
 const changes = [
   {
-    title: "v3.0.0: Major UI Refresh & New Integrations",
-    date: "May 15, 2025",
-    image: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-2.svg",
+    title: 'v3.0.0: Major UI Refresh & New Integrations',
+    date: 'May 15, 2025',
+    image:
+      'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-2.svg',
     excerpt:
-      "This major release introduces a completely redesigned user interface for a more intuitive experience and adds powerful new integrations with popular third-party services.",
+      'This major release introduces a completely redesigned user interface for a more intuitive experience and adds powerful new integrations with popular third-party services.',
     contributors: [
-      "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/avatar-5.webp",
-      "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/avatar-6.webp",
-      "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/avatar-1.webp",
-      "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/avatar-2.webp",
+      'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/avatar-5.webp',
+      'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/avatar-6.webp',
+      'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/avatar-1.webp',
+      'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/avatar-2.webp',
     ],
-    link: "#",
+    link: '#',
     content: (
       <div className="prose dark:prose-invert">
         <h3>Revamped User Experience</h3>
@@ -78,10 +79,10 @@ const changes = [
           </tbody>
         </table>
         <p>
-          Explore the full list of changes in our updated{" "}
+          Explore the full list of changes in our updated{' '}
           <code className="bg-muted relative rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold">
             RELEASE_NOTES.md
-          </code>{" "}
+          </code>{' '}
           file.
         </p>
         <p className="small">
@@ -94,19 +95,20 @@ const changes = [
     ),
   },
   {
-    title: "v2.9.5: Performance Boost & API Enhancements",
-    date: "April 02, 2025",
-    image: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-3.svg",
+    title: 'v2.9.5: Performance Boost & API Enhancements',
+    date: 'April 02, 2025',
+    image:
+      'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-3.svg',
     excerpt:
-      "This release focuses on significant performance improvements across the platform and introduces new API endpoints for greater developer flexibility.",
+      'This release focuses on significant performance improvements across the platform and introduces new API endpoints for greater developer flexibility.',
     contributors: [
-      "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/avatar-3.webp",
-      "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/avatar-4.webp",
-      "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/avatar-5.webp",
-      "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/avatar-6.webp",
-      "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/avatar-7.webp",
+      'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/avatar-3.webp',
+      'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/avatar-4.webp',
+      'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/avatar-5.webp',
+      'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/avatar-6.webp',
+      'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/avatar-7.webp',
     ],
-    link: "#",
+    link: '#',
     content: (
       <div className="prose dark:prose-invert">
         <h3>Lightning Fast Performance</h3>
@@ -150,7 +152,7 @@ const changes = [
           </tbody>
         </table>
         <p>
-          Dive into the technical details in our engineering blog post:{" "}
+          Dive into the technical details in our engineering blog post:{' '}
           <code className="bg-muted relative rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold">
             EngineeringDeepDive_v2.9.5.pdf
           </code>
@@ -177,14 +179,14 @@ const Changelog6 = () => {
             Latest Enhancements
             <br /> & Platform News
           </h1>
-          <div className="bg-border absolute bottom-0 left-0 right-0 h-px w-[200vw] -translate-x-1/2" />
-          <div className="bg-border absolute left-0 right-0 top-0 h-px w-[200vw] -translate-x-1/2" />
+          <div className="bg-border absolute right-0 bottom-0 left-0 h-px w-[200vw] -translate-x-1/2" />
+          <div className="bg-border absolute top-0 right-0 left-0 h-px w-[200vw] -translate-x-1/2" />
         </div>
         <div className="flex flex-col">
           {changes.map((change, idx) => (
             <Dialog key={idx}>
               <div className="relative flex w-full flex-col gap-4 py-16 lg:flex-row lg:gap-0">
-                <div className="left-0 top-2 mt-2 block h-fit lg:sticky">
+                <div className="top-2 left-0 mt-2 block h-fit lg:sticky">
                   <time className="text-muted-foreground w-36 text-sm font-medium lg:absolute">
                     {change.date}
                   </time>
@@ -261,7 +263,7 @@ const Changelog6 = () => {
                     </div>
                   </div>
                 </div>
-                <div className="bg-border absolute bottom-0 left-0 right-0 h-px w-[200vw] -translate-x-1/2" />
+                <div className="bg-border absolute right-0 bottom-0 left-0 h-px w-[200vw] -translate-x-1/2" />
               </div>
               <DialogContent className="max-h-[90vh] overflow-y-auto sm:max-w-prose">
                 <DialogHeader>

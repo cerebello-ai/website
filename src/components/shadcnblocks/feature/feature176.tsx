@@ -1,4 +1,4 @@
-"use client";
+'use client';
 
 import {
   ArrowUp,
@@ -7,46 +7,46 @@ import {
   ChartNoAxesColumnIncreasing,
   Share,
   X,
-} from "lucide-react";
-import { Bar, BarChart, CartesianGrid, XAxis } from "recharts";
+} from 'lucide-react';
+import { Bar, BarChart, CartesianGrid, XAxis } from 'recharts';
 
-import { Badge } from "@/components/ui/badge";
-import { Button } from "@/components/ui/button";
+import { Badge } from '@/components/ui/badge';
+import { Button } from '@/components/ui/button';
 import {
   Card,
   CardContent,
   CardDescription,
   CardHeader,
   CardTitle,
-} from "@/components/ui/card";
+} from '@/components/ui/card';
 import {
   ChartConfig,
   ChartContainer,
   ChartTooltip,
   ChartTooltipContent,
-} from "@/components/ui/chart";
-import { Progress } from "@/components/ui/progress";
-import { Skeleton } from "@/components/ui/skeleton";
+} from '@/components/ui/chart';
+import { Progress } from '@/components/ui/progress';
+import { Skeleton } from '@/components/ui/skeleton';
 
 const chartData = [
-  { month: "January", desktop: 40, mobile: 30 },
-  { month: "February", desktop: 60, mobile: 30 },
-  { month: "March", desktop: 70, mobile: 35 },
-  { month: "April", desktop: 50, mobile: 25 },
-  { month: "May", desktop: 40, mobile: 20 },
-  { month: "June", desktop: 30, mobile: 15 },
-  { month: "March", desktop: 70, mobile: 35 },
-  { month: "April", desktop: 50, mobile: 25 },
-  { month: "May", desktop: 40, mobile: 20 },
-  { month: "June", desktop: 30, mobile: 15 },
+  { month: 'January', desktop: 40, mobile: 30 },
+  { month: 'February', desktop: 60, mobile: 30 },
+  { month: 'March', desktop: 70, mobile: 35 },
+  { month: 'April', desktop: 50, mobile: 25 },
+  { month: 'May', desktop: 40, mobile: 20 },
+  { month: 'June', desktop: 30, mobile: 15 },
+  { month: 'March', desktop: 70, mobile: 35 },
+  { month: 'April', desktop: 50, mobile: 25 },
+  { month: 'May', desktop: 40, mobile: 20 },
+  { month: 'June', desktop: 30, mobile: 15 },
 ];
 
 const chartConfig = {
   desktop: {
-    label: "Desktop",
+    label: 'Desktop',
   },
   mobile: {
-    label: "Mobile",
+    label: 'Mobile',
   },
 } satisfies ChartConfig;
 
@@ -61,19 +61,19 @@ const Feature176 = () => {
       <div className="relative z-10 container mx-auto px-4">
         <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
           {/* Left Side */}
-          <div className="flex h-fit flex-col gap-4 rounded-lg bg-background/50 p-4">
-            <div className="flex flex-row items-center gap-x-2 rounded-lg border bg-card p-4 shadow-sm">
+          <div className="bg-background/50 flex h-fit flex-col gap-4 rounded-lg p-4">
+            <div className="bg-card flex flex-row items-center gap-x-2 rounded-lg border p-4 shadow-sm">
               <ChartNoAxesColumnIncreasing className="size-6" />
               <h1 className="truncate text-xl font-bold sm:text-2xl">
                 Analytics Snapshot
               </h1>
-              <span className="ml-auto shrink-0 font-mono text-sm text-muted-foreground uppercase">
+              <span className="text-muted-foreground ml-auto shrink-0 font-mono text-sm uppercase">
                 Data/logs/3201927
               </span>
             </div>
 
             {/* Middle: Evaluation */}
-            <div className="rounded-lg border bg-card p-4 shadow-sm">
+            <div className="bg-card rounded-lg border p-4 shadow-sm">
               <div className="flex flex-row items-center">
                 <h1>Evaluation</h1>
                 <Badge className="ml-auto bg-green-300 text-green-600 hover:bg-green-300/80">
@@ -81,7 +81,7 @@ const Feature176 = () => {
                 </Badge>
               </div>
               <div className="my-4">
-                <span className="text-xs text-muted-foreground">
+                <span className="text-muted-foreground text-xs">
                   Recent performance evaluation shows significant improvement in
                   code quality and project delivery times. Consistently meets
                   deadlines and demonstrates strong problem-solving skills.
@@ -111,7 +111,7 @@ const Feature176 = () => {
                   <Skeleton className="h-1 w-full" />
                 </div>
               </div>
-              <div className="mt-12 mb-4 flex items-center justify-between bg-card">
+              <div className="bg-card mt-12 mb-4 flex items-center justify-between">
                 <div className="space-x-4">
                   <Button
                     size="sm"
@@ -143,13 +143,13 @@ const Feature176 = () => {
 
           {/* Right Side */}
           <div>
-            <div className="mt-24 flex flex-col gap-4 rounded-lg bg-background/50 p-4">
-              <div className="flex flex-row items-center gap-x-2 rounded-lg border bg-card p-4 shadow-sm">
+            <div className="bg-background/50 mt-24 flex flex-col gap-4 rounded-lg p-4">
+              <div className="bg-card flex flex-row items-center gap-x-2 rounded-lg border p-4 shadow-sm">
                 <ChartNoAxesColumnIncreasing className="size-6" />
                 <h1 className="truncate text-xl font-bold sm:text-2xl">
                   Data Metrics
                 </h1>
-                <span className="ml-auto shrink-0 font-mono text-sm text-muted-foreground uppercase">
+                <span className="text-muted-foreground ml-auto shrink-0 font-mono text-sm uppercase">
                   Data/logs/182620
                 </span>
               </div>
@@ -190,43 +190,43 @@ const Feature176 = () => {
               </Card>
 
               {/* Analytics Cards */}
-              <div className="mt-4 flex flex-col rounded-lg border bg-background/50 p-4 shadow-sm">
+              <div className="bg-background/50 mt-4 flex flex-col rounded-lg border p-4 shadow-sm">
                 <div className="flex flex-row items-center">
-                  <ChartCandlestick className="size-6 text-foreground/60" />
-                  <span className="ml-4 text-sm text-muted-foreground">
+                  <ChartCandlestick className="text-foreground/60 size-6" />
+                  <span className="text-muted-foreground ml-4 text-sm">
                     Shadcnblocks.com Stats
                   </span>
                 </div>
                 <div className="mt-4 grid gap-4 md:grid-cols-3">
                   {/* Card 1 */}
-                  <div className="rounded-lg border bg-card p-4 shadow-sm">
+                  <div className="bg-card rounded-lg border p-4 shadow-sm">
                     <div className="flex items-start justify-between">
                       <h2 className="text-3xl font-bold">2.5K</h2>
                       <ArrowUpRight className="text-success size-6" />
                     </div>
-                    <p className="mt-2 text-sm text-muted-foreground">
+                    <p className="text-muted-foreground mt-2 text-sm">
                       Active Users
                     </p>
                   </div>
 
                   {/* Card 2 */}
-                  <div className="rounded-lg border bg-card p-4 shadow-sm">
+                  <div className="bg-card rounded-lg border p-4 shadow-sm">
                     <div className="flex items-start justify-between">
                       <h2 className="text-3xl font-bold">$8.1K</h2>
                       <ArrowUpRight className="text-success size-6" />
                     </div>
-                    <p className="mt-2 text-sm text-muted-foreground">
+                    <p className="text-muted-foreground mt-2 text-sm">
                       Monthly Revenue
                     </p>
                   </div>
 
                   {/* Card 3 */}
-                  <div className="rounded-lg border bg-card p-4 shadow-sm">
+                  <div className="bg-card rounded-lg border p-4 shadow-sm">
                     <div className="flex items-start justify-between">
                       <h2 className="text-3xl font-bold">92%</h2>
                       <ArrowUp className="text-success size-6" />
                     </div>
-                    <p className="mt-2 text-sm text-muted-foreground">
+                    <p className="text-muted-foreground mt-2 text-sm">
                       Customer Satisfaction
                     </p>
                   </div>

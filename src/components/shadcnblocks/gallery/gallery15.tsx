@@ -1,16 +1,17 @@
-"use client";
+'use client';
 
-import { ArrowLeft, ArrowRight } from "lucide-react";
-import { useEffect, useState } from "react";
+import { useEffect, useState } from 'react';
 
-import { Badge } from "@/components/ui/badge";
-import { Button } from "@/components/ui/button";
-import type { CarouselApi } from "@/components/ui/carousel";
+import { ArrowLeft, ArrowRight } from 'lucide-react';
+
+import { Badge } from '@/components/ui/badge';
+import { Button } from '@/components/ui/button';
+import type { CarouselApi } from '@/components/ui/carousel';
 import {
   Carousel,
   CarouselContent,
   CarouselItem,
-} from "@/components/ui/carousel";
+} from '@/components/ui/carousel';
 
 interface DatItem {
   id: string;
@@ -23,68 +24,84 @@ interface DatItem {
 
 const DATA: DatItem[] = [
   {
-    id: "1",
-    title: "Custom Web Development",
-    price: "$1,500",
-    image: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-1.svg",
-    hoverImage: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/photos/simone-hutsch-5oYbG-sEImY-unsplash.jpg",
-    tag: "Tailored Solutions",
+    id: '1',
+    title: 'Custom Web Development',
+    price: '$1,500',
+    image:
+      'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-1.svg',
+    hoverImage:
+      'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/photos/simone-hutsch-5oYbG-sEImY-unsplash.jpg',
+    tag: 'Tailored Solutions',
   },
   {
-    id: "2",
-    title: "Mobile App Development",
-    price: "$2,000",
-    image: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-2.svg",
-    hoverImage: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/photos/simone-hutsch-duxeKbu9FDE-unsplash.jpg",
-    tag: "iOS & Android",
+    id: '2',
+    title: 'Mobile App Development',
+    price: '$2,000',
+    image:
+      'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-2.svg',
+    hoverImage:
+      'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/photos/simone-hutsch-duxeKbu9FDE-unsplash.jpg',
+    tag: 'iOS & Android',
   },
   {
-    id: "3",
-    title: "Cloud Solutions",
-    price: "$3,000",
-    image: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-4.svg",
-    hoverImage: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/photos/simone-hutsch-majMgWtrF48-unsplash.jpg",
-    tag: "Scalable Infrastructure",
+    id: '3',
+    title: 'Cloud Solutions',
+    price: '$3,000',
+    image:
+      'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-4.svg',
+    hoverImage:
+      'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/photos/simone-hutsch-majMgWtrF48-unsplash.jpg',
+    tag: 'Scalable Infrastructure',
   },
   {
-    id: "4",
-    title: "UI/UX Design",
-    price: "$1,200",
-    image: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-6.svg",
-    hoverImage: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/photos/simone-hutsch-xYFl3Q9am1E-unsplash.jpg",
-    tag: "User-Centric Design",
+    id: '4',
+    title: 'UI/UX Design',
+    price: '$1,200',
+    image:
+      'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-6.svg',
+    hoverImage:
+      'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/photos/simone-hutsch-xYFl3Q9am1E-unsplash.jpg',
+    tag: 'User-Centric Design',
   },
   {
-    id: "5",
-    title: "E-Commerce Platforms",
-    price: "$2,500",
-    image: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-2.svg",
-    hoverImage: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/photos/simone-hutsch-9__Q24sJqKg-unsplash.jpg",
-    tag: "Seamless Shopping",
+    id: '5',
+    title: 'E-Commerce Platforms',
+    price: '$2,500',
+    image:
+      'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-2.svg',
+    hoverImage:
+      'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/photos/simone-hutsch-9__Q24sJqKg-unsplash.jpg',
+    tag: 'Seamless Shopping',
   },
   {
-    id: "6",
-    title: "AI & Machine Learning",
-    price: "$5,000",
-    image: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-4.svg",
-    hoverImage: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/photos/simone-hutsch-5oYbG-sEImY-unsplash.jpg",
-    tag: "Smart Automation",
+    id: '6',
+    title: 'AI & Machine Learning',
+    price: '$5,000',
+    image:
+      'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-4.svg',
+    hoverImage:
+      'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/photos/simone-hutsch-5oYbG-sEImY-unsplash.jpg',
+    tag: 'Smart Automation',
   },
   {
-    id: "7",
-    title: "DevOps Services",
-    price: "$2,800",
-    image: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-2.svg",
-    hoverImage: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/photos/simone-hutsch-duxeKbu9FDE-unsplash.jpg",
-    tag: "Efficient Workflows",
+    id: '7',
+    title: 'DevOps Services',
+    price: '$2,800',
+    image:
+      'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-2.svg',
+    hoverImage:
+      'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/photos/simone-hutsch-duxeKbu9FDE-unsplash.jpg',
+    tag: 'Efficient Workflows',
   },
   {
-    id: "8",
-    title: "Cybersecurity Solutions",
-    price: "$4,000",
-    image: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-6.svg",
-    hoverImage: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/photos/simone-hutsch-majMgWtrF48-unsplash.jpg",
-    tag: "Secure Systems",
+    id: '8',
+    title: 'Cybersecurity Solutions',
+    price: '$4,000',
+    image:
+      'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-6.svg',
+    hoverImage:
+      'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/photos/simone-hutsch-majMgWtrF48-unsplash.jpg',
+    tag: 'Secure Systems',
   },
 ];
 
@@ -106,10 +123,10 @@ const Gallery15 = () => {
     };
 
     updateSelection();
-    carouselApi.on("select", updateSelection);
+    carouselApi.on('select', updateSelection);
 
     return () => {
-      carouselApi.off("select", updateSelection);
+      carouselApi.off('select', updateSelection);
     };
   }, [carouselApi]);
 
@@ -152,7 +169,7 @@ const Gallery15 = () => {
         <Carousel
           setApi={setCarouselApi}
           opts={{
-            align: "start",
+            align: 'start',
           }}
         >
           <CarouselContent className="px-4 pb-10 lg:px-10">
@@ -168,17 +185,17 @@ const Gallery15 = () => {
                         src={product.image}
                         alt={product.title}
                         className="h-full w-full object-cover transition-opacity duration-500 group-hover:opacity-0"
-                        style={{ aspectRatio: "3/4" }}
+                        style={{ aspectRatio: '3/4' }}
                       />
                       <img
                         src={product.hoverImage}
                         alt={product.title}
                         className="absolute top-0 left-0 z-10 h-full w-full rounded-2xl object-cover opacity-0 transition-opacity duration-500 group-hover:opacity-100"
-                        style={{ aspectRatio: "3/4" }}
+                        style={{ aspectRatio: '3/4' }}
                       />
 
                       <Badge
-                        className="absolute top-4 left-4 bg-background px-4 py-2"
+                        className="bg-background absolute top-4 left-4 px-4 py-2"
                         variant="outline"
                       >
                         {product.tag}

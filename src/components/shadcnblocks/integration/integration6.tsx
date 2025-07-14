@@ -1,57 +1,126 @@
-"use client";
-import AutoScroll from "embla-carousel-auto-scroll";
-import Autoplay from "embla-carousel-autoplay";
-import { ArrowRight } from "lucide-react";
+'use client';
+import AutoScroll from 'embla-carousel-auto-scroll';
+import Autoplay from 'embla-carousel-autoplay';
+import { ArrowRight } from 'lucide-react';
 
-import { Button } from "@/components/ui/button";
+import { Button } from '@/components/ui/button';
 import {
   Carousel,
   CarouselContent,
   CarouselItem,
-} from "@/components/ui/carousel";
-import { Separator } from "@/components/ui/separator";
+} from '@/components/ui/carousel';
+import { Separator } from '@/components/ui/separator';
 
 const BUTTON_LOGOS = [
-  { src: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/integration/integration-1.svg", alt: "" },
-  { src: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/integration/integration-3.svg", alt: "" },
-  { src: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/integration/integration-4.svg", alt: "" },
-  { src: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/integration/integration-5.svg", alt: "" },
-  { src: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/integration/integration-6.svg", alt: "" },
+  {
+    src: 'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/integration/integration-1.svg',
+    alt: '',
+  },
+  {
+    src: 'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/integration/integration-3.svg',
+    alt: '',
+  },
+  {
+    src: 'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/integration/integration-4.svg',
+    alt: '',
+  },
+  {
+    src: 'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/integration/integration-5.svg',
+    alt: '',
+  },
+  {
+    src: 'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/integration/integration-6.svg',
+    alt: '',
+  },
 ];
 
 const LOGOS = [
-  { src: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/integration/integration-1.svg", alt: "" },
-  { src: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/integration/integration-2.svg", alt: "" },
-  { src: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/integration/integration-3.svg", alt: "" },
-  { src: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/integration/integration-4.svg", alt: "" },
-  { src: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/integration/integration-5.svg", alt: "" },
-  { src: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/integration/integration-6.svg", alt: "" },
-  { src: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/integration/integration-7.svg", alt: "" },
-  { src: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/integration/integration-8.svg", alt: "" },
-  { src: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/integration/integration-9.svg", alt: "" },
-  { src: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/integration/integration-10.svg", alt: "" },
-  { src: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/integration/integration-11.svg", alt: "" },
-  { src: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/integration/integration-13.svg", alt: "" },
-  { src: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/integration/integration-14.svg", alt: "" },
-  { src: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/integration/integration-15.svg", alt: "" },
-  { src: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/integration/integration-16.svg", alt: "" },
-  { src: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/integration/integration-17.svg", alt: "" },
-  { src: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/integration/integration-18.svg", alt: "" },
-  { src: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/integration/integration-8.svg", alt: "" },
+  {
+    src: 'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/integration/integration-1.svg',
+    alt: '',
+  },
+  {
+    src: 'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/integration/integration-2.svg',
+    alt: '',
+  },
+  {
+    src: 'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/integration/integration-3.svg',
+    alt: '',
+  },
+  {
+    src: 'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/integration/integration-4.svg',
+    alt: '',
+  },
+  {
+    src: 'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/integration/integration-5.svg',
+    alt: '',
+  },
+  {
+    src: 'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/integration/integration-6.svg',
+    alt: '',
+  },
+  {
+    src: 'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/integration/integration-7.svg',
+    alt: '',
+  },
+  {
+    src: 'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/integration/integration-8.svg',
+    alt: '',
+  },
+  {
+    src: 'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/integration/integration-9.svg',
+    alt: '',
+  },
+  {
+    src: 'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/integration/integration-10.svg',
+    alt: '',
+  },
+  {
+    src: 'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/integration/integration-11.svg',
+    alt: '',
+  },
+  {
+    src: 'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/integration/integration-13.svg',
+    alt: '',
+  },
+  {
+    src: 'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/integration/integration-14.svg',
+    alt: '',
+  },
+  {
+    src: 'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/integration/integration-15.svg',
+    alt: '',
+  },
+  {
+    src: 'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/integration/integration-16.svg',
+    alt: '',
+  },
+  {
+    src: 'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/integration/integration-17.svg',
+    alt: '',
+  },
+  {
+    src: 'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/integration/integration-18.svg',
+    alt: '',
+  },
+  {
+    src: 'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/integration/integration-8.svg',
+    alt: '',
+  },
 ];
 
 const Integration6 = () => {
   return (
     <section className="py-32">
       <div className="container">
-        <div className="dark flex flex-col gap-10 overflow-hidden rounded-xl bg-background py-4 md:py-10">
+        <div className="dark bg-background flex flex-col gap-10 overflow-hidden rounded-xl py-4 md:py-10">
           <div className="flex w-full flex-col justify-between gap-5 px-10 py-5 lg:flex-row lg:items-end">
             <div className="flex-1">
               <div className="flex w-full max-w-[32rem] flex-col gap-5">
-                <h2 className="text-[2rem] leading-none font-bold tracking-tight text-foreground md:text-[2.75rem] lg:text-5xl">
+                <h2 className="text-foreground text-[2rem] leading-none font-bold tracking-tight md:text-[2.75rem] lg:text-5xl">
                   Build Beautiful Interfaces Fast
                 </h2>
-                <p className="leading-[1.4] text-muted-foreground">
+                <p className="text-muted-foreground leading-[1.4]">
                   Start designing smarter today with reusable UI blocks that
                   save time, boost consistency, and wow users.
                 </p>
@@ -100,7 +169,7 @@ const Integration6 = () => {
             opts={{
               loop: true,
               watchDrag: false,
-              container: "nav",
+              container: 'nav',
             }}
             plugins={[
               AutoScroll({

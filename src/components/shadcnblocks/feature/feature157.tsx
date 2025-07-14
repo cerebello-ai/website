@@ -1,17 +1,19 @@
-"use client";
+'use client';
 
 const integrations = [
   {
-    image: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/photos/simone-hutsch-9jsQcDsxyqA-unsplash.jpg",
-    title: "Indigo Technology",
+    image:
+      'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/photos/simone-hutsch-9jsQcDsxyqA-unsplash.jpg',
+    title: 'Indigo Technology',
     description:
-      "Enhance teamwork with our real-time collaboration tools that keep your team connected and productive.",
+      'Enhance teamwork with our real-time collaboration tools that keep your team connected and productive.',
   },
   {
-    image: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/photos/simone-hutsch-uR__S5GX8Io-unsplash.jpg",
-    title: "Rapid Financial",
+    image:
+      'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/photos/simone-hutsch-uR__S5GX8Io-unsplash.jpg',
+    title: 'Rapid Financial',
     description:
-      "Leverage powerful analytics to make informed decisions and drive your business forward.",
+      'Leverage powerful analytics to make informed decisions and drive your business forward.',
   },
 ];
 
@@ -19,7 +21,7 @@ const Feature157 = () => {
   return (
     <section className="py-32">
       <div className="container">
-        <h4 className="mb-4 text-center text-muted-foreground/50">Services</h4>
+        <h4 className="text-muted-foreground/50 mb-4 text-center">Services</h4>
         <h1 className="mx-auto mb-12 max-w-3xl text-center text-4xl font-semibold sm:text-5xl lg:text-[56px]">
           Our customers get results and save time
         </h1>

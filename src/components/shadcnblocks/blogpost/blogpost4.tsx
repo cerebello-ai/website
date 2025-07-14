@@ -1,4 +1,6 @@
-"use client";
+'use client';
+
+import { useEffect, useRef, useState } from 'react';
 
 import {
   ArrowUp,
@@ -9,13 +11,10 @@ import {
   Lightbulb,
   Linkedin,
   Twitter,
-} from "lucide-react";
-import { useEffect, useRef, useState } from "react";
+} from 'lucide-react';
 
-import { cn } from "@/lib/utils";
-
-import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert";
-import { Avatar, AvatarImage } from "@/components/ui/avatar";
+import { Alert, AlertDescription, AlertTitle } from '@/components/ui/alert';
+import { Avatar, AvatarImage } from '@/components/ui/avatar';
 import {
   Breadcrumb,
   BreadcrumbItem,
@@ -23,9 +22,10 @@ import {
   BreadcrumbList,
   BreadcrumbPage,
   BreadcrumbSeparator,
-} from "@/components/ui/breadcrumb";
-import { Button } from "@/components/ui/button";
-import { Separator } from "@/components/ui/separator";
+} from '@/components/ui/breadcrumb';
+import { Button } from '@/components/ui/button';
+import { Separator } from '@/components/ui/separator';
+import { cn } from '@/lib/utils';
 
 const Blogpost4 = () => {
   const [activeSection, setActiveSection] = useState<string | null>(null);
@@ -46,7 +46,7 @@ const Blogpost4 = () => {
       observerCallback,
       {
         root: null,
-        rootMargin: "0px",
+        rootMargin: '0px',
         threshold: 1,
       },
     );
@@ -89,7 +89,7 @@ const Blogpost4 = () => {
             </BreadcrumbItem>
           </BreadcrumbList>
         </Breadcrumb>
-        <h1 className="mb-6 mt-7 max-w-3xl text-3xl font-semibold md:text-5xl">
+        <h1 className="mt-7 mb-6 max-w-3xl text-3xl font-semibold md:text-5xl">
           The royal decree that made everyone laugh
         </h1>
         <div className="flex items-center gap-3 text-sm">
@@ -110,7 +110,7 @@ const Blogpost4 = () => {
             10 min. read
           </span>
         </div>
-        <Separator className="mb-16 mt-8" />
+        <Separator className="mt-8 mb-16" />
         <div className="relative grid grid-cols-12 gap-6 lg:grid">
           <div className="col-span-12 lg:col-span-8">
             <div>
@@ -129,12 +129,12 @@ const Blogpost4 = () => {
             </div>
             <section
               id="section1"
-              ref={(ref) => addSectionRef("section1", ref)}
+              ref={(ref) => addSectionRef('section1', ref)}
               className="prose dark:prose-invert my-8"
             >
               <h2>How Taxes Work and Why They Matter</h2>
               <p>
-                The king thought long and hard, and finally came up with{" "}
+                The king thought long and hard, and finally came up with{' '}
                 <a href="#">a brilliant plan</a>: he would tax the jokes in the
                 kingdom.
               </p>
@@ -159,7 +159,7 @@ const Blogpost4 = () => {
 
             <section
               id="section2"
-              ref={(ref) => addSectionRef("section2", ref)}
+              ref={(ref) => addSectionRef('section2', ref)}
               className="prose dark:prose-invert mb-8"
             >
               <h2>The Great People&apos;s Rebellion</h2>
@@ -201,12 +201,12 @@ const Blogpost4 = () => {
 
             <section
               id="section3"
-              ref={(ref) => addSectionRef("section3", ref)}
+              ref={(ref) => addSectionRef('section3', ref)}
               className="prose dark:prose-invert mb-8"
             >
               <h2>The King&apos;s Plan</h2>
               <p>
-                The king thought long and hard, and finally came up with{" "}
+                The king thought long and hard, and finally came up with{' '}
                 <a href="#">a brilliant plan</a>: he would tax the jokes in the
                 kingdom.
               </p>
@@ -240,10 +240,10 @@ const Blogpost4 = () => {
                   <a
                     href="#section1"
                     className={cn(
-                      "block py-1 transition-colors duration-200",
-                      activeSection === "section1"
-                        ? "text-primary"
-                        : "text-muted-foreground hover:text-primary",
+                      'block py-1 transition-colors duration-200',
+                      activeSection === 'section1'
+                        ? 'text-primary'
+                        : 'text-muted-foreground hover:text-primary',
                     )}
                   >
                     How Taxes Work and Why They Matter
@@ -253,10 +253,10 @@ const Blogpost4 = () => {
                   <a
                     href="#section2"
                     className={cn(
-                      "block py-1 transition-colors duration-200",
-                      activeSection === "section2"
-                        ? "text-primary"
-                        : "text-muted-foreground hover:text-primary",
+                      'block py-1 transition-colors duration-200',
+                      activeSection === 'section2'
+                        ? 'text-primary'
+                        : 'text-muted-foreground hover:text-primary',
                     )}
                   >
                     The Great People&apos;s Rebellion
@@ -266,10 +266,10 @@ const Blogpost4 = () => {
                   <a
                     href="#section3"
                     className={cn(
-                      "block py-1 transition-colors duration-200",
-                      activeSection === "section3"
-                        ? "text-primary"
-                        : "text-muted-foreground hover:text-primary",
+                      'block py-1 transition-colors duration-200',
+                      activeSection === 'section3'
+                        ? 'text-primary'
+                        : 'text-muted-foreground hover:text-primary',
                     )}
                   >
                     The King&apos;s Plan
@@ -321,7 +321,7 @@ const Blogpost4 = () => {
                 onClick={() =>
                   window.scrollTo({
                     top: 0,
-                    behavior: "smooth",
+                    behavior: 'smooth',
                   })
                 }
               >

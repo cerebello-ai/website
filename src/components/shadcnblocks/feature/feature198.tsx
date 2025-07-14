@@ -1,6 +1,6 @@
-import { Cable, Workflow, Wrench } from "lucide-react";
+import { Cable, Workflow, Wrench } from 'lucide-react';
 
-import { Card } from "@/components/ui/card";
+import { Card } from '@/components/ui/card';
 
 interface DataItem {
   title: string;
@@ -11,25 +11,25 @@ interface DataItem {
 
 const DATA: DataItem[] = [
   {
-    title: "Simplify Your Workflow",
+    title: 'Simplify Your Workflow',
     description:
-      "Streamline your operations with tools designed to fit your business needs.",
+      'Streamline your operations with tools designed to fit your business needs.',
     icon: <Workflow />,
-    className: "absolute cursor-pointer top-0.5",
+    className: 'absolute cursor-pointer top-0.5',
   },
   {
-    title: "Eliminate Clunky Tools",
+    title: 'Eliminate Clunky Tools',
     description:
-      "Replace outdated software with intuitive solutions that empower your team.",
+      'Replace outdated software with intuitive solutions that empower your team.',
     icon: <Wrench />,
-    className: "absolute cursor-pointer -right-4 top-5 xl:top-0 xl:right-5",
+    className: 'absolute cursor-pointer -right-4 top-5 xl:top-0 xl:right-5',
   },
   {
-    title: "Connect Your Workflows",
+    title: 'Connect Your Workflows',
     description:
-      "Integrate your tools and data to create seamless, efficient workflows.",
+      'Integrate your tools and data to create seamless, efficient workflows.',
     icon: <Cable />,
-    className: "absolute cursor-pointer bottom-2 left-[25%]",
+    className: 'absolute cursor-pointer bottom-2 left-[25%]',
   },
 ];
 
@@ -47,7 +47,7 @@ const CardComponent = ({
   return (
     <div className={className}>
       <Card className="flex max-w-lg transform items-center gap-4 rounded-2xl p-6 shadow-lg transition-transform hover:scale-105">
-        <div className="shrink-0 rounded-full bg-muted p-3.5">{icon}</div>
+        <div className="bg-muted shrink-0 rounded-full p-3.5">{icon}</div>
         <div className="font-semibold">
           <p>{title}</p>
           <p className="text-muted-foreground">{description}</p>
@@ -64,7 +64,7 @@ const Feature198 = () => {
         <div className="relative py-20 md:py-24 lg:py-28">
           <h2 className="mx-auto max-w-5xl text-center text-5xl font-medium sm:text-6xl lg:text-7xl xl:text-[85px]">
             <span className="text-muted-foreground">
-              Your tools should adapt to your business.{" "}
+              Your tools should adapt to your business.{' '}
             </span>
             <span>Not the other way around.</span>
           </h2>

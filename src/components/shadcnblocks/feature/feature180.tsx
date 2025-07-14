@@ -9,9 +9,9 @@ import {
   Target,
   Users,
   X,
-} from "lucide-react";
+} from 'lucide-react';
 
-import { Badge } from "@/components/ui/badge";
+import { Badge } from '@/components/ui/badge';
 
 const Feature180 = () => {
   return (
@@ -34,7 +34,7 @@ const Feature180 = () => {
               <p className="text-xl font-medium">Without Acme</p>
             </div>
             <div className="h-full w-full rounded-md border p-9">
-              <ul className="flex flex-col gap-8 font-medium text-primary/70">
+              <ul className="text-primary/70 flex flex-col gap-8 font-medium">
                 <li className="flex items-start gap-4">
                   <Users className="h-6 shrink-0" />
                   <p>Limited user targeting capabilities</p>
@@ -59,8 +59,8 @@ const Feature180 = () => {
               <Check className="h-6 text-lime-400" />
               <p className="text-xl font-medium">With Acme</p>
             </div>
-            <div className="w-full rounded-md bg-linear-to-br from-primary via-primary/20 via-30% to-primary p-0.5">
-              <div className="rounded-sm bg-background p-9">
+            <div className="from-primary via-primary/20 to-primary w-full rounded-md bg-linear-to-br via-30% p-0.5">
+              <div className="bg-background rounded-sm p-9">
                 <ul className="flex flex-col gap-8 font-medium">
                   <li className="flex items-start gap-4">
                     <Target className="h-6 shrink-0" />

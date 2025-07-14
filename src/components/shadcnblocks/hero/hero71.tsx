@@ -1,15 +1,15 @@
-import { Button } from "@/components/ui/button";
+import { Button } from '@/components/ui/button';
 
 const Hero71 = () => {
   return (
     <section className="bg-[linear-gradient(#fbf7ec,#e2f1ee)] py-20 text-center">
       <div className="container flex flex-col items-center gap-5">
-        <h1 className="max-w-2xl text-7xl font-medium text-foreground max-lg:text-5xl">
+        <h1 className="text-foreground max-w-2xl text-7xl font-medium max-lg:text-5xl">
           Stay front and center with your clients.
         </h1>
-        <p className="max-w-2xl text-muted-foreground max-lg:text-sm">
+        <p className="text-muted-foreground max-w-2xl max-lg:text-sm">
           We enhance client relationships by providing personalized solutions,
-          fostering trust, and driving growth.{" "}
+          fostering trust, and driving growth.{' '}
         </p>
         <div className="flex items-center gap-2.5 text-lg max-lg:flex-col max-lg:text-base">
           <Button className="w-fit rounded-md border px-8 py-1">Meet Us</Button>

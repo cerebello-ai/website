@@ -1,62 +1,68 @@
-"use client";
+'use client';
 
-import { ArrowLeft, ArrowRight } from "lucide-react";
-import { useEffect, useState } from "react";
+import { useEffect, useState } from 'react';
 
-import { Badge } from "@/components/ui/badge";
-import { Button } from "@/components/ui/button";
-import type { CarouselApi } from "@/components/ui/carousel";
+import { ArrowLeft, ArrowRight } from 'lucide-react';
+
+import { Badge } from '@/components/ui/badge';
+import { Button } from '@/components/ui/button';
+import type { CarouselApi } from '@/components/ui/carousel';
 import {
   Carousel,
   CarouselContent,
   CarouselItem,
-} from "@/components/ui/carousel";
+} from '@/components/ui/carousel';
 
 const data = [
   {
-    id: "feature-1",
-    title: "Smart AI Assistant",
+    id: 'feature-1',
+    title: 'Smart AI Assistant',
     description:
-      "Powered by advanced language models to handle complex queries, automate tasks, and provide intelligent responses with high accuracy.",
-    label: "Core AI",
-    href: "https://www.shadcnblocks.com",
-    image: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-dark-1.svg",
+      'Powered by advanced language models to handle complex queries, automate tasks, and provide intelligent responses with high accuracy.',
+    label: 'Core AI',
+    href: 'https://www.shadcnblocks.com',
+    image:
+      'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-dark-1.svg',
   },
   {
-    id: "feature-2",
-    title: "Data Analytics",
+    id: 'feature-2',
+    title: 'Data Analytics',
     description:
-      "Transform raw data into actionable insights using machine learning algorithms and predictive analytics for informed decision-making.",
-    label: "Analytics",
-    href: "https://www.shadcnblocks.com",
-    image: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-dark-1.svg",
+      'Transform raw data into actionable insights using machine learning algorithms and predictive analytics for informed decision-making.',
+    label: 'Analytics',
+    href: 'https://www.shadcnblocks.com',
+    image:
+      'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-dark-1.svg',
   },
   {
-    id: "feature-3",
-    title: "Process Automation",
+    id: 'feature-3',
+    title: 'Process Automation',
     description:
-      "Streamline workflows and automate repetitive tasks with intelligent process automation, increasing efficiency and reducing errors.",
-    label: "Automation",
-    href: "https://www.shadcnblocks.com",
-    image: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-dark-1.svg",
+      'Streamline workflows and automate repetitive tasks with intelligent process automation, increasing efficiency and reducing errors.',
+    label: 'Automation',
+    href: 'https://www.shadcnblocks.com',
+    image:
+      'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-dark-1.svg',
   },
   {
-    id: "feature-4",
-    title: "Knowledge Base",
+    id: 'feature-4',
+    title: 'Knowledge Base',
     description:
-      "Access and manage comprehensive information with our AI-powered knowledge base that learns and improves from each interaction.",
-    label: "Learning",
-    href: "https://www.shadcnblocks.com",
-    image: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-dark-1.svg",
+      'Access and manage comprehensive information with our AI-powered knowledge base that learns and improves from each interaction.',
+    label: 'Learning',
+    href: 'https://www.shadcnblocks.com',
+    image:
+      'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-dark-1.svg',
   },
   {
-    id: "feature-5",
-    title: "API Integration",
+    id: 'feature-5',
+    title: 'API Integration',
     description:
-      "Seamlessly integrate with existing systems through our robust API framework, enabling smooth data exchange and functionality extension.",
-    label: "Integration",
-    href: "https://www.shadcnblocks.com",
-    image: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-dark-1.svg",
+      'Seamlessly integrate with existing systems through our robust API framework, enabling smooth data exchange and functionality extension.',
+    label: 'Integration',
+    href: 'https://www.shadcnblocks.com',
+    image:
+      'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-dark-1.svg',
   },
 ];
 
@@ -73,9 +79,9 @@ const Gallery3 = () => {
       setCanScrollNext(carouselApi.canScrollNext());
     };
     updateSelection();
-    carouselApi.on("select", updateSelection);
+    carouselApi.on('select', updateSelection);
     return () => {
-      carouselApi.off("select", updateSelection);
+      carouselApi.off('select', updateSelection);
     };
   }, [carouselApi]);
   return (
@@ -116,7 +122,7 @@ const Gallery3 = () => {
           setApi={setCarouselApi}
           opts={{
             breakpoints: {
-              "(max-width: 768px)": {
+              '(max-width: 768px)': {
                 dragFree: true,
               },
             },
@@ -130,7 +136,7 @@ const Gallery3 = () => {
               >
                 <a
                   href={item.href}
-                  className="group flex flex-col justify-between rounded-xl bg-muted p-6"
+                  className="group bg-muted flex flex-col justify-between rounded-xl p-6"
                 >
                   <div>
                     <div className="flex aspect-3/2 overflow-clip rounded-xl">
@@ -151,11 +157,11 @@ const Gallery3 = () => {
                   <div className="mb-2 line-clamp-3 pt-4 text-lg font-medium break-words md:mb-3 md:pt-4 md:text-xl lg:pt-4 lg:text-2xl">
                     {item.title}
                   </div>
-                  <div className="mb-8 line-clamp-2 text-sm text-muted-foreground md:mb-12 md:text-base lg:mb-9">
+                  <div className="text-muted-foreground mb-8 line-clamp-2 text-sm md:mb-12 md:text-base lg:mb-9">
                     {item.description}
                   </div>
                   <div className="flex items-center text-sm">
-                    Read more{" "}
+                    Read more{' '}
                     <ArrowRight className="ml-2 size-5 transition-transform group-hover:translate-x-1" />
                   </div>
                 </a>

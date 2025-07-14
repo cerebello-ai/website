@@ -1,33 +1,52 @@
-"use client";
+'use client';
 
-import NumberFlow from "@number-flow/react";
-import { motion } from "framer-motion";
-import { ArrowRight } from "lucide-react";
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState } from 'react';
 
-import { cn } from "@/lib/utils";
+import NumberFlow from '@number-flow/react';
+import { motion } from 'framer-motion';
+import { ArrowRight } from 'lucide-react';
 
-import { Button } from "@/components/ui/button";
+import { Button } from '@/components/ui/button';
+import { cn } from '@/lib/utils';
+
 const MotionNumberFlow = motion.create(NumberFlow);
 
-const Stats14 = () => {
+import { StatsProps } from '@/components/shadcnblocks/types/common';
+
+interface Stats14Props extends StatsProps {
+  countdownText?: string;
+  endDate?: Date;
+  startDate?: Date;
+  buttonText?: string;
+  showBorder?: boolean;
+  borderHeight?: string;
+}
+
+const Stats14 = ({
+  title = '50 new blocks every month',
+  buttonText = 'Join The Waitlist',
+  endDate = new Date('2025-12-31'),
+  startDate,
+  showBorder = true,
+  borderHeight = 'h-114',
+  className,
+}: Stats14Props) => {
   return (
-    <section className="py-32">
+    <section className={`py-32 ${className || ''}`}>
       <div className="container flex items-center justify-center">
-        <DottedDiv className="h-114 w-full">
-          <div className="flex h-full w-full flex-col items-center justify-center bg-muted/30">
-            <p className="tracking-tight opacity-50 md:text-lg">
-              50 new blocks every month
-            </p>
+        <DottedDiv className={`${borderHeight} w-full`} showBorder={showBorder}>
+          <div className="bg-muted/30 flex h-full w-full flex-col items-center justify-center">
+            <p className="tracking-tight opacity-50 md:text-lg">{title}</p>
             <AnimatedNumberCountdown
-              endDate={new Date("2025-12-31")}
+              endDate={endDate}
+              startDate={startDate}
               className="my-4"
             />
             <Button
               variant="secondary"
               className="group text-md mt-7 flex w-fit items-center justify-center gap-2 rounded-full px-4 py-1 tracking-tight shadow-none"
             >
-              <span>Join The Waitlist</span>
+              <span>{buttonText}</span>
               <ArrowRight className="size-4 -rotate-45 transition-all ease-out group-hover:ml-3 group-hover:rotate-0" />
             </Button>
           </div>
@@ -42,21 +61,27 @@ export { Stats14 };
 const DottedDiv = ({
   children,
   className,
+  showBorder = true,
 }: {
   children: React.ReactNode;
   className?: string;
+  showBorder?: boolean;
 }) => (
   <div
-    className={cn("relative h-full w-full overflow-hidden sm:p-4", className)}
+    className={cn('relative h-full w-full overflow-hidden sm:p-4', className)}
   >
-    <div className="absolute top-4 left-0 hidden h-[1.5px] w-[100%] bg-muted sm:block" />
-    <div className="absolute bottom-4 left-0 hidden h-[1.5px] w-[100%] bg-muted sm:block" />
-    <div className="absolute -top-25 left-4 hidden h-[130%] w-[1.5px] bg-muted sm:block" />
-    <div className="absolute -top-25 right-4 hidden h-[130%] w-[1.5px] bg-muted sm:block" />
-    <div className="absolute top-[12.5px] left-[12.5px] z-10 hidden size-2 rounded-full bg-foreground sm:block" />
-    <div className="absolute top-[12.5px] right-[12.5px] z-10 hidden size-2 rounded-full bg-foreground sm:block" />
-    <div className="absolute bottom-[12.5px] left-[12.5px] z-10 hidden size-2 rounded-full bg-foreground sm:block" />
-    <div className="absolute right-[12.5px] bottom-[12.5px] z-10 hidden size-2 rounded-full bg-foreground sm:block" />
+    {showBorder && (
+      <>
+        <div className="bg-muted absolute top-4 left-0 hidden h-[1.5px] w-[100%] sm:block" />
+        <div className="bg-muted absolute bottom-4 left-0 hidden h-[1.5px] w-[100%] sm:block" />
+        <div className="bg-muted absolute -top-25 left-4 hidden h-[130%] w-[1.5px] sm:block" />
+        <div className="bg-muted absolute -top-25 right-4 hidden h-[130%] w-[1.5px] sm:block" />
+        <div className="bg-foreground absolute top-[12.5px] left-[12.5px] z-10 hidden size-2 rounded-full sm:block" />
+        <div className="bg-foreground absolute top-[12.5px] right-[12.5px] z-10 hidden size-2 rounded-full sm:block" />
+        <div className="bg-foreground absolute bottom-[12.5px] left-[12.5px] z-10 hidden size-2 rounded-full sm:block" />
+        <div className="bg-foreground absolute right-[12.5px] bottom-[12.5px] z-10 hidden size-2 rounded-full sm:block" />
+      </>
+    )}
     {children}
   </div>
 );

@@ -1,29 +1,35 @@
-import { ArrowRight, Megaphone } from "lucide-react";
+import { ArrowRight, Megaphone } from 'lucide-react';
 
-import { AspectRatio } from "@/components/ui/aspect-ratio";
-import { Badge } from "@/components/ui/badge";
-import { Button } from "@/components/ui/button";
+import { HeroProps } from '../types/common';
 
-const Hero102 = () => {
+import { AspectRatio } from '@/components/ui/aspect-ratio';
+import { Badge } from '@/components/ui/badge';
+import { Button } from '@/components/ui/button';
+
+const Hero102 = ({
+  title,
+  description,
+  buttons = [],
+  features = [],
+  ...props
+}: HeroProps = {}) => {
   return (
-    <section className="border-muted2 border-b bg-background pt-12 font-sans md:pt-20">
+    <section className="border-muted2 bg-background border-b pt-12 font-sans md:pt-20">
       <div className="container">
         <div className="mx-auto flex max-w-[700px] flex-col items-center gap-6">
           <div className="py-6">
-            <Badge className="group w-fit rounded bg-muted px-4 py-1.5 hover:bg-muted">
+            <Badge className="group bg-muted hover:bg-muted w-fit rounded px-4 py-1.5">
               <a href="#" className="flex items-center gap-2">
-                <Megaphone className="h-4 w-4 stroke-muted-foreground" />
-                <p className="text-sm font-medium text-muted-2-foreground">
+                <Megaphone className="stroke-muted-foreground h-4 w-4" />
+                <p className="text-muted-2-foreground text-sm font-medium">
                   Announcing our new features
                 </p>
-                <ArrowRight className="h-4 w-4 stroke-muted-foreground transition-transform group-hover:translate-x-1" />
+                <ArrowRight className="stroke-muted-foreground h-4 w-4 transition-transform group-hover:translate-x-1" />
               </a>
             </Badge>
           </div>
-          <h1 className="text-center text-3xl leading-none font-bold text-foreground sm:text-5xl md:text-[56px]">
-            Intuitive project management software
-          </h1>
-          <p className="text-center text-base text-muted-foreground sm:text-xl md:text-2xl">
+          <h1 className="...">{title || 'Default Title'}</h1>
+          <p className="text-muted-foreground text-center text-base sm:text-xl md:text-2xl">
             Our app empowers teams to identify priorities and dedicate time to
             what truly matters.
           </p>

@@ -1,15 +1,16 @@
-"use client";
+'use client';
 
-import { AnimatePresence, motion } from "framer-motion";
-import { ArrowRight } from "lucide-react";
-import React, { useEffect } from "react";
-import { Autoplay, EffectCards, Pagination } from "swiper/modules";
-import { Swiper, SwiperSlide } from "swiper/react";
-import "swiper/css";
-import "swiper/css/effect-cards";
-import "swiper/css/pagination";
+import React, { useEffect } from 'react';
 
-import { Button } from "@/components/ui/button";
+import { AnimatePresence, motion } from 'framer-motion';
+import { ArrowRight } from 'lucide-react';
+import { Autoplay, EffectCards, Pagination } from 'swiper/modules';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/css';
+import 'swiper/css/effect-cards';
+import 'swiper/css/pagination';
+
+import { Button } from '@/components/ui/button';
 
 const Gallery19 = () => {
   const [domLoaded, setDomLoaded] = React.useState(false);
@@ -19,100 +20,100 @@ const Gallery19 = () => {
 
   const images = [
     {
-      src: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/lummi/random11.jpeg",
-      alt: "Portrait of Joanna Doe in urban setting",
-      name: "Joanna Doe",
+      src: 'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/lummi/random11.jpeg',
+      alt: 'Portrait of Joanna Doe in urban setting',
+      name: 'Joanna Doe',
       description:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.",
-      link: "https://www.google.com",
+        'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.',
+      link: 'https://www.google.com',
     },
     {
-      src: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/lummi/random6.jpeg",
-      alt: "Portrait of Joan Doe in natural lighting",
-      name: "Joan Doe",
+      src: 'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/lummi/random6.jpeg',
+      alt: 'Portrait of Joan Doe in natural lighting',
+      name: 'Joan Doe',
       description:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.",
-      link: "https://www.google.com",
+        'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.',
+      link: 'https://www.google.com',
     },
     {
-      src: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/lummi/random1.jpeg",
-      alt: "Portrait of Sarah Chen in studio setting",
-      name: "Sarah Chen",
+      src: 'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/lummi/random1.jpeg',
+      alt: 'Portrait of Sarah Chen in studio setting',
+      name: 'Sarah Chen',
       description:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.",
-      link: "https://www.google.com",
+        'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.',
+      link: 'https://www.google.com',
     },
     {
-      src: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/lummi/random2.jpeg",
-      alt: "Portrait of Michael Park in outdoor setting",
-      name: "Michael Park",
+      src: 'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/lummi/random2.jpeg',
+      alt: 'Portrait of Michael Park in outdoor setting',
+      name: 'Michael Park',
       description:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.",
-      link: "https://www.google.com",
+        'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.',
+      link: 'https://www.google.com',
     },
     {
-      src: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/lummi/random11.jpeg",
-      alt: "Portrait of Emma Wilson in urban setting",
-      name: "Emma Wilson",
+      src: 'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/lummi/random11.jpeg',
+      alt: 'Portrait of Emma Wilson in urban setting',
+      name: 'Emma Wilson',
       description:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.",
-      link: "https://www.google.com",
+        'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.',
+      link: 'https://www.google.com',
     },
     {
-      src: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/lummi/random6.jpeg",
-      alt: "Portrait of David Kim in natural lighting",
-      name: "David Kim",
+      src: 'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/lummi/random6.jpeg',
+      alt: 'Portrait of David Kim in natural lighting',
+      name: 'David Kim',
       description:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.",
-      link: "https://www.google.com",
+        'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.',
+      link: 'https://www.google.com',
     },
     {
-      src: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/lummi/random1.jpeg",
-      alt: "Portrait of Lisa Martinez in studio setting",
-      name: "Lisa Martinez",
+      src: 'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/lummi/random1.jpeg',
+      alt: 'Portrait of Lisa Martinez in studio setting',
+      name: 'Lisa Martinez',
       description:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.",
-      link: "https://www.google.com",
+        'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.',
+      link: 'https://www.google.com',
     },
     {
-      src: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/lummi/random2.jpeg",
-      alt: "Portrait of James Thompson in outdoor setting",
-      name: "James Thompson",
+      src: 'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/lummi/random2.jpeg',
+      alt: 'Portrait of James Thompson in outdoor setting',
+      name: 'James Thompson',
       description:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.",
-      link: "https://www.google.com",
+        'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.',
+      link: 'https://www.google.com',
     },
     {
-      src: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/lummi/random11.jpeg",
-      alt: "Portrait of Sophia Lee in urban setting",
-      name: "Sophia Lee",
+      src: 'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/lummi/random11.jpeg',
+      alt: 'Portrait of Sophia Lee in urban setting',
+      name: 'Sophia Lee',
       description:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.",
-      link: "https://www.google.com",
+        'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.',
+      link: 'https://www.google.com',
     },
     {
-      src: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/lummi/random6.jpeg",
-      alt: "Portrait of Alex Rodriguez in natural lighting",
-      name: "Alex Rodriguez",
+      src: 'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/lummi/random6.jpeg',
+      alt: 'Portrait of Alex Rodriguez in natural lighting',
+      name: 'Alex Rodriguez',
       description:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.",
-      link: "https://www.google.com",
+        'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.',
+      link: 'https://www.google.com',
     },
     {
-      src: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/lummi/random1.jpeg",
-      alt: "Portrait of Maya Patel in studio setting",
-      name: "Maya Patel",
+      src: 'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/lummi/random1.jpeg',
+      alt: 'Portrait of Maya Patel in studio setting',
+      name: 'Maya Patel',
       description:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.",
-      link: "https://www.google.com",
+        'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.',
+      link: 'https://www.google.com',
     },
     {
-      src: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/lummi/random2.jpeg",
-      alt: "Portrait of Noah Johnson in outdoor setting",
-      name: "Noah Johnson",
+      src: 'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/lummi/random2.jpeg',
+      alt: 'Portrait of Noah Johnson in outdoor setting',
+      name: 'Noah Johnson',
       description:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.",
-      link: "https://www.google.com",
+        'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.',
+      link: 'https://www.google.com',
     },
   ];
 
@@ -171,10 +172,10 @@ const Gallery19 = () => {
                     <div className="absolute h-full w-full bg-gradient-to-t from-black/80 to-transparent" />
                     <div className="absolute flex h-full w-full flex-col justify-end p-4">
                       <h3 className="text-2xl font-bold text-white">
-                        {image.name.split(" ")[0]}
+                        {image.name.split(' ')[0]}
                         <span className="font-playfair italic">
-                          {" "}
-                          {image.name.split(" ")[1]}
+                          {' '}
+                          {image.name.split(' ')[1]}
                         </span>
                       </h3>
                       <p className="text-left text-xs text-white/50">
@@ -186,7 +187,7 @@ const Gallery19 = () => {
                         asChild
                       >
                         <a href={image.link}>
-                          Know More{" "}
+                          Know More{' '}
                           <ArrowRight size={14} className="-rotate-45" />
                         </a>
                       </Button>

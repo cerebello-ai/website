@@ -1,7 +1,6 @@
-import { MoveRight } from "lucide-react";
-import { Fragment } from "react";
+import { Fragment } from 'react';
 
-import { cn } from "@/lib/utils";
+import { MoveRight } from 'lucide-react';
 
 import {
   Carousel,
@@ -9,44 +8,51 @@ import {
   CarouselItem,
   CarouselNext,
   CarouselPrevious,
-} from "@/components/ui/carousel";
-import { Separator } from "@/components/ui/separator";
+} from '@/components/ui/carousel';
+import { Separator } from '@/components/ui/separator';
+import { cn } from '@/lib/utils';
 
 const resources = [
   {
-    title: "Getting Started with Templates",
-    category: "guide",
-    link: "#",
-    image: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-1.svg",
+    title: 'Getting Started with Templates',
+    category: 'guide',
+    link: '#',
+    image:
+      'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-1.svg',
   },
   {
-    title: "Template Pricing & Plans",
-    category: "pricing",
-    link: "#",
-    image: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-2.svg",
+    title: 'Template Pricing & Plans',
+    category: 'pricing',
+    link: '#',
+    image:
+      'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-2.svg',
   },
   {
-    title: "Introducing Our New Template Builder",
-    category: "news",
-    link: "#",
-    image: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-3.svg",
+    title: 'Introducing Our New Template Builder',
+    category: 'news',
+    link: '#',
+    image:
+      'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-3.svg',
   },
   {
-    title: "Modern Design Patterns: Creating Responsive Templates for 2025",
-    category: "tutorial",
-    link: "#",
-    image: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-4.svg",
+    title: 'Modern Design Patterns: Creating Responsive Templates for 2025',
+    category: 'tutorial',
+    link: '#',
+    image:
+      'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-4.svg',
   },
   {
-    title: "The Ultimate Guide to Template Customization",
-    category: "ebook",
-    image: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-5.svg",
+    title: 'The Ultimate Guide to Template Customization',
+    category: 'ebook',
+    image:
+      'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-5.svg',
   },
   {
-    title: "Template Success Stories: Year in Review",
-    category: "blog",
-    link: "#",
-    image: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-6.svg",
+    title: 'Template Success Stories: Year in Review',
+    category: 'blog',
+    link: '#',
+    image:
+      'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-6.svg',
   },
 ];
 
@@ -63,7 +69,7 @@ const Gallery8 = () => {
               {resources.slice(0, 3).map((resource, idx) => (
                 <Fragment key={idx}>
                   <div className="flex flex-col gap-1">
-                    <div className="font-mono text-sm text-muted-foreground uppercase">
+                    <div className="text-muted-foreground font-mono text-sm uppercase">
                       {resource.category}
                     </div>
                     <a
@@ -90,8 +96,8 @@ const Gallery8 = () => {
                 {resources.map((item, idx) => (
                   <CarouselItem
                     className={cn(
-                      "w-fit border-y border-l border-border pl-0 transition-colors duration-300 hover:bg-muted/50",
-                      idx === resources.length - 1 && "border-r",
+                      'border-border hover:bg-muted/50 w-fit border-y border-l pl-0 transition-colors duration-300',
+                      idx === resources.length - 1 && 'border-r',
                     )}
                     key={idx}
                   >
@@ -102,7 +108,7 @@ const Gallery8 = () => {
                         className="aspect-video object-cover"
                       />
                       <div className="px-6 py-8">
-                        <div className="text-sm text-muted-foreground uppercase">
+                        <div className="text-muted-foreground text-sm uppercase">
                           {item.category}
                         </div>
                         <h3 className="mt-2 text-xl font-semibold lg:text-2xl">

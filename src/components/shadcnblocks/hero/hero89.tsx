@@ -1,15 +1,15 @@
-import { AspectRatio } from "@/components/ui/aspect-ratio";
-import { Button } from "@/components/ui/button";
+import { AspectRatio } from '@/components/ui/aspect-ratio';
+import { Button } from '@/components/ui/button';
 
 const Hero89 = () => {
   return (
-    <section className="relative flex flex-col items-center justify-between gap-10 bg-background p-5 py-20 md:flex-row md:gap-0 md:pr-0 md:pl-9">
+    <section className="bg-background relative flex flex-col items-center justify-between gap-10 p-5 py-20 md:flex-row md:gap-0 md:pr-0 md:pl-9">
       <div className="md:w-1/2">
         <div className="mx-auto flex max-w-xl flex-col items-start">
-          <h1 className="mb-4 text-4xl leading-tight font-semibold tracking-tighter text-foreground lg:text-[64px]">
+          <h1 className="text-foreground mb-4 text-4xl leading-tight font-semibold tracking-tighter lg:text-[64px]">
             Centered approach to recruiting
           </h1>
-          <p className="mb-12 text-sm text-foreground lg:text-xl">
+          <p className="text-foreground mb-12 text-sm lg:text-xl">
             Share your company's culture and build genuine applicant connections
             with TalentLink
           </p>
@@ -35,7 +35,7 @@ const Hero89 = () => {
           viewBox="0 0 176 101"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
-          className="absolute top-0 hidden w-[25%] -translate-x-1/2 -translate-y-1/2 stroke-foreground lg:inline-block"
+          className="stroke-foreground absolute top-0 hidden w-[25%] -translate-x-1/2 -translate-y-1/2 lg:inline-block"
         >
           <path
             d="M1.99999 50.8332C1.99999 50.8332 8.48154 49.5711 9.14573 49.4947C14.2898 49.213 19.4694 49.4695 24.6043 50.0152C37.6066 51.4638 48.999 56.0419 58.643 65.0309C64.3875 70.4653 67.8497 76.0847 63.3772 83.1592C58.6951 90.4386 47.0166 89.2509 42.7034 81.844C38.6754 74.895 40.4347 61.96 43.414 54.954C47.2004 46.1763 57.4275 39.8604 64.9887 34.6776C87.3379 19.3741 124.604 16.1723 149.791 25.5171C156.851 28.1916 165.814 31.2154 171.185 36.7703"

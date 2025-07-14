@@ -1,16 +1,16 @@
-import { Button } from "@/components/ui/button";
+import { Button } from '@/components/ui/button';
 
 const Hero91 = () => {
   return (
-    <section className="flex min-h-screen items-center justify-between bg-background py-14">
+    <section className="bg-background flex min-h-screen items-center justify-between py-14">
       <div className="flex flex-col gap-5 px-[10%] lg:w-[50%] lg:pr-0">
-        <p className="font-light text-foreground uppercase">
+        <p className="text-foreground font-light uppercase">
           Virtual Engagement Maximized & AI-Powered Content Transformation
         </p>
-        <h1 className="text-5xl font-medium text-foreground md:text-6xl lg:text-7xl">
+        <h1 className="text-foreground text-5xl font-medium md:text-6xl lg:text-7xl">
           Presentation Platform for Marketing Professionals
         </h1>
-        <p className="my-8 text-foreground md:text-xl">
+        <p className="text-foreground my-8 md:text-xl">
           Effortlessly Create, Deliver, and Reimagine All-Hands Corporate
           Meetings
         </p>
@@ -33,7 +33,10 @@ const Hero91 = () => {
           data-object-fit="cover"
           className="h-full w-full rounded-tl-xl object-cover"
         >
-          <source src="https://deifkwefumgah.cloudfront.net/shadcnblocks/block/video-1.mp4" type="video/mp4" />
+          <source
+            src="https://deifkwefumgah.cloudfront.net/shadcnblocks/block/video-1.mp4"
+            type="video/mp4"
+          />
         </video>
       </div>
     </section>

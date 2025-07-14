@@ -1,15 +1,16 @@
-"use client";
-import { Play } from "lucide-react";
-import { Fragment, useState } from "react";
+'use client';
+import { Fragment, useState } from 'react';
 
-import { AspectRatio } from "@/components/ui/aspect-ratio";
-import { Button } from "@/components/ui/button";
+import { Play } from 'lucide-react';
+
+import { AspectRatio } from '@/components/ui/aspect-ratio';
+import { Button } from '@/components/ui/button';
 import {
   Dialog,
   DialogContent,
   DialogHeader,
   DialogTitle,
-} from "@/components/ui/dialog";
+} from '@/components/ui/dialog';
 
 const Hero116 = () => {
   const [isVideoOpen, setIsVideoOpen] = useState(false);
@@ -19,10 +20,10 @@ const Hero116 = () => {
         <div className="container max-w-[1440px]">
           <div className="flex flex-col">
             <div className="flex flex-col items-center justify-center gap-8">
-              <h1 className="max-w-[1000px] text-center text-[3.125rem] leading-none text-foreground md:text-[4.25rem] lg:text-[5.5rem]">
+              <h1 className="text-foreground max-w-[1000px] text-center text-[3.125rem] leading-none md:text-[4.25rem] lg:text-[5.5rem]">
                 Unlock impactful solutions for accelerated software growth
               </h1>
-              <p className="max-w-[53.125rem] text-center text-lg leading-snug text-muted-foreground md:text-xl">
+              <p className="text-muted-foreground max-w-[53.125rem] text-center text-lg leading-snug md:text-xl">
                 Sign up on our website and use your account for as long as you’d
                 like. Our team is always available to assist and dedicated to
                 solving any issues you encounter.
@@ -48,7 +49,7 @@ const Hero116 = () => {
                 <Button
                   asChild
                   variant="outline"
-                  className="group block h-fit w-fit overflow-hidden rounded-full px-5 py-2 text-center text-base text-foreground"
+                  className="group text-foreground block h-fit w-fit overflow-hidden rounded-full px-5 py-2 text-center text-base"
                 >
                   <a href="#">
                     <span className="block overflow-hidden">

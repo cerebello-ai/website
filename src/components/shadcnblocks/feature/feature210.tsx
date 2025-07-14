@@ -13,80 +13,80 @@ import {
   ScrollText,
   Sparkles,
   Users,
-} from "lucide-react";
+} from 'lucide-react';
 
 const features = [
   {
-    title: "Blog Templates",
-    description: "Professional blog layouts",
+    title: 'Blog Templates',
+    description: 'Professional blog layouts',
     icon: Newspaper,
-    link: "#",
+    link: '#',
   },
   {
-    title: "Portfolio",
-    description: "Showcase your creative work",
+    title: 'Portfolio',
+    description: 'Showcase your creative work',
     icon: Files,
-    link: "#",
+    link: '#',
   },
   {
-    title: "Dashboard UI",
-    description: "Modern admin interfaces",
+    title: 'Dashboard UI',
+    description: 'Modern admin interfaces',
     icon: LayoutDashboard,
-    link: "#",
+    link: '#',
   },
   {
-    title: "Landing Pages",
-    description: "High-converting designs",
+    title: 'Landing Pages',
+    description: 'High-converting designs',
     icon: Rocket,
-    link: "#",
+    link: '#',
   },
   {
-    title: "Documentation",
-    description: "Knowledge base layouts",
+    title: 'Documentation',
+    description: 'Knowledge base layouts',
     icon: ClipboardCheck,
-    link: "#",
+    link: '#',
   },
   {
-    title: "Authentication",
-    description: "Sign-in and signup flows",
+    title: 'Authentication',
+    description: 'Sign-in and signup flows',
     icon: KeyRound,
-    link: "#",
+    link: '#',
   },
   {
-    title: "Marketing Sites",
-    description: "Promote your products",
+    title: 'Marketing Sites',
+    description: 'Promote your products',
     icon: Megaphone,
-    link: "#",
+    link: '#',
   },
   {
-    title: "Social Media",
-    description: "Community platforms",
+    title: 'Social Media',
+    description: 'Community platforms',
     icon: Users,
-    link: "#",
+    link: '#',
   },
   {
-    title: "Forms",
-    description: "Input and survey layouts",
+    title: 'Forms',
+    description: 'Input and survey layouts',
     icon: FormInput,
-    link: "#",
+    link: '#',
   },
   {
-    title: "Email Templates",
-    description: "Responsive email designs",
+    title: 'Email Templates',
+    description: 'Responsive email designs',
     icon: Mail,
-    link: "#",
+    link: '#',
   },
   {
-    title: "Components",
-    description: "Reusable UI elements",
+    title: 'Components',
+    description: 'Reusable UI elements',
     icon: Component,
-    link: "#",
+    link: '#',
   },
   {
-    title: "Animations",
-    description: "Interactive transitions",
+    title: 'Animations',
+    description: 'Interactive transitions',
     icon: Sparkles,
-    link: "#",
+    link: '#',
   },
 ];
 
@@ -104,7 +104,7 @@ const Feature210 = () => {
               Build beautiful websites in minutes.
             </h2>
           </div>
-          <p className="w-fit basis-1/2 font-medium text-muted-foreground">
+          <p className="text-muted-foreground w-fit basis-1/2 font-medium">
             Jump start your next project with our professionally designed
             templates. Choose from various categories to match your needs
           </p>
@@ -114,7 +114,7 @@ const Feature210 = () => {
             <a
               key={idx}
               href={feature.link}
-              className="group flex flex-col gap-1 rounded-lg transition-colors md:p-4 md:hover:bg-muted"
+              className="group md:hover:bg-muted flex flex-col gap-1 rounded-lg transition-colors md:p-4"
             >
               <div className="flex items-center gap-2">
                 <feature.icon className="size-4 shrink-0" />
@@ -123,7 +123,7 @@ const Feature210 = () => {
                   <ChevronRight className="size-4 shrink-0 transition-transform md:group-hover:translate-x-0.5" />
                 </div>
               </div>
-              <p className="text-sm text-muted-foreground">
+              <p className="text-muted-foreground text-sm">
                 {feature.description}
               </p>
             </a>

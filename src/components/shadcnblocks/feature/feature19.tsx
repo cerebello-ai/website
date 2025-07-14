@@ -1,83 +1,88 @@
-import { ArrowRight, CheckCircle2 } from "lucide-react";
+import { ArrowRight, CheckCircle2 } from 'lucide-react';
 
-import { Button } from "@/components/ui/button";
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+import { Button } from '@/components/ui/button';
+import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 
 const slides = [
   {
     id: 1,
-    tabName: "Products",
-    title: "Pre-built Components for Rapid Development",
+    tabName: 'Products',
+    title: 'Pre-built Components for Rapid Development',
     description:
-      "Accelerate your workflow with our library of ready-to-use, fully customizable UI components designed for modern web applications.",
+      'Accelerate your workflow with our library of ready-to-use, fully customizable UI components designed for modern web applications.',
     features: [
-      "Cross-platform Integrations",
-      "Responsive Components",
-      "Accessible Blocks",
-      "Customizable Templates",
+      'Cross-platform Integrations',
+      'Responsive Components',
+      'Accessible Blocks',
+      'Customizable Templates',
     ],
-    link: "#",
-    image: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-1.svg",
+    link: '#',
+    image:
+      'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-1.svg',
   },
   {
     id: 2,
-    tabName: "Services",
-    title: "Expert Solutions for Every Challenge",
+    tabName: 'Services',
+    title: 'Expert Solutions for Every Challenge',
     description:
-      "Our comprehensive services help you build, scale, and optimize your digital presence with expert guidance every step of the way.",
+      'Our comprehensive services help you build, scale, and optimize your digital presence with expert guidance every step of the way.',
     features: [
-      "Technical Consulting",
-      "Implementation Support",
-      "Performance Optimization",
-      "Ongoing Maintenance",
+      'Technical Consulting',
+      'Implementation Support',
+      'Performance Optimization',
+      'Ongoing Maintenance',
     ],
-    link: "#",
-    image: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-2.svg",
+    link: '#',
+    image:
+      'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-2.svg',
   },
   {
     id: 3,
-    tabName: "Company",
-    title: "We Build the Future of Web Development",
+    tabName: 'Company',
+    title: 'We Build the Future of Web Development',
     description:
       "Founded by industry experts, we're committed to creating tools that empower developers to build better digital experiences faster.",
     features: [
-      "Remote-first Culture",
-      "Open Source Contributors",
-      "Community-driven",
-      "Continuous Innovation",
+      'Remote-first Culture',
+      'Open Source Contributors',
+      'Community-driven',
+      'Continuous Innovation',
     ],
-    link: "#",
-    image: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-3.svg",
+    link: '#',
+    image:
+      'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-3.svg',
   },
   {
     id: 4,
-    tabName: "Portfolio",
-    title: "Showcasing Client Success Stories",
+    tabName: 'Portfolio',
+    title: 'Showcasing Client Success Stories',
     description:
-      "Explore our diverse portfolio of successful implementations across industries, from startups to enterprise-level organizations.",
+      'Explore our diverse portfolio of successful implementations across industries, from startups to enterprise-level organizations.',
     features: [
-      "Case Studies",
-      "Implementation Examples",
-      "Success Metrics",
-      "Client Testimonials",
+      'Case Studies',
+      'Implementation Examples',
+      'Success Metrics',
+      'Client Testimonials',
     ],
-    link: "#",
-    image: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-4.svg",
+    link: '#',
+    image:
+      'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-4.svg',
   },
   {
     id: 5,
-    tabName: "Resources",
-    title: "Knowledge to Power Your Development",
+    tabName: 'Resources',
+    title: 'Knowledge to Power Your Development',
     description:
-      "Access our comprehensive collection of tutorials, guides, and best practices to help you get the most from our platform.",
+      'Access our comprehensive collection of tutorials, guides, and best practices to help you get the most from our platform.',
     features: [
-      "Developer Guides",
-      "Video Tutorials",
-      "API Documentation",
-      "Community Forums",
+      'Developer Guides',
+      'Video Tutorials',
+      'API Documentation',
+      'Community Forums',
     ],
-    link: "#",
-    image: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-5.svg",
+    link: '#',
+    image:
+      'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-5.svg',
   },
 ];
 
@@ -89,7 +94,7 @@ const Feature19 = () => {
           <h2 className="text-center text-3xl font-semibold lg:text-5xl">
             Building Better Digital Experiences
           </h2>
-          <p className="text-muted-foreground text-balance text-center lg:text-xl">
+          <p className="text-muted-foreground text-center text-balance lg:text-xl">
             Discover how our platform empowers developers and businesses to
             create exceptional web applications with less code and more
             creativity.

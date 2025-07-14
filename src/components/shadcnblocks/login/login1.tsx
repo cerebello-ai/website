@@ -1,7 +1,7 @@
-import { FcGoogle } from "react-icons/fc";
+import { FcGoogle } from 'react-icons/fc';
 
-import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
+import { Button } from '@/components/ui/button';
+import { Input } from '@/components/ui/input';
 
 interface Login1Props {
   heading?: string;
@@ -20,15 +20,15 @@ interface Login1Props {
 const Login1 = ({
   heading,
   logo = {
-    url: "https://www.shadcnblocks.com",
-    src: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/shadcnblockscom-wordmark.svg",
-    alt: "logo",
-    title: "shadcnblocks.com",
+    url: 'https://www.shadcnblocks.com',
+    src: 'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/shadcnblockscom-wordmark.svg',
+    alt: 'logo',
+    title: 'shadcnblocks.com',
   },
-  buttonText = "Login",
-  googleText = "Sign up with Google",
+  buttonText = 'Login',
+  googleText = 'Sign up with Google',
   signupText = "Don't have an account?",
-  signupUrl = "https://shadcnblocks.com",
+  signupUrl = 'https://shadcnblocks.com',
 }: Login1Props) => {
   return (
     <section className="bg-muted bg-background h-screen">

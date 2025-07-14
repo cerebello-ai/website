@@ -1,7 +1,7 @@
-import { HandHelping, ShoppingCart, Users, Zap } from "lucide-react";
+import { HandHelping, ShoppingCart, Users, Zap } from 'lucide-react';
 
-import { Avatar, AvatarImage } from "@/components/ui/avatar";
-import { Button } from "@/components/ui/button";
+import { Avatar, AvatarImage } from '@/components/ui/avatar';
+import { Button } from '@/components/ui/button';
 
 const Hero132 = () => {
   return (
@@ -17,7 +17,7 @@ const Hero132 = () => {
             />
 
             {/* White Card - Left Side Corner */}
-            <div className="bg-background absolute left-4 top-4 rounded-lg p-6">
+            <div className="bg-background absolute top-4 left-4 rounded-lg p-6">
               <p className="text-muted-foreground text-sm">Total Enrollments</p>
               <p className="text-2xl font-bold">15,000+</p>
             </div>
@@ -26,7 +26,10 @@ const Hero132 = () => {
             <div className="bg-background absolute bottom-4 left-4 min-w-[280px] rounded-lg p-6">
               <div className="flex flex-col gap-4">
                 <Avatar className="flex size-8 shrink-0 rounded-full ring-2 ring-black">
-                  <AvatarImage src="https://deifkwefumgah.cloudfront.net/shadcnblocks/block/avatar-1.webp" alt="" />
+                  <AvatarImage
+                    src="https://deifkwefumgah.cloudfront.net/shadcnblocks/block/avatar-1.webp"
+                    alt=""
+                  />
                 </Avatar>
                 <div>
                   <p className="text-3xl font-bold">100+ Courses</p>
@@ -49,9 +52,9 @@ const Hero132 = () => {
           {/* Content Section (Right Side) */}
           <div className="flex flex-col gap-4 text-center lg:gap-12 lg:text-left xl:pl-20">
             {/* Title */}
-            <h1 className="text-[3.375rem] font-extrabold leading-none md:text-6xl lg:text-[5rem]">
-              Transform your{" "}
-              <span className="after:bg-muted2 relative after:absolute after:left-0 after:top-[15%] after:z-[-1] after:inline-block after:h-[70%] after:w-[100%] after:content-['']">
+            <h1 className="text-[3.375rem] leading-none font-extrabold md:text-6xl lg:text-[5rem]">
+              Transform your{' '}
+              <span className="after:bg-muted2 relative after:absolute after:top-[15%] after:left-0 after:z-[-1] after:inline-block after:h-[70%] after:w-[100%] after:content-['']">
                 learning
               </span>
               journey.
@@ -79,7 +82,7 @@ const Hero132 = () => {
         </div>
 
         {/* Vertical Dashed Lines */}
-        <div className="absolute left-0 top-0 -z-10 flex h-[175%] w-full justify-between">
+        <div className="absolute top-0 left-0 -z-10 flex h-[175%] w-full justify-between">
           <div className="h-full w-[1px] border-r border-dashed border-black/20" />
           <div className="h-full w-[1px] border-r border-dashed border-black/20" />
           <div className="h-full w-[1px] border-r border-dashed border-black/20" />
@@ -88,7 +91,7 @@ const Hero132 = () => {
         </div>
 
         {/* Horizontal Dashed Lines */}
-        <div className="absolute left-0 top-0 w-full border-t border-dashed border-black/20" />
+        <div className="absolute top-0 left-0 w-full border-t border-dashed border-black/20" />
       </div>
 
       {/* New Section Below */}

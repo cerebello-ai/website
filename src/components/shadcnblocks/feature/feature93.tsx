@@ -1,6 +1,6 @@
-import { Infinity as InfinityIcon, MessagesSquare, Target } from "lucide-react";
+import { Infinity as InfinityIcon, MessagesSquare, Target } from 'lucide-react';
 
-import { Avatar, AvatarImage } from "@/components/ui/avatar";
+import { Avatar, AvatarImage } from '@/components/ui/avatar';
 
 const Feature93 = () => {
   return (

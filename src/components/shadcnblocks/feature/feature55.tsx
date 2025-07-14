@@ -1,4 +1,4 @@
-import { Button } from "@/components/ui/button";
+import { Button } from '@/components/ui/button';
 
 const Feature55 = () => {
   return (
@@ -8,7 +8,7 @@ const Feature55 = () => {
           <h3 className="my-6 text-3xl font-semibold text-pretty md:text-4xl lg:max-w-3xl lg:text-5xl">
             This is a feature
           </h3>
-          <p className="mb-8 text-muted-foreground lg:max-w-3xl lg:text-lg">
+          <p className="text-muted-foreground mb-8 lg:max-w-3xl lg:text-lg">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Elig
             doloremque mollitia fugiat omnis! Porro facilis quo animi
             consequatur. Explicabo.

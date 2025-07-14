@@ -14,31 +14,35 @@ interface Feature166Props {
 }
 
 const Feature166 = ({
-  heading = "Blocks built with Shadcn & Tailwind",
-  description = "Finely crafted components built with React, Tailwind and Shadcn UI. Developers can copy and paste these blocks directly into their project.",
+  heading = 'Blocks built with Shadcn & Tailwind',
+  description = 'Finely crafted components built with React, Tailwind and Shadcn UI. Developers can copy and paste these blocks directly into their project.',
   feature1 = {
-    title: "UI/UX Design",
+    title: 'UI/UX Design',
     description:
-      "Creating intuitive user experiences with modern interface design principles and user-centered methodologies.",
-    image: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-1.svg",
+      'Creating intuitive user experiences with modern interface design principles and user-centered methodologies.',
+    image:
+      'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-1.svg',
   },
   feature2 = {
-    title: "Responsive Development",
+    title: 'Responsive Development',
     description:
-      "Building websites that look and function perfectly across all devices and screen sizes.",
-    image: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-2.svg",
+      'Building websites that look and function perfectly across all devices and screen sizes.',
+    image:
+      'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-2.svg',
   },
   feature3 = {
-    title: "Brand Integration",
+    title: 'Brand Integration',
     description:
       "Seamlessly incorporating your brand identity into every aspect of your website's design.",
-    image: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-1.svg",
+    image:
+      'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-1.svg',
   },
   feature4 = {
-    title: "Performance Optimization",
+    title: 'Performance Optimization',
     description:
-      "Ensuring fast loading times and smooth performance through optimized code and assets.",
-    image: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-2.svg",
+      'Ensuring fast loading times and smooth performance through optimized code and assets.',
+    image:
+      'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-2.svg',
   },
 }: Feature166Props) => {
   return (
@@ -48,7 +52,7 @@ const Feature166 = ({
           <h1 className="text-center text-3xl font-semibold lg:max-w-3xl lg:text-5xl">
             {heading}
           </h1>
-          <p className="text-center text-lg font-medium text-muted-foreground md:max-w-4xl lg:text-xl">
+          <p className="text-muted-foreground text-center text-lg font-medium md:max-w-4xl lg:text-xl">
             {description}
           </p>
         </div>

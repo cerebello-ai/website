@@ -1,4 +1,4 @@
-"use client";
+'use client';
 
 import {
   Carousel,
@@ -6,33 +6,33 @@ import {
   CarouselItem,
   CarouselNext,
   CarouselPrevious,
-} from "@/components/ui/carousel";
+} from '@/components/ui/carousel';
 
 const teamMembers = [
   {
-    src: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/lummi/person1.jpeg",
-    title: "Joana Doe",
-    designation: "Creative Director",
+    src: 'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/lummi/person1.jpeg',
+    title: 'Joana Doe',
+    designation: 'Creative Director',
   },
   {
-    src: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/lummi/person2.jpeg",
-    title: "John Smith",
-    designation: "Lead Developer",
+    src: 'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/lummi/person2.jpeg',
+    title: 'John Smith',
+    designation: 'Lead Developer',
   },
   {
-    src: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/lummi/person3.jpeg",
-    title: "Alice Johnson",
-    designation: "Project Manager",
+    src: 'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/lummi/person3.jpeg',
+    title: 'Alice Johnson',
+    designation: 'Project Manager',
   },
   {
-    src: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/lummi/person4.jpeg",
-    title: "Robert Brown",
-    designation: "UX Designer",
+    src: 'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/lummi/person4.jpeg',
+    title: 'Robert Brown',
+    designation: 'UX Designer',
   },
   {
-    src: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/lummi/person5.jpeg",
-    title: "Emily White",
-    designation: "Marketing Specialist",
+    src: 'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/lummi/person5.jpeg',
+    title: 'Emily White',
+    designation: 'Marketing Specialist',
   },
 ];
 
@@ -41,15 +41,15 @@ const Gallery27 = () => {
     <section className="py-32">
       <div className="container">
         <h1 className="font-calSans text-6xl">The Team Behind Our Success</h1>
-        <p className="mt-3 max-w-xl text-muted-foreground">
-          {" "}
+        <p className="text-muted-foreground mt-3 max-w-xl">
+          {' '}
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magnam veniam, quis
           nostrud exercitation ullamco laboris nisi ut aliqui
         </p>
         <Carousel
           opts={{
-            align: "start",
+            align: 'start',
             loop: true,
           }}
           className="relative w-full pt-15"

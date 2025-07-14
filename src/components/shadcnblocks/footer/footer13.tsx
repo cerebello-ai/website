@@ -4,57 +4,57 @@ import {
   Instagram,
   Linkedin,
   Twitter,
-} from "lucide-react";
+} from 'lucide-react';
 
-import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
+import { Button } from '@/components/ui/button';
+import { Input } from '@/components/ui/input';
 
 const navigation = [
   {
-    title: "Product",
+    title: 'Product',
     links: [
-      { name: "Home", href: "#" },
-      { name: "Feature1", href: "#" },
-      { name: "Feature2", href: "#" },
-      { name: "Feature3", href: "#" },
+      { name: 'Home', href: '#' },
+      { name: 'Feature1', href: '#' },
+      { name: 'Feature2', href: '#' },
+      { name: 'Feature3', href: '#' },
     ],
   },
   {
-    title: "Company",
+    title: 'Company',
     links: [
-      { name: "About", href: "#" },
-      { name: "Pricing", href: "#" },
+      { name: 'About', href: '#' },
+      { name: 'Pricing', href: '#' },
     ],
   },
   {
-    title: "Support",
+    title: 'Support',
     links: [
-      { name: "FAQ", href: "#" },
-      { name: "Contact", href: "#" },
+      { name: 'FAQ', href: '#' },
+      { name: 'Contact', href: '#' },
     ],
   },
   {
-    title: "Service",
+    title: 'Service',
     links: [
-      { name: "Terms of service", href: "#" },
-      { name: "Privacy policy", href: "#" },
+      { name: 'Terms of service', href: '#' },
+      { name: 'Privacy policy', href: '#' },
     ],
   },
 ];
 
 const socialLinks = [
-  { icon: Facebook, href: "https://facebook.com", label: "Facebook" },
-  { icon: Twitter, href: "https://twitter.com", label: "Twitter" },
-  { icon: Linkedin, href: "https://linkedin.com", label: "LinkedIn" },
-  { icon: Instagram, href: "https://instagram.com", label: "Instagram" },
+  { icon: Facebook, href: 'https://facebook.com', label: 'Facebook' },
+  { icon: Twitter, href: 'https://twitter.com', label: 'Twitter' },
+  { icon: Linkedin, href: 'https://linkedin.com', label: 'LinkedIn' },
+  { icon: Instagram, href: 'https://instagram.com', label: 'Instagram' },
 ];
 
 const Footer13 = () => {
   return (
-    <section className="bg-primary py-16 text-primary-foreground md:py-24 lg:py-32">
+    <section className="bg-primary text-primary-foreground py-16 md:py-24 lg:py-32">
       <div className="container">
         <footer>
-          <div className="mb-16 rounded-2xl bg-primary-foreground/5 p-8 backdrop-blur-sm md:p-12 lg:p-16">
+          <div className="bg-primary-foreground/5 mb-16 rounded-2xl p-8 backdrop-blur-sm md:p-12 lg:p-16">
             <div className="flex flex-col items-center text-center">
               <h2 className="max-w-[800px] text-4xl leading-tight font-semibold tracking-tight text-balance md:text-5xl lg:text-6xl">
                 Start your free trial today.
@@ -63,7 +63,7 @@ const Footer13 = () => {
                   <span className="bg-sand-600/30 absolute bottom-1 left-0 h-1 w-full rounded-full"></span>
                 </span>
               </h2>
-              <p className="mt-4 max-w-[600px] text-lg text-primary-foreground/80">
+              <p className="text-primary-foreground/80 mt-4 max-w-[600px] text-lg">
                 Join thousands of users already leveraging our platform to
                 achieve more.
               </p>
@@ -83,7 +83,7 @@ const Footer13 = () => {
             <div className="grid grid-cols-1 gap-10 lg:grid-cols-2">
               <div>
                 <h3 className="mb-2 text-2xl font-medium">Stay connected</h3>
-                <p className="max-w-md text-primary-foreground/70">
+                <p className="text-primary-foreground/70 max-w-md">
                   Subscribe to our newsletter for the latest updates, resources,
                   and exclusive offers.
                 </p>
@@ -93,7 +93,7 @@ const Footer13 = () => {
                   <Input
                     type="email"
                     placeholder="Your email address"
-                    className="h-12 border-primary-foreground/20 bg-primary-foreground/10 pl-10"
+                    className="border-primary-foreground/20 bg-primary-foreground/10 h-12 pl-10"
                   />
                 </div>
                 <Button variant="secondary" type="submit" className="h-12 px-6">
@@ -113,7 +113,7 @@ const Footer13 = () => {
                     <li key={link.name}>
                       <a
                         href={link.href}
-                        className="inline-block text-primary-foreground/80 transition-colors duration-200 hover:text-primary-foreground"
+                        className="text-primary-foreground/80 hover:text-primary-foreground inline-block transition-colors duration-200"
                       >
                         {link.name}
                       </a>
@@ -127,11 +127,11 @@ const Footer13 = () => {
           {/* Bottom Section */}
           <div className="mx-auto mt-4 py-8">
             <div className="flex flex-col items-center justify-between gap-6 sm:flex-row">
-              <p className="font-medium text-primary-foreground/80">
-                © {new Date().getFullYear()} Streamline -{" "}
+              <p className="text-primary-foreground/80 font-medium">
+                © {new Date().getFullYear()} Streamline -{' '}
                 <a
                   href="https://shadcnblocks.com"
-                  className="underline transition-colors hover:text-primary-foreground"
+                  className="hover:text-primary-foreground underline transition-colors"
                   target="_blank"
                 >
                   Shadcnblocks.com
@@ -143,7 +143,7 @@ const Footer13 = () => {
                     aria-label={link.label}
                     key={link.href}
                     href={link.href}
-                    className="text-primary-foreground/70 transition-colors hover:text-primary-foreground/100"
+                    className="text-primary-foreground/70 hover:text-primary-foreground/100 transition-colors"
                   >
                     <link.icon
                       size={20}

@@ -1,25 +1,25 @@
-"use client";
+'use client';
 
 const items = [
   {
-    title: "Performance",
+    title: 'Performance',
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi necessitatibus, culpa at vitae molestias tenetur explicabo. Voluptatum amet architecto suscipit pariatur eligendi repellendus mollitia dolore unde sint?",
+      'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi necessitatibus, culpa at vitae molestias tenetur explicabo. Voluptatum amet architecto suscipit pariatur eligendi repellendus mollitia dolore unde sint?',
   },
   {
-    title: "Quality",
+    title: 'Quality',
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi necessitatibus, culpa at vitae molestias tenetur explicabo. Voluptatum amet architecto suscipit pariatur eligendi repellendus mollitia dolore unde sint?",
+      'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi necessitatibus, culpa at vitae molestias tenetur explicabo. Voluptatum amet architecto suscipit pariatur eligendi repellendus mollitia dolore unde sint?',
   },
   {
-    title: "Accessibility",
+    title: 'Accessibility',
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi necessitatibus, culpa at vitae molestias tenetur explicabo. Voluptatum amet architecto suscipit pariatur eligendi repellendus mollitia dolore unde sint?",
+      'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi necessitatibus, culpa at vitae molestias tenetur explicabo. Voluptatum amet architecto suscipit pariatur eligendi repellendus mollitia dolore unde sint?',
   },
   {
-    title: "Integrations",
+    title: 'Integrations',
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi necessitatibus, culpa at vitae molestias tenetur explicabo. Voluptatum amet architecto suscipit pariatur eligendi repellendus mollitia dolore unde sint?",
+      'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi necessitatibus, culpa at vitae molestias tenetur explicabo. Voluptatum amet architecto suscipit pariatur eligendi repellendus mollitia dolore unde sint?',
   },
 ];
 
@@ -27,13 +27,13 @@ const Feature123 = () => {
   return (
     <section className="m-x-auto container flex flex-col gap-20 py-32 lg:flex-row">
       <div className="w-full max-w-[400px]">
-        <span className="text-sm text-muted-foreground uppercase">
+        <span className="text-muted-foreground text-sm uppercase">
           Build with blocks
         </span>
         <h2 className="mt-4 mb-8 text-3xl font-extrabold">
           Built with the latest technology stack
         </h2>
-        <p className="text-xl text-muted-foreground">
+        <p className="text-muted-foreground text-xl">
           Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nesciunt,
           accusantium quam.
         </p>

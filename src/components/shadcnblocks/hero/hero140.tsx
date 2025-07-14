@@ -1,17 +1,17 @@
-import { MoveRight } from "lucide-react";
+import { MoveRight } from 'lucide-react';
 
-import { Badge } from "@/components/ui/badge";
-import { Button } from "@/components/ui/button";
+import { Badge } from '@/components/ui/badge';
+import { Button } from '@/components/ui/button';
 
 const Hero140 = () => {
   return (
     <section className="font-albert_sans dark">
       <div className="bg-background pb-12 md:px-8">
-        <div className="bg-top-left flex min-h-[54.375rem] w-full flex-col items-center justify-between rounded-[4rem] bg-[url(https://deifkwefumgah.cloudfront.net/shadcnblocks/block/full-width-backgrounds/andrew-kliatskyi-MaVm_A0xhKk-unsplash.jpg)] bg-cover bg-no-repeat px-8 xl:h-svh">
+        <div className="flex min-h-[54.375rem] w-full flex-col items-center justify-between rounded-[4rem] bg-[url(https://deifkwefumgah.cloudfront.net/shadcnblocks/block/full-width-backgrounds/andrew-kliatskyi-MaVm_A0xhKk-unsplash.jpg)] bg-cover bg-top-left bg-no-repeat px-8 xl:h-svh">
           <div className="mx-auto flex max-w-[23.75rem] flex-col items-center gap-6 pt-40 md:max-w-[34.375rem]">
             <div className="pb-2">
               <div className="bg-background/60 flex w-fit items-center gap-4 rounded-full px-4 py-2">
-                <Badge className="bg-background leading-none! rounded-full px-2 text-xs font-medium text-black md:text-sm">
+                <Badge className="bg-background rounded-full px-2 text-xs leading-none! font-medium text-black md:text-sm">
                   New
                 </Badge>
                 <a
@@ -25,7 +25,7 @@ const Hero140 = () => {
                 </a>
               </div>
             </div>
-            <h1 className="text-foreground text-center text-4xl font-bold leading-none md:text-[3.5rem]">
+            <h1 className="text-foreground text-center text-4xl leading-none font-bold md:text-[3.5rem]">
               Launch with ease, Scale with no limits
             </h1>
             <div className="max-w-[30rem] pb-2">
@@ -41,7 +41,7 @@ const Hero140 = () => {
               <a href="#">Get Started</a>
             </Button>
           </div>
-          <div className="max-w-[80rem] pb-20 pt-20 md:pt-40">
+          <div className="max-w-[80rem] pt-20 pb-20 md:pt-40">
             <p className="text-foreground text-center text-base font-medium">
               Empowering brilliant teams to create greatness
             </p>

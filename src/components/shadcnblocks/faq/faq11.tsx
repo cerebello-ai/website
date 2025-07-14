@@ -3,56 +3,56 @@ import {
   AccordionContent,
   AccordionItem,
   AccordionTrigger,
-} from "@/components/ui/accordion";
+} from '@/components/ui/accordion';
 
 const categories = [
   {
-    title: "Support",
+    title: 'Support',
     questions: [
       {
-        question: "How do I update my account without breaking my laptop?",
+        question: 'How do I update my account without breaking my laptop?',
         answer:
-          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus voluptates deserunt officia temporibus dignissimos.",
+          'Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus voluptates deserunt officia temporibus dignissimos.',
       },
       {
-        question: "Is support free, or do I need to Google everything?",
+        question: 'Is support free, or do I need to Google everything?',
         answer:
-          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus voluptates deserunt officia temporibus dignissimos.",
+          'Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus voluptates deserunt officia temporibus dignissimos.',
       },
       {
-        question: "Are you going to be subsumed by AI?",
+        question: 'Are you going to be subsumed by AI?',
         answer:
-          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus voluptates deserunt officia temporibus dignissimos.",
+          'Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus voluptates deserunt officia temporibus dignissimos.',
       },
     ],
   },
   {
-    title: "Your account",
+    title: 'Your account',
     questions: [
       {
-        question: "Is support free, or do I need to Google everything?",
+        question: 'Is support free, or do I need to Google everything?',
         answer:
-          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus voluptates deserunt officia temporibus dignissimos.",
+          'Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus voluptates deserunt officia temporibus dignissimos.',
       },
       {
-        question: "Are you going to be subsumed by AI?",
+        question: 'Are you going to be subsumed by AI?',
         answer:
-          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus voluptates deserunt officia temporibus dignissimos.",
+          'Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus voluptates deserunt officia temporibus dignissimos.',
       },
     ],
   },
   {
-    title: "Other questions",
+    title: 'Other questions',
     questions: [
       {
-        question: "Is support free, or do I need to Google everything?",
+        question: 'Is support free, or do I need to Google everything?',
         answer:
-          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus voluptates deserunt officia temporibus dignissimos.",
+          'Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus voluptates deserunt officia temporibus dignissimos.',
       },
       {
-        question: "Are you going to be subsumed by AI?",
+        question: 'Are you going to be subsumed by AI?',
         answer:
-          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus voluptates deserunt officia temporibus dignissimos.",
+          'Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus voluptates deserunt officia temporibus dignissimos.',
       },
     ],
   },
@@ -60,7 +60,7 @@ const categories = [
 
 const Faq11 = () => {
   return (
-    <section className="relative mx-2.5 mt-2.5 rounded-t-2xl rounded-b-[36px] bg-linear-to-b from-background via-background to-slate-100 lg:mx-4 dark:to-slate-900">
+    <section className="from-background via-background relative mx-2.5 mt-2.5 rounded-t-2xl rounded-b-[36px] bg-linear-to-b to-slate-100 lg:mx-4 dark:to-slate-900">
       <section className="py-32">
         <div className="container grid max-w-5xl gap-16 lg:grid-cols-2">
           <div className="space-y-4">
@@ -68,8 +68,8 @@ const Faq11 = () => {
               Got Questions?
             </h2>
 
-            <p className="max-w-md leading-snug font-medium text-muted-foreground lg:mx-auto">
-              If you can't find what you're looking for,{" "}
+            <p className="text-muted-foreground max-w-md leading-snug font-medium lg:mx-auto">
+              If you can't find what you're looking for,{' '}
               <a href="#" className="underline underline-offset-4">
                 get in touch
               </a>
@@ -80,7 +80,7 @@ const Faq11 = () => {
           <div className="grid gap-6 text-start">
             {categories.map((category, categoryIndex) => (
               <div key={category.title} className="">
-                <h3 className="border-b py-4 font-medium text-muted-foreground">
+                <h3 className="text-muted-foreground border-b py-4 font-medium">
                   {category.title}
                 </h3>
                 <Accordion type="single" collapsible className="w-full">

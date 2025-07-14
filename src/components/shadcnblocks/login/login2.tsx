@@ -1,8 +1,8 @@
-import { FcGoogle } from "react-icons/fc";
+import { FcGoogle } from 'react-icons/fc';
 
-import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
-import { Label } from "@/components/ui/label";
+import { Button } from '@/components/ui/button';
+import { Input } from '@/components/ui/input';
+import { Label } from '@/components/ui/label';
 
 interface Login2Props {
   heading?: string;
@@ -20,18 +20,18 @@ interface Login2Props {
 }
 
 const Login2 = ({
-  heading = "Login",
-  subheading = "Welcome back to your account",
+  heading = 'Login',
+  subheading = 'Welcome back to your account',
   logo = {
-    url: "https://www.shadcnblocks.com",
-    src: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/block-1.svg",
-    alt: "logo",
-    title: "shadcnblocks.com",
+    url: 'https://www.shadcnblocks.com',
+    src: 'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/block-1.svg',
+    alt: 'logo',
+    title: 'shadcnblocks.com',
   },
-  googleText = "Sign up with Google",
-  buttonText = "Login",
+  googleText = 'Sign up with Google',
+  buttonText = 'Login',
   signupText = "Don't have an account?",
-  signupUrl = "https://shadcnblocks.com",
+  signupUrl = 'https://shadcnblocks.com',
 }: Login2Props) => {
   return (
     <section className="bg-muted h-screen">

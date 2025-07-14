@@ -1,24 +1,24 @@
-import { ArrowRight, Heart, Lightbulb, Shield, UserPen } from "lucide-react";
+import { ArrowRight, Heart, Lightbulb, Shield, UserPen } from 'lucide-react';
 
-import { Badge } from "@/components/ui/badge";
+import { Badge } from '@/components/ui/badge';
 
 const values = [
   {
-    title: "User-Centered Design",
+    title: 'User-Centered Design',
     description:
-      "We prioritize the user experience, ensuring every feature adds real value and is intuitive to use.",
+      'We prioritize the user experience, ensuring every feature adds real value and is intuitive to use.',
     icon: UserPen,
   },
   {
-    title: "Continuous Innovation",
+    title: 'Continuous Innovation',
     description:
-      "We are committed to pushing boundaries, and evolving to meet the needs of modern teams.",
+      'We are committed to pushing boundaries, and evolving to meet the needs of modern teams.',
     icon: Lightbulb,
   },
   {
-    title: "Integrity and Transparency",
+    title: 'Integrity and Transparency',
     description:
-      "We build with honesty and clarity, fostering trust with our users and partners.",
+      'We build with honesty and clarity, fostering trust with our users and partners.',
     icon: Shield,
   },
 ];
@@ -30,7 +30,7 @@ const Feature170 = () => {
         <div className="flex flex-col gap-6 py-4 lg:py-8">
           <Badge
             variant="outline"
-            className="w-fit gap-1 bg-card px-3 text-sm font-normal tracking-tight shadow-sm"
+            className="bg-card w-fit gap-1 px-3 text-sm font-normal tracking-tight shadow-sm"
           >
             <Heart className="size-4" />
             <span>We live by</span>
@@ -43,7 +43,7 @@ const Feature170 = () => {
               We believe in principles that guide our growth and inspire our
               community.
             </p>
-            <p className="inline-flex items-center gap-1 text-primary">
+            <p className="text-primary inline-flex items-center gap-1">
               <span className="underline">Learn More</span>
               <ArrowRight className="size-4" />
             </p>
@@ -58,7 +58,7 @@ const Feature170 = () => {
                 <h3 className="text-lg leading-none! tracking-[-0.96px] lg:text-2xl">
                   {value.title}
                 </h3>
-                <p className="mt-2.5 text-sm tracking-[-0.36px] text-muted-foreground">
+                <p className="text-muted-foreground mt-2.5 text-sm tracking-[-0.36px]">
                   {value.description}
                 </p>
               </div>

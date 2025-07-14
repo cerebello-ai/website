@@ -1,48 +1,52 @@
-import { Github, Twitter, Users } from "lucide-react";
+import { Github, Twitter, Users } from 'lucide-react';
 
-import { Badge } from "@/components/ui/badge";
+import { Badge } from '@/components/ui/badge';
 
 const teamMembers = [
   {
-    name: "Alex Johnson",
-    role: "CEO & Founder",
-    image: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/avatar-1.webp",
+    name: 'Alex Johnson',
+    role: 'CEO & Founder',
+    image:
+      'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/avatar-1.webp',
 
-    bio: "With a background in software development and a vision for productivity, Alex leads the team with passion on user-first innovation.",
+    bio: 'With a background in software development and a vision for productivity, Alex leads the team with passion on user-first innovation.',
     social: {
-      twitter: "#",
-      github: "#",
+      twitter: '#',
+      github: '#',
     },
   },
   {
-    name: "Jamie Lee",
-    role: "Chief Product Officer",
-    image: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/avatar-2.webp",
+    name: 'Jamie Lee',
+    role: 'Chief Product Officer',
+    image:
+      'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/avatar-2.webp',
 
-    bio: "Jamie brings years of experience in product design and strategy, ensuring each feature meets the highest standards of functionality and design. ",
+    bio: 'Jamie brings years of experience in product design and strategy, ensuring each feature meets the highest standards of functionality and design. ',
     social: {
-      twitter: "#",
+      twitter: '#',
     },
   },
   {
-    name: "Taylor Smith",
-    role: "Head of Engineering",
-    image: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/avatar-3.webp",
+    name: 'Taylor Smith',
+    role: 'Head of Engineering',
+    image:
+      'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/avatar-3.webp',
 
-    bio: "Taylor drives the technical vision, overseeing development and ensuring the product is robust, secure, and scalable for users worldwide.",
+    bio: 'Taylor drives the technical vision, overseeing development and ensuring the product is robust, secure, and scalable for users worldwide.',
     social: {
-      twitter: "#",
-      github: "#",
+      twitter: '#',
+      github: '#',
     },
   },
   {
-    name: "Morgan Davis",
-    role: "Marketing Lead",
-    image: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/avatar-4.webp",
+    name: 'Morgan Davis',
+    role: 'Marketing Lead',
+    image:
+      'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/avatar-4.webp',
 
-    bio: "With a knack for storytelling and a deep understanding of the market, Morgan communicates our mission and product benefits to the world.",
+    bio: 'With a knack for storytelling and a deep understanding of the market, Morgan communicates our mission and product benefits to the world.',
     social: {
-      twitter: "#",
+      twitter: '#',
     },
   },
 ];
@@ -54,7 +58,7 @@ const Team4 = () => {
         <div className="flex flex-col gap-6 py-4 lg:py-8">
           <Badge
             variant="outline"
-            className="w-fit gap-1 bg-card px-3 text-sm font-normal tracking-tight shadow-sm"
+            className="bg-card w-fit gap-1 px-3 text-sm font-normal tracking-tight shadow-sm"
           >
             <Users className="size-4" />
             <span>Team up!</span>
@@ -62,7 +66,7 @@ const Team4 = () => {
           <h2 className="text-3xl leading-tight tracking-tight md:text-4xl lg:text-6xl">
             The Minds Behind the Mission
           </h2>
-          <p className="max-w-[600px] tracking-[-0.32px] text-muted-foreground">
+          <p className="text-muted-foreground max-w-[600px] tracking-[-0.32px]">
             A dedicated team passionate about shaping the future of
             productivity.
           </p>
@@ -81,7 +85,7 @@ const Team4 = () => {
               <div className="mt-6 flex flex-col tracking-[-0.32px]">
                 <h3 className="text-lg">{member.name}</h3>
                 <p className="text-muted-foreground-subtle">{member.role}</p>
-                <p className="mt-4 text-sm tracking-[-0.36px] text-muted-foreground">
+                <p className="text-muted-foreground mt-4 text-sm tracking-[-0.36px]">
                   {member.bio}
                 </p>
                 <div className="mt-6 flex gap-2">

@@ -1,8 +1,8 @@
-import { FcGoogle } from "react-icons/fc";
+import { FcGoogle } from 'react-icons/fc';
 
-import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
-import { Label } from "@/components/ui/label";
+import { Button } from '@/components/ui/button';
+import { Input } from '@/components/ui/input';
+import { Label } from '@/components/ui/label';
 
 const Signup5 = () => {
   return (
@@ -17,7 +17,7 @@ const Signup5 = () => {
                   Start your 30-day free trial.
                 </p>
               </div>
-              <div className="w-full rounded-md bg-background">
+              <div className="bg-background w-full rounded-md">
                 <div>
                   <div className="grid gap-4">
                     <div className="grid w-full max-w-sm items-center gap-1.5">
@@ -59,11 +59,11 @@ const Signup5 = () => {
                   </div>
                 </div>
               </div>
-              <div className="mx-auto mt-3 flex justify-center gap-1 text-sm text-muted-foreground">
+              <div className="text-muted-foreground mx-auto mt-3 flex justify-center gap-1 text-sm">
                 <p>Already have an account?</p>
                 <a
                   href="#"
-                  className="font-medium text-primary hover:underline"
+                  className="text-primary font-medium hover:underline"
                 >
                   Log in
                 </a>

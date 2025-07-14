@@ -1,14 +1,14 @@
-"use client";
+'use client';
 
-import AutoScroll from "embla-carousel-auto-scroll";
+import AutoScroll from 'embla-carousel-auto-scroll';
 
-import { Badge } from "@/components/ui/badge";
-import { Button } from "@/components/ui/button";
+import { Badge } from '@/components/ui/badge';
+import { Button } from '@/components/ui/button';
 import {
   Carousel,
   CarouselContent,
   CarouselItem,
-} from "@/components/ui/carousel";
+} from '@/components/ui/carousel';
 
 const Hero85 = () => {
   return (
@@ -23,7 +23,7 @@ const Hero85 = () => {
             <h1 className="mt-10 mb-4 text-3xl font-semibold lg:text-5xl">
               Revolutionizing Client Collaboration for Modern Services
             </h1>
-            <p className="mx-auto text-muted-foreground lg:text-lg">
+            <p className="text-muted-foreground mx-auto lg:text-lg">
               Elevate your service-based business with customizable client
               portals and advanced back-office management
             </p>
@@ -86,7 +86,7 @@ const Hero85 = () => {
               plugins={[
                 AutoScroll({
                   speed: 0.8,
-                  direction: "backward",
+                  direction: 'backward',
                 }),
               ]}
               className="-mx-7"
@@ -165,7 +165,7 @@ const Hero85 = () => {
               plugins={[
                 AutoScroll({
                   speed: 0.8,
-                  direction: "backward",
+                  direction: 'backward',
                 }),
               ]}
               orientation="vertical"

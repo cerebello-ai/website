@@ -1,84 +1,92 @@
-import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
+import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
 
 const TESTIMONIALS = [
   {
     quote:
-      "What I love most is having everything in one place—it simplifies routing and is 10x more intuitive than Chili Piper!",
-    link: "#",
+      'What I love most is having everything in one place—it simplifies routing and is 10x more intuitive than Chili Piper!',
+    link: '#',
     author: {
-      name: "Sarah Williams",
-      image: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/avatar-1.webp",
-      role: "CTO, ARC",
+      name: 'Sarah Williams',
+      image:
+        'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/avatar-1.webp',
+      role: 'CTO, ARC',
     },
     company: {
-      logo: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/company/fictional-company-logo-1.svg",
-      name: "",
+      logo: 'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/company/fictional-company-logo-1.svg',
+      name: '',
     },
   },
   {
     quote:
-      "This app seamlessly integrates into our GTM ops, eliminating the need for a standalone tool and complex system connections.",
-    link: "#",
+      'This app seamlessly integrates into our GTM ops, eliminating the need for a standalone tool and complex system connections.',
+    link: '#',
     author: {
-      name: "John Doe",
-      image: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/avatar-2.webp",
-      role: "CEO & Founder, descript",
+      name: 'John Doe',
+      image:
+        'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/avatar-2.webp',
+      role: 'CEO & Founder, descript',
     },
     company: {
-      logo: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/company/fictional-company-logo-2.svg",
-      name: "",
+      logo: 'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/company/fictional-company-logo-2.svg',
+      name: '',
     },
   },
 ];
 
 const CASE_STUDIES = [
   {
-    title: "How we Achieved 10x GTM Efficiency",
-    link: "#",
+    title: 'How we Achieved 10x GTM Efficiency',
+    link: '#',
     stats: [
       {
-        number: "10x",
-        text: "GTM efficiency increase",
+        number: '10x',
+        text: 'GTM efficiency increase',
       },
     ],
     author: {
-      name: "John Doe",
-      image: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/avatar-3.webp",
-      role: "Head of Marketing",
+      name: 'John Doe',
+      image:
+        'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/avatar-3.webp',
+      role: 'Head of Marketing',
     },
-    background: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/photos/ivan-bandura-hqnUYXsN5oY-unsplash.jpg",
+    background:
+      'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/photos/ivan-bandura-hqnUYXsN5oY-unsplash.jpg',
   },
   {
-    title: "How Mercury Reduced Speed-to-Lead by 80%",
-    link: "#",
+    title: 'How Mercury Reduced Speed-to-Lead by 80%',
+    link: '#',
     stats: [
       {
-        number: "80%",
-        text: "faster lead response time",
+        number: '80%',
+        text: 'faster lead response time',
       },
     ],
     author: {
-      name: "Jane Smith",
-      image: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/avatar-2.webp",
-      role: "Sales Director",
+      name: 'Jane Smith',
+      image:
+        'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/avatar-2.webp',
+      role: 'Sales Director',
     },
-    background: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/photos/jeremy-bishop-iEjCQtcsVPY-unsplash.jpg",
+    background:
+      'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/photos/jeremy-bishop-iEjCQtcsVPY-unsplash.jpg',
   },
   {
-    title: "From Zero to $7M in Pipeline",
-    link: "#",
+    title: 'From Zero to $7M in Pipeline',
+    link: '#',
     stats: [
       {
-        number: "$7M",
-        text: "inbound pipeline generated",
+        number: '$7M',
+        text: 'inbound pipeline generated',
       },
     ],
     author: {
-      name: "John Doe",
-      image: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/avatar-4.webp",
-      role: "Head of Marketing",
+      name: 'John Doe',
+      image:
+        'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/avatar-4.webp',
+      role: 'Head of Marketing',
     },
-    background: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/photos/kevin-charit-1fL2Q1JcbNc-unsplash.jpg",
+    background:
+      'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/photos/kevin-charit-1fL2Q1JcbNc-unsplash.jpg',
   },
 ];
 
@@ -91,13 +99,13 @@ interface AuthorProps {
 const Author = ({ image, name, role }: AuthorProps) => {
   return (
     <div className="flex items-center gap-3">
-      <Avatar className="size-10 rounded-xl bg-background/50">
+      <Avatar className="bg-background/50 size-10 rounded-xl">
         <AvatarImage src={image} alt={name} />
         <AvatarFallback>{name}</AvatarFallback>
       </Avatar>
       <div className="flex flex-col gap-0.5">
-        <div className="text-sm font-medium text-foreground">{name}</div>
-        <div className="text-sm text-muted-foreground">{role}</div>
+        <div className="text-foreground text-sm font-medium">{name}</div>
+        <div className="text-muted-foreground text-sm">{role}</div>
       </div>
     </div>
   );
@@ -113,7 +121,7 @@ const Testimonial27 = () => {
               What people think
             </h2>
             <div className="max-w-[28.75rem]">
-              <p className="text-lg text-muted-foreground md:text-xl">
+              <p className="text-muted-foreground text-lg md:text-xl">
                 Transform go-to-market with smarter routing, actionable intent,
                 and accelerated scheduling.
               </p>
@@ -126,10 +134,10 @@ const Testimonial27 = () => {
           {TESTIMONIALS.map((testimonial, index) => (
             <div
               key={index}
-              className="flex h-full flex-col justify-between gap-8 rounded-2xl bg-muted p-6"
+              className="bg-muted flex h-full flex-col justify-between gap-8 rounded-2xl p-6"
             >
               <div className="flex flex-col gap-6">
-                <p className="text-xl leading-relaxed font-medium text-foreground">
+                <p className="text-foreground text-xl leading-relaxed font-medium">
                   {testimonial.quote}
                 </p>
               </div>
@@ -157,22 +165,22 @@ const Testimonial27 = () => {
             <a
               key={index}
               href={caseStudy.link}
-              className="group relative flex aspect-square flex-col justify-between gap-8 overflow-hidden rounded-2xl bg-muted p-8 transition-all duration-300 hover:bg-foreground hover:shadow-lg"
+              className="group bg-muted hover:bg-foreground relative flex aspect-square flex-col justify-between gap-8 overflow-hidden rounded-2xl p-8 transition-all duration-300 hover:shadow-lg"
             >
               <div
                 className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-20 transition-all duration-300 group-hover:scale-105 group-hover:opacity-10"
                 style={{ backgroundImage: `url(${caseStudy.background})` }}
               />
               <div className="relative flex flex-col gap-3">
-                <div className="text-5xl font-bold tracking-tight text-foreground transition-colors duration-300 group-hover:text-background">
+                <div className="text-foreground group-hover:text-background text-5xl font-bold tracking-tight transition-colors duration-300">
                   {caseStudy.stats[0].number}
                 </div>
-                <p className="text-sm font-medium text-muted-foreground transition-colors duration-300 group-hover:text-background/80">
+                <p className="text-muted-foreground group-hover:text-background/80 text-sm font-medium transition-colors duration-300">
                   {caseStudy.stats[0].text}
                 </p>
               </div>
               <div className="relative flex flex-col gap-6">
-                <p className="text-xl leading-tight font-semibold text-foreground transition-colors duration-300 group-hover:text-background">
+                <p className="text-foreground group-hover:text-background text-xl leading-tight font-semibold transition-colors duration-300">
                   {caseStudy.title}
                 </p>
               </div>

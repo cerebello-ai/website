@@ -1,10 +1,10 @@
-"use client";
+'use client';
 
-import React from "react";
+import React from 'react';
 
-import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
-import { Separator } from "@/components/ui/separator";
+import { Button } from '@/components/ui/button';
+import { Input } from '@/components/ui/input';
+import { Separator } from '@/components/ui/separator';
 
 const Signup10 = () => {
   return (
@@ -19,13 +19,13 @@ const Signup10 = () => {
             />
           </div>
 
-          <h1 className="mb-8 w-full text-center text-3xl font-medium tracking-tighter text-foreground md:text-4xl">
+          <h1 className="text-foreground mb-8 w-full text-center text-3xl font-medium tracking-tighter md:text-4xl">
             Create your free account
           </h1>
 
           <Button
             variant="outline"
-            className="flex h-14 w-full max-w-lg items-center justify-center gap-8 rounded-full border-muted-foreground/30"
+            className="border-muted-foreground/30 flex h-14 w-full max-w-lg items-center justify-center gap-8 rounded-full"
           >
             <img
               className="h-5 w-5"
@@ -43,28 +43,28 @@ const Signup10 = () => {
 
           <div className="w-full max-w-lg">
             <Input
-              className="h-14 rounded-full border-none bg-muted px-5 py-4 font-medium"
+              className="bg-muted h-14 rounded-full border-none px-5 py-4 font-medium"
               placeholder="Enter Your Email"
             />
           </div>
 
-          <Button className="h-14 w-full max-w-lg rounded-full bg-foreground text-background hover:bg-foreground/90">
+          <Button className="bg-foreground text-background hover:bg-foreground/90 h-14 w-full max-w-lg rounded-full">
             <span className="font-medium tracking-tight">Continue</span>
           </Button>
 
-          <p className="mb-8 w-full text-center text-sm tracking-tight text-foreground/40">
-            <span>By proceeding, you accept the shadcnblocks.com</span>{" "}
+          <p className="text-foreground/40 mb-8 w-full text-center text-sm tracking-tight">
+            <span>By proceeding, you accept the shadcnblocks.com</span>{' '}
             <span className="cursor-pointer underline">Terms</span>
             <span> and </span>
             <span className="cursor-pointer underline">Privacy Policy</span>
           </p>
 
           <p className="mb-20 w-full text-center text-sm font-medium tracking-tight">
-            Already have an account?{" "}
+            Already have an account?{' '}
             <span className="cursor-pointer underline">Log in</span>
           </p>
         </div>
-        <div className="hidden h-screen w-full bg-muted lg:block">
+        <div className="bg-muted hidden h-screen w-full lg:block">
           <img
             src="https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-dark-7-tall.svg"
             className="size-full object-cover"

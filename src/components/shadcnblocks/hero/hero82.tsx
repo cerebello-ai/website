@@ -1,13 +1,13 @@
-import { ArrowRight } from "lucide-react";
+import { ArrowRight } from 'lucide-react';
 
-import { AspectRatio } from "@/components/ui/aspect-ratio";
-import { Button } from "@/components/ui/button";
+import { AspectRatio } from '@/components/ui/aspect-ratio';
+import { Button } from '@/components/ui/button';
 
 const Hero82 = () => {
   return (
-    <section className="container flex flex-col gap-10 bg-background py-20 sm:gap-20">
+    <section className="bg-background container flex flex-col gap-10 py-20 sm:gap-20">
       <div className="flex flex-col gap-10 lg:w-[80%] lg:self-center">
-        <h1 className="max-w-2xl text-6xl font-bold tracking-tight text-foreground md:text-7xl lg:text-8xl">
+        <h1 className="text-foreground max-w-2xl text-6xl font-bold tracking-tight md:text-7xl lg:text-8xl">
           A simple task timer to power your goals
         </h1>
         <div className="flex flex-col items-start gap-4 sm:flex-row sm:items-center">

@@ -1,43 +1,43 @@
 const sitemap = [
   {
-    title: "Company",
+    title: 'Company',
     links: [
       {
-        title: "About Us",
-        href: "#",
+        title: 'About Us',
+        href: '#',
       },
       {
-        title: "Careers",
-        href: "#",
+        title: 'Careers',
+        href: '#',
       },
       {
-        title: "Contact",
-        href: "#",
+        title: 'Contact',
+        href: '#',
       },
       {
-        title: "Press",
-        href: "#",
+        title: 'Press',
+        href: '#',
       },
     ],
   },
   {
-    title: "Support",
+    title: 'Support',
     links: [
       {
-        title: "Help Center",
-        href: "#",
+        title: 'Help Center',
+        href: '#',
       },
       {
-        title: "Community",
-        href: "#",
+        title: 'Community',
+        href: '#',
       },
       {
-        title: "Status",
-        href: "#",
+        title: 'Status',
+        href: '#',
       },
       {
-        title: "API Docs",
-        href: "#",
+        title: 'API Docs',
+        href: '#',
       },
     ],
   },
@@ -68,7 +68,7 @@ const Footer6 = () => {
               <div className="inline-grid w-fit grid-cols-1 gap-x-20 gap-y-14 sm:grid-cols-2">
                 {sitemap.map((section) => (
                   <div key={section.title} className="h-fit w-min">
-                    <h4 className="mb-6 whitespace-nowrap text-base font-semibold">
+                    <h4 className="mb-6 text-base font-semibold whitespace-nowrap">
                       {section.title}
                     </h4>
                     <ul className="text-muted-foreground space-y-3 text-base font-medium">
@@ -76,7 +76,7 @@ const Footer6 = () => {
                         <li key={link.title}>
                           <a
                             href={link.href}
-                            className="hover:text-accent-foreground whitespace-nowrap text-base"
+                            className="hover:text-accent-foreground text-base whitespace-nowrap"
                           >
                             {link.title}
                           </a>

@@ -1,6 +1,6 @@
-import { ArrowRight } from "lucide-react";
+import { ArrowRight } from 'lucide-react';
 
-import { Button } from "@/components/ui/button";
+import { Button } from '@/components/ui/button';
 
 const Hero33 = () => {
   return (
@@ -12,7 +12,7 @@ const Hero33 = () => {
             <h1 className="my-6 text-4xl font-bold text-pretty lg:text-6xl">
               Welcome to Our Website
             </h1>
-            <p className="mb-8 max-w-xl text-muted-foreground lg:text-xl">
+            <p className="text-muted-foreground mb-8 max-w-xl lg:text-xl">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Elig
               doloremque mollitia fugiat omnis! Porro facilis quo animi
               consequatur. Explicabo.
@@ -26,7 +26,7 @@ const Hero33 = () => {
                 Secondary
               </Button>
             </div>
-            <div className="rounded border border-border px-8 py-6">
+            <div className="border-border rounded border px-8 py-6">
               <p className="mb-2 text-xl font-medium">Now starting at</p>
               <div className="mb-4 flex items-baseline justify-center lg:justify-start">
                 <div className="text-4xl font-bold lg:text-6xl">$99</div>

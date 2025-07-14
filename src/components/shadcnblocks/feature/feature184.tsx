@@ -1,29 +1,32 @@
-"use client";
-import { ChevronUp, Flag, Pyramid, Users, Workflow, Zap } from "lucide-react";
-import { useState } from "react";
+'use client';
+import { useState } from 'react';
 
-import { cn } from "@/lib/utils";
+import { ChevronUp, Flag, Pyramid, Users, Workflow, Zap } from 'lucide-react';
 
-import { Button } from "@/components/ui/button";
-import { Tabs, TabsList, TabsTrigger } from "@/components/ui/tabs";
+import { Button } from '@/components/ui/button';
+import { Tabs, TabsList, TabsTrigger } from '@/components/ui/tabs';
+import { cn } from '@/lib/utils';
 
 const FEATURES = [
   {
-    title: "Tailored workflows",
-    description: "Custom issue flows",
-    image: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-1.svg",
+    title: 'Tailored workflows',
+    description: 'Custom issue flows',
+    image:
+      'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-1.svg',
     icon: <Workflow />,
   },
   {
-    title: "Cross-team projects",
-    description: "Team collaboration",
-    image: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-2.svg",
+    title: 'Cross-team projects',
+    description: 'Team collaboration',
+    image:
+      'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-2.svg',
     icon: <Users />,
   },
   {
-    title: "Milestones",
-    description: "Concrete phases",
-    image: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-3.svg",
+    title: 'Milestones',
+    description: 'Concrete phases',
+    image:
+      'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-3.svg',
     icon: <Flag />,
   },
 ];
@@ -36,7 +39,7 @@ const Feature184 = () => {
       <div className="container mx-auto flex flex-col items-center px-4 sm:px-6 lg:px-8">
         {/* Center the heading */}
         <div className="mb-12 max-w-3xl text-center">
-          <h2 className="text-2xl font-semibold leading-tight tracking-tight sm:text-3xl md:text-4xl lg:text-5xl">
+          <h2 className="text-2xl leading-tight font-semibold tracking-tight sm:text-3xl md:text-4xl lg:text-5xl">
             Explore our features
           </h2>
         </div>
@@ -63,20 +66,20 @@ const Feature184 = () => {
                     key={feature.title}
                     value={feature.title}
                     className={cn(
-                      "group flex h-full w-full flex-col items-start rounded-xl p-6 text-left transition-all",
-                      "border-border/50 bg-card hover:border-primary/50 border",
-                      "data-[state=active]:border-primary data-[state=active]:bg-primary/95 data-[state=active]:shadow-lg",
-                      "relative",
-                      "data-[state=active]:scale-[1.02]",
-                      "data-[state=active]:z-20",
+                      'group flex h-full w-full flex-col items-start rounded-xl p-6 text-left transition-all',
+                      'border-border/50 bg-card hover:border-primary/50 border',
+                      'data-[state=active]:border-primary data-[state=active]:bg-primary/95 data-[state=active]:shadow-lg',
+                      'relative',
+                      'data-[state=active]:scale-[1.02]',
+                      'data-[state=active]:z-20',
                     )}
                   >
                     <div className="flex w-full items-center justify-between">
                       <div className="flex items-center gap-6">
                         <div
                           className={cn(
-                            "bg-muted rounded-lg p-4 transition-colors",
-                            "group-data-[state=active]:bg-background",
+                            'bg-muted rounded-lg p-4 transition-colors',
+                            'group-data-[state=active]:bg-background',
                           )}
                         >
                           {feature.icon}
@@ -84,16 +87,16 @@ const Feature184 = () => {
                         <div className="flex flex-col gap-2">
                           <h3
                             className={cn(
-                              "text-xl font-medium",
-                              "group-data-[state=active]:text-primary-foreground",
+                              'text-xl font-medium',
+                              'group-data-[state=active]:text-primary-foreground',
                             )}
                           >
                             {feature.title}
                           </h3>
                           <span
                             className={cn(
-                              "text-muted-foreground text-sm transition-colors",
-                              "group-data-[state=active]:text-primary-foreground/90",
+                              'text-muted-foreground text-sm transition-colors',
+                              'group-data-[state=active]:text-primary-foreground/90',
                             )}
                           >
                             {feature.description}
@@ -103,8 +106,8 @@ const Feature184 = () => {
                       <div className="pl-8">
                         <ChevronUp
                           className={cn(
-                            "text-muted-foreground size-5 transition-all duration-300",
-                            "group-data-[state=active]:text-primary-foreground group-data-[state=active]:rotate-180",
+                            'text-muted-foreground size-5 transition-all duration-300',
+                            'group-data-[state=active]:text-primary-foreground group-data-[state=active]:rotate-180',
                           )}
                         />
                       </div>

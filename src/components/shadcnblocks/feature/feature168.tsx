@@ -1,29 +1,33 @@
-import { PocketKnife } from "lucide-react";
-import React from "react";
+import React from 'react';
 
-import { Badge } from "@/components/ui/badge";
+import { PocketKnife } from 'lucide-react';
+
+import { Badge } from '@/components/ui/badge';
 
 const DATA = [
   {
-    title: "Unified Scheduling",
+    title: 'Unified Scheduling',
     description:
-      "Keep all your appointments and events in sync with seamless cross-platform calendar connectivity.",
-    icon: "CircleHelp",
-    image: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/block-1.svg",
+      'Keep all your appointments and events in sync with seamless cross-platform calendar connectivity.',
+    icon: 'CircleHelp',
+    image:
+      'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/block-1.svg',
   },
   {
-    title: "Insightful Performance",
+    title: 'Insightful Performance',
     description:
-      "Get clear, real-time analytics tracking your progress, key milestones, focus hours, and completed tasks.",
-    icon: "Volume2",
-    image: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/block-2.svg",
+      'Get clear, real-time analytics tracking your progress, key milestones, focus hours, and completed tasks.',
+    icon: 'Volume2',
+    image:
+      'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/block-2.svg',
   },
   {
-    title: "Effortless Tool Integrations",
+    title: 'Effortless Tool Integrations',
     description:
-      "Link your favorite apps and services to streamline work without switching between platforms.",
-    icon: "Lightbulb",
-    image: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/block-3.svg",
+      'Link your favorite apps and services to streamline work without switching between platforms.',
+    icon: 'Lightbulb',
+    image:
+      'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/block-3.svg',
   },
 ];
 const Feature168 = () => {
@@ -48,7 +52,7 @@ const Feature168 = () => {
         </div>
       </div>
 
-      <div className="lg:px-0! container border-x">
+      <div className="container border-x lg:px-0!">
         <div className="items-center">
           <div className="grid flex-1 max-lg:divide-y max-lg:border-x lg:grid-cols-3 lg:divide-x">
             {DATA.map((item, index) => (
@@ -59,7 +63,7 @@ const Feature168 = () => {
                 <h3 className="mt-2 px-4 text-lg font-semibold tracking-tight lg:px-8">
                   {item.title}
                 </h3>
-                <p className="text-muted-foreground pb-6 pt-2 lg:px-8">
+                <p className="text-muted-foreground pt-2 pb-6 lg:px-8">
                   {item.description}
                 </p>
                 <div className="border-t">

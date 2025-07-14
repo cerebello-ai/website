@@ -1,20 +1,20 @@
-import { Bell, Bug, Sparkles } from "lucide-react";
+import { Bell, Bug, Sparkles } from 'lucide-react';
 
 const Feature173 = () => {
   const ITEMS = [
     {
-      value: "100%",
-      label: "More bugs",
+      value: '100%',
+      label: 'More bugs',
       icon: Bug,
     },
     {
-      value: "121%",
-      label: "More notifications",
+      value: '121%',
+      label: 'More notifications',
       icon: Bell,
     },
     {
-      value: "2x",
-      label: "More chaotic",
+      value: '2x',
+      label: 'More chaotic',
       icon: Sparkles,
     },
   ];
@@ -26,7 +26,7 @@ const Feature173 = () => {
           <h2 className="flex-1 text-3xl leading-tight font-semibold tracking-tight text-balance md:text-4xl lg:text-5xl">
             Tailor made for post-modern product teams
           </h2>
-          <p className="flex-1 self-end text-lg font-medium text-muted-foreground">
+          <p className="text-muted-foreground flex-1 self-end text-lg font-medium">
             Streamline is built on the habits that make the best product teams
             successful: staying focused, moving quickly, and always aiming for
             high-quality work.
@@ -37,10 +37,10 @@ const Feature173 = () => {
           {ITEMS.map((metric, i) => (
             <div
               key={i}
-              className="relative flex [aspect-ratio:3.5/2.6] flex-col justify-between overflow-hidden rounded-[24px] bg-linear-to-b from-muted to-[#D6E3DF] md:[aspect-ratio:3.8/5] dark:to-[#2A3633]"
+              className="from-muted relative flex [aspect-ratio:3.5/2.6] flex-col justify-between overflow-hidden rounded-[24px] bg-linear-to-b to-[#D6E3DF] md:[aspect-ratio:3.8/5] dark:to-[#2A3633]"
             >
               <div className="p-8 pb-2">
-                <metric.icon className="size-10 fill-primary" />
+                <metric.icon className="fill-primary size-10" />
               </div>
               <div className="p-6">
                 <div className="text-6xl font-semibold tracking-tight">
@@ -54,7 +54,7 @@ const Feature173 = () => {
           ))}
         </div>
 
-        <div className="mt-6 text-end text-sm text-muted-foreground">
+        <div className="text-muted-foreground mt-6 text-end text-sm">
           *average increase in comparison to Jira
         </div>
       </div>

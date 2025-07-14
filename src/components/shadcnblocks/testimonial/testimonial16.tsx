@@ -1,20 +1,22 @@
-"use client";
+'use client';
 
-import React, { useState } from "react";
+import React, { useState } from 'react';
 
-import { cn } from "@/lib/utils";
+import { TestimonialProps } from '../types/common';
 
-import { Avatar, AvatarImage } from "@/components/ui/avatar";
-import { Separator } from "@/components/ui/separator";
+import { Avatar, AvatarImage } from '@/components/ui/avatar';
+import { Separator } from '@/components/ui/separator';
+import { cn } from '@/lib/utils';
 
-const tweets = [
+const defaultTweets = [
   {
     id: 1,
-    author: "John Smith",
-    tag: "john_smith123",
-    avatar: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/avatar-1.webp",
+    author: 'John Smith',
+    tag: 'john_smith123',
+    avatar:
+      'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/avatar-1.webp',
     content: (
-      <p className="text-sm text-muted-foreground">
+      <p className="text-muted-foreground text-sm">
         Just switched over to
         <a href="#" className="mx-1 text-blue-600">
           @Acme
@@ -35,11 +37,12 @@ const tweets = [
   },
   {
     id: 2,
-    author: "Anna White",
-    tag: "anna_white",
-    avatar: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/avatar-2.webp",
+    author: 'Anna White',
+    tag: 'anna_white',
+    avatar:
+      'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/avatar-2.webp',
     content: (
-      <p className="text-sm text-muted-foreground">
+      <p className="text-muted-foreground text-sm">
         Can&apos;t believe how much
         <a href="#" className="mx-1 text-blue-600">
           @Acme
@@ -60,11 +63,12 @@ const tweets = [
   },
   {
     id: 3,
-    author: "Liam Rodriguez",
-    tag: "liam_rod",
-    avatar: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/avatar-3.webp",
+    author: 'Liam Rodriguez',
+    tag: 'liam_rod',
+    avatar:
+      'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/avatar-3.webp',
     content: (
-      <p className="text-sm text-muted-foreground">
+      <p className="text-muted-foreground text-sm">
         Huge fan of
         <a href="#" className="mx-1 text-blue-600">
           @Acme
@@ -85,11 +89,12 @@ const tweets = [
   },
   {
     id: 4,
-    author: "Sophia Martinez",
-    tag: "sophia_m",
-    avatar: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/avatar-4.webp",
+    author: 'Sophia Martinez',
+    tag: 'sophia_m',
+    avatar:
+      'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/avatar-4.webp',
     content: (
-      <p className="text-sm text-muted-foreground">
+      <p className="text-muted-foreground text-sm">
         Shoutout to
         <a href="#" className="mx-1 text-blue-600">
           @Acme
@@ -110,11 +115,12 @@ const tweets = [
   },
   {
     id: 5,
-    author: "Michael Green",
-    tag: "mikegreen_tech",
-    avatar: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/avatar-5.webp",
+    author: 'Michael Green',
+    tag: 'mikegreen_tech',
+    avatar:
+      'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/avatar-5.webp',
     content: (
-      <p className="text-sm text-muted-foreground">
+      <p className="text-muted-foreground text-sm">
         I’ve been using
         <a href="#" className="mx-1 text-blue-600">
           @Acme
@@ -135,11 +141,12 @@ const tweets = [
   },
   {
     id: 6,
-    author: "Emily Carter",
-    tag: "emily_carter_dev",
-    avatar: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/avatar-6.webp",
+    author: 'Emily Carter',
+    tag: 'emily_carter_dev',
+    avatar:
+      'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/avatar-6.webp',
     content: (
-      <p className="text-sm text-muted-foreground">
+      <p className="text-muted-foreground text-sm">
         Amazing experience with
         <a href="#" className="mx-1 text-blue-600">
           @Acme
@@ -160,11 +167,12 @@ const tweets = [
   },
   {
     id: 7,
-    author: "Chris Wilson",
-    tag: "chriswilson_ux",
-    avatar: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/avatar-7.webp",
+    author: 'Chris Wilson',
+    tag: 'chriswilson_ux',
+    avatar:
+      'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/avatar-7.webp',
     content: (
-      <p className="text-sm text-muted-foreground">
+      <p className="text-muted-foreground text-sm">
         Thanks to
         <a href="#" className="mx-1 text-blue-600">
           @Acme
@@ -185,11 +193,12 @@ const tweets = [
   },
   {
     id: 8,
-    author: "Ella Davis",
-    tag: "ella_davis_dev",
-    avatar: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/avatar-8.webp",
+    author: 'Ella Davis',
+    tag: 'ella_davis_dev',
+    avatar:
+      'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/avatar-8.webp',
     content: (
-      <p className="text-sm text-muted-foreground">
+      <p className="text-muted-foreground text-sm">
         I&apos;ve been using
         <a href="#" className="mx-1 text-blue-600">
           @Acme
@@ -210,19 +219,49 @@ const tweets = [
   },
 ];
 
-const Testimonial16 = () => {
+interface Testimonial16Props extends TestimonialProps {
+  subtitle?: string;
+  companyName?: string;
+}
+
+const Testimonial16 = ({
+  title = "Here's how our platform is making an impact",
+  subtitle = 'See what others are saying',
+  testimonials,
+  companyName = 'Acme',
+}: Testimonial16Props) => {
   const [expandedTweetId, setExpandedTweetId] = useState<number | null>(null);
+
+  // Convert testimonials to tweet format if provided
+  const tweets = testimonials
+    ? testimonials.map((testimonial, index) => ({
+        id: index + 1,
+        author: testimonial.name,
+        tag: testimonial.role.toLowerCase().replace(/\s+/g, '_'),
+        avatar:
+          testimonial.avatar ||
+          `https://deifkwefumgah.cloudfront.net/shadcnblocks/block/avatar-${index + 1}.webp`,
+        content: (
+          <p className="text-muted-foreground text-sm">{testimonial.content}</p>
+        ),
+        excerpt: (
+          <p className="line-clamp-1 font-medium md:text-xl">
+            {testimonial.content.split(' ').slice(0, 6).join(' ')}...
+          </p>
+        ),
+      }))
+    : defaultTweets;
 
   return (
     <section className="py-32">
       <div className="container">
         <div className="grid gap-8 lg:grid-cols-2">
           <h2 className="max-w-md text-3xl font-medium lg:text-[42px] lg:leading-tight">
-            Here&apos;s how our platform is making an impact
+            {title}
           </h2>
           <div>
-            <p className="mb-4 text-2xl font-medium text-muted-foreground">
-              See what others are saying
+            <p className="text-muted-foreground mb-4 text-2xl font-medium">
+              {subtitle}
             </p>
             <Separator />
             {tweets.map((tweet) => (
@@ -238,16 +277,16 @@ const Testimonial16 = () => {
                   >
                     <div
                       className={cn(
-                        "overflow-hidden transition-all duration-500",
+                        'overflow-hidden transition-all duration-500',
                         expandedTweetId === tweet.id
-                          ? "max-h-[500px]"
-                          : "max-h-20",
+                          ? 'max-h-[500px]'
+                          : 'max-h-20',
                       )}
                     >
                       {expandedTweetId === tweet.id ? (
                         <div className="py-4">
                           <div className="mb-3 flex gap-4 leading-5">
-                            <Avatar className="size-9 rounded-full ring-1 ring-input">
+                            <Avatar className="ring-input size-9 rounded-full ring-1">
                               <AvatarImage
                                 src={tweet.avatar}
                                 alt={tweet.author}
@@ -263,7 +302,7 @@ const Testimonial16 = () => {
                           {tweet.content}
                         </div>
                       ) : (
-                        <div className="py-4 transition-colors hover:bg-muted">
+                        <div className="hover:bg-muted py-4 transition-colors">
                           <div className="flex gap-3 px-2">
                             <Avatar className="h-full w-8">
                               <AvatarImage src={tweet.avatar} alt="avatar" />

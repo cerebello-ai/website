@@ -1,8 +1,9 @@
-"use client";
-import { Menu, X } from "lucide-react";
-import { Dispatch, SetStateAction, useEffect, useRef, useState } from "react";
+'use client';
+import { Dispatch, SetStateAction, useEffect, useRef, useState } from 'react';
 
-import { Button } from "@/components/ui/button";
+import { Menu, X } from 'lucide-react';
+
+import { Button } from '@/components/ui/button';
 import {
   NavigationMenu,
   NavigationMenuContent,
@@ -11,13 +12,13 @@ import {
   NavigationMenuList,
   NavigationMenuTrigger,
   navigationMenuTriggerStyle,
-} from "@/components/ui/navigation-menu";
+} from '@/components/ui/navigation-menu';
 import {
   Sheet,
   SheetClose,
   SheetContent,
   SheetTitle,
-} from "@/components/ui/sheet";
+} from '@/components/ui/sheet';
 
 interface MenuItem {
   title: string;
@@ -42,141 +43,149 @@ interface DesktopMenuItemProps {
 }
 
 const LOGO = {
-  url: "https://www.shadcnblocks.com",
-  src: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/block-1.svg",
-  alt: "logo",
-  title: "Shadcnblocks.com",
+  url: 'https://www.shadcnblocks.com',
+  src: 'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/block-1.svg',
+  alt: 'logo',
+  title: 'Shadcnblocks.com',
 };
 
 const NAVIGATION: MenuItem[] = [
   {
-    title: "Products",
+    title: 'Products',
     links: [
       {
-        label: "Company Blog",
-        description: "Explore the latest insights and updates",
-        url: "#",
-        image: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-1.svg",
+        label: 'Company Blog',
+        description: 'Explore the latest insights and updates',
+        url: '#',
+        image:
+          'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-1.svg',
       },
       {
-        label: "Our Platform",
-        description: "Innovative tools to empower your workflow",
-        url: "#",
-        image: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-2.svg",
+        label: 'Our Platform',
+        description: 'Innovative tools to empower your workflow',
+        url: '#',
+        image:
+          'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-2.svg',
       },
       {
-        label: "Careers at Our Company",
-        description: "Discover open roles and our workplace culture",
-        url: "#",
-        image: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-3.svg",
+        label: 'Careers at Our Company',
+        description: 'Discover open roles and our workplace culture',
+        url: '#',
+        image:
+          'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-3.svg',
       },
       {
-        label: "Customer Support",
-        description: "Reach out or browse community help articles",
-        url: "#",
-        image: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-4.svg",
+        label: 'Customer Support',
+        description: 'Reach out or browse community help articles',
+        url: '#',
+        image:
+          'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-4.svg',
       },
       {
-        label: "Product Documentation",
-        description: "In-depth guides, references, and API docs",
-        url: "#",
-        image: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-5.svg",
+        label: 'Product Documentation',
+        description: 'In-depth guides, references, and API docs',
+        url: '#',
+        image:
+          'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-5.svg',
       },
     ],
   },
   {
-    title: "Company",
+    title: 'Company',
     links: [
       {
-        label: "About Our Team",
-        url: "#",
-        description: "Learn more about our mission and values",
-        image: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-1.svg",
+        label: 'About Our Team',
+        url: '#',
+        description: 'Learn more about our mission and values',
+        image:
+          'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-1.svg',
       },
       {
-        label: "Help & Support Center",
-        url: "#",
-        description: "Search our help center for quick answers",
-        image: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-2.svg",
+        label: 'Help & Support Center',
+        url: '#',
+        description: 'Search our help center for quick answers',
+        image:
+          'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-2.svg',
       },
       {
-        label: "Latest News",
-        url: "#",
-        description: "Stay up to date with product announcements",
-        image: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-3.svg",
+        label: 'Latest News',
+        url: '#',
+        description: 'Stay up to date with product announcements',
+        image:
+          'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-3.svg',
       },
     ],
   },
   {
-    title: "Contact",
-    url: "#",
+    title: 'Contact',
+    url: '#',
   },
 ];
 
 const MOBILE_NAVIGATION: MenuItem[] = [
   {
-    title: "Products",
-    className: "col-span-2",
+    title: 'Products',
+    className: 'col-span-2',
     links: [
       {
-        label: "Company Blog",
-        url: "#",
+        label: 'Company Blog',
+        url: '#',
       },
       {
-        label: "Our Platform",
-        url: "#",
+        label: 'Our Platform',
+        url: '#',
       },
       {
-        label: "Careers at Our Company",
-        url: "#",
+        label: 'Careers at Our Company',
+        url: '#',
       },
       {
-        label: "Customer Support",
-        url: "#",
+        label: 'Customer Support',
+        url: '#',
       },
       {
-        label: "Product Documentation",
-        url: "#",
+        label: 'Product Documentation',
+        url: '#',
       },
     ],
   },
   {
-    title: "Company",
-    className: "",
+    title: 'Company',
+    className: '',
     links: [
       {
-        label: "About Our Team",
-        url: "#",
+        label: 'About Our Team',
+        url: '#',
       },
       {
-        label: "Help & Support Center",
-        url: "#",
+        label: 'Help & Support Center',
+        url: '#',
       },
       {
-        label: "Latest News",
-        url: "#",
+        label: 'Latest News',
+        url: '#',
       },
     ],
   },
   {
-    title: "Community",
-    className: "",
+    title: 'Community',
+    className: '',
     links: [
       {
-        label: "Forum",
-        url: "#",
+        label: 'Forum',
+        url: '#',
       },
       {
-        label: "Slack Group",
-        url: "#",
+        label: 'Slack Group',
+        url: '#',
       },
       {
-        label: "Contributors",
-        url: "#",
+        label: 'Contributors',
+        url: '#',
       },
       {
-        label: "Meetups",
-        url: "#",
+        label: 'Meetups',
+        url: '#',
       },
     ],
   },
@@ -186,37 +195,37 @@ const NAV_BUTTONS: {
   label: string;
   url: string;
   variant:
-    | "ghost"
-    | "default"
-    | "link"
-    | "destructive"
-    | "outline"
-    | "secondary";
+    | 'ghost'
+    | 'default'
+    | 'link'
+    | 'destructive'
+    | 'outline'
+    | 'secondary';
 }[] = [
   {
-    label: "Log in",
-    url: "#",
-    variant: "ghost",
+    label: 'Log in',
+    url: '#',
+    variant: 'ghost',
   },
   {
-    label: "Sign up",
-    url: "#",
-    variant: "default",
+    label: 'Sign up',
+    url: '#',
+    variant: 'default',
   },
 ];
 
 const SOCIAL_LINKS = [
   {
-    label: "Linkedin",
-    url: "#",
+    label: 'Linkedin',
+    url: '#',
   },
   {
-    label: "Twitter",
-    url: "#",
+    label: 'Twitter',
+    url: '#',
   },
   {
-    label: "Facebook",
-    url: "#",
+    label: 'Facebook',
+    url: '#',
   },
 ];
 
@@ -234,9 +243,9 @@ const Navbar8 = () => {
     };
 
     const handleScroll = () => {
-      navRef.current?.classList.toggle("bg-background", window.scrollY > 300);
+      navRef.current?.classList.toggle('bg-background', window.scrollY > 300);
       navRef.current?.classList.toggle(
-        "bg-transparent",
+        'bg-transparent',
         !(window.scrollY > 300),
       );
     };
@@ -244,16 +253,16 @@ const Navbar8 = () => {
     handleResize();
     handleScroll();
 
-    window.addEventListener("resize", handleResize);
-    window.addEventListener("scroll", handleScroll);
+    window.addEventListener('resize', handleResize);
+    window.addEventListener('scroll', handleScroll);
     return () => {
-      window.removeEventListener("resize", handleResize);
-      window.removeEventListener("scroll", handleScroll);
+      window.removeEventListener('resize', handleResize);
+      window.removeEventListener('scroll', handleScroll);
     };
   }, []);
 
   useEffect(() => {
-    document.body.style.overflow = open ? "hidden" : "auto";
+    document.body.style.overflow = open ? 'hidden' : 'auto';
   }, [open]);
 
   const handleMobileMenu = () => {
@@ -264,7 +273,7 @@ const Navbar8 = () => {
   return (
     <div>
       <div
-        className="z-500 fixed top-0 w-full bg-transparent transition-colors duration-500"
+        className="fixed top-0 z-500 w-full bg-transparent transition-colors duration-500"
         ref={navRef}
       >
         <div className="container border-b">
@@ -319,21 +328,21 @@ const DesktopMenuItem = ({ item, index }: DesktopMenuItemProps) => {
   const imagesRef = useRef<HTMLImageElement[]>([]);
 
   const handleMouseEnter = (event: React.MouseEvent<HTMLElement>) => {
-    const index = Number(event.currentTarget.getAttribute("data-index"));
+    const index = Number(event.currentTarget.getAttribute('data-index'));
     if (item.links && imagesRef.current[index]) {
       imagesRef.current.forEach((img, i) => {
-        img.classList.toggle("opacity-100", i === index);
-        img.classList.toggle("opacity-0", i !== index);
+        img.classList.toggle('opacity-100', i === index);
+        img.classList.toggle('opacity-0', i !== index);
       });
     }
   };
 
   const handleMouseLeave = () => {
     imagesRef.current.forEach((img) => {
-      img.classList.remove("opacity-100");
-      img.classList.add("opacity-0");
+      img.classList.remove('opacity-100');
+      img.classList.add('opacity-0');
     });
-    imagesRef.current[0].classList.add("opacity-100");
+    imagesRef.current[0].classList.add('opacity-100');
   };
 
   if (item.links) {
@@ -355,12 +364,12 @@ const DesktopMenuItem = ({ item, index }: DesktopMenuItemProps) => {
                   }}
                   src={link.image}
                   alt={link.label}
-                  className={`absolute left-0 top-0 h-full w-full object-cover transition-opacity duration-300 ${index === 0 ? "opacity-100" : "opacity-0"}`}
+                  className={`absolute top-0 left-0 h-full w-full object-cover transition-opacity duration-300 ${index === 0 ? 'opacity-100' : 'opacity-0'}`}
                 />
               ))}
             </div>
             <div>
-              <div className="p-4 font-bold leading-normal">{item.title}</div>
+              <div className="p-4 leading-normal font-bold">{item.title}</div>
               <ul>
                 {item.links.map((link, index) => (
                   <li key={`desktop-nav-sublink-${index}`}>
@@ -372,7 +381,7 @@ const DesktopMenuItem = ({ item, index }: DesktopMenuItemProps) => {
                       onMouseLeave={handleMouseLeave}
                     >
                       <div>
-                        <h3 className="font-medium leading-normal">
+                        <h3 className="leading-normal font-medium">
                           {link.label}
                         </h3>
                         <p className="text-muted-foreground leading-normal">
@@ -407,11 +416,11 @@ const MobileNavigationMenu = ({ open, setOpen }: MobileNavigationMenuProps) => {
       <SheetContent
         aria-describedby={undefined}
         side="top"
-        className="z-600 bg-primary text-primary-foreground inset-0 h-dvh w-full [&>button]:hidden"
+        className="bg-primary text-primary-foreground inset-0 z-600 h-dvh w-full [&>button]:hidden"
       >
         <div className="flex-1 overflow-y-auto">
           <div className="container pb-12">
-            <div className="mask-clip-border absolute -m-px h-px w-px overflow-hidden whitespace-nowrap text-nowrap border-0 p-0">
+            <div className="absolute -m-px h-px w-px overflow-hidden border-0 mask-clip-border p-0 text-nowrap whitespace-nowrap">
               <SheetTitle className="text-primary">
                 Mobile Navigation
               </SheetTitle>
@@ -426,7 +435,7 @@ const MobileNavigationMenu = ({ open, setOpen }: MobileNavigationMenuProps) => {
                 </Button>
               </SheetClose>
             </div>
-            <div className="gap-30 flex h-full flex-col justify-between pt-24">
+            <div className="flex h-full flex-col justify-between gap-30 pt-24">
               <div className="grid w-full grid-cols-2 gap-x-4 gap-y-10">
                 {MOBILE_NAVIGATION.map((item, index) =>
                   renderMobileMenuItem(item, index),
@@ -470,7 +479,7 @@ const renderMobileMenuItem = (item: MenuItem, index: number) => {
           <li key={`mobile-nav-link-${i}`}>
             <a
               href={link.url}
-              className={`text-primary-foreground ${index === 0 ? "text-2xl" : "text-base"} font-medium leading-normal`}
+              className={`text-primary-foreground ${index === 0 ? 'text-2xl' : 'text-base'} leading-normal font-medium`}
             >
               {link.label}
             </a>

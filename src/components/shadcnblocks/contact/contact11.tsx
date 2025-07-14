@@ -1,42 +1,42 @@
-import { Facebook, Linkedin, Twitter } from "lucide-react";
+import { Facebook, Linkedin, Twitter } from 'lucide-react';
 
-import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
-import { Label } from "@/components/ui/label";
-import { Textarea } from "@/components/ui/textarea";
+import { Button } from '@/components/ui/button';
+import { Input } from '@/components/ui/input';
+import { Label } from '@/components/ui/label';
+import { Textarea } from '@/components/ui/textarea';
 
 const formFields = [
   {
-    label: "Full name",
-    name: "fullName",
-    placeholder: "First and last name",
-    type: "text",
+    label: 'Full name',
+    name: 'fullName',
+    placeholder: 'First and last name',
+    type: 'text',
   },
   {
-    label: "Work email address",
-    name: "email",
-    placeholder: "me@company.com",
-    type: "email",
+    label: 'Work email address',
+    name: 'email',
+    placeholder: 'me@company.com',
+    type: 'email',
   },
   {
-    label: "Company name",
-    name: "company",
-    placeholder: "Company name",
-    type: "text",
+    label: 'Company name',
+    name: 'company',
+    placeholder: 'Company name',
+    type: 'text',
     optional: true,
   },
   {
-    label: "Number of employees",
-    name: "employees",
-    placeholder: "Company name",
-    type: "text",
+    label: 'Number of employees',
+    name: 'employees',
+    placeholder: 'Company name',
+    type: 'text',
     optional: true,
   },
   {
-    label: "Your message",
-    name: "message",
-    placeholder: "Write your message",
-    type: "textarea",
+    label: 'Your message',
+    name: 'message',
+    placeholder: 'Write your message',
+    type: 'textarea',
   },
 ];
 
@@ -47,7 +47,7 @@ const Contact11 = () => {
         <h1 className="text-center text-4xl font-semibold tracking-tight sm:text-5xl">
           Contact us
         </h1>
-        <p className="mt-4 text-center text-muted-foreground">
+        <p className="text-muted-foreground mt-4 text-center">
           Hopefully this form gets through our spam filters.
         </p>
 
@@ -56,7 +56,7 @@ const Contact11 = () => {
           <div className="space-y-10 pr-10 md:gap-20">
             <div>
               <h2 className="text-lg font-semibold">Corporate office</h2>
-              <p className="mt-3 font-medium tracking-tight text-muted-foreground">
+              <p className="text-muted-foreground mt-3 font-medium tracking-tight">
                 1 Carlsberg Close
                 <br />
                 1260 Hillview, Australia
@@ -70,7 +70,7 @@ const Contact11 = () => {
                   <p className="text-primary">Careers</p>
                   <a
                     href="#"
-                    className="mt-3 tracking-tight text-muted-foreground"
+                    className="text-muted-foreground mt-3 tracking-tight"
                   >
                     careers@example.com
                   </a>
@@ -79,7 +79,7 @@ const Contact11 = () => {
                   <p className="text-primary">Press</p>
                   <a
                     href="#"
-                    className="mt-3 tracking-tight text-muted-foreground"
+                    className="text-muted-foreground mt-3 tracking-tight"
                   >
                     press@example.com
                   </a>
@@ -122,12 +122,12 @@ const Contact11 = () => {
                     {field.label}
                     {field.optional && (
                       <span className="text-muted-foreground/60">
-                        {" "}
+                        {' '}
                         (optional)
                       </span>
                     )}
                   </Label>
-                  {field.type === "textarea" ? (
+                  {field.type === 'textarea' ? (
                     <Textarea
                       name={field.name}
                       placeholder={field.placeholder}

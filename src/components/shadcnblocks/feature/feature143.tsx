@@ -1,14 +1,14 @@
-"use client";
+'use client';
 
-import { ArrowRight } from "lucide-react";
+import { ArrowRight } from 'lucide-react';
 
-import { Badge } from "@/components/ui/badge";
+import { Badge } from '@/components/ui/badge';
 
 const items: string[] = [
-  "Responsive Design and Layout",
-  "Clean and Modern Design",
-  "Easy to Customize",
-  "Cross Browser Compatible",
+  'Responsive Design and Layout',
+  'Clean and Modern Design',
+  'Easy to Customize',
+  'Cross Browser Compatible',
 ];
 
 const Feature143 = () => {
@@ -20,11 +20,11 @@ const Feature143 = () => {
             <h6 className="text-3xl">
               Build any kind of Website with our Blocks
             </h6>
-            <Badge variant="outline" className="mt-8 bg-muted px-3 py-2">
+            <Badge variant="outline" className="bg-muted mt-8 px-3 py-2">
               Badge
             </Badge>
 
-            <div className="mt-16 mb-4 h-px w-full bg-muted-foreground" />
+            <div className="bg-muted-foreground mt-16 mb-4 h-px w-full" />
 
             <ul className="flex flex-col gap-2">
               {items.map((item) => (
@@ -36,10 +36,10 @@ const Feature143 = () => {
           </div>
 
           <div className="grid w-full max-w-md grid-cols-[1fr_4fr_1fr] grid-rows-[1fr_4fr_1fr] rounded-lg bg-linear-to-br from-red-100 to-blue-100 md:max-w-xl">
-            <div className="border-r-2 border-b-2 border-muted-foreground/30 p-4" />
-            <div className="border-b-2 border-muted-foreground/30 p-4" />
-            <div className="border-b-2 border-l-2 border-muted-foreground/30 p-4" />
-            <div className="border-r-2 border-muted-foreground/30 p-4" />
+            <div className="border-muted-foreground/30 border-r-2 border-b-2 p-4" />
+            <div className="border-muted-foreground/30 border-b-2 p-4" />
+            <div className="border-muted-foreground/30 border-b-2 border-l-2 p-4" />
+            <div className="border-muted-foreground/30 border-r-2 p-4" />
             <div>
               <img
                 src="https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-1.svg"
@@ -47,10 +47,10 @@ const Feature143 = () => {
                 className="max-h-[740px] w-full rounded-xl object-cover"
               />
             </div>
-            <div className="border-l-2 border-muted-foreground/30 p-4" />
-            <div className="border-t-2 border-r-2 border-muted-foreground/30 p-4" />
-            <div className="border-t-2 border-muted-foreground/30 p-4" />
-            <div className="border-t-2 border-l-2 border-muted-foreground/30 p-4" />
+            <div className="border-muted-foreground/30 border-l-2 p-4" />
+            <div className="border-muted-foreground/30 border-t-2 border-r-2 p-4" />
+            <div className="border-muted-foreground/30 border-t-2 p-4" />
+            <div className="border-muted-foreground/30 border-t-2 border-l-2 p-4" />
           </div>
         </div>
       </div>

@@ -1,9 +1,8 @@
-"use client";
+'use client';
 
-import { cn } from "@/lib/utils";
-
-import { Badge } from "@/components/ui/badge";
-import { Button } from "@/components/ui/button";
+import { Badge } from '@/components/ui/badge';
+import { Button } from '@/components/ui/button';
+import { cn } from '@/lib/utils';
 
 interface DataItem {
   title: string;
@@ -18,44 +17,44 @@ interface DataItem {
 const Pricing26 = () => {
   const DATA: DataItem[] = [
     {
-      title: "Starter Plan",
+      title: 'Starter Plan',
       description:
-        "Kickstart your digital presence with essential marketing tools and strategies tailored for small businesses.",
-      badges: ["SEO", "Social Media"],
+        'Kickstart your digital presence with essential marketing tools and strategies tailored for small businesses.',
+      badges: ['SEO', 'Social Media'],
       features: [
-        { text: "Perfect for", description: "Startups, Small Businesses" },
-        { text: "Time estimate", description: "2 - 4 weeks" },
-        { text: "Price estimate", description: "$500" },
+        { text: 'Perfect for', description: 'Startups, Small Businesses' },
+        { text: 'Time estimate', description: '2 - 4 weeks' },
+        { text: 'Price estimate', description: '$500' },
       ],
-      timeEstimate: "2 - 4 weeks",
-      priceEstimate: "$500",
+      timeEstimate: '2 - 4 weeks',
+      priceEstimate: '$500',
     },
     {
-      title: "Growth Plan",
+      title: 'Growth Plan',
       description:
-        "Scale your business with advanced marketing strategies, including PPC campaigns and content marketing.",
-      badges: ["SEO", "PPC", "Content Marketing"],
+        'Scale your business with advanced marketing strategies, including PPC campaigns and content marketing.',
+      badges: ['SEO', 'PPC', 'Content Marketing'],
       features: [
-        { text: "Perfect for", description: "Growing Businesses" },
-        { text: "Time estimate", description: "4 - 6 weeks" },
-        { text: "Price estimate", description: "$1,500" },
+        { text: 'Perfect for', description: 'Growing Businesses' },
+        { text: 'Time estimate', description: '4 - 6 weeks' },
+        { text: 'Price estimate', description: '$1,500' },
       ],
-      timeEstimate: "4 - 6 weeks",
-      priceEstimate: "$1,500",
+      timeEstimate: '4 - 6 weeks',
+      priceEstimate: '$1,500',
       isHighlighted: true, // Highlight this plan
     },
     {
-      title: "Enterprise Plan",
+      title: 'Enterprise Plan',
       description:
-        "Comprehensive marketing solutions for large businesses, including advanced analytics and custom campaigns.",
-      badges: ["SEO", "PPC", "Content Marketing"],
+        'Comprehensive marketing solutions for large businesses, including advanced analytics and custom campaigns.',
+      badges: ['SEO', 'PPC', 'Content Marketing'],
       features: [
-        { text: "Perfect for", description: "Large Enterprises" },
-        { text: "Time estimate", description: "6 - 8 weeks" },
-        { text: "Price estimate", description: "$5,000" },
+        { text: 'Perfect for', description: 'Large Enterprises' },
+        { text: 'Time estimate', description: '6 - 8 weeks' },
+        { text: 'Price estimate', description: '$5,000' },
       ],
-      timeEstimate: "6 - 8 weeks",
-      priceEstimate: "$5,000",
+      timeEstimate: '6 - 8 weeks',
+      priceEstimate: '$5,000',
     },
   ];
 
@@ -71,8 +70,8 @@ const Pricing26 = () => {
             <div
               key={idx}
               className={cn(
-                "flex flex-1 flex-col rounded-3xl p-6 lg:py-8",
-                pkg.isHighlighted ? "bg-amber-200" : "bg-background",
+                'flex flex-1 flex-col rounded-3xl p-6 lg:py-8',
+                pkg.isHighlighted ? 'bg-amber-200' : 'bg-background',
               )}
             >
               {/* Badges */}
@@ -82,8 +81,8 @@ const Pricing26 = () => {
                     key={i}
                     variant="outline"
                     className={cn(
-                      "rounded-sm border bg-transparent px-4 py-2 text-black",
-                      pkg.isHighlighted ? "border-black" : "border-secondary",
+                      'rounded-sm border bg-transparent px-4 py-2 text-black',
+                      pkg.isHighlighted ? 'border-black' : 'border-secondary',
                     )}
                   >
                     {badgeText}
@@ -97,7 +96,7 @@ const Pricing26 = () => {
               </h2>
 
               {/* Description */}
-              <p className="mb-6 text-sm text-muted-foreground">
+              <p className="text-muted-foreground mb-6 text-sm">
                 {pkg.description}
               </p>
 
@@ -107,11 +106,11 @@ const Pricing26 = () => {
                   <div
                     key={i}
                     className={cn(
-                      "py-4",
+                      'py-4',
                       i === 0 &&
-                        "border-t border-dashed border-muted-foreground",
+                        'border-muted-foreground border-t border-dashed',
                       i !== pkg.features.length - 1 &&
-                        "border-b border-dashed border-muted-foreground",
+                        'border-muted-foreground border-b border-dashed',
                     )}
                   >
                     <div className="flex justify-between">

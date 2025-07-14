@@ -1,8 +1,8 @@
-import { ArrowRight } from "lucide-react";
+import { ArrowRight } from 'lucide-react';
 
-import { Badge } from "@/components/ui/badge";
-import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
+import { Badge } from '@/components/ui/badge';
+import { Button } from '@/components/ui/button';
+import { Input } from '@/components/ui/input';
 
 const Changelog2 = () => {
   return (
@@ -31,19 +31,19 @@ const Changelog2 = () => {
         <div className="border-border mx-auto mt-20 max-w-xl space-y-10 border-l border-dashed pl-6">
           <div>
             <p className="text-muted-foreground relative font-mono text-sm">
-              <time className="absolute -left-6 top-1 h-3 w-3 -translate-x-1/2 rounded-full bg-emerald-400"></time>
+              <time className="absolute top-1 -left-6 h-3 w-3 -translate-x-1/2 rounded-full bg-emerald-400"></time>
               January 11, 2025
             </p>
             <img
               src="https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-1.svg"
               alt="placeholder"
-              className="aspect-8/7 my-4 rounded-md object-cover"
+              className="my-4 aspect-8/7 rounded-md object-cover"
             />
             <h2 className="mb-2 text-3xl font-semibold">
               Better export options
             </h2>
             <p className="prose text-primary/80 dark:prose-invert">
-              We've added a <a href="#">components</a> and{" "}
+              We've added a <a href="#">components</a> and{' '}
               <a href="#">analytics</a> to help you track your website's
               performance. You can now see your website's performance over time,
               and get insights into your users.
@@ -57,19 +57,19 @@ const Changelog2 = () => {
           </div>
           <div>
             <p className="text-muted-foreground relative font-mono text-sm">
-              <time className="absolute -left-6 top-1 h-3 w-3 -translate-x-1/2 rounded-full bg-emerald-400"></time>
+              <time className="absolute top-1 -left-6 h-3 w-3 -translate-x-1/2 rounded-full bg-emerald-400"></time>
               December 23, 2024
             </p>
             <img
               src="https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-2.svg"
               alt="placeholder"
-              className="aspect-8/7 my-4 rounded-md object-cover"
+              className="my-4 aspect-8/7 rounded-md object-cover"
             />
             <h2 className="mb-2 text-3xl font-semibold">
               New dashboard and analytics
             </h2>
             <p className="prose text-primary/80 dark:prose-invert">
-              We've added a <a href="#">components</a> and{" "}
+              We've added a <a href="#">components</a> and{' '}
               <a href="#">analytics</a> to help you track your website's
               performance. You can now see your website's performance over time,
               and get insights into your users.

@@ -1,4 +1,4 @@
-import { DollarSign, KeyRound, Timer } from "lucide-react";
+import { DollarSign, KeyRound, Timer } from 'lucide-react';
 
 const Feature89 = () => {
   return (
@@ -6,16 +6,16 @@ const Feature89 = () => {
       <div className="relative container">
         <div className="pointer-events-none absolute inset-0 -top-20 -z-10 mx-auto hidden h-[500px] w-[500px] bg-[radial-gradient(var(--color-gray-400)_1px,transparent_1px)] [mask-image:radial-gradient(circle_at_center,white_250px,transparent_250px)] [background-size:6px_6px] opacity-25 lg:block"></div>
         <div className="relative flex justify-between gap-16">
-          <div className="pointer-events-none absolute inset-0 hidden bg-linear-to-t from-background via-transparent to-transparent lg:block"></div>
+          <div className="from-background pointer-events-none absolute inset-0 hidden bg-linear-to-t via-transparent to-transparent lg:block"></div>
 
           <div className="w-full max-w-96 shrink-0 justify-between">
-            <p className="font-mono text-xs text-muted-foreground">
+            <p className="text-muted-foreground font-mono text-xs">
               What’s the solution?
             </p>
             <h2 className="mt-6 mb-3 text-3xl font-medium lg:text-4xl">
               Let Streamline handle the details
             </h2>
-            <p className="text-sm text-muted-foreground">
+            <p className="text-muted-foreground text-sm">
               Streamline optimizes your workflow from start to finish. It
               gathers information, generates reports, automates tasks, and
               delivers results—all in one seamless system.
@@ -34,7 +34,7 @@ const Feature89 = () => {
             <Timer />
             <div>
               <h3 className="text-lg font-medium">Maximize efficiency</h3>
-              <p className="mt-1 text-sm text-muted-foreground">
+              <p className="text-muted-foreground mt-1 text-sm">
                 Skip the manual tasks and complex setups. With Streamline, you
                 can focus on what matters most while the system handles the
                 rest.
@@ -45,7 +45,7 @@ const Feature89 = () => {
             <DollarSign />
             <div>
               <h3 className="text-lg font-medium">Optimize resources</h3>
-              <p className="mt-1 text-sm text-muted-foreground">
+              <p className="text-muted-foreground mt-1 text-sm">
                 Don’t overspend on unnecessary tools or teams. Keep your
                 operations lean and efficient by automating your workflows with
                 Streamline.
@@ -56,24 +56,24 @@ const Feature89 = () => {
             <KeyRound />
             <div>
               <h3 className="text-lg font-medium">Simplify operations</h3>
-              <p className="mt-1 text-sm text-muted-foreground">
+              <p className="text-muted-foreground mt-1 text-sm">
                 Say goodbye to managing multiple platforms. Streamline takes
                 care of all the heavy lifting, ensuring consistent results with
                 minimal hassle.
               </p>
             </div>
           </div>
-          <div className="absolute top-0 -right-4 -left-4 h-px bg-input md:hidden"></div>
-          <div className="absolute top-[-0.5px] -right-4 -left-4 row-start-2 h-px bg-input md:hidden"></div>
-          <div className="absolute top-[-0.5px] -right-4 -left-4 row-start-3 h-px bg-input md:hidden"></div>
-          <div className="absolute -right-4 bottom-0 -left-4 row-start-4 h-px bg-input md:hidden"></div>
-          <div className="absolute -top-2 bottom-0 -left-2 w-px bg-input md:hidden"></div>
-          <div className="absolute -top-2 -right-2 bottom-0 col-start-2 w-px bg-input md:hidden"></div>
-          <div className="absolute top-0 -right-2 -left-2 hidden h-px bg-input md:block"></div>
-          <div className="absolute -top-2 bottom-0 left-0 hidden w-px bg-input md:block"></div>
-          <div className="absolute -top-2 bottom-0 -left-[0.5px] col-start-2 hidden w-px bg-input md:block"></div>
-          <div className="absolute -top-2 bottom-0 -left-[0.5px] col-start-3 hidden w-px bg-input md:block"></div>
-          <div className="absolute -top-2 right-0 bottom-0 hidden w-px bg-input md:block"></div>
+          <div className="bg-input absolute top-0 -right-4 -left-4 h-px md:hidden"></div>
+          <div className="bg-input absolute top-[-0.5px] -right-4 -left-4 row-start-2 h-px md:hidden"></div>
+          <div className="bg-input absolute top-[-0.5px] -right-4 -left-4 row-start-3 h-px md:hidden"></div>
+          <div className="bg-input absolute -right-4 bottom-0 -left-4 row-start-4 h-px md:hidden"></div>
+          <div className="bg-input absolute -top-2 bottom-0 -left-2 w-px md:hidden"></div>
+          <div className="bg-input absolute -top-2 -right-2 bottom-0 col-start-2 w-px md:hidden"></div>
+          <div className="bg-input absolute top-0 -right-2 -left-2 hidden h-px md:block"></div>
+          <div className="bg-input absolute -top-2 bottom-0 left-0 hidden w-px md:block"></div>
+          <div className="bg-input absolute -top-2 bottom-0 -left-[0.5px] col-start-2 hidden w-px md:block"></div>
+          <div className="bg-input absolute -top-2 bottom-0 -left-[0.5px] col-start-3 hidden w-px md:block"></div>
+          <div className="bg-input absolute -top-2 right-0 bottom-0 hidden w-px md:block"></div>
         </div>
       </div>
     </section>

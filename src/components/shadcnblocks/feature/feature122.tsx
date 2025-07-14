@@ -1,4 +1,6 @@
-"use client";
+'use client';
+
+import React, { useState } from 'react';
 
 import {
   ArrowRight,
@@ -7,10 +9,9 @@ import {
   LayoutPanelTop,
   MessageCircleMore,
   Users,
-} from "lucide-react";
-import React, { useState } from "react";
+} from 'lucide-react';
 
-import { Button } from "@/components/ui/button";
+import { Button } from '@/components/ui/button';
 
 interface DataBlockProps {
   title: string;
@@ -27,7 +28,7 @@ const Feature122 = () => {
           description="Lorem ipsum dolor sit amet, consectetur adipisicing elit."
           icon={
             <MessageCircleMore
-              className="size-10 text-primary/90 md:size-12"
+              className="text-primary/90 size-10 md:size-12"
               strokeWidth={1.5}
             />
           }
@@ -37,7 +38,7 @@ const Feature122 = () => {
           description="Lorem ipsum dolor sit amet, consectetur adipisicing elit."
           icon={
             <Blocks
-              className="size-10 text-primary/90 md:size-12"
+              className="text-primary/90 size-10 md:size-12"
               strokeWidth={1.5}
             />
           }
@@ -47,7 +48,7 @@ const Feature122 = () => {
           description="Lorem ipsum dolor sit amet, consectetur adipisicing elit."
           icon={
             <Users
-              className="size-10 text-primary/90 md:size-12"
+              className="text-primary/90 size-10 md:size-12"
               strokeWidth={1.5}
             />
           }
@@ -57,7 +58,7 @@ const Feature122 = () => {
           description="Lorem ipsum dolor sit amet, consectetur adipisicing elit."
           icon={
             <LayoutPanelTop
-              className="size-10 text-primary/90 md:size-12"
+              className="text-primary/90 size-10 md:size-12"
               strokeWidth={1.5}
             />
           }
@@ -67,12 +68,12 @@ const Feature122 = () => {
           description="Lorem ipsum dolor sit amet, consectetur adipisicing elit."
           icon={
             <Fingerprint
-              className="size-10 text-primary/90 md:size-12"
+              className="text-primary/90 size-10 md:size-12"
               strokeWidth={1.5}
             />
           }
         />
-        <div className="flex w-full grow flex-col gap-6 rounded-lg bg-accent/80 p-6 transition-all hover:bg-accent md:col-span-2 md:col-start-2 md:row-span-2 md:row-start-2 lg:p-10">
+        <div className="bg-accent/80 hover:bg-accent flex w-full grow flex-col gap-6 rounded-lg p-6 transition-all md:col-span-2 md:col-start-2 md:row-span-2 md:row-start-2 lg:p-10">
           <div className="flex flex-col items-start justify-between gap-5 md:flex-row md:items-center">
             <h3 className="max-w-[85%] text-xl font-bold tracking-tight md:max-w-[60%] lg:text-3xl">
               Powerful Features
@@ -100,22 +101,22 @@ const DataBlock: React.FC<DataBlockProps> = ({ title, description, icon }) => {
   return (
     <a
       href="#"
-      className="flex w-full cursor-pointer flex-col rounded-lg bg-accent/80 p-6 transition-all hover:bg-accent lg:p-8"
+      className="bg-accent/80 hover:bg-accent flex w-full cursor-pointer flex-col rounded-lg p-6 transition-all lg:p-8"
       onMouseOver={() => setBlockHover(true)}
       onMouseOut={() => setBlockHover(false)}
     >
       <h3
-        className={`mb-3 w-fit border-b border-solid border-transparent text-lg font-bold tracking-tight transition lg:text-xl ${isBlockHover && "border-primary/80!"}`}
+        className={`mb-3 w-fit border-b border-solid border-transparent text-lg font-bold tracking-tight transition lg:text-xl ${isBlockHover && 'border-primary/80!'}`}
       >
         {title}
       </h3>
-      <p className="mb-5 text-sm text-muted-foreground/90 lg:text-base">
+      <p className="text-muted-foreground/90 mb-5 text-sm lg:text-base">
         {description}
       </p>
       <div className="mt-auto flex items-end justify-between">
         <div>{icon}</div>
         <ArrowRight
-          className={`size-5 h-fit text-primary/80 transition-all ${isBlockHover && "translate-x-1.5 transform"}`}
+          className={`text-primary/80 size-5 h-fit transition-all ${isBlockHover && 'translate-x-1.5 transform'}`}
           strokeWidth={1.5}
         />
       </div>

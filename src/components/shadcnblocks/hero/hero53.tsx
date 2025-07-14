@@ -1,7 +1,7 @@
-import { Globe } from "lucide-react";
+import { Globe } from 'lucide-react';
 
-import { Avatar, AvatarImage } from "@/components/ui/avatar";
-import { Button } from "@/components/ui/button";
+import { Avatar, AvatarImage } from '@/components/ui/avatar';
+import { Button } from '@/components/ui/button';
 
 const Hero53 = () => {
   return (
@@ -37,12 +37,12 @@ const Hero53 = () => {
                   />
                 </Avatar>
               </span>
-              <p className="text-sm text-muted-foreground">
+              <p className="text-muted-foreground text-sm">
                 Trusted by 2000+ developers worldwide
               </p>
             </div>
           </div>
-          <p className="max-w-lg text-xl leading-relaxed text-muted-foreground">
+          <p className="text-muted-foreground max-w-lg text-xl leading-relaxed">
             Our platform streamlines development by automating issue tracking,
             documentation, and knowledge management.
           </p>

@@ -1,19 +1,23 @@
-import { Calendar } from "lucide-react";
+import { Calendar } from 'lucide-react';
 
-import { Avatar, AvatarImage } from "@/components/ui/avatar";
-import { Button } from "@/components/ui/button";
+import { Avatar, AvatarImage } from '@/components/ui/avatar';
+import { Button } from '@/components/ui/button';
 
 const Hero67 = () => {
   return (
     <section className="py-32">
       <div className="container">
         <div className="z-10 mx-auto flex max-w-4xl flex-col items-center gap-14 text-center">
-          <img src="https://deifkwefumgah.cloudfront.net/shadcnblocks/block/block-1.svg" alt="logo" className="h-14" />
+          <img
+            src="https://deifkwefumgah.cloudfront.net/shadcnblocks/block/block-1.svg"
+            alt="logo"
+            className="h-14"
+          />
           <div>
             <h1 className="mb-4 text-3xl font-medium text-pretty lg:text-6xl">
               Build Exceptional Online Experiences
             </h1>
-            <p className="mx-auto max-w-xl text-muted-foreground">
+            <p className="text-muted-foreground mx-auto max-w-xl">
               Create a website that captures attention, drives engagement, and
               aligns with your goals, all in a matter of days.
             </p>
@@ -50,7 +54,7 @@ const Hero67 = () => {
                   />
                 </Avatar>
               </span>
-              <p className="text-xs text-muted-foreground">
+              <p className="text-muted-foreground text-xs">
                 Trusted by industry leaders
               </p>
             </div>

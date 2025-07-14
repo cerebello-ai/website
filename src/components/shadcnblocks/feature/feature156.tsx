@@ -1,30 +1,33 @@
-"use client";
+'use client';
 
-import { useState } from "react";
+import { useState } from 'react';
 
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 
 const integrations = [
   {
-    id: "1",
-    image: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/block-1.svg",
-    title: "Modern Development Workflow",
+    id: '1',
+    image:
+      'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/block-1.svg',
+    title: 'Modern Development Workflow',
     description:
-      "Streamline your development process with integrated tools for code review, continuous integration, and automated testing. Built for modern engineering teams.",
+      'Streamline your development process with integrated tools for code review, continuous integration, and automated testing. Built for modern engineering teams.',
   },
   {
-    id: "2",
-    image: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/block-2.svg",
-    title: "Component-Driven Architecture",
+    id: '2',
+    image:
+      'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/block-2.svg',
+    title: 'Component-Driven Architecture',
     description:
-      "Build scalable applications with reusable components. Our component system helps maintain consistency while reducing development time and technical debt.",
+      'Build scalable applications with reusable components. Our component system helps maintain consistency while reducing development time and technical debt.',
   },
   {
-    id: "3",
-    image: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/block-3.svg",
-    title: "Real-Time Collaboration",
+    id: '3',
+    image:
+      'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/block-3.svg',
+    title: 'Real-Time Collaboration',
     description:
-      "Work together seamlessly with built-in version control, live previews, and collaborative editing features. Perfect for distributed teams and pair programming.",
+      'Work together seamlessly with built-in version control, live previews, and collaborative editing features. Perfect for distributed teams and pair programming.',
   },
 ];
 
@@ -39,7 +42,7 @@ const Feature156 = () => {
         <div className="absolute inset-0 bg-[radial-gradient(circle_800px_at_50%_50%,transparent,white)]" />
       </div>
 
-      <div className="container relative">
+      <div className="relative container">
         <div className="mb-16 flex flex-col items-center gap-8">
           <h1 className="max-w-3xl text-center text-4xl font-bold tracking-tight md:text-6xl lg:text-7xl">
             Build better software with shadcn/ui blocks
@@ -77,7 +80,7 @@ const Feature156 = () => {
                 <h3 className="text-foreground/90 group-hover:text-foreground group-data-[state=active]:text-foreground mb-3 text-xl font-semibold tracking-tight">
                   {item.title}
                 </h3>
-                <p className="text-muted-foreground/80 group-hover:text-muted-foreground group-data-[state=active]:text-muted-foreground text-pretty text-start text-sm">
+                <p className="text-muted-foreground/80 group-hover:text-muted-foreground group-data-[state=active]:text-muted-foreground text-start text-sm text-pretty">
                   {item.description}
                 </p>
               </TabsTrigger>

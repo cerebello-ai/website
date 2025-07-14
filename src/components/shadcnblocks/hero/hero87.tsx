@@ -1,6 +1,6 @@
-import { ArrowRight } from "lucide-react";
+import { ArrowRight } from 'lucide-react';
 
-import { Button } from "@/components/ui/button";
+import { Button } from '@/components/ui/button';
 
 const Hero87 = () => {
   return (
@@ -11,7 +11,7 @@ const Hero87 = () => {
         </h1>
         <div className="mt-14 grid gap-10 lg:grid-cols-2">
           <div>
-            <p className="text-lg text-muted-foreground lg:text-xl">
+            <p className="text-muted-foreground text-lg lg:text-xl">
               It delivers unique and customizable products designed for your
               business. Say farewell to rigid options, lengthy launch times, and
               branding limitations. Embrace a product that evolves with your

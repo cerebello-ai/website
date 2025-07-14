@@ -1,26 +1,26 @@
-import { ArrowRight } from "lucide-react";
+import { ArrowRight } from 'lucide-react';
 
-import { Button } from "@/components/ui/button";
+import { Button } from '@/components/ui/button';
 
 const images = [
-  "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/integration/integration-1.svg",
-  "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/integration/integration-2.svg",
-  "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/integration/integration-3.svg",
-  "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/integration/integration-4.svg",
-  "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/integration/integration-5.svg",
-  "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/integration/integration-6.svg",
-  "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/integration/integration-7.svg",
-  "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/integration/integration-8.svg",
-  "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/integration/integration-9.svg",
-  "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/integration/integration-10.svg",
-  "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/integration/integration-11.svg",
-  "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/integration/integration-12.svg",
-  "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/integration/integration-13.svg",
-  "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/integration/integration-14.svg",
-  "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/integration/integration-15.svg",
-  "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/integration/integration-16.svg",
-  "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/integration/integration-17.svg",
-  "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/integration/integration-18.svg",
+  'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/integration/integration-1.svg',
+  'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/integration/integration-2.svg',
+  'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/integration/integration-3.svg',
+  'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/integration/integration-4.svg',
+  'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/integration/integration-5.svg',
+  'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/integration/integration-6.svg',
+  'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/integration/integration-7.svg',
+  'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/integration/integration-8.svg',
+  'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/integration/integration-9.svg',
+  'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/integration/integration-10.svg',
+  'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/integration/integration-11.svg',
+  'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/integration/integration-12.svg',
+  'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/integration/integration-13.svg',
+  'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/integration/integration-14.svg',
+  'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/integration/integration-15.svg',
+  'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/integration/integration-16.svg',
+  'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/integration/integration-17.svg',
+  'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/integration/integration-18.svg',
 ];
 
 const Integration5 = () => {
@@ -29,13 +29,13 @@ const Integration5 = () => {
       <div className="container">
         <div className="flex flex-col items-center justify-between gap-14 md:flex-row lg:gap-20">
           <div className="basis-1/2">
-            <p className="font-mono text-sm text-muted-foreground">
+            <p className="text-muted-foreground font-mono text-sm">
               INTEGRATIONS
             </p>
             <h1 className="mt-4 mb-10 text-3xl font-bold text-pretty md:text-4xl">
               Explore integrations for your next project
             </h1>
-            <p className="text-xl text-muted-foreground">
+            <p className="text-muted-foreground text-xl">
               Save time and get started quickly with pre-built integrations for
               your next project and make your life easier.
             </p>

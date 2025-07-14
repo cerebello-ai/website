@@ -1,38 +1,44 @@
-import { ChevronRight, SquareDashedMousePointer } from "lucide-react";
+import { ChevronRight, SquareDashedMousePointer } from 'lucide-react';
 
-import { Card } from "@/components/ui/card";
-import { Separator } from "@/components/ui/separator";
+import { Card } from '@/components/ui/card';
+import { Separator } from '@/components/ui/separator';
 
 const utilities = [
   {
-    title: "Integrations",
-    description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit.",
-    image: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-1.svg",
+    title: 'Integrations',
+    description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit.',
+    image:
+      'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-1.svg',
   },
   {
-    title: "Apps",
-    description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit.",
-    image: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-2.svg",
+    title: 'Apps',
+    description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit.',
+    image:
+      'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-2.svg',
   },
   {
-    title: "APIs",
-    description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit.",
-    image: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-3.svg",
+    title: 'APIs',
+    description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit.',
+    image:
+      'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-3.svg',
   },
   {
-    title: "Plugins",
-    description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit.",
-    image: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-4.svg",
+    title: 'Plugins',
+    description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit.',
+    image:
+      'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-4.svg',
   },
   {
-    title: "Extensions",
-    description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit.",
-    image: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-5.svg",
+    title: 'Extensions',
+    description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit.',
+    image:
+      'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-5.svg',
   },
   {
-    title: "Widgets",
-    description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit.",
-    image: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-6.svg",
+    title: 'Widgets',
+    description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit.',
+    image:
+      'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-6.svg',
   },
 ];
 
@@ -41,8 +47,8 @@ const Feature20 = () => {
     <section className="py-32">
       <div className="container max-w-7xl">
         <div className="flex items-center justify-between text-sm">
-          <div className="flex items-center gap-1 text-muted-foreground">
-            <SquareDashedMousePointer className="size-5 text-primary" />
+          <div className="text-muted-foreground flex items-center gap-1">
+            <SquareDashedMousePointer className="text-primary size-5" />
             <p>Utilities</p>
           </div>
           <a href="#" className="hover:text-primary hover:underline">

@@ -1,4 +1,6 @@
-"use client";
+'use client';
+import { useEffect, useRef, useState } from 'react';
+
 import {
   ArrowLeft,
   ArrowRight,
@@ -10,49 +12,48 @@ import {
   Rocket,
   Share2,
   Users,
-} from "lucide-react";
-import { useEffect, useRef, useState } from "react";
+} from 'lucide-react';
 
-import { AspectRatio } from "@/components/ui/aspect-ratio";
-import { Button } from "@/components/ui/button";
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+import { AspectRatio } from '@/components/ui/aspect-ratio';
+import { Button } from '@/components/ui/button';
+import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 
 const TAB_TRIGGERS = [
   {
-    name: "Team Sync",
+    name: 'Team Sync',
     icon: Users,
-    value: "team_sync",
-    color: "#2563EB",
+    value: 'team_sync',
+    color: '#2563EB',
   },
   {
-    name: "Discussions",
+    name: 'Discussions',
     icon: MessageSquare,
-    value: "discussions",
-    color: "#F97316",
+    value: 'discussions',
+    color: '#F97316',
   },
   {
-    name: "Knowledge Share",
+    name: 'Knowledge Share',
     icon: Share2,
-    value: "knowledge_share",
-    color: "#A855F7",
+    value: 'knowledge_share',
+    color: '#A855F7',
   },
   {
-    name: "Brainstorming",
+    name: 'Brainstorming',
     icon: Brain,
-    value: "brainstorming",
-    color: "#10B981",
+    value: 'brainstorming',
+    color: '#10B981',
   },
   {
-    name: "Task Tracking",
+    name: 'Task Tracking',
     icon: ClipboardList,
-    value: "task_tracking",
-    color: "#EF4444",
+    value: 'task_tracking',
+    color: '#EF4444',
   },
   {
-    name: "Launch Prep",
+    name: 'Launch Prep',
     icon: Rocket,
-    value: "launch_prep",
-    color: "#EAB308",
+    value: 'launch_prep',
+    color: '#EAB308',
   },
 ];
 
@@ -60,56 +61,56 @@ const TABS = [
   {
     value: TAB_TRIGGERS[0].value,
     image: {
-      src: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/photos/redd-f-5U_28ojjgms-unsplash.jpg",
-      alt: "",
+      src: 'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/photos/redd-f-5U_28ojjgms-unsplash.jpg',
+      alt: '',
     },
-    summary: "Stay aligned with regular team standups and updates.",
-    link: "#",
+    summary: 'Stay aligned with regular team standups and updates.',
+    link: '#',
   },
   {
     value: TAB_TRIGGERS[1].value,
     image: {
-      src: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/photos/annie-spratt-hCb3lIB8L8E-unsplash.jpg",
-      alt: "",
+      src: 'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/photos/annie-spratt-hCb3lIB8L8E-unsplash.jpg',
+      alt: '',
     },
-    summary: "Collaborate through chats, threads, and decision logs.",
-    link: "#",
+    summary: 'Collaborate through chats, threads, and decision logs.',
+    link: '#',
   },
   {
     value: TAB_TRIGGERS[2].value,
     image: {
-      src: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/photos/annie-spratt-MChSQHxGZrQ-unsplash.jpg",
-      alt: "",
+      src: 'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/photos/annie-spratt-MChSQHxGZrQ-unsplash.jpg',
+      alt: '',
     },
-    summary: "Exchange insights, tips, and documentation openly.",
-    link: "#",
+    summary: 'Exchange insights, tips, and documentation openly.',
+    link: '#',
   },
   {
     value: TAB_TRIGGERS[3].value,
     image: {
-      src: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/photos/dylan-gillis-KdeqA3aTnBY-unsplash.jpg",
-      alt: "",
+      src: 'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/photos/dylan-gillis-KdeqA3aTnBY-unsplash.jpg',
+      alt: '',
     },
-    summary: "Generate new ideas and solve problems together.",
-    link: "#",
+    summary: 'Generate new ideas and solve problems together.',
+    link: '#',
   },
   {
     value: TAB_TRIGGERS[4].value,
     image: {
-      src: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/photos/studio-republic-fotKKqWNMQ4-unsplash.jpg",
-      alt: "",
+      src: 'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/photos/studio-republic-fotKKqWNMQ4-unsplash.jpg',
+      alt: '',
     },
-    summary: "Monitor tasks, deadlines, and team progress efficiently.",
-    link: "#",
+    summary: 'Monitor tasks, deadlines, and team progress efficiently.',
+    link: '#',
   },
   {
     value: TAB_TRIGGERS[5].value,
     image: {
-      src: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/photos/annie-spratt-vGgn0xLdy8s-unsplash.jpg",
-      alt: "",
+      src: 'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/photos/annie-spratt-vGgn0xLdy8s-unsplash.jpg',
+      alt: '',
     },
-    summary: "Coordinate teams for smooth feature releases.",
-    link: "#",
+    summary: 'Coordinate teams for smooth feature releases.',
+    link: '#',
   },
 ];
 
@@ -123,9 +124,9 @@ const TabLabel = ({ value }: TabLabelProps) => {
     icon: LucideIcon;
     color: string;
   }>({
-    name: "",
+    name: '',
     icon: Circle,
-    color: "",
+    color: '',
   });
 
   useEffect(() => {
@@ -164,9 +165,9 @@ const Feature216 = () => {
 
   useEffect(() => {
     updateBottom();
-    window.addEventListener("resize", updateBottom);
+    window.addEventListener('resize', updateBottom);
     return () => {
-      window.removeEventListener("resize", updateBottom);
+      window.removeEventListener('resize', updateBottom);
     };
   }, []);
 
@@ -174,16 +175,16 @@ const Feature216 = () => {
     return TAB_TRIGGERS.findIndex((elem) => elem.value === tabValue);
   };
 
-  const handleTabNavigation = (direction: "next" | "prev") => {
+  const handleTabNavigation = (direction: 'next' | 'prev') => {
     triggerRefs.current.forEach((ref) => {
-      ref.classList.add("grayscale-[1]", "opacity-[0.2]");
+      ref.classList.add('grayscale-[1]', 'opacity-[0.2]');
     });
 
     const currentIndex = getCurrentTabIndex();
     if (currentIndex === -1) return;
 
     const nextIndex =
-      direction === "next" ? currentIndex + 1 : currentIndex - 1;
+      direction === 'next' ? currentIndex + 1 : currentIndex - 1;
 
     const isInBounds = nextIndex >= 0 && nextIndex < TAB_TRIGGERS.length;
 
@@ -199,7 +200,7 @@ const Feature216 = () => {
   return (
     <section className="py-32">
       <div className="px-5 sm:px-6 2xl:px-16">
-        <div className="w-full rounded-2xl bg-muted pt-10 pb-20 sm:pt-12 sm:pb-24">
+        <div className="bg-muted w-full rounded-2xl pt-10 pb-20 sm:pt-12 sm:pb-24">
           <div className="container">
             <Tabs
               value={tabValue}
@@ -238,12 +239,12 @@ const Feature216 = () => {
                   <TabsContent
                     key={`tab-content-${tab.value}`}
                     value={tab.value}
-                    className="animate-in duration-300 ease-in-out fade-in"
+                    className="animate-in fade-in duration-300 ease-in-out"
                   >
                     <TabLabel value={tab.value} />
                     <div className="flex w-full flex-col items-center xl:flex-row xl:justify-between">
                       <div className="flex-1">
-                        <div className="mx-auto min-h-12 max-w-[22.5rem] text-center text-base font-medium text-muted-2-foreground">
+                        <div className="text-muted-2-foreground mx-auto min-h-12 max-w-[22.5rem] text-center text-base font-medium">
                           {tab.summary}
                         </div>
                       </div>
@@ -272,7 +273,7 @@ const Feature216 = () => {
                   <Button
                     variant="secondary"
                     disabled={getCurrentTabIndex() === 0}
-                    onClick={() => handleTabNavigation("prev")}
+                    onClick={() => handleTabNavigation('prev')}
                     size="lg"
                     className="size-12 -translate-x-1/2 rounded-full border shadow-lg"
                   >
@@ -286,7 +287,7 @@ const Feature216 = () => {
                   <Button
                     variant="secondary"
                     disabled={getCurrentTabIndex() === TAB_TRIGGERS.length - 1}
-                    onClick={() => handleTabNavigation("next")}
+                    onClick={() => handleTabNavigation('next')}
                     size="lg"
                     className="size-12 translate-x-1/2 rounded-full border shadow-lg"
                   >

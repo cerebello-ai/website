@@ -1,11 +1,11 @@
-import { ArrowRight } from "lucide-react";
+import { ArrowRight } from 'lucide-react';
 
-import { Button } from "@/components/ui/button";
+import { Button } from '@/components/ui/button';
 import {
   Carousel,
   CarouselContent,
   CarouselItem,
-} from "@/components/ui/carousel";
+} from '@/components/ui/carousel';
 
 interface DataItem {
   id: string;
@@ -17,32 +17,36 @@ interface DataItem {
 
 const DATA: DataItem[] = [
   {
-    id: "item-1",
-    title: "Explore the Alps",
-    description: "Experience breathtaking views",
-    href: "/destinations/alps",
-    image: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-3.svg",
+    id: 'item-1',
+    title: 'Explore the Alps',
+    description: 'Experience breathtaking views',
+    href: '/destinations/alps',
+    image:
+      'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-3.svg',
   },
   {
-    id: "item-2",
-    title: "Tropical Paradise",
-    description: "Relax on pristine beaches",
-    href: "/destinations/tropical",
-    image: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-2.svg",
+    id: 'item-2',
+    title: 'Tropical Paradise',
+    description: 'Relax on pristine beaches',
+    href: '/destinations/tropical',
+    image:
+      'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-2.svg',
   },
   {
-    id: "item-3",
-    title: "Cultural Wonders",
-    description: "Immerse yourself in rich history",
-    href: "/destinations/cultural",
-    image: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-1.svg",
+    id: 'item-3',
+    title: 'Cultural Wonders',
+    description: 'Immerse yourself in rich history',
+    href: '/destinations/cultural',
+    image:
+      'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-1.svg',
   },
   {
-    id: "item-4",
-    title: "Beautiful People",
-    description: "Meet amazing people around the world",
-    href: "/destinations/cultural",
-    image: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-4.svg",
+    id: 'item-4',
+    title: 'Beautiful People',
+    description: 'Meet amazing people around the world',
+    href: '/destinations/cultural',
+    image:
+      'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-4.svg',
   },
 ];
 
@@ -64,7 +68,7 @@ const Gallery11 = () => {
       <div className="relative w-full overflow-hidden px-4 lg:px-10">
         <Carousel
           opts={{
-            align: "start",
+            align: 'start',
             dragFree: true,
           }}
         >
@@ -80,9 +84,9 @@ const Gallery11 = () => {
                       src={item.image}
                       alt={item.title}
                       className="h-full w-full object-cover object-center transition-all duration-500 ease-out group-hover:scale-105"
-                      style={{ aspectRatio: "3/4" }}
+                      style={{ aspectRatio: '3/4' }}
                     />
-                    <div className="absolute bottom-6 left-6 max-w-[90%] min-w-[75%] rounded-2xl bg-background px-6 py-4 transition-all duration-500 ease-out group-hover:bg-black group-hover:text-white">
+                    <div className="bg-background absolute bottom-6 left-6 max-w-[90%] min-w-[75%] rounded-2xl px-6 py-4 transition-all duration-500 ease-out group-hover:bg-black group-hover:text-white">
                       <div className="flex flex-col items-start">
                         <h5 className="text-sm font-semibold md:text-lg">
                           {item.title}

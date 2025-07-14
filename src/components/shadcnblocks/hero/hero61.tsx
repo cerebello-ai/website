@@ -1,23 +1,23 @@
-import { Boxes } from "lucide-react";
+import { Boxes } from 'lucide-react';
 
-import { AspectRatio } from "@/components/ui/aspect-ratio";
-import { Badge } from "@/components/ui/badge";
-import { Button } from "@/components/ui/button";
+import { AspectRatio } from '@/components/ui/aspect-ratio';
+import { Badge } from '@/components/ui/badge';
+import { Button } from '@/components/ui/button';
 
 const Hero61 = () => {
   return (
     <section className="py-20">
       <div className="container mx-auto flex flex-col gap-16">
         <div className="flex flex-col items-start gap-5 lg:mx-auto lg:w-[90%] lg:gap-9">
-          <Badge className="flex h-9 items-center gap-2 rounded-full bg-muted px-3 text-sm text-muted-foreground hover:bg-muted">
+          <Badge className="bg-muted text-muted-foreground hover:bg-muted flex h-9 items-center gap-2 rounded-full px-3 text-sm">
             <Boxes className="size-5 stroke-[1.5px]" />
             <span>Collaborative Hub</span>
           </Badge>
-          <h1 className="max-w-3xl text-4xl font-bold text-foreground lg:text-7xl">
+          <h1 className="text-foreground max-w-3xl text-4xl font-bold lg:text-7xl">
             Centralize your group's projects and tasks
           </h1>
           <div className="flex flex-col items-start justify-between gap-5 self-stretch lg:flex-row lg:items-center">
-            <p className="max-w-xl text-foreground lg:text-lg">
+            <p className="text-foreground max-w-xl lg:text-lg">
               Assembler enables quick development of client dashboards, contact
               management systems, in-house utilities, and various business
               solutions for your staff. Accomplish in moments what traditionally

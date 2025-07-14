@@ -5,19 +5,19 @@ import {
   Layers,
   WandSparkles,
   ZoomIn,
-} from "lucide-react";
+} from 'lucide-react';
 
 const reasons = [
   {
-    title: "Quality",
+    title: 'Quality',
     description:
-      "Our app prioritizes high-quality performance, ensuring a smooth and reliable experience for all users.",
+      'Our app prioritizes high-quality performance, ensuring a smooth and reliable experience for all users.',
     icon: <ZoomIn className="size-7 shrink-0 md:size-8" strokeWidth={1.5} />,
   },
   {
-    title: "Experience",
+    title: 'Experience',
     description:
-      "With years of expertise, we offer a polished platform designed for your success and satisfaction.",
+      'With years of expertise, we offer a polished platform designed for your success and satisfaction.',
     icon: (
       <BarChartHorizontal
         className="size-7 shrink-0 md:size-8"
@@ -26,31 +26,31 @@ const reasons = [
     ),
   },
   {
-    title: "Support",
+    title: 'Support',
     description:
-      "Our dedicated support team is always available to help you get the most out of the platform.",
+      'Our dedicated support team is always available to help you get the most out of the platform.',
     icon: (
       <CircleHelp className="size-7 shrink-0 md:size-8" strokeWidth={1.5} />
     ),
   },
   {
-    title: "Innovation",
+    title: 'Innovation',
     description:
-      "Constantly evolving with the latest technology, we stay ahead of the curve to keep you competitive.",
+      'Constantly evolving with the latest technology, we stay ahead of the curve to keep you competitive.',
     icon: (
       <WandSparkles className="size-7 shrink-0 md:size-8" strokeWidth={1.5} />
     ),
   },
   {
-    title: "Results",
+    title: 'Results',
     description:
-      "We focus on delivering measurable results, helping your team meet goals faster and more efficiently.",
+      'We focus on delivering measurable results, helping your team meet goals faster and more efficiently.',
     icon: <Layers className="size-7 shrink-0 md:size-8" strokeWidth={1.5} />,
   },
   {
-    title: "Efficiency",
+    title: 'Efficiency',
     description:
-      "Our platform is built for speed and efficiency, optimizing every task for peak performance.",
+      'Our platform is built for speed and efficiency, optimizing every task for peak performance.',
     icon: (
       <BatteryCharging
         className="size-7 shrink-0 md:size-8"
@@ -65,7 +65,7 @@ const Feature85 = () => {
     <section className="py-32">
       <div className="border-t">
         <div>
-          <div className="relative container overflow-hidden border-x border-muted-foreground/20 py-32">
+          <div className="border-muted-foreground/20 relative container overflow-hidden border-x py-32">
             <div className="isolate mx-auto flex max-w-3xl flex-col gap-20">
               <div className="bg absolute -top-1 -left-[1px] -z-10 h-full w-full bg-[linear-gradient(to_right,hsl(var(--muted-foreground))_1px,transparent_1px),linear-gradient(to_bottom,hsl(var(--muted-foreground))_1px,transparent_1px)] [mask-image:radial-gradient(ellipse_100%_120%_at_50%_50%,transparent_20%,#000_100%)] bg-[size:64px_64px] opacity-20 [clip-path:inset(0px_0px_50%_0px)]"></div>
               <h2 className="text-center text-3xl md:text-5xl">
@@ -82,13 +82,13 @@ const Feature85 = () => {
               </p>
             </div>
           </div>
-          <div className="border-t border-muted-foreground/20">
-            <div className="container border-x border-muted-foreground/20 px-0">
-              <div className="grid gap-px bg-muted-foreground/20 md:grid-cols-2 lg:grid-cols-3">
+          <div className="border-muted-foreground/20 border-t">
+            <div className="border-muted-foreground/20 container border-x px-0">
+              <div className="bg-muted-foreground/20 grid gap-px md:grid-cols-2 lg:grid-cols-3">
                 {reasons.map((reason, i) => (
                   <div
                     key={i}
-                    className="flex gap-4 bg-muted px-6 pt-8 pb-8 md:flex-col md:gap-0 md:px-8 md:pt-16"
+                    className="bg-muted flex gap-4 px-6 pt-8 pb-8 md:flex-col md:gap-0 md:px-8 md:pt-16"
                   >
                     {reason.icon}
                     <div>
@@ -105,8 +105,8 @@ const Feature85 = () => {
             </div>
           </div>
           <div>
-            <div className="border-x border-t border-muted-foreground/20">
-              <div className="container border-x border-muted-foreground/20 py-16"></div>
+            <div className="border-muted-foreground/20 border-x border-t">
+              <div className="border-muted-foreground/20 container border-x py-16"></div>
             </div>
           </div>
         </div>

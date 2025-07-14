@@ -1,6 +1,6 @@
-import { GitBranch, Lightbulb } from "lucide-react";
+import { GitBranch, Lightbulb } from 'lucide-react';
 
-import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert";
+import { Alert, AlertDescription, AlertTitle } from '@/components/ui/alert';
 import {
   Breadcrumb,
   BreadcrumbItem,
@@ -8,9 +8,9 @@ import {
   BreadcrumbList,
   BreadcrumbPage,
   BreadcrumbSeparator,
-} from "@/components/ui/breadcrumb";
-import { Button } from "@/components/ui/button";
-import { Separator } from "@/components/ui/separator";
+} from '@/components/ui/breadcrumb';
+import { Button } from '@/components/ui/button';
+import { Separator } from '@/components/ui/separator';
 
 const Casestudy1 = () => {
   return (
@@ -32,7 +32,7 @@ const Casestudy1 = () => {
             <div className="lg:max-w-[692px]">
               <div className="max lg:col-span-2">
                 <div>
-                  <h1 className="text-pretty text-3xl font-extrabold">
+                  <h1 className="text-3xl font-extrabold text-pretty">
                     Boosting System Reliability by 125% with AI Monitoring
                   </h1>
                   <p className="text-muted-foreground mt-2 text-lg">
@@ -130,7 +130,7 @@ const Casestudy1 = () => {
 
                   <h2>The King&apos;s Plan</h2>
                   <p>
-                    The king thought long and hard, and finally came up with{" "}
+                    The king thought long and hard, and finally came up with{' '}
                     <a href="#">a brilliant plan</a>: he would tax the jokes in
                     the kingdom.
                   </p>

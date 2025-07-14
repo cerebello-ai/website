@@ -1,21 +1,21 @@
-"use client";
-import { zodResolver } from "@hookform/resolvers/zod";
-import { useForm } from "react-hook-form";
-import { z } from "zod";
+'use client';
+import { zodResolver } from '@hookform/resolvers/zod';
+import { useForm } from 'react-hook-form';
+import { z } from 'zod';
 
-import { Button } from "@/components/ui/button";
+import { Button } from '@/components/ui/button';
 import {
   Form,
   FormControl,
   FormField,
   FormItem,
   FormMessage,
-} from "@/components/ui/form";
-import { Input } from "@/components/ui/input";
+} from '@/components/ui/form';
+import { Input } from '@/components/ui/input';
 
 const formSchema = z
   .object({
-    email: z.string().email({ message: "Invalid email address" }),
+    email: z.string().email({ message: 'Invalid email address' }),
   })
   .required({ email: true });
 
@@ -23,7 +23,7 @@ function HeroFrom() {
   const form = useForm<z.infer<typeof formSchema>>({
     resolver: zodResolver(formSchema),
     defaultValues: {
-      email: "",
+      email: '',
     },
   });
 
@@ -67,13 +67,13 @@ function HeroFrom() {
 
 const Hero133 = () => {
   const stats = [
-    { id: 1, name: "In annual returns", value: "238k" },
-    { id: 2, name: "Rated agency", value: "#1" },
-    { id: 3, name: "In annual returns", value: "238k" },
-    { id: 4, name: "Rated agency", value: "#1" },
+    { id: 1, name: 'In annual returns', value: '238k' },
+    { id: 2, name: 'Rated agency', value: '#1' },
+    { id: 3, name: 'In annual returns', value: '238k' },
+    { id: 4, name: 'Rated agency', value: '#1' },
   ];
   return (
-    <section className="relative isolate overflow-hidden bg-background">
+    <section className="bg-background relative isolate overflow-hidden">
       <svg
         aria-hidden="true"
         className="stroke-muted2 absolute inset-0 -z-10 h-full w-full [mask-image:radial-gradient(100%_100%_at_top_right,white,transparent)]"
@@ -99,11 +99,11 @@ const Hero133 = () => {
       </svg>
       <div className="mx-auto max-w-7xl px-6 pt-10 lg:flex lg:px-8 lg:pt-40 lg:pb-12">
         <div className="mx-auto max-w-2xl lg:mx-0 lg:max-w-xl lg:shrink-0 lg:pt-8">
-          <h1 className="mt-10 text-4xl font-semibold tracking-tight text-foreground sm:text-8xl">
-            Security for your <span className="bg-muted-2">digital</span>{" "}
+          <h1 className="text-foreground mt-10 text-4xl font-semibold tracking-tight sm:text-8xl">
+            Security for your <span className="bg-muted-2">digital</span>{' '}
             accounts.
           </h1>
-          <p className="mt-6 text-xl leading-8 text-foreground">
+          <p className="text-foreground mt-6 text-xl leading-8">
             Experience the next-generation of landing page solutions.
           </p>
           <HeroFrom />
@@ -123,10 +123,10 @@ const Hero133 = () => {
         <dl className="grid grid-cols-1 gap-x-8 gap-y-16 md:grid-cols-2 lg:grid-cols-4">
           {stats.map((stat) => (
             <div key={stat.id} className="flex max-w-xs flex-col gap-y-4">
-              <dt className="pl-4 text-base leading-7 text-muted-foreground">
+              <dt className="text-muted-foreground pl-4 text-base leading-7">
                 {stat.name}
               </dt>
-              <dd className="order-first border-l-2 border-dotted border-foreground pl-4 text-3xl font-semibold tracking-tight text-foreground sm:text-5xl">
+              <dd className="border-foreground text-foreground order-first border-l-2 border-dotted pl-4 text-3xl font-semibold tracking-tight sm:text-5xl">
                 {stat.value}
               </dd>
             </div>

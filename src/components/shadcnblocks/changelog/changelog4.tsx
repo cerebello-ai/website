@@ -1,10 +1,11 @@
-"use client";
+'use client';
 
-import { useEffect, useState } from "react";
-import { FaLinkedin } from "react-icons/fa";
-import { FaBluesky, FaXTwitter } from "react-icons/fa6";
+import { useEffect, useState } from 'react';
 
-import { Avatar, AvatarImage } from "@/components/ui/avatar";
+import { FaLinkedin } from 'react-icons/fa';
+import { FaBluesky, FaXTwitter } from 'react-icons/fa6';
+
+import { Avatar, AvatarImage } from '@/components/ui/avatar';
 
 const Changelog4 = () => {
   const [scrollProgress, setScrollProgress] = useState(8);
@@ -16,8 +17,8 @@ const Changelog4 = () => {
       const progress = (window.scrollY / totalHeight) * 92 + 8;
       setScrollProgress(Math.min(progress, 100));
     };
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
   return (
@@ -44,7 +45,7 @@ const Changelog4 = () => {
               <div className="absolute top-4 hidden h-full w-0.5 md:-left-12 md:block lg:-left-14">
                 <div className="bg-muted h-full w-full rounded-full">
                   <div
-                    className="bg-linear-to-b from-primary/20 via-primary/40 to-primary relative max-h-full w-full rounded-full transition-all duration-300"
+                    className="from-primary/20 via-primary/40 to-primary relative max-h-full w-full rounded-full bg-linear-to-b transition-all duration-300"
                     style={{
                       height: `${scrollProgress}%`,
                     }}
@@ -76,7 +77,7 @@ const Changelog4 = () => {
                     Big Tech Stack Updates and Performance Boost
                   </h2>
                   <p>
-                    We&apos;re upgrading our tech stack to leverage{" "}
+                    We&apos;re upgrading our tech stack to leverage{' '}
                     <b>cutting-edge web technologies</b>, providing better
                     performance and developer experience across our platform.
                   </p>

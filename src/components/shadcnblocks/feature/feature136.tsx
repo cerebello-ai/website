@@ -1,7 +1,7 @@
-import { Calendar, Target, Trophy, Users } from "lucide-react";
+import { Calendar, Target, Trophy, Users } from 'lucide-react';
 
-import { Badge } from "@/components/ui/badge";
-import { Separator } from "@/components/ui/separator";
+import { Badge } from '@/components/ui/badge';
+import { Separator } from '@/components/ui/separator';
 
 const Feature136 = () => {
   return (
@@ -19,7 +19,7 @@ const Feature136 = () => {
             <h2 className="text-center text-3xl font-semibold lg:text-left lg:text-4xl">
               Boost Productivity with Core Tools
             </h2>
-            <p className="text-center text-muted-foreground lg:text-left lg:text-lg">
+            <p className="text-muted-foreground text-center lg:text-left lg:text-lg">
               Our platform offers dynamic tools for project management, helping
               teams work smarter and achieve success with ease. We focus on
               delivering user-friendly solutions that enhance collaboration and
@@ -71,7 +71,7 @@ const Feature136 = () => {
                   Why Select Us?
                 </h3>
               </div>
-              <p className="text-center text-sm text-muted-foreground md:text-base lg:text-left">
+              <p className="text-muted-foreground text-center text-sm md:text-base lg:text-left">
                 We provide a full set of management tools, including ways to
                 collaborate easily.
               </p>
@@ -85,7 +85,7 @@ const Feature136 = () => {
                   Our Purpose
                 </h3>
               </div>
-              <p className="text-center text-sm text-muted-foreground md:text-base lg:text-left">
+              <p className="text-muted-foreground text-center text-sm md:text-base lg:text-left">
                 Our goal is to simplify workflows and help teams achieve more
                 with ease.
               </p>
@@ -99,7 +99,7 @@ const Feature136 = () => {
                   About Us
                 </h3>
               </div>
-              <p className="text-center text-sm text-muted-foreground md:text-base lg:text-left">
+              <p className="text-muted-foreground text-center text-sm md:text-base lg:text-left">
                 Our team is dedicated to offering high-quality solutions with
                 passion.
               </p>

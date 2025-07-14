@@ -1,15 +1,15 @@
-"use client";
+'use client';
 
-import { Cable } from "lucide-react";
+import { Cable } from 'lucide-react';
 
 const Integration4 = () => {
   return (
     <section className="py-32">
-      <div className="container relative z-10 flex flex-col items-center gap-5">
+      <div className="relative z-10 container flex flex-col items-center gap-5">
         <div className="relative my-4 flex flex-row gap-14 md:gap-20 lg:gap-28">
           {/* Connection Lines SVG */}
           <svg
-            className="absolute left-1/2 top-1/2 h-full w-full -translate-x-1/2 -translate-y-1/2"
+            className="absolute top-1/2 left-1/2 h-full w-full -translate-x-1/2 -translate-y-1/2"
             viewBox="0 0 200 50"
             preserveAspectRatio="xMidYMid meet"
           >
@@ -61,7 +61,10 @@ const Integration4 = () => {
           </div>
 
           <div className="bg-background relative mb-3 flex h-16 w-16 rounded-xl border p-4 shadow-md md:h-20 md:w-20">
-            <img src="https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/slack-icon.svg" alt="Sparkles" />
+            <img
+              src="https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/slack-icon.svg"
+              alt="Sparkles"
+            />
           </div>
         </div>
 
@@ -78,7 +81,7 @@ const Integration4 = () => {
           </p>
         </div>
 
-        <div className="aspect-3/1 relative mt-8 w-[90%] md:mt-10 md:w-[80%]">
+        <div className="relative mt-8 aspect-3/1 w-[90%] md:mt-10 md:w-[80%]">
           <img
             className="h-full w-full rounded-xl object-cover"
             src="https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-8-wide.svg"

@@ -1,6 +1,6 @@
-import { Globe } from "lucide-react";
+import { Globe } from 'lucide-react';
 
-import { Button } from "@/components/ui/button";
+import { Button } from '@/components/ui/button';
 
 const Hero51 = () => {
   return (
@@ -11,7 +11,7 @@ const Hero51 = () => {
           <h1 className="mb-3 text-4xl lg:text-7xl">
             Explore a World of Digital Assets
           </h1>
-          <p className="mb-5 text-sm text-muted-foreground md:text-base">
+          <p className="text-muted-foreground mb-5 text-sm md:text-base">
             Discover the future of asset management, tokenization, and liquidity
             with our comprehensive marketplace.
           </p>

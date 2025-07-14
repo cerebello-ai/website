@@ -1,10 +1,11 @@
-"use client";
+'use client';
 
-import { motion } from "framer-motion";
-import { ArrowRight } from "lucide-react";
-import React from "react";
+import React from 'react';
 
-import { Button } from "@/components/ui/button";
+import { motion } from 'framer-motion';
+import { ArrowRight } from 'lucide-react';
+
+import { Button } from '@/components/ui/button';
 
 interface GalleryImage {
   src: string;
@@ -16,30 +17,30 @@ interface GalleryImage {
 
 const galleryImages: GalleryImage[] = [
   {
-    src: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/lummi/landscape2.jpeg",
+    src: 'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/lummi/landscape2.jpeg',
     rotation: -19,
     translateX: -200,
   },
   {
-    src: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/lummi/landscape1.jpeg",
+    src: 'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/lummi/landscape1.jpeg',
     rotation: -19,
     translateY: 2,
     translateX: -104,
   },
   {
-    src: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/lummi/landscape3.jpeg",
+    src: 'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/lummi/landscape3.jpeg',
     rotation: 0,
     translateY: -32,
     zIndex: 10,
   },
   {
-    src: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/lummi/landscape5.jpeg",
+    src: 'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/lummi/landscape5.jpeg',
     rotation: 12,
     translateX: 104,
     translateY: 2,
   },
   {
-    src: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/lummi/landscape4.jpeg",
+    src: 'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/lummi/landscape4.jpeg',
     rotation: 12,
     translateX: 200,
   },
@@ -54,7 +55,7 @@ const Gallery20 = () => {
           animate={{ opacity: 1, translateY: 0 }}
           transition={{
             duration: 0.7,
-            type: "spring",
+            type: 'spring',
             bounce: 0.3,
           }}
           className="relative flex h-42 items-center justify-center"
@@ -65,13 +66,13 @@ const Gallery20 = () => {
                 rotate: image.rotation,
                 translateY: image.translateY || 0,
                 translateX: 0,
-                zIndex: image.zIndex || "auto",
+                zIndex: image.zIndex || 'auto',
               }}
               animate={{
                 rotate: image.rotation,
                 translateY: image.translateY || 0,
                 translateX: image.translateX || 0,
-                zIndex: image.zIndex || "auto",
+                zIndex: image.zIndex || 'auto',
               }}
               drag
               dragSnapToOrigin
@@ -84,7 +85,7 @@ const Gallery20 = () => {
               transition={{
                 duration: 0.7,
                 bounce: 0.3,
-                type: "spring",
+                type: 'spring',
                 delay: 0.5,
                 translateY: { duration: 0.2 },
                 rotate: { duration: 0.2 },

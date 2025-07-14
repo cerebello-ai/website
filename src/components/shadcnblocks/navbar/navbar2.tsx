@@ -1,31 +1,31 @@
-"use client";
-import * as NavigationMenuPrimitive from "@radix-ui/react-navigation-menu";
-import { Book, Menu, Sunset, Trees, Zap } from "lucide-react";
-import React from "react";
+'use client';
+import React from 'react';
 
-import { cn } from "@/lib/utils";
+import * as NavigationMenuPrimitive from '@radix-ui/react-navigation-menu';
+import { Book, Menu, Sunset, Trees, Zap } from 'lucide-react';
 
 import {
   Accordion,
   AccordionContent,
   AccordionItem,
   AccordionTrigger,
-} from "@/components/ui/accordion";
-import { Button } from "@/components/ui/button";
+} from '@/components/ui/accordion';
+import { Button } from '@/components/ui/button';
 import {
   NavigationMenuContent,
   NavigationMenuItem,
   NavigationMenuLink,
   NavigationMenuList,
   NavigationMenuTrigger,
-} from "@/components/ui/navigation-menu";
+} from '@/components/ui/navigation-menu';
 import {
   Sheet,
   SheetContent,
   SheetHeader,
   SheetTitle,
   SheetTrigger,
-} from "@/components/ui/sheet";
+} from '@/components/ui/sheet';
+import { cn } from '@/lib/utils';
 
 interface MenuItem {
   title: string;
@@ -57,86 +57,86 @@ interface Navbar2Props {
 
 const Navbar2 = ({
   logo = {
-    url: "https://www.shadcnblocks.com",
-    src: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/shadcnblockscom-icon.svg",
-    alt: "logo",
-    title: "Shadcnblocks.com",
+    url: 'https://www.shadcnblocks.com',
+    src: 'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/shadcnblockscom-icon.svg',
+    alt: 'logo',
+    title: 'Shadcnblocks.com',
   },
   menu = [
-    { title: "Home", url: "#" },
+    { title: 'Home', url: '#' },
     {
-      title: "Products",
-      url: "#",
+      title: 'Products',
+      url: '#',
       items: [
         {
-          title: "Blog",
-          description: "The latest industry news, updates, and info",
+          title: 'Blog',
+          description: 'The latest industry news, updates, and info',
           icon: <Book className="size-5 shrink-0" />,
-          url: "#",
+          url: '#',
         },
         {
-          title: "Company",
-          description: "Our mission is to innovate and empower the world",
+          title: 'Company',
+          description: 'Our mission is to innovate and empower the world',
           icon: <Trees className="size-5 shrink-0" />,
-          url: "#",
+          url: '#',
         },
         {
-          title: "Careers",
-          description: "Browse job listing and discover our workspace",
+          title: 'Careers',
+          description: 'Browse job listing and discover our workspace',
           icon: <Sunset className="size-5 shrink-0" />,
-          url: "#",
+          url: '#',
         },
         {
-          title: "Support",
+          title: 'Support',
           description:
-            "Get in touch with our support team or visit our community forums",
+            'Get in touch with our support team or visit our community forums',
           icon: <Zap className="size-5 shrink-0" />,
-          url: "#",
+          url: '#',
         },
       ],
     },
     {
-      title: "Resources",
-      url: "#",
+      title: 'Resources',
+      url: '#',
       items: [
         {
-          title: "Help Center",
-          description: "Get all the answers you need right here",
+          title: 'Help Center',
+          description: 'Get all the answers you need right here',
           icon: <Zap className="size-5 shrink-0" />,
-          url: "#",
+          url: '#',
         },
         {
-          title: "Contact Us",
-          description: "We are here to help you with any questions you have",
+          title: 'Contact Us',
+          description: 'We are here to help you with any questions you have',
           icon: <Sunset className="size-5 shrink-0" />,
-          url: "#",
+          url: '#',
         },
         {
-          title: "Status",
-          description: "Check the current status of our services and APIs",
+          title: 'Status',
+          description: 'Check the current status of our services and APIs',
           icon: <Trees className="size-5 shrink-0" />,
-          url: "#",
+          url: '#',
         },
         {
-          title: "Terms of Service",
-          description: "Our terms and conditions for using our services",
+          title: 'Terms of Service',
+          description: 'Our terms and conditions for using our services',
           icon: <Book className="size-5 shrink-0" />,
-          url: "#",
+          url: '#',
         },
       ],
     },
     {
-      title: "Pricing",
-      url: "#",
+      title: 'Pricing',
+      url: '#',
     },
     {
-      title: "Blog",
-      url: "#",
+      title: 'Blog',
+      url: '#',
     },
   ],
   auth = {
-    login: { title: "Login", url: "#" },
-    signup: { title: "Sign up", url: "#" },
+    login: { title: 'Login', url: '#' },
+    signup: { title: 'Sign up', url: '#' },
   },
 }: Navbar2Props) => {
   return (
@@ -222,7 +222,7 @@ const renderMenuItem = (item: MenuItem) => {
     return (
       <NavigationMenuItem key={item.title}>
         <NavigationMenuTrigger>{item.title}</NavigationMenuTrigger>
-        <NavigationMenuContent className="origin-top-center relative top-11 w-full overflow-hidden rounded-md border shadow data-[motion=from-end]:slide-in-from-right-52 data-[motion=from-start]:slide-in-from-left-52 data-[motion=to-end]:slide-out-to-right-52 data-[motion=to-start]:slide-out-to-left-52 data-[motion^=from-]:animate-in data-[motion^=from-]:fade-in data-[motion^=to-]:animate-out data-[motion^=to-]:fade-out data-[state=closed]:animate-out data-[state=closed]:zoom-out-95 data-[state=open]:animate-in data-[state=open]:zoom-in-90 md:absolute md:left-1/2 md:w-80 md:-translate-x-1/2">
+        <NavigationMenuContent className="origin-top-center data-[motion=from-end]:slide-in-from-right-52 data-[motion=from-start]:slide-in-from-left-52 data-[motion=to-end]:slide-out-to-right-52 data-[motion=to-start]:slide-out-to-left-52 data-[motion^=from-]:animate-in data-[motion^=from-]:fade-in data-[motion^=to-]:animate-out data-[motion^=to-]:fade-out data-[state=closed]:animate-out data-[state=closed]:zoom-out-95 data-[state=open]:animate-in data-[state=open]:zoom-in-90 relative top-11 w-full overflow-hidden rounded-md border shadow md:absolute md:left-1/2 md:w-80 md:-translate-x-1/2">
           {item.items.map((subItem) => (
             <NavigationMenuLink asChild key={subItem.title} className="w-full">
               <SubMenuLink item={subItem} />
@@ -237,7 +237,7 @@ const renderMenuItem = (item: MenuItem) => {
     <NavigationMenuItem key={item.title}>
       <NavigationMenuLink
         href={item.url}
-        className="group inline-flex h-10 w-max items-center justify-center rounded-md bg-background px-4 py-2 text-sm font-medium transition-colors hover:bg-muted hover:text-accent-foreground"
+        className="group bg-background hover:bg-muted hover:text-accent-foreground inline-flex h-10 w-max items-center justify-center rounded-md px-4 py-2 text-sm font-medium transition-colors"
       >
         {item.title}
       </NavigationMenuLink>
@@ -271,14 +271,14 @@ const renderMobileMenuItem = (item: MenuItem) => {
 const SubMenuLink = ({ item }: { item: MenuItem }) => {
   return (
     <a
-      className="flex flex-row gap-4 rounded-md p-3 leading-none no-underline transition-colors outline-none select-none hover:bg-muted hover:text-accent-foreground"
+      className="hover:bg-muted hover:text-accent-foreground flex flex-row gap-4 rounded-md p-3 leading-none no-underline transition-colors outline-none select-none"
       href={item.url}
     >
       <div className="text-muted-foreground">{item.icon}</div>
       <div>
         <div className="text-sm font-semibold">{item.title}</div>
         {item.description && (
-          <p className="text-sm leading-snug text-muted-foreground">
+          <p className="text-muted-foreground text-sm leading-snug">
             {item.description}
           </p>
         )}
@@ -300,7 +300,7 @@ const NavigationMenuWithoutViewport = ({
       data-slot="navigation-menu"
       data-viewport={viewport}
       className={cn(
-        "group/navigation-menu relative flex max-w-max flex-1 items-center justify-center",
+        'group/navigation-menu relative flex max-w-max flex-1 items-center justify-center',
         className,
       )}
       {...props}

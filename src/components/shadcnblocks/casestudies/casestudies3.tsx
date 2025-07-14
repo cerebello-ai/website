@@ -1,5 +1,6 @@
-import { MoveRight } from "lucide-react";
-import React from "react";
+import React from 'react';
+
+import { MoveRight } from 'lucide-react';
 
 interface CasestudyItem {
   logo: string;
@@ -17,33 +18,34 @@ interface Casestudies3Props {
 }
 
 const defaultFeaturedCasestudy: CasestudyItem = {
-  logo: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/block-1.svg",
-  company: "Acme",
-  tags: "ARTIFICIAL INTELLIGENCE / ENTERPRISE SOLUTIONS",
-  title: "Workflow Automation for the Digital Age.",
-  subtitle: "How to automate your workflow with AI.",
-  image: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-1.svg",
-  link: "https://shadcnblocks.com",
+  logo: 'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/block-1.svg',
+  company: 'Acme',
+  tags: 'ARTIFICIAL INTELLIGENCE / ENTERPRISE SOLUTIONS',
+  title: 'Workflow Automation for the Digital Age.',
+  subtitle: 'How to automate your workflow with AI.',
+  image:
+    'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-1.svg',
+  link: 'https://shadcnblocks.com',
 };
 
 const defaultCasestudies: CasestudyItem[] = [
   {
-    logo: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/block-2.svg",
-    company: "Super",
-    tags: "DATA MIGRATION / SOFTWARE SOLUTIONS",
-    title: "Enhance data migration with AI.",
-    subtitle: "A data migration platform toward a data-driven future.",
-    image: "",
-    link: "https://shadcnblocks.com",
+    logo: 'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/block-2.svg',
+    company: 'Super',
+    tags: 'DATA MIGRATION / SOFTWARE SOLUTIONS',
+    title: 'Enhance data migration with AI.',
+    subtitle: 'A data migration platform toward a data-driven future.',
+    image: '',
+    link: 'https://shadcnblocks.com',
   },
   {
-    logo: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/block-3.svg",
-    company: "Advent",
-    tags: "ARTIFICIAL INTELLIGENCE / DATA SOLUTIONS",
-    title: "Strategic AI for a future-proof business.",
-    subtitle: "Mastering AI for more efficient operations.",
-    image: "",
-    link: "https://shadcnblocks.com",
+    logo: 'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/block-3.svg',
+    company: 'Advent',
+    tags: 'ARTIFICIAL INTELLIGENCE / DATA SOLUTIONS',
+    title: 'Strategic AI for a future-proof business.',
+    subtitle: 'Mastering AI for more efficient operations.',
+    image: '',
+    link: 'https://shadcnblocks.com',
   },
 ];
 
@@ -56,7 +58,7 @@ const Casestudies3 = ({
       <div className="container">
         <div className="border-border border">
           <a
-            href={featuredCasestudy.link || "#"}
+            href={featuredCasestudy.link || '#'}
             className="hover:bg-muted/40 group grid gap-4 overflow-hidden px-6 transition-colors duration-500 ease-out lg:grid-cols-2 xl:px-28"
           >
             <div className="flex flex-col justify-between gap-4 pt-8 md:pt-16 lg:pb-16">
@@ -68,10 +70,10 @@ const Casestudies3 = ({
                 <span className="text-muted-foreground text-xs sm:text-sm">
                   {featuredCasestudy.tags}
                 </span>
-                <h2 className="mb-5 mt-4 text-balance text-2xl font-semibold sm:text-3xl sm:leading-10">
+                <h2 className="mt-4 mb-5 text-2xl font-semibold text-balance sm:text-3xl sm:leading-10">
                   {featuredCasestudy.title}
                   <span className="text-primary/50 group-hover:text-primary/70 font-medium transition-colors duration-500 ease-out">
-                    {" "}
+                    {' '}
                     {featuredCasestudy.subtitle}
                   </span>
                 </h2>
@@ -94,16 +96,16 @@ const Casestudies3 = ({
             </div>
           </a>
           <div className="border-border flex border-t">
-            <div className="hidden w-28 shrink-0 bg-[radial-gradient(var(--muted-foreground)_1px,transparent_1px)] opacity-15 [background-size:10px_10px] xl:block"></div>
+            <div className="hidden w-28 shrink-0 bg-[radial-gradient(var(--muted-foreground)_1px,transparent_1px)] [background-size:10px_10px] opacity-15 xl:block"></div>
             <div className="grid lg:grid-cols-2">
               {casestudies.map((item, idx) => (
                 <a
                   key={item.company}
-                  href={item.link || "#"}
+                  href={item.link || '#'}
                   className={`border-border bg-background hover:bg-muted/40 group flex flex-col justify-between gap-12 px-6 py-8 transition-colors duration-500 ease-out md:py-16 lg:pb-16 xl:gap-16 ${
                     idx === 0
-                      ? "xl:border-l xl:pl-8"
-                      : "border-t lg:border-l lg:border-t-0 xl:border-r xl:pl-8"
+                      ? 'xl:border-l xl:pl-8'
+                      : 'border-t lg:border-t-0 lg:border-l xl:border-r xl:pl-8'
                   }`}
                 >
                   <div className="flex items-center gap-2 text-2xl font-medium">
@@ -114,10 +116,10 @@ const Casestudies3 = ({
                     <span className="text-muted-foreground text-xs sm:text-sm">
                       {item.tags}
                     </span>
-                    <h2 className="mb-5 mt-4 text-balance text-2xl font-semibold sm:text-3xl sm:leading-10">
+                    <h2 className="mt-4 mb-5 text-2xl font-semibold text-balance sm:text-3xl sm:leading-10">
                       {item.title}
                       <span className="text-primary/50 group-hover:text-primary/70 font-medium transition-colors duration-500 ease-out">
-                        {" "}
+                        {' '}
                         {item.subtitle}
                       </span>
                     </h2>
@@ -129,7 +131,7 @@ const Casestudies3 = ({
                 </a>
               ))}
             </div>
-            <div className="hidden w-28 shrink-0 bg-[radial-gradient(var(--muted-foreground)_1px,transparent_1px)] opacity-15 [background-size:10px_10px] xl:block"></div>
+            <div className="hidden w-28 shrink-0 bg-[radial-gradient(var(--muted-foreground)_1px,transparent_1px)] [background-size:10px_10px] opacity-15 xl:block"></div>
           </div>
         </div>
       </div>

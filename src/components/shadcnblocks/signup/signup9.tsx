@@ -1,48 +1,54 @@
-"use client";
+'use client';
 
-import AutoScroll from "embla-carousel-auto-scroll";
-import React from "react";
+import React from 'react';
 
-import { Button } from "@/components/ui/button";
+import AutoScroll from 'embla-carousel-auto-scroll';
+
+import { Button } from '@/components/ui/button';
 import {
   Carousel,
   CarouselContent,
   CarouselItem,
-} from "@/components/ui/carousel";
-import { Input } from "@/components/ui/input";
-import { Separator } from "@/components/ui/separator";
+} from '@/components/ui/carousel';
+import { Input } from '@/components/ui/input';
+import { Separator } from '@/components/ui/separator';
 
 const Signup9 = () => {
   const logos = [
     {
-      id: "logo-1",
-      description: "Logo 1",
-      image: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/astro-wordmark.svg",
-      className: "h-6 w-auto",
+      id: 'logo-1',
+      description: 'Logo 1',
+      image:
+        'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/astro-wordmark.svg',
+      className: 'h-6 w-auto',
     },
     {
-      id: "logo-2",
-      description: "Logo 2",
-      image: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/company/fictional-company-logo-1.svg",
-      className: "h-6 w-auto",
+      id: 'logo-2',
+      description: 'Logo 2',
+      image:
+        'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/company/fictional-company-logo-1.svg',
+      className: 'h-6 w-auto',
     },
     {
-      id: "logo-3",
-      description: "Logo 3",
-      image: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/company/fictional-company-logo-2.svg",
-      className: "h-6 w-auto",
+      id: 'logo-3',
+      description: 'Logo 3',
+      image:
+        'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/company/fictional-company-logo-2.svg',
+      className: 'h-6 w-auto',
     },
     {
-      id: "logo-4",
-      description: "Logo 4",
-      image: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/company/fictional-company-logo-3.svg",
-      className: "h-6 w-auto",
+      id: 'logo-4',
+      description: 'Logo 4',
+      image:
+        'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/company/fictional-company-logo-3.svg',
+      className: 'h-6 w-auto',
     },
     {
-      id: "logo-5",
-      description: "Logo 5",
-      image: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/company/fictional-company-logo-4.svg",
-      className: "h-6 w-auto",
+      id: 'logo-5',
+      description: 'Logo 5',
+      image:
+        'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/company/fictional-company-logo-4.svg',
+      className: 'h-6 w-auto',
     },
   ];
 
@@ -92,7 +98,7 @@ const Signup9 = () => {
           </Button>
 
           <p className="text-foreground/40 mb-8 w-full text-center text-sm tracking-tight">
-            Already have an account?{" "}
+            Already have an account?{' '}
             <span className="cursor-pointer underline">Log in</span>
           </p>
 
@@ -120,8 +126,8 @@ const Signup9 = () => {
                 ))}
               </CarouselContent>
             </Carousel>
-            <div className="bg-linear-to-r from-background absolute inset-y-0 left-0 w-12 to-transparent"></div>
-            <div className="bg-linear-to-l from-background absolute inset-y-0 right-0 w-12 to-transparent"></div>
+            <div className="from-background absolute inset-y-0 left-0 w-12 bg-linear-to-r to-transparent"></div>
+            <div className="from-background absolute inset-y-0 right-0 w-12 bg-linear-to-l to-transparent"></div>
           </div>
         </div>
       </div>

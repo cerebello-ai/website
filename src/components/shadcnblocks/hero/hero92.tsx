@@ -1,11 +1,11 @@
-import { AspectRatio } from "@/components/ui/aspect-ratio";
+import { AspectRatio } from '@/components/ui/aspect-ratio';
 
 const Hero92 = () => {
   return (
-    <section className="flex flex-col items-center border-b bg-background px-9 pt-20 text-center md:px-12">
-      <h1 className="max-w-5xl text-4xl leading-tight tracking-tighter text-foreground md:text-[80px]">
-        <span className="font-semibold text-muted-foreground">
-          Asset Compass{" "}
+    <section className="bg-background flex flex-col items-center border-b px-9 pt-20 text-center md:px-12">
+      <h1 className="text-foreground max-w-5xl text-4xl leading-tight tracking-tighter md:text-[80px]">
+        <span className="text-muted-foreground font-semibold">
+          Asset Compass{' '}
         </span>
         <span className="font-semibold">intelligent investment oversight</span>
       </h1>

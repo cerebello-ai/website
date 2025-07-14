@@ -3,9 +3,9 @@ import {
   MessagesSquare,
   ScanFace,
   Users,
-} from "lucide-react";
+} from 'lucide-react';
 
-import { Button } from "@/components/ui/button";
+import { Button } from '@/components/ui/button';
 
 const Contact3 = () => {
   return (
@@ -19,7 +19,7 @@ const Contact3 = () => {
               Start your free trial
             </Button>
           </div>
-          <p className="mt-4 text-sm text-muted-foreground">
+          <p className="text-muted-foreground mt-4 text-sm">
             No payment details needed
           </p>
         </div>
@@ -27,7 +27,7 @@ const Contact3 = () => {
           <div>
             <MessagesSquare className="mb-5 h-8 w-auto" />
             <p className="mb-2 font-bold md:text-xl">Support</p>
-            <p className="mb-6 text-sm text-muted-foreground md:text-base">
+            <p className="text-muted-foreground mb-6 text-sm md:text-base">
               Need help or have questions? Our support team is here for you
               24/7. Feel free to reach out via email or live chat.
             </p>
@@ -38,7 +38,7 @@ const Contact3 = () => {
           <div>
             <Users className="mb-5 h-8 w-auto" />
             <p className="mb-2 font-bold md:text-xl">Sales</p>
-            <p className="mb-6 text-sm text-muted-foreground md:text-base">
+            <p className="text-muted-foreground mb-6 text-sm md:text-base">
               Have questions about our services or need a demo? Our sales team
               can assist you with personalized solutions.
             </p>
@@ -49,7 +49,7 @@ const Contact3 = () => {
           <div>
             <MessageCircleDashed className="mb-5 h-8 w-auto" />
             <p className="mb-2 font-bold md:text-xl">Inquiries</p>
-            <p className="mb-6 text-sm text-muted-foreground md:text-base">
+            <p className="text-muted-foreground mb-6 text-sm md:text-base">
               For any general inquiries, partnership requests, or media
               questions, fill out the form and we’ll get back to you shortly.
             </p>
@@ -60,7 +60,7 @@ const Contact3 = () => {
           <div>
             <ScanFace className="mb-5 h-8 w-auto" />
             <p className="mb-2 font-bold md:text-xl">Verification</p>
-            <p className="mb-6 text-sm text-muted-foreground md:text-base">
+            <p className="text-muted-foreground mb-6 text-sm md:text-base">
               To verify employment or confirm income, please reach out to our
               third-party verification provider.
             </p>
@@ -79,7 +79,7 @@ const Contact3 = () => {
                 <div className="mr-2 h-5 w-7 rounded-sm bg-blue-500"></div>
                 <p className="font-bold sm:text-lg">New York, USA</p>
               </div>
-              <p className="text-sm text-muted-foreground sm:text-base">
+              <p className="text-muted-foreground text-sm sm:text-base">
                 123 5th Ave, New York, NY 10001
               </p>
             </div>
@@ -88,7 +88,7 @@ const Contact3 = () => {
                 <div className="mr-2 h-5 w-7 rounded-sm bg-red-500"></div>
                 <p className="font-bold sm:text-lg">London, UK</p>
               </div>
-              <p className="text-sm text-muted-foreground sm:text-base">
+              <p className="text-muted-foreground text-sm sm:text-base">
                 50 Oxford St, London W1D 1BS, United Kingdom
               </p>
             </div>
@@ -97,7 +97,7 @@ const Contact3 = () => {
                 <div className="mr-2 h-5 w-7 rounded-sm bg-green-500"></div>
                 <p className="font-bold sm:text-lg">Tokyo, Japan</p>
               </div>
-              <p className="text-sm text-muted-foreground sm:text-base">
+              <p className="text-muted-foreground text-sm sm:text-base">
                 2-7-5 Kyobashi, Chuo-ku, Tokyo 104-0031, Japan
               </p>
             </div>
@@ -106,7 +106,7 @@ const Contact3 = () => {
                 <div className="mr-2 h-5 w-7 rounded-sm bg-yellow-500"></div>
                 <p className="font-bold sm:text-lg">Sydney, Australia</p>
               </div>
-              <p className="text-sm text-muted-foreground sm:text-base">
+              <p className="text-muted-foreground text-sm sm:text-base">
                 100 George St, Sydney NSW 2000, Australia
               </p>
             </div>
@@ -117,7 +117,7 @@ const Contact3 = () => {
                   Berlin, Germany
                 </p>
               </div>
-              <p className="text-sm text-muted-foreground sm:text-base">
+              <p className="text-muted-foreground text-sm sm:text-base">
                 Unter den Linden 52, 10117 Berlin, Germany
               </p>
             </div>

@@ -1,4 +1,4 @@
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 
 const Feature205 = () => {
   return (
@@ -6,15 +6,15 @@ const Feature205 = () => {
       <div className="container">
         <Tabs
           defaultValue="efficiency"
-          className="grid grid-cols-1 gap-8 rounded-4xl border border-border p-4 lg:grid-cols-2 lg:p-8 xl:gap-20"
+          className="border-border grid grid-cols-1 gap-8 rounded-4xl border p-4 lg:grid-cols-2 lg:p-8 xl:gap-20"
         >
           <div className="flex flex-col-reverse justify-between gap-8 lg:flex-col">
             <div>
               <TabsContent
                 value="efficiency"
-                className="flex animate-in flex-col gap-6 duration-300 fade-in"
+                className="animate-in fade-in flex flex-col gap-6 duration-300"
               >
-                <span className="text-xs text-muted-foreground uppercase">
+                <span className="text-muted-foreground text-xs uppercase">
                   Efficiency
                 </span>
                 <div className="flex flex-col gap-4">
@@ -29,9 +29,9 @@ const Feature205 = () => {
               </TabsContent>
               <TabsContent
                 value="collaboration"
-                className="flex animate-in flex-col gap-6 duration-300 fade-in"
+                className="animate-in fade-in flex flex-col gap-6 duration-300"
               >
-                <span className="text-xs text-muted-foreground uppercase">
+                <span className="text-muted-foreground text-xs uppercase">
                   Collaboration
                 </span>
                 <div className="flex flex-col gap-4">
@@ -46,9 +46,9 @@ const Feature205 = () => {
               </TabsContent>
               <TabsContent
                 value="insights"
-                className="flex animate-in flex-col gap-6 duration-300 fade-in"
+                className="animate-in fade-in flex flex-col gap-6 duration-300"
               >
-                <span className="text-xs text-muted-foreground uppercase">
+                <span className="text-muted-foreground text-xs uppercase">
                   Insights
                 </span>
                 <div className="flex flex-col gap-4">
@@ -86,7 +86,7 @@ const Feature205 = () => {
           <div>
             <TabsContent
               value="efficiency"
-              className="animate-in duration-300 fade-in"
+              className="animate-in fade-in duration-300"
             >
               <div className="relative">
                 <img
@@ -94,8 +94,8 @@ const Feature205 = () => {
                   alt="placeholder"
                   className="h-[440px] w-full rounded-3xl object-cover lg:h-[540px]"
                 />
-                <div className="absolute inset-0 rounded-3xl bg-gradient-to-tr from-primary/80 via-transparent to-transparent" />
-                <div className="absolute bottom-0 left-0 flex flex-col justify-center gap-8 p-6 text-background">
+                <div className="from-primary/80 absolute inset-0 rounded-3xl bg-gradient-to-tr via-transparent to-transparent" />
+                <div className="text-background absolute bottom-0 left-0 flex flex-col justify-center gap-8 p-6">
                   <div className="flex flex-col gap-1.5">
                     <p className="text-4xl font-medium lg:text-5xl">40%</p>
                     <p className="font-medium">less time on admin tasks</p>
@@ -109,7 +109,7 @@ const Feature205 = () => {
             </TabsContent>
             <TabsContent
               value="collaboration"
-              className="animate-in duration-300 fade-in"
+              className="animate-in fade-in duration-300"
             >
               <div className="relative">
                 <img
@@ -117,8 +117,8 @@ const Feature205 = () => {
                   alt="placeholder"
                   className="h-[440px] w-full rounded-3xl object-cover lg:h-[540px]"
                 />
-                <div className="absolute inset-0 rounded-3xl bg-gradient-to-tr from-primary/80 via-transparent to-transparent" />
-                <div className="absolute bottom-0 left-0 flex flex-col justify-center gap-8 p-6 text-background">
+                <div className="from-primary/80 absolute inset-0 rounded-3xl bg-gradient-to-tr via-transparent to-transparent" />
+                <div className="text-background absolute bottom-0 left-0 flex flex-col justify-center gap-8 p-6">
                   <div className="flex flex-col gap-1.5">
                     <p className="text-4xl font-medium lg:text-5xl">3x</p>
                     <p className="font-medium">faster project completion</p>
@@ -132,7 +132,7 @@ const Feature205 = () => {
             </TabsContent>
             <TabsContent
               value="insights"
-              className="animate-in duration-300 fade-in"
+              className="animate-in fade-in duration-300"
             >
               <div className="relative">
                 <img
@@ -140,8 +140,8 @@ const Feature205 = () => {
                   alt="placeholder"
                   className="h-[440px] w-full rounded-3xl object-cover lg:h-[540px]"
                 />
-                <div className="absolute inset-0 rounded-3xl bg-gradient-to-tr from-primary/80 via-transparent to-transparent" />
-                <div className="absolute bottom-0 left-0 flex flex-col justify-center gap-8 p-6 text-background">
+                <div className="from-primary/80 absolute inset-0 rounded-3xl bg-gradient-to-tr via-transparent to-transparent" />
+                <div className="text-background absolute bottom-0 left-0 flex flex-col justify-center gap-8 p-6">
                   <div className="flex flex-col gap-1.5">
                     <p className="text-4xl font-medium lg:text-5xl">65%</p>
                     <p className="font-medium">better resource allocation</p>

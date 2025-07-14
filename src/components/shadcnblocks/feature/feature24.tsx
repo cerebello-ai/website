@@ -1,14 +1,14 @@
-import { ChevronRight, LayoutTemplate } from "lucide-react";
+import { ChevronRight, LayoutTemplate } from 'lucide-react';
 
-import { Separator } from "@/components/ui/separator";
+import { Separator } from '@/components/ui/separator';
 
 const Feature24 = () => {
   return (
     <section className="mb-32 border-b pt-32">
       <div className="container max-w-7xl">
         <div className="flex items-center justify-between text-sm">
-          <div className="flex items-center gap-1 text-muted-foreground">
-            <LayoutTemplate className="size-5 text-primary" />
+          <div className="text-muted-foreground flex items-center gap-1">
+            <LayoutTemplate className="text-primary size-5" />
             <p>UI Components</p>
           </div>
           <a href="#" className="hover:text-primary hover:underline">
@@ -21,7 +21,7 @@ const Feature24 = () => {
           <h2 className="text-3xl font-medium md:w-1/2">
             Use our UI components to build your website faster
           </h2>
-          <p className="leading-7 text-muted-foreground md:w-1/2">
+          <p className="text-muted-foreground leading-7 md:w-1/2">
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestiae
             praesent, ad ullam quis cupiditate atque maxime alias eaque
             repellendus perferendis, nemo repudiandae.

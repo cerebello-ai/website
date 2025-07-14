@@ -1,4 +1,4 @@
-import { Button } from "@/components/ui/button";
+import { Button } from '@/components/ui/button';
 
 const About4 = () => {
   return (
@@ -6,7 +6,7 @@ const About4 = () => {
       <div className="container">
         <div className="mx-auto flex max-w-3xl flex-col gap-8 pb-28 text-center">
           <h1 className="text-4xl font-semibold md:text-7xl">About Us</h1>
-          <p className="text-xl font-medium text-muted-foreground">
+          <p className="text-muted-foreground text-xl font-medium">
             Meet our team, discover our values, and learn how we balance work,
             life, and everything in between.
           </p>
@@ -46,7 +46,7 @@ const About4 = () => {
         <div className="mx-auto grid max-w-5xl gap-28 py-28 md:grid-cols-2">
           <div>
             <h2 className="mb-5 text-4xl font-semibold">Our Vision</h2>
-            <p className="text-xl leading-8 font-medium text-muted-foreground">
+            <p className="text-muted-foreground text-xl leading-8 font-medium">
               For years, the process of building custom software has remained
               challenging. Today, visual builders exist, but tailored solutions
               still require technical expertise and a lot of time. This is a
@@ -67,7 +67,7 @@ const About4 = () => {
           </div>
           <div>
             <h2 className="mb-5 text-4xl font-semibold">Our Creators</h2>
-            <p className="text-xl leading-8 font-medium text-muted-foreground">
+            <p className="text-muted-foreground text-xl leading-8 font-medium">
               <a href="#" className="mr-1 underline">
                 Our Company
               </a>
@@ -89,7 +89,7 @@ const About4 = () => {
             </p>
           </div>
         </div>
-        <div className="mx-auto flex max-w-5xl flex-col items-center justify-between gap-8 rounded-2xl bg-muted/50 p-14 text-center md:flex-row md:text-left">
+        <div className="bg-muted/50 mx-auto flex max-w-5xl flex-col items-center justify-between gap-8 rounded-2xl p-14 text-center md:flex-row md:text-left">
           <h3 className="text-3xl font-semibold">
             Part of
             <br />

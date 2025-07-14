@@ -1,16 +1,16 @@
-"use client";
-import type { LucideIcon } from "lucide-react";
-import { ArrowRight, Eye, ScanFace, Users, View } from "lucide-react";
+'use client';
+import type { LucideIcon } from 'lucide-react';
+import { ArrowRight, Eye, ScanFace, Users, View } from 'lucide-react';
 
-import { Button } from "@/components/ui/button";
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+import { Button } from '@/components/ui/button';
+import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 
 type imageType = {
   src: string;
   alt?: string;
 };
 
-type variantType = "1" | "2" | "3" | "4";
+type variantType = '1' | '2' | '3' | '4';
 
 interface list {
   icon: LucideIcon;
@@ -27,89 +27,89 @@ interface list {
 const TAB_LIST: Array<list> = [
   {
     icon: ScanFace,
-    title: "Focus on Active Speaker",
-    tabName: "Center Active Speaker",
+    title: 'Focus on Active Speaker',
+    tabName: 'Center Active Speaker',
     summary:
-      "Keep the speaker front and center—perfect for social media clips. No cropping, no resizing—just one click!",
-    imageComponent: "1",
+      'Keep the speaker front and center—perfect for social media clips. No cropping, no resizing—just one click!',
+    imageComponent: '1',
     images: [
       {
-        src: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-dark-1.svg",
-        alt: "",
+        src: 'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-dark-1.svg',
+        alt: '',
       },
     ],
   },
   {
     icon: Eye,
-    title: "Maintain eye contact",
-    tabName: "Eye Contact",
+    title: 'Maintain eye contact',
+    tabName: 'Eye Contact',
     summary:
       "Feel free to read from your script—our app will adjust your gaze, ensuring the viewer sees you looking directly into the camera, even if you weren't.",
-    imageComponent: "2",
+    imageComponent: '2',
     link: {
-      name: "Learn more",
-      href: "",
+      name: 'Learn more',
+      href: '',
     },
     images: [
       {
-        src: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-dark-1.svg",
-        alt: "",
+        src: 'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-dark-1.svg',
+        alt: '',
       },
       {
-        src: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-dark-2.svg",
-        alt: "",
+        src: 'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-dark-2.svg',
+        alt: '',
       },
       {
-        src: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-dark-3.svg",
-        alt: "",
+        src: 'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-dark-3.svg',
+        alt: '',
       },
       {
-        src: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-dark-4.svg",
-        alt: "",
+        src: 'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-dark-4.svg',
+        alt: '',
       },
     ],
   },
   {
     icon: View,
-    title: "Green Screen",
-    tabName: "Green Screen",
+    title: 'Green Screen',
+    tabName: 'Green Screen',
     summary:
-      "Skip the messy home studio and green screen setup—our app smartly removes your background, allowing you to replace it with any image or video you choose.",
-    imageComponent: "3",
+      'Skip the messy home studio and green screen setup—our app smartly removes your background, allowing you to replace it with any image or video you choose.',
+    imageComponent: '3',
     link: {
-      name: "Learn more",
-      href: "",
+      name: 'Learn more',
+      href: '',
     },
     images: [
       {
-        src: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-dark-1.svg",
-        alt: "",
+        src: 'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-dark-1.svg',
+        alt: '',
       },
     ],
   },
   {
     icon: Users,
-    title: "Automatic multicam",
-    tabName: "Automatic multicam",
+    title: 'Automatic multicam',
+    tabName: 'Automatic multicam',
     summary:
-      "Simply upload your multicam video files, and let our app cut to the speaker automatically. One more time-consuming task, done with just a click.",
-    imageComponent: "4",
+      'Simply upload your multicam video files, and let our app cut to the speaker automatically. One more time-consuming task, done with just a click.',
+    imageComponent: '4',
     link: {
-      name: "Learn more",
-      href: "",
+      name: 'Learn more',
+      href: '',
     },
     images: [
       {
-        src: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-dark-1.svg",
-        alt: "",
+        src: 'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-dark-1.svg',
+        alt: '',
       },
       {
-        src: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-dark-2.svg",
-        alt: "",
+        src: 'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-dark-2.svg',
+        alt: '',
       },
       {
-        src: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-dark-3.svg",
-        alt: "",
+        src: 'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-dark-3.svg',
+        alt: '',
       },
     ],
   },
@@ -120,32 +120,32 @@ interface ImagesProps {
   variant?: variantType;
 }
 
-const Images = ({ images, variant = "1" }: ImagesProps) => {
+const Images = ({ images, variant = '1' }: ImagesProps) => {
   const positions = [
     {
-      top: "12%",
-      right: "36%",
-      rotate: "2.6deg",
+      top: '12%',
+      right: '36%',
+      rotate: '2.6deg',
     },
     {
-      top: "12%",
-      right: "70%",
-      rotate: "-2.4deg",
+      top: '12%',
+      right: '70%',
+      rotate: '-2.4deg',
     },
     {
-      bottom: "16%",
-      right: "35%",
-      rotate: "1.6deg",
+      bottom: '16%',
+      right: '35%',
+      rotate: '1.6deg',
     },
     {
-      bottom: "15%",
-      right: "2%",
-      rotate: "-1.5deg",
+      bottom: '15%',
+      right: '2%',
+      rotate: '-1.5deg',
     },
   ];
 
   switch (variant) {
-    case "1":
+    case '1':
       return (
         <div className="ml-auto aspect-[0.930372149] h-full max-h-[38.75rem] overflow-hidden rounded-tl-[0.5rem] rounded-bl-[0.5rem]">
           <img
@@ -155,7 +155,7 @@ const Images = ({ images, variant = "1" }: ImagesProps) => {
           />
         </div>
       );
-    case "2":
+    case '2':
       return (
         <div className="size-full pr-4">
           <div className="relative ml-auto aspect-[0.930372149] h-full max-h-[38.75rem] overflow-hidden rounded-[0.625rem]">
@@ -175,7 +175,7 @@ const Images = ({ images, variant = "1" }: ImagesProps) => {
           </div>
         </div>
       );
-    case "3":
+    case '3':
       return (
         <div className="relative ml-auto aspect-[0.930372149] h-full max-h-[38.75rem] overflow-hidden rounded-[0.625rem]">
           <div className="absolute top-1/2 left-[5%] aspect-[1.586206897] w-[120%] -translate-y-1/2 overflow-hidden rounded-2xl shadow-xl xl:right-[-22%]">
@@ -223,12 +223,12 @@ const Feature211 = () => {
   return (
     <section className="py-32">
       <div className="container">
-        <div className="rounded-xl bg-muted py-11">
+        <div className="bg-muted rounded-xl py-11">
           <Tabs
             defaultValue={TAB_LIST[0].tabName}
             className="flex-col-reverse gap-10 xl:h-[43.75rem]"
           >
-            <TabsList className="mx-auto flex h-auto w-[calc(100%-32px)] justify-start overflow-auto bg-muted-2 lg:w-max lg:items-center lg:justify-center lg:overflow-hidden lg:rounded-full">
+            <TabsList className="bg-muted-2 mx-auto flex h-auto w-[calc(100%-32px)] justify-start overflow-auto lg:w-max lg:items-center lg:justify-center lg:overflow-hidden lg:rounded-full">
               {TAB_LIST.map((tab) => (
                 <TabsTrigger
                   className="shrink-0 rounded-full px-4 py-2 text-sm leading-tight font-medium"
@@ -246,13 +246,13 @@ const Feature211 = () => {
                 key={`content-${tab.tabName}`}
               >
                 <div className="flex flex-col gap-4 px-8 xl:pl-18">
-                  <div className="flex size-8 rounded-lg bg-primary text-primary-foreground">
+                  <div className="bg-primary text-primary-foreground flex size-8 rounded-lg">
                     <tab.icon className="m-auto size-4" />
                   </div>
                   <h2 className="font-serif text-5xl xl:text-7xl">
                     {tab.title}
                   </h2>
-                  <p className="mt-4 text-xl text-foreground">{tab.summary}</p>
+                  <p className="text-foreground mt-4 text-xl">{tab.summary}</p>
                   <div>
                     {tab.link && (
                       <Button asChild size="lg" className="w-full md:w-fit">

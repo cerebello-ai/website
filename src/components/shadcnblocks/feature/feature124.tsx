@@ -1,13 +1,13 @@
-"use client";
+'use client';
 
-import { Check, ChevronRight } from "lucide-react";
+import { Check, ChevronRight } from 'lucide-react';
 
-import { Button } from "@/components/ui/button";
+import { Button } from '@/components/ui/button';
 
 const checkedItems: string[] = [
-  "Responsive Design and Layout",
-  "Clean and Modern Design",
-  "Easy to Customize",
+  'Responsive Design and Layout',
+  'Clean and Modern Design',
+  'Easy to Customize',
 ];
 
 const Feature124 = () => {
@@ -21,7 +21,7 @@ const Feature124 = () => {
           Lorem ipsum dolor, sit amet consectetur adipisicing elit. Animi
           laboriosam voluptatibus temporibus doloremque laudantium.
         </p>
-        <ul className="mb-8 flex flex-col gap-2 text-muted-foreground">
+        <ul className="text-muted-foreground mb-8 flex flex-col gap-2">
           {checkedItems.map((item) => (
             <li className="flex items-center gap-2" key={item}>
               <Check className="size-5" /> {item}
@@ -33,8 +33,8 @@ const Feature124 = () => {
           <ChevronRight className="ml-2 h-4 w-4" />
         </Button>
       </div>
-      <div className="relative flex h-[430px] w-full p-4 before:absolute before:inset-0 before:bg-primary/20 before:[mask-image:url(https://deifkwefumgah.cloudfront.net/shadcnblocks/block/patterns/cross-pattern.svg)] before:[mask-size:32px_32px] before:[mask-repeat:repeat]">
-        <div className="absolute inset-0 z-1 bg-[radial-gradient(ellipse_at_center,var(--tw-gradient-stops))] from-transparent to-background opacity-30"></div>
+      <div className="before:bg-primary/20 relative flex h-[430px] w-full p-4 before:absolute before:inset-0 before:[mask-image:url(https://deifkwefumgah.cloudfront.net/shadcnblocks/block/patterns/cross-pattern.svg)] before:[mask-size:32px_32px] before:[mask-repeat:repeat]">
+        <div className="to-background absolute inset-0 z-1 bg-[radial-gradient(ellipse_at_center,var(--tw-gradient-stops))] from-transparent opacity-30"></div>
         <div className="relative z-10 m-auto w-[80%]">
           <img
             src="https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-1.svg"
@@ -42,8 +42,8 @@ const Feature124 = () => {
             className="max-h-[350px] w-full rounded-md object-cover"
           ></img>
         </div>
-        <div className="absolute inset-0 z-5 bg-linear-to-r from-background/50 via-transparent to-background/50"></div>
-        <div className="absolute inset-0 z-5 bg-linear-to-t from-background/50 via-transparent to-background/50"></div>
+        <div className="from-background/50 to-background/50 absolute inset-0 z-5 bg-linear-to-r via-transparent"></div>
+        <div className="from-background/50 to-background/50 absolute inset-0 z-5 bg-linear-to-t via-transparent"></div>
       </div>
     </section>
   );

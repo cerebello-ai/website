@@ -1,20 +1,21 @@
-import { Check, ChevronRight } from "lucide-react";
-import { type SVGProps, useId } from "react";
+import { type SVGProps, useId } from 'react';
 
-import { Button } from "@/components/ui/button";
+import { Check, ChevronRight } from 'lucide-react';
+
+import { Button } from '@/components/ui/button';
 
 export function Feature195() {
   return (
-    <section className="py-32 text-background md:container md:max-w-5xl">
-      <div className="relative isolate container grid items-center overflow-hidden bg-linear-to-r from-primary to-primary/75 py-8 max-lg:gap-10 max-md:gap-6 md:rounded-3xl lg:grid-cols-2 lg:px-8">
+    <section className="text-background py-32 md:container md:max-w-5xl">
+      <div className="from-primary to-primary/75 relative isolate container grid items-center overflow-hidden bg-linear-to-r py-8 max-lg:gap-10 max-md:gap-6 md:rounded-3xl lg:grid-cols-2 lg:px-8">
         <div className="absolute inset-0 -z-10 [mask-image:linear-gradient(to_left,black_50%,transparent_100%)]">
-          <PlusSigns className="h-full w-full text-background/[0.05]" />
+          <PlusSigns className="text-background/[0.05] h-full w-full" />
         </div>
         <div className="border-background/20 lg:border-e lg:py-16 lg:pr-20">
           <h2 className="text-3xl font-semibold tracking-tight md:text-4xl lg:text-5xl">
             Launch today
           </h2>
-          <p className="mt-3 text-sm font-medium text-background/70">
+          <p className="text-background/70 mt-3 text-sm font-medium">
             In the past, new financial companies had to rely on expensive
             middleware that linked them to outdated sponsor bank systems,
             restricting their potential. Our API solves this today.
@@ -37,14 +38,14 @@ export function Feature195() {
 
         <div className="space-y-6 lg:py-10 lg:pl-20">
           <div>
-            <h3 className="text-3xl font-semibold text-background md:text-4xl lg:text-5xl">
+            <h3 className="text-background text-3xl font-semibold md:text-4xl lg:text-5xl">
               $29.99
             </h3>
-            <p className="mt-1 text-xl font-medium text-background/70">
+            <p className="text-background/70 mt-1 text-xl font-medium">
               per user per month
             </p>
           </div>
-          <ul className="space-y-3 text-sm text-background/70">
+          <ul className="text-background/70 space-y-3 text-sm">
             <li className="flex items-center gap-2">
               <Check className="size-4" />
               All free plan features and...
@@ -65,7 +66,7 @@ export function Feature195() {
                 <ChevronRight className="ml-1 size-4 transition-transform group-hover:translate-x-0.5" />
               </a>
             </Button>
-            <Button size="lg" className="group w-full bg-secondary-foreground">
+            <Button size="lg" className="group bg-secondary-foreground w-full">
               <a href="/" className="flex items-center gap-2">
                 Get a demo
                 <ChevronRight className="ml-1 size-4 transition-transform group-hover:translate-x-0.5" />

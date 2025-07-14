@@ -1,6 +1,6 @@
-"use client";
+'use client';
 
-import { Code, MessageCircle, Text } from "lucide-react";
+import { Code, MessageCircle, Text } from 'lucide-react';
 
 const Feature133 = () => {
   return (
@@ -10,11 +10,11 @@ const Feature133 = () => {
       </h2>
 
       <div className="mt-12 flex flex-col gap-6 md:flex-row">
-        <div className="flex w-full flex-col justify-between overflow-hidden rounded-2xl border bg-card px-12 pt-12 text-card-foreground shadow-sm">
+        <div className="bg-card text-card-foreground flex w-full flex-col justify-between overflow-hidden rounded-2xl border px-12 pt-12 shadow-sm">
           <div className="mb-12 flex flex-col gap-3">
             <Code className="size-6" />
             <h4 className="text-xl font-semibold">Copy paste components</h4>
-            <p className="text-base font-normal text-muted-foreground">
+            <p className="text-muted-foreground text-base font-normal">
               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Animi
               laboriosam voluptatibus temporibus doloremque laudantium.
             </p>
@@ -26,22 +26,22 @@ const Feature133 = () => {
           />
         </div>
         <div className="flex w-full flex-col gap-6">
-          <div className="w-full overflow-hidden rounded-2xl border bg-card text-card-foreground shadow-sm">
+          <div className="bg-card text-card-foreground w-full overflow-hidden rounded-2xl border shadow-sm">
             <div className="flex flex-col gap-3 p-12">
               <Text className="size-6" />
               <h4 className="text-xl font-semibold">100% customizable</h4>
-              <p className="text-base font-normal text-muted-foreground">
+              <p className="text-muted-foreground text-base font-normal">
                 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Animi
                 laboriosam voluptatibus temporibus.
               </p>
             </div>
           </div>
 
-          <div className="flex w-full flex-col items-center justify-center gap-6 overflow-hidden rounded-2xl border bg-card text-card-foreground shadow-sm md:flex-row">
+          <div className="bg-card text-card-foreground flex w-full flex-col items-center justify-center gap-6 overflow-hidden rounded-2xl border shadow-sm md:flex-row">
             <div className="flex w-full flex-col p-12 md:gap-3">
               <MessageCircle className="size-6" />
               <h4 className="text-xl font-semibold">24/7 support</h4>
-              <p className="text-base font-normal text-muted-foreground">
+              <p className="text-muted-foreground text-base font-normal">
                 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Animi
                 laboriosam voluptatibus temporibus.
               </p>

@@ -5,10 +5,10 @@ import {
   ReceiptText,
   Timer,
   Vault,
-} from "lucide-react";
+} from 'lucide-react';
 
-import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
+import { Button } from '@/components/ui/button';
+import { Input } from '@/components/ui/input';
 
 const Hero74 = () => {
   return (
@@ -32,7 +32,7 @@ const Hero74 = () => {
               <div className="flex h-16 w-24 items-center justify-center rounded-md border">
                 <Package />
               </div>
-              <span className="text-sm text-muted-foreground">
+              <span className="text-muted-foreground text-sm">
                 Fully customizable
               </span>
             </div>
@@ -40,7 +40,7 @@ const Hero74 = () => {
               <div className="flex h-16 w-24 items-center justify-center rounded-md border">
                 <AlignCenter />
               </div>
-              <span className="text-sm text-muted-foreground">
+              <span className="text-muted-foreground text-sm">
                 Real-time insights
               </span>
             </div>
@@ -48,7 +48,7 @@ const Hero74 = () => {
               <div className="flex h-16 w-24 items-center justify-center rounded-md border">
                 <Vault />
               </div>
-              <span className="text-sm text-muted-foreground">
+              <span className="text-muted-foreground text-sm">
                 Secure vault
               </span>
             </div>
@@ -56,7 +56,7 @@ const Hero74 = () => {
               <div className="flex h-16 w-24 items-center justify-center rounded-md border">
                 <ReceiptText />
               </div>
-              <span className="text-sm text-muted-foreground">
+              <span className="text-muted-foreground text-sm">
                 Smart receipts
               </span>
             </div>
@@ -64,7 +64,7 @@ const Hero74 = () => {
               <div className="flex h-16 w-24 items-center justify-center rounded-md border">
                 <Timer />
               </div>
-              <span className="text-sm text-muted-foreground">
+              <span className="text-muted-foreground text-sm">
                 Effortless tracking
               </span>
             </div>
@@ -72,7 +72,7 @@ const Hero74 = () => {
               <div className="flex h-16 w-24 items-center justify-center rounded-md border">
                 <Brain />
               </div>
-              <span className="text-sm text-muted-foreground">
+              <span className="text-muted-foreground text-sm">
                 AI-driven search
               </span>
             </div>

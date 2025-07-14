@@ -1,6 +1,6 @@
-import { Star, Zap } from "lucide-react";
+import { Star, Zap } from 'lucide-react';
 
-import { Avatar, AvatarImage } from "@/components/ui/avatar";
+import { Avatar, AvatarImage } from '@/components/ui/avatar';
 
 const Testimonial18 = () => {
   return (
@@ -8,17 +8,17 @@ const Testimonial18 = () => {
       <div className="container">
         <div className="flex flex-col items-center gap-4">
           <div className="flex items-center gap-1 text-sm font-semibold">
-            <Zap className="h-6 w-auto fill-primary" />
+            <Zap className="fill-primary h-6 w-auto" />
             Rated 5 stars by 1000+ clients
           </div>
           <h2 className="text-center text-3xl font-semibold lg:text-4xl">
             Meet our happy clients
           </h2>
-          <p className="text-center text-muted-foreground lg:text-lg">
+          <p className="text-muted-foreground text-center lg:text-lg">
             Join a global network of thought leaders, product developers,
           </p>
         </div>
-        <div className="mx-auto mt-20 max-w-5xl rounded-2xl bg-muted p-6 md:p-20">
+        <div className="bg-muted mx-auto mt-20 max-w-5xl rounded-2xl p-6 md:p-20">
           <div className="mb-6 flex gap-1">
             <Star className="size-5 fill-amber-500 text-amber-500" />
             <Star className="size-5 fill-amber-500 text-amber-500" />
@@ -30,13 +30,13 @@ const Testimonial18 = () => {
             Joining the Innovators Community has completely transformed my
             vision for the better
           </q>
-          <p className="mt-6 text-muted-foreground">
+          <p className="text-muted-foreground mt-6">
             At the Innovators Community, I have been able to exchange ideas,
             learn from others, and participate in unique events and discussions.
             The community has been fantastic for networking with industry peers.
           </p>
           <div className="mt-6 flex gap-4">
-            <Avatar className="size-14 rounded-full ring-1 ring-input">
+            <Avatar className="ring-input size-14 rounded-full ring-1">
               <AvatarImage
                 src="https://deifkwefumgah.cloudfront.net/shadcnblocks/block/avatar-1.webp"
                 alt="placeholder"
@@ -44,7 +44,7 @@ const Testimonial18 = () => {
             </Avatar>
             <div>
               <p className="font-medium">Emily Johnson</p>
-              <p className="text-sm text-muted-foreground">CEO at @company</p>
+              <p className="text-muted-foreground text-sm">CEO at @company</p>
             </div>
           </div>
         </div>

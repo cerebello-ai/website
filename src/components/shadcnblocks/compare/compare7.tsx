@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 
 import {
   Table,
@@ -7,19 +7,19 @@ import {
   TableHead,
   TableHeader,
   TableRow,
-} from "@/components/ui/table";
+} from '@/components/ui/table';
 import {
   Tooltip,
   TooltipContent,
   TooltipTrigger,
-} from "@/components/ui/tooltip";
+} from '@/components/ui/tooltip';
 
 const Compare7 = () => {
   return (
     <section className="py-32">
       <div className="container">
         <h2 className="mb-4 text-center text-4xl font-semibold">Compare Us</h2>
-        <p className="mb-8 text-center text-muted-foreground">
+        <p className="text-muted-foreground mb-8 text-center">
           A modern framework for building websites that is better than the
           competition.
         </p>
@@ -110,7 +110,7 @@ const Compare7 = () => {
                 <TableCell className="relative px-6 py-4">
                   <Tooltip>
                     <TooltipTrigger asChild>
-                      <span className="cursor-pointer text-muted-foreground underline decoration-dotted">
+                      <span className="text-muted-foreground cursor-pointer underline decoration-dotted">
                         No
                       </span>
                     </TooltipTrigger>

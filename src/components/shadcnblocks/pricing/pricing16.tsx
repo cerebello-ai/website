@@ -1,12 +1,13 @@
-"use client";
+'use client';
 
-import { CheckCircle2, Zap } from "lucide-react";
-import { useState } from "react";
+import { useState } from 'react';
 
-import { Badge } from "@/components/ui/badge";
-import { Button } from "@/components/ui/button";
-import { Separator } from "@/components/ui/separator";
-import { Tabs, TabsList, TabsTrigger } from "@/components/ui/tabs";
+import { CheckCircle2, Zap } from 'lucide-react';
+
+import { Badge } from '@/components/ui/badge';
+import { Button } from '@/components/ui/button';
+import { Separator } from '@/components/ui/separator';
+import { Tabs, TabsList, TabsTrigger } from '@/components/ui/tabs';
 
 const Pricing16 = () => {
   const [isMonthly, setIsMonthly] = useState(true);
@@ -20,8 +21,8 @@ const Pricing16 = () => {
             Simple pricing for everyone, start for free today
           </h1>
           <Tabs
-            value={isMonthly ? "monthly" : "yearly"}
-            onValueChange={(value) => setIsMonthly(value === "monthly")}
+            value={isMonthly ? 'monthly' : 'yearly'}
+            onValueChange={(value) => setIsMonthly(value === 'monthly')}
             className="w-80"
           >
             <TabsList className="grid w-full grid-cols-2">
@@ -30,23 +31,23 @@ const Pricing16 = () => {
             </TabsList>
           </Tabs>
           <div className="mx-auto mt-4 grid w-full max-w-5xl gap-6 lg:grid-cols-3">
-            <div className="w-full rounded-lg border bg-background p-8 shadow-sm lg:max-w-96">
+            <div className="bg-background w-full rounded-lg border p-8 shadow-sm lg:max-w-96">
               <div className="flex flex-col gap-1">
                 <h3 className="text-xl font-semibold">Free</h3>
-                <p className="text-sm text-muted-foreground">Free forever</p>
+                <p className="text-muted-foreground text-sm">Free forever</p>
               </div>
               <Separator className="my-6" />
               <div className="flex items-start font-semibold">
                 <p className="text-xl">$</p>
                 <p className="text-5xl leading-none">0</p>
               </div>
-              <p className="text-sm text-muted-foreground">
-                per user/month, billed {isMonthly ? "monthly" : "yearly"}
+              <p className="text-muted-foreground text-sm">
+                per user/month, billed {isMonthly ? 'monthly' : 'yearly'}
               </p>
               <Button variant="outline" className="mt-4 mb-2 w-full">
                 Start for free
               </Button>
-              <p className="text-center text-sm text-muted-foreground">
+              <p className="text-muted-foreground text-center text-sm">
                 No credit card required
               </p>
               <Separator className="my-6" />
@@ -76,7 +77,7 @@ const Pricing16 = () => {
                 </ul>
               </div>
             </div>
-            <div className="w-full rounded-lg border bg-background p-8 shadow-sm lg:max-w-96">
+            <div className="bg-background w-full rounded-lg border p-8 shadow-sm lg:max-w-96">
               <div className="flex flex-col gap-1">
                 <div className="flex items-center gap-2">
                   <h3 className="text-xl font-semibold">Starter</h3>
@@ -85,7 +86,7 @@ const Pricing16 = () => {
                     Popular
                   </Badge>
                 </div>
-                <p className="text-sm text-muted-foreground">
+                <p className="text-muted-foreground text-sm">
                   For small teams and startups
                 </p>
               </div>
@@ -94,21 +95,21 @@ const Pricing16 = () => {
                 <div className="flex items-start font-semibold">
                   <p className="text-xl">$</p>
                   <p className="text-5xl leading-none">
-                    {isMonthly ? "20" : "15"}
+                    {isMonthly ? '20' : '15'}
                   </p>
                 </div>
                 {!isMonthly && (
                   <div className="flex flex-col text-sm">
-                    <p className="font-semibold text-destructive">25% off</p>
+                    <p className="text-destructive font-semibold">25% off</p>
                     <p className="text-muted-foreground line-through">$20</p>
                   </div>
                 )}
               </div>
-              <p className="text-sm text-muted-foreground">
-                per user/month, billed {isMonthly ? "monthly" : "yearly"}
+              <p className="text-muted-foreground text-sm">
+                per user/month, billed {isMonthly ? 'monthly' : 'yearly'}
               </p>
               <Button className="mt-4 mb-2 w-full">Try for 14 days</Button>
-              <p className="text-center text-sm text-muted-foreground">
+              <p className="text-muted-foreground text-center text-sm">
                 No credit card required
               </p>
               <Separator className="my-6" />
@@ -138,10 +139,10 @@ const Pricing16 = () => {
                 </ul>
               </div>
             </div>
-            <div className="w-full rounded-lg border bg-background p-8 shadow-sm lg:max-w-96">
+            <div className="bg-background w-full rounded-lg border p-8 shadow-sm lg:max-w-96">
               <div className="flex flex-col gap-1">
                 <h3 className="text-xl font-semibold">Enterprise</h3>
-                <p className="text-sm text-muted-foreground">
+                <p className="text-muted-foreground text-sm">
                   For large teams and enterprises
                 </p>
               </div>
@@ -150,23 +151,23 @@ const Pricing16 = () => {
                 <div className="flex items-start font-semibold">
                   <p className="text-xl">$</p>
                   <p className="text-5xl leading-none">
-                    {isMonthly ? "40" : "30"}
+                    {isMonthly ? '40' : '30'}
                   </p>
                 </div>
                 {!isMonthly && (
                   <div className="flex flex-col text-sm">
-                    <p className="font-semibold text-destructive">25% off</p>
+                    <p className="text-destructive font-semibold">25% off</p>
                     <p className="text-muted-foreground line-through">$40</p>
                   </div>
                 )}
               </div>
-              <p className="text-sm text-muted-foreground">
-                per user/month, billed {isMonthly ? "monthly" : "yearly"}
+              <p className="text-muted-foreground text-sm">
+                per user/month, billed {isMonthly ? 'monthly' : 'yearly'}
               </p>
               <Button variant="outline" className="mt-4 mb-2 w-full">
                 Try for 14 days
               </Button>
-              <p className="text-center text-sm text-muted-foreground">
+              <p className="text-muted-foreground text-center text-sm">
                 No credit card required
               </p>
               <Separator className="my-6" />

@@ -1,8 +1,8 @@
-import { FcGoogle } from "react-icons/fc";
+import { FcGoogle } from 'react-icons/fc';
 
-import { Button } from "@/components/ui/button";
-import { Checkbox } from "@/components/ui/checkbox";
-import { Input } from "@/components/ui/input";
+import { Button } from '@/components/ui/button';
+import { Checkbox } from '@/components/ui/checkbox';
+import { Input } from '@/components/ui/input';
 
 interface Login3Props {
   heading?: string;
@@ -19,17 +19,17 @@ interface Login3Props {
 }
 
 const Login3 = ({
-  heading = "Login",
-  subheading = "Welcome back",
+  heading = 'Login',
+  subheading = 'Welcome back',
   logo = {
-    url: "https://www.shadcnblocks.com",
-    src: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/shadcnblockscom-icon.svg",
-    alt: "Shadcnblocks",
+    url: 'https://www.shadcnblocks.com',
+    src: 'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/shadcnblockscom-icon.svg',
+    alt: 'Shadcnblocks',
   },
-  loginText = "Log in",
-  googleText = "Log in with Google",
+  loginText = 'Log in',
+  googleText = 'Log in with Google',
   signupText = "Don't have an account?",
-  signupUrl = "#",
+  signupUrl = '#',
 }: Login3Props) => {
   return (
     <section className="py-32">
@@ -66,7 +66,7 @@ const Login3 = ({
                       Remember me
                     </label>
                   </div>
-                  <a href="#" className="text-sm text-primary hover:underline">
+                  <a href="#" className="text-primary text-sm hover:underline">
                     Forgot password
                   </a>
                 </div>
@@ -78,9 +78,9 @@ const Login3 = ({
                   {googleText}
                 </Button>
               </div>
-              <div className="mx-auto mt-8 flex justify-center gap-1 text-sm text-muted-foreground">
+              <div className="text-muted-foreground mx-auto mt-8 flex justify-center gap-1 text-sm">
                 <p>{signupText}</p>
-                <a href={signupUrl} className="font-medium text-primary">
+                <a href={signupUrl} className="text-primary font-medium">
                   Sign up
                 </a>
               </div>

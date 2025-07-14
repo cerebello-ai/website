@@ -1,8 +1,8 @@
-import { CreditCard, Layout, Menu, Pointer, Zap } from "lucide-react";
+import { CreditCard, Layout, Menu, Pointer, Zap } from 'lucide-react';
 
-import { Badge } from "@/components/ui/badge";
-import { Button } from "@/components/ui/button";
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+import { Badge } from '@/components/ui/badge';
+import { Button } from '@/components/ui/button';
+import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 
 const Feature113 = () => {
   return (
@@ -33,13 +33,13 @@ const Feature113 = () => {
                 </TabsTrigger>
               </TabsList>
             </div>
-            <div className="container mt-10 max-w-7xl rounded-2xl bg-muted/70 p-8 md:mt-14 lg:p-16">
+            <div className="bg-muted/70 container mt-10 max-w-7xl rounded-2xl p-8 md:mt-14 lg:p-16">
               <TabsContent
                 value="tab-1"
                 className="mt-0 grid place-items-center gap-20 lg:grid-cols-2 lg:gap-10"
               >
                 <div className="flex flex-col gap-5">
-                  <Badge variant="outline" className="w-fit bg-background">
+                  <Badge variant="outline" className="bg-background w-fit">
                     Modern Tactics
                   </Badge>
                   <h3 className="text-3xl font-semibold lg:text-5xl">
@@ -66,7 +66,7 @@ const Feature113 = () => {
                 className="mt-0 grid place-items-center gap-20 lg:grid-cols-2 lg:gap-10"
               >
                 <div className="flex flex-col gap-5">
-                  <Badge variant="outline" className="w-fit bg-background">
+                  <Badge variant="outline" className="bg-background w-fit">
                     Expert Features
                   </Badge>
                   <h3 className="text-3xl font-semibold lg:text-5xl">
@@ -93,7 +93,7 @@ const Feature113 = () => {
                 className="mt-0 grid place-items-center gap-20 lg:grid-cols-2 lg:gap-10"
               >
                 <div className="flex flex-col gap-5">
-                  <Badge variant="outline" className="w-fit bg-background">
+                  <Badge variant="outline" className="bg-background w-fit">
                     Elite Solutions
                   </Badge>
                   <h3 className="text-3xl font-semibold lg:text-5xl">

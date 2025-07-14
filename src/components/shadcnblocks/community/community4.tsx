@@ -1,47 +1,47 @@
-import { ChevronRight } from "lucide-react";
-import { FaFacebook, FaInstagram, FaYoutube } from "react-icons/fa";
-import { FaXTwitter } from "react-icons/fa6";
+import { ChevronRight } from 'lucide-react';
+import { FaFacebook, FaInstagram, FaYoutube } from 'react-icons/fa';
+import { FaXTwitter } from 'react-icons/fa6';
 
-import { cn } from "@/lib/utils";
+import { cn } from '@/lib/utils';
 
 const Community4 = () => {
   const socialPlatforms = [
     {
-      name: "Facebook",
+      name: 'Facebook',
       icon: <FaFacebook className="size-6 text-blue-400/90" />,
-      color: "blue",
-      heading: "Join our group",
+      color: 'blue',
+      heading: 'Join our group',
       description:
-        "Share your thoughts, ideas, and projects with the community.",
-      followText: "Follow us on Facebook",
-      url: "#",
+        'Share your thoughts, ideas, and projects with the community.',
+      followText: 'Follow us on Facebook',
+      url: '#',
     },
     {
-      name: "Youtube",
+      name: 'Youtube',
       icon: <FaYoutube className="size-6 text-red-500/90" />,
-      color: "red",
-      heading: "Join our channel",
-      description: "Watch our latest videos and keep up with the latest news.",
-      followText: "Follow us on Youtube",
-      url: "#",
+      color: 'red',
+      heading: 'Join our channel',
+      description: 'Watch our latest videos and keep up with the latest news.',
+      followText: 'Follow us on Youtube',
+      url: '#',
     },
     {
-      name: "X",
+      name: 'X',
       icon: <FaXTwitter className="size-5 text-white" />,
-      color: "zinc",
-      heading: "Follow our updates",
-      description: "Get the latest news and quick updates from our team.",
-      followText: "Follow us on X",
-      url: "#",
+      color: 'zinc',
+      heading: 'Follow our updates',
+      description: 'Get the latest news and quick updates from our team.',
+      followText: 'Follow us on X',
+      url: '#',
     },
     {
-      name: "Instagram",
+      name: 'Instagram',
       icon: <FaInstagram className="size-6 text-pink-400/90" />,
-      color: "pink",
-      heading: "See our gallery",
-      description: "Browse our latest visual content and behind-the-scenes.",
-      followText: "Follow us on Instagram",
-      url: "#",
+      color: 'pink',
+      heading: 'See our gallery',
+      description: 'Browse our latest visual content and behind-the-scenes.',
+      followText: 'Follow us on Instagram',
+      url: '#',
     },
   ];
 
@@ -62,33 +62,33 @@ const Community4 = () => {
               key={platform.name}
               href={platform.url}
               className={cn(
-                "group relative flex h-full flex-col gap-10 rounded-xl bg-radial-[at_80%_14%] from-[-50%] via-zinc-950 via-75% to-zinc-950 p-6",
-                platform.color === "pink" && "from-pink-500",
-                platform.color === "blue" && "from-blue-500",
-                platform.color === "red" && "from-red-500",
-                platform.color === "zinc" && "from-zinc-500",
+                'group relative flex h-full flex-col gap-10 rounded-xl bg-radial-[at_80%_14%] from-[-50%] via-zinc-950 via-75% to-zinc-950 p-6',
+                platform.color === 'pink' && 'from-pink-500',
+                platform.color === 'blue' && 'from-blue-500',
+                platform.color === 'red' && 'from-red-500',
+                platform.color === 'zinc' && 'from-zinc-500',
               )}
             >
               <div className="absolute inset-0 h-full w-full shrink-0 bg-[radial-gradient(white_1px,transparent_1px)] [mask-image:radial-gradient(ellipse_at_80%_14%,#000,transparent_40%)] [background-size:3px_3px] opacity-35"></div>
               <div
-                className={`relative grid size-11 shrink-0 place-items-center rounded-full bg-gradient-to-b from-${platform.color === "zinc" ? "white" : `${platform.color}-500`}/50 via-transparent to-${platform.color === "zinc" ? "white" : `${platform.color}-500`}/50 p-px`}
+                className={`relative grid size-11 shrink-0 place-items-center rounded-full bg-gradient-to-b from-${platform.color === 'zinc' ? 'white' : `${platform.color}-500`}/50 via-transparent to-${platform.color === 'zinc' ? 'white' : `${platform.color}-500`}/50 p-px`}
               >
                 <div
-                  className={`grid size-full place-items-center rounded-full bg-zinc-950 bg-gradient-to-b from-${platform.color === "zinc" ? "white" : `${platform.color}-500`}/30 via-transparent to-${platform.color === "zinc" ? "white" : `${platform.color}-500`}/30`}
+                  className={`grid size-full place-items-center rounded-full bg-zinc-950 bg-gradient-to-b from-${platform.color === 'zinc' ? 'white' : `${platform.color}-500`}/30 via-transparent to-${platform.color === 'zinc' ? 'white' : `${platform.color}-500`}/30`}
                 >
                   {platform.icon}
                 </div>
               </div>
               <div className="flex h-full flex-col justify-between">
                 <div className="mb-5">
-                  <h3 className="relative text-lg font-semibold text-background">
+                  <h3 className="text-background relative text-lg font-semibold">
                     {platform.heading}
                   </h3>
-                  <p className="mt-2 text-sm text-background/70">
+                  <p className="text-background/70 mt-2 text-sm">
                     {platform.description}
                   </p>
                 </div>
-                <div className="flex items-center gap-1 text-sm font-semibold text-background/90 transition-colors group-hover:text-background">
+                <div className="text-background/90 group-hover:text-background flex items-center gap-1 text-sm font-semibold transition-colors">
                   {platform.followText}
                   <ChevronRight className="size-4.5 transition-transform group-hover:translate-x-0.5" />
                 </div>

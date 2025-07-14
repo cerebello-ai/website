@@ -1,11 +1,11 @@
-import { Badge } from "@/components/ui/badge";
+import { Badge } from '@/components/ui/badge';
 
 type Category =
-  | "Technology"
-  | "Business"
-  | "Health & Wellness"
-  | "Productivity"
-  | "Innovation";
+  | 'Technology'
+  | 'Business'
+  | 'Health & Wellness'
+  | 'Productivity'
+  | 'Innovation';
 
 type Post = {
   title: string;
@@ -16,32 +16,36 @@ type Post = {
 
 const posts: Post[] = [
   {
-    title: "Exploring the Future of AI in Modern Technology Trends",
-    category: "Technology",
+    title: 'Exploring the Future of AI in Modern Technology Trends',
+    category: 'Technology',
     description:
-      "Discover how AI is transforming industries and learn about the latest advancements in artificial intelligence. Discover how AI is transforming industries and learn about the latest advancements in artificial intelligence.",
-    image: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-1.svg",
+      'Discover how AI is transforming industries and learn about the latest advancements in artificial intelligence. Discover how AI is transforming industries and learn about the latest advancements in artificial intelligence.',
+    image:
+      'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-1.svg',
   },
   {
-    title: "Strategies for Effective Business Growth in 2025",
-    category: "Business",
+    title: 'Strategies for Effective Business Growth in 2025',
+    category: 'Business',
     description:
-      "Learn proven strategies to grow your business and stay competitive in the ever-evolving market landscape.",
-    image: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-2.svg",
+      'Learn proven strategies to grow your business and stay competitive in the ever-evolving market landscape.',
+    image:
+      'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-2.svg',
   },
   {
-    title: "Top Wellness Trends to Improve Your Health in 2025",
-    category: "Health & Wellness",
+    title: 'Top Wellness Trends to Improve Your Health in 2025',
+    category: 'Health & Wellness',
     description:
-      "Explore the top wellness trends that can help you achieve a healthier and more balanced lifestyle.",
-    image: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-3.svg",
+      'Explore the top wellness trends that can help you achieve a healthier and more balanced lifestyle.',
+    image:
+      'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-3.svg',
   },
   {
-    title: "Boosting Productivity with Smart Tools and Techniques",
-    category: "Productivity",
+    title: 'Boosting Productivity with Smart Tools and Techniques',
+    category: 'Productivity',
     description:
-      "Find out how to enhance your productivity using the latest tools and techniques for better time management.",
-    image: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-4.svg",
+      'Find out how to enhance your productivity using the latest tools and techniques for better time management.',
+    image:
+      'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-4.svg',
   },
 ];
 
@@ -53,7 +57,7 @@ const Blog14 = () => {
           <h1 className="text-5xl font-medium md:text-6xl">
             Insights and Trends Blog
           </h1>
-          <p className="mx-auto mt-4 max-w-xl text-lg text-muted-foreground">
+          <p className="text-muted-foreground mx-auto mt-4 max-w-xl text-lg">
             Stay updated with the latest insights, trends, and tips across
             various topics to keep ahead of the curve.
           </p>

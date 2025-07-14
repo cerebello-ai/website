@@ -1,22 +1,22 @@
-"use client";
-import { zodResolver } from "@hookform/resolvers/zod";
-import { ChevronRight } from "lucide-react";
-import { useForm } from "react-hook-form";
-import { z } from "zod";
+'use client';
+import { zodResolver } from '@hookform/resolvers/zod';
+import { ChevronRight } from 'lucide-react';
+import { useForm } from 'react-hook-form';
+import { z } from 'zod';
 
-import { Button } from "@/components/ui/button";
+import { Button } from '@/components/ui/button';
 import {
   Form,
   FormControl,
   FormField,
   FormItem,
   FormMessage,
-} from "@/components/ui/form";
-import { Input } from "@/components/ui/input";
+} from '@/components/ui/form';
+import { Input } from '@/components/ui/input';
 
 const formSchema = z
   .object({
-    email: z.string().email({ message: "Invalid email address" }),
+    email: z.string().email({ message: 'Invalid email address' }),
   })
   .required({ email: true });
 
@@ -24,7 +24,7 @@ function HeroFrom() {
   const form = useForm<z.infer<typeof formSchema>>({
     resolver: zodResolver(formSchema),
     defaultValues: {
-      email: "",
+      email: '',
     },
   });
 
@@ -84,7 +84,7 @@ const Hero105 = () => {
                 </div>
               </h1>
               <div>
-                <p className="text-lg leading-normal text-muted-foreground">
+                <p className="text-muted-foreground text-lg leading-normal">
                   Join millions of businesses of all sizes using the service to
                   accept online and in-person payments, integrate financial
                   services, power unique revenue models, and build a more
@@ -104,18 +104,24 @@ const Hero105 = () => {
                   className="absolute z-20 h-full w-full object-center drop-shadow-2xl"
                 />
                 <div className="absolute top-1/2 left-1/2 z-30 w-[15rem] -translate-x-1/2 -translate-y-1/2 overflow-hidden rounded-3xl">
-                  <img src="https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-dark-7-tall.svg" alt="" />
+                  <img
+                    src="https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-dark-7-tall.svg"
+                    alt=""
+                  />
                 </div>
               </div>
               <div className="absolute top-0 left-[15.8rem] w-[66.8rem] overflow-hidden rounded-3xl shadow-2xl">
-                <img src="https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-dark-8-wide.svg" alt="" />
+                <img
+                  src="https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-dark-8-wide.svg"
+                  alt=""
+                />
               </div>
             </div>
           </div>
         </div>
 
         <div className="absolute inset-0 z-[-1] overflow-hidden">
-          <div className="absolute top-0 left-0 h-full w-full -translate-y-[58%] -skew-y-12 transform bg-muted bg-[url('https://deifkwefumgah.cloudfront.net/shadcnblocks/block/hero105/background.png')] bg-cover bg-center bg-no-repeat" />
+          <div className="bg-muted absolute top-0 left-0 h-full w-full -translate-y-[58%] -skew-y-12 transform bg-[url('https://deifkwefumgah.cloudfront.net/shadcnblocks/block/hero105/background.png')] bg-cover bg-center bg-no-repeat" />
         </div>
       </div>
       <div className="container mx-auto grid max-w-[67.5rem] grid-cols-1 grid-rows-[auto] items-center justify-items-center gap-x-5 gap-y-14 pb-14 sm:grid-cols-2 lg:grid-cols-4">

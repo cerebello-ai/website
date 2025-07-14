@@ -1,30 +1,31 @@
-"use client";
-import { Play } from "lucide-react";
-import { Fragment, useState } from "react";
+'use client';
+import { Fragment, useState } from 'react';
 
-import { AspectRatio } from "@/components/ui/aspect-ratio";
-import { Button } from "@/components/ui/button";
+import { Play } from 'lucide-react';
+
+import { AspectRatio } from '@/components/ui/aspect-ratio';
+import { Button } from '@/components/ui/button';
 import {
   Dialog,
   DialogContent,
   DialogHeader,
   DialogTitle,
-} from "@/components/ui/dialog";
+} from '@/components/ui/dialog';
 
 const Hero134 = () => {
   const [isVideoOpen, setIsVideoOpen] = useState(false);
   return (
     <Fragment>
       <section className="bg-background py-12 md:py-20">
-        <div className="overflow-hidden border-b border-muted">
+        <div className="border-muted overflow-hidden border-b">
           <div className="container">
             <div className="flex flex-col items-center gap-16 md:gap-24">
               <div className="flex flex-col items-center gap-8">
                 <div className="flex flex-col items-center gap-7">
-                  <h1 className="max-w-[920px] text-center text-4xl leading-tight font-semibold text-foreground md:text-6xl lg:text-7xl">
+                  <h1 className="text-foreground max-w-[920px] text-center text-4xl leading-tight font-semibold md:text-6xl lg:text-7xl">
                     Quickly convert visitors into paying customers
                   </h1>
-                  <p className="max-w-[750px] text-center text-base leading-relaxed font-normal text-muted-foreground md:text-xl">
+                  <p className="text-muted-foreground max-w-[750px] text-center text-base leading-relaxed font-normal md:text-xl">
                     Transform your smartphone or tablet into a powerful tool.
                     Effortlessly manage sales and inventory, engage customers,
                     and boost your revenue.
@@ -44,7 +45,7 @@ const Hero134 = () => {
                     onClick={() => setIsVideoOpen(true)}
                     className="flex h-fit w-fit items-center gap-2 text-lg font-semibold uppercase hover:bg-transparent"
                   >
-                    <div className="flex h-10 w-10 rounded-full bg-primary">
+                    <div className="bg-primary flex h-10 w-10 rounded-full">
                       <Play className="m-auto size-4 fill-white stroke-white" />
                     </div>
                     <div>Play Video</div>
@@ -69,7 +70,7 @@ const Hero134 = () => {
         </div>
         <div className="container">
           <div className="flex flex-col items-center gap-16 py-20">
-            <p className="text-center text-xl font-medium text-primary">
+            <p className="text-primary text-center text-xl font-medium">
               Trusted by these brands and many others
             </p>
             <div className="flex flex-wrap items-center justify-center gap-20">

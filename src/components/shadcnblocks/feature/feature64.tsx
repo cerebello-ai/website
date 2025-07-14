@@ -1,4 +1,4 @@
-import { Badge } from "@/components/ui/badge";
+import { Badge } from '@/components/ui/badge';
 
 const Feature64 = () => {
   return (
@@ -18,7 +18,7 @@ const Feature64 = () => {
           </p>
         </div>
         <div className="grid w-full gap-6 lg:grid-cols-7">
-          <div className="flex flex-col rounded-lg border border-border bg-accent p-6 md:p-8 lg:col-span-4">
+          <div className="border-border bg-accent flex flex-col rounded-lg border p-6 md:p-8 lg:col-span-4">
             <div className="flex justify-center">
               <img
                 src="https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-1.svg"
@@ -28,12 +28,12 @@ const Feature64 = () => {
             </div>
             <div className="mt-auto flex flex-col">
               <p className="mb-2 text-sm font-semibold md:text-base">Feature</p>
-              <p className="text-sm text-muted-foreground md:text-base">
+              <p className="text-muted-foreground text-sm md:text-base">
                 Nam vitae molestie arcu. Quisque eu libero orci.
               </p>
             </div>
           </div>
-          <div className="flex flex-col rounded-lg border border-border bg-accent p-6 md:p-8 lg:col-span-3">
+          <div className="border-border bg-accent flex flex-col rounded-lg border p-6 md:p-8 lg:col-span-3">
             <div className="flex justify-center">
               <img
                 src="https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-2.svg"
@@ -43,7 +43,7 @@ const Feature64 = () => {
             </div>
             <div className="mt-auto flex flex-col">
               <p className="mb-2 text-sm font-semibold md:text-base">Feature</p>
-              <p className="text-sm text-muted-foreground md:text-base">
+              <p className="text-muted-foreground text-sm md:text-base">
                 Nam vitae molestie arcu. Quisque eu libero orci.
               </p>
             </div>

@@ -1,3 +1,5 @@
+import React from 'react';
+
 import {
   ArrowRight,
   Award,
@@ -6,11 +8,10 @@ import {
   Leaf,
   Lightbulb,
   Trophy,
-} from "lucide-react";
-import React from "react";
+} from 'lucide-react';
 
-import { Button } from "@/components/ui/button";
-import { Separator } from "@/components/ui/separator";
+import { Button } from '@/components/ui/button';
+import { Separator } from '@/components/ui/separator';
 
 interface ListItem {
   icon: React.ReactNode;
@@ -26,49 +27,49 @@ interface List2Props {
 }
 
 const List2 = ({
-  heading = "Our Achievements & Recognition",
+  heading = 'Our Achievements & Recognition',
   items = [
     {
       icon: <Trophy />,
-      title: "Industry Recognition",
-      category: "Achievement",
-      description: "Outstanding Performance Award.",
-      link: "#",
+      title: 'Industry Recognition',
+      category: 'Achievement',
+      description: 'Outstanding Performance Award.',
+      link: '#',
     },
     {
       icon: <Award />,
-      title: "Excellence Award",
-      category: "Recognition",
-      description: "Best in Category Winner.",
-      link: "#",
+      title: 'Excellence Award',
+      category: 'Recognition',
+      description: 'Best in Category Winner.',
+      link: '#',
     },
     {
       icon: <Lightbulb />,
-      title: "Innovation Prize",
-      category: "Technology",
-      description: "Breakthrough Solution of the Year.",
-      link: "#",
+      title: 'Innovation Prize',
+      category: 'Technology',
+      description: 'Breakthrough Solution of the Year.',
+      link: '#',
     },
     {
       icon: <HeartHandshake />,
-      title: "Customer Success",
-      category: "Service",
-      description: "Top-Rated Solution Provider.",
-      link: "#",
+      title: 'Customer Success',
+      category: 'Service',
+      description: 'Top-Rated Solution Provider.',
+      link: '#',
     },
     {
       icon: <Building2 />,
-      title: "Global Leadership",
-      category: "Management",
-      description: "Executive Team of the Year.",
-      link: "#",
+      title: 'Global Leadership',
+      category: 'Management',
+      description: 'Executive Team of the Year.',
+      link: '#',
     },
     {
       icon: <Leaf />,
-      title: "Sustainability Impact",
-      category: "Environmental",
-      description: "Green Initiative Excellence.",
-      link: "#",
+      title: 'Sustainability Impact',
+      category: 'Environmental',
+      description: 'Green Initiative Excellence.',
+      link: '#',
     },
   ],
 }: List2Props) => {
@@ -84,12 +85,12 @@ const List2 = ({
             <React.Fragment key={index}>
               <div className="grid items-center gap-4 px-4 py-5 md:grid-cols-4">
                 <div className="order-2 flex items-center gap-2 md:order-none">
-                  <span className="flex h-14 w-16 shrink-0 items-center justify-center rounded-md bg-muted">
+                  <span className="bg-muted flex h-14 w-16 shrink-0 items-center justify-center rounded-md">
                     {item.icon}
                   </span>
                   <div className="flex flex-col gap-1">
                     <h3 className="font-semibold">{item.title}</h3>
-                    <p className="text-sm text-muted-foreground">
+                    <p className="text-muted-foreground text-sm">
                       {item.category}
                     </p>
                   </div>

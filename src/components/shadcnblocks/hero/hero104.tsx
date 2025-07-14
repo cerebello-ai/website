@@ -1,14 +1,15 @@
-"use client";
-import { Check, Play, Star, Zap } from "lucide-react";
-import { Fragment, useState } from "react";
+'use client';
+import { Fragment, useState } from 'react';
 
-import { Button } from "@/components/ui/button";
+import { Check, Play, Star, Zap } from 'lucide-react';
+
+import { Button } from '@/components/ui/button';
 import {
   Dialog,
   DialogContent,
   DialogHeader,
   DialogTitle,
-} from "@/components/ui/dialog";
+} from '@/components/ui/dialog';
 
 const Hero104 = () => {
   const [isVideoOpen, setIsVideoOpen] = useState(false);
@@ -19,10 +20,10 @@ const Hero104 = () => {
         <div className="container max-w-[75rem]">
           <div className="flex gap-8">
             <div className="mx-auto max-w-[50rem] lg:max-w-full">
-              <h1 className="font-poppins mb-[0.625rem] text-center text-5xl font-semibold leading-tight tracking-[-1px] sm:text-[3.375rem] md:text-[5.625rem] md:leading-[6.18rem] lg:text-left">
+              <h1 className="font-poppins mb-[0.625rem] text-center text-5xl leading-tight font-semibold tracking-[-1px] sm:text-[3.375rem] md:text-[5.625rem] md:leading-[6.18rem] lg:text-left">
                 Increase impact, not effort.
               </h1>
-              <p className="mb-10 text-center text-2xl font-medium leading-9 lg:text-left">
+              <p className="mb-10 text-center text-2xl leading-9 font-medium lg:text-left">
                 We streamlines your ad management tasks, letting you focus on
                 achieving results more quickly.
               </p>
@@ -44,9 +45,9 @@ const Hero104 = () => {
               </div>
               <div className="mt-6 flex flex-wrap justify-center gap-7 lg:justify-normal">
                 {[
-                  "30-day free trial",
-                  "No credit card required",
-                  "Cancel anytime",
+                  '30-day free trial',
+                  'No credit card required',
+                  'Cancel anytime',
                 ].map((text, i) => (
                   <div key={`${i}`} className="flex items-center gap-2">
                     <Check className="stroke-muted-foreground h-3 w-3" />
@@ -137,7 +138,7 @@ const Hero104 = () => {
                           d="M74 0C85.678 1.39258e-07 97.1901 2.76383 107.595 8.06552C118 13.3672 127.003 21.0562 133.867 30.5039C140.731 39.9516 145.262 50.8896 147.089 62.4238C148.916 73.958 147.987 85.7608 144.378 96.8672C140.769 107.974 134.583 118.068 126.326 126.326C118.068 134.583 107.974 140.769 96.8673 144.378C85.7609 147.987 73.9581 148.916 62.4239 147.089C50.8897 145.262 39.9516 140.731 30.5039 133.867L38.2046 123.268C45.9797 128.917 54.9812 132.646 64.4734 134.149C73.9655 135.652 83.6787 134.888 92.8188 131.918C101.959 128.948 110.266 123.858 117.062 117.062C123.858 110.266 128.948 101.959 131.918 92.8187C134.888 83.6786 135.652 73.9655 134.149 64.4733C132.646 54.9812 128.917 45.9796 123.268 38.2046C117.619 30.4296 110.21 24.1019 101.647 19.7388C93.0845 15.3758 83.6105 13.1013 74 13.1013L74 0Z"
                         />
                       </svg>
-                      <p className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 text-center font-bold text-black">
+                      <p className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-center font-bold text-black">
                         $5,782
                       </p>
                     </div>

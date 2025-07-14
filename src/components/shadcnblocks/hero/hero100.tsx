@@ -1,18 +1,24 @@
-import { Button } from "@/components/ui/button";
+import { HeroProps } from '../types/common';
 
-const Hero100 = () => {
+import { Button } from '@/components/ui/button';
+
+const Hero100 = ({
+  title,
+  description,
+  buttons = [],
+  features = [],
+  ...props
+}: HeroProps = {}) => {
   return (
     <section className="overflow-hidden font-sans">
       <div className="container">
         <div className="flex flex-col items-center justify-between gap-10 md:flex-row">
           <div className="basis-2/4">
             <div className="mt-10 flex flex-col gap-2">
-              <p className="text-base font-semibold text-muted-foreground">
+              <p className="text-muted-foreground text-base font-semibold">
                 Client Relationship Management Software
               </p>
-              <h1 className="mb-2 text-4xl leading-snug! font-medium text-black lg:text-5xl">
-                Your contact management, all streamlined in a single platform
-              </h1>
+              <h1 className="...">{title || 'Default Title'}</h1>
               <p className="mb-2 text-lg text-black/80">
                 Providing a comprehensive view of everything you know about the
                 people, companies, and organizations you work with.
@@ -33,7 +39,7 @@ const Hero100 = () => {
                 alt=""
                 className="relative z-20 h-full w-full object-cover object-center"
               />
-              <div className="absolute top-0 left-[6.25rem] z-10 aspect-[1.378254211/1] h-full w-[56.25rem] bg-muted" />
+              <div className="bg-muted absolute top-0 left-[6.25rem] z-10 aspect-[1.378254211/1] h-full w-[56.25rem]" />
             </div>
           </div>
         </div>

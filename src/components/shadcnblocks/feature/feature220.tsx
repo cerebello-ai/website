@@ -1,33 +1,34 @@
-import { ArrowRight } from "lucide-react";
+import { ArrowRight } from 'lucide-react';
 
-import { AspectRatio } from "@/components/ui/aspect-ratio";
-import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
-import { Button } from "@/components/ui/button";
+import { AspectRatio } from '@/components/ui/aspect-ratio';
+import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
+import { Button } from '@/components/ui/button';
 
 const CUSTOMER_DATA = {
   stats: [
     {
-      number: "52%",
-      text: "boost in user retention",
+      number: '52%',
+      text: 'boost in user retention',
     },
     {
-      number: "40%",
-      text: "decrease in development time",
+      number: '40%',
+      text: 'decrease in development time',
     },
     {
-      number: "2.5x",
-      text: "increase in feature adoption",
+      number: '2.5x',
+      text: 'increase in feature adoption',
     },
   ],
   author: {
-    name: "Lena Carter",
-    image: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/avatar-3.webp",
-    role: "Head of Product, Brightflow",
+    name: 'Lena Carter',
+    image:
+      'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/avatar-3.webp',
+    role: 'Head of Product, Brightflow',
   },
-  title: "How Brightflow Scaled UI Delivery with Reusable Blocks",
+  title: 'How Brightflow Scaled UI Delivery with Reusable Blocks',
   summary:
-    "Discover how Brightflow accelerated product development and improved retention by leveraging modular UI blocks across teams.",
-  link: "#",
+    'Discover how Brightflow accelerated product development and improved retention by leveraging modular UI blocks across teams.',
+  link: '#',
 };
 
 interface AuthorProps {
@@ -44,10 +45,10 @@ const Author = ({ image, name, role }: AuthorProps) => {
         <AvatarFallback>{name}</AvatarFallback>
       </Avatar>
       <div className="flex flex-col gap-0.5">
-        <div className="text-muted-foreground text-sm font-medium leading-[1.4]">
+        <div className="text-muted-foreground text-sm leading-[1.4] font-medium">
           {name}
         </div>
-        <div className="text-muted-foreground text-sm font-medium leading-[1.4]">
+        <div className="text-muted-foreground text-sm leading-[1.4] font-medium">
           {role}
         </div>
       </div>
@@ -61,10 +62,10 @@ const Feature220 = () => {
       <div className="container flex flex-wrap-reverse gap-12 lg:grid lg:grid-cols-[1fr_1.5fr] lg:gap-[7.5rem]">
         <div className="flex flex-col justify-between gap-20 py-8">
           <div className="flex flex-col gap-5">
-            <h2 className="text-4xl font-semibold leading-none tracking-tight md:text-5xl">
+            <h2 className="text-4xl leading-none font-semibold tracking-tight md:text-5xl">
               Build Stunning Interfaces Faster Than Ever Before
             </h2>
-            <p className="text-muted-foreground text-lg font-medium leading-[1.4] md:text-xl">
+            <p className="text-muted-foreground text-lg leading-[1.4] font-medium md:text-xl">
               Drag, drop, and customize ready-made components to speed up your
               workflow and create polished UIs in no time.
             </p>
@@ -84,7 +85,7 @@ const Feature220 = () => {
             >
               <div className="flex flex-col-reverse gap-8 sm:flex-row">
                 <div className="flex flex-col gap-6">
-                  <p className="text-foreground text-base font-medium leading-[1.4]">
+                  <p className="text-foreground text-base leading-[1.4] font-medium">
                     {CUSTOMER_DATA.summary}
                   </p>
                   <Author {...CUSTOMER_DATA.author} />

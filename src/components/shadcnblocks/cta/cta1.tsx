@@ -1,27 +1,35 @@
-import { ArrowRight, Sparkles } from "lucide-react";
+import { ArrowRight, Sparkles } from 'lucide-react';
 
-import { Button } from "@/components/ui/button";
-import { Card } from "@/components/ui/card";
+import { CtaProps } from '../types/common';
 
-const Cta1 = () => {
+import { Button } from '@/components/ui/button';
+import { Card } from '@/components/ui/card';
+
+const Cta1 = ({
+  title = 'Call to Action',
+  description = 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Architecto illo praesentium nisi, accusantium quae.',
+  buttons = [{ text: 'Get Started', href: '#' }],
+  className = '',
+}: CtaProps) => {
   return (
     <section className="py-32">
       <div className="container">
-        <Card className="flex flex-col justify-between border-muted pb-0 md:flex-row md:py-6">
+        <Card className="border-muted flex flex-col justify-between pb-0 md:flex-row md:py-6">
           <div className="p-6 md:max-w-96">
             <div className="mb-2 flex items-center gap-2">
-              <span className="flex size-7 items-center justify-center rounded-full bg-muted">
+              <span className="bg-muted flex size-7 items-center justify-center rounded-full">
                 <Sparkles className="size-4" strokeWidth={1.5} />
               </span>
-              <h4 className="text-2xl font-bold">Call to Action</h4>
+              <h4 className="text-2xl font-bold">{title}</h4>
             </div>
-            <p className="text-muted-foreground">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-              Architecto illo praesentium nisi, accusantium quae.
-            </p>
-            <Button className="mt-8">
-              Get Started <ArrowRight className="ml-2 size-4" />
-            </Button>
+            <p className="text-muted-foreground">{description}</p>
+            {buttons && buttons[0] && (
+              <Button className="mt-8" asChild>
+                <a href={buttons[0].href || '#'}>
+                  {buttons[0].text} <ArrowRight className="ml-2 size-4" />
+                </a>
+              </Button>
+            )}
           </div>
           <img
             src="https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-1.svg"

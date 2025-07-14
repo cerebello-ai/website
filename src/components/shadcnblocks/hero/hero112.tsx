@@ -1,16 +1,17 @@
-"use client";
+'use client';
 
-import { BookOpen, PenTool, Play } from "lucide-react";
-import { useState } from "react";
+import { useState } from 'react';
 
-import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
-import { Button } from "@/components/ui/button";
+import { BookOpen, PenTool, Play } from 'lucide-react';
+
+import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
+import { Button } from '@/components/ui/button';
 import {
   Dialog,
   DialogContent,
   DialogHeader,
   DialogTitle,
-} from "@/components/ui/dialog";
+} from '@/components/ui/dialog';
 
 const Hero112 = () => {
   const [isVideoOpen, setIsVideoOpen] = useState(false);
@@ -20,7 +21,7 @@ const Hero112 = () => {
       <div className="container max-w-[60rem]">
         <div className="flex flex-col gap-4 md:flex-row">
           <div className="flex flex-col gap-6">
-            <h1 className="text-4xl font-medium leading-tight lg:text-6xl">
+            <h1 className="text-4xl leading-tight font-medium lg:text-6xl">
               Advanced Framer Expert Tutorials
             </h1>
             <p className="text-muted-foreground text-lg lg:max-w-[80%]">
@@ -57,16 +58,16 @@ const Hero112 = () => {
                 <div className="flex -space-x-[0.875rem]">
                   {[
                     {
-                      src: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/avatar-1.webp",
-                      fallback: "AB",
+                      src: 'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/avatar-1.webp',
+                      fallback: 'AB',
                     },
                     {
-                      src: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/avatar-2.webp",
-                      fallback: "CD",
+                      src: 'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/avatar-2.webp',
+                      fallback: 'CD',
                     },
                     {
-                      src: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/avatar-3.webp",
-                      fallback: "EF",
+                      src: 'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/avatar-3.webp',
+                      fallback: 'EF',
                     },
                   ].map(({ src, fallback }, i) => (
                     <Avatar
@@ -82,10 +83,10 @@ const Hero112 = () => {
                   7000+ people already joined
                 </div>
               </div>
-              <div className="bg-primary absolute right-0 top-0 flex h-[6.25rem] w-[6.25rem] rotate-12 rounded-3xl border-8 border-white lg:h-[6.875rem] lg:w-[6.875rem]">
+              <div className="bg-primary absolute top-0 right-0 flex h-[6.25rem] w-[6.25rem] rotate-12 rounded-3xl border-8 border-white lg:h-[6.875rem] lg:w-[6.875rem]">
                 <BookOpen className="m-auto h-[2.5rem] w-[2.5rem] stroke-white lg:h-[3.125rem] lg:w-[3.125rem]" />
               </div>
-              <div className="bg-primary absolute -left-10 top-1/3 flex h-[6.25rem] w-[6.25rem] -rotate-12 rounded-3xl border-8 border-white lg:h-[6.875rem] lg:w-[6.875rem]">
+              <div className="bg-primary absolute top-1/3 -left-10 flex h-[6.25rem] w-[6.25rem] -rotate-12 rounded-3xl border-8 border-white lg:h-[6.875rem] lg:w-[6.875rem]">
                 <PenTool className="m-auto h-[3.5rem] w-[3.5rem] -rotate-90 fill-white lg:h-[4.5rem] lg:w-[4.5rem]" />
               </div>
             </div>
@@ -93,7 +94,7 @@ const Hero112 = () => {
         </div>
         <div className="mt-20 rounded-3xl border p-6">
           <div className="flex w-full flex-col md:flex-row">
-            <div className="flex flex-1 flex-col gap-3 border-b-[1px] p-6 md:border-b-0 md:border-r-[1px]">
+            <div className="flex flex-1 flex-col gap-3 border-b-[1px] p-6 md:border-r-[1px] md:border-b-0">
               <div className="text-primary text-2xl font-medium lg:text-4xl">
                 87
               </div>
@@ -101,7 +102,7 @@ const Hero112 = () => {
                 Courses by Experts
               </div>
             </div>
-            <div className="flex flex-1 flex-col gap-3 border-b-[1px] p-6 md:border-b-0 md:border-r-[1px]">
+            <div className="flex flex-1 flex-col gap-3 border-b-[1px] p-6 md:border-r-[1px] md:border-b-0">
               <div className="text-primary text-2xl font-medium lg:text-4xl">
                 200+
               </div>

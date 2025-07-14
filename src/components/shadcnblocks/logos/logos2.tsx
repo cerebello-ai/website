@@ -1,37 +1,48 @@
-import { ArrowRight } from "lucide-react";
+import { Shield, Lock, Globe, Database, CheckCircle2 } from 'lucide-react';
 
-import { Button } from "@/components/ui/button";
-
-const logos = [
+const certifications = [
   {
-    id: "logo-1",
-    description: "Logo 1",
-    image: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/block-1.svg",
+    id: 'gdpr',
+    title: 'GDPR',
+    subtitle: 'COMPLIANT',
+    icon: Shield,
+    description: 'EU General Data Protection Regulation compliant',
   },
   {
-    id: "logo-2",
-    description: "Logo 2",
-    image: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/block-2.svg",
+    id: 'aicpa',
+    title: 'AICPA',
+    subtitle: 'SOC 2 TYPE 2',
+    icon: CheckCircle2,
+    description: 'AICPA SOC 2 Type 2 certified',
   },
   {
-    id: "logo-3",
-    description: "Logo 3",
-    image: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/block-3.svg",
+    id: 'hipaa',
+    title: 'HIPAA',
+    subtitle: 'COMPLIANT',
+    icon: Lock,
+    description:
+      'Health Insurance Portability and Accountability Act compliant',
   },
   {
-    id: "logo-4",
-    description: "Logo 4",
-    image: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/block-4.svg",
+    id: 'ccpa',
+    title: 'CCPA',
+    subtitle: 'COMPLIANT',
+    icon: Shield,
+    description: 'California Consumer Privacy Act compliant',
   },
   {
-    id: "logo-5",
-    description: "Logo 5",
-    image: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/block-5.svg",
+    id: 'iso27001',
+    title: 'ISO 27001',
+    subtitle: 'CERTIFIED',
+    icon: Globe,
+    description: 'ISO 27001 information security management certified',
   },
   {
-    id: "logo-6",
-    description: "Logo 6",
-    image: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/block-6.svg",
+    id: 'placeholder',
+    title: '',
+    subtitle: '',
+    icon: null,
+    description: '',
   },
 ];
 
@@ -39,35 +50,63 @@ const Logos2 = () => {
   return (
     <section className="py-32">
       <div className="container">
-        <div className="grid overflow-hidden rounded-xl border border-border md:grid-cols-2">
+        <div className="border-border grid overflow-hidden rounded-xl border md:grid-cols-2">
           <div className="my-auto px-6 py-10 sm:px-10 sm:py-12 lg:p-16">
             <div className="w-full md:max-w-md">
               <h2 className="mb-4 text-2xl font-semibold lg:text-3xl">
-                Our certifications say it all.
+                Security you can trust
               </h2>
-              <p className="mb-6 text-lg">
-                In non libero bibendum odio pellentesque ullamcorper. Aenean
-                condimentum, dolor commodo pulvinar bibendum.
+              <p className="text-muted-foreground mb-6 text-lg">
+                As a data company, we understand the importance of keeping your
+                company's data secure.
               </p>
-              <Button className="w-full md:w-fit">
-                <ArrowRight className="mr-2 size-5" />
-                Get in touch
-              </Button>
+              <div className="space-y-4">
+                <div className="flex items-center gap-3">
+                  <Shield className="text-primary size-5" />
+                  <span className="text-muted-foreground text-sm">
+                    ISO 27001 certified and compliant with GDPR, HIPAA, SOC 2
+                    Type II, and CCPA standards.
+                  </span>
+                </div>
+                <div className="flex items-center gap-3">
+                  <Database className="text-primary size-5" />
+                  <span className="text-muted-foreground text-sm">
+                    Choose between secure data residency in the EU or US,
+                    tailored to your needs.
+                  </span>
+                </div>
+              </div>
             </div>
           </div>
-          <div className="grid grid-cols-3 border-t border-border md:border-t-0 md:border-l">
-            {logos.map((logo) => (
-              <div
-                key={logo.id}
-                className="-mb-px flex items-center justify-center border-r border-b border-border p-5 nth-[3n]:border-r-0 sm:p-6"
-              >
-                <img
-                  src={logo.image}
-                  alt={logo.description}
-                  className="size-12 object-cover object-center sm:size-16 lg:size-24"
-                ></img>
-              </div>
-            ))}
+          <div className="border-border grid grid-cols-3 border-t md:border-t-0 md:border-l">
+            {certifications.map((cert) => {
+              if (!cert.icon) {
+                return (
+                  <div
+                    key={cert.id}
+                    className="border-border -mb-px flex items-center justify-center border-r border-b p-5 nth-[3n]:border-r-0 sm:p-6"
+                  />
+                );
+              }
+
+              const IconComponent = cert.icon;
+              return (
+                <div
+                  key={cert.id}
+                  className="border-border -mb-px flex flex-col items-center justify-center border-r border-b p-5 nth-[3n]:border-r-0 sm:p-6"
+                >
+                  <div className="bg-muted mb-2 flex items-center justify-center rounded-full p-3">
+                    <IconComponent className="text-muted-foreground size-6" />
+                  </div>
+                  <div className="text-center">
+                    <div className="text-sm font-semibold">{cert.title}</div>
+                    <div className="text-muted-foreground mt-1 text-xs">
+                      {cert.subtitle}
+                    </div>
+                  </div>
+                </div>
+              );
+            })}
           </div>
         </div>
       </div>

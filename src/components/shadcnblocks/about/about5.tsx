@@ -73,15 +73,15 @@ const About5 = () => {
               they do best: creating amazing products.
             </p>
             <div className="mt-6 grid grid-cols-2 gap-6 text-center">
-              <div className="flex flex-col items-center justify-center gap-2 rounded-xl border bg-background p-6">
+              <div className="bg-background flex flex-col items-center justify-center gap-2 rounded-xl border p-6">
                 <span className="text-2xl md:text-4xl">2024</span>
-                <span className="text-sm text-muted-foreground md:text-lg">
+                <span className="text-muted-foreground text-sm md:text-lg">
                   Launched
                 </span>
               </div>
-              <div className="flex flex-col items-center justify-center gap-2 rounded-xl border bg-background p-6">
+              <div className="bg-background flex flex-col items-center justify-center gap-2 rounded-xl border p-6">
                 <span className="text-2xl md:text-4xl">$2.2M</span>
-                <span className="text-sm text-muted-foreground md:text-lg">
+                <span className="text-muted-foreground text-sm md:text-lg">
                   Pre-Seed Round
                 </span>
               </div>

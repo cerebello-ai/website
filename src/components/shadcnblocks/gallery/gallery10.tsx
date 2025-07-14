@@ -1,16 +1,17 @@
-"use client";
+'use client';
 
-import { ArrowLeft, ArrowRight } from "lucide-react";
-import { useEffect, useState } from "react";
+import { useEffect, useState } from 'react';
 
-import { Badge } from "@/components/ui/badge";
-import { Button } from "@/components/ui/button";
-import type { CarouselApi } from "@/components/ui/carousel";
+import { ArrowLeft, ArrowRight } from 'lucide-react';
+
+import { Badge } from '@/components/ui/badge';
+import { Button } from '@/components/ui/button';
+import type { CarouselApi } from '@/components/ui/carousel';
 import {
   Carousel,
   CarouselContent,
   CarouselItem,
-} from "@/components/ui/carousel";
+} from '@/components/ui/carousel';
 
 interface DataItem {
   id: string;
@@ -23,49 +24,54 @@ interface DataItem {
 
 const DATA: DataItem[] = [
   {
-    id: "item-1",
-    username: "@techinnovator",
+    id: 'item-1',
+    username: '@techinnovator',
     quote:
-      "Their team transformed our vision into a seamless, user-friendly app. The attention to detail and commitment to quality is unmatched!",
-    author: "Sarah",
-    image: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-4.svg",
-    bgColor: "bg-green-300",
+      'Their team transformed our vision into a seamless, user-friendly app. The attention to detail and commitment to quality is unmatched!',
+    author: 'Sarah',
+    image:
+      'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-4.svg',
+    bgColor: 'bg-green-300',
   },
   {
-    id: "item-2",
-    username: "@startupfounder",
+    id: 'item-2',
+    username: '@startupfounder',
     quote:
-      "From ideation to deployment, they delivered a robust solution that scaled with our business. Truly a partner in our growth journey.",
-    author: "James",
-    image: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-5.svg",
-    bgColor: "bg-orange-300",
+      'From ideation to deployment, they delivered a robust solution that scaled with our business. Truly a partner in our growth journey.',
+    author: 'James',
+    image:
+      'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-5.svg',
+    bgColor: 'bg-orange-300',
   },
   {
-    id: "item-3",
-    username: "@enterpriseleader",
+    id: 'item-3',
+    username: '@enterpriseleader',
     quote:
-      "Their expertise in cloud solutions helped us optimize our operations and reduce costs significantly. Highly recommend their services!",
-    author: "Emily",
-    image: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-3.svg",
-    bgColor: "bg-purple-300",
+      'Their expertise in cloud solutions helped us optimize our operations and reduce costs significantly. Highly recommend their services!',
+    author: 'Emily',
+    image:
+      'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-3.svg',
+    bgColor: 'bg-purple-300',
   },
   {
-    id: "item-4",
-    username: "@productmanager",
+    id: 'item-4',
+    username: '@productmanager',
     quote:
       "The team's ability to understand complex requirements and deliver on time is exceptional. They made the development process stress-free.",
-    author: "Michael",
-    image: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-2.svg",
-    bgColor: "bg-green-300",
+    author: 'Michael',
+    image:
+      'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-2.svg',
+    bgColor: 'bg-green-300',
   },
   {
-    id: "item-5",
-    username: "@cto",
+    id: 'item-5',
+    username: '@cto',
     quote:
       "Their innovative approach to software development has been a game-changer for our organization. We couldn't be happier with the results!",
-    author: "Laura",
-    image: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-1.svg",
-    bgColor: "bg-orange-300",
+    author: 'Laura',
+    image:
+      'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-1.svg',
+    bgColor: 'bg-orange-300',
   },
 ];
 
@@ -87,10 +93,10 @@ const Gallery10 = () => {
     };
 
     updateSelection();
-    carouselApi.on("select", updateSelection);
+    carouselApi.on('select', updateSelection);
 
     return () => {
-      carouselApi.off("select", updateSelection);
+      carouselApi.off('select', updateSelection);
     };
   }, [carouselApi]);
 
@@ -144,7 +150,7 @@ const Gallery10 = () => {
             <Carousel
               setApi={setCarouselApi}
               opts={{
-                align: "start",
+                align: 'start',
                 dragFree: true,
               }}
             >

@@ -1,7 +1,7 @@
-import { FcGoogle } from "react-icons/fc";
+import { FcGoogle } from 'react-icons/fc';
 
-import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
+import { Button } from '@/components/ui/button';
+import { Input } from '@/components/ui/input';
 
 interface Signup6Props {
   heading?: string;
@@ -12,11 +12,11 @@ interface Signup6Props {
 }
 
 const Signup6 = ({
-  heading = "Signup",
-  googleText = "Sign up with Google",
-  signupText = "Create an account",
-  loginText = "Already have an account?",
-  loginUrl = "#",
+  heading = 'Signup',
+  googleText = 'Sign up with Google',
+  signupText = 'Create an account',
+  loginText = 'Already have an account?',
+  loginUrl = '#',
 }: Signup6Props) => {
   return (
     <section className="h-screen">

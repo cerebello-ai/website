@@ -1,11 +1,10 @@
-"use client";
+'use client';
 
-import { ChevronRight } from "lucide-react";
-import { useState } from "react";
+import { useState } from 'react';
 
-import { cn } from "@/lib/utils";
+import { ChevronRight } from 'lucide-react';
 
-import { Button } from "@/components/ui/button";
+import { Button } from '@/components/ui/button';
 import {
   NavigationMenu,
   NavigationMenuContent,
@@ -13,30 +12,31 @@ import {
   NavigationMenuLink,
   NavigationMenuList,
   NavigationMenuTrigger,
-} from "@/components/ui/navigation-menu";
+} from '@/components/ui/navigation-menu';
+import { cn } from '@/lib/utils';
 
 const ITEMS = [
   {
-    label: "Features",
-    href: "#",
+    label: 'Features',
+    href: '#',
     dropdownItems: [
       {
-        title: "Modern product teams",
-        href: "#",
+        title: 'Modern product teams',
+        href: '#',
         description:
-          "Mainline is built on the habits that make the best product teams successful",
+          'Mainline is built on the habits that make the best product teams successful',
       },
       {
-        title: "Resource Allocation",
-        href: "#",
-        description: "Mainline your resource allocation and execution",
+        title: 'Resource Allocation',
+        href: '#',
+        description: 'Mainline your resource allocation and execution',
       },
     ],
   },
-  { label: "About Us", href: "#" },
-  { label: "Pricing", href: "#" },
-  { label: "FAQ", href: "#" },
-  { label: "Contact", href: "#" },
+  { label: 'About Us', href: '#' },
+  { label: 'Pricing', href: '#' },
+  { label: 'FAQ', href: '#' },
+  { label: 'Contact', href: '#' },
 ];
 
 const Navbar6 = () => {
@@ -44,10 +44,14 @@ const Navbar6 = () => {
   const [openDropdown, setOpenDropdown] = useState<string | null>(null);
 
   return (
-    <section className="absolute top-5 left-1/2 z-50 w-[min(90%,700px)] -translate-x-1/2 rounded-full border bg-background/70 backdrop-blur-md lg:top-12">
+    <section className="bg-background/70 absolute top-5 left-1/2 z-50 w-[min(90%,700px)] -translate-x-1/2 rounded-full border backdrop-blur-md lg:top-12">
       <div className="flex items-center justify-between px-6 py-3">
         <a href="/" className="flex shrink-0 items-center gap-2">
-          <img src="https://deifkwefumgah.cloudfront.net/shadcnblocks/block/block-1.svg" alt="logo" className="w-10" />
+          <img
+            src="https://deifkwefumgah.cloudfront.net/shadcnblocks/block/block-1.svg"
+            alt="logo"
+            className="w-10"
+          />
         </a>
 
         {/* Desktop Navigation */}
@@ -56,7 +60,7 @@ const Navbar6 = () => {
             {ITEMS.map((link) =>
               link.dropdownItems ? (
                 <NavigationMenuItem key={link.label} className="">
-                  <NavigationMenuTrigger className="bg-transparent! px-1.5 data-[state=open]:bg-accent/50">
+                  <NavigationMenuTrigger className="data-[state=open]:bg-accent/50 bg-transparent! px-1.5">
                     {link.label}
                   </NavigationMenuTrigger>
                   <NavigationMenuContent>
@@ -66,13 +70,13 @@ const Navbar6 = () => {
                           <NavigationMenuLink asChild>
                             <a
                               href={item.href}
-                              className="group flex gap-4 rounded-md p-3 leading-none no-underline outline-hidden transition-colors select-none hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground"
+                              className="group hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground flex gap-4 rounded-md p-3 leading-none no-underline outline-hidden transition-colors select-none"
                             >
                               <div className="transition-transform duration-300 group-hover:translate-x-1">
                                 <div className="mb-1 text-sm leading-none font-medium">
                                   {item.title}
                                 </div>
-                                <p className="line-clamp-2 text-sm leading-snug text-muted-foreground">
+                                <p className="text-muted-foreground line-clamp-2 text-sm leading-snug">
                                   {item.description}
                                 </p>
                               </div>
@@ -88,7 +92,7 @@ const Navbar6 = () => {
                   <a
                     href={link.href}
                     className={cn(
-                      "relative bg-transparent px-1.5 text-sm font-medium text-muted-foreground",
+                      'text-muted-foreground relative bg-transparent px-1.5 text-sm font-medium',
                     )}
                   >
                     {link.label}
@@ -109,22 +113,22 @@ const Navbar6 = () => {
 
           {/* Hamburger Menu Button (Mobile Only) */}
           <button
-            className="relative flex size-8 text-muted-foreground lg:hidden"
+            className="text-muted-foreground relative flex size-8 lg:hidden"
             onClick={() => setIsMenuOpen(!isMenuOpen)}
           >
             <span className="sr-only">Open main menu</span>
             <div className="absolute top-1/2 left-1/2 block w-[18px] -translate-x-1/2 -translate-y-1/2">
               <span
                 aria-hidden="true"
-                className={`absolute block h-0.5 w-full rounded-full bg-current transition duration-500 ease-in-out ${isMenuOpen ? "rotate-45" : "-translate-y-1.5"}`}
+                className={`absolute block h-0.5 w-full rounded-full bg-current transition duration-500 ease-in-out ${isMenuOpen ? 'rotate-45' : '-translate-y-1.5'}`}
               ></span>
               <span
                 aria-hidden="true"
-                className={`absolute block h-0.5 w-full rounded-full bg-current transition duration-500 ease-in-out ${isMenuOpen ? "opacity-0" : ""}`}
+                className={`absolute block h-0.5 w-full rounded-full bg-current transition duration-500 ease-in-out ${isMenuOpen ? 'opacity-0' : ''}`}
               ></span>
               <span
                 aria-hidden="true"
-                className={`absolute block h-0.5 w-full rounded-full bg-current transition duration-500 ease-in-out ${isMenuOpen ? "-rotate-45" : "translate-y-1.5"}`}
+                className={`absolute block h-0.5 w-full rounded-full bg-current transition duration-500 ease-in-out ${isMenuOpen ? '-rotate-45' : 'translate-y-1.5'}`}
               ></span>
             </div>
           </button>
@@ -134,13 +138,13 @@ const Navbar6 = () => {
       {/*  Mobile Menu Navigation */}
       <div
         className={cn(
-          "fixed inset-x-0 top-[calc(100%+1rem)] flex flex-col rounded-2xl border bg-background p-6 transition-all duration-300 ease-in-out lg:hidden",
+          'bg-background fixed inset-x-0 top-[calc(100%+1rem)] flex flex-col rounded-2xl border p-6 transition-all duration-300 ease-in-out lg:hidden',
           isMenuOpen
-            ? "visible translate-y-0 opacity-100"
-            : "invisible -translate-y-4 opacity-0",
+            ? 'visible translate-y-0 opacity-100'
+            : 'invisible -translate-y-4 opacity-0',
         )}
       >
-        <nav className="flex flex-1 flex-col divide-y divide-border">
+        <nav className="divide-border flex flex-1 flex-col divide-y">
           {ITEMS.map((link) =>
             link.dropdownItems ? (
               <div key={link.label} className="py-4 first:pt-0 last:pb-0">
@@ -150,41 +154,41 @@ const Navbar6 = () => {
                       openDropdown === link.label ? null : link.label,
                     )
                   }
-                  className="flex w-full items-center justify-between text-base font-medium text-primary"
+                  className="text-primary flex w-full items-center justify-between text-base font-medium"
                 >
                   {link.label}
                   <ChevronRight
                     className={cn(
-                      "size-4 transition-transform duration-200",
-                      openDropdown === link.label ? "rotate-90" : "",
+                      'size-4 transition-transform duration-200',
+                      openDropdown === link.label ? 'rotate-90' : '',
                     )}
                   />
                 </button>
                 <div
                   className={cn(
-                    "overflow-hidden transition-all duration-300",
+                    'overflow-hidden transition-all duration-300',
                     openDropdown === link.label
-                      ? "mt-4 max-h-[1000px] opacity-100"
-                      : "max-h-0 opacity-0",
+                      ? 'mt-4 max-h-[1000px] opacity-100'
+                      : 'max-h-0 opacity-0',
                   )}
                 >
-                  <div className="space-y-3 rounded-lg bg-muted/50 p-4">
+                  <div className="bg-muted/50 space-y-3 rounded-lg p-4">
                     {link.dropdownItems.map((item) => (
                       <a
                         key={item.title}
                         href={item.href}
-                        className="group block rounded-md p-2 transition-colors hover:bg-accent"
+                        className="group hover:bg-accent block rounded-md p-2 transition-colors"
                         onClick={() => {
                           setIsMenuOpen(false);
                           setOpenDropdown(null);
                         }}
                       >
                         <div className="transition-transform duration-200 group-hover:translate-x-1">
-                          <div className="font-medium text-primary">
+                          <div className="text-primary font-medium">
                             {item.title}
                           </div>
 
-                          <p className="mt-1 text-sm text-muted-foreground">
+                          <p className="text-muted-foreground mt-1 text-sm">
                             {item.description}
                           </p>
                         </div>
@@ -198,7 +202,7 @@ const Navbar6 = () => {
                 key={link.label}
                 href={link.href}
                 className={cn(
-                  "py-4 text-base font-medium text-primary transition-colors first:pt-0 last:pb-0 hover:text-primary/80",
+                  'text-primary hover:text-primary/80 py-4 text-base font-medium transition-colors first:pt-0 last:pb-0',
                 )}
                 onClick={() => setIsMenuOpen(false)}
               >

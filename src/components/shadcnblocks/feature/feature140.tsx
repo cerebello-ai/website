@@ -1,4 +1,4 @@
-"use client";
+'use client';
 
 import {
   Carousel,
@@ -6,26 +6,29 @@ import {
   CarouselItem,
   CarouselNext,
   CarouselPrevious,
-} from "@/components/ui/carousel";
+} from '@/components/ui/carousel';
 
 const items = [
   {
-    title: "Built for artists and designers",
+    title: 'Built for artists and designers',
     description:
-      "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minima doloribus illum, labore quis facilis molestias!",
-    imgSrc: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-dark-1.svg",
+      'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minima doloribus illum, labore quis facilis molestias!',
+    imgSrc:
+      'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-dark-1.svg',
   },
   {
-    title: "Built for coders and developers",
+    title: 'Built for coders and developers',
     description:
-      "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minima doloribus illum, labore quis facilis molestias!",
-    imgSrc: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-dark-2.svg",
+      'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minima doloribus illum, labore quis facilis molestias!',
+    imgSrc:
+      'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-dark-2.svg',
   },
   {
-    title: "Build your own website with our UI blocks",
+    title: 'Build your own website with our UI blocks',
     description:
-      "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minima doloribus illum, labore quis facilis molestias!",
-    imgSrc: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-dark-3.svg",
+      'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minima doloribus illum, labore quis facilis molestias!',
+    imgSrc:
+      'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-dark-3.svg',
   },
 ];
 
@@ -37,12 +40,12 @@ const Feature140 = () => {
           <CarouselContent className="ease-in">
             {items.map((item) => (
               <CarouselItem key={item.title}>
-                <div className="flex flex-col items-center justify-between gap-4 rounded-2xl bg-muted py-20 pl-8 md:flex-row md:pl-16">
+                <div className="bg-muted flex flex-col items-center justify-between gap-4 rounded-2xl py-20 pl-8 md:flex-row md:pl-16">
                   <div className="w-full pr-2 md:max-w-xs md:pr-0">
                     <h2 className="mb-6 text-xl font-medium sm:text-2xl md:text-5xl">
                       {item.title}
                     </h2>
-                    <p className="text-sm text-muted-foreground md:text-base">
+                    <p className="text-muted-foreground text-sm md:text-base">
                       {item.description}
                     </p>
                   </div>

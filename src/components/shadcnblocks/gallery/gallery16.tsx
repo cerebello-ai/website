@@ -1,6 +1,6 @@
-"use client";
+'use client';
 
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useRef, useState } from 'react';
 
 import {
   Carousel,
@@ -9,14 +9,14 @@ import {
   CarouselItem,
   CarouselNext,
   CarouselPrevious,
-} from "@/components/ui/carousel";
-import { Tabs, TabsList, TabsTrigger } from "@/components/ui/tabs";
+} from '@/components/ui/carousel';
+import { Tabs, TabsList, TabsTrigger } from '@/components/ui/tabs';
 
 const items = [
   {
     title: (
       <>
-        <span className="bg-gradient-to-b from-foreground/20 to-muted-foreground bg-clip-text text-transparent">
+        <span className="from-foreground/20 to-muted-foreground bg-gradient-to-b bg-clip-text text-transparent">
           Explore Our
         </span>
         <br />
@@ -34,14 +34,15 @@ const items = [
         long-term value and efficiency.
       </>
     ),
-    note: "Comprehensive documentation and dedicated support channels are available to assist you.",
-    image: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-1.svg",
-    category: "Features",
+    note: 'Comprehensive documentation and dedicated support channels are available to assist you.',
+    image:
+      'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-1.svg',
+    category: 'Features',
   },
   {
     title: (
       <>
-        <span className="bg-gradient-to-b from-foreground/20 to-muted-foreground bg-clip-text text-transparent">
+        <span className="from-foreground/20 to-muted-foreground bg-gradient-to-b bg-clip-text text-transparent">
           Solutions for
         </span>
         <br />
@@ -62,14 +63,15 @@ const items = [
         <p>We provide adaptable tools for your unique context.</p>
       </>
     ),
-    note: "Leverage our expertise in integration and custom development for specific needs.",
-    image: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-2.svg",
-    category: "Solutions",
+    note: 'Leverage our expertise in integration and custom development for specific needs.',
+    image:
+      'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-2.svg',
+    category: 'Solutions',
   },
   {
     title: (
       <>
-        <span className="bg-gradient-to-b from-foreground/20 to-muted-foreground bg-clip-text text-transparent">
+        <span className="from-foreground/20 to-muted-foreground bg-gradient-to-b bg-clip-text text-transparent">
           Building the
         </span>
         <br />
@@ -92,9 +94,10 @@ const items = [
         </p>
       </>
     ),
-    note: "Our dedicated R&D team is focused on delivering cutting-edge solutions.",
-    image: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-3.svg",
-    category: "Roadmap",
+    note: 'Our dedicated R&D team is focused on delivering cutting-edge solutions.',
+    image:
+      'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-3.svg',
+    category: 'Roadmap',
   },
 ];
 
@@ -132,10 +135,10 @@ const Gallery16 = () => {
       const idx = api.selectedScrollSnap();
       setCurrent(items[idx].category);
     };
-    api.on("select", onSelect);
+    api.on('select', onSelect);
 
     return () => {
-      api.off("select", onSelect);
+      api.off('select', onSelect);
     };
   }, [api, current]);
 
@@ -152,7 +155,7 @@ const Gallery16 = () => {
               onValueChange={setCurrent}
               className="mb-8 flex justify-center"
             >
-              <TabsList className="relative h-auto gap-6 bg-background">
+              <TabsList className="bg-background relative h-auto gap-6">
                 {items.map((item, idx) => (
                   <TabsTrigger
                     key={idx}
@@ -166,7 +169,7 @@ const Gallery16 = () => {
                   </TabsTrigger>
                 ))}
                 <div
-                  className="absolute bottom-0 h-0.5 bg-primary transition-all duration-700 ease-out"
+                  className="bg-primary absolute bottom-0 h-0.5 transition-all duration-700 ease-out"
                   style={{
                     width: `${indicatorStyle.width}px`,
                     left: `${indicatorStyle.left}px`,
@@ -182,21 +185,21 @@ const Gallery16 = () => {
           <CarouselContent className="max-w-4xl">
             {items.map((item, idx) => (
               <CarouselItem key={idx} className="w-fit max-w-4xl">
-                <div className="grid h-full max-w-4xl gap-10 rounded-xl border border-border p-6 shadow-sm select-none sm:p-10 md:max-h-[450px] md:grid-cols-2 lg:gap-20">
+                <div className="border-border grid h-full max-w-4xl gap-10 rounded-xl border p-6 shadow-sm select-none sm:p-10 md:max-h-[450px] md:grid-cols-2 lg:gap-20">
                   <div className="flex flex-col justify-between gap-4">
                     <div>
                       <h2 className="text-2xl font-medium sm:text-4xl">
                         {item.title}
                       </h2>
-                      <div className="mt-4 text-sm text-muted-foreground sm:mt-6">
+                      <div className="text-muted-foreground mt-4 text-sm sm:mt-6">
                         {item.description}
                       </div>
                     </div>
-                    <p className="mt-4 text-xs text-muted-foreground sm:mt-6">
+                    <p className="text-muted-foreground mt-4 text-xs sm:mt-6">
                       {item.note}
                     </p>
                   </div>
-                  <div className="rounded-xl border border-border p-2">
+                  <div className="border-border rounded-xl border p-2">
                     <img
                       src={item.image}
                       alt="placeholder"

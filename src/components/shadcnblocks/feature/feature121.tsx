@@ -1,4 +1,6 @@
-"use client";
+'use client';
+
+import React, { useState } from 'react';
 
 import {
   DollarSign,
@@ -7,8 +9,7 @@ import {
   Timer,
   Zap,
   ZoomIn,
-} from "lucide-react";
-import React, { useState } from "react";
+} from 'lucide-react';
 
 interface IFeatures {
   title: string;
@@ -18,39 +19,39 @@ interface IFeatures {
 
 const features: IFeatures[] = [
   {
-    title: "Performance",
+    title: 'Performance',
     description:
-      "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nesciunt, accusantium quam. Temporibus quae quos deserunt!",
+      'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nesciunt, accusantium quam. Temporibus quae quos deserunt!',
     icon: <Timer className="size-8 invert md:size-10" />,
   },
   {
-    title: "Innovation",
+    title: 'Innovation',
     description:
-      "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nesciunt, accusantium quam. Temporibus quae quos deserunt!",
+      'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nesciunt, accusantium quam. Temporibus quae quos deserunt!',
     icon: <Zap className="size-8 invert md:size-10" />,
   },
   {
-    title: "Quality",
+    title: 'Quality',
     description:
-      "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nesciunt, accusantium quam. Temporibus quae quos deserunt!",
+      'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nesciunt, accusantium quam. Temporibus quae quos deserunt!',
     icon: <ZoomIn className="size-8 invert md:size-10" />,
   },
   {
-    title: "Accessibility",
+    title: 'Accessibility',
     description:
-      "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nesciunt, accusantium quam. Temporibus quae quos deserunt!",
+      'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nesciunt, accusantium quam. Temporibus quae quos deserunt!',
     icon: <PersonStanding className="size-8 invert md:size-10" />,
   },
   {
-    title: "Affordability",
+    title: 'Affordability',
     description:
-      "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nesciunt, accusantium quam. Temporibus quae quos deserunt!",
+      'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nesciunt, accusantium quam. Temporibus quae quos deserunt!',
     icon: <DollarSign className="size-8 invert md:size-10" />,
   },
   {
-    title: "Customer Support",
+    title: 'Customer Support',
     description:
-      "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nesciunt, accusantium quam. Temporibus quae quos deserunt!",
+      'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nesciunt, accusantium quam. Temporibus quae quos deserunt!',
     icon: <MessagesSquare className="size-8 invert md:size-10" />,
   },
 ];
@@ -58,7 +59,7 @@ const features: IFeatures[] = [
 const Feature121 = () => {
   return (
     <section className="relative container py-32">
-      <div className="m-auto grid w-full gap-px overflow-hidden rounded-md bg-border sm:max-w-[600px] sm:grid-cols-2">
+      <div className="bg-border m-auto grid w-full gap-px overflow-hidden rounded-md sm:max-w-[600px] sm:grid-cols-2">
         {features.map((feature) => (
           <Block
             key={feature.title}
@@ -79,7 +80,7 @@ const Block: React.FC<IFeatures> = ({ title, description, icon }) => {
   const [isBlockClick, setBlockClick] = useState<boolean>(false);
   return (
     <section
-      className="relative aspect-square h-auto cursor-pointer overflow-hidden bg-accent px-6 py-3.5 transition duration-300 hover:bg-[#e9e9e9] sm:aspect-auto sm:h-[300px]"
+      className="bg-accent relative aspect-square h-auto cursor-pointer overflow-hidden px-6 py-3.5 transition duration-300 hover:bg-[#e9e9e9] sm:aspect-auto sm:h-[300px]"
       onMouseOver={() => setBlockHover(true)}
       onMouseOut={() => setBlockHover(false)}
       onClick={() => setBlockClick((prev) => !prev)}
@@ -87,13 +88,13 @@ const Block: React.FC<IFeatures> = ({ title, description, icon }) => {
       <p className="mr-auto text-lg text-balance uppercase">{title}</p>
 
       <div
-        className={`absolute top-0 right-0 bottom-0 left-0 m-auto flex size-36 min-h-36 min-w-36 shrink-0 items-center justify-center rounded-full bg-primary transition duration-300 sm:h-28 sm:min-h-28 sm:w-28 sm:min-w-28 ${isBlockHover && "scale-110 shadow-xl"} ${isBlockClick ? "-translate-y-40 transform opacity-0" : ""} md:size-12`}
+        className={`bg-primary absolute top-0 right-0 bottom-0 left-0 m-auto flex size-36 min-h-36 min-w-36 shrink-0 items-center justify-center rounded-full transition duration-300 sm:h-28 sm:min-h-28 sm:w-28 sm:min-w-28 ${isBlockHover && 'scale-110 shadow-xl'} ${isBlockClick ? '-translate-y-40 transform opacity-0' : ''} md:size-12`}
       >
         {icon}
       </div>
 
       <p
-        className={`absolute top-0 right-0 bottom-0 left-0 m-auto h-fit translate-y-40 transform px-6 py-3.5 opacity-0 transition duration-300 ${isBlockClick ? "translate-y-0! opacity-100!" : ""} `}
+        className={`absolute top-0 right-0 bottom-0 left-0 m-auto h-fit translate-y-40 transform px-6 py-3.5 opacity-0 transition duration-300 ${isBlockClick ? 'translate-y-0! opacity-100!' : ''} `}
       >
         {description}
       </p>

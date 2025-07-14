@@ -1,23 +1,24 @@
-"use client";
-import AutoScroll from "embla-carousel-auto-scroll";
-import Autoplay from "embla-carousel-autoplay";
-import { ArrowUpRight, Play, Sparkles } from "lucide-react";
-import { Fragment, useState } from "react";
+'use client';
+import { Fragment, useState } from 'react';
 
-import { AspectRatio } from "@/components/ui/aspect-ratio";
-import { Badge } from "@/components/ui/badge";
-import { Button } from "@/components/ui/button";
+import AutoScroll from 'embla-carousel-auto-scroll';
+import Autoplay from 'embla-carousel-autoplay';
+import { ArrowUpRight, Play, Sparkles } from 'lucide-react';
+
+import { AspectRatio } from '@/components/ui/aspect-ratio';
+import { Badge } from '@/components/ui/badge';
+import { Button } from '@/components/ui/button';
 import {
   Carousel,
   CarouselContent,
   CarouselItem,
-} from "@/components/ui/carousel";
+} from '@/components/ui/carousel';
 import {
   Dialog,
   DialogContent,
   DialogHeader,
   DialogTitle,
-} from "@/components/ui/dialog";
+} from '@/components/ui/dialog';
 
 const Hero114 = () => {
   const [isVideoOpen, setIsVideoOpen] = useState<boolean>(false);
@@ -41,7 +42,7 @@ const Hero114 = () => {
               </a>
             </Badge>
             <div className="flex w-full flex-col items-center gap-6">
-              <h1 className="text-foreground text-center text-2xl font-semibold leading-tight md:text-5xl lg:text-6xl">
+              <h1 className="text-foreground text-center text-2xl leading-tight font-semibold md:text-5xl lg:text-6xl">
                 All your AI tools together on one unified platform
               </h1>
               <p className="text-muted-foreground max-w-[37.5rem] text-center text-lg leading-snug lg:text-xl">
@@ -54,7 +55,7 @@ const Hero114 = () => {
                 asChild
                 onClick={() => setIsVideoOpen(true)}
                 variant="secondary"
-                className="border-muted2 flex h-fit w-fit items-center gap-2 rounded-full border px-4 py-2.5 text-base font-medium leading-normal"
+                className="border-muted2 flex h-fit w-fit items-center gap-2 rounded-full border px-4 py-2.5 text-base leading-normal font-medium"
               >
                 <a href="#">
                   <Play className="size-5!" />
@@ -63,7 +64,7 @@ const Hero114 = () => {
               </Button>
               <Button
                 asChild
-                className="block h-fit w-fit items-center gap-2 rounded-full px-4 py-2.5 text-base font-medium leading-normal"
+                className="block h-fit w-fit items-center gap-2 rounded-full px-4 py-2.5 text-base leading-normal font-medium"
               >
                 <a href="#">Try for Free</a>
               </Button>
@@ -86,7 +87,7 @@ const Hero114 = () => {
               <Carousel
                 opts={{
                   loop: true,
-                  align: "center",
+                  align: 'center',
                 }}
                 plugins={[
                   AutoScroll({
@@ -97,7 +98,7 @@ const Hero114 = () => {
                     delay: 1000,
                   }),
                 ]}
-                className="max-w-(--breakpoint-2xl) relative w-full overflow-hidden"
+                className="relative w-full max-w-(--breakpoint-2xl) overflow-hidden"
               >
                 <CarouselContent className="items-center">
                   <CarouselItem className="w-fit basis-auto px-7">

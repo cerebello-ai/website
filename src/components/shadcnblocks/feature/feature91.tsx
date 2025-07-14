@@ -6,7 +6,7 @@ import {
   Hourglass,
   Layout,
   ShieldCheck,
-} from "lucide-react";
+} from 'lucide-react';
 
 const Feature91 = () => {
   return (
@@ -17,7 +17,7 @@ const Feature91 = () => {
             <h2 className="mb-6 text-3xl font-semibold md:text-4xl">
               Team Leads
             </h2>
-            <p className="mb-6 text-lg text-muted-foreground">
+            <p className="text-muted-foreground mb-6 text-lg">
               Use this platform to create seamless integrations, enhance
               functionality, and focus on growing your product with ease and
               efficiency.
@@ -46,7 +46,7 @@ const Feature91 = () => {
                   user-friendly tools and APIs.
                 </p>
               </div>
-              <div className="flex items-center gap-7 border-y border-dashed border-primary py-6">
+              <div className="border-primary flex items-center gap-7 border-y border-dashed py-6">
                 <GitGraph className="h-auto w-8 shrink-0" />
                 <p>
                   Expand your feature set without losing focus on core
@@ -62,11 +62,11 @@ const Feature91 = () => {
               </div>
             </div>
           </div>
-          <div className="dark rounded-md border bg-background p-6 text-primary md:p-10 lg:rounded-l-none lg:rounded-r-md">
+          <div className="dark bg-background text-primary rounded-md border p-6 md:p-10 lg:rounded-l-none lg:rounded-r-md">
             <h2 className="mb-6 text-3xl font-semibold md:text-4xl">
               Developers
             </h2>
-            <p className="mb-6 text-lg text-muted-foreground">
+            <p className="text-muted-foreground mb-6 text-lg">
               Skip the hassle of building from scratch. Utilize our
               infrastructure, flexible APIs, and customization options to get
               things done.
@@ -95,7 +95,7 @@ const Feature91 = () => {
                   solutions for your projects.
                 </p>
               </div>
-              <div className="flex items-center gap-7 border-y border-dashed border-primary py-6">
+              <div className="border-primary flex items-center gap-7 border-y border-dashed py-6">
                 <Layout className="h-auto w-8 shrink-0" />
                 <p>
                   Scale easily to manage increasing data volumes as you grow

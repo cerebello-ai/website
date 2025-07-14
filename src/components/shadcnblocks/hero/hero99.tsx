@@ -1,6 +1,6 @@
-import { ArrowRight, ChevronRight } from "lucide-react";
+import { ArrowRight, ChevronRight } from 'lucide-react';
 
-import { Button } from "@/components/ui/button";
+import { Button } from '@/components/ui/button';
 
 const Hero99 = () => {
   return (
@@ -11,7 +11,7 @@ const Hero99 = () => {
           <div className="mx-auto max-w-4xl">
             <a
               href="#"
-              className="mx-auto mb-4 flex w-fit items-center gap-2 rounded-full bg-muted px-4 py-2 text-sm"
+              className="bg-muted mx-auto mb-4 flex w-fit items-center gap-2 rounded-full px-4 py-2 text-sm"
             >
               How to create superior products
               <ArrowRight className="inline size-4" />
@@ -19,7 +19,7 @@ const Hero99 = () => {
             <h1 className="my-4 mb-6 text-center text-3xl font-semibold lg:text-8xl">
               Create effective solutions for diverse needs.
             </h1>
-            <p className="mx-auto mb-8 max-w-2xl text-center text-muted-foreground lg:text-xl">
+            <p className="text-muted-foreground mx-auto mb-8 max-w-2xl text-center lg:text-xl">
               Access all necessary resources for managing tasks and enhancing
               efficiency. Additionally, scale your capabilities across various
               projects.

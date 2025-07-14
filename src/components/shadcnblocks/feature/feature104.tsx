@@ -6,9 +6,9 @@ import {
   Monitor,
   Target,
   TrendingUp,
-} from "lucide-react";
+} from 'lucide-react';
 
-import { Badge } from "@/components/ui/badge";
+import { Badge } from '@/components/ui/badge';
 
 const Feature104 = () => {
   return (
@@ -25,7 +25,7 @@ const Feature104 = () => {
           <h2 className="text-center text-3xl font-semibold lg:text-4xl">
             Unlock Your Workflow Potential
           </h2>
-          <p className="text-center text-muted-foreground lg:text-lg">
+          <p className="text-muted-foreground text-center lg:text-lg">
             Experience the benefits of streamlined processes, designed to
             enhance productivity and success.
           </p>
@@ -34,36 +34,36 @@ const Feature104 = () => {
           <div className="flex flex-col gap-2.5">
             <div className="gap flex flex-col gap-3 rounded-lg border p-6">
               <div className="flex items-center gap-2.5">
-                <span className="flex size-12 items-center justify-center rounded-md bg-muted">
+                <span className="bg-muted flex size-12 items-center justify-center rounded-md">
                   <Target className="h-auto w-6" />
                 </span>
                 <h3 className="font-medium">Targeted Solutions</h3>
               </div>
-              <p className="text-sm text-muted-foreground md:text-base">
+              <p className="text-muted-foreground text-sm md:text-base">
                 Tailored features designed to tackle specific project challenges
                 with precision.
               </p>
             </div>
             <div className="gap flex flex-col gap-3 rounded-lg border p-6">
               <div className="flex items-center gap-2.5">
-                <span className="flex size-12 items-center justify-center rounded-md bg-muted">
+                <span className="bg-muted flex size-12 items-center justify-center rounded-md">
                   <Layout className="h-auto w-6" />
                 </span>
                 <h3 className="font-medium">Seamless Integration</h3>
               </div>
-              <p className="text-sm text-muted-foreground md:text-base">
+              <p className="text-muted-foreground text-sm md:text-base">
                 Effortlessly merge new technologies into existing systems to
                 maintain continuity and performance.
               </p>
             </div>
             <div className="gap flex flex-col gap-3 rounded-lg border p-6">
               <div className="flex items-center gap-2.5">
-                <span className="flex size-12 items-center justify-center rounded-md bg-muted">
+                <span className="bg-muted flex size-12 items-center justify-center rounded-md">
                   <ChartArea className="h-auto w-6" />
                 </span>
                 <h3 className="font-medium">Real-Time Data Insights</h3>
               </div>
-              <p className="text-sm text-muted-foreground md:text-base">
+              <p className="text-muted-foreground text-sm md:text-base">
                 Monitor data in real-time for better decision-making and faster
                 adjustments.
               </p>
@@ -78,36 +78,36 @@ const Feature104 = () => {
           <div className="flex flex-col gap-2.5">
             <div className="gap flex flex-col gap-3 rounded-lg border p-6">
               <div className="flex items-center gap-2.5">
-                <span className="flex size-12 items-center justify-center rounded-md bg-muted">
+                <span className="bg-muted flex size-12 items-center justify-center rounded-md">
                   <TrendingUp className="h-auto w-6" />
                 </span>
                 <h3 className="font-medium">Strategic Growth</h3>
               </div>
-              <p className="text-sm text-muted-foreground md:text-base">
+              <p className="text-muted-foreground text-sm md:text-base">
                 Leverage strategic tools to scale your business and meet
                 evolving market demands.
               </p>
             </div>
             <div className="gap flex flex-col gap-3 rounded-lg border p-6">
               <div className="flex items-center gap-2.5">
-                <span className="flex size-12 items-center justify-center rounded-md bg-muted">
+                <span className="bg-muted flex size-12 items-center justify-center rounded-md">
                   <ChartNoAxesCombined className="h-auto w-6" />
                 </span>
                 <h3 className="font-medium">Advanced Analytics</h3>
               </div>
-              <p className="text-sm text-muted-foreground md:text-base">
+              <p className="text-muted-foreground text-sm md:text-base">
                 Gain deeper insights through advanced analytics to stay ahead in
                 decision-making.
               </p>
             </div>
             <div className="gap flex flex-col gap-3 rounded-lg border p-6">
               <div className="flex items-center gap-2.5">
-                <span className="flex size-12 items-center justify-center rounded-md bg-muted">
+                <span className="bg-muted flex size-12 items-center justify-center rounded-md">
                   <Monitor className="h-auto w-6" />
                 </span>
                 <h3 className="font-medium">Unified Control</h3>
               </div>
-              <p className="text-sm text-muted-foreground md:text-base">
+              <p className="text-muted-foreground text-sm md:text-base">
                 Centralize management and control all aspects of your workflow
                 from one platform.
               </p>

@@ -1,10 +1,11 @@
-"use client";
+'use client';
 
-import { Database, LockKeyhole, Sparkles } from "lucide-react";
-import { useState } from "react";
+import { useState } from 'react';
 
-import { Button } from "@/components/ui/button";
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+import { Database, LockKeyhole, Sparkles } from 'lucide-react';
+
+import { Button } from '@/components/ui/button';
+import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 
 interface DataItem {
   id: string;
@@ -16,24 +17,27 @@ interface DataItem {
 
 const DATA: DataItem[] = [
   {
-    id: "feature-1",
-    title: "Innovative Solutions",
-    description: "Discover cutting-edge tools to revolutionize your workflow.",
-    image: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-dark-1.svg",
+    id: 'feature-1',
+    title: 'Innovative Solutions',
+    description: 'Discover cutting-edge tools to revolutionize your workflow.',
+    image:
+      'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-dark-1.svg',
     icon: <Sparkles className="h-6 w-6 text-white" />,
   },
   {
-    id: "feature-2",
-    title: "Data Management",
-    description: "Efficiently organize and manage your data with ease.",
-    image: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-dark-2.svg",
+    id: 'feature-2',
+    title: 'Data Management',
+    description: 'Efficiently organize and manage your data with ease.',
+    image:
+      'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-dark-2.svg',
     icon: <Database className="h-6 w-6 text-white" />,
   },
   {
-    id: "feature-3",
-    title: "Advanced Security",
-    description: "Protect your assets with state-of-the-art security features.",
-    image: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-dark-3.svg",
+    id: 'feature-3',
+    title: 'Advanced Security',
+    description: 'Protect your assets with state-of-the-art security features.',
+    image:
+      'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-dark-3.svg',
     icon: <LockKeyhole className="h-6 w-6 text-white" />,
   },
 ];
@@ -44,13 +48,14 @@ const Feature186 = () => {
   return (
     <section className="relative py-16 md:py-32">
       <div
-        className="absolute left-0 right-0 top-0 z-0 h-[800px] w-screen bg-repeat opacity-30 [mask-image:radial-gradient(ellipse_at_center,white_20%,transparent_70%)]"
+        className="absolute top-0 right-0 left-0 z-0 h-[800px] w-screen [mask-image:radial-gradient(ellipse_at_center,white_20%,transparent_70%)] bg-repeat opacity-30"
         style={{
-          backgroundImage: "url('https://deifkwefumgah.cloudfront.net/shadcnblocks/block/patterns/architect.svg')",
-          backgroundSize: "60px",
+          backgroundImage:
+            "url('https://deifkwefumgah.cloudfront.net/shadcnblocks/block/patterns/architect.svg')",
+          backgroundSize: '60px',
         }}
       />
-      <div className="container relative z-10">
+      <div className="relative z-10 container">
         <div>
           <h2 className="text-4xl font-medium sm:text-5xl lg:text-6xl">
             Our Key Features
@@ -87,7 +92,7 @@ const Feature186 = () => {
                     value={feature.id}
                     className="relative z-20"
                   >
-                    <div className="aspect-3/2 bg-accent w-full rounded-lg p-6 md:p-14 md:px-24">
+                    <div className="bg-accent aspect-3/2 w-full rounded-lg p-6 md:p-14 md:px-24">
                       <div className="mx-auto max-w-full md:mx-0 md:max-w-md">
                         <div className="flex size-12 items-center justify-center rounded-full bg-black">
                           {feature.icon}
@@ -124,7 +129,7 @@ const Feature186 = () => {
                   >
                     <div
                       className={`size-2 rounded-full ${
-                        feature.id === selection ? "bg-primary" : "bg-input"
+                        feature.id === selection ? 'bg-primary' : 'bg-input'
                       }`}
                     />
                   </Button>

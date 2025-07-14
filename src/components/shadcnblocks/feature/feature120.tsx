@@ -1,6 +1,6 @@
-import { Avatar, AvatarImage } from "@/components/ui/avatar";
-import { Button } from "@/components/ui/button";
-import { Separator } from "@/components/ui/separator";
+import { Avatar, AvatarImage } from '@/components/ui/avatar';
+import { Button } from '@/components/ui/button';
+import { Separator } from '@/components/ui/separator';
 
 const Feature120 = () => {
   return (
@@ -17,8 +17,11 @@ const Feature120 = () => {
             </p>
             <div className="flex flex-col gap-6 py-10 sm:flex-row sm:gap-16">
               <div className="flex gap-4 leading-5">
-                <Avatar className="size-9 rounded-full ring-1 ring-input">
-                  <AvatarImage src="https://deifkwefumgah.cloudfront.net/shadcnblocks/block/avatar-1.webp" alt="avatar" />
+                <Avatar className="ring-input size-9 rounded-full ring-1">
+                  <AvatarImage
+                    src="https://deifkwefumgah.cloudfront.net/shadcnblocks/block/avatar-1.webp"
+                    alt="avatar"
+                  />
                 </Avatar>
                 <div className="text-sm">
                   <p className="font-medium">Emily Watson</p>
@@ -26,8 +29,11 @@ const Feature120 = () => {
                 </div>
               </div>
               <div className="flex gap-4 leading-5">
-                <Avatar className="size-9 rounded-full ring-1 ring-input">
-                  <AvatarImage src="https://deifkwefumgah.cloudfront.net/shadcnblocks/block/avatar-2.webp" alt="avatar" />
+                <Avatar className="ring-input size-9 rounded-full ring-1">
+                  <AvatarImage
+                    src="https://deifkwefumgah.cloudfront.net/shadcnblocks/block/avatar-2.webp"
+                    alt="avatar"
+                  />
                 </Avatar>
                 <div className="text-sm">
                   <p className="font-medium">Michael Lee</p>

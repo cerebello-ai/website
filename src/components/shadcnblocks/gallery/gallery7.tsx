@@ -1,29 +1,28 @@
-"use client";
+'use client';
 
-import AutoScroll from "embla-carousel-auto-scroll";
-import { MoveRight } from "lucide-react";
-
-import { cn } from "@/lib/utils";
+import AutoScroll from 'embla-carousel-auto-scroll';
+import { MoveRight } from 'lucide-react';
 
 import {
   Carousel,
   CarouselContent,
   CarouselItem,
-} from "@/components/ui/carousel";
+} from '@/components/ui/carousel';
+import { cn } from '@/lib/utils';
 
 const images = [
-  "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-1.svg",
-  "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-2.svg",
-  "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-3.svg",
-  "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-4.svg",
-  "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-5.svg",
-  "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-6.svg",
-  "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-1.svg",
-  "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-2.svg",
-  "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-3.svg",
-  "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-4.svg",
-  "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-5.svg",
-  "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-6.svg",
+  'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-1.svg',
+  'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-2.svg',
+  'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-3.svg',
+  'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-4.svg',
+  'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-5.svg',
+  'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-6.svg',
+  'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-1.svg',
+  'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-2.svg',
+  'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-3.svg',
+  'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-4.svg',
+  'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-5.svg',
+  'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-6.svg',
 ];
 
 const Gallery7 = () => {
@@ -68,8 +67,8 @@ const Gallery7 = () => {
                       src={image}
                       alt="placeholder"
                       className={cn(
-                        "mt-7 h-full w-full rounded-md object-cover",
-                        index % 2 === 0 && "mt-16",
+                        'mt-7 h-full w-full rounded-md object-cover',
+                        index % 2 === 0 && 'mt-16',
                       )}
                     />
                   </div>

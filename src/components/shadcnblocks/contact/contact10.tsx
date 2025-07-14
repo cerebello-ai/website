@@ -1,28 +1,28 @@
-import { Facebook, Linkedin, Twitter } from "lucide-react";
-import React from "react";
+import React from 'react';
 
-import { cn } from "@/lib/utils";
+import { Facebook, Linkedin, Twitter } from 'lucide-react';
 
-import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
-import { Label } from "@/components/ui/label";
-import { Textarea } from "@/components/ui/textarea";
+import { Button } from '@/components/ui/button';
+import { Input } from '@/components/ui/input';
+import { Label } from '@/components/ui/label';
+import { Textarea } from '@/components/ui/textarea';
+import { cn } from '@/lib/utils';
 
 const Contact10 = () => {
   return (
-    <section className="relative mx-2.5 mt-2.5 rounded-t-2xl rounded-b-[36px] bg-linear-to-b from-amber-50 via-background to-background py-32 lg:mx-4 dark:from-amber-950">
+    <section className="via-background to-background relative mx-2.5 mt-2.5 rounded-t-2xl rounded-b-[36px] bg-linear-to-b from-amber-50 py-32 lg:mx-4 dark:from-amber-950">
       <div className="container max-w-2xl">
         <h1 className="text-center text-4xl font-semibold tracking-tight lg:text-5xl">
           Contact us
         </h1>
-        <p className="mt-4 text-center leading-snug font-medium text-muted-foreground lg:mx-auto">
+        <p className="text-muted-foreground mt-4 text-center leading-snug font-medium lg:mx-auto">
           Hopefully this form gets through our spam filters.
         </p>
 
         <div className="mt-10 flex justify-between gap-8 max-sm:flex-col md:mt-14 lg:mt-20 lg:gap-12">
           <div>
             <h2 className="font-semibold">Corporate office</h2>
-            <p className="mt-3 text-muted-foreground">
+            <p className="text-muted-foreground mt-3">
               1 Carlsberg Close
               <br />
               1260 Hillview, Australia
@@ -85,14 +85,14 @@ const Contact10 = () => {
             </div>
             <div className="space-y-2">
               <Label>
-                Company name{" "}
+                Company name{' '}
                 <span className="text-muted-foreground">(optional)</span>
               </Label>
               <Input placeholder="Company name" />
             </div>
             <div className="space-y-2">
               <Label>
-                Number of employees{" "}
+                Number of employees{' '}
                 <span className="text-muted-foreground">(optional)</span>
               </Label>
               <Input placeholder="e.g. 10-50" />
@@ -118,21 +118,21 @@ const Contact10 = () => {
 };
 
 interface DashedLineProps {
-  orientation?: "horizontal" | "vertical";
+  orientation?: 'horizontal' | 'vertical';
   className?: string;
 }
 
 const DashedLine = ({
-  orientation = "horizontal",
+  orientation = 'horizontal',
   className,
 }: DashedLineProps) => {
-  const isHorizontal = orientation === "horizontal";
+  const isHorizontal = orientation === 'horizontal';
 
   return (
     <div
       className={cn(
-        "relative text-muted-foreground",
-        isHorizontal ? "h-px w-full" : "h-full w-px",
+        'text-muted-foreground relative',
+        isHorizontal ? 'h-px w-full' : 'h-full w-px',
         className,
       )}
     >
@@ -140,14 +140,14 @@ const DashedLine = ({
         className={cn(
           isHorizontal
             ? [
-                "h-px w-full",
-                "bg-[repeating-linear-gradient(90deg,transparent,transparent_4px,currentColor_4px,currentColor_10px)]",
-                "[mask-image:linear-gradient(90deg,transparent,black_25%,black_75%,transparent)]",
+                'h-px w-full',
+                'bg-[repeating-linear-gradient(90deg,transparent,transparent_4px,currentColor_4px,currentColor_10px)]',
+                '[mask-image:linear-gradient(90deg,transparent,black_25%,black_75%,transparent)]',
               ]
             : [
-                "h-full w-px",
-                "bg-[repeating-linear-gradient(180deg,transparent,transparent_4px,currentColor_4px,currentColor_8px)]",
-                "[mask-image:linear-gradient(180deg,transparent,black_25%,black_75%,transparent)]",
+                'h-full w-px',
+                'bg-[repeating-linear-gradient(180deg,transparent,transparent_4px,currentColor_4px,currentColor_8px)]',
+                '[mask-image:linear-gradient(180deg,transparent,black_25%,black_75%,transparent)]',
               ],
         )}
       />

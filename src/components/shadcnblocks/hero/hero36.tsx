@@ -1,34 +1,36 @@
-import { ArrowRight } from "lucide-react";
+import { ArrowRight } from 'lucide-react';
 
-import { cn } from "@/lib/utils";
-
-import { Badge } from "@/components/ui/badge";
+import { Badge } from '@/components/ui/badge';
+import { cn } from '@/lib/utils';
 
 // Move card data outside the component
 const heroCards = [
   {
-    title: "Product Design",
-    image: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/block-1.svg",
+    title: 'Product Design',
+    image:
+      'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/block-1.svg',
     description:
-      "Maecenas egestas leo nec risus viverra accumsan. Interdum et malesuada fames ac ante ipsum primis in faucibus.",
+      'Maecenas egestas leo nec risus viverra accumsan. Interdum et malesuada fames ac ante ipsum primis in faucibus.',
   },
   {
-    title: "Development",
-    image: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/block-2.svg",
+    title: 'Development',
+    image:
+      'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/block-2.svg',
     description:
-      "Maecenas egestas leo nec risus viverra accumsan. Interdum et malesuada fames ac ante ipsum primis in faucibus.",
+      'Maecenas egestas leo nec risus viverra accumsan. Interdum et malesuada fames ac ante ipsum primis in faucibus.',
   },
   {
-    title: "Marketing",
-    image: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/block-3.svg",
+    title: 'Marketing',
+    image:
+      'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/block-3.svg',
     description:
-      "Maecenas egestas leo nec risus viverra accumsan. Interdum et malesuada fames ac ante ipsum primis in faucibus.",
+      'Maecenas egestas leo nec risus viverra accumsan. Interdum et malesuada fames ac ante ipsum primis in faucibus.',
   },
 ];
 
 const Hero36 = () => {
   return (
-    <section className="relative overflow-hidden bg-accent py-24 md:py-32">
+    <section className="bg-accent relative overflow-hidden py-24 md:py-32">
       <div className="absolute inset-0 opacity-50">
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(255,255,255,0.15),transparent_50%)]"></div>
       </div>
@@ -42,7 +44,7 @@ const Hero36 = () => {
         <h1 className="my-4 max-w-3xl text-2xl font-bold text-pretty sm:text-4xl md:my-6 lg:text-5xl">
           Our blocks help global companies expand into new markets
         </h1>
-        <p className="max-w-2xl text-muted-foreground">
+        <p className="text-muted-foreground max-w-2xl">
           Discover how our powerful building blocks can transform your business
           and drive growth
         </p>
@@ -53,8 +55,8 @@ const Hero36 = () => {
             key={index}
             href="#"
             className={cn(
-              "relative flex flex-col items-center rounded-xl border bg-background/70 px-6 py-10 text-center backdrop-blur-sm lg:px-8 lg:py-12",
-              index === 1 && "md:translate-y-4",
+              'bg-background/70 relative flex flex-col items-center rounded-xl border px-6 py-10 text-center backdrop-blur-sm lg:px-8 lg:py-12',
+              index === 1 && 'md:translate-y-4',
             )}
           >
             <div className="mb-6 flex aspect-square w-16 items-center justify-center md:w-20 lg:mb-8">
@@ -67,10 +69,10 @@ const Hero36 = () => {
             <h3 className="mb-3 text-lg font-semibold md:text-xl">
               {item.title}
             </h3>
-            <p className="mb-auto text-sm text-muted-foreground">
+            <p className="text-muted-foreground mb-auto text-sm">
               {item.description}
             </p>
-            <div className="mt-8 flex items-center text-primary md:mt-10">
+            <div className="text-primary mt-8 flex items-center md:mt-10">
               <span className="font-medium">See more</span>
               <ArrowRight className="ml-2 size-4" />
             </div>

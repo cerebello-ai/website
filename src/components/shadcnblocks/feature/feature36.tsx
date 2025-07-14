@@ -1,5 +1,5 @@
-import { Badge } from "@/components/ui/badge";
-import { Card } from "@/components/ui/card";
+import { Badge } from '@/components/ui/badge';
+import { Card } from '@/components/ui/card';
 
 const Feature36 = () => {
   return (
@@ -7,7 +7,7 @@ const Feature36 = () => {
       <div className="container">
         <div className="grid grid-cols-1 gap-5 lg:grid-cols-3">
           <a className="group lg:col-span-2 lg:row-span-2" href="#">
-            <Card className="h-full items-start border border-transparent bg-accent p-12 hover:cursor-pointer hover:border-primary lg:p-20">
+            <Card className="bg-accent hover:border-primary h-full items-start border border-transparent p-12 hover:cursor-pointer lg:p-20">
               <div className="flex flex-col gap-8">
                 <Badge className="w-fit">Studies</Badge>
                 <div className="flex flex-col gap-6">
@@ -30,7 +30,7 @@ const Feature36 = () => {
             </Card>
           </a>
           <a className="group" href="#">
-            <Card className="h-full items-start border border-transparent bg-accent p-12 hover:cursor-pointer hover:border-primary">
+            <Card className="bg-accent hover:border-primary h-full items-start border border-transparent p-12 hover:cursor-pointer">
               <div className="flex flex-col gap-8">
                 <div className="flex flex-col gap-6">
                   <p>Case Study</p>
@@ -45,7 +45,7 @@ const Feature36 = () => {
             </Card>
           </a>
           <a className="group" href="#">
-            <Card className="h-full items-start border border-transparent bg-accent p-12 hover:cursor-pointer hover:border-primary">
+            <Card className="bg-accent hover:border-primary h-full items-start border border-transparent p-12 hover:cursor-pointer">
               <div className="flex flex-col gap-8">
                 <div className="flex flex-col gap-6">
                   <p>Case Study</p>
@@ -60,7 +60,7 @@ const Feature36 = () => {
             </Card>
           </a>
           <a className="group" href="#">
-            <Card className="h-full items-start border border-transparent bg-accent p-12 hover:cursor-pointer hover:border-primary">
+            <Card className="bg-accent hover:border-primary h-full items-start border border-transparent p-12 hover:cursor-pointer">
               <div className="flex flex-col gap-8">
                 <div className="flex flex-col gap-6">
                   <p>Case Study</p>
@@ -75,7 +75,7 @@ const Feature36 = () => {
             </Card>
           </a>
           <a className="group" href="#">
-            <Card className="h-full items-start border border-transparent bg-accent p-12 hover:cursor-pointer hover:border-primary">
+            <Card className="bg-accent hover:border-primary h-full items-start border border-transparent p-12 hover:cursor-pointer">
               <div className="flex flex-col gap-8">
                 <div className="flex flex-col gap-6">
                   <p>Case Study</p>
@@ -90,7 +90,7 @@ const Feature36 = () => {
             </Card>
           </a>
           <a className="group" href="#">
-            <Card className="h-full items-start border border-transparent bg-accent p-12 hover:cursor-pointer hover:border-primary">
+            <Card className="bg-accent hover:border-primary h-full items-start border border-transparent p-12 hover:cursor-pointer">
               <div className="flex flex-col gap-8">
                 <div className="flex flex-col gap-6">
                   <p>Case Study</p>

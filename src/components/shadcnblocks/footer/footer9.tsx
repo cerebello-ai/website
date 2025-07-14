@@ -1,51 +1,51 @@
-import { CircleCheck, LifeBuoy, Linkedin } from "lucide-react";
+import { CircleCheck, LifeBuoy, Linkedin } from 'lucide-react';
 
-import { Button } from "@/components/ui/button";
+import { Button } from '@/components/ui/button';
 
 const sections = [
   {
-    title: "Product",
+    title: 'Product',
     links: [
-      { name: "Features", href: "#" },
-      { name: "Tasks", href: "#" },
-      { name: "Calendar", href: "#" },
-      { name: "Conferencing", href: "#" },
-      { name: "Invoicing", href: "#" },
-      { name: "Security", href: "#" },
+      { name: 'Features', href: '#' },
+      { name: 'Tasks', href: '#' },
+      { name: 'Calendar', href: '#' },
+      { name: 'Conferencing', href: '#' },
+      { name: 'Invoicing', href: '#' },
+      { name: 'Security', href: '#' },
     ],
   },
   {
-    title: "Resources",
+    title: 'Resources',
     links: [
-      { name: "Blog", href: "#" },
-      { name: "Pricing", href: "#" },
-      { name: "Roadmap", href: "#" },
-      { name: "Changelog", href: "#" },
-      { name: "Resources", href: "#" },
+      { name: 'Blog', href: '#' },
+      { name: 'Pricing', href: '#' },
+      { name: 'Roadmap', href: '#' },
+      { name: 'Changelog', href: '#' },
+      { name: 'Resources', href: '#' },
     ],
   },
   {
-    title: "Case Studies",
+    title: 'Case Studies',
     links: [
-      { name: "Shadcn", href: "#" },
-      { name: "React", href: "#" },
-      { name: "Tailwind", href: "#" },
+      { name: 'Shadcn', href: '#' },
+      { name: 'React', href: '#' },
+      { name: 'Tailwind', href: '#' },
     ],
   },
   {
-    title: "Integrations",
+    title: 'Integrations',
     links: [
-      { name: "Hubspot", href: "#" },
-      { name: "Slack", href: "#" },
+      { name: 'Hubspot', href: '#' },
+      { name: 'Slack', href: '#' },
     ],
   },
   {
-    title: "Company",
+    title: 'Company',
     links: [
-      { name: "About ", href: "#" },
-      { name: "Company", href: "#" },
-      { name: "Support", href: "#" },
-      { name: "Book a demo", href: "#" },
+      { name: 'About ', href: '#' },
+      { name: 'Company', href: '#' },
+      { name: 'Support', href: '#' },
+      { name: 'Book a demo', href: '#' },
     ],
   },
 ];

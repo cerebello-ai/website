@@ -1,5 +1,5 @@
-import { AspectRatio } from "@/components/ui/aspect-ratio";
-import { Button } from "@/components/ui/button";
+import { AspectRatio } from '@/components/ui/aspect-ratio';
+import { Button } from '@/components/ui/button';
 
 const Hero123 = () => {
   return (
@@ -10,10 +10,10 @@ const Hero123 = () => {
             <span className="mb-4 block font-mono text-lg font-medium">
               Library / Playlist
             </span>
-            <h1 className="text-7xl font-medium tracking-tight text-foreground">
+            <h1 className="text-foreground text-7xl font-medium tracking-tight">
               Unlock your next big opportunity
             </h1>
-            <p className="pt-10 text-lg leading-8 text-foreground">
+            <p className="text-foreground pt-10 text-lg leading-8">
               Discover innovative solutions tailored to transform your vision
               into reality. Explore new ways to elevate your projects with
               creativity and precision.
@@ -29,7 +29,7 @@ const Hero123 = () => {
           </div>
           <div>
             {/* images from Figma Apple Widgets UI Kit https://www.figma.com/community/file/857332868558500566 */}
-            <div className="relative mx-auto max-w-[596px] overflow-hidden rounded-lg bg-primary pt-6 pl-6 lg:mx-0">
+            <div className="bg-primary relative mx-auto max-w-[596px] overflow-hidden rounded-lg pt-6 pl-6 lg:mx-0">
               <AspectRatio
                 ratio={0.9104 / 1}
                 className="overflow-hidden rounded-tl-md"

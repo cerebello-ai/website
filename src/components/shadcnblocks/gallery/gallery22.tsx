@@ -1,65 +1,66 @@
-"use client";
+'use client';
 
-import { ChevronLeft, ChevronRight } from "lucide-react";
-import React, { useEffect, useState } from "react";
-import { FaXTwitter } from "react-icons/fa6";
-import { Autoplay, EffectCoverflow } from "swiper/modules";
-import { Swiper, SwiperSlide } from "swiper/react";
-import "swiper/css/effect-coverflow";
-import "swiper/css/pagination";
-import "swiper/css/navigation";
-import "swiper/css";
-import "swiper/css/effect-cards";
+import React, { useEffect, useState } from 'react';
+
+import { ChevronLeft, ChevronRight } from 'lucide-react';
+import { FaXTwitter } from 'react-icons/fa6';
+import { Autoplay, EffectCoverflow } from 'swiper/modules';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/css/effect-coverflow';
+import 'swiper/css/pagination';
+import 'swiper/css/navigation';
+import 'swiper/css';
+import 'swiper/css/effect-cards';
 
 const Gallery22 = () => {
   const images = [
     {
-      src: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/lummi/person2.jpeg",
-      alt: "Portrait of Joanna Doe in urban setting",
-      name: "Joanna Doe",
-      role: "Designer Chief",
+      src: 'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/lummi/person2.jpeg',
+      alt: 'Portrait of Joanna Doe in urban setting',
+      name: 'Joanna Doe',
+      role: 'Designer Chief',
       icon: <FaXTwitter className="size-5 text-white" />,
-      url: "#",
+      url: '#',
     },
     {
-      src: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/lummi/person1.jpeg",
-      alt: "Portrait of Joan Doe in natural lighting",
-      name: "Joan Doe",
-      role: "Creative Director",
+      src: 'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/lummi/person1.jpeg',
+      alt: 'Portrait of Joan Doe in natural lighting',
+      name: 'Joan Doe',
+      role: 'Creative Director',
       icon: <FaXTwitter className="size-5 text-white" />,
-      url: "#",
+      url: '#',
     },
     {
-      src: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/lummi/person2.jpeg",
-      alt: "Portrait of Sarah Chen in studio setting",
-      name: "Sarah Chen",
-      role: "Art Director",
+      src: 'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/lummi/person2.jpeg',
+      alt: 'Portrait of Sarah Chen in studio setting',
+      name: 'Sarah Chen',
+      role: 'Art Director',
       icon: <FaXTwitter className="size-5 text-white" />,
-      url: "#",
+      url: '#',
     },
     {
-      src: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/lummi/person3.jpeg",
-      alt: "Portrait of Joanna Doe in urban setting",
-      name: "Joanna Doe",
-      role: "Designer Chief",
+      src: 'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/lummi/person3.jpeg',
+      alt: 'Portrait of Joanna Doe in urban setting',
+      name: 'Joanna Doe',
+      role: 'Designer Chief',
       icon: <FaXTwitter className="size-5 text-white" />,
-      url: "#",
+      url: '#',
     },
     {
-      src: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/lummi/person1.jpeg",
-      alt: "Portrait of Joan Doe in natural lighting",
-      name: "Joan Doe",
-      role: "Creative Director",
+      src: 'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/lummi/person1.jpeg',
+      alt: 'Portrait of Joan Doe in natural lighting',
+      name: 'Joan Doe',
+      role: 'Creative Director',
       icon: <FaXTwitter className="size-5 text-white" />,
-      url: "#",
+      url: '#',
     },
     {
-      src: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/lummi/random11.jpeg",
-      alt: "Portrait of Sarah Chen in studio setting",
-      name: "Sarah Chen",
-      role: "Art Director",
+      src: 'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/lummi/random11.jpeg',
+      alt: 'Portrait of Sarah Chen in studio setting',
+      name: 'Sarah Chen',
+      role: 'Art Director',
       icon: <FaXTwitter className="size-5 text-white" />,
-      url: "#",
+      url: '#',
     },
   ];
 
@@ -144,7 +145,7 @@ const Gallery22 = () => {
                   />
                   <a
                     href={image.url}
-                    className="absolute top-1 -left-2.5 flex size-10 items-center justify-center bg-foreground transition-all duration-300 hover:scale-90 hover:rotate-12"
+                    className="bg-foreground absolute top-1 -left-2.5 flex size-10 items-center justify-center transition-all duration-300 hover:scale-90 hover:rotate-12"
                   >
                     {image.icon}
                     <span className="sr-only">{image.name}</span>

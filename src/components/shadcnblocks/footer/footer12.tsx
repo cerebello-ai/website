@@ -1,20 +1,20 @@
-import { ArrowUpRight } from "lucide-react";
+import { ArrowUpRight } from 'lucide-react';
 
 const Footer12 = () => {
   const navigation = [
-    { name: "Product", href: "#" },
-    { name: "About Us", href: "#" },
-    { name: "Pricing", href: "#" },
-    { name: "FAQ", href: "#" },
-    { name: "Contact", href: "#" },
+    { name: 'Product', href: '#' },
+    { name: 'About Us', href: '#' },
+    { name: 'Pricing', href: '#' },
+    { name: 'FAQ', href: '#' },
+    { name: 'Contact', href: '#' },
   ];
 
   const social = [
-    { name: "Twitter", href: "#" },
-    { name: "LinkedIn", href: "#" },
+    { name: 'Twitter', href: '#' },
+    { name: 'LinkedIn', href: '#' },
   ];
 
-  const legal = [{ name: "Privacy Policy", href: "#" }];
+  const legal = [{ name: 'Privacy Policy', href: '#' }];
 
   return (
     <section className="flex flex-col items-center gap-14 py-32">
@@ -46,7 +46,7 @@ const Footer12 = () => {
             <li key={item.name}>
               <a
                 href={item.href}
-                className="text-sm text-muted-foreground transition-opacity hover:opacity-75"
+                className="text-muted-foreground text-sm transition-opacity hover:opacity-75"
               >
                 {item.name}
               </a>

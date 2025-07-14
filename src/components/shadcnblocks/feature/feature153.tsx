@@ -1,7 +1,8 @@
-"use client";
+'use client';
 
-import { ArrowRight } from "lucide-react";
-import { useState } from "react";
+import { useState } from 'react';
+
+import { ArrowRight } from 'lucide-react';
 
 import {
   Carousel,
@@ -9,82 +10,86 @@ import {
   CarouselItem,
   CarouselNext,
   CarouselPrevious,
-} from "@/components/ui/carousel";
+} from '@/components/ui/carousel';
 
 const integrations = [
   {
-    image: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/shadcn-ui-icon.svg",
-    title: "Shadcn UI",
+    image:
+      'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/shadcn-ui-icon.svg',
+    title: 'Shadcn UI',
     description:
-      "Shadcn UI is a modern component library that streamlines the development of user interfaces.",
+      'Shadcn UI is a modern component library that streamlines the development of user interfaces.',
     info: [
       {
-        title: "Component Variety",
-        text: "Shadcn UI provides a diverse set of components tailored for modern web applications, enhancing development speed.",
+        title: 'Component Variety',
+        text: 'Shadcn UI provides a diverse set of components tailored for modern web applications, enhancing development speed.',
       },
       {
-        title: "Customizability",
-        text: "The library allows extensive customization options, enabling developers to create unique designs without constraints.",
+        title: 'Customizability',
+        text: 'The library allows extensive customization options, enabling developers to create unique designs without constraints.',
       },
       {
-        title: "Accessibility Focus",
-        text: "Shadcn UI emphasizes accessibility, ensuring that components are usable for all users, including those with disabilities.",
+        title: 'Accessibility Focus',
+        text: 'Shadcn UI emphasizes accessibility, ensuring that components are usable for all users, including those with disabilities.',
       },
     ],
   },
   {
-    image: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/figma-icon.svg",
-    title: "Figma",
+    image:
+      'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/figma-icon.svg',
+    title: 'Figma',
     description:
-      "Figma is a collaborative interface design tool that empowers teams to create and prototype.",
+      'Figma is a collaborative interface design tool that empowers teams to create and prototype.',
     info: [
       {
-        title: "Real-Time Collaboration",
-        text: "Figma enables multiple users to work on designs simultaneously, making it ideal for team projects.",
+        title: 'Real-Time Collaboration',
+        text: 'Figma enables multiple users to work on designs simultaneously, making it ideal for team projects.',
       },
       {
-        title: "Prototyping Capabilities",
-        text: "It offers powerful prototyping tools that allow designers to create interactive mockups for user testing.",
+        title: 'Prototyping Capabilities',
+        text: 'It offers powerful prototyping tools that allow designers to create interactive mockups for user testing.',
       },
       {
-        title: "Designing Components",
-        text: "Figma provides powerful tools for designing and building reusable components, enhancing collaboration and consistency across designs.",
+        title: 'Designing Components',
+        text: 'Figma provides powerful tools for designing and building reusable components, enhancing collaboration and consistency across designs.',
       },
     ],
   },
   {
-    image: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/tailwind-icon.svg",
-    title: "Tailwind",
+    image:
+      'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/tailwind-icon.svg',
+    title: 'Tailwind',
     description:
-      "Tailwind CSS is a utility-first CSS framework that enables developers to build custom designs directly in their markup, promoting rapid development and design flexibility.",
+      'Tailwind CSS is a utility-first CSS framework that enables developers to build custom designs directly in their markup, promoting rapid development and design flexibility.',
     info: [
       {
-        title: "Utility-First Approach",
-        text: "Tailwind CSS promotes a utility-first approach, allowing developers to apply styles directly in their markup for rapid development.",
+        title: 'Utility-First Approach',
+        text: 'Tailwind CSS promotes a utility-first approach, allowing developers to apply styles directly in their markup for rapid development.',
       },
       {
-        title: "Responsive Design Made Easy",
-        text: "It simplifies responsive design with built-in classes that adapt to different screen sizes effortlessly.",
+        title: 'Responsive Design Made Easy',
+        text: 'It simplifies responsive design with built-in classes that adapt to different screen sizes effortlessly.',
       },
     ],
   },
   {
-    image: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/google-icon.svg",
-    title: "Google",
+    image:
+      'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/google-icon.svg',
+    title: 'Google',
     description:
-      "Google is a leading technology company that offers a wide range of services, including search.",
+      'Google is a leading technology company that offers a wide range of services, including search.',
     info: [
       {
-        title: "Search Engine Dominance",
-        text: "Google is the leading search engine, providing users with quick access to information across the web.",
+        title: 'Search Engine Dominance',
+        text: 'Google is the leading search engine, providing users with quick access to information across the web.',
       },
       {
-        title: "Cloud Services",
-        text: "Google Cloud offers a suite of cloud computing services, including storage, machine learning, and data analytics.",
+        title: 'Cloud Services',
+        text: 'Google Cloud offers a suite of cloud computing services, including storage, machine learning, and data analytics.',
       },
       {
-        title: "Advertising Solutions",
-        text: "Google Ads provides businesses with powerful tools for online advertising, targeting specific audiences effectively.",
+        title: 'Advertising Solutions',
+        text: 'Google Ads provides businesses with powerful tools for online advertising, targeting specific audiences effectively.',
       },
     ],
   },
@@ -98,7 +103,7 @@ const Feature153 = () => {
       <div className="container">
         <Carousel
           opts={{
-            align: "start",
+            align: 'start',
           }}
           className="w-full"
         >
@@ -142,7 +147,7 @@ const Feature153 = () => {
                       {item.info.map((infoItem, index) => (
                         <div key={index}>
                           <h3 className="font-medium">{infoItem.title}</h3>
-                          <p className="text-xs text-muted-foreground">
+                          <p className="text-muted-foreground text-xs">
                             {infoItem.text}
                           </p>
                         </div>
@@ -152,8 +157,8 @@ const Feature153 = () => {
                 </CarouselItem>
               ))}
             </CarouselContent>
-            <div className="pointer-events-none absolute inset-0 left-0 w-[30px] bg-linear-to-r from-background from-10% to-transparent"></div>
-            <div className="pointer-events-none absolute inset-0 bg-linear-to-l from-background via-transparent to-transparent"></div>
+            <div className="from-background pointer-events-none absolute inset-0 left-0 w-[30px] bg-linear-to-r from-10% to-transparent"></div>
+            <div className="from-background pointer-events-none absolute inset-0 bg-linear-to-l via-transparent to-transparent"></div>
           </div>
         </Carousel>
       </div>

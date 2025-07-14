@@ -1,30 +1,30 @@
-"use client";
+'use client';
 
-import { Badge } from "@/components/ui/badge";
+import { Badge } from '@/components/ui/badge';
 
 const items = [
   {
-    title: "Slack",
+    title: 'Slack',
     description:
-      "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam, corporis!",
+      'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam, corporis!',
     number: 400,
   },
   {
-    title: "Google Drive",
+    title: 'Google Drive',
     description:
-      "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam, corporis!",
+      'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam, corporis!',
     number: 4000,
   },
   {
-    title: "Dropbox",
+    title: 'Dropbox',
     description:
-      "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam, corporis!",
+      'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam, corporis!',
     number: 7000,
   },
   {
-    title: "Github",
+    title: 'Github',
     description:
-      "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam, corporis!",
+      'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam, corporis!',
     number: 850,
   },
 ];
@@ -33,19 +33,19 @@ const Feature139 = () => {
   return (
     <section className="py-32">
       <div className="container">
-        <div className="rounded-lg border bg-card p-10 shadow-sm">
+        <div className="bg-card rounded-lg border p-10 shadow-sm">
           <div className="flex w-full flex-col items-center justify-between gap-4 md:flex-row">
             <div className="w-full max-w-md">
               <Badge
                 variant="outline"
-                className="px-3 py-2 text-muted-foreground"
+                className="text-muted-foreground px-3 py-2"
               >
                 The badge
               </Badge>
               <h2 className="my-5 text-2xl font-medium lg:text-4xl">
                 Build your own website with our UI blocks
               </h2>
-              <p className="text-sm text-muted-foreground lg:text-base">
+              <p className="text-muted-foreground text-sm lg:text-base">
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit.
                 Pariatur modi et recusandae ducimus eligendi eveniet soluta
                 reprehenderit nostrum expedita omnis.
@@ -63,9 +63,9 @@ const Feature139 = () => {
           <div className="mt-24 grid grid-cols-1 justify-between gap-12 sm:grid-cols-2 md:grid-cols-4">
             {items.map((item) => (
               <div key={item.title}>
-                <p className="text-4xl text-muted-foreground">{item.number}+</p>
+                <p className="text-muted-foreground text-4xl">{item.number}+</p>
                 <h6 className="text-5 mt-5 mb-3 font-semibold">{item.title}</h6>
-                <p className="text-sm text-muted-foreground">
+                <p className="text-muted-foreground text-sm">
                   {item.description}
                 </p>
               </div>

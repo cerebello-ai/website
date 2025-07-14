@@ -1,14 +1,14 @@
-"use client";
+'use client';
 
-import { Lightbulb } from "lucide-react";
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useRef, useState } from 'react';
 
-import { cn } from "@/lib/utils";
+import { Lightbulb } from 'lucide-react';
 
-import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert";
-import { Avatar, AvatarImage } from "@/components/ui/avatar";
-import { Badge } from "@/components/ui/badge";
-import { Button } from "@/components/ui/button";
+import { Alert, AlertDescription, AlertTitle } from '@/components/ui/alert';
+import { Avatar, AvatarImage } from '@/components/ui/avatar';
+import { Badge } from '@/components/ui/badge';
+import { Button } from '@/components/ui/button';
+import { cn } from '@/lib/utils';
 
 const Blogpost3 = () => {
   const [activeSection, setActiveSection] = useState<string | null>(null);
@@ -29,7 +29,7 @@ const Blogpost3 = () => {
       observerCallback,
       {
         root: null,
-        rootMargin: "0px",
+        rootMargin: '0px',
         threshold: 1,
       },
     );
@@ -57,7 +57,7 @@ const Blogpost3 = () => {
       <div className="container">
         <div className="mx-auto flex max-w-5xl flex-col items-center gap-5">
           <Badge variant="secondary">Product Update</Badge>
-          <h1 className="text-pretty text-center text-3xl font-medium lg:text-5xl">
+          <h1 className="text-center text-3xl font-medium text-pretty lg:text-5xl">
             New Tools to Help You Work Better - Simple Task Flow Tools
           </h1>
           <p className="text-muted-foreground text-center lg:text-lg">
@@ -94,10 +94,10 @@ const Blogpost3 = () => {
                   <a
                     href="#section1"
                     className={cn(
-                      "block py-1 transition-colors duration-200",
-                      activeSection === "section1"
-                        ? "text-primary font-medium"
-                        : "text-muted-foreground hover:text-primary",
+                      'block py-1 transition-colors duration-200',
+                      activeSection === 'section1'
+                        ? 'text-primary font-medium'
+                        : 'text-muted-foreground hover:text-primary',
                     )}
                   >
                     How the Tax System Works
@@ -107,10 +107,10 @@ const Blogpost3 = () => {
                   <a
                     href="#section2"
                     className={cn(
-                      "block py-1 transition-colors duration-200",
-                      activeSection === "section2"
-                        ? "text-primary font-medium"
-                        : "text-muted-foreground hover:text-primary",
+                      'block py-1 transition-colors duration-200',
+                      activeSection === 'section2'
+                        ? 'text-primary font-medium'
+                        : 'text-muted-foreground hover:text-primary',
                     )}
                   >
                     The People&apos;s Rebellion
@@ -120,10 +120,10 @@ const Blogpost3 = () => {
                   <a
                     href="#section3"
                     className={cn(
-                      "block py-1 transition-colors duration-200",
-                      activeSection === "section3"
-                        ? "text-primary font-medium"
-                        : "text-muted-foreground hover:text-primary",
+                      'block py-1 transition-colors duration-200',
+                      activeSection === 'section3'
+                        ? 'text-primary font-medium'
+                        : 'text-muted-foreground hover:text-primary',
                     )}
                   >
                     The King&apos;s Plan
@@ -149,7 +149,7 @@ const Blogpost3 = () => {
               </div>
               <section
                 id="section1"
-                ref={(ref) => addSectionRef("section1", ref)}
+                ref={(ref) => addSectionRef('section1', ref)}
                 className="prose dark:prose-invert mb-8"
               >
                 <h2>How the Tax System Works</h2>
@@ -170,7 +170,7 @@ const Blogpost3 = () => {
 
               <section
                 id="section2"
-                ref={(ref) => addSectionRef("section2", ref)}
+                ref={(ref) => addSectionRef('section2', ref)}
                 className="prose dark:prose-invert mb-8"
               >
                 <h2>The People&apos;s Rebellion</h2>
@@ -212,12 +212,12 @@ const Blogpost3 = () => {
 
               <section
                 id="section3"
-                ref={(ref) => addSectionRef("section3", ref)}
+                ref={(ref) => addSectionRef('section3', ref)}
                 className="prose dark:prose-invert mb-8"
               >
                 <h2>The King&apos;s Plan</h2>
                 <p>
-                  The king thought long and hard, and finally came up with{" "}
+                  The king thought long and hard, and finally came up with{' '}
                   <a href="#">a brilliant plan</a>: he would tax the jokes in
                   the kingdom.
                 </p>

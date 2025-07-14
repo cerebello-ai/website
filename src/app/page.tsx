@@ -6,6 +6,7 @@ import Hero from '@/components/sections/hero';
 import Logos from '@/components/sections/logos';
 import Pricing from '@/components/sections/pricing';
 import Testimonials from '@/components/sections/testimonials';
+import { Logos2 } from '@/components/shadcnblocks/logos/logos2';
 
 export default function Home() {
   return (
@@ -13,10 +14,10 @@ export default function Home() {
       <Hero />
       <Logos />
       <Feature1 />
-      <Feature2 />
-      <Feature3 />
+      {/* <Feature2 />
+      <Feature3 /> */}
+      <Logos2 />
       <Testimonials />
-      <Pricing />
       <FAQ />
     </>
   );

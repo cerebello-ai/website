@@ -1,41 +1,42 @@
-"use client";
+'use client';
 
-import { AnimatePresence, motion } from "framer-motion";
-import { ArrowRight, ShoppingCart } from "lucide-react";
-import React, { useState } from "react";
+import React, { useState } from 'react';
 
-import { Button } from "@/components/ui/button";
+import { AnimatePresence, motion } from 'framer-motion';
+import { ArrowRight, ShoppingCart } from 'lucide-react';
+
+import { Button } from '@/components/ui/button';
 
 const images = [
   {
     id: 1,
-    src: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/lummi/random5.jpeg",
-    title: "Summer Collection",
-    code: "#0031",
+    src: 'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/lummi/random5.jpeg',
+    title: 'Summer Collection',
+    code: '#0031',
   },
   {
     id: 2,
-    src: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/lummi/random11.jpeg",
-    title: "The Music Festival",
-    code: "#0030",
+    src: 'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/lummi/random11.jpeg',
+    title: 'The Music Festival',
+    code: '#0030',
   },
   {
     id: 3,
-    src: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/lummi/random13.jpeg",
-    title: "Winter Special",
-    code: "#0032",
+    src: 'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/lummi/random13.jpeg',
+    title: 'Winter Special',
+    code: '#0032',
   },
   {
     id: 4,
-    src: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/lummi/random1.jpeg",
-    title: "Spring Edition",
-    code: "#0033",
+    src: 'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/lummi/random1.jpeg',
+    title: 'Spring Edition',
+    code: '#0033',
   },
   {
     id: 5,
-    src: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/lummi/random2.jpeg",
-    title: "Spring Edition",
-    code: "#0033",
+    src: 'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/lummi/random2.jpeg',
+    title: 'Spring Edition',
+    code: '#0033',
   },
 ];
 
@@ -45,19 +46,19 @@ const Gallery23 = () => {
   return (
     <section className="py-32">
       <div className="container overflow-hidden p-10">
-        <div className="relative flex flex-col items-center justify-between gap-12 border bg-muted p-10 py-20 md:flex-row">
+        <div className="bg-muted relative flex flex-col items-center justify-between gap-12 border p-10 py-20 md:flex-row">
           <DashedBorderV className="absolute -top-10 -left-px h-[150%] w-px" />
           <DashedBorderH className="absolute -top-px -left-10 h-px w-[150%]" />
           <DashedBorderV className="absolute -top-10 -right-px h-[150%] w-px" />
           <DashedBorderH className="absolute -bottom-px -left-12 h-px w-[150%]" />
           <div className="flex h-142 flex-col justify-center">
-            <h1 className="max-w-lg font-calSans text-5xl">
+            <h1 className="font-calSans max-w-lg text-5xl">
               We don&apos;t Believe in talk we deliver Results
             </h1>
             <p className="text-md mt-10 max-w-md opacity-55">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt Lorem ipsum dolor sit amet, consectetur
-              adipiscing{" "}
+              adipiscing{' '}
             </p>
             <Button
               variant="default"
@@ -72,11 +73,11 @@ const Gallery23 = () => {
               <motion.div
                 key={image.id}
                 className="group relative cursor-pointer overflow-hidden rounded-4xl border"
-                initial={{ height: "2.5rem", width: "24rem" }}
+                initial={{ height: '2.5rem', width: '24rem' }}
                 animate={{
-                  height: activeImage === index ? "24rem" : "2.5rem",
+                  height: activeImage === index ? '24rem' : '2.5rem',
                 }}
-                transition={{ duration: 0.3, ease: "easeInOut" }}
+                transition={{ duration: 0.3, ease: 'easeInOut' }}
                 onClick={() => setActiveImage(index)}
                 onHoverStart={() => setActiveImage(index)}
               >
@@ -102,10 +103,10 @@ const Gallery23 = () => {
                         {image.code}
                       </p>
                       <h3 className="text-3xl font-bold text-white">
-                        {image.title.split(" ")[0]}
+                        {image.title.split(' ')[0]}
                         <span className="font-playfair italic">
-                          {" "}
-                          {image.title.split(" ")[1]}{" "}
+                          {' '}
+                          {image.title.split(' ')[1]}{' '}
                         </span>
                       </h3>
                       <Button

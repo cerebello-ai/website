@@ -1,5 +1,5 @@
-import type { LucideIcon } from "lucide-react";
-import { Clock, Heart, Home, Wallet } from "lucide-react";
+import type { LucideIcon } from 'lucide-react';
+import { Clock, Heart, Home, Wallet } from 'lucide-react';
 
 interface FaqItem {
   icon: LucideIcon;
@@ -15,32 +15,32 @@ interface Faq15Props {
 const defaultItems: FaqItem[] = [
   {
     icon: Heart,
-    heading: "Save a life, gain a friend",
+    heading: 'Save a life, gain a friend',
     description:
       "By choosing to adopt, you're giving a deserving animal a second chance at happiness while gaining a loyal companion who will bring joy to your life.",
   },
   {
     icon: Wallet,
-    heading: "More affordable than buying",
+    heading: 'More affordable than buying',
     description:
-      "Adoption fees typically include vaccinations, microchipping, and spaying/neutering, making it a more cost-effective option than purchasing from a breeder.",
+      'Adoption fees typically include vaccinations, microchipping, and spaying/neutering, making it a more cost-effective option than purchasing from a breeder.',
   },
   {
     icon: Clock,
-    heading: "Skip the puppy phase",
+    heading: 'Skip the puppy phase',
     description:
-      "Many shelter pets are already house-trained and understand basic commands, saving you time and effort in the training process.",
+      'Many shelter pets are already house-trained and understand basic commands, saving you time and effort in the training process.',
   },
   {
     icon: Home,
-    heading: "Support local shelters",
+    heading: 'Support local shelters',
     description:
-      "Your adoption helps support the vital work of local shelters, enabling them to continue rescuing and caring for animals in need.",
+      'Your adoption helps support the vital work of local shelters, enabling them to continue rescuing and caring for animals in need.',
   },
 ];
 
 const Faq15 = ({
-  title = "Why should you adopt a pet from your local shelter?",
+  title = 'Why should you adopt a pet from your local shelter?',
   items = defaultItems,
 }: Faq15Props) => {
   return (
@@ -57,7 +57,7 @@ const Faq15 = ({
                   <item.icon className="size-5 shrink-0 md:size-6" />
                   <h3 className="font-semibold md:text-lg">{item.heading}</h3>
                 </div>
-                <p className="text-sm text-muted-foreground md:text-base">
+                <p className="text-muted-foreground text-sm md:text-base">
                   {item.description}
                 </p>
               </li>

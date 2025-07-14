@@ -1,4 +1,4 @@
-import { Button } from "@/components/ui/button";
+import { Button } from '@/components/ui/button';
 
 const Hero30 = () => {
   return (
@@ -9,7 +9,7 @@ const Hero30 = () => {
             <h1 className="my-6 text-4xl font-bold text-pretty lg:text-6xl">
               Welcome to Our Website
             </h1>
-            <p className="mb-8 max-w-xl text-muted-foreground lg:text-xl">
+            <p className="text-muted-foreground mb-8 max-w-xl lg:text-xl">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Elig
               doloremque mollitia fugiat omnis! Porro facilis quo animi
               consequatur. Explicabo.
@@ -30,12 +30,12 @@ const Hero30 = () => {
               <img
                 src="https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-1.svg"
                 alt="placeholder hero"
-                className="h-[400px] rounded-lg border border-border object-cover object-center sm:max-w-[320px]"
+                className="border-border h-[400px] rounded-lg border object-cover object-center sm:max-w-[320px]"
               />
             </div>
             <div className="relative z-10 hidden flex-col gap-4 sm:flex md:hidden 2xl:flex">
-              <div className="w-[256px] flex-1 overflow-clip rounded-lg border border-border bg-background"></div>
-              <div className="aspect-2/1 w-[256px] overflow-clip rounded-lg border border-border bg-background"></div>
+              <div className="border-border bg-background w-[256px] flex-1 overflow-clip rounded-lg border"></div>
+              <div className="border-border bg-background aspect-2/1 w-[256px] overflow-clip rounded-lg border"></div>
             </div>
           </div>
         </div>

@@ -1,4 +1,6 @@
-"use client";
+'use client';
+
+import { useState } from 'react';
 
 import {
   AlertCircle,
@@ -7,16 +9,15 @@ import {
   MapPin,
   MessagesSquare,
   Phone,
-} from "lucide-react";
-import { useState } from "react";
+} from 'lucide-react';
 
-import { Button } from "@/components/ui/button";
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Checkbox } from "@/components/ui/checkbox";
-import { Input } from "@/components/ui/input";
-import { Label } from "@/components/ui/label";
-import { Separator } from "@/components/ui/separator";
-import { Textarea } from "@/components/ui/textarea";
+import { Button } from '@/components/ui/button';
+import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
+import { Checkbox } from '@/components/ui/checkbox';
+import { Input } from '@/components/ui/input';
+import { Label } from '@/components/ui/label';
+import { Separator } from '@/components/ui/separator';
+import { Textarea } from '@/components/ui/textarea';
 
 interface ContactInfo {
   icon: React.ReactNode;
@@ -30,49 +31,49 @@ interface ContactInfo {
 const contactInfo: ContactInfo[] = [
   {
     icon: <Mail className="size-6" />,
-    title: "Email",
-    description: "Get a response within 24 hours",
-    value: "hello@company.com",
-    href: "mailto:hello@company.com",
-    badge: "Recommended",
+    title: 'Email',
+    description: 'Get a response within 24 hours',
+    value: 'hello@company.com',
+    href: 'mailto:hello@company.com',
+    badge: 'Recommended',
   },
   {
     icon: <MessagesSquare className="size-6" />,
-    title: "Live Chat",
-    description: "Instant support available now",
-    value: "Start chatting",
-    href: "#",
-    badge: "Online",
+    title: 'Live Chat',
+    description: 'Instant support available now',
+    value: 'Start chatting',
+    href: '#',
+    badge: 'Online',
   },
   {
     icon: <Phone className="size-6" />,
-    title: "Phone",
-    description: "Mon-Fri, 9AM-6PM EST",
-    value: "+1 (555) 123-4567",
-    href: "tel:+15551234567",
+    title: 'Phone',
+    description: 'Mon-Fri, 9AM-6PM EST',
+    value: '+1 (555) 123-4567',
+    href: 'tel:+15551234567',
   },
   {
     icon: <MapPin className="size-6" />,
-    title: "Office",
-    description: "Schedule an in-person meeting",
-    value: "123 Innovation St, Tech City",
-    href: "#",
+    title: 'Office',
+    description: 'Schedule an in-person meeting',
+    value: '123 Innovation St, Tech City',
+    href: '#',
   },
 ];
 
 const Contact6 = () => {
   const [formData, setFormData] = useState({
-    firstName: "",
-    lastName: "",
-    email: "",
-    company: "",
-    message: "",
+    firstName: '',
+    lastName: '',
+    email: '',
+    company: '',
+    message: '',
     agreeToTerms: false,
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitStatus, setSubmitStatus] = useState<
-    "idle" | "success" | "error"
-  >("idle");
+    'idle' | 'success' | 'error'
+  >('idle');
 
   const handleInputChange = (field: string, value: string | boolean) => {
     setFormData((prev) => ({ ...prev, [field]: value }));
@@ -87,16 +88,16 @@ const Contact6 = () => {
 
     // Simulate success/error
     const success = Math.random() > 0.3;
-    setSubmitStatus(success ? "success" : "error");
+    setSubmitStatus(success ? 'success' : 'error');
     setIsSubmitting(false);
 
     if (success) {
       setFormData({
-        firstName: "",
-        lastName: "",
-        email: "",
-        company: "",
-        message: "",
+        firstName: '',
+        lastName: '',
+        email: '',
+        company: '',
+        message: '',
         agreeToTerms: false,
       });
     }
@@ -173,7 +174,7 @@ const Contact6 = () => {
                         id="firstName"
                         value={formData.firstName}
                         onChange={(e) =>
-                          handleInputChange("firstName", e.target.value)
+                          handleInputChange('firstName', e.target.value)
                         }
                         placeholder="John"
                         required
@@ -187,7 +188,7 @@ const Contact6 = () => {
                         id="lastName"
                         value={formData.lastName}
                         onChange={(e) =>
-                          handleInputChange("lastName", e.target.value)
+                          handleInputChange('lastName', e.target.value)
                         }
                         placeholder="Doe"
                         required
@@ -204,7 +205,7 @@ const Contact6 = () => {
                       type="email"
                       value={formData.email}
                       onChange={(e) =>
-                        handleInputChange("email", e.target.value)
+                        handleInputChange('email', e.target.value)
                       }
                       placeholder="john@company.com"
                       required
@@ -219,7 +220,7 @@ const Contact6 = () => {
                       id="company"
                       value={formData.company}
                       onChange={(e) =>
-                        handleInputChange("company", e.target.value)
+                        handleInputChange('company', e.target.value)
                       }
                       placeholder="Your Company"
                     />
@@ -233,7 +234,7 @@ const Contact6 = () => {
                       id="message"
                       value={formData.message}
                       onChange={(e) =>
-                        handleInputChange("message", e.target.value)
+                        handleInputChange('message', e.target.value)
                       }
                       placeholder="Tell us about your project, goals, or how we can help..."
                       rows={4}
@@ -247,7 +248,7 @@ const Contact6 = () => {
                       id="agreeToTerms"
                       checked={formData.agreeToTerms}
                       onCheckedChange={(checked) =>
-                        handleInputChange("agreeToTerms", checked as boolean)
+                        handleInputChange('agreeToTerms', checked as boolean)
                       }
                       required
                     />
@@ -255,14 +256,14 @@ const Contact6 = () => {
                       htmlFor="agreeToTerms"
                       className="text-muted-foreground text-sm leading-relaxed"
                     >
-                      I agree to the{" "}
+                      I agree to the{' '}
                       <a
                         href="#"
                         className="text-foreground font-medium hover:underline"
                       >
                         Terms of Service
-                      </a>{" "}
-                      and{" "}
+                      </a>{' '}
+                      and{' '}
                       <a
                         href="#"
                         className="text-foreground font-medium hover:underline"
@@ -272,7 +273,7 @@ const Contact6 = () => {
                     </Label>
                   </div>
 
-                  {submitStatus === "success" && (
+                  {submitStatus === 'success' && (
                     <div className="flex items-center gap-2 rounded-lg border border-green-200 bg-green-50 p-3 dark:border-green-800 dark:bg-green-950">
                       <CheckCircle className="size-6 text-green-600 dark:text-green-400" />
                       <span className="text-sm font-medium text-green-800 dark:text-green-200">
@@ -281,7 +282,7 @@ const Contact6 = () => {
                     </div>
                   )}
 
-                  {submitStatus === "error" && (
+                  {submitStatus === 'error' && (
                     <div className="flex items-center gap-2 rounded-lg border border-red-200 bg-red-50 p-3 dark:border-red-800 dark:bg-red-950">
                       <AlertCircle className="size-6 text-red-600 dark:text-red-400" />
                       <span className="text-sm font-medium text-red-800 dark:text-red-200">

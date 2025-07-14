@@ -1,6 +1,6 @@
-import { Book, Download, Share2 } from "lucide-react";
+import { Book, Download, Share2 } from 'lucide-react';
 
-import { Button } from "@/components/ui/button";
+import { Button } from '@/components/ui/button';
 
 const Resource1 = () => {
   return (
@@ -16,7 +16,7 @@ const Resource1 = () => {
                 </h3>
               </div>
               <div className="p-5">
-                <div className="text-foreground gap-4 text-lg font-semibold leading-snug">
+                <div className="text-foreground gap-4 text-lg leading-snug font-semibold">
                   <p>The Complete Guide to Launching Your Startup</p>
                 </div>
               </div>
@@ -134,7 +134,7 @@ const Resource1 = () => {
             </p>
             <h2>The King&apos;s Plan</h2>
             <p>
-              The king thought long and hard, and finally came up with{" "}
+              The king thought long and hard, and finally came up with{' '}
               <a href="#">a brilliant plan</a>: he would tax the jokes in the
               kingdom.
             </p>

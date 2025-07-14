@@ -1,18 +1,19 @@
-"use client";
+'use client';
 
-import { CircleCheck } from "lucide-react";
-import { useState } from "react";
+import { useState } from 'react';
 
-import { Button } from "@/components/ui/button";
+import { CircleCheck } from 'lucide-react';
+
+import { Button } from '@/components/ui/button';
 import {
   Card,
   CardContent,
   CardFooter,
   CardHeader,
   CardTitle,
-} from "@/components/ui/card";
-import { Separator } from "@/components/ui/separator";
-import { Switch } from "@/components/ui/switch";
+} from '@/components/ui/card';
+import { Separator } from '@/components/ui/separator';
+import { Switch } from '@/components/ui/switch';
 
 interface PricingFeature {
   text: string;
@@ -38,41 +39,41 @@ interface Pricing2Props {
 }
 
 const Pricing2 = ({
-  heading = "Pricing",
-  description = "Check out our affordable pricing plans",
+  heading = 'Pricing',
+  description = 'Check out our affordable pricing plans',
   plans = [
     {
-      id: "plus",
-      name: "Plus",
-      description: "For personal use",
-      monthlyPrice: "$19",
-      yearlyPrice: "$179",
+      id: 'plus',
+      name: 'Plus',
+      description: 'For personal use',
+      monthlyPrice: '$19',
+      yearlyPrice: '$179',
       features: [
-        { text: "Up to 5 team members" },
-        { text: "Basic components library" },
-        { text: "Community support" },
-        { text: "1GB storage space" },
+        { text: 'Up to 5 team members' },
+        { text: 'Basic components library' },
+        { text: 'Community support' },
+        { text: '1GB storage space' },
       ],
       button: {
-        text: "Purchase",
-        url: "https://shadcnblocks.com",
+        text: 'Purchase',
+        url: 'https://shadcnblocks.com',
       },
     },
     {
-      id: "pro",
-      name: "Pro",
-      description: "For professionals",
-      monthlyPrice: "$49",
-      yearlyPrice: "$359",
+      id: 'pro',
+      name: 'Pro',
+      description: 'For professionals',
+      monthlyPrice: '$49',
+      yearlyPrice: '$359',
       features: [
-        { text: "Unlimited team members" },
-        { text: "Advanced components" },
-        { text: "Priority support" },
-        { text: "Unlimited storage" },
+        { text: 'Unlimited team members' },
+        { text: 'Advanced components' },
+        { text: 'Priority support' },
+        { text: 'Unlimited storage' },
       ],
       button: {
-        text: "Purchase",
-        url: "https://shadcnblocks.com",
+        text: 'Purchase',
+        url: 'https://shadcnblocks.com',
       },
     },
   ],
@@ -104,21 +105,21 @@ const Pricing2 = ({
                   <CardTitle>
                     <p>{plan.name}</p>
                   </CardTitle>
-                  <p className="text-sm text-muted-foreground">
+                  <p className="text-muted-foreground text-sm">
                     {plan.description}
                   </p>
                   <div className="flex items-end">
                     <span className="text-4xl font-semibold">
                       {isYearly ? plan.yearlyPrice : plan.monthlyPrice}
                     </span>
-                    <span className="text-2xl font-semibold text-muted-foreground">
-                      {isYearly ? "/yr" : "/mo"}
+                    <span className="text-muted-foreground text-2xl font-semibold">
+                      {isYearly ? '/yr' : '/mo'}
                     </span>
                   </div>
                 </CardHeader>
                 <CardContent>
                   <Separator className="mb-6" />
-                  {plan.id === "pro" && (
+                  {plan.id === 'pro' && (
                     <p className="mb-3 font-semibold">
                       Everything in Plus, and:
                     </p>

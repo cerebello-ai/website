@@ -1,50 +1,55 @@
-"use client";
+'use client';
 
-import { type SVGProps, useId } from "react";
-import { useState } from "react";
+import { type SVGProps, useId } from 'react';
+import { useState } from 'react';
 
 import {
   Accordion,
   AccordionContent,
   AccordionItem,
   AccordionTrigger,
-} from "@/components/ui/accordion";
+} from '@/components/ui/accordion';
 
 const FEATURES = [
   {
-    id: "move-money",
-    title: "Move and hold money",
+    id: 'move-money',
+    title: 'Move and hold money',
     description:
-      "Previously, emerging financial companies were forced to navigate costly middleware solutions that connected them to outdated sponsor bank systems.",
-    image: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-1.svg",
+      'Previously, emerging financial companies were forced to navigate costly middleware solutions that connected them to outdated sponsor bank systems.',
+    image:
+      'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-1.svg',
   },
   {
-    id: "card-program",
-    title: "Build a modern card program",
+    id: 'card-program',
+    title: 'Build a modern card program',
     description:
-      "Create and manage virtual and physical cards with complete control over spending limits, merchant categories, and real-time transaction monitoring.",
-    image: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-2.svg",
+      'Create and manage virtual and physical cards with complete control over spending limits, merchant categories, and real-time transaction monitoring.',
+    image:
+      'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-2.svg',
   },
   {
-    id: "lend-money",
-    title: "Lend money",
+    id: 'lend-money',
+    title: 'Lend money',
     description:
-      "Offer various lending products through our platform with automated underwriting, loan servicing, and compliance management.",
-    image: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-3.svg",
+      'Offer various lending products through our platform with automated underwriting, loan servicing, and compliance management.',
+    image:
+      'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-3.svg',
   },
   {
-    id: "data-analytics",
-    title: "Data Analytics",
+    id: 'data-analytics',
+    title: 'Data Analytics',
     description:
-      "Leverage powerful analytics tools to gain insights from transaction data, user behavior, and financial patterns to make data-driven decisions.",
-    image: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-4.svg",
+      'Leverage powerful analytics tools to gain insights from transaction data, user behavior, and financial patterns to make data-driven decisions.',
+    image:
+      'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-4.svg',
   },
   {
-    id: "compliance",
-    title: "Regulatory Compliance",
+    id: 'compliance',
+    title: 'Regulatory Compliance',
     description:
-      "Stay compliant with automated monitoring systems, KYC/AML checks, and real-time reporting tools that adapt to changing regulatory requirements.",
-    image: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-5.svg",
+      'Stay compliant with automated monitoring systems, KYC/AML checks, and real-time reporting tools that adapt to changing regulatory requirements.',
+    image:
+      'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-5.svg',
   },
 ];
 
@@ -55,11 +60,11 @@ export function Feature192() {
     <section className="container max-w-5xl py-32">
       <div className="from-gradient-1/20 relative overflow-hidden rounded-3xl border bg-linear-to-bl to-transparent py-5 sm:py-6 lg:py-8">
         <div className="absolute inset-0 z-[-1]">
-          <PlusSigns className="h-full w-full text-foreground/[0.05]" />
+          <PlusSigns className="text-foreground/[0.05] h-full w-full" />
         </div>
         <div className="sm:px-6 lg:px-8">
           <div className="px-5 sm:px-0">
-            <h3 className="font-mono text-sm font-semibold tracking-widest text-accent-foreground">
+            <h3 className="text-accent-foreground font-mono text-sm font-semibold tracking-widest">
               WHY CHARTER?
             </h3>
             <h2 className="mt-3 text-3xl font-semibold tracking-tight sm:text-4xl lg:text-5xl">
@@ -85,7 +90,7 @@ export function Feature192() {
                     </h3>
                   </AccordionTrigger>
                   <AccordionContent className="">
-                    <p className="px-5 leading-relaxed font-medium text-muted-foreground sm:px-0">
+                    <p className="text-muted-foreground px-5 leading-relaxed font-medium sm:px-0">
                       {feature.description}
                     </p>
                     <div className="relative mt-4 translate-x-5 sm:hidden">

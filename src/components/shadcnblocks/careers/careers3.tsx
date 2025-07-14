@@ -1,57 +1,57 @@
-import { ArrowRight, MapPin } from "lucide-react";
+import { ArrowRight, MapPin } from 'lucide-react';
 
-import { Badge } from "@/components/ui/badge";
+import { Badge } from '@/components/ui/badge';
 
 const Careers3 = () => {
   const jobs = [
     {
-      category: "Engineering",
+      category: 'Engineering',
       openings: [
         {
-          title: "Senior Software Engineer",
+          title: 'Senior Software Engineer',
           description:
-            "You will be responsible for the development of new and existing software products.",
-          location: "Salta, Argentina office or Remote",
-          link: "#",
+            'You will be responsible for the development of new and existing software products.',
+          location: 'Salta, Argentina office or Remote',
+          link: '#',
         },
         {
-          title: "Product Manager",
-          description: "Help us build the next generation of Acme products.",
-          location: "Windhoek, Namibia office or Remote",
-          link: "#",
+          title: 'Product Manager',
+          description: 'Help us build the next generation of Acme products.',
+          location: 'Windhoek, Namibia office or Remote',
+          link: '#',
         },
         {
-          title: "QA Engineer",
+          title: 'QA Engineer',
           description:
-            "Ensure the quality of our software products through testing and automation.",
-          location: "Chiang Mai, Thailand office or Remote",
-          link: "#",
+            'Ensure the quality of our software products through testing and automation.',
+          location: 'Chiang Mai, Thailand office or Remote',
+          link: '#',
         },
         {
-          title: "Technical Support Specialist",
+          title: 'Technical Support Specialist',
           description:
-            "Provide technical support to our customers and internal teams.",
-          location: "Cusco, Peru office or Remote",
-          link: "#",
+            'Provide technical support to our customers and internal teams.',
+          location: 'Cusco, Peru office or Remote',
+          link: '#',
         },
       ],
     },
     {
-      category: "Marketing",
+      category: 'Marketing',
       openings: [
         {
-          title: "Content Writer",
+          title: 'Content Writer',
           description:
-            "Create engaging content for our blog, website, and social media channels.",
-          location: "Fes, Morocco",
-          link: "#",
+            'Create engaging content for our blog, website, and social media channels.',
+          location: 'Fes, Morocco',
+          link: '#',
         },
         {
-          title: "Social Media Manager",
+          title: 'Social Media Manager',
           description:
-            "Manage our social media presence and engage with our followers.",
-          location: "Goa, India",
-          link: "#",
+            'Manage our social media presence and engage with our followers.',
+          location: 'Goa, India',
+          link: '#',
         },
       ],
     },
@@ -76,10 +76,10 @@ const Careers3 = () => {
                       <h3 className="text-xl font-semibold group-hover:underline">
                         {job.title}
                       </h3>
-                      <p className="mt-1 font-medium text-muted-foreground">
+                      <p className="text-muted-foreground mt-1 font-medium">
                         {job.description}
                       </p>
-                      <div className="mt-4 flex justify-between gap-4 text-muted-foreground">
+                      <div className="text-muted-foreground mt-4 flex justify-between gap-4">
                         <div className="flex gap-2 text-sm md:text-base">
                           <MapPin className="h-auto w-4 shrink-0" />
                           <p>{job.location}</p>

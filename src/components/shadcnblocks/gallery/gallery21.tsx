@@ -1,17 +1,18 @@
-"use client";
+'use client';
 
-import { motion } from "framer-motion";
-import { ArrowRight } from "lucide-react";
-import React, { useEffect, useState } from "react";
-import { Autoplay, EffectCoverflow } from "swiper/modules";
-import { Swiper, SwiperSlide } from "swiper/react";
-import "swiper/css/effect-coverflow";
-import "swiper/css/pagination";
-import "swiper/css/navigation";
-import "swiper/css";
-import "swiper/css/effect-cards";
+import React, { useEffect, useState } from 'react';
 
-import { Button } from "@/components/ui/button";
+import { motion } from 'framer-motion';
+import { ArrowRight } from 'lucide-react';
+import { Autoplay, EffectCoverflow } from 'swiper/modules';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/css/effect-coverflow';
+import 'swiper/css/pagination';
+import 'swiper/css/navigation';
+import 'swiper/css';
+import 'swiper/css/effect-cards';
+
+import { Button } from '@/components/ui/button';
 
 const Gallery21 = () => {
   const [domLoaded, setDomLoaded] = useState(false);
@@ -21,28 +22,28 @@ const Gallery21 = () => {
   }, []);
   const images = [
     {
-      src: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/lummi/random11.jpeg",
-      alt: "Portrait of Joanna Doe in urban setting",
+      src: 'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/lummi/random11.jpeg',
+      alt: 'Portrait of Joanna Doe in urban setting',
     },
     {
-      src: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/lummi/random1.jpeg",
-      alt: "Portrait of Joan Doe in natural lighting",
+      src: 'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/lummi/random1.jpeg',
+      alt: 'Portrait of Joan Doe in natural lighting',
     },
     {
-      src: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/lummi/random2.jpeg",
-      alt: "Portrait of Sarah Chen in studio setting",
+      src: 'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/lummi/random2.jpeg',
+      alt: 'Portrait of Sarah Chen in studio setting',
     },
     {
-      src: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/lummi/random11.jpeg",
-      alt: "Portrait of Joanna Doe in urban setting",
+      src: 'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/lummi/random11.jpeg',
+      alt: 'Portrait of Joanna Doe in urban setting',
     },
     {
-      src: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/lummi/random1.jpeg",
-      alt: "Portrait of Joan Doe in natural lighting",
+      src: 'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/lummi/random1.jpeg',
+      alt: 'Portrait of Joan Doe in natural lighting',
     },
     {
-      src: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/lummi/random2.jpeg",
-      alt: "Portrait of Sarah Chen in studio setting",
+      src: 'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/lummi/random2.jpeg',
+      alt: 'Portrait of Sarah Chen in studio setting',
     },
   ];
 

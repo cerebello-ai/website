@@ -1,11 +1,12 @@
-"use client";
+'use client';
 
-import { Check } from "lucide-react";
-import { useState } from "react";
+import { useState } from 'react';
 
-import { Button } from "@/components/ui/button";
-import { Separator } from "@/components/ui/separator";
-import { Switch } from "@/components/ui/switch";
+import { Check } from 'lucide-react';
+
+import { Button } from '@/components/ui/button';
+import { Separator } from '@/components/ui/separator';
+import { Switch } from '@/components/ui/switch';
 
 const Pricing3 = () => {
   const [isYearly, setIsYearly] = useState(false);
@@ -33,7 +34,7 @@ const Pricing3 = () => {
               <div>
                 <p className="mb-2 text-lg font-semibold">Basic Plan</p>
                 <p className="mb-4 text-4xl font-semibold">$0</p>
-                <p className="text-sm text-muted-foreground">
+                <p className="text-muted-foreground text-sm">
                   Ideal for individuals getting started with our service. No
                   credit card required.
                 </p>
@@ -45,8 +46,8 @@ const Pricing3 = () => {
             <ul className="mt-8 px-6">
               <li className="flex gap-2">
                 <Check className="w-4" />
-                <p className="text-sm text-muted-foreground">
-                  <span className="mr-1 font-semibold text-primary">
+                <p className="text-muted-foreground text-sm">
+                  <span className="text-primary mr-1 font-semibold">
                     Limited access to features:
                   </span>
                   3 users, 1 project, 1GB storage
@@ -55,8 +56,8 @@ const Pricing3 = () => {
               <Separator className="my-4" />
               <li className="flex gap-2">
                 <Check className="w-4" />
-                <p className="text-sm text-muted-foreground">
-                  <span className="mr-1 font-semibold text-primary">
+                <p className="text-muted-foreground text-sm">
+                  <span className="text-primary mr-1 font-semibold">
                     Basic support:
                   </span>
                   Email support only for 30 days after signup
@@ -69,12 +70,12 @@ const Pricing3 = () => {
               <div>
                 <p className="mb-2 text-lg font-semibold">Standard Plan</p>
                 <p className="mb-4 text-4xl font-semibold">
-                  {isYearly ? "$199" : "$20"}
-                  <span className="ml-1 text-sm font-normal text-muted-foreground">
+                  {isYearly ? '$199' : '$20'}
+                  <span className="text-muted-foreground ml-1 text-sm font-normal">
                     per user
                   </span>
                 </p>
-                <p className="text-sm text-muted-foreground">
+                <p className="text-muted-foreground text-sm">
                   Perfect for small businesses looking to grow. Start with a
                   30-day free trial.
                 </p>
@@ -84,8 +85,8 @@ const Pricing3 = () => {
             <ul className="mt-8 px-6">
               <li className="flex gap-2">
                 <Check className="w-4" />
-                <p className="text-sm text-muted-foreground">
-                  <span className="mr-1 font-semibold text-primary">
+                <p className="text-muted-foreground text-sm">
+                  <span className="text-primary mr-1 font-semibold">
                     Access to all standard features:
                   </span>
                   10 users, 5 projects, 5GB storage
@@ -94,8 +95,8 @@ const Pricing3 = () => {
               <Separator className="my-4" />
               <li className="flex gap-2">
                 <Check className="w-4" />
-                <p className="text-sm text-muted-foreground">
-                  <span className="mr-1 font-semibold text-primary">
+                <p className="text-muted-foreground text-sm">
+                  <span className="text-primary mr-1 font-semibold">
                     Priority support:
                   </span>
                   Email and phone support for 30 days after signup
@@ -108,7 +109,7 @@ const Pricing3 = () => {
               <div>
                 <p className="mb-2 text-lg font-semibold">Premium Plan</p>
                 <p className="mb-4 text-4xl font-semibold">Custom</p>
-                <p className="text-sm text-muted-foreground">
+                <p className="text-muted-foreground text-sm">
                   Best for large organizations with advanced needs. Contact us
                   for a custom quote.
                 </p>
@@ -120,8 +121,8 @@ const Pricing3 = () => {
             <ul className="mt-8 px-6">
               <li className="flex gap-2">
                 <Check className="w-4" />
-                <p className="text-sm text-muted-foreground">
-                  <span className="mr-1 font-semibold text-primary">
+                <p className="text-muted-foreground text-sm">
+                  <span className="text-primary mr-1 font-semibold">
                     Dedicated support:
                   </span>
                   24/7 email and phone support
@@ -130,8 +131,8 @@ const Pricing3 = () => {
               <Separator className="my-4" />
               <li className="flex gap-2">
                 <Check className="w-4" />
-                <p className="text-sm text-muted-foreground">
-                  <span className="mr-1 font-semibold text-primary">
+                <p className="text-muted-foreground text-sm">
+                  <span className="text-primary mr-1 font-semibold">
                     Custom integrations:
                   </span>
                   Tailored to your organization&apos;s needs

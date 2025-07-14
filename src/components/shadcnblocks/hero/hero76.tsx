@@ -1,9 +1,9 @@
-import { AspectRatio } from "@/components/ui/aspect-ratio";
-import { Button } from "@/components/ui/button";
+import { AspectRatio } from '@/components/ui/aspect-ratio';
+import { Button } from '@/components/ui/button';
 
 const Hero76 = () => {
   return (
-    <section className="container mx-auto mt-32 flex flex-col items-center gap-20 bg-background md:gap-40 md:text-center">
+    <section className="bg-background container mx-auto mt-32 flex flex-col items-center gap-20 md:gap-40 md:text-center">
       <div className="flex flex-col gap-10 md:items-center">
         <img
           src="https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/figma-icon.svg"
@@ -11,11 +11,11 @@ const Hero76 = () => {
           className="h-11 w-fit"
         />
         <div className="flex max-w-[880px] flex-col items-center gap-6">
-          <h1 className="text-4xl tracking-tighter text-foreground md:text-5xl lg:text-6xl">
+          <h1 className="text-foreground text-4xl tracking-tighter md:text-5xl lg:text-6xl">
             <p>The no-cost, continuously growing UI library & design toolkit</p>
             <p>✶ Monthly updates ✶</p>
           </h1>
-          <div className="text-xl text-muted-foreground">
+          <div className="text-muted-foreground text-xl">
             <p>
               Create quicker, more efficiently, and boost your design expertise.
             </p>

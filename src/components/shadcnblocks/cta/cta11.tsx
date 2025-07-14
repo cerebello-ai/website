@@ -8,10 +8,10 @@ interface Cta11Props {
 }
 
 const Cta11 = ({
-  heading = "Call to Action",
-  description = "Build faster with our collection of pre-built blocks. Speed up your development and ship features in record time.",
-  imageSrc = "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-dark-1.svg",
-  imageAlt = "Call to action image",
+  heading = 'Call to Action',
+  description = 'Build faster with our collection of pre-built blocks. Speed up your development and ship features in record time.',
+  imageSrc = 'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-dark-1.svg',
+  imageAlt = 'Call to action image',
 }: Cta11Props) => {
   return (
     <section className="py-32">

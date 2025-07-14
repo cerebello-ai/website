@@ -1,4 +1,4 @@
-import { Button } from "@/components/ui/button";
+import { Button } from '@/components/ui/button';
 
 const Compare5 = () => {
   return (
@@ -16,13 +16,13 @@ const Compare5 = () => {
         <div className="relative mt-8 grid gap-6 sm:mt-10 md:mt-12 lg:grid-cols-2 lg:gap-10 xl:gap-14">
           {/* Build for Me Card */}
           <div className="relative h-full">
-            <div className="aspect-4/5 bg-accent relative min-h-[400px] overflow-hidden rounded-2xl sm:aspect-[0.9] sm:min-h-[480px] sm:rounded-3xl md:min-h-[520px]">
+            <div className="bg-accent relative aspect-4/5 min-h-[400px] overflow-hidden rounded-2xl sm:aspect-[0.9] sm:min-h-[480px] sm:rounded-3xl md:min-h-[520px]">
               <img
                 src="https://deifkwefumgah.cloudfront.net/shadcnblocks/block/photos/simone-hutsch-9jsQcDsxyqA-unsplash.jpg"
                 alt="Build for me"
                 className="h-full w-full object-cover"
               />
-              <div className="bg-linear-to-t absolute inset-x-0 bottom-0 h-[40%] from-black via-black/50 to-transparent backdrop-blur-[2px] sm:h-[45%] md:h-[50%]" />
+              <div className="absolute inset-x-0 bottom-0 h-[40%] bg-linear-to-t from-black via-black/50 to-transparent backdrop-blur-[2px] sm:h-[45%] md:h-[50%]" />
               <div className="absolute bottom-0 w-full space-y-4 p-4 sm:p-6 lg:p-8 xl:p-10">
                 <h3 className="text-xl font-semibold text-white sm:text-2xl lg:text-3xl">
                   Option 1
@@ -40,13 +40,13 @@ const Compare5 = () => {
 
           {/* Do it Yourself Card */}
           <div className="relative h-full">
-            <div className="aspect-4/5 relative min-h-[400px] overflow-hidden rounded-2xl sm:aspect-[0.9] sm:min-h-[480px] sm:rounded-3xl md:min-h-[520px]">
+            <div className="relative aspect-4/5 min-h-[400px] overflow-hidden rounded-2xl sm:aspect-[0.9] sm:min-h-[480px] sm:rounded-3xl md:min-h-[520px]">
               <img
                 src="https://deifkwefumgah.cloudfront.net/shadcnblocks/block/photos/simone-hutsch-uR__S5GX8Io-unsplash.jpg"
                 alt="Do it yourself"
                 className="h-full w-full object-cover"
               />
-              <div className="bg-linear-to-t absolute inset-x-0 bottom-0 h-[40%] from-black via-black/50 to-transparent backdrop-blur-[2px] sm:h-[45%] md:h-[50%]" />
+              <div className="absolute inset-x-0 bottom-0 h-[40%] bg-linear-to-t from-black via-black/50 to-transparent backdrop-blur-[2px] sm:h-[45%] md:h-[50%]" />
               <div className="absolute bottom-0 w-full space-y-4 p-4 sm:p-6 lg:p-8 xl:p-10">
                 <h3 className="text-xl font-semibold text-white sm:text-2xl lg:text-3xl">
                   Option 2
@@ -62,7 +62,7 @@ const Compare5 = () => {
             </div>
           </div>
 
-          <span className="bg-background absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 rounded-full px-4 py-2 text-sm font-bold shadow-lg sm:px-6 sm:py-4 sm:text-base lg:px-8 lg:py-6">
+          <span className="bg-background absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 rounded-full px-4 py-2 text-sm font-bold shadow-lg sm:px-6 sm:py-4 sm:text-base lg:px-8 lg:py-6">
             OR
           </span>
         </div>

@@ -1,6 +1,6 @@
-import { Calendar } from "lucide-react";
+import { Calendar } from 'lucide-react';
 
-import { Badge } from "@/components/ui/badge";
+import { Badge } from '@/components/ui/badge';
 
 interface DataItem {
   id: number;
@@ -13,27 +13,30 @@ interface DataItem {
 const DATA: DataItem[] = [
   {
     id: 1,
-    number: "01",
-    title: "Streamline your workflow",
+    number: '01',
+    title: 'Streamline your workflow',
     description:
-      "Automate repetitive tasks and focus on what truly matters for your business growth.",
-    image: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-dark-1.svg",
+      'Automate repetitive tasks and focus on what truly matters for your business growth.',
+    image:
+      'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-dark-1.svg',
   },
   {
     id: 2,
-    number: "02",
-    title: "Collaborate seamlessly",
+    number: '02',
+    title: 'Collaborate seamlessly',
     description:
-      "Work together with your team in real-time, no matter where you are.",
-    image: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-dark-1.svg",
+      'Work together with your team in real-time, no matter where you are.',
+    image:
+      'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-dark-1.svg',
   },
   {
     id: 3,
-    number: "03",
-    title: "Scale effortlessly",
+    number: '03',
+    title: 'Scale effortlessly',
     description:
-      "Our tools grow with your business, ensuring you’re always ready for the next step.",
-    image: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-dark-1.svg",
+      'Our tools grow with your business, ensuring you’re always ready for the next step.',
+    image:
+      'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-dark-1.svg',
   },
 ];
 

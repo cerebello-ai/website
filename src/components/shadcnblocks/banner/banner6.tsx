@@ -1,10 +1,11 @@
-"use client";
+'use client';
 
-import { X } from "lucide-react";
-import { useState } from "react";
+import { useState } from 'react';
 
-import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
-import { Button } from "@/components/ui/button";
+import { X } from 'lucide-react';
+
+import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
+import { Button } from '@/components/ui/button';
 
 interface Banner6Props {
   count?: string;
@@ -19,12 +20,24 @@ interface Banner6Props {
 }
 
 const Banner6 = ({
-  description = "Used by over 2K+ customers worldwide",
+  description = 'Used by over 2K+ customers worldwide',
   avatars = [
-    { src: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/avatar-1.webp", fallback: "User" },
-    { src: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/avatar-2.webp", fallback: "User" },
-    { src: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/avatar-3.webp", fallback: "User" },
-    { src: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/avatar-4.webp", fallback: "User" },
+    {
+      src: 'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/avatar-1.webp',
+      fallback: 'User',
+    },
+    {
+      src: 'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/avatar-2.webp',
+      fallback: 'User',
+    },
+    {
+      src: 'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/avatar-3.webp',
+      fallback: 'User',
+    },
+    {
+      src: 'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/avatar-4.webp',
+      fallback: 'User',
+    },
   ],
   defaultVisible = true,
 }: Banner6Props) => {
@@ -37,7 +50,7 @@ const Banner6 = ({
   if (!isVisible) return null;
 
   return (
-    <section className="animate-in fade-in slide-in-from-top-2 absolute left-0 right-0 top-4 z-50 mx-auto max-w-2xl">
+    <section className="animate-in fade-in slide-in-from-top-2 absolute top-4 right-0 left-0 z-50 mx-auto max-w-2xl">
       <div className="mx-4">
         <div className="bg-background w-full rounded-full border p-4 shadow-md">
           <div className="relative flex flex-col gap-4 md:flex-row md:items-center md:justify-between">

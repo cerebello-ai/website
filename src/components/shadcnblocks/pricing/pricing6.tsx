@@ -1,7 +1,7 @@
-import { Check } from "lucide-react";
+import { Check } from 'lucide-react';
 
-import { Button } from "@/components/ui/button";
-import { Separator } from "@/components/ui/separator";
+import { Button } from '@/components/ui/button';
+import { Separator } from '@/components/ui/separator';
 
 interface Pricing6Props {
   heading: string;
@@ -13,18 +13,18 @@ interface Pricing6Props {
 }
 
 const defaultFeatures = [
-  ["Unlimited", "Integrations", "24/7 support"],
-  ["Live collaborations", "Unlimited storage", "30-day money back"],
-  ["Unlimited members", "Customization", "Unlimited users"],
+  ['Unlimited', 'Integrations', '24/7 support'],
+  ['Live collaborations', 'Unlimited storage', '30-day money back'],
+  ['Unlimited members', 'Customization', 'Unlimited users'],
 ];
 
 const Pricing6 = ({
-  heading = "Pricing",
-  description = "Simple pricing with a free 7 day trial.",
+  heading = 'Pricing',
+  description = 'Simple pricing with a free 7 day trial.',
   price = 29,
-  priceSuffix = "/mo",
+  priceSuffix = '/mo',
   features = defaultFeatures,
-  buttonText = "Start free trial",
+  buttonText = 'Start free trial',
 }: Pricing6Props) => {
   return (
     <section className="py-32">
@@ -33,14 +33,14 @@ const Pricing6 = ({
           <h2 className="text-4xl font-semibold text-pretty lg:text-6xl">
             {heading}
           </h2>
-          <p className="max-w-md text-muted-foreground lg:text-xl">
+          <p className="text-muted-foreground max-w-md lg:text-xl">
             {description}
           </p>
           <div className="mx-auto flex w-full flex-col rounded-lg border p-6 sm:w-fit sm:min-w-80">
             <div className="flex justify-center">
               <span className="text-lg font-semibold">$</span>
               <span className="text-6xl font-semibold">{price}</span>
-              <span className="self-end text-muted-foreground">
+              <span className="text-muted-foreground self-end">
                 {priceSuffix}
               </span>
             </div>

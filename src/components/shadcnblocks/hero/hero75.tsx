@@ -1,24 +1,24 @@
-import { ChevronRight } from "lucide-react";
+import { ChevronRight } from 'lucide-react';
 
-import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
-import { Button } from "@/components/ui/button";
+import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
+import { Button } from '@/components/ui/button';
 
 const Hero75 = () => {
   return (
     <section className="dark flex">
-      <div className="flex w-full items-center justify-center bg-background lg:w-1/2">
+      <div className="bg-background flex w-full items-center justify-center lg:w-1/2">
         <div className="container my-10 flex w-[500px] flex-col gap-24">
-          <h1 className="text-4xl text-foreground">
-            Business{" "}
-            <span className="bg-linear-to-tr from-foreground to-muted bg-clip-text text-transparent">
+          <h1 className="text-foreground text-4xl">
+            Business{' '}
+            <span className="from-foreground to-muted bg-linear-to-tr bg-clip-text text-transparent">
               PRO
             </span>
           </h1>
           <div>
-            <h2 className="text-4xl text-foreground lg:text-6xl">
+            <h2 className="text-foreground text-4xl lg:text-6xl">
               Achieve More with Elite Access Pro
             </h2>
-            <p className="mt-2.5 text-foreground lg:text-xl">
+            <p className="text-foreground mt-2.5 lg:text-xl">
               Enhance your career hunt with increased visibility, first-look
               opportunities and monetary incentives!
             </p>
@@ -50,7 +50,7 @@ const Hero75 = () => {
                 <AvatarFallback>E</AvatarFallback>
               </Avatar>
             </div>
-            <span className="text-xs text-foreground lg:text-sm">
+            <span className="text-foreground text-xs lg:text-sm">
               More than 1 million medical practitioners rely on CareerMed
             </span>
           </div>

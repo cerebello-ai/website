@@ -1,4 +1,4 @@
-import { Button } from "@/components/ui/button";
+import { Button } from '@/components/ui/button';
 
 interface Feature2Props {
   title: string;
@@ -16,17 +16,17 @@ interface Feature2Props {
 }
 
 const Feature2 = ({
-  title = "Blocks built with Shadcn & Tailwind",
-  description = "Hundreds of finely crafted components built with React, Tailwind and Shadcn UI. Developers can copy and paste these blocks directly into their project.",
-  imageSrc = "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-1.svg",
-  imageAlt = "placeholder hero",
+  title = 'Blocks built with Shadcn & Tailwind',
+  description = 'Hundreds of finely crafted components built with React, Tailwind and Shadcn UI. Developers can copy and paste these blocks directly into their project.',
+  imageSrc = 'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-1.svg',
+  imageAlt = 'placeholder hero',
   buttonPrimary = {
-    label: "Get Started",
-    href: "https://shadcnblocks.com",
+    label: 'Get Started',
+    href: 'https://shadcnblocks.com',
   },
   buttonSecondary = {
-    label: "Learn More",
-    href: "https://shadcnblocks.com",
+    label: 'Learn More',
+    href: 'https://shadcnblocks.com',
   },
 }: Feature2Props) => {
   return (
@@ -42,7 +42,7 @@ const Feature2 = ({
             <h1 className="my-6 mt-0 text-4xl font-semibold text-balance lg:text-5xl">
               {title}
             </h1>
-            <p className="mb-8 max-w-xl text-muted-foreground lg:text-lg">
+            <p className="text-muted-foreground mb-8 max-w-xl lg:text-lg">
               {description}
             </p>
             <div className="flex w-full flex-col justify-center gap-2 sm:flex-row lg:justify-start">

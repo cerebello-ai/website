@@ -1,13 +1,13 @@
-import { Check } from "lucide-react";
+import { Check } from 'lucide-react';
 
-import { Button } from "@/components/ui/button";
+import { Button } from '@/components/ui/button';
 
 const features = [
-  "Unlimited projects and tasks",
-  "Unlimited users and collaborators",
-  "100GB of storage",
-  "Priority support and assistance",
-  "Custom domain and branding",
+  'Unlimited projects and tasks',
+  'Unlimited users and collaborators',
+  '100GB of storage',
+  'Priority support and assistance',
+  'Custom domain and branding',
 ];
 
 const Pricing15 = () => {
@@ -19,7 +19,7 @@ const Pricing15 = () => {
             <h2 className="mb-4 text-4xl font-bold text-balance md:text-5xl">
               One Plan, Unlimited Access
             </h2>
-            <p className="mb-4 text-lg text-muted-foreground">
+            <p className="text-muted-foreground mb-4 text-lg">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti
               ad eveniet esse id ipsa. Tempore voluptatum magni magnam vitae
               aperiam, explicabo hic asperiores enim quibusdam, tenetur
@@ -29,7 +29,7 @@ const Pricing15 = () => {
               Subscribe
             </Button>
           </div>
-          <div className="w-auth rounded-md border bg-muted p-11 md:w-1/2 lg:w-1/3">
+          <div className="w-auth bg-muted rounded-md border p-11 md:w-1/2 lg:w-1/3">
             <p className="text-5xl font-bold">
               $199<span className="text-lg">/mo</span>
             </p>

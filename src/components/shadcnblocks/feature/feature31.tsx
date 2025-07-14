@@ -12,14 +12,14 @@ const Feature31 = () => {
           </p>
         </div>
         <div className="mx-auto grid max-w-5xl gap-10 md:grid-cols-2">
-          <div className="order-1 flex h-full items-center rounded-lg bg-muted">
+          <div className="bg-muted order-1 flex h-full items-center rounded-lg">
             <img
               src="https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-dark-1.svg"
               alt="placeholder"
               className="aspect-video w-full object-cover"
             />
           </div>
-          <div className="order-3 h-full rounded-lg bg-muted md:px-10 md:pt-10">
+          <div className="bg-muted order-3 h-full rounded-lg md:px-10 md:pt-10">
             <img
               src="https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-dark-2.svg"
               alt="placeholder"
@@ -27,7 +27,7 @@ const Feature31 = () => {
             />
           </div>
           <div className="order-2 -mt-6 max-w-[412px] md:order-3">
-            <p className="mb-6 text-sm text-muted-foreground md:mb-12">
+            <p className="text-muted-foreground mb-6 text-sm md:mb-12">
               Lorem ipsum dolor sit amet.
             </p>
             <h3 className="mb-3 text-2xl font-medium md:mb-6">
@@ -43,7 +43,7 @@ const Feature31 = () => {
             </a>
           </div>
           <div className="order-4 -mt-6 max-w-[412px] md:order-3">
-            <p className="mb-6 text-sm text-muted-foreground md:mb-12">
+            <p className="text-muted-foreground mb-6 text-sm md:mb-12">
               Lorem ipsum dolor sit amet.
             </p>
             <h3 className="mb-3 text-2xl font-medium md:mb-6">

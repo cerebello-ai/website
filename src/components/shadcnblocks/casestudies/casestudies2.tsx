@@ -1,4 +1,4 @@
-import { Separator } from "@/components/ui/separator";
+import { Separator } from '@/components/ui/separator';
 
 const Casestudies2 = () => {
   return (
@@ -12,7 +12,7 @@ const Casestudies2 = () => {
         </div>
         <div className="mt-20">
           <div className="grid gap-16 lg:grid-cols-3 xl:gap-24">
-            <div className="flex flex-col gap-10 border-border sm:flex-row lg:col-span-2 lg:border-r lg:pr-16 xl:pr-24">
+            <div className="border-border flex flex-col gap-10 sm:flex-row lg:col-span-2 lg:border-r lg:pr-16 xl:pr-24">
               <img
                 src="https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-1.svg"
                 alt="placeholder"
@@ -26,7 +26,7 @@ const Casestudies2 = () => {
                 </q>
                 <div className="flex items-end gap-6">
                   <div className="flex flex-col gap-1">
-                    <p className="text-lg font-semibold text-primary">
+                    <p className="text-primary text-lg font-semibold">
                       Michael Rivera
                     </p>
                     <p className="text-muted-foreground">Product Director</p>
@@ -40,26 +40,26 @@ const Casestudies2 = () => {
             </div>
             <div className="flex gap-10 self-center lg:flex-col">
               <div className="flex flex-col gap-2">
-                <p className="text-4xl font-medium text-primary sm:text-5xl">
+                <p className="text-primary text-4xl font-medium sm:text-5xl">
                   98%
                 </p>
-                <p className="font-semibold text-primary">
+                <p className="text-primary font-semibold">
                   Customer Satisfaction
                 </p>
                 <p className="text-muted-foreground">From verified reviews</p>
               </div>
               <div className="flex flex-col gap-2">
-                <p className="text-4xl font-medium text-primary sm:text-5xl">
+                <p className="text-primary text-4xl font-medium sm:text-5xl">
                   3.8x
                 </p>
-                <p className="font-semibold text-primary">ROI Improvement</p>
+                <p className="text-primary font-semibold">ROI Improvement</p>
                 <p className="text-muted-foreground">Within first quarter</p>
               </div>
             </div>
           </div>
           <Separator className="my-20" />
           <div className="grid gap-16 lg:grid-cols-3 xl:gap-24">
-            <div className="flex flex-col gap-10 border-border sm:flex-row lg:col-span-2 lg:border-r lg:pr-16 xl:pr-24">
+            <div className="border-border flex flex-col gap-10 sm:flex-row lg:col-span-2 lg:border-r lg:pr-16 xl:pr-24">
               <img
                 src="https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-2.svg"
                 alt="placeholder"
@@ -73,7 +73,7 @@ const Casestudies2 = () => {
                 </q>
                 <div className="flex items-end gap-6">
                   <div className="flex flex-col gap-1">
-                    <p className="text-lg font-semibold text-primary">
+                    <p className="text-primary text-lg font-semibold">
                       Sarah Chen
                     </p>
                     <p className="text-muted-foreground">Operations Lead</p>
@@ -87,19 +87,19 @@ const Casestudies2 = () => {
             </div>
             <div className="flex gap-10 self-center lg:flex-col">
               <div className="flex flex-col gap-2">
-                <p className="text-4xl font-medium text-primary sm:text-5xl">
+                <p className="text-primary text-4xl font-medium sm:text-5xl">
                   4.2x
                 </p>
-                <p className="font-semibold text-primary">Team Efficiency</p>
+                <p className="text-primary font-semibold">Team Efficiency</p>
                 <p className="text-muted-foreground">
                   Proven productivity gains
                 </p>
               </div>
               <div className="flex flex-col gap-2">
-                <p className="text-4xl font-medium text-primary sm:text-5xl">
+                <p className="text-primary text-4xl font-medium sm:text-5xl">
                   72%
                 </p>
-                <p className="font-semibold text-primary">Reduced Task Time</p>
+                <p className="text-primary font-semibold">Reduced Task Time</p>
                 <p className="text-muted-foreground">Across all projects</p>
               </div>
             </div>

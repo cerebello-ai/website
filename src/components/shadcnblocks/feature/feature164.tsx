@@ -1,22 +1,25 @@
-"use client";
+'use client';
 
-import { useState } from "react";
+import { useState } from 'react';
 
-import { Button } from "@/components/ui/button";
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+import { Button } from '@/components/ui/button';
+import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 
 const integrations = [
   {
-    image: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-1.svg",
-    title: "Sales efficiency",
+    image:
+      'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-1.svg',
+    title: 'Sales efficiency',
   },
   {
-    image: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-2.svg",
-    title: "Revenue metrics",
+    image:
+      'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-2.svg',
+    title: 'Revenue metrics',
   },
   {
-    image: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-3.svg",
-    title: "PLG monitoring",
+    image:
+      'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-3.svg',
+    title: 'PLG monitoring',
   },
 ];
 
@@ -44,7 +47,7 @@ const Feature164 = () => {
                 <TabsTrigger
                   key={index}
                   value={index.toString()}
-                  className={`rounded-xl border px-3 py-2 ${index === cardNumber && "border-black bg-gray-50"} text-xs hover:border-black sm:text-base`}
+                  className={`rounded-xl border px-3 py-2 ${index === cardNumber && 'border-black bg-gray-50'} text-xs hover:border-black sm:text-base`}
                   onClick={() => setCardNumber(index)}
                 >
                   {item.title}
@@ -57,7 +60,7 @@ const Feature164 = () => {
               <h1 className="mb-4 text-3xl font-semibold sm:text-5xl">
                 <span className="text-muted-foreground/50">
                   Real-time data.
-                </span>{" "}
+                </span>{' '}
                 Dynamic reporting.
               </h1>
               <p className="mb-6 text-xl">

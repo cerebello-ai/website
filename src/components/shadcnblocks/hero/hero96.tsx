@@ -1,15 +1,15 @@
-import { Button } from "@/components/ui/button";
+import { Button } from '@/components/ui/button';
 
 const Hero96 = () => {
   return (
-    <section className="overflow-hidden bg-background py-20 font-sans lg:pt-40">
+    <section className="bg-background overflow-hidden py-20 font-sans lg:pt-40">
       <div className="container max-w-[77.75rem] px-11 sm:px-16 md:px-20">
         <div className="relative grid grid-cols-1 lg:grid-cols-2">
           <div className="flex flex-col gap-7 pb-10 lg:max-w-[30rem]">
-            <h1 className="text-3xl leading-snug font-semibold tracking-tighter text-foreground lg:text-4xl xl:text-5xl">
+            <h1 className="text-foreground text-3xl leading-snug font-semibold tracking-tighter lg:text-4xl xl:text-5xl">
               Website performance monitoring service
             </h1>
-            <p className="text-lg text-muted-foreground">
+            <p className="text-muted-foreground text-lg">
               Receive downtime alerts via phone call, SMS, email, or Slack if
               your website goes offline. Build stunning status pages and
               incident reports to keep your visitors informed.
@@ -29,7 +29,7 @@ const Hero96 = () => {
                 <a href="#">Pricing</a>
               </Button>
             </div>
-            <p className="text-lg text-muted-foreground">
+            <p className="text-muted-foreground text-lg">
               No credit card required, seriously.
             </p>
           </div>

@@ -1,40 +1,41 @@
-"use client";
+'use client';
 
-import { CheckCircle2, OctagonX } from "lucide-react";
-import React from "react";
+import React from 'react';
+
+import { CheckCircle2, OctagonX } from 'lucide-react';
 
 const rows = [
   {
-    label: "Onboarding",
-    lightbox: "1-2 days",
-    freelance: "30 days",
+    label: 'Onboarding',
+    lightbox: '1-2 days',
+    freelance: '30 days',
   },
   {
-    label: "Price Range",
-    lightbox: "10%",
-    freelance: "50-60%",
+    label: 'Price Range',
+    lightbox: '10%',
+    freelance: '50-60%',
   },
   {
-    label: "Quality Score",
-    lightbox: "Top 3%",
-    freelance: "Varies",
+    label: 'Quality Score',
+    lightbox: 'Top 3%',
+    freelance: 'Varies',
   },
   {
-    label: "Verification",
-    lightbox: "Multi-step verification process",
-    freelance: "Basic check",
+    label: 'Verification',
+    lightbox: 'Multi-step verification process',
+    freelance: 'Basic check',
     hasIcon: true,
   },
   {
-    label: "Adaptability",
-    lightbox: "Fully flexible",
-    freelance: "Limited",
+    label: 'Adaptability',
+    lightbox: 'Fully flexible',
+    freelance: 'Limited',
     hasIcon: true,
   },
   {
-    label: "Support",
-    lightbox: "24/7 dedicated team",
-    freelance: "Limited hours",
+    label: 'Support',
+    lightbox: '24/7 dedicated team',
+    freelance: 'Limited hours',
     hasIcon: true,
   },
 ];

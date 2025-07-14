@@ -1,9 +1,10 @@
-"use client";
+'use client';
 
-import { X } from "lucide-react";
-import { useState } from "react";
+import { useState } from 'react';
 
-import { Button } from "@/components/ui/button";
+import { X } from 'lucide-react';
+
+import { Button } from '@/components/ui/button';
 
 interface Banner2Props {
   title: string;
@@ -14,10 +15,10 @@ interface Banner2Props {
 }
 
 const Banner2 = ({
-  title = "Version 2.0 is now available!",
-  description = "Read the full release notes",
-  linkText = "here",
-  linkUrl = "#",
+  title = 'Version 2.0 is now available!',
+  description = 'Read the full release notes',
+  linkText = 'here',
+  linkUrl = '#',
   defaultVisible = true,
 }: Banner2Props) => {
   const [isVisible, setIsVisible] = useState(defaultVisible);
@@ -34,9 +35,9 @@ const Banner2 = ({
         <div className="flex items-center gap-2">
           <div className="flex-1">
             <span className="text-sm">
-              <span className="font-medium">{title}</span>{" "}
+              <span className="font-medium">{title}</span>{' '}
               <span className="text-muted-foreground">
-                {description}{" "}
+                {description}{' '}
                 <a
                   href={linkUrl}
                   className="hover:text-foreground underline underline-offset-2"

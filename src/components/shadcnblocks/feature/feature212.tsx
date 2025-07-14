@@ -1,4 +1,4 @@
-import { Route } from "lucide-react";
+import { Route } from 'lucide-react';
 
 interface CardData {
   title: string;
@@ -9,10 +9,10 @@ interface CardData {
 
 const CARDS: Array<CardData> = [
   {
-    title: "Improved Interactivity",
+    title: 'Improved Interactivity',
     summary:
-      "Buttons provide a clear call to action, making interfaces more intuitive and interactive for all users.",
-    className: "lg:col-span-2",
+      'Buttons provide a clear call to action, making interfaces more intuitive and interactive for all users.',
+    className: 'lg:col-span-2',
     Component: () => (
       <div className="ml-auto aspect-[0.581818182] w-full max-w-[35%] overflow-hidden rounded-tl-2xl">
         <img
@@ -24,10 +24,10 @@ const CARDS: Array<CardData> = [
     ),
   },
   {
-    title: "Focused User Attention",
+    title: 'Focused User Attention',
     summary:
-      "Modals isolate important content or decisions, helping users stay focused on critical tasks and workflows.",
-    className: "lg:col-span-2",
+      'Modals isolate important content or decisions, helping users stay focused on critical tasks and workflows.',
+    className: 'lg:col-span-2',
     Component: () => (
       <div className="relative overflow-hidden">
         <div className="relative bottom-0 left-1/2 -translate-x-1/2 overflow-hidden">
@@ -60,19 +60,19 @@ const CARDS: Array<CardData> = [
     ),
   },
   {
-    title: "Enhanced Clarity",
+    title: 'Enhanced Clarity',
     summary:
-      "Tooltips offer extra context without cluttering the interface, aiding comprehension and user guidance during interaction.",
-    className: "lg:col-span-2",
+      'Tooltips offer extra context without cluttering the interface, aiding comprehension and user guidance during interaction.',
+    className: 'lg:col-span-2',
     Component: () => (
       <div className="">
         <div className="relative aspect-[2.234375] w-full overflow-hidden">
-          <div className="relative bottom-0 right-0 flex w-fit justify-end gap-[5%]">
+          <div className="relative right-0 bottom-0 flex w-fit justify-end gap-[5%]">
             <div
               style={{
-                top: "0",
-                right: "0",
-                rotate: "2.6deg",
+                top: '0',
+                right: '0',
+                rotate: '2.6deg',
               }}
               className="aspect-[0.845360825] w-[35%] shrink-0 translate-y-[9.5%] overflow-hidden rounded-[0.5rem] shadow-md"
             >
@@ -84,9 +84,9 @@ const CARDS: Array<CardData> = [
             </div>
             <div
               style={{
-                top: "0",
-                right: "0",
-                rotate: "-2.8deg",
+                top: '0',
+                right: '0',
+                rotate: '-2.8deg',
               }}
               className="aspect-[0.845360825] w-[35%] shrink-0 translate-y-[14%] overflow-hidden rounded-[0.5rem] shadow-md"
             >
@@ -102,10 +102,10 @@ const CARDS: Array<CardData> = [
     ),
   },
   {
-    title: "Streamlined Navigation",
+    title: 'Streamlined Navigation',
     summary:
-      "Dropdown menus reduce screen clutter by hiding complex options until needed, simplifying user decision-making.",
-    className: "lg:col-span-3",
+      'Dropdown menus reduce screen clutter by hiding complex options until needed, simplifying user decision-making.',
+    className: 'lg:col-span-3',
     Component: () => (
       <div className="size-full p-4">
         <div className="flex aspect-[3.556692913] size-full min-h-[11.25rem]">
@@ -117,35 +117,35 @@ const CARDS: Array<CardData> = [
     ),
   },
   {
-    title: "Efficient Space Usage",
+    title: 'Efficient Space Usage',
     summary:
-      "Tabs allow users to switch views easily, organizing content in a user-friendly way for better discoverability.",
-    className: "lg:col-span-3 [&_p]:max-w-[22.5rem]",
+      'Tabs allow users to switch views easily, organizing content in a user-friendly way for better discoverability.',
+    className: 'lg:col-span-3 [&_p]:max-w-[22.5rem]',
     Component: () => {
       const FILLER_WORDS = [
         {
-          word: "Noise",
-          className: "right-[18%] top-0 xl:top-[12%]",
+          word: 'Noise',
+          className: 'right-[18%] top-0 xl:top-[12%]',
         },
         {
-          word: "Confusion",
-          className: "right-[0%] top-[28%]",
+          word: 'Confusion',
+          className: 'right-[0%] top-[28%]',
         },
         {
-          word: "Inaccessibility",
-          className: "left-[0%] top-[44%]",
+          word: 'Inaccessibility',
+          className: 'left-[0%] top-[44%]',
         },
         {
-          word: "Clutter",
-          className: "hidden sm:block left-[65%] top-[44%]",
+          word: 'Clutter',
+          className: 'hidden sm:block left-[65%] top-[44%]',
         },
         {
-          word: "Inconsistency",
-          className: "right-[35%] top-[60%]",
+          word: 'Inconsistency',
+          className: 'right-[35%] top-[60%]',
         },
         {
-          word: "Inefficiency",
-          className: "right-[8%] top-[75%]",
+          word: 'Inefficiency',
+          className: 'right-[8%] top-[75%]',
         },
       ];
       return (
@@ -153,7 +153,7 @@ const CARDS: Array<CardData> = [
           {FILLER_WORDS.map((item, i) => (
             <div
               key={`filler-words-${i}`}
-              className={`${item.className} text-black/18 absolute w-fit select-none text-2xl font-medium tracking-tighter line-through sm:text-[2rem] md:text-[2rem] lg:text-[1.75rem] xl:text-4xl`}
+              className={`${item.className} absolute w-fit text-2xl font-medium tracking-tighter text-black/18 line-through select-none sm:text-[2rem] md:text-[2rem] lg:text-[1.75rem] xl:text-4xl`}
             >
               {item.word}
             </div>
@@ -163,10 +163,10 @@ const CARDS: Array<CardData> = [
     },
   },
   {
-    title: "Content Organization",
+    title: 'Content Organization',
     summary:
-      "Accordions let users manage and reveal information progressively, making long content more digestible and accessible.",
-    className: "lg:col-span-2",
+      'Accordions let users manage and reveal information progressively, making long content more digestible and accessible.',
+    className: 'lg:col-span-2',
     Component: () => (
       <div className="flex size-full items-end justify-end">
         <div className="aspect-[1.541436464] w-1/2 overflow-hidden rounded-tl-2xl">
@@ -180,10 +180,10 @@ const CARDS: Array<CardData> = [
     ),
   },
   {
-    title: "User Input Collection",
+    title: 'User Input Collection',
     summary:
-      "Input fields allow for data entry and personalization, enabling dynamic and responsive UI experiences across devices.",
-    className: "lg:col-span-2",
+      'Input fields allow for data entry and personalization, enabling dynamic and responsive UI experiences across devices.',
+    className: 'lg:col-span-2',
     Component: () => (
       <div className="flex size-full min-h-[12.5rem] items-end justify-center">
         <div>
@@ -199,16 +199,16 @@ const CARDS: Array<CardData> = [
     ),
   },
   {
-    title: "Visual Hierarchy",
+    title: 'Visual Hierarchy',
     summary:
-      "Cards compartmentalize information, improving layout structure and scannability for enhanced user content engagement.",
-    className: "lg:col-span-2",
+      'Cards compartmentalize information, improving layout structure and scannability for enhanced user content engagement.',
+    className: 'lg:col-span-2',
     Component: () => (
-      <div className="relative min-h-[12.5rem] whitespace-nowrap text-4xl md:text-5xl lg:text-3xl xl:text-4xl">
-        <div className="absolute bottom-32 right-0 rotate-6 lg:bottom-24">
+      <div className="relative min-h-[12.5rem] text-4xl whitespace-nowrap md:text-5xl lg:text-3xl xl:text-4xl">
+        <div className="absolute right-0 bottom-32 rotate-6 lg:bottom-24">
           Get <span className="bg-blue-500 text-white">Started with</span>
         </div>
-        <div className="-rotate-4 absolute bottom-7 right-4 bg-black text-white">
+        <div className="absolute right-4 bottom-7 -rotate-4 bg-black text-white">
           Shadcnblocks.com
         </div>
       </div>
@@ -222,8 +222,8 @@ const Card = ({ title, summary, className, Component }: CardData) => {
       className={`bg-muted relative overflow-hidden rounded-2xl ${className}`}
     >
       <div className="flex size-full flex-col justify-between gap-10">
-        <div className="flex w-full flex-col gap-4 pl-6 pr-6 pt-6">
-          <h2 className="text-lg font-semibold leading-none">{title}</h2>
+        <div className="flex w-full flex-col gap-4 pt-6 pr-6 pl-6">
+          <h2 className="text-lg leading-none font-semibold">{title}</h2>
           <p>{summary}</p>
         </div>
         <Component />

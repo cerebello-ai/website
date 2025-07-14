@@ -1,24 +1,23 @@
-import { ArrowRight, Clock, MapPin, Target } from "lucide-react";
+import { ArrowRight, Clock, MapPin, Target } from 'lucide-react';
 
-import { cn } from "@/lib/utils";
-
-import { Badge } from "@/components/ui/badge";
-import { buttonVariants } from "@/components/ui/button";
+import { Badge } from '@/components/ui/badge';
+import { buttonVariants } from '@/components/ui/button';
+import { cn } from '@/lib/utils';
 
 const jobs = [
   {
-    title: "Senior Software Engineer",
-    location: "Remote",
-    city: "Vancouver, BC",
-    type: "Full-time",
-    link: "#",
+    title: 'Senior Software Engineer',
+    location: 'Remote',
+    city: 'Vancouver, BC',
+    type: 'Full-time',
+    link: '#',
   },
   {
-    title: "Product Manager",
-    location: "Remote",
-    city: "Vienna, Austria",
-    type: "Full-time",
-    link: "#",
+    title: 'Product Manager',
+    location: 'Remote',
+    city: 'Vienna, Austria',
+    type: 'Full-time',
+    link: '#',
   },
 ];
 
@@ -47,7 +46,7 @@ const Careers2 = () => {
                 className="grid items-center gap-6 border-b border-dashed px-6 py-10 lg:grid-cols-4"
               >
                 <h2 className="text-lg">{job.title}</h2>
-                <div className="col-span-2 flex flex-col gap-4 text-sm text-muted-foreground sm:flex-row sm:gap-8 lg:justify-center">
+                <div className="text-muted-foreground col-span-2 flex flex-col gap-4 text-sm sm:flex-row sm:gap-8 lg:justify-center">
                   <div className="flex gap-2">
                     <Clock className="h-auto w-4" />
                     {job.type}
@@ -63,7 +62,7 @@ const Careers2 = () => {
                 </div>
                 <a
                   href={job.link}
-                  className={cn(buttonVariants(), "w-fit gap-1 lg:ml-auto")}
+                  className={cn(buttonVariants(), 'w-fit gap-1 lg:ml-auto')}
                 >
                   Apply
                   <ArrowRight className="h-auto w-4" />

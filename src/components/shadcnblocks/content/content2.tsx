@@ -7,161 +7,180 @@ import {
   Plus,
   Share2,
   ShoppingBag,
-} from "lucide-react";
+} from 'lucide-react';
 
-import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert";
-import { Badge } from "@/components/ui/badge";
+import { ContentProps } from '@/components/shadcnblocks/types/common';
+import { Alert, AlertDescription, AlertTitle } from '@/components/ui/alert';
+import { Badge } from '@/components/ui/badge';
 
-const Content2 = () => {
+interface ContentType {
+  icon: React.ReactNode;
+  title: string;
+  description: string;
+  href: string;
+}
+
+interface InstructionSection {
+  title: string;
+  steps: string[];
+}
+
+interface Content2Props extends ContentProps {
+  badge?: string;
+  heroImage?: string;
+  contentTypes?: ContentType[];
+  gridColumns?: string;
+  instructionSections?: InstructionSection[];
+  alert?: {
+    icon?: React.ReactNode;
+    title: string;
+    description: string;
+  };
+}
+
+const Content2 = ({
+  badge = 'Features',
+  title = 'Content Management',
+  description = 'Our content management system allows you to easily organize and showcase your work. Share your portfolio, products, or services with your audience.',
+  heroImage = 'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-1.svg',
+  contentTypes = [
+    {
+      icon: <FileSpreadsheetIcon className="h-6 w-6 shrink-0" />,
+      title: 'Projects',
+      description: 'Showcase your latest work and achievements.',
+      href: '#',
+    },
+    {
+      icon: <ShoppingBag className="h-6 w-6 shrink-0" />,
+      title: 'Products',
+      description: 'Display your products or services.',
+      href: '#',
+    },
+    {
+      icon: <Images className="h-6 w-6 shrink-0" />,
+      title: 'Gallery',
+      description: 'Share photos and visual content.',
+      href: '#',
+    },
+    {
+      icon: <Calendar className="h-6 w-6 shrink-0" />,
+      title: 'Events',
+      description: 'Promote upcoming events and dates.',
+      href: '#',
+    },
+    {
+      icon: <Share2 className="h-6 w-6 shrink-0" />,
+      title: 'Social',
+      description: 'Link to your social media profiles.',
+      href: '#',
+    },
+    {
+      icon: <BookOpen className="h-6 w-6 shrink-0" />,
+      title: 'Blog',
+      description: 'Share your latest articles and updates.',
+      href: '#',
+    },
+    {
+      icon: <Plus className="h-6 w-6 shrink-0" />,
+      title: 'Custom',
+      description: 'Add any custom content or external links.',
+      href: '#',
+    },
+  ],
+  gridColumns = 'md:grid-cols-2',
+  instructionSections = [
+    {
+      title: 'Adding Content',
+      steps: [
+        'Navigate to **Content** and click **New** in the top right.',
+        'Choose your content type and fill in the required information.',
+        'Add a description, upload media if needed, and click **Save**.',
+      ],
+    },
+    {
+      title: 'Managing Content',
+      steps: [
+        'Go to **Content** and locate the item you want to modify.',
+        'Click the **options menu** (three dots) and select **Edit**.',
+        'Update the information and click **Save**.',
+      ],
+    },
+  ],
+  alert = {
+    icon: <Lightbulb className="h-4 w-4" />,
+    title: 'Tip',
+    description:
+      'You can quickly create content by using our bulk upload feature or content templates.',
+  },
+  className,
+}: Content2Props) => {
   return (
-    <section className="py-32">
+    <section className={className || 'py-32'}>
       <div className="container max-w-5xl">
         <div>
           <div>
-            <Badge variant="outline">Features</Badge>
-            <h1 className="mt-3 text-3xl font-extrabold">Content Management</h1>
-            <p className="text-muted-foreground mt-2 text-lg">
-              Our content management system allows you to easily organize and
-              showcase your work. Share your portfolio, products, or services
-              with your audience.
-            </p>
+            {badge && <Badge variant="outline">{badge}</Badge>}
+            <h1 className="mt-3 text-3xl font-extrabold">{title}</h1>
+            {description && (
+              <p className="text-muted-foreground mt-2 text-lg">
+                {description}
+              </p>
+            )}
             <img
-              src="https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-1.svg"
-              alt="placeholder"
+              src={heroImage}
+              alt="hero image"
               className="my-8 aspect-video w-full rounded-md object-cover"
             />
           </div>
           <section className="mb-8">
             <h2 className="mb-6 text-2xl font-bold">Content Types</h2>
-            <div className="grid gap-4 md:grid-cols-2">
-              <a
-                href="#"
-                className="hover:border-primary flex items-center gap-3 rounded-xl border px-6 py-5"
-              >
-                <FileSpreadsheetIcon className="h-6 w-6 shrink-0" />
-                <div>
-                  <h2 className="font-semibold">Projects</h2>
-                  <p className="text-muted-foreground text-sm">
-                    Showcase your latest work and achievements.
-                  </p>
-                </div>
-              </a>
-
-              <a
-                href="#"
-                className="hover:border-primary flex items-center gap-3 rounded-xl border px-6 py-5"
-              >
-                <ShoppingBag className="h-6 w-6 shrink-0" />
-                <div>
-                  <h2 className="font-semibold">Products</h2>
-                  <p className="text-muted-foreground text-sm">
-                    Display your products or services.
-                  </p>
-                </div>
-              </a>
-              <a
-                href="#"
-                className="hover:border-primary flex items-center gap-3 rounded-xl border px-6 py-5"
-              >
-                <Images className="h-6 w-6 shrink-0" />
-                <div>
-                  <h2 className="font-semibold">Gallery</h2>
-                  <p className="text-muted-foreground text-sm">
-                    Share photos and visual content.
-                  </p>
-                </div>
-              </a>
-              <a
-                href="#"
-                className="hover:border-primary flex items-center gap-3 rounded-xl border px-6 py-5"
-              >
-                <Calendar className="h-6 w-6 shrink-0" />
-                <div>
-                  <h2 className="font-semibold">Events</h2>
-                  <p className="text-muted-foreground text-sm">
-                    Promote upcoming events and dates.
-                  </p>
-                </div>
-              </a>
-              <a
-                href="#"
-                className="hover:border-primary flex items-center gap-3 rounded-xl border px-6 py-5"
-              >
-                <Share2 className="h-6 w-6 shrink-0" />
-                <div>
-                  <h2 className="font-semibold">Social</h2>
-                  <p className="text-muted-foreground text-sm">
-                    Link to your social media profiles.
-                  </p>
-                </div>
-              </a>
-              <a
-                href="#"
-                className="hover:border-primary flex items-center gap-3 rounded-xl border px-6 py-5"
-              >
-                <BookOpen className="h-6 w-6 shrink-0" />
-                <div>
-                  <h2 className="font-semibold">Blog</h2>
-                  <p className="text-muted-foreground text-sm">
-                    Share your latest articles and updates.
-                  </p>
-                </div>
-              </a>
-              <a
-                href="#"
-                className="hover:border-primary flex items-center gap-3 rounded-xl border px-6 py-5"
-              >
-                <Plus className="h-6 w-6 shrink-0" />
-                <div>
-                  <h2 className="font-semibold">Custom</h2>
-                  <p className="text-muted-foreground text-sm">
-                    Add any custom content or external links.
-                  </p>
-                </div>
-              </a>
+            <div className={`grid gap-4 ${gridColumns}`}>
+              {contentTypes.map((contentType, index) => (
+                <a
+                  key={`content-type-${index}`}
+                  href={contentType.href}
+                  className="hover:border-primary flex items-center gap-3 rounded-xl border px-6 py-5"
+                >
+                  {contentType.icon}
+                  <div>
+                    <h2 className="font-semibold">{contentType.title}</h2>
+                    <p className="text-muted-foreground text-sm">
+                      {contentType.description}
+                    </p>
+                  </div>
+                </a>
+              ))}
             </div>
           </section>
 
-          <section className="prose dark:prose-invert mb-8">
-            <h2>Adding Content</h2>
-            <ol>
-              <li>
-                Navigate to <strong>Content</strong> and click
-                <strong>New</strong> in the top right.
-              </li>
-              <li>
-                Choose your content type and fill in the required information.
-              </li>
-              <li>
-                Add a description, upload media if needed, and click
-                <strong>Save</strong>.
-              </li>
-            </ol>
-            <Alert>
-              <Lightbulb className="h-4 w-4" />
-              <AlertTitle>Tip</AlertTitle>
-              <AlertDescription>
-                You can quickly create content by using our bulk upload feature
-                or content templates.
-              </AlertDescription>
-            </Alert>
-          </section>
-          <section className="prose dark:prose-invert mb-8">
-            <h2>Managing Content</h2>
-            <ol>
-              <li>
-                Go to <strong>Content</strong> and locate the item you want to
-                modify.
-              </li>
-              <li>
-                Click the <strong>options menu</strong> (three dots) and select{" "}
-                <strong>Edit</strong>.
-              </li>
-              <li>
-                Update the information and click <strong>Save</strong>.
-              </li>
-            </ol>
-          </section>
+          {instructionSections.map((section, sectionIndex) => (
+            <section
+              key={`instruction-${sectionIndex}`}
+              className="prose dark:prose-invert mb-8"
+            >
+              <h2>{section.title}</h2>
+              <ol>
+                {section.steps.map((step, stepIndex) => (
+                  <li
+                    key={`step-${sectionIndex}-${stepIndex}`}
+                    dangerouslySetInnerHTML={{
+                      __html: step.replace(
+                        /\*\*(.*?)\*\*/g,
+                        '<strong>$1</strong>',
+                      ),
+                    }}
+                  />
+                ))}
+              </ol>
+              {sectionIndex === 0 && alert && (
+                <Alert>
+                  {alert.icon}
+                  <AlertTitle>{alert.title}</AlertTitle>
+                  <AlertDescription>{alert.description}</AlertDescription>
+                </Alert>
+              )}
+            </section>
+          ))}
         </div>
       </div>
     </section>

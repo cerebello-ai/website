@@ -1,46 +1,46 @@
-import { Star } from "lucide-react";
+import { Star } from 'lucide-react';
 
-import { AspectRatio } from "@/components/ui/aspect-ratio";
-import { Badge } from "@/components/ui/badge";
-import { Button } from "@/components/ui/button";
+import { AspectRatio } from '@/components/ui/aspect-ratio';
+import { Badge } from '@/components/ui/badge';
+import { Button } from '@/components/ui/button';
 
 interface ButtonType {
   title: string;
   url: string;
-  variant: "outline" | "default";
+  variant: 'outline' | 'default';
 }
 
 const BUTTONS: ButtonType[] = [
   {
-    title: "Explore",
-    url: "#",
-    variant: "default",
+    title: 'Explore',
+    url: '#',
+    variant: 'default',
   },
   {
-    title: "Sign up",
-    url: "#",
-    variant: "outline",
+    title: 'Sign up',
+    url: '#',
+    variant: 'outline',
   },
 ];
 
 const IMAGES = [
   {
-    src: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-1.svg",
-    alt: "",
+    src: 'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-1.svg',
+    alt: '',
     ratio: 0.644736842,
-    className: "w-[30%]",
+    className: 'w-[30%]',
   },
   {
-    src: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-2.svg",
-    alt: "",
+    src: 'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-2.svg',
+    alt: '',
     ratio: 0.926829268,
-    className: "w-[40%]",
+    className: 'w-[40%]',
   },
   {
-    src: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-3.svg",
-    alt: "",
+    src: 'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-3.svg',
+    alt: '',
     ratio: 0.644736842,
-    className: "w-[30%]",
+    className: 'w-[30%]',
   },
 ];
 
@@ -50,8 +50,8 @@ const Hero83 = () => {
       <div className="container">
         <div className="flex flex-col items-center justify-center gap-10 pb-8">
           <Badge variant="outline" className="gap-4 rounded-full p-1 pr-4">
-            <div className="flex size-5 shrink-0 rounded-full bg-primary">
-              <Star className="m-auto size-3 fill-primary-foreground stroke-primary-foreground" />
+            <div className="bg-primary flex size-5 shrink-0 rounded-full">
+              <Star className="fill-primary-foreground stroke-primary-foreground m-auto size-3" />
             </div>
             <div className="font-medium uppercase">
               Announcing our new features
@@ -60,7 +60,7 @@ const Hero83 = () => {
           <h1 className="max-w-lg text-center text-4xl font-semibold md:max-w-2xl md:text-6xl">
             Achieve More with Elite Access Pro
           </h1>
-          <p className="max-w-lg text-center font-medium text-foreground">
+          <p className="text-foreground max-w-lg text-center font-medium">
             Enhance your career hunt with increased visibility, first-look
             opportunities and monetary incentives!
           </p>

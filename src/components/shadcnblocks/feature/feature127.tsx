@@ -1,4 +1,4 @@
-"use client";
+'use client';
 
 import {
   Blocks,
@@ -6,38 +6,42 @@ import {
   Infinity as InfinityIcon,
   Laptop,
   ListEnd,
-} from "lucide-react";
+} from 'lucide-react';
 
-import { Button } from "@/components/ui/button";
+import { Button } from '@/components/ui/button';
 
 const itemsData = [
   {
-    title: "Integrations",
+    title: 'Integrations',
     description:
-      "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Animi laboriosam voluptatibus temporibus doloremque laudantium.",
+      'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Animi laboriosam voluptatibus temporibus doloremque laudantium.',
     icon: <Blocks className="size-6" />,
-    imageSrc: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-1.svg",
+    imageSrc:
+      'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-1.svg',
   },
   {
-    title: "Apps",
+    title: 'Apps',
     description:
-      "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Animi laboriosam voluptatibus temporibus doloremque laudantium.",
+      'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Animi laboriosam voluptatibus temporibus doloremque laudantium.',
     icon: <Laptop className="size-6" />,
-    imageSrc: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-2.svg",
+    imageSrc:
+      'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-2.svg',
   },
   {
-    title: "Plugins",
+    title: 'Plugins',
     description:
-      "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Animi laboriosam voluptatibus temporibus doloremque laudantium.",
+      'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Animi laboriosam voluptatibus temporibus doloremque laudantium.',
     icon: <ListEnd className="size-6" />,
-    imageSrc: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-3.svg",
+    imageSrc:
+      'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-3.svg',
   },
   {
-    title: "Extensions",
+    title: 'Extensions',
     description:
-      "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Animi laboriosam voluptatibus temporibus doloremque laudantium.",
+      'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Animi laboriosam voluptatibus temporibus doloremque laudantium.',
     icon: <InfinityIcon className="size-6" />,
-    imageSrc: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-4.svg",
+    imageSrc:
+      'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-4.svg',
   },
 ];
 
@@ -46,19 +50,22 @@ const gridItems = [
     id: 1,
     row: 3,
     col: 3,
-    imgSrc: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/block-1.svg",
+    imgSrc:
+      'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/block-1.svg',
   },
   {
     id: 2,
     row: 4,
     col: 4,
-    imgSrc: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/block-2.svg",
+    imgSrc:
+      'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/block-2.svg',
   },
   {
     id: 3,
     row: 4,
     col: 7,
-    imgSrc: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/block-2.svg",
+    imgSrc:
+      'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/block-2.svg',
   },
 ];
 
@@ -68,27 +75,27 @@ const Feature127 = () => {
       <div className="container max-w-[1200px]">
         <div className="flex gap-6">
           <div className="w-full">
-            <span className="text-base text-muted-foreground">
+            <span className="text-muted-foreground text-base">
               Build with blocks
             </span>
             <h2 className="my-4 text-3xl font-medium">
               What you can do with our utilities
             </h2>
 
-            <p className="text-lg text-muted-foreground">
+            <p className="text-muted-foreground text-lg">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate
               qui dignissimos odit.
             </p>
           </div>
 
           <div className="relative hidden w-full lg:block">
-            <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_bottom_left,var(--tw-gradient-stops))] from-transparent to-background"></div>
+            <div className="to-background absolute inset-0 bg-[radial-gradient(ellipse_at_bottom_left,var(--tw-gradient-stops))] from-transparent"></div>
 
             <div className="grid w-full grid-cols-8 grid-rows-4 gap-2">
               {Array.from({ length: 32 - gridItems.length }).map((_, index) => (
                 <div
                   key={index}
-                  className="flex w-full rounded-md bg-muted p-3"
+                  className="bg-muted flex w-full rounded-md p-3"
                 />
               ))}
               {gridItems.map((item) => (
@@ -111,7 +118,7 @@ const Feature127 = () => {
           {itemsData.map((item) => (
             <div key={item.title} className="rounded-lg border p-12 pb-0">
               <div className="mb-8 flex items-center justify-between">
-                <div className="flex size-12 items-center justify-center rounded-lg bg-muted">
+                <div className="bg-muted flex size-12 items-center justify-center rounded-lg">
                   {item.icon}
                 </div>
                 <Button variant="outline" className="size-10 p-0">
@@ -120,7 +127,7 @@ const Feature127 = () => {
               </div>
 
               <h4 className="mb-4 text-xl font-medium">{item.title}</h4>
-              <p className="font-base mb-8 text-muted-foreground">
+              <p className="font-base text-muted-foreground mb-8">
                 {item.description}
               </p>
               <div className="relative m-auto mt-4 w-full overflow-hidden">

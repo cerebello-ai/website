@@ -1,13 +1,13 @@
-import { Plus } from "lucide-react";
+import { Plus } from 'lucide-react';
 
-import { Badge } from "@/components/ui/badge";
+import { Badge } from '@/components/ui/badge';
 import {
   Select,
   SelectContent,
   SelectItem,
   SelectTrigger,
   SelectValue,
-} from "@/components/ui/select";
+} from '@/components/ui/select';
 
 interface DataItem {
   title: string;
@@ -17,19 +17,19 @@ interface DataItem {
 
 const DATA: DataItem[] = [
   {
-    title: "Projects Delivered",
-    value: "150",
-    description: "Total projects successfully delivered to clients",
+    title: 'Projects Delivered',
+    value: '150',
+    description: 'Total projects successfully delivered to clients',
   },
   {
-    title: "Revenue Generated",
-    value: "20M",
-    description: "Total revenue generated from all projects",
+    title: 'Revenue Generated',
+    value: '20M',
+    description: 'Total revenue generated from all projects',
   },
   {
-    title: "Client Satisfaction",
-    value: "95",
-    description: "Overall client satisfaction rate",
+    title: 'Client Satisfaction',
+    value: '95',
+    description: 'Overall client satisfaction rate',
   },
 ];
 
@@ -57,7 +57,7 @@ const Feature183 = () => {
     <section className="py-32">
       <div className="container">
         <div className="w-full shrink-0">
-          <div className="relative mx-auto h-[24rem] w-full rounded-3xl bg-muted bg-cover bg-center bg-no-repeat sm:h-[24rem]">
+          <div className="bg-muted relative mx-auto h-[24rem] w-full rounded-3xl bg-cover bg-center bg-no-repeat sm:h-[24rem]">
             {/* SVG pattern */}
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -115,7 +115,7 @@ const Feature183 = () => {
             </div>
 
             {/* Left card */}
-            <div className="absolute top-12 left-1/4 z-20 hidden w-60 transform rounded-2xl border bg-background p-4 shadow-md md:rotate-12 lg:block">
+            <div className="bg-background absolute top-12 left-1/4 z-20 hidden w-60 transform rounded-2xl border p-4 shadow-md md:rotate-12 lg:block">
               <div className="flex flex-row">
                 <h3 className="text-lg font-semibold">Top Product</h3>
                 <Badge variant="secondary" className="ml-auto rounded-sm">
@@ -123,7 +123,7 @@ const Feature183 = () => {
                 </Badge>
               </div>
               <div className="mt-4">
-                <p className="text-sm text-muted-foreground">
+                <p className="text-muted-foreground text-sm">
                   EcoSmart Water Bottle made from 100% recycled materials.
                   Durable, eco-friendly, and available in multiple colors and
                   sizes.
@@ -132,7 +132,7 @@ const Feature183 = () => {
             </div>
 
             {/* Right card */}
-            <div className="absolute top-12 right-1/4 z-20 hidden w-60 transform rounded-lg border bg-background p-4 shadow-md lg:block">
+            <div className="bg-background absolute top-12 right-1/4 z-20 hidden w-60 transform rounded-lg border p-4 shadow-md lg:block">
               <div className="flex flex-row border-b pb-4">
                 <h3 className="text-lg font-semibold">Add Product</h3>
                 <div className="relative ml-auto">

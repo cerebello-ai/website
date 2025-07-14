@@ -15,7 +15,7 @@ const Feature99 = () => {
                 <h3 className="mt-2 text-xl font-medium">
                   Integrate your HR platform effortlessly
                 </h3>
-                <p className="text-sm text-muted-foreground">
+                <p className="text-muted-foreground text-sm">
                   Our platform supports 38 HR systems, ensuring a smooth
                   connection in just two minutes.
                 </p>
@@ -23,9 +23,9 @@ const Feature99 = () => {
               <div className="flex flex-col gap-1 border-l pr-4 pl-4 md:pl-8">
                 <span className="font-mono text-4xl lg:text-6xl">2</span>
                 <h3 className="mt-2 text-xl font-medium">
-                  Sync employees with ease{" "}
+                  Sync employees with ease{' '}
                 </h3>
-                <p className="text-sm text-muted-foreground">
+                <p className="text-muted-foreground text-sm">
                   Automatically import your team into our system, enabling you
                   to start analyzing the data instantly.
                 </p>
@@ -35,7 +35,7 @@ const Feature99 = () => {
                 <h3 className="mt-2 text-xl font-medium">
                   Dive into insights and manage your team
                 </h3>
-                <p className="text-sm text-muted-foreground">
+                <p className="text-muted-foreground text-sm">
                   Whether you work solo or with a team, explore benchmarks,
                   review offers, and streamline leveling.
                 </p>

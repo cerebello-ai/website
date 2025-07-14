@@ -1,7 +1,7 @@
-import { MoonStar, Sparkles } from "lucide-react";
+import { MoonStar, Sparkles } from 'lucide-react';
 
-import { AspectRatio } from "@/components/ui/aspect-ratio";
-import { Button } from "@/components/ui/button";
+import { AspectRatio } from '@/components/ui/aspect-ratio';
+import { Button } from '@/components/ui/button';
 
 const Hero107 = () => {
   return (
@@ -16,7 +16,7 @@ const Hero107 = () => {
                   Free Portfolio Template
                 </div>
               </div>
-              <h1 className="to-muted2 inline-block bg-linear-to-br from-foreground bg-clip-text text-center font-serif text-4xl text-transparent md:text-6xl md:leading-snug lg:text-left">
+              <h1 className="to-muted2 from-foreground inline-block bg-linear-to-br bg-clip-text text-center font-serif text-4xl text-transparent md:text-6xl md:leading-snug lg:text-left">
                 Your Trusted Collaborator for Digital Services
               </h1>
             </div>
@@ -27,7 +27,7 @@ const Hero107 = () => {
                   className="group relative grid h-fit overflow-hidden rounded-full px-7 py-5 shadow-[0_1000px_0_0_hsl(0_0%_20%)_inset]"
                 >
                   <a href="#">
-                    <span className="spark mask-gradient absolute inset-0 h-[100%] w-[100%] animate-flip-btn overflow-hidden rounded-full [mask:linear-gradient(white,transparent_50%)] before:absolute before:[inset:0_auto_auto_50%] before:aspect-square before:w-[200%] before:[translate:-50%_-15%] before:rotate-[-90deg] before:animate-rotate-btn before:bg-[conic-gradient(from_0deg,transparent_0_340deg,var(--color-muted)_360deg)] before:content-['']" />
+                    <span className="spark mask-gradient animate-flip-btn before:animate-rotate-btn absolute inset-0 h-[100%] w-[100%] overflow-hidden rounded-full [mask:linear-gradient(white,transparent_50%)] before:absolute before:[inset:0_auto_auto_50%] before:aspect-square before:w-[200%] before:[translate:-50%_-15%] before:rotate-[-90deg] before:bg-[conic-gradient(from_0deg,transparent_0_340deg,var(--color-muted)_360deg)] before:content-['']" />
                     <span className="backdrop absolute inset-[2.5px] rounded-full bg-black transition-colors duration-200 group-hover:bg-slate-900" />
                     <span className="text z-10 text-center font-medium text-white">
                       Click Here
@@ -39,10 +39,10 @@ const Hero107 = () => {
                 className="my-9 h-[1px] w-full bg-black"
                 style={{
                   background:
-                    "linear-gradient(270deg, rgba(234, 232, 225, .2) 0%, rgba(17, 16, 17, .2) 50%, rgba(17, 16, 17, 0) 100%)",
+                    'linear-gradient(270deg, rgba(234, 232, 225, .2) 0%, rgba(17, 16, 17, .2) 50%, rgba(17, 16, 17, 0) 100%)',
                 }}
               />
-              <p className="mx-auto w-full max-w-[30rem] text-center text-lg font-light text-foreground lg:mx-0 lg:text-left">
+              <p className="text-foreground mx-auto w-full max-w-[30rem] text-center text-lg font-light lg:mx-0 lg:text-left">
                 Assisting startups and brands in creating impactful and engaging
                 solutions for their software requirements.
               </p>

@@ -1,4 +1,6 @@
-"use client";
+'use client';
+import { useRef } from 'react';
+
 import {
   AudioLines,
   Captions,
@@ -8,23 +10,22 @@ import {
   LucideIcon,
   ScanFace,
   TextQuote,
-} from "lucide-react";
-import { useRef } from "react";
+} from 'lucide-react';
 
-import { AspectRatio } from "@/components/ui/aspect-ratio";
+import { AspectRatio } from '@/components/ui/aspect-ratio';
 import {
   Card,
   CardContent,
   CardDescription,
   CardTitle,
-} from "@/components/ui/card";
+} from '@/components/ui/card';
 import {
   Carousel,
   CarouselContent,
   CarouselItem,
   CarouselNext,
   CarouselPrevious,
-} from "@/components/ui/carousel";
+} from '@/components/ui/carousel';
 
 interface card {
   video: string;
@@ -36,60 +37,67 @@ interface card {
 
 const List: Array<card> = [
   {
-    video: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/video-1.mp4",
+    video:
+      'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/video-1.mp4',
     Icon: Eye,
-    title: "Eye Contact",
-    link: "#",
+    title: 'Eye Contact',
+    link: '#',
     summary:
-      "Go on, read your lines. AI will make it look like you were staring at the camera the entire time.",
+      'Go on, read your lines. AI will make it look like you were staring at the camera the entire time.',
   },
   {
-    video: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/video-2.mp4",
+    video:
+      'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/video-2.mp4',
     Icon: Languages,
-    title: "Languages",
-    link: "#",
+    title: 'Languages',
+    link: '#',
     summary:
-      "Share your content with audiences worldwide without ever leaving your seat.",
+      'Share your content with audiences worldwide without ever leaving your seat.',
   },
   {
-    video: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/video-3.mp4",
+    video:
+      'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/video-3.mp4',
     Icon: AudioLines,
-    title: "Studio Sound",
-    link: "#",
+    title: 'Studio Sound',
+    link: '#',
     summary:
-      "Forget expensive mics and soundproofing—our app regenerative AI eliminates noise and improves voice quality.",
+      'Forget expensive mics and soundproofing—our app regenerative AI eliminates noise and improves voice quality.',
   },
   {
-    video: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/video-5.mp4",
+    video:
+      'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/video-5.mp4',
     Icon: ListMinus,
-    title: "Remove filler words",
-    link: "#",
+    title: 'Remove filler words',
+    link: '#',
     summary:
       "Quickly remove all your 'ums,' 'uhs,' and other filler words—saving you hours of editing.",
   },
   {
-    video: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/video-1.mp4",
+    video:
+      'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/video-1.mp4',
     Icon: ScanFace,
-    title: "Green Screen",
-    link: "#",
+    title: 'Green Screen',
+    link: '#',
     summary:
-      "No need to tidy up—Our app’s AI will erase your background, letting you choose a new one.",
+      'No need to tidy up—Our app’s AI will erase your background, letting you choose a new one.',
   },
   {
-    video: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/video-2.mp4",
+    video:
+      'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/video-2.mp4',
     Icon: TextQuote,
-    title: "Transcription",
-    link: "#",
+    title: 'Transcription',
+    link: '#',
     summary:
-      "Simply drag in an audio or video file, and AI will transcribe it in no time. This is where the magic happens.",
+      'Simply drag in an audio or video file, and AI will transcribe it in no time. This is where the magic happens.',
   },
   {
-    video: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/video-3.mp4",
+    video:
+      'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/video-3.mp4',
     Icon: Captions,
-    title: "Captions",
-    link: "#",
+    title: 'Captions',
+    link: '#',
     summary:
-      "Add captions, enhance accessibility, boost views, and showcase your branding—all with just a few clicks.",
+      'Add captions, enhance accessibility, boost views, and showcase your branding—all with just a few clicks.',
   },
 ];
 
@@ -111,7 +119,7 @@ const CarouselCard = ({ video, Icon, title, link, summary }: card) => {
         }
       }}
     >
-      <Card className="h-full min-h-[24rem] bg-muted p-8 shadow-none transition-all group-hover:shadow-md">
+      <Card className="bg-muted h-full min-h-[24rem] p-8 shadow-none transition-all group-hover:shadow-md">
         <CardContent className="p-0">
           <div className="relative">
             <AspectRatio
@@ -126,12 +134,12 @@ const CarouselCard = ({ video, Icon, title, link, summary }: card) => {
                 muted={true}
               />
             </AspectRatio>
-            <div className="absolute -top-3 -left-2 flex size-9 rounded-[0.5rem] bg-primary">
-              <Icon className="m-auto size-4 stroke-primary-foreground" />
+            <div className="bg-primary absolute -top-3 -left-2 flex size-9 rounded-[0.5rem]">
+              <Icon className="stroke-primary-foreground m-auto size-4" />
             </div>
           </div>
           <div className="mt-8 flex flex-col gap-2">
-            <CardTitle className="text-2xl leading-[130%] font-normal tracking-[-0.48px] text-foreground">
+            <CardTitle className="text-foreground text-2xl leading-[130%] font-normal tracking-[-0.48px]">
               {title}
             </CardTitle>
             <CardDescription className="text-lg leading-[150%] tracking-[-0.36px]">
@@ -159,7 +167,7 @@ const Feature215 = () => {
         </div>
         <Carousel
           opts={{
-            align: "start",
+            align: 'start',
           }}
           className="w-full"
         >

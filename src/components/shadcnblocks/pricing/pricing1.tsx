@@ -1,47 +1,8 @@
-import { Check } from "lucide-react";
+import { Check } from 'lucide-react';
 
-import { Button } from "@/components/ui/button";
+import { PricingProps } from '../types/common';
 
-// Features for each pricing tier
-const freeFeatures = [
-  "Live Collaboration",
-  "1 GB Storage",
-  "2 Projects",
-  "Basic Support",
-  "Limited Customization",
-  "Limited Integration",
-  "Limited API Access",
-];
-
-const proFeatures = [
-  "2 Team Members",
-  "10 GB Storage",
-  "10 Projects",
-  "Priority Support",
-  "Full Customization",
-  "Full Integration",
-  "Full API Access",
-];
-
-const premiumFeatures = [
-  "5 Team Members",
-  "50 GB Storage",
-  "50 Projects",
-  "Dedicated Support",
-  "Advanced Customization",
-  "Analytics",
-  "Reports",
-];
-
-const entrepriseFeatures = [
-  "10+ Team Members",
-  "100+ GB Storage",
-  "100+ Projects",
-  "Dedicated Account Manager",
-  "Custom Features",
-  "Custom Support",
-  "Custom Integration",
-];
+import { Button } from '@/components/ui/button';
 
 // Pricing tier type definition
 type PricingTier = {
@@ -52,67 +13,103 @@ type PricingTier = {
   interval: string;
   buttonText: string;
   buttonVariant:
-    | "default"
-    | "outline"
-    | "secondary"
-    | "destructive"
-    | "ghost"
-    | "link";
+    | 'default'
+    | 'outline'
+    | 'secondary'
+    | 'destructive'
+    | 'ghost'
+    | 'link';
   features: string[];
   comparison: string;
   hasPurchaseOption: boolean;
 };
 
-// Pricing tier data
-const pricingTiers: PricingTier[] = [
+interface Pricing1Props extends PricingProps {
+  tiers?: PricingTier[];
+}
+
+// Default pricing tier data
+const defaultPricingTiers: PricingTier[] = [
   {
-    name: "Free",
-    description: "For personal use only with limited features and support",
-    price: "0",
-    bgClass: "",
-    interval: "Includes 1 user.",
-    buttonText: "Get Started",
-    buttonVariant: "outline",
-    features: freeFeatures,
-    comparison: "Features",
+    name: 'Free',
+    description: 'For personal use only with limited features and support',
+    price: '0',
+    bgClass: '',
+    interval: 'Includes 1 user.',
+    buttonText: 'Get Started',
+    buttonVariant: 'outline',
+    features: [
+      'Live Collaboration',
+      '1 GB Storage',
+      '2 Projects',
+      'Basic Support',
+      'Limited Customization',
+      'Limited Integration',
+      'Limited API Access',
+    ],
+    comparison: 'Features',
     hasPurchaseOption: false,
   },
   {
-    name: "Pro",
-    description: "For small businesses with all the features and support",
-    price: "29",
-    bgClass: "bg-muted",
-    interval: "Per user, per month.",
-    buttonText: "Purchase",
-    buttonVariant: "default",
-    features: proFeatures,
-    comparison: "Everything in Free, and:",
+    name: 'Pro',
+    description: 'For small businesses with all the features and support',
+    price: '29',
+    bgClass: 'bg-muted',
+    interval: 'Per user, per month.',
+    buttonText: 'Purchase',
+    buttonVariant: 'default',
+    features: [
+      '2 Team Members',
+      '10 GB Storage',
+      '10 Projects',
+      'Priority Support',
+      'Full Customization',
+      'Full Integration',
+      'Full API Access',
+    ],
+    comparison: 'Everything in Free, and:',
     hasPurchaseOption: true,
   },
   {
-    name: "Premium",
+    name: 'Premium',
     description:
-      "For teams and organizations with advanced features and support",
-    price: "59",
-    bgClass: "",
-    interval: "Per user, per month.",
-    buttonText: "Purchase",
-    buttonVariant: "outline",
-    features: premiumFeatures,
-    comparison: "Everything in Pro, and:",
+      'For teams and organizations with advanced features and support',
+    price: '59',
+    bgClass: '',
+    interval: 'Per user, per month.',
+    buttonText: 'Purchase',
+    buttonVariant: 'outline',
+    features: [
+      '5 Team Members',
+      '50 GB Storage',
+      '50 Projects',
+      'Dedicated Support',
+      'Advanced Customization',
+      'Analytics',
+      'Reports',
+    ],
+    comparison: 'Everything in Pro, and:',
     hasPurchaseOption: true,
   },
   {
-    name: "Entreprise",
+    name: 'Enterprise',
     description:
-      "For large companies with custom features and support and a dedicated account manager",
-    price: "",
-    bgClass: "",
-    interval: "",
-    buttonText: "Contact sales",
-    buttonVariant: "outline",
-    features: entrepriseFeatures,
-    comparison: "Everything in Premium, and:",
+      'For large companies with custom features and support and a dedicated account manager',
+    price: '',
+    bgClass: '',
+    interval: '',
+    buttonText: 'Contact sales',
+    buttonVariant: 'outline',
+    features: [
+      '10+ Team Members',
+      '100+ GB Storage',
+      '100+ Projects',
+      'Dedicated Account Manager',
+      'Custom Features',
+      'Custom Support',
+      'Custom Integration',
+    ],
+    comparison: 'Everything in Premium, and:',
     hasPurchaseOption: false,
   },
 ];
@@ -130,7 +127,7 @@ const PricingCard = ({ tier }: { tier: PricingTier }) => {
 
           {/* Description */}
           <div className="px-8 pb-6">
-            <p className="line-clamp-2 text-balance text-muted-foreground">
+            <p className="text-muted-foreground line-clamp-2 text-balance">
               {tier.description}
             </p>
           </div>
@@ -145,7 +142,7 @@ const PricingCard = ({ tier }: { tier: PricingTier }) => {
                     <span className="text-6xl font-semibold">{tier.price}</span>
                   </div>
                   {tier.interval && (
-                    <p className="mt-2 text-sm text-muted-foreground">
+                    <p className="text-muted-foreground mt-2 text-sm">
                       {tier.interval}
                     </p>
                   )}
@@ -169,7 +166,7 @@ const PricingCard = ({ tier }: { tier: PricingTier }) => {
         <ul className="space-y-4">
           {tier.features.map((feature, featureIndex) => (
             <li key={featureIndex} className="flex items-center gap-3">
-              <Check className="size-5 text-primary" />
+              <Check className="text-primary size-5" />
               <span>{feature}</span>
             </li>
           ))}
@@ -179,23 +176,26 @@ const PricingCard = ({ tier }: { tier: PricingTier }) => {
   );
 };
 
-const Pricing1 = () => {
+const Pricing1 = ({
+  title = 'Pricing',
+  description = 'Check out our affordable pricing plans below and choose the one that suits you best. If you need a custom plan, please contact us.',
+  tiers = defaultPricingTiers,
+}: Pricing1Props) => {
   return (
     <section className="py-32">
       <div className="container">
         <div className="mx-auto mb-20 max-w-5xl text-center">
           <h2 className="mb-3 text-4xl font-bold text-pretty lg:text-6xl">
-            Pricing
+            {title}
           </h2>
-          <p className="text-muted-foreground lg:text-xl">
-            Check out our affordable pricing plans below and choose the one that
-            suits you best. If you need a custom plan, please contact us.
-          </p>
+          {description && (
+            <p className="text-muted-foreground lg:text-xl">{description}</p>
+          )}
         </div>
 
         {/* Grid layout for pricing tiers */}
         <div className="mx-auto grid max-w-xl rounded-md border lg:max-w-none lg:grid-cols-4 lg:divide-x">
-          {pricingTiers.map((tier) => (
+          {tiers.map((tier) => (
             <div key={tier.name} className={`${tier.bgClass} h-full`}>
               <PricingCard tier={tier} />
             </div>

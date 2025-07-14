@@ -1,15 +1,15 @@
-import { AspectRatio } from "@/components/ui/aspect-ratio";
-import { Button } from "@/components/ui/button";
+import { AspectRatio } from '@/components/ui/aspect-ratio';
+import { Button } from '@/components/ui/button';
 
 const Hero77 = () => {
   return (
-    <section className="container mx-auto bg-background py-36 text-center">
+    <section className="bg-background container mx-auto py-36 text-center">
       <div className="flex flex-col gap-10">
         <div className="mx-auto flex w-full max-w-7xl flex-col items-center gap-4 px-4 pt-8 text-center md:px-6 lg:px-8 lg:pt-0">
-          <h1 className="text-[clamp(2.1rem,7vw,4.2rem)] leading-[1.1] font-bold -tracking-[1.7px] text-balance text-foreground">
+          <h1 className="text-foreground text-[clamp(2.1rem,7vw,4.2rem)] leading-[1.1] font-bold -tracking-[1.7px] text-balance">
             Master message mayhem
           </h1>
-          <h2 className="max-w-[48rem] text-[clamp(1.2rem,3.8vw,1.7rem)] leading-[1.4] font-medium tracking-tight text-balance text-foreground lg:text-wrap">
+          <h2 className="text-foreground max-w-[48rem] text-[clamp(1.2rem,3.8vw,1.7rem)] leading-[1.4] font-medium tracking-tight text-balance lg:text-wrap">
             Break free from workplace chatter clutter — accelerate progress with
             clearer, structured, and more meaningful team discussions
           </h2>
@@ -24,7 +24,7 @@ const Hero77 = () => {
                 </span>
               </a>
             </Button>
-            <p className="text-tertiary text-sm font-medium text-foreground">
+            <p className="text-tertiary text-foreground text-sm font-medium">
               or
             </p>
             <Button
@@ -99,7 +99,10 @@ const Hero77 = () => {
                 autoPlay
                 playsInline
               >
-                <source src="https://deifkwefumgah.cloudfront.net/shadcnblocks/block/video-4.mp4" type="video/mp4" />
+                <source
+                  src="https://deifkwefumgah.cloudfront.net/shadcnblocks/block/video-4.mp4"
+                  type="video/mp4"
+                />
               </video>
             </AspectRatio>
           </div>

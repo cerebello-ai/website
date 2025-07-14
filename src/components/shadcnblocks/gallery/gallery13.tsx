@@ -1,16 +1,17 @@
-"use client";
+'use client';
 
-import { Palette, Sparkles, Star } from "lucide-react";
-import { useEffect, useState } from "react";
+import { useEffect, useState } from 'react';
 
-import type { CarouselApi } from "@/components/ui/carousel";
+import { Palette, Sparkles, Star } from 'lucide-react';
+
+import type { CarouselApi } from '@/components/ui/carousel';
 import {
   Carousel,
   CarouselContent,
   CarouselItem,
   CarouselNext,
   CarouselPrevious,
-} from "@/components/ui/carousel";
+} from '@/components/ui/carousel';
 
 interface DataItem {
   src: string;
@@ -21,24 +22,24 @@ interface DataItem {
 
 const DATA: DataItem[] = [
   {
-    src: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-1.svg",
-    title: "Elegant Design",
+    src: 'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-1.svg',
+    title: 'Elegant Design',
     description:
-      "Discover our beautifully crafted designs that blend style and functionality.",
+      'Discover our beautifully crafted designs that blend style and functionality.',
     icon: Palette,
   },
   {
-    src: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-2.svg",
-    title: "Premium Quality",
+    src: 'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-2.svg',
+    title: 'Premium Quality',
     description:
-      "Experience the finest materials and craftsmanship in every piece.",
+      'Experience the finest materials and craftsmanship in every piece.',
     icon: Star,
   },
   {
-    src: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-3.svg",
-    title: "Modern Aesthetics",
+    src: 'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-3.svg',
+    title: 'Modern Aesthetics',
     description:
-      "Stay ahead of the curve with our contemporary and trendy collections.",
+      'Stay ahead of the curve with our contemporary and trendy collections.',
     icon: Sparkles,
   },
 ];
@@ -52,7 +53,7 @@ const Gallery13 = () => {
       return;
     }
     setActiveIndex(api.selectedScrollSnap());
-    api.on("select", () => {
+    api.on('select', () => {
       setActiveIndex(api.selectedScrollSnap());
     });
   }, [api]);
@@ -78,8 +79,8 @@ const Gallery13 = () => {
                     {DATA[activeIndex].description}
                   </p>
                   <div className="flex items-center gap-4">
-                    <CarouselPrevious className="relative left-0 right-0 top-0 translate-x-0 translate-y-0 p-5 transition-all duration-200 hover:bg-black hover:text-white" />
-                    <CarouselNext className="relative left-0 right-0 top-0 translate-x-0 translate-y-0 p-5 transition-all duration-200 hover:bg-black hover:text-white" />
+                    <CarouselPrevious className="relative top-0 right-0 left-0 translate-x-0 translate-y-0 p-5 transition-all duration-200 hover:bg-black hover:text-white" />
+                    <CarouselNext className="relative top-0 right-0 left-0 translate-x-0 translate-y-0 p-5 transition-all duration-200 hover:bg-black hover:text-white" />
                   </div>
                 </div>
               </div>

@@ -1,6 +1,6 @@
-"use client";
+'use client';
 
-import { useEffect, useState } from "react";
+import { useEffect, useState } from 'react';
 
 import {
   Carousel,
@@ -8,20 +8,50 @@ import {
   CarouselItem,
   CarouselNext,
   CarouselPrevious,
-} from "@/components/ui/carousel";
-import { type CarouselApi } from "@/components/ui/carousel";
+} from '@/components/ui/carousel';
+import { type CarouselApi } from '@/components/ui/carousel';
 
 const IMAGES = [
-  { src: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-dark-1.svg", alt: "" },
-  { src: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-dark-2.svg", alt: "" },
-  { src: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-dark-3.svg", alt: "" },
-  { src: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-dark-4.svg", alt: "" },
-  { src: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-dark-5.svg", alt: "" },
-  { src: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-dark-1.svg", alt: "" },
-  { src: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-dark-2.svg", alt: "" },
-  { src: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-dark-3.svg", alt: "" },
-  { src: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-dark-4.svg", alt: "" },
-  { src: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-dark-5.svg", alt: "" },
+  {
+    src: 'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-dark-1.svg',
+    alt: '',
+  },
+  {
+    src: 'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-dark-2.svg',
+    alt: '',
+  },
+  {
+    src: 'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-dark-3.svg',
+    alt: '',
+  },
+  {
+    src: 'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-dark-4.svg',
+    alt: '',
+  },
+  {
+    src: 'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-dark-5.svg',
+    alt: '',
+  },
+  {
+    src: 'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-dark-1.svg',
+    alt: '',
+  },
+  {
+    src: 'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-dark-2.svg',
+    alt: '',
+  },
+  {
+    src: 'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-dark-3.svg',
+    alt: '',
+  },
+  {
+    src: 'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-dark-4.svg',
+    alt: '',
+  },
+  {
+    src: 'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-dark-5.svg',
+    alt: '',
+  },
 ];
 
 const Gallery17 = () => {
@@ -37,7 +67,7 @@ const Gallery17 = () => {
     setCount(api.scrollSnapList().length);
     setCurrent(api.selectedScrollSnap() + 1);
 
-    api.on("select", () => {
+    api.on('select', () => {
       setCurrent(api.selectedScrollSnap() + 1);
     });
   }, [api]);
@@ -58,8 +88,8 @@ const Gallery17 = () => {
                 <div
                   className={`aspect-[1.333333333] max-w-[50rem] overflow-hidden rounded-[0.75rem] transition-all duration-300 ${
                     current === index + 1
-                      ? "scale-100 opacity-100"
-                      : "scale-70 opacity-40"
+                      ? 'scale-100 opacity-100'
+                      : 'scale-70 opacity-40'
                   }`}
                 >
                   <img
@@ -93,7 +123,7 @@ const Gallery17 = () => {
               }}
             >
               <div
-                className={`size-3 rounded-full ${current === index + 1 ? "bg-black" : "bg-black/10"}`}
+                className={`size-3 rounded-full ${current === index + 1 ? 'bg-black' : 'bg-black/10'}`}
               ></div>
             </button>
           ))}

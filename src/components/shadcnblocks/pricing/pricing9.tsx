@@ -1,21 +1,21 @@
-"use client";
+'use client';
 
-import { CheckIcon, Info, MinusIcon } from "lucide-react";
-import { Fragment, useState } from "react";
+import { Fragment, useState } from 'react';
 
-import { cn } from "@/lib/utils";
+import { CheckIcon, Info, MinusIcon } from 'lucide-react';
 
-import { Button } from "@/components/ui/button";
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Switch } from "@/components/ui/switch";
+import { Button } from '@/components/ui/button';
+import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
+import { Switch } from '@/components/ui/switch';
 import {
   Tooltip,
   TooltipContent,
   TooltipProvider,
   TooltipTrigger,
-} from "@/components/ui/tooltip";
+} from '@/components/ui/tooltip';
+import { cn } from '@/lib/utils';
 
-type TierName = "Free" | "Pro" | "Premium";
+type TierName = 'Free' | 'Pro' | 'Premium';
 
 interface Tier {
   name: string;
@@ -37,74 +37,74 @@ interface Section {
 
 const tiers: Tier[] = [
   {
-    name: "Free",
-    price: "$0",
-    annualPrice: "$0",
-    description: "Quis suspendisse ut fermentum neque vivamus.",
+    name: 'Free',
+    price: '$0',
+    annualPrice: '$0',
+    description: 'Quis suspendisse ut fermentum neque vivamus.',
   },
   {
-    name: "Pro",
-    price: "$10",
-    annualPrice: "$100",
-    description: "Quis eleifend a tincidunt pellentesque.",
+    name: 'Pro',
+    price: '$10',
+    annualPrice: '$100',
+    description: 'Quis eleifend a tincidunt pellentesque.',
   },
   {
-    name: "Premium",
-    price: "$15",
-    annualPrice: "$150",
-    description: "Orci volutpat ut sed sed neque, dui eget.",
+    name: 'Premium',
+    price: '$15',
+    annualPrice: '$150',
+    description: 'Orci volutpat ut sed sed neque, dui eget.',
   },
 ];
 const sections: Section[] = [
   {
-    name: "Key Features",
+    name: 'Key Features',
     features: [
       {
-        name: "Live Collaboration",
+        name: 'Live Collaboration',
         tiers: { Free: true, Pro: true, Premium: true },
-        tooltip: "Lorem ipsum dolor sit amet, consectetur",
+        tooltip: 'Lorem ipsum dolor sit amet, consectetur',
       },
       {
-        name: "Unlimited projects",
+        name: 'Unlimited projects',
         tiers: { Free: true, Pro: true, Premium: true },
-        tooltip: "Lorem ipsum dolor sit amet, consectetur",
+        tooltip: 'Lorem ipsum dolor sit amet, consectetur',
       },
       {
-        name: "Custom permissions",
+        name: 'Custom permissions',
         tiers: { Pro: true, Premium: true },
-        tooltip: "Lorem ipsum dolor sit amet, consectetur",
+        tooltip: 'Lorem ipsum dolor sit amet, consectetur',
       },
       {
-        name: "Team members",
+        name: 'Team members',
         tiers: {
           Premium: true,
         },
-        tooltip: "Lorem ipsum dolor sit amet, consectetur",
+        tooltip: 'Lorem ipsum dolor sit amet, consectetur',
       },
     ],
   },
   {
-    name: "Reporting",
+    name: 'Reporting',
     features: [
       {
-        name: "Basic reports",
+        name: 'Basic reports',
         tiers: { Free: true, Pro: true, Premium: true },
-        tooltip: "Lorem ipsum dolor sit amet, consectetur",
+        tooltip: 'Lorem ipsum dolor sit amet, consectetur',
       },
       {
-        name: "Advanced reports",
+        name: 'Advanced reports',
         tiers: { Pro: true, Premium: true },
-        tooltip: "Lorem ipsum dolor sit amet, consectetur",
+        tooltip: 'Lorem ipsum dolor sit amet, consectetur',
       },
       {
-        name: "Custom reports",
+        name: 'Custom reports',
         tiers: { Premium: true },
-        tooltip: "Lorem ipsum dolor sit amet, consectetur",
+        tooltip: 'Lorem ipsum dolor sit amet, consectetur',
       },
       {
-        name: "Export data",
+        name: 'Export data',
         tiers: { Premium: true },
-        tooltip: "Lorem ipsum dolor sit amet, consectetur",
+        tooltip: 'Lorem ipsum dolor sit amet, consectetur',
       },
     ],
   },
@@ -120,7 +120,7 @@ const Pricing9 = () => {
             Choose Your Plan
           </p>
         </div>
-        <p className="mx-auto mt-6 max-w-2xl text-center text-lg leading-8 text-muted-foreground">
+        <p className="text-muted-foreground mx-auto mt-6 max-w-2xl text-center text-lg leading-8">
           Distinctio et nulla eum soluta et neque labore quibusdam. Saepe et
           quasi.
         </p>
@@ -143,7 +143,7 @@ const Pricing9 = () => {
                   <span className="text-xl leading-7 font-bold uppercase">
                     <CardTitle className="text-xl">{tier.name}</CardTitle>
                   </span>
-                  <span className="text-sm font-normal text-muted-foreground">
+                  <span className="text-muted-foreground text-sm font-normal">
                     {tier.description}
                   </span>
                 </div>
@@ -151,7 +151,7 @@ const Pricing9 = () => {
                   <span className="text-4xl font-bold">
                     {isAnnual ? tier.annualPrice : tier.price}
                   </span>
-                  <span className="text-sm leading-6 text-muted-foreground">
+                  <span className="text-muted-foreground text-sm leading-6">
                     /month
                   </span>
                 </div>
@@ -176,7 +176,7 @@ const Pricing9 = () => {
                                   </span>
                                   <Tooltip>
                                     <TooltipTrigger>
-                                      <Info className="ml-1 h-4 w-4 text-muted-foreground" />
+                                      <Info className="text-muted-foreground ml-1 h-4 w-4" />
                                     </TooltipTrigger>
                                     <TooltipContent>
                                       {feature.tooltip}
@@ -222,7 +222,7 @@ const Pricing9 = () => {
                         <span className="text-xl leading-7 font-bold uppercase">
                           {tier.name}
                         </span>
-                        <span className="text-sm font-normal text-muted-foreground">
+                        <span className="text-muted-foreground text-sm font-normal">
                           {tier.description}
                         </span>
                       </div>
@@ -234,7 +234,7 @@ const Pricing9 = () => {
                 <tr>
                   <th>
                     <div className="flex flex-col gap-2">
-                      <p className="text-sm font-normal text-muted-foreground">
+                      <p className="text-muted-foreground text-sm font-normal">
                         Billings
                       </p>
                       <span className="flex items-center gap-3 text-base font-medium">
@@ -253,7 +253,7 @@ const Pricing9 = () => {
                         <span className="text-4xl font-bold">
                           {isAnnual ? tier.annualPrice : tier.price}
                         </span>
-                        <span className="text-sm leading-6 text-muted-foreground">
+                        <span className="text-muted-foreground text-sm leading-6">
                           /month
                         </span>
                       </div>
@@ -266,8 +266,8 @@ const Pricing9 = () => {
                     <tr>
                       <th
                         className={cn(
-                          "pb-4 text-sm leading-6 font-semibold",
-                          sectionIdx === 0 ? "pt-8" : "pt-16",
+                          'pb-4 text-sm leading-6 font-semibold',
+                          sectionIdx === 0 ? 'pt-8' : 'pt-16',
                         )}
                       >
                         {section.name}
@@ -280,7 +280,7 @@ const Pricing9 = () => {
                             {feature.name}
                             <Tooltip>
                               <TooltipTrigger>
-                                <Info className="ml-1 h-4 w-4 text-muted-foreground hover:text-foreground" />
+                                <Info className="text-muted-foreground hover:text-foreground ml-1 h-4 w-4" />
                               </TooltipTrigger>
                               <TooltipContent>{feature.tooltip}</TooltipContent>
                             </Tooltip>
@@ -291,7 +291,7 @@ const Pricing9 = () => {
                                 {feature.tiers[tier.name as TierName] ? (
                                   <CheckIcon className="mx-auto h-5 w-5" />
                                 ) : (
-                                  <MinusIcon className="mx-auto h-5 w-5 text-muted-foreground" />
+                                  <MinusIcon className="text-muted-foreground mx-auto h-5 w-5" />
                                 )}
                               </>
                             </td>

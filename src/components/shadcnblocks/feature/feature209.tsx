@@ -1,16 +1,16 @@
-"use client";
+'use client';
 
-import { ChevronRight } from "lucide-react";
-import { useState } from "react";
+import { useState } from 'react';
 
-import { cn } from "@/lib/utils";
+import { ChevronRight } from 'lucide-react';
 
-import { Button } from "@/components/ui/button";
-import { Separator } from "@/components/ui/separator";
+import { Button } from '@/components/ui/button';
+import { Separator } from '@/components/ui/separator';
+import { cn } from '@/lib/utils';
 const images = [
-  "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/photos/simone-hutsch-uR__S5GX8Io-unsplash.jpg",
-  "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/photos/simone-hutsch-fyEcdETa5mc-unsplash.jpg",
-  "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/photos/simone-hutsch-9jsQcDsxyqA-unsplash.jpg",
+  'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/photos/simone-hutsch-uR__S5GX8Io-unsplash.jpg',
+  'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/photos/simone-hutsch-fyEcdETa5mc-unsplash.jpg',
+  'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/photos/simone-hutsch-9jsQcDsxyqA-unsplash.jpg',
 ];
 
 const Feature209 = () => {
@@ -20,9 +20,9 @@ const Feature209 = () => {
     <section className="border-border py-32">
       <div className="border-y">
         <div className="relative container overflow-hidden">
-          <div className="border-x border-border">
+          <div className="border-border border-x">
             <div className="flex h-full flex-col-reverse xl:flex-row">
-              <div className="flex items-center bg-background p-8 xl:w-1/2">
+              <div className="bg-background flex items-center p-8 xl:w-1/2">
                 <div className="flex h-fit flex-col gap-6 py-16 pr-16">
                   <h2 className="text-4xl font-medium tracking-tight text-balance">
                     Explore our Featured Collection
@@ -32,9 +32,9 @@ const Feature209 = () => {
                       <button
                         key={index}
                         className={cn(
-                          "max-h-24 max-w-32 rounded-md border border-transparent p-1 shadow-sm transition-all duration-150",
+                          'max-h-24 max-w-32 rounded-md border border-transparent p-1 shadow-sm transition-all duration-150',
                           selectedImage === image &&
-                            "border border-foreground/10 shadow-md",
+                            'border-foreground/10 border shadow-md',
                         )}
                         onClick={() => setSelectedImage(image)}
                       >
@@ -46,7 +46,7 @@ const Feature209 = () => {
                       </button>
                     ))}
                   </div>
-                  <p className="font-medium text-muted-foreground">
+                  <p className="text-muted-foreground font-medium">
                     The featured collection provides a sleek gallery-focused
                     experience with customizable album layouts, client
                     testimonials section, and intuitive image organization for
@@ -74,9 +74,9 @@ const Feature209 = () => {
                       src={image}
                       alt="placeholder"
                       className={cn(
-                        "absolute inset-0 h-[300px] w-full origin-center scale-[1.05] rounded-lg object-cover opacity-0 shadow-lg transition-none sm:h-[540px]",
+                        'absolute inset-0 h-[300px] w-full origin-center scale-[1.05] rounded-lg object-cover opacity-0 shadow-lg transition-none sm:h-[540px]',
                         selectedImage === image &&
-                          "scale-100 opacity-100 transition-all duration-500 ease-out",
+                          'scale-100 opacity-100 transition-all duration-500 ease-out',
                       )}
                     />
                   ))}

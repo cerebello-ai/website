@@ -1,77 +1,78 @@
-"use client";
+'use client';
 
-import { AnimatePresence, motion } from "framer-motion";
-import React, { useState } from "react";
+import React, { useState } from 'react';
 
-import type { CarouselApi } from "@/components/ui/carousel";
+import { AnimatePresence, motion } from 'framer-motion';
+
+import type { CarouselApi } from '@/components/ui/carousel';
 import {
   Carousel,
   CarouselContent,
   CarouselItem,
   CarouselNext,
   CarouselPrevious,
-} from "@/components/ui/carousel";
+} from '@/components/ui/carousel';
 
 const slides = [
   {
-    name: "John Doe",
+    name: 'John Doe',
     content:
-      "Laravel has completely transformed how we build web applications. The elegant syntax, robust features, and amazing documentation make development a joy. ",
-    logo: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/laravel-wordmark.svg",
-    logoClass: "h-10 md:h-12",
+      'Laravel has completely transformed how we build web applications. The elegant syntax, robust features, and amazing documentation make development a joy. ',
+    logo: 'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/laravel-wordmark.svg',
+    logoClass: 'h-10 md:h-12',
     images: [
       {
-        src: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/photos/fabian-centeno-njeVb6E3XB8-unsplash.jpg",
+        src: 'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/photos/fabian-centeno-njeVb6E3XB8-unsplash.jpg',
         position: 2,
       },
       {
-        src: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/photos/israel-andrade-YI_9SivVt_s-unsplash.jpg",
+        src: 'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/photos/israel-andrade-YI_9SivVt_s-unsplash.jpg',
         position: 4,
       },
       {
-        src: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/photos/studio-kealaula-IVZ_XAoZF3s-unsplash.jpg",
+        src: 'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/photos/studio-kealaula-IVZ_XAoZF3s-unsplash.jpg',
         position: 7,
       },
     ],
   },
   {
-    name: "Jane Smith",
+    name: 'Jane Smith',
     content:
-      "Working with this team transformed our business completely. Their attention to detail and innovative solutions helped us increase our revenue by 40% in just six months.",
-    logo: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/tailwind-wordmark.svg",
-    logoClass: "h-6 md:h-8",
+      'Working with this team transformed our business completely. Their attention to detail and innovative solutions helped us increase our revenue by 40% in just six months.',
+    logo: 'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/tailwind-wordmark.svg',
+    logoClass: 'h-6 md:h-8',
     images: [
       {
-        src: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/photos/annie-spratt-AkftcHujUmk-unsplash.jpg",
+        src: 'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/photos/annie-spratt-AkftcHujUmk-unsplash.jpg',
         position: 1,
       },
       {
-        src: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/photos/nastuh-abootalebi-yWwob8kwOCk-unsplash.jpg",
+        src: 'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/photos/nastuh-abootalebi-yWwob8kwOCk-unsplash.jpg',
         position: 3,
       },
       {
-        src: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/photos/alvin-engler-bIhpiQA009k-unsplash.jpg",
+        src: 'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/photos/alvin-engler-bIhpiQA009k-unsplash.jpg',
         position: 5,
       },
     ],
   },
   {
-    name: "Alex Johnson",
+    name: 'Alex Johnson',
     content:
       "The product exceeded all our expectations. It's intuitive, powerful, and exactly what we needed to streamline our processes. Highly recommended for any business.",
-    logo: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/vercel-wordmark.svg",
-    logoClass: "h-6 md:h-8",
+    logo: 'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/vercel-wordmark.svg',
+    logoClass: 'h-6 md:h-8',
     images: [
       {
-        src: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/photos/redd-f-5U_28ojjgms-unsplash.jpg",
+        src: 'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/photos/redd-f-5U_28ojjgms-unsplash.jpg',
         position: 0,
       },
       {
-        src: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/photos/nubelson-fernandes-tAJYoec13xk-unsplash.jpg",
+        src: 'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/photos/nubelson-fernandes-tAJYoec13xk-unsplash.jpg',
         position: 4,
       },
       {
-        src: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/photos/nubelson-fernandes-xxa7qYObMrI-unsplash.jpg",
+        src: 'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/photos/nubelson-fernandes-xxa7qYObMrI-unsplash.jpg',
         position: 7,
       },
     ],
@@ -91,13 +92,13 @@ const Casestudies5 = () => {
       setCurrentIndex(carouselApi.selectedScrollSnap());
     };
 
-    carouselApi.on("select", onSelect);
+    carouselApi.on('select', onSelect);
     return () => {
-      carouselApi.off("select", onSelect);
+      carouselApi.off('select', onSelect);
     };
   }, [carouselApi]);
 
-  const renderGrid = (images: (typeof slides)[0]["images"]) => {
+  const renderGrid = (images: (typeof slides)[0]['images']) => {
     return (
       <div className="grid h-full w-full grid-cols-3 grid-rows-3 gap-3 p-3">
         {Array.from({ length: 9 }).map((_, index) => {
@@ -108,7 +109,7 @@ const Casestudies5 = () => {
             <div
               key={index}
               className={`w-full overflow-hidden rounded-lg ${
-                isImage ? "" : "bg-muted"
+                isImage ? '' : 'bg-muted'
               }`}
             >
               {isImage && image?.src && (
@@ -116,7 +117,7 @@ const Casestudies5 = () => {
                   src={image.src}
                   alt=""
                   className="aspect-square h-full w-full object-cover md:aspect-video"
-                  loading={index === 0 ? "eager" : "lazy"}
+                  loading={index === 0 ? 'eager' : 'lazy'}
                 />
               )}
             </div>
@@ -154,7 +155,7 @@ const Casestudies5 = () => {
                       exit={{ opacity: 0, y: -20 }}
                       transition={{
                         duration: 0.4,
-                        ease: "easeOut",
+                        ease: 'easeOut',
                       }}
                       className="flex h-12 items-center gap-3"
                     >
@@ -174,10 +175,10 @@ const Casestudies5 = () => {
                       exit={{ opacity: 0, y: -20 }}
                       transition={{
                         duration: 0.4,
-                        ease: "easeOut",
+                        ease: 'easeOut',
                         delay: 0.15,
                       }}
-                      className="min-h-[100px] leading-snug tracking-tight text-muted-foreground sm:text-xl xl:mr-8"
+                      className="text-muted-foreground min-h-[100px] leading-snug tracking-tight sm:text-xl xl:mr-8"
                     >
                       {slides[currentIndex].content}
                     </motion.p>

@@ -1,6 +1,6 @@
-import { ArrowRight } from "lucide-react";
+import { ArrowRight } from 'lucide-react';
 
-import { Button } from "@/components/ui/button";
+import { Button } from '@/components/ui/button';
 
 interface DataItem {
   title: string;
@@ -11,41 +11,41 @@ interface DataItem {
 const Compare4 = () => {
   const DATA: DataItem[] = [
     {
-      title: "Server Requirements",
+      title: 'Server Requirements',
       brick: {
-        value: "2500",
-        unit: "GB",
-        desc: "High-performance dedicated servers",
+        value: '2500',
+        unit: 'GB',
+        desc: 'High-performance dedicated servers',
       },
       ghost: {
-        value: "250",
-        unit: "GB",
-        desc: "Cloud-optimized infrastructure",
+        value: '250',
+        unit: 'GB',
+        desc: 'Cloud-optimized infrastructure',
       },
     },
     {
-      title: "Team Size (~)",
-      brick: { value: "20", desc: "Full in-house development team" },
-      ghost: { value: "5", desc: "Core team with automated workflows" },
+      title: 'Team Size (~)',
+      brick: { value: '20', desc: 'Full in-house development team' },
+      ghost: { value: '5', desc: 'Core team with automated workflows' },
     },
     {
-      title: "Development Time",
-      brick: { value: "48", unit: "w", desc: "Traditional development cycle" },
-      ghost: { value: "8", unit: "w", desc: "Rapid deployment framework" },
+      title: 'Development Time',
+      brick: { value: '48', unit: 'w', desc: 'Traditional development cycle' },
+      ghost: { value: '8', unit: 'w', desc: 'Rapid deployment framework' },
     },
     {
-      title: "Initial Setup",
+      title: 'Initial Setup',
       brick: {
-        value: "$1.2",
-        unit: "M",
-        desc: "Enterprise infrastructure costs",
+        value: '$1.2',
+        unit: 'M',
+        desc: 'Enterprise infrastructure costs',
       },
-      ghost: { value: "$40", unit: "k*", desc: "Pay-as-you-grow model" },
+      ghost: { value: '$40', unit: 'k*', desc: 'Pay-as-you-grow model' },
     },
     {
-      title: "ROI Timeline",
-      brick: { value: "4", unit: "y", desc: "Standard enterprise timeline" },
-      ghost: { value: "8", unit: "m", desc: "Accelerated market entry" },
+      title: 'ROI Timeline',
+      brick: { value: '4', unit: 'y', desc: 'Standard enterprise timeline' },
+      ghost: { value: '8', unit: 'm', desc: 'Accelerated market entry' },
     },
   ];
 
@@ -64,7 +64,7 @@ const Compare4 = () => {
           <div className="grid grid-cols-4 items-center gap-4 md:grid-cols-8">
             <div className="col-span-4 md:col-span-2"></div>
             <div className="col-span-2 ml-0 md:col-span-3 md:ml-32 lg:ml-40 xl:ml-48 2xl:ml-56">
-              <h4 className="text-xs font-bold tracking-wider text-muted-foreground uppercase md:text-sm">
+              <h4 className="text-muted-foreground text-xs font-bold tracking-wider uppercase md:text-sm">
                 Traditional
               </h4>
             </div>
@@ -77,11 +77,11 @@ const Compare4 = () => {
         </div>
 
         {/* Comparison rows wrapper */}
-        <div className="col-span-4 rounded-xl bg-background shadow-sm md:col-span-8 lg:col-span-10 lg:col-start-2">
+        <div className="bg-background col-span-4 rounded-xl shadow-sm md:col-span-8 lg:col-span-10 lg:col-start-2">
           {DATA.map((row, index) => (
             <div
               key={index}
-              className="group border-t px-4 transition-colors first:rounded-t-xl first:border-t-0 last:rounded-b-xl hover:bg-muted/50"
+              className="group hover:bg-muted/50 border-t px-4 transition-colors first:rounded-t-xl first:border-t-0 last:rounded-b-xl"
             >
               <div className="grid grid-cols-4 items-start gap-4 py-6 md:grid-cols-8 md:py-8">
                 <h3 className="col-span-4 mt-2 text-base font-bold md:col-span-2 md:text-lg">
@@ -90,16 +90,16 @@ const Compare4 = () => {
 
                 {/* Traditional Stat */}
                 <div className="col-span-2 flex flex-col md:col-span-3">
-                  <div className="ml-0 transition-colors group-hover:text-foreground md:ml-32 lg:ml-40 xl:ml-48 2xl:ml-56">
-                    <p className="mb-1 flex items-baseline text-2xl font-bold text-foreground md:mb-2 md:text-5xl">
+                  <div className="group-hover:text-foreground ml-0 transition-colors md:ml-32 lg:ml-40 xl:ml-48 2xl:ml-56">
+                    <p className="text-foreground mb-1 flex items-baseline text-2xl font-bold md:mb-2 md:text-5xl">
                       {row.brick.value}
                       {row.brick.unit && (
-                        <sup className="ml-0.5 text-xs text-foreground md:text-sm">
+                        <sup className="text-foreground ml-0.5 text-xs md:text-sm">
                           {row.brick.unit}
                         </sup>
                       )}
                     </p>
-                    <p className="text-xs leading-tight text-muted-foreground md:text-sm md:leading-normal">
+                    <p className="text-muted-foreground text-xs leading-tight md:text-sm md:leading-normal">
                       {row.brick.desc}
                     </p>
                   </div>
@@ -107,16 +107,16 @@ const Compare4 = () => {
 
                 {/* Cloud-Native Stat */}
                 <div className="col-span-2 flex flex-col md:col-span-3">
-                  <div className="ml-0 transition-colors group-hover:text-accent-foreground md:ml-32 lg:ml-40 xl:ml-48 2xl:ml-56">
-                    <p className="mb-1 flex items-baseline text-2xl font-bold text-foreground md:mb-2 md:text-5xl">
+                  <div className="group-hover:text-accent-foreground ml-0 transition-colors md:ml-32 lg:ml-40 xl:ml-48 2xl:ml-56">
+                    <p className="text-foreground mb-1 flex items-baseline text-2xl font-bold md:mb-2 md:text-5xl">
                       {row.ghost.value}
                       {row.ghost.unit && (
-                        <sup className="ml-0.5 text-xs text-foreground md:text-sm">
+                        <sup className="text-foreground ml-0.5 text-xs md:text-sm">
                           {row.ghost.unit}
                         </sup>
                       )}
                     </p>
-                    <p className="text-xs leading-tight text-muted-foreground md:text-sm md:leading-normal">
+                    <p className="text-muted-foreground text-xs leading-tight md:text-sm md:leading-normal">
                       {row.ghost.desc}
                     </p>
                   </div>
@@ -130,13 +130,13 @@ const Compare4 = () => {
         <div className="col-span-4 md:col-span-8 lg:col-span-10 lg:col-start-2">
           <div className="flex flex-col space-y-4">
             <div className="space-y-2">
-              <p className="text-xs text-muted-foreground md:text-sm">
+              <p className="text-muted-foreground text-xs md:text-sm">
                 * Varies based on specific requirements and complexity
               </p>
-              <p className="text-xs text-muted-foreground md:text-sm">
+              <p className="text-muted-foreground text-xs md:text-sm">
                 ^ Deployment time may vary depending on integration requirements
               </p>
-              <p className="text-xs text-muted-foreground md:text-sm">
+              <p className="text-muted-foreground text-xs md:text-sm">
                 # Additional costs may apply for premium features
               </p>
             </div>

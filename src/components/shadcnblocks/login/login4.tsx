@@ -1,9 +1,9 @@
-import { FcGoogle } from "react-icons/fc";
+import { FcGoogle } from 'react-icons/fc';
 
-import { Button } from "@/components/ui/button";
-import { Checkbox } from "@/components/ui/checkbox";
-import { Input } from "@/components/ui/input";
-import { Label } from "@/components/ui/label";
+import { Button } from '@/components/ui/button';
+import { Checkbox } from '@/components/ui/checkbox';
+import { Input } from '@/components/ui/input';
+import { Label } from '@/components/ui/label';
 
 const Login4 = () => {
   return (
@@ -51,7 +51,7 @@ const Login4 = () => {
               Welcome back! Please enter your details.
             </p>
           </div>
-          <div className="z-10 mx-auto w-full max-w-sm rounded-md bg-background p-6 shadow">
+          <div className="bg-background z-10 mx-auto w-full max-w-sm rounded-md p-6 shadow">
             <div>
               <div className="grid gap-4">
                 <div className="grid w-full max-w-sm items-center gap-1.5">
@@ -82,7 +82,7 @@ const Login4 = () => {
                       Remember me
                     </label>
                   </div>
-                  <a href="#" className="text-sm font-medium text-primary">
+                  <a href="#" className="text-primary text-sm font-medium">
                     Forgot password
                   </a>
                 </div>
@@ -96,9 +96,9 @@ const Login4 = () => {
               </div>
             </div>
           </div>
-          <div className="mx-auto mt-3 flex justify-center gap-1 text-sm text-muted-foreground">
+          <div className="text-muted-foreground mx-auto mt-3 flex justify-center gap-1 text-sm">
             <p>Don&apos;t have an account?</p>
-            <a href="#" className="font-medium text-primary">
+            <a href="#" className="text-primary font-medium">
               Signup
             </a>
           </div>

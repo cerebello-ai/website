@@ -1,13 +1,13 @@
-"use client";
+'use client';
 
-import { Check, ChevronRight } from "lucide-react";
+import { Check, ChevronRight } from 'lucide-react';
 
-import { Button } from "@/components/ui/button";
+import { Button } from '@/components/ui/button';
 
 const checkedItems: string[] = [
-  "Responsive Design and Layout",
-  "Clean and Modern Design",
-  "Easy to Customize",
+  'Responsive Design and Layout',
+  'Clean and Modern Design',
+  'Easy to Customize',
 ];
 
 const Feature125 = () => {
@@ -33,17 +33,17 @@ const Feature125 = () => {
           <ChevronRight className="ml-2 h-4 w-4" />
         </Button>
       </div>
-      <div className="before:bg-primary/10 relative flex h-[430px] w-full pr-4 pt-4 before:absolute before:inset-0 before:[mask-image:url('https://deifkwefumgah.cloudfront.net/shadcnblocks/block/patterns/cross-pattern.svg')] before:[mask-repeat:repeat] before:[mask-size:32px_32px]">
-        <div className="z-1 to-background absolute inset-0 bg-[radial-gradient(ellipse_at_center,var(--tw-gradient-stops))] from-transparent opacity-70"></div>
-        <div className="relative mr-auto mt-auto w-[80%]">
+      <div className="before:bg-primary/10 relative flex h-[430px] w-full pt-4 pr-4 before:absolute before:inset-0 before:[mask-image:url('https://deifkwefumgah.cloudfront.net/shadcnblocks/block/patterns/cross-pattern.svg')] before:[mask-size:32px_32px] before:[mask-repeat:repeat]">
+        <div className="to-background absolute inset-0 z-1 bg-[radial-gradient(ellipse_at_center,var(--tw-gradient-stops))] from-transparent opacity-70"></div>
+        <div className="relative mt-auto mr-auto w-[80%]">
           <img
             src="https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-1.svg"
             alt="placeholder hero"
             className="z-40 max-h-[350px] w-full rounded-md object-cover"
           ></img>
         </div>
-        <div className="bg-linear-to-r from-background absolute inset-0 z-50 via-transparent via-15%"></div>
-        <div className="bg-linear-to-t from-background absolute inset-0 z-50 via-transparent via-15%"></div>
+        <div className="from-background absolute inset-0 z-50 bg-linear-to-r via-transparent via-15%"></div>
+        <div className="from-background absolute inset-0 z-50 bg-linear-to-t via-transparent via-15%"></div>
       </div>
     </section>
   );

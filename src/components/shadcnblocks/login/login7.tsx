@@ -1,7 +1,7 @@
-import { Button } from "@/components/ui/button";
-import { Card, CardContent, CardHeader } from "@/components/ui/card";
-import { Input } from "@/components/ui/input";
-import { Label } from "@/components/ui/label";
+import { Button } from '@/components/ui/button';
+import { Card, CardContent, CardHeader } from '@/components/ui/card';
+import { Input } from '@/components/ui/input';
+import { Label } from '@/components/ui/label';
 
 const Login7 = () => {
   return (
@@ -35,9 +35,9 @@ const Login7 = () => {
                   Sign up with Google
                 </Button>
                 <div className="flex items-center gap-4">
-                  <span className="h-px w-full bg-input"></span>
-                  <span className="text-xs text-muted-foreground">OR</span>
-                  <span className="h-px w-full bg-input"></span>
+                  <span className="bg-input h-px w-full"></span>
+                  <span className="text-muted-foreground text-xs">OR</span>
+                  <span className="bg-input h-px w-full"></span>
                 </div>
                 <div className="grid gap-2">
                   <Label htmlFor="email">Email</Label>

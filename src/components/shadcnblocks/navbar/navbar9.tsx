@@ -1,4 +1,6 @@
-"use client";
+'use client';
+
+import { Fragment, useEffect, useState } from 'react';
 
 import {
   Bell,
@@ -12,16 +14,15 @@ import {
   LucideIcon,
   Menu,
   X,
-} from "lucide-react";
-import { Fragment, useEffect, useState } from "react";
+} from 'lucide-react';
 
 import {
   Accordion,
   AccordionContent,
   AccordionItem,
   AccordionTrigger,
-} from "@/components/ui/accordion";
-import { Button } from "@/components/ui/button";
+} from '@/components/ui/accordion';
+import { Button } from '@/components/ui/button';
 import {
   NavigationMenu,
   NavigationMenuContent,
@@ -30,8 +31,8 @@ import {
   NavigationMenuList,
   NavigationMenuTrigger,
   navigationMenuTriggerStyle,
-} from "@/components/ui/navigation-menu";
-import { Sheet, SheetContent, SheetTitle } from "@/components/ui/sheet";
+} from '@/components/ui/navigation-menu';
+import { Sheet, SheetContent, SheetTitle } from '@/components/ui/sheet';
 
 interface MenuLink {
   label: string;
@@ -62,104 +63,104 @@ interface MenuSubLinkProps {
 }
 
 const LOGO = {
-  url: "https://www.shadcnblocks.com",
-  src: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/block-1.svg",
-  alt: "logo",
-  title: "Shadcnblocks.com",
+  url: 'https://www.shadcnblocks.com',
+  src: 'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/block-1.svg',
+  alt: 'logo',
+  title: 'Shadcnblocks.com',
 };
 
 const NAVIGATION: MenuItem[] = [
   {
-    title: "Products",
+    title: 'Products',
     links: [
       {
-        label: "Company Blog",
-        description: "Insights & updates",
-        url: "#",
+        label: 'Company Blog',
+        description: 'Insights & updates',
+        url: '#',
         icon: {
           component: FileText,
-          color: "#10b981",
+          color: '#10b981',
         },
       },
       {
-        label: "Our Platform",
-        description: "Empower your work",
-        url: "#",
+        label: 'Our Platform',
+        description: 'Empower your work',
+        url: '#',
         icon: {
           component: Grid,
-          color: "#6366f1",
+          color: '#6366f1',
         },
       },
     ],
   },
   {
-    title: "Company",
+    title: 'Company',
     links: [
       {
-        label: "About Our Team",
-        url: "#",
-        description: "Our mission & values",
+        label: 'About Our Team',
+        url: '#',
+        description: 'Our mission & values',
         icon: {
           component: Info,
-          color: "#f59e0b",
+          color: '#f59e0b',
         },
       },
       {
-        label: "Help & Support Center",
-        url: "#",
-        description: "Get quick help",
+        label: 'Help & Support Center',
+        url: '#',
+        description: 'Get quick help',
         icon: {
           component: HelpCircle,
-          color: "#3b82f6",
+          color: '#3b82f6',
         },
       },
       {
-        label: "Latest News",
-        url: "#",
-        description: "Product updates",
+        label: 'Latest News',
+        url: '#',
+        description: 'Product updates',
         icon: {
           component: Bell,
-          color: "#f97316",
+          color: '#f97316',
         },
       },
     ],
   },
   {
-    title: "Resources",
+    title: 'Resources',
     links: [
       {
-        label: "Documentation",
-        url: "#",
-        description: "Guides & references",
+        label: 'Documentation',
+        url: '#',
+        description: 'Guides & references',
         icon: {
           component: Book,
-          color: "#8b5cf6",
+          color: '#8b5cf6',
         },
       },
       {
-        label: "API Reference",
-        url: "#",
-        description: "Explore our API",
+        label: 'API Reference',
+        url: '#',
+        description: 'Explore our API',
         icon: {
           component: Globe,
-          color: "#ef4444",
+          color: '#ef4444',
         },
       },
     ],
   },
   {
-    title: "Pricing",
-    url: "#",
+    title: 'Pricing',
+    url: '#',
   },
   {
-    title: "Contact",
-    url: "#",
+    title: 'Contact',
+    url: '#',
   },
 ];
 
 const PRIMARY_BUTTON = {
-  label: "Sign up",
-  url: "#",
+  label: 'Sign up',
+  url: '#',
 };
 
 const MOBILE_BREAKPOINT = 1024;
@@ -176,14 +177,14 @@ const Navbar9 = () => {
 
     handleResize();
 
-    window.addEventListener("resize", handleResize);
+    window.addEventListener('resize', handleResize);
     return () => {
-      window.removeEventListener("resize", handleResize);
+      window.removeEventListener('resize', handleResize);
     };
   }, []);
 
   useEffect(() => {
-    document.body.style.overflow = open ? "hidden" : "auto";
+    document.body.style.overflow = open ? 'hidden' : 'auto';
   }, [open]);
 
   const handleMobileMenu = () => {
@@ -193,7 +194,7 @@ const Navbar9 = () => {
 
   return (
     <Fragment>
-      <section className="z-999 bg-background dark pointer-events-auto relative">
+      <section className="bg-background dark pointer-events-auto relative z-999">
         <div className="container h-16">
           <div className="flex h-full items-center justify-between">
             <a
@@ -228,9 +229,9 @@ const Navbar9 = () => {
               <div className="lg:hidden">
                 <Button variant="ghost" size="icon" onClick={handleMobileMenu}>
                   {open ? (
-                    <X className="size-5.5 stroke-foreground" />
+                    <X className="stroke-foreground size-5.5" />
                   ) : (
-                    <Menu className="size-5.5 stroke-foreground" />
+                    <Menu className="stroke-foreground size-5.5" />
                   )}
                 </Button>
               </div>
@@ -310,11 +311,11 @@ const MobileNavigationMenu = ({ open }: MobileNavigationMenuProps) => {
       <SheetContent
         aria-describedby={undefined}
         side="top"
-        className="z-998 bg-background dark inset-0 h-dvh w-full pt-16 [&>button]:hidden"
+        className="bg-background dark inset-0 z-998 h-dvh w-full pt-16 [&>button]:hidden"
       >
         <div className="flex-1 overflow-y-auto">
           <div className="container pb-12">
-            <div className="mask-clip-border absolute -m-px h-px w-px overflow-hidden whitespace-nowrap text-nowrap border-0 p-0">
+            <div className="absolute -m-px h-px w-px overflow-hidden border-0 mask-clip-border p-0 text-nowrap whitespace-nowrap">
               <SheetTitle className="text-primary">
                 Mobile Navigation
               </SheetTitle>
@@ -342,7 +343,7 @@ const renderMobileMenuItem = (item: MenuItem, index: number) => {
   if (item.links) {
     return (
       <AccordionItem key={item.title} value={`nav-${index}`}>
-        <AccordionTrigger className="text-muted-foreground h-[3.75rem] items-center p-0 text-base font-normal leading-[3.75] hover:no-underline">
+        <AccordionTrigger className="text-muted-foreground h-[3.75rem] items-center p-0 text-base leading-[3.75] font-normal hover:no-underline">
           {item.title}
         </AccordionTrigger>
         <AccordionContent>
@@ -358,7 +359,7 @@ const renderMobileMenuItem = (item: MenuItem, index: number) => {
     <a
       key={item.title}
       href={item.url}
-      className="text-muted-foreground ring-ring/10 outline-ring/50 nth-last-1:border-0 flex h-[3.75rem] items-center border-b p-0 text-left text-base font-normal leading-[3.75] transition-all focus-visible:outline-1 focus-visible:ring-4"
+      className="text-muted-foreground ring-ring/10 outline-ring/50 flex h-[3.75rem] items-center border-b p-0 text-left text-base leading-[3.75] font-normal transition-all focus-visible:ring-4 focus-visible:outline-1 nth-last-1:border-0"
     >
       {item.title}
     </a>
@@ -370,13 +371,13 @@ interface GithubStarsProps {
 }
 
 const GithubStars = ({ repoUrl }: GithubStarsProps) => {
-  const [stargazersCount, setStargazersCount] = useState<string>("");
+  const [stargazersCount, setStargazersCount] = useState<string>('');
 
-  const [owner, repo] = repoUrl.split("github.com/")[1].split("/");
+  const [owner, repo] = repoUrl.split('github.com/')[1].split('/');
   const githubApiEndpoint = `https://api.github.com/repos/${owner}/${repo}`;
 
-  const formatStargazers = (count: number | ""): string => {
-    if (count === "") return "";
+  const formatStargazers = (count: number | ''): string => {
+    if (count === '') return '';
     if (count < 1000) return count.toString();
     return `${Math.round(count / 1000)}k`;
   };

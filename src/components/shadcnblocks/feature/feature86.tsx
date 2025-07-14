@@ -1,7 +1,7 @@
-import { Play } from "lucide-react";
+import { Play } from 'lucide-react';
 
-import { Badge } from "@/components/ui/badge";
-import { Separator } from "@/components/ui/separator";
+import { Badge } from '@/components/ui/badge';
+import { Separator } from '@/components/ui/separator';
 
 const Feature86 = () => {
   return (
@@ -35,7 +35,7 @@ const Feature86 = () => {
               </a>
             </div>
           </div>
-          <div className="flex aspect-square w-full items-center justify-center bg-muted px-6 md:px-8 lg:col-span-2">
+          <div className="bg-muted flex aspect-square w-full items-center justify-center px-6 md:px-8 lg:col-span-2">
             <img
               src="https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-aspect-video-1.svg"
               alt="placeholder"

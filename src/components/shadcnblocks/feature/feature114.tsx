@@ -1,6 +1,6 @@
-"use client";
+'use client';
 
-import AutoScroll from "embla-carousel-auto-scroll";
+import AutoScroll from 'embla-carousel-auto-scroll';
 import {
   Globe,
   MessagesSquare,
@@ -11,55 +11,55 @@ import {
   ShieldCheck,
   Users,
   Zap,
-} from "lucide-react";
+} from 'lucide-react';
 
-import { Avatar, AvatarImage } from "@/components/ui/avatar";
-import { Button } from "@/components/ui/button";
+import { Avatar, AvatarImage } from '@/components/ui/avatar';
+import { Button } from '@/components/ui/button';
 import {
   Carousel,
   CarouselContent,
   CarouselItem,
-} from "@/components/ui/carousel";
+} from '@/components/ui/carousel';
 
 const features = [
   {
-    title: "Pixel-Perfect",
-    description: "Begin our journey to build  outstanding websites.",
+    title: 'Pixel-Perfect',
+    description: 'Begin our journey to build  outstanding websites.',
     icon: <ScissorsLineDashed className="h-auto w-8 md:w-12" />,
   },
   {
-    title: "SEO Optimized",
-    description: "We ensure that your website ranks high on Google.",
+    title: 'SEO Optimized',
+    description: 'We ensure that your website ranks high on Google.',
     icon: <Globe className="h-auto w-8 md:w-12" />,
   },
   {
-    title: "Responsive",
-    description: "Our websites look great on any device.",
+    title: 'Responsive',
+    description: 'Our websites look great on any device.',
     icon: <PanelsTopLeft className="h-auto w-8 md:w-12" />,
   },
   {
-    title: "Customizable",
-    description: "We can tailor your website to your needs.",
+    title: 'Customizable',
+    description: 'We can tailor your website to your needs.',
     icon: <PenTool className="h-auto w-8 md:w-12" />,
   },
   {
-    title: "Fast Loading",
-    description: "We ensure that your website loads quickly.",
+    title: 'Fast Loading',
+    description: 'We ensure that your website loads quickly.',
     icon: <Zap className="h-auto w-8 md:w-12" />,
   },
   {
-    title: "Secure",
-    description: "We take security seriously. Your data is safe with us.",
+    title: 'Secure',
+    description: 'We take security seriously. Your data is safe with us.',
     icon: <ShieldCheck className="h-auto w-8 md:w-12" />,
   },
   {
-    title: "24/7 Support",
-    description: "We are always here to help you. Reach out to us.",
+    title: '24/7 Support',
+    description: 'We are always here to help you. Reach out to us.',
     icon: <MessagesSquare className="h-auto w-8 md:w-12" />,
   },
   {
-    title: "User-Friendly",
-    description: "We make sure that your website is easy to use.",
+    title: 'User-Friendly',
+    description: 'We make sure that your website is easy to use.',
     icon: <Users className="h-auto w-8 md:w-12" />,
   },
 ];
@@ -118,7 +118,7 @@ const Feature114 = () => {
             <Carousel
               opts={{
                 loop: true,
-                align: "start",
+                align: 'start',
               }}
               plugins={[
                 AutoScroll({
@@ -136,19 +136,19 @@ const Feature114 = () => {
                       <h3 className="mt-5 mb-2.5 font-semibold md:text-xl">
                         {feature.title}
                       </h3>
-                      <p className="text-sm text-muted-foreground md:text-base">
+                      <p className="text-muted-foreground text-sm md:text-base">
                         {feature.description}
                       </p>
                     </div>
                   </CarouselItem>
                 ))}
               </CarouselContent>
-              <div className="absolute inset-0 bg-linear-to-t from-background via-transparent to-background"></div>
+              <div className="from-background to-background absolute inset-0 bg-linear-to-t via-transparent"></div>
             </Carousel>
             <Carousel
               opts={{
                 loop: true,
-                align: "start",
+                align: 'start',
               }}
               plugins={[
                 AutoScroll({
@@ -168,19 +168,19 @@ const Feature114 = () => {
                         <h3 className="mt-5 mb-2.5 font-semibold md:text-xl">
                           {feature.title}
                         </h3>
-                        <p className="text-sm text-muted-foreground md:text-base">
+                        <p className="text-muted-foreground text-sm md:text-base">
                           {feature.description}
                         </p>
                       </div>
                     </CarouselItem>
                   ))}
               </CarouselContent>
-              <div className="absolute inset-0 bg-linear-to-t from-background via-transparent to-background"></div>
+              <div className="from-background to-background absolute inset-0 bg-linear-to-t via-transparent"></div>
             </Carousel>
             <Carousel
               opts={{
                 loop: true,
-                align: "start",
+                align: 'start',
               }}
               plugins={[
                 AutoScroll({
@@ -198,14 +198,14 @@ const Feature114 = () => {
                       <h3 className="mt-5 mb-2.5 font-semibold md:text-xl">
                         {feature.title}
                       </h3>
-                      <p className="text-sm text-muted-foreground md:text-base">
+                      <p className="text-muted-foreground text-sm md:text-base">
                         {feature.description}
                       </p>
                     </div>
                   </CarouselItem>
                 ))}
               </CarouselContent>
-              <div className="absolute inset-0 bg-linear-to-t from-background via-transparent to-background"></div>
+              <div className="from-background to-background absolute inset-0 bg-linear-to-t via-transparent"></div>
             </Carousel>
           </div>
         </div>

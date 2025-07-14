@@ -1,8 +1,8 @@
-import { Quote, Star } from "lucide-react";
+import { Quote, Star } from 'lucide-react';
 
-import { AspectRatio } from "@/components/ui/aspect-ratio";
-import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
-import { Button } from "@/components/ui/button";
+import { AspectRatio } from '@/components/ui/aspect-ratio';
+import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
+import { Button } from '@/components/ui/button';
 
 const Hero110 = () => {
   return (
@@ -11,14 +11,14 @@ const Hero110 = () => {
         <div className="flex flex-col gap-11 md:flex-row md:gap-8">
           <div className="flex flex-1 flex-col gap-9">
             <div>
-              <div className="mb-2 w-fit rounded-full border px-2 py-1 text-xs text-foreground">
+              <div className="text-foreground mb-2 w-fit rounded-full border px-2 py-1 text-xs">
                 Creating a more effective SaaS website
               </div>
-              <h1 className="text-[3.125rem] leading-[3.125rem] text-foreground md:text-[4.25rem] md:leading-[4.25rem] lg:text-[5.5rem] lg:leading-[5.5rem]">
+              <h1 className="text-foreground text-[3.125rem] leading-[3.125rem] md:text-[4.25rem] md:leading-[4.25rem] lg:text-[5.5rem] lg:leading-[5.5rem]">
                 Engage with customers intelligently.
               </h1>
             </div>
-            <p className="max-w-[33.4rem] text-xl text-muted-foreground">
+            <p className="text-muted-foreground max-w-[33.4rem] text-xl">
               Transform your digital presence with our comprehensive toolkit for
               SaaS and startup websites.
             </p>
@@ -57,20 +57,32 @@ const Hero110 = () => {
             </div>
             <div className="flex items-center gap-3">
               <div className="flex -space-x-[0.875rem]">
-                <Avatar className="flex h-12 w-12 shrink-0 rounded-full border-2 border-background object-cover">
-                  <AvatarImage src="https://deifkwefumgah.cloudfront.net/shadcnblocks/block/avatar-1.webp" alt="" />
+                <Avatar className="border-background flex h-12 w-12 shrink-0 rounded-full border-2 object-cover">
+                  <AvatarImage
+                    src="https://deifkwefumgah.cloudfront.net/shadcnblocks/block/avatar-1.webp"
+                    alt=""
+                  />
                   <AvatarFallback>A</AvatarFallback>
                 </Avatar>
-                <Avatar className="flex h-12 w-12 shrink-0 rounded-full border-2 border-background object-cover">
-                  <AvatarImage src="https://deifkwefumgah.cloudfront.net/shadcnblocks/block/avatar-2.webp" alt="" />
+                <Avatar className="border-background flex h-12 w-12 shrink-0 rounded-full border-2 object-cover">
+                  <AvatarImage
+                    src="https://deifkwefumgah.cloudfront.net/shadcnblocks/block/avatar-2.webp"
+                    alt=""
+                  />
                   <AvatarFallback>B</AvatarFallback>
                 </Avatar>
-                <Avatar className="flex h-12 w-12 shrink-0 rounded-full border-2 border-background object-cover">
-                  <AvatarImage src="https://deifkwefumgah.cloudfront.net/shadcnblocks/block/avatar-3.webp" alt="" />
+                <Avatar className="border-background flex h-12 w-12 shrink-0 rounded-full border-2 object-cover">
+                  <AvatarImage
+                    src="https://deifkwefumgah.cloudfront.net/shadcnblocks/block/avatar-3.webp"
+                    alt=""
+                  />
                   <AvatarFallback>C</AvatarFallback>
                 </Avatar>
-                <Avatar className="flex h-12 w-12 shrink-0 rounded-full border-2 border-background object-cover">
-                  <AvatarImage src="https://deifkwefumgah.cloudfront.net/shadcnblocks/block/avatar-4.webp" alt="" />
+                <Avatar className="border-background flex h-12 w-12 shrink-0 rounded-full border-2 object-cover">
+                  <AvatarImage
+                    src="https://deifkwefumgah.cloudfront.net/shadcnblocks/block/avatar-4.webp"
+                    alt=""
+                  />
                   <AvatarFallback>D</AvatarFallback>
                 </Avatar>
               </div>
@@ -82,7 +94,7 @@ const Hero110 = () => {
                   <Star className="h-4 w-4 fill-black stroke-black" />
                   <Star className="h-4 w-4 fill-black stroke-black" />
                 </div>
-                <p className="mt-2 text-xs text-muted-foreground">
+                <p className="text-muted-foreground mt-2 text-xs">
                   Trusted by 2 Million users
                 </p>
               </div>
@@ -121,8 +133,8 @@ const Hero110 = () => {
               </AspectRatio>
             </div>
             <div className="border-muted2 mt-16 flex flex-col gap-4 rounded-lg border p-5 md:mt-14">
-              <Quote className="h-10 w-10 fill-muted-foreground stroke-muted-foreground" />
-              <p className="text-xl text-muted-foreground">
+              <Quote className="fill-muted-foreground stroke-muted-foreground h-10 w-10" />
+              <p className="text-muted-foreground text-xl">
                 Our intuitive visual designer empowers you to effortlessly
                 create stunning websites through simple drag and drop
                 functionality.

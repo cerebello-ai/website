@@ -1,22 +1,24 @@
-"use client";
+'use client';
 
-import { ArrowUpRight } from "lucide-react";
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useRef, useState } from 'react';
 
-import { cn } from "@/lib/utils";
+import { ArrowUpRight } from 'lucide-react';
 
-import { Avatar, AvatarImage } from "@/components/ui/avatar";
-import { Separator } from "@/components/ui/separator";
+import { Avatar, AvatarImage } from '@/components/ui/avatar';
+import { Separator } from '@/components/ui/separator';
+import { cn } from '@/lib/utils';
 
 const changelogs = [
   {
-    title: "Introducing Pixiol Cloud Storage",
-    category: "New feature",
-    date: "Mar 20, 2025",
-    author: "Emily Chen",
-    role: "Product Manager",
-    avatar: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/avatar-1.webp",
-    image: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-1.svg",
+    title: 'Introducing Pixiol Cloud Storage',
+    category: 'New feature',
+    date: 'Mar 20, 2025',
+    author: 'Emily Chen',
+    role: 'Product Manager',
+    avatar:
+      'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/avatar-1.webp',
+    image:
+      'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-1.svg',
     description: (
       <div className="prose dark:prose-invert">
         <p>
@@ -57,13 +59,15 @@ const changelogs = [
     ),
   },
   {
-    title: "AI-Powered Design Assistant",
-    category: "Improvement",
-    date: "Mar 15, 2025",
-    author: "Alex Rivera",
-    role: "AI Research Lead",
-    avatar: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/avatar-2.webp",
-    image: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-2.svg",
+    title: 'AI-Powered Design Assistant',
+    category: 'Improvement',
+    date: 'Mar 15, 2025',
+    author: 'Alex Rivera',
+    role: 'AI Research Lead',
+    avatar:
+      'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/avatar-2.webp',
+    image:
+      'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-2.svg',
     description: (
       <div className="prose dark:prose-invert">
         <p>
@@ -91,13 +95,15 @@ const changelogs = [
     ),
   },
   {
-    title: "Creative Team Collaboration Tools",
-    category: "Update",
-    date: "Mar 10, 2025",
-    author: "Sam Washington",
-    role: "Lead Product Designer",
-    avatar: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/avatar-3.webp",
-    image: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-3.svg",
+    title: 'Creative Team Collaboration Tools',
+    category: 'Update',
+    date: 'Mar 10, 2025',
+    author: 'Sam Washington',
+    role: 'Lead Product Designer',
+    avatar:
+      'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/avatar-3.webp',
+    image:
+      'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-3.svg',
     description: (
       <div className="prose dark:prose-invert">
         <p>
@@ -140,7 +146,7 @@ const Changelog5 = () => {
       observerCallback,
       {
         root: null,
-        rootMargin: "0px",
+        rootMargin: '0px',
         threshold: 0.5,
       },
     );
@@ -175,7 +181,7 @@ const Changelog5 = () => {
             </span>
             <div>
               <h2 className="text-4xl">
-                Latest features and enhancements <br />{" "}
+                Latest features and enhancements <br />{' '}
                 <span className="text-muted-foreground">Pixiol</span>
               </h2>
               <div className="mt-10 flex items-center gap-4 text-sm">
@@ -202,10 +208,10 @@ const Changelog5 = () => {
                   <a
                     href={`#section-${idx + 1}`}
                     className={cn(
-                      "transition-colors duration-200",
+                      'transition-colors duration-200',
                       activeSection === `section-${idx + 1}`
-                        ? "text-primary font-medium"
-                        : "text-muted-foreground hover:text-primary",
+                        ? 'text-primary font-medium'
+                        : 'text-muted-foreground hover:text-primary',
                     )}
                   >
                     {changelog.date}
@@ -238,7 +244,7 @@ const Changelog5 = () => {
                     {changelog.category}
                   </p>
                 </span>
-                <h3 className="mb-6 mt-2 text-3xl">{changelog.title}</h3>
+                <h3 className="mt-2 mb-6 text-3xl">{changelog.title}</h3>
                 {changelog.description}
                 <div className="border-border mt-6 flex items-end justify-between border-b pb-4">
                   <div className="flex items-center gap-4">

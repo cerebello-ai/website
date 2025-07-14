@@ -1,5 +1,5 @@
-"use client";
-import { zodResolver } from "@hookform/resolvers/zod";
+'use client';
+import { zodResolver } from '@hookform/resolvers/zod';
 import {
   ChartBar,
   Files,
@@ -7,23 +7,23 @@ import {
   Sparkles,
   Timer,
   UserCircle,
-} from "lucide-react";
-import { useForm } from "react-hook-form";
-import { z } from "zod";
+} from 'lucide-react';
+import { useForm } from 'react-hook-form';
+import { z } from 'zod';
 
-import { Button } from "@/components/ui/button";
+import { Button } from '@/components/ui/button';
 import {
   Form,
   FormControl,
   FormField,
   FormItem,
   FormMessage,
-} from "@/components/ui/form";
-import { Input } from "@/components/ui/input";
+} from '@/components/ui/form';
+import { Input } from '@/components/ui/input';
 
 const formSchema = z
   .object({
-    email: z.string().email({ message: "Invalid email address" }),
+    email: z.string().email({ message: 'Invalid email address' }),
   })
   .required({ email: true });
 
@@ -31,7 +31,7 @@ const HeroFrom = () => {
   const form = useForm<z.infer<typeof formSchema>>({
     resolver: zodResolver(formSchema),
     defaultValues: {
-      email: "",
+      email: '',
     },
   });
 
@@ -55,7 +55,7 @@ const HeroFrom = () => {
                       type="email"
                       id="emailInput"
                       placeholder="Enter your email"
-                      className="block h-9 w-full border-none bg-inherit pr-[132px] pl-3 placeholder-muted-foreground"
+                      className="placeholder-muted-foreground block h-9 w-full border-none bg-inherit pr-[132px] pl-3"
                     />
                   </FormControl>
                   <FormMessage className="absolute -bottom-6 left-0 z-10 text-sm" />
@@ -79,12 +79,12 @@ const HeroFrom = () => {
 
 const Hero72 = () => {
   return (
-    <section className="flex flex-col overflow-hidden border-b bg-background text-center">
+    <section className="bg-background flex flex-col overflow-hidden border-b text-center">
       <div className="flex w-[90%] flex-col items-center self-center">
-        <h1 className="mt-16 max-w-5xl text-5xl font-semibold text-foreground md:mt-20 lg:text-6xl">
+        <h1 className="text-foreground mt-16 max-w-5xl text-5xl font-semibold md:mt-20 lg:text-6xl">
           Your company's monetary command center
         </h1>
-        <p className="mx-auto mt-4 max-w-2xl text-muted-foreground">
+        <p className="text-muted-foreground mx-auto mt-4 max-w-2xl">
           Document organization, instant revenue/expense monitoring, and
           effortless accounting prep, enhanced by AI-driven search and sorting
           capabilities
@@ -93,43 +93,43 @@ const Hero72 = () => {
         <div className="m-auto mt-12 grid grid-cols-3 gap-[32px] md:grid-cols-6">
           <div className="w-[100px] text-center leading-tight">
             <div className="border-muted2 mb-2 flex h-[65px] w-[100px] items-center justify-center rounded-lg border">
-              <UserCircle className="h-6 w-6 stroke-foreground" />
+              <UserCircle className="stroke-foreground h-6 w-6" />
             </div>
-            <span className="text-sm text-muted-foreground">Open source</span>
+            <span className="text-muted-foreground text-sm">Open source</span>
           </div>
           <div className="w-[100px] text-center leading-tight">
             <div className="border-muted2 mb-2 flex h-[65px] w-[100px] items-center justify-center rounded-lg border">
-              <ChartBar className="h-6 w-6 stroke-foreground" />
+              <ChartBar className="stroke-foreground h-6 w-6" />
             </div>
-            <span className="text-sm text-muted-foreground">
+            <span className="text-muted-foreground text-sm">
               Live profit/loss
             </span>
           </div>
           <div className="w-[100px] text-center leading-tight">
             <div className="border-muted2 mb-2 flex h-[65px] w-[100px] items-center justify-center rounded-lg border">
-              <Files className="h-6 w-6 stroke-foreground" />
+              <Files className="stroke-foreground h-6 w-6" />
             </div>
-            <span className="text-sm text-muted-foreground">Vault</span>
+            <span className="text-muted-foreground text-sm">Vault</span>
           </div>
           <div className="w-[100px] text-center leading-tight">
             <div className="border-muted2 mb-2 flex h-[65px] w-[100px] items-center justify-center rounded-lg border">
-              <ReceiptText className="h-6 w-6 stroke-foreground" />
+              <ReceiptText className="stroke-foreground h-6 w-6" />
             </div>
-            <span className="text-sm text-muted-foreground">
+            <span className="text-muted-foreground text-sm">
               Receipt linking
             </span>
           </div>
           <div className="w-[100px] text-center leading-tight">
             <div className="border-muted2 mb-2 flex h-[65px] w-[100px] items-center justify-center rounded-lg border">
-              <Timer className="h-6 w-6 stroke-foreground" />
+              <Timer className="stroke-foreground h-6 w-6" />
             </div>
-            <span className="text-sm text-muted-foreground">Time tracking</span>
+            <span className="text-muted-foreground text-sm">Time tracking</span>
           </div>
           <div className="w-[100px] text-center leading-tight">
             <div className="border-muted2 mb-2 flex h-[65px] w-[100px] items-center justify-center rounded-lg border">
-              <Sparkles className="h-6 w-6 stroke-foreground" />
+              <Sparkles className="stroke-foreground h-6 w-6" />
             </div>
-            <span className="text-sm text-muted-foreground">
+            <span className="text-muted-foreground text-sm">
               AI-enhanced filter &amp; search
             </span>
           </div>

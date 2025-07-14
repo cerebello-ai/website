@@ -1,6 +1,8 @@
-"use client";
+'use client';
 
-import type { LucideIcon } from "lucide-react";
+import { useState } from 'react';
+
+import type { LucideIcon } from 'lucide-react';
 import {
   Banknote,
   BarChart,
@@ -26,10 +28,9 @@ import {
   Truck,
   Users,
   X,
-} from "lucide-react";
-import { useState } from "react";
+} from 'lucide-react';
 
-import { Button } from "@/components/ui/button";
+import { Button } from '@/components/ui/button';
 import {
   NavigationMenu,
   NavigationMenuContent,
@@ -37,7 +38,7 @@ import {
   NavigationMenuLink,
   NavigationMenuList,
   NavigationMenuTrigger,
-} from "@/components/ui/navigation-menu";
+} from '@/components/ui/navigation-menu';
 
 interface Solution {
   title: string;
@@ -48,27 +49,27 @@ interface Solution {
 
 const DATA_SOLUTIONS: Solution[] = [
   {
-    title: "First solution",
-    description: "Vestibulum scelerisque quis nisl ut convallis.",
-    href: "#",
+    title: 'First solution',
+    description: 'Vestibulum scelerisque quis nisl ut convallis.',
+    href: '#',
     icon: Cloud,
   },
   {
-    title: "Another solution",
-    description: "Curabitur vehicula malesuada enim a cursus.",
-    href: "#",
+    title: 'Another solution',
+    description: 'Curabitur vehicula malesuada enim a cursus.',
+    href: '#',
     icon: Lock,
   },
   {
-    title: "And a third solution",
-    description: "Proin aliquam feugiat lobortis.",
-    href: "#",
+    title: 'And a third solution',
+    description: 'Proin aliquam feugiat lobortis.',
+    href: '#',
     icon: Fingerprint,
   },
   {
-    title: "And a fourth solution",
-    description: "Donec nec sapien nec dolor.",
-    href: "#",
+    title: 'And a fourth solution',
+    description: 'Donec nec sapien nec dolor.',
+    href: '#',
     icon: Cloud,
   },
 ];
@@ -81,43 +82,43 @@ interface Platfrom {
 
 const DATA_PLATFORM_CASE: Platfrom[] = [
   {
-    title: "Banking",
-    href: "#",
+    title: 'Banking',
+    href: '#',
     icon: CreditCard,
   },
   {
-    title: "Fintech",
-    href: "#",
+    title: 'Fintech',
+    href: '#',
     icon: Banknote,
   },
   {
-    title: "E-commerce",
-    href: "#",
+    title: 'E-commerce',
+    href: '#',
     icon: ShoppingCart,
   },
   {
-    title: "Travel & Hospitality",
-    href: "#",
+    title: 'Travel & Hospitality',
+    href: '#',
     icon: Plane,
   },
   {
-    title: "Real Estate",
-    href: "#",
+    title: 'Real Estate',
+    href: '#',
     icon: Home,
   },
   {
-    title: "Gaming",
-    href: "#",
+    title: 'Gaming',
+    href: '#',
     icon: Gamepad2,
   },
   {
-    title: "Manufacturing",
-    href: "#",
+    title: 'Manufacturing',
+    href: '#',
     icon: Factory,
   },
   {
-    title: "Logistics",
-    href: "#",
+    title: 'Logistics',
+    href: '#',
     icon: Truck,
   },
 ];
@@ -131,75 +132,75 @@ interface Resource {
 
 const DATA_RESOURCES: Resource[] = [
   {
-    title: "AI Powered",
-    description: "Explore AI-powered resources",
-    href: "#",
+    title: 'AI Powered',
+    description: 'Explore AI-powered resources',
+    href: '#',
     icon: Sparkle,
   },
   {
-    title: "AI Development",
-    description: "Tools and frameworks for AI development",
-    href: "#",
+    title: 'AI Development',
+    description: 'Tools and frameworks for AI development',
+    href: '#',
     icon: Code,
   },
   {
-    title: "Machine Learning",
-    description: "Resources for machine learning enthusiasts",
-    href: "#",
+    title: 'Machine Learning',
+    description: 'Resources for machine learning enthusiasts',
+    href: '#',
     icon: Brain,
   },
   {
-    title: "Data Management",
-    description: "Best practices for data management",
-    href: "#",
+    title: 'Data Management',
+    description: 'Best practices for data management',
+    href: '#',
     icon: Database,
   },
   {
-    title: "Cloud AI",
-    description: "Cloud-based AI solutions",
-    href: "#",
+    title: 'Cloud AI',
+    description: 'Cloud-based AI solutions',
+    href: '#',
     icon: Cloud,
   },
   {
-    title: "AI Security",
-    description: "Secure your AI applications",
-    href: "#",
+    title: 'AI Security',
+    description: 'Secure your AI applications',
+    href: '#',
     icon: Shield,
   },
   {
-    title: "AI Configuration",
-    description: "Configure AI systems effectively",
-    href: "#",
+    title: 'AI Configuration',
+    description: 'Configure AI systems effectively',
+    href: '#',
     icon: Settings,
   },
   {
-    title: "AI Analytics",
-    description: "Analyze AI performance metrics",
-    href: "#",
+    title: 'AI Analytics',
+    description: 'Analyze AI performance metrics',
+    href: '#',
     icon: BarChart,
   },
   {
-    title: "Global AI Trends",
-    description: "Stay updated with global AI trends",
-    href: "#",
+    title: 'Global AI Trends',
+    description: 'Stay updated with global AI trends',
+    href: '#',
     icon: Globe,
   },
   {
-    title: "AI Community",
-    description: "Join the AI community",
-    href: "#",
+    title: 'AI Community',
+    description: 'Join the AI community',
+    href: '#',
     icon: Users,
   },
   {
-    title: "AI Learning",
-    description: "Learn AI from the best resources",
-    href: "#",
+    title: 'AI Learning',
+    description: 'Learn AI from the best resources',
+    href: '#',
     icon: BookOpen,
   },
   {
-    title: "AI Support",
-    description: "Get support for AI-related queries",
-    href: "#",
+    title: 'AI Support',
+    description: 'Get support for AI-related queries',
+    href: '#',
     icon: MessageSquare,
   },
 ];
@@ -207,7 +208,7 @@ const DATA_RESOURCES: Resource[] = [
 const Navbar7 = () => {
   const [open, setOpen] = useState(false);
   return (
-    <section className="inset-x-0 top-0 z-20 bg-background">
+    <section className="bg-background inset-x-0 top-0 z-20">
       <div className="container px-4 sm:px-6 md:px-8 lg:px-40 xl:px-52">
         <NavigationMenu className="min-w-full">
           <div className="flex w-full items-center justify-between gap-12 py-4">
@@ -230,7 +231,7 @@ const Navbar7 = () => {
                 <NavigationMenuContent className="min-w-[760px] p-4">
                   <div className="flex items-start justify-between">
                     <div className="max-w-[760px] flex-1">
-                      <div className="text-xs tracking-widest text-muted-foreground">
+                      <div className="text-muted-foreground text-xs tracking-widest">
                         Solutions
                       </div>
                       <div className="grid grid-rows-1 gap-6">
@@ -240,14 +241,14 @@ const Navbar7 = () => {
                             href={solution.href}
                             className="group flex flex-row items-center first:mt-4 hover:bg-transparent"
                           >
-                            <div className="mr-4 rounded-lg bg-muted p-4 shadow-sm">
-                              <solution.icon className="size-6 text-muted-foreground transition-all fade-in group-hover:text-foreground" />
+                            <div className="bg-muted mr-4 rounded-lg p-4 shadow-sm">
+                              <solution.icon className="text-muted-foreground fade-in group-hover:text-foreground size-6 transition-all" />
                             </div>
                             <div className="flex flex-col gap-1 text-sm">
-                              <div className="font-medium text-foreground">
+                              <div className="text-foreground font-medium">
                                 {solution.title}
                               </div>
-                              <div className="text-sm font-normal text-muted-foreground">
+                              <div className="text-muted-foreground text-sm font-normal">
                                 {solution.description}
                               </div>
                             </div>
@@ -256,7 +257,7 @@ const Navbar7 = () => {
                       </div>
                     </div>
                     <div className="max-w-[760px] flex-1">
-                      <div className="text-xs tracking-widest text-muted-foreground">
+                      <div className="text-muted-foreground text-xs tracking-widest">
                         By Use Case
                       </div>
                       <div className="mt-4 gap-6">
@@ -266,8 +267,8 @@ const Navbar7 = () => {
                             href={solution.href}
                             className="group flex flex-row items-center hover:bg-transparent"
                           >
-                            <div className="mr-4 rounded-lg bg-muted p-2 shadow-sm">
-                              <solution.icon className="size-4 text-muted-foreground transition-all fade-in group-hover:text-foreground" />
+                            <div className="bg-muted mr-4 rounded-lg p-2 shadow-sm">
+                              <solution.icon className="text-muted-foreground fade-in group-hover:text-foreground size-4 transition-all" />
                             </div>
                             <div className="flex flex-col gap-1">
                               <div className="text-sm font-medium">
@@ -293,14 +294,14 @@ const Navbar7 = () => {
                         href={solution.href}
                         className="group flex flex-row items-center hover:bg-transparent"
                       >
-                        <div className="mr-4 rounded-lg bg-muted p-4 shadow-sm">
-                          <solution.icon className="size-6 text-muted-foreground transition-all fade-in group-hover:text-foreground" />
+                        <div className="bg-muted mr-4 rounded-lg p-4 shadow-sm">
+                          <solution.icon className="text-muted-foreground fade-in group-hover:text-foreground size-6 transition-all" />
                         </div>
-                        <div className="flex flex-col gap-1 text-sm font-normal text-muted-foreground">
-                          <div className="font-medium text-foreground">
+                        <div className="text-muted-foreground flex flex-col gap-1 text-sm font-normal">
+                          <div className="text-foreground font-medium">
                             {solution.title}
                           </div>
-                          <div className="font-normal text-muted-foreground">
+                          <div className="text-muted-foreground font-normal">
                             {solution.description}
                           </div>
                         </div>
@@ -335,7 +336,7 @@ const Navbar7 = () => {
 
           {/* Mobile Menu (Root) */}
           {open && (
-            <div className="absolute inset-0 top-[72px] flex h-[calc(100vh-72px)] w-full flex-col overflow-scroll border-t border-border bg-background lg:hidden">
+            <div className="border-border bg-background absolute inset-0 top-[72px] flex h-[calc(100vh-72px)] w-full flex-col overflow-scroll border-t lg:hidden">
               <div>
                 <a
                   href="#"

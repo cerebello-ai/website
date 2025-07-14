@@ -1,4 +1,4 @@
-import { CircleArrowRight, Files, Settings } from "lucide-react";
+import { CircleArrowRight, Files, Settings } from 'lucide-react';
 
 const About1 = () => {
   return (
@@ -20,8 +20,8 @@ const About1 = () => {
             alt="placeholder"
             className="size-full max-h-96 rounded-2xl object-cover"
           />
-          <div className="flex flex-col justify-between gap-10 rounded-2xl bg-muted p-10">
-            <p className="text-sm text-muted-foreground">OUR MISSION</p>
+          <div className="bg-muted flex flex-col justify-between gap-10 rounded-2xl p-10">
+            <p className="text-muted-foreground text-sm">OUR MISSION</p>
             <p className="text-lg font-medium">
               We believe that building software should be insanely easy. That
               everyone should have the freedom to create the tools they need,
@@ -41,7 +41,7 @@ const About1 = () => {
           </div>
           <div className="grid gap-10 md:grid-cols-3">
             <div className="flex flex-col">
-              <div className="mb-5 flex size-12 items-center justify-center rounded-2xl bg-accent">
+              <div className="bg-accent mb-5 flex size-12 items-center justify-center rounded-2xl">
                 <Files className="size-5" />
               </div>
               <h3 className="mt-2 mb-3 text-lg font-semibold">
@@ -54,7 +54,7 @@ const About1 = () => {
               </p>
             </div>
             <div className="flex flex-col">
-              <div className="mb-5 flex size-12 items-center justify-center rounded-2xl bg-accent">
+              <div className="bg-accent mb-5 flex size-12 items-center justify-center rounded-2xl">
                 <CircleArrowRight className="size-5" />
               </div>
               <h3 className="mt-2 mb-3 text-lg font-semibold">
@@ -67,7 +67,7 @@ const About1 = () => {
               </p>
             </div>
             <div className="flex flex-col">
-              <div className="mb-5 flex size-12 items-center justify-center rounded-2xl bg-accent">
+              <div className="bg-accent mb-5 flex size-12 items-center justify-center rounded-2xl">
                 <Settings className="size-5" />
               </div>
               <h3 className="mt-2 mb-3 text-lg font-semibold">
@@ -82,7 +82,7 @@ const About1 = () => {
         </div>
         <div className="grid gap-10 md:grid-cols-2">
           <div>
-            <p className="mb-10 text-sm font-medium text-muted-foreground">
+            <p className="text-muted-foreground mb-10 text-sm font-medium">
               JOIN OUR TEAM
             </p>
             <h2 className="mb-2.5 text-3xl font-semibold md:text-5xl">

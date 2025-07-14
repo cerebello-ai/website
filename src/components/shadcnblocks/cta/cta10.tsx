@@ -1,4 +1,6 @@
-import { Button } from "@/components/ui/button";
+import { CtaProps } from '../types/common';
+
+import { Button } from '@/components/ui/button';
 
 interface Cta10Props {
   heading: string;
@@ -16,12 +18,12 @@ interface Cta10Props {
 }
 
 const Cta10 = ({
-  heading = "Call to Action",
-  description = "Build faster with our collection of pre-built blocks. Speed up your development and ship features in record time.",
+  heading = 'Call to Action',
+  description = 'Build faster with our collection of pre-built blocks. Speed up your development and ship features in record time.',
   buttons = {
     primary: {
-      text: "Buy Now",
-      url: "https://www.shadcnblocks.com",
+      text: 'Buy Now',
+      url: 'https://www.shadcnblocks.com',
     },
   },
 }: Cta10Props) => {

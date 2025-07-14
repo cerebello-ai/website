@@ -1,12 +1,11 @@
-"use client";
+'use client';
 
-import { Star } from "lucide-react";
-import Masonry, { ResponsiveMasonry } from "react-responsive-masonry";
+import { Star } from 'lucide-react';
+import Masonry, { ResponsiveMasonry } from 'react-responsive-masonry';
 
-import { cn } from "@/lib/utils";
-
-import { Avatar, AvatarImage } from "@/components/ui/avatar";
-import { Card } from "@/components/ui/card";
+import { Avatar, AvatarImage } from '@/components/ui/avatar';
+import { Card } from '@/components/ui/card';
+import { cn } from '@/lib/utils';
 
 interface DataItem {
   name: string;
@@ -17,60 +16,69 @@ interface DataItem {
 
 const DATA: DataItem[] = [
   {
-    name: "Alex Johnson",
-    avatar: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/avatar-1.webp",
+    name: 'Alex Johnson',
+    avatar:
+      'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/avatar-1.webp',
     content:
-      "This tool has completely transformed my workflow. The features are intuitive, and it’s made collaboration with my team so much easier.",
-    margin: "mt-6",
+      'This tool has completely transformed my workflow. The features are intuitive, and it’s made collaboration with my team so much easier.',
+    margin: 'mt-6',
   },
   {
-    name: "Maria Garcia",
-    avatar: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/avatar-2.webp",
+    name: 'Maria Garcia',
+    avatar:
+      'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/avatar-2.webp',
     content:
-      "The design templates are a lifesaver. They’ve helped me deliver projects faster without compromising on quality.",
+      'The design templates are a lifesaver. They’ve helped me deliver projects faster without compromising on quality.',
   },
   {
-    name: "Chris Lee",
-    avatar: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/avatar-3.webp",
+    name: 'Chris Lee',
+    avatar:
+      'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/avatar-3.webp',
     content:
-      "Our team’s productivity has skyrocketed since we started using this platform. It’s a must-have for any creative team.",
-    margin: "mt-4",
+      'Our team’s productivity has skyrocketed since we started using this platform. It’s a must-have for any creative team.',
+    margin: 'mt-4',
   },
   {
-    name: "Emily Carter",
-    avatar: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/avatar-4.webp",
+    name: 'Emily Carter',
+    avatar:
+      'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/avatar-4.webp',
     content:
-      "The analytics dashboard is incredible. It gives us the insights we need to make data-driven decisions.",
+      'The analytics dashboard is incredible. It gives us the insights we need to make data-driven decisions.',
   },
   {
-    name: "David Kim",
-    avatar: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/avatar-5.webp",
+    name: 'David Kim',
+    avatar:
+      'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/avatar-5.webp',
     content:
-      "Integration with our existing tools was seamless. The API documentation is thorough and easy to follow.",
+      'Integration with our existing tools was seamless. The API documentation is thorough and easy to follow.',
   },
   {
-    name: "Sophia Martinez",
-    avatar: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/avatar-6.webp",
+    name: 'Sophia Martinez',
+    avatar:
+      'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/avatar-6.webp',
     content:
-      "The platform has made it so much easier to manage creative projects and keep everyone on the same page.",
+      'The platform has made it so much easier to manage creative projects and keep everyone on the same page.',
   },
   {
-    name: "Michael Brown",
-    avatar: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/avatar-7.webp",
+    name: 'Michael Brown',
+    avatar:
+      'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/avatar-7.webp',
     content:
-      "The branding tools are top-notch. They’ve helped us maintain consistency across all our campaigns.",
+      'The branding tools are top-notch. They’ve helped us maintain consistency across all our campaigns.',
   },
   {
-    name: "Olivia Davis",
-    avatar: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/avatar-8.webp",
+    name: 'Olivia Davis',
+    avatar:
+      'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/avatar-8.webp',
     content:
-      "The vector editing tools are fantastic. They’ve made my creative process so much smoother.",
+      'The vector editing tools are fantastic. They’ve made my creative process so much smoother.',
   },
   {
-    name: "Daniel Wilson",
-    avatar: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/avatar-4.webp",
+    name: 'Daniel Wilson',
+    avatar:
+      'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/avatar-4.webp',
     content:
-      "The animation features are incredible. They’ve taken my projects to the next level.",
+      'The animation features are incredible. They’ve taken my projects to the next level.',
   },
 ];
 
@@ -127,7 +135,7 @@ const Testimonial24 = () => {
           </div>
         </div>
 
-        <div className="after:bg-linear-to-t after:from-background relative mt-14 w-full px-4 after:absolute after:inset-x-0 after:-bottom-2 after:h-96 sm:px-8 md:px-16 lg:px-32">
+        <div className="after:from-background relative mt-14 w-full px-4 after:absolute after:inset-x-0 after:-bottom-2 after:h-96 after:bg-linear-to-t sm:px-8 md:px-16 lg:px-32">
           <ResponsiveMasonry
             columnsCountBreakPoints={{ 350: 1, 768: 2, 1024: 3 }}
           >
@@ -136,9 +144,9 @@ const Testimonial24 = () => {
                 <Card
                   key={idx}
                   className={cn(
-                    "rounded-xl p-5 shadow-sm",
-                    idx > 3 && idx <= 5 && "hidden md:block",
-                    idx > 5 && "hidden lg:block",
+                    'rounded-xl p-5 shadow-sm',
+                    idx > 3 && idx <= 5 && 'hidden md:block',
+                    idx > 5 && 'hidden lg:block',
                     testimonial.margin,
                   )}
                 >

@@ -1,45 +1,50 @@
-import { Check } from "lucide-react";
+import { Check } from 'lucide-react';
 
-const Feature6 = () => {
+import { FeatureProps } from '../types/common';
+
+interface Feature6Props extends FeatureProps {
+  features?: string[];
+}
+
+const Feature6 = ({
+  title = 'Blocks built with Shadcn & Tailwind',
+  description = 'Hundreds of finely crafted components built with React, Tailwind and Shadcn UI. Developers can copy and paste these blocks directly into their project.',
+  image = 'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-1.svg',
+  features = [
+    'Ready-to-use components built with Shadcn/ui',
+    'Fully responsive and accessible by default',
+    'Easy customization with Tailwind CSS classes',
+  ],
+}: Feature6Props) => {
   return (
     <section className="py-32">
       <div className="container">
         <div className="grid items-center gap-8 lg:grid-cols-2">
           <div className="flex flex-col lg:items-start lg:text-left">
-            <h1 className="my-6 text-pretty text-3xl font-semibold lg:text-5xl">
-              Blocks built with Shadcn & Tailwind
+            <h1 className="my-6 text-3xl font-semibold text-pretty lg:text-5xl">
+              {title}
             </h1>
             <p className="text-muted-foreground mb-8 max-w-xl lg:text-lg">
-              Hundreds of finely crafted components built with React, Tailwind
-              and Shadcn UI. Developers can copy and paste these blocks directly
-              into their project.
+              {description}
             </p>
-            <ul className="ml-4 space-y-4 text-left">
-              <li className="flex items-center gap-3">
-                <Check className="size-5" />
-                <p className="text-muted-foreground">
-                  Ready-to-use components built with Shadcn/ui
-                </p>
-              </li>
-              <li className="flex items-center gap-3">
-                <Check className="size-5" />
-                <p className="text-muted-foreground">
-                  Fully responsive and accessible by default
-                </p>
-              </li>
-              <li className="flex items-center gap-3">
-                <Check className="size-5" />
-                <p className="text-muted-foreground">
-                  Easy customization with Tailwind CSS classes
-                </p>
-              </li>
-            </ul>
+            {features && features.length > 0 && (
+              <ul className="ml-4 space-y-4 text-left">
+                {features.map((feature, index) => (
+                  <li key={index} className="flex items-center gap-3">
+                    <Check className="size-5" />
+                    <p className="text-muted-foreground">{feature}</p>
+                  </li>
+                ))}
+              </ul>
+            )}
           </div>
-          <img
-            src="https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-1.svg"
-            alt="Website components showcase"
-            className="max-h-96 w-full rounded-md object-cover"
-          />
+          {image && (
+            <img
+              src={image}
+              alt="Feature showcase"
+              className="max-h-96 w-full rounded-md object-cover"
+            />
+          )}
         </div>
       </div>
     </section>

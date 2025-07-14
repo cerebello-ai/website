@@ -1,7 +1,7 @@
-import { FcGoogle } from "react-icons/fc";
+import { FcGoogle } from 'react-icons/fc';
 
-import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
+import { Button } from '@/components/ui/button';
+import { Input } from '@/components/ui/input';
 
 const Login6 = () => {
   return (
@@ -40,11 +40,11 @@ const Login6 = () => {
                   Sign up with Google
                 </Button>
               </div>
-              <div className="mx-auto mt-8 flex justify-center gap-1 text-sm text-muted-foreground">
+              <div className="text-muted-foreground mx-auto mt-8 flex justify-center gap-1 text-sm">
                 <p>Don&apos;t have an account?</p>
                 <a
                   href="#"
-                  className="font-medium text-primary hover:underline"
+                  className="text-primary font-medium hover:underline"
                 >
                   Signup
                 </a>

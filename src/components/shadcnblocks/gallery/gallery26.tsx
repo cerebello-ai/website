@@ -1,7 +1,8 @@
-"use client";
+'use client';
 
-import { motion } from "framer-motion";
-import React from "react";
+import React from 'react';
+
+import { motion } from 'framer-motion';
 
 const Gallery26 = () => {
   return (
@@ -178,11 +179,11 @@ interface BlurVignetteProps {
 
 const BlurVignette = ({
   children,
-  className = "",
-  radius = "24px",
-  inset = "16px",
-  transitionLength = "32px",
-  blur = "21px",
+  className = '',
+  radius = '24px',
+  inset = '16px',
+  transitionLength = '32px',
+  blur = '21px',
 }: BlurVignetteProps) => {
   return (
     <motion.div

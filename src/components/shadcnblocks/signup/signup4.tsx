@@ -1,8 +1,8 @@
-import { FaApple } from "react-icons/fa";
+import { FaApple } from 'react-icons/fa';
 
-import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
-import { Label } from "@/components/ui/label";
+import { Button } from '@/components/ui/button';
+import { Input } from '@/components/ui/input';
+import { Label } from '@/components/ui/label';
 interface Signup4Props {
   heading?: string;
   subheading?: string;
@@ -21,20 +21,20 @@ interface Signup4Props {
 }
 
 const Signup4 = ({
-  heading = "Signup",
-  subheading = "Create a new account",
+  heading = 'Signup',
+  subheading = 'Create a new account',
   logo = {
-    url: "https://www.shadcnblocks.com",
-    src: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/block-1.svg",
-    alt: "logo",
-    title: "shadcnblocks.com",
+    url: 'https://www.shadcnblocks.com',
+    src: 'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/block-1.svg',
+    alt: 'logo',
+    title: 'shadcnblocks.com',
   },
-  googleText = "Sign up with Google",
-  signupText = "Create an account",
-  loginText = "Already have an account?",
-  facebookText = "Sign up with Facebook",
-  appleText = "Sign up with Apple",
-  loginUrl = "#",
+  googleText = 'Sign up with Google',
+  signupText = 'Create an account',
+  loginText = 'Already have an account?',
+  facebookText = 'Sign up with Facebook',
+  appleText = 'Sign up with Apple',
+  loginUrl = '#',
 }: Signup4Props) => {
   return (
     <section className="h-screen">

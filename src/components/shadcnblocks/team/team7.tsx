@@ -1,28 +1,33 @@
 const team = [
   {
-    name: "Dennis Bouvard",
-    company: "Blackbird Ventures",
-    image: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/avatar-1.webp",
+    name: 'Dennis Bouvard',
+    company: 'Blackbird Ventures',
+    image:
+      'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/avatar-1.webp',
   },
   {
-    name: "Renatus Gerard",
-    company: "Center Studies",
-    image: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/avatar-2.webp",
+    name: 'Renatus Gerard',
+    company: 'Center Studies',
+    image:
+      'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/avatar-2.webp',
   },
   {
-    name: "Leslie Alexander",
-    company: "TechNexus",
-    image: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/avatar-3.webp",
+    name: 'Leslie Alexander',
+    company: 'TechNexus',
+    image:
+      'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/avatar-3.webp',
   },
   {
-    name: "Matthew Stephens",
-    company: "Etymol Cap",
-    image: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/avatar-4.webp",
+    name: 'Matthew Stephens',
+    company: 'Etymol Cap',
+    image:
+      'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/avatar-4.webp',
   },
   {
-    name: "Josephine Newman",
-    company: "Vandenberg",
-    image: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/avatar-5.webp",
+    name: 'Josephine Newman',
+    company: 'Vandenberg',
+    image:
+      'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/avatar-5.webp',
   },
 ];
 
@@ -30,7 +35,7 @@ const Team7 = () => {
   return (
     <section className="py-32">
       <div className="container">
-        <h2 className="text-4xl font-medium tracking-wide text-primary">
+        <h2 className="text-primary text-4xl font-medium tracking-wide">
           Our investors
         </h2>
         <div className="mt-8 grid grid-cols-2 gap-12 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5">

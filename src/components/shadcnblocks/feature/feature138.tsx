@@ -1,6 +1,6 @@
-"use client";
+'use client';
 
-import { MoveRight } from "lucide-react";
+import { MoveRight } from 'lucide-react';
 
 const Feature138 = () => {
   return (
@@ -9,12 +9,12 @@ const Feature138 = () => {
         <h2 className="text-4xl font-semibold">
           Built by the best and brightest
         </h2>
-        <p className="mt-3 text-xl font-medium text-muted-foreground">
+        <p className="text-muted-foreground mt-3 text-xl font-medium">
           Lorem ipsum dolor, sit amet
         </p>
 
-        <div className="mt-16 flex flex-col overflow-hidden rounded-2xl bg-muted md:flex-row">
-          <div className="flex w-full items-center bg-muted-2 md:w-1/2">
+        <div className="bg-muted mt-16 flex flex-col overflow-hidden rounded-2xl md:flex-row">
+          <div className="bg-muted-2 flex w-full items-center md:w-1/2">
             <img
               src="https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-dark-1.svg"
               alt="placeholder"
@@ -26,7 +26,7 @@ const Feature138 = () => {
               Proven methodologies
             </h6>
 
-            <div className="h-px w-full bg-muted-foreground" />
+            <div className="bg-muted-foreground h-px w-full" />
 
             <p className="text-muted-foreground">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit
@@ -43,13 +43,13 @@ const Feature138 = () => {
           </div>
         </div>
 
-        <div className="mt-16 flex flex-col overflow-hidden rounded-2xl bg-muted md:flex-row">
+        <div className="bg-muted mt-16 flex flex-col overflow-hidden rounded-2xl md:flex-row">
           <div className="flex w-full flex-col justify-center gap-6 px-8 py-7 md:w-1/2 md:px-12 md:py-10">
             <h6 className="text-lg font-semibold md:text-2xl">
               Technologies to scale
             </h6>
 
-            <div className="h-px w-full bg-muted-foreground" />
+            <div className="bg-muted-foreground h-px w-full" />
 
             <p className="text-muted-foreground">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit
@@ -64,7 +64,7 @@ const Feature138 = () => {
               <MoveRight strokeWidth={2} className="ml-2 size-4" />
             </a>
           </div>
-          <div className="flex w-full items-center bg-muted-2 md:w-1/2">
+          <div className="bg-muted-2 flex w-full items-center md:w-1/2">
             <img
               src="https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-dark-2.svg"
               alt="placeholder"
@@ -73,8 +73,8 @@ const Feature138 = () => {
           </div>
         </div>
 
-        <div className="mt-16 flex flex-col overflow-hidden rounded-2xl bg-muted md:flex-row">
-          <div className="flex w-full items-center bg-muted-2 md:w-1/2">
+        <div className="bg-muted mt-16 flex flex-col overflow-hidden rounded-2xl md:flex-row">
+          <div className="bg-muted-2 flex w-full items-center md:w-1/2">
             <img
               src="https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-dark-3.svg"
               alt="placeholder"
@@ -86,7 +86,7 @@ const Feature138 = () => {
               A culture of innovation
             </h6>
 
-            <div className="h-px w-full bg-muted-foreground" />
+            <div className="bg-muted-foreground h-px w-full" />
 
             <p className="text-muted-foreground">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit

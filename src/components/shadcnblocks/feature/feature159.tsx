@@ -1,25 +1,25 @@
-import { Code, GitBranch, List, Sparkles } from "lucide-react";
+import { Code, GitBranch, List, Sparkles } from 'lucide-react';
 
 const integrations = [
   {
     icon: <Code className="h-5 w-5" />,
-    title: "Code Snippets",
-    text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam corporis, inventore explicabo",
+    title: 'Code Snippets',
+    text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam corporis, inventore explicabo',
   },
   {
     icon: <GitBranch className="h-5 w-5" />,
-    title: "Version Control",
-    text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam corporis, inventore explicabo dolores facilis",
+    title: 'Version Control',
+    text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam corporis, inventore explicabo dolores facilis',
   },
   {
     icon: <List className="h-5 w-5" />,
-    title: "Task Management",
-    text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam corporis.",
+    title: 'Task Management',
+    text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam corporis.',
   },
   {
     icon: <Sparkles className="h-5 w-5" />,
-    title: "UI Components",
-    text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam corporis, inventore explicabo dolores facilis voluptates",
+    title: 'UI Components',
+    text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam corporis, inventore explicabo dolores facilis voluptates',
   },
 ];
 
@@ -37,7 +37,7 @@ const Feature159 = () => {
                 {item.icon}
                 <h1 className="text-lg font-semibold">{item.title}</h1>
               </div>
-              <p className="text-sm text-muted-foreground/50">{item.text}</p>
+              <p className="text-muted-foreground/50 text-sm">{item.text}</p>
               {arr.length - 1 === index && (
                 <div className="mt-5 w-auto cursor-pointer self-start border-b text-sm">
                   See all

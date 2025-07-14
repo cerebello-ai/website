@@ -1,5 +1,7 @@
-"use client";
-import type { LucideIcon } from "lucide-react";
+'use client';
+import { useRef } from 'react';
+
+import type { LucideIcon } from 'lucide-react';
 import {
   AudioLines,
   Captions,
@@ -8,22 +10,21 @@ import {
   ListMinus,
   ScanFace,
   TextQuote,
-} from "lucide-react";
-import { useRef } from "react";
+} from 'lucide-react';
 
 import {
   Card,
   CardContent,
   CardDescription,
   CardTitle,
-} from "@/components/ui/card";
+} from '@/components/ui/card';
 import {
   Carousel,
   CarouselContent,
   CarouselItem,
   CarouselNext,
   CarouselPrevious,
-} from "@/components/ui/carousel";
+} from '@/components/ui/carousel';
 
 interface card {
   video: string;
@@ -35,60 +36,67 @@ interface card {
 
 const List: Array<card> = [
   {
-    video: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/video-1.mp4",
+    video:
+      'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/video-1.mp4',
     Icon: Eye,
-    title: "Smart Code Analysis",
-    link: "#",
+    title: 'Smart Code Analysis',
+    link: '#',
     summary:
-      "Advanced AI that analyzes your code in real-time, identifying patterns and potential improvements as you type.",
+      'Advanced AI that analyzes your code in real-time, identifying patterns and potential improvements as you type.',
   },
   {
-    video: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/video-6.mp4",
+    video:
+      'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/video-6.mp4',
     Icon: Languages,
-    title: "Multi-Language Support",
-    link: "#",
+    title: 'Multi-Language Support',
+    link: '#',
     summary:
-      "Seamlessly work with multiple programming languages while maintaining consistent code quality and style.",
+      'Seamlessly work with multiple programming languages while maintaining consistent code quality and style.',
   },
   {
-    video: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/video-7-640_360_30fps.mp4",
+    video:
+      'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/video-7-640_360_30fps.mp4',
     Icon: AudioLines,
-    title: "Intelligent Refactoring",
-    link: "#",
+    title: 'Intelligent Refactoring',
+    link: '#',
     summary:
-      "Let AI handle complex refactoring tasks, from method extraction to class restructuring, with perfect accuracy.",
+      'Let AI handle complex refactoring tasks, from method extraction to class restructuring, with perfect accuracy.',
   },
   {
-    video: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/video-5.mp4",
+    video:
+      'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/video-5.mp4',
     Icon: ListMinus,
-    title: "Code Cleanup",
-    link: "#",
+    title: 'Code Cleanup',
+    link: '#',
     summary:
-      "Automatically remove unused imports, dead code, and redundant statements while maintaining functionality.",
+      'Automatically remove unused imports, dead code, and redundant statements while maintaining functionality.',
   },
   {
-    video: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/video-1.mp4",
+    video:
+      'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/video-1.mp4',
     Icon: ScanFace,
-    title: "Security Scanner",
-    link: "#",
+    title: 'Security Scanner',
+    link: '#',
     summary:
-      "Advanced vulnerability detection that identifies potential security risks and suggests immediate fixes.",
+      'Advanced vulnerability detection that identifies potential security risks and suggests immediate fixes.',
   },
   {
-    video: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/video-6.mp4",
+    video:
+      'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/video-6.mp4',
     Icon: TextQuote,
-    title: "Documentation Generator",
-    link: "#",
+    title: 'Documentation Generator',
+    link: '#',
     summary:
-      "Transform your code into comprehensive documentation with AI-powered comment generation and formatting.",
+      'Transform your code into comprehensive documentation with AI-powered comment generation and formatting.',
   },
   {
-    video: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/video-7-640_360_30fps.mp4",
+    video:
+      'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/video-7-640_360_30fps.mp4',
     Icon: Captions,
-    title: "Code Suggestions",
-    link: "#",
+    title: 'Code Suggestions',
+    link: '#',
     summary:
-      "Get intelligent code completions and suggestions that adapt to your coding style and project requirements.",
+      'Get intelligent code completions and suggestions that adapt to your coding style and project requirements.',
   },
 ];
 const CarouselCard = ({ video, Icon, title, link, summary }: card) => {
@@ -109,7 +117,7 @@ const CarouselCard = ({ video, Icon, title, link, summary }: card) => {
         }
       }}
     >
-      <Card className="min-h-[39.75rem] bg-muted p-8 shadow-none transition-all group-hover:shadow-md">
+      <Card className="bg-muted min-h-[39.75rem] p-8 shadow-none transition-all group-hover:shadow-md">
         <CardContent className="p-0">
           <div className="relative">
             <div className="h-[20rem] w-full overflow-hidden rounded-[0.5rem]">
@@ -121,12 +129,12 @@ const CarouselCard = ({ video, Icon, title, link, summary }: card) => {
                 muted={true}
               />
             </div>
-            <div className="absolute -top-3 -left-2 flex size-9 rounded-[0.5rem] bg-primary">
-              <Icon className="m-auto size-4 stroke-primary-foreground" />
+            <div className="bg-primary absolute -top-3 -left-2 flex size-9 rounded-[0.5rem]">
+              <Icon className="stroke-primary-foreground m-auto size-4" />
             </div>
           </div>
           <div className="mt-8 flex flex-col gap-2">
-            <CardTitle className="text-2xl leading-[130%] font-normal tracking-[-0.48px] text-foreground">
+            <CardTitle className="text-foreground text-2xl leading-[130%] font-normal tracking-[-0.48px]">
               {title}
             </CardTitle>
             <CardDescription className="text-lg leading-[150%] tracking-[-0.36px]">
@@ -154,7 +162,7 @@ const Feature214 = () => {
         </div>
         <Carousel
           opts={{
-            align: "start",
+            align: 'start',
           }}
           className="w-full"
         >

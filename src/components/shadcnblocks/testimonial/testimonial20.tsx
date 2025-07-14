@@ -1,6 +1,6 @@
-import { Sparkle } from "lucide-react";
+import { Sparkle } from 'lucide-react';
 
-import { Avatar, AvatarImage } from "@/components/ui/avatar";
+import { Avatar, AvatarImage } from '@/components/ui/avatar';
 
 const Testimonial20 = () => {
   return (
@@ -42,19 +42,19 @@ const Testimonial20 = () => {
           </div>
           <Sparkle
             strokeWidth={1}
-            className="absolute -top-[9px] -left-[9px] size-4 fill-primary"
+            className="fill-primary absolute -top-[9px] -left-[9px] size-4"
           />
           <Sparkle
             strokeWidth={1}
-            className="absolute -top-2 -right-2 size-4 fill-primary"
+            className="fill-primary absolute -top-2 -right-2 size-4"
           />
           <Sparkle
             strokeWidth={1}
-            className="absolute -right-2 -bottom-2 size-4 fill-primary"
+            className="fill-primary absolute -right-2 -bottom-2 size-4"
           />
           <Sparkle
             strokeWidth={1}
-            className="absolute -bottom-2 -left-2 size-4 fill-primary"
+            className="fill-primary absolute -bottom-2 -left-2 size-4"
           />
         </div>
       </div>

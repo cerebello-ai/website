@@ -1,48 +1,53 @@
-"use client";
+'use client';
 
-import { Bolt, Cloud, MessagesSquare, Star } from "lucide-react";
-import { useEffect, useState } from "react";
+import { useEffect, useState } from 'react';
 
-import { Badge } from "@/components/ui/badge";
-import type { CarouselApi } from "@/components/ui/carousel";
+import { Bolt, Cloud, MessagesSquare, Star } from 'lucide-react';
+
+import { Badge } from '@/components/ui/badge';
+import type { CarouselApi } from '@/components/ui/carousel';
 import {
   Carousel,
   CarouselContent,
   CarouselItem,
-} from "@/components/ui/carousel";
+} from '@/components/ui/carousel';
 
 const features = [
   {
-    id: "feature-1",
-    title: "Cloud Storage",
+    id: 'feature-1',
+    title: 'Cloud Storage',
     description:
-      "Nam vitae molestie arcu. Quisque eu libero orci. Aliquam imperdiet magna nec massa consectetur, id interdum ante congue.",
+      'Nam vitae molestie arcu. Quisque eu libero orci. Aliquam imperdiet magna nec massa consectetur, id interdum ante congue.',
     icon: Cloud,
-    image: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-1.svg",
+    image:
+      'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-1.svg',
   },
   {
-    id: "feature-2",
-    title: "Premium Support",
+    id: 'feature-2',
+    title: 'Premium Support',
     description:
-      "Nam vitae molestie arcu. Quisque eu libero orci. Aliquam imperdiet magna nec massa consectetur, id interdum ante congue.",
+      'Nam vitae molestie arcu. Quisque eu libero orci. Aliquam imperdiet magna nec massa consectetur, id interdum ante congue.',
     icon: Star,
-    image: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-2.svg",
+    image:
+      'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-2.svg',
   },
   {
-    id: "feature-3",
-    title: "Fast Performance",
+    id: 'feature-3',
+    title: 'Fast Performance',
     description:
-      "Nam vitae molestie arcu. Quisque eu libero orci. Aliquam imperdiet magna nec massa consectetur, id interdum ante congue.",
+      'Nam vitae molestie arcu. Quisque eu libero orci. Aliquam imperdiet magna nec massa consectetur, id interdum ante congue.',
     icon: Bolt,
-    image: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-3.svg",
+    image:
+      'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-3.svg',
   },
   {
-    id: "feature-4",
-    title: "Messaging Platform",
+    id: 'feature-4',
+    title: 'Messaging Platform',
     description:
-      "Nam vitae molestie arcu. Quisque eu libero orci. Aliquam imperdiet magna nec massa consectetur, id interdum ante congue.",
+      'Nam vitae molestie arcu. Quisque eu libero orci. Aliquam imperdiet magna nec massa consectetur, id interdum ante congue.',
     icon: MessagesSquare,
-    image: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-4.svg",
+    image:
+      'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-4.svg',
   },
 ];
 
@@ -52,14 +57,14 @@ const Feature57 = () => {
 
   const handleSelection = (index: number) => {
     setSelection(index);
-    const mobileCarousel = document.querySelector(".snap-x.snap-mandatory");
+    const mobileCarousel = document.querySelector('.snap-x.snap-mandatory');
     if (mobileCarousel) {
       const slides = Array.from(mobileCarousel.children);
       if (slides[index]) {
         slides[index].scrollIntoView({
-          behavior: "smooth",
-          block: "nearest",
-          inline: "center",
+          behavior: 'smooth',
+          block: 'nearest',
+          inline: 'center',
         });
       }
     }
@@ -79,9 +84,9 @@ const Feature57 = () => {
     const updateSelection = () => {
       setSelection(carouselApi.selectedScrollSnap());
     };
-    carouselApi.on("select", updateSelection);
+    carouselApi.on('select', updateSelection);
     return () => {
-      carouselApi.off("select", updateSelection);
+      carouselApi.off('select', updateSelection);
     };
   }, [carouselApi]);
 
@@ -95,7 +100,7 @@ const Feature57 = () => {
           <h2 className="text-3xl leading-tight font-bold md:text-4xl lg:text-5xl">
             Discover What Makes Us Different
           </h2>
-          <p className="mx-auto mt-3 max-w-2xl text-sm text-muted-foreground md:mt-4 md:text-base">
+          <p className="text-muted-foreground mx-auto mt-3 max-w-2xl text-sm md:mt-4 md:text-base">
             Our platform combines powerful features with elegant design to help
             you accomplish more.
           </p>
@@ -108,7 +113,7 @@ const Feature57 = () => {
               {features.map((feature, i) => (
                 <div
                   key={feature.id}
-                  className="relative h-[min(30rem,65vh)] w-[min(100%,100vw)] shrink-0 cursor-pointer snap-center overflow-hidden rounded-xl border border-border"
+                  className="border-border relative h-[min(30rem,65vh)] w-[min(100%,100vw)] shrink-0 cursor-pointer snap-center overflow-hidden rounded-xl border"
                   onClick={() => handleSelection(i)}
                 >
                   <img
@@ -116,16 +121,16 @@ const Feature57 = () => {
                     alt={feature.title}
                     className="h-full w-full object-cover object-center"
                   />
-                  <div className="absolute inset-x-0 bottom-0 bg-linear-to-t from-background/95 via-background/70 to-transparent px-4 py-5">
+                  <div className="from-background/95 via-background/70 absolute inset-x-0 bottom-0 bg-linear-to-t to-transparent px-4 py-5">
                     <div className="flex items-center gap-3">
-                      <div className="flex size-10 items-center justify-center rounded-lg bg-primary p-2 text-primary-foreground">
+                      <div className="bg-primary text-primary-foreground flex size-10 items-center justify-center rounded-lg p-2">
                         <feature.icon className="size-5" />
                       </div>
                       <div>
-                        <h3 className="text-lg font-semibold text-foreground">
+                        <h3 className="text-foreground text-lg font-semibold">
                           {feature.title}
                         </h3>
-                        <p className="mt-1 line-clamp-2 text-xs text-muted-foreground">
+                        <p className="text-muted-foreground mt-1 line-clamp-2 text-xs">
                           {feature.description}
                         </p>
                       </div>
@@ -142,8 +147,8 @@ const Feature57 = () => {
                   key={i}
                   className={`size-2 rounded-full transition-all ${
                     selection === i
-                      ? "w-6 bg-primary"
-                      : "bg-muted hover:bg-muted-foreground/50"
+                      ? 'bg-primary w-6'
+                      : 'bg-muted hover:bg-muted-foreground/50'
                   }`}
                   onClick={() => handleSelection(i)}
                   aria-label={`Go to slide ${i + 1}`}
@@ -161,18 +166,18 @@ const Feature57 = () => {
                       key={feature.id}
                       className={`group relative flex cursor-pointer rounded-xl border px-4 py-3 transition-all duration-300 md:px-5 md:py-4 ${
                         isSelected
-                          ? "border-border bg-accent shadow-sm"
-                          : "border-transparent hover:border-border hover:bg-accent/30"
+                          ? 'border-border bg-accent shadow-sm'
+                          : 'hover:border-border hover:bg-accent/30 border-transparent'
                       }`}
-                      data-open={isSelected ? "true" : undefined}
+                      data-open={isSelected ? 'true' : undefined}
                       onClick={() => handleSelection(i)}
                     >
                       <div className="flex w-full items-start gap-3 md:gap-4">
                         <div
                           className={`flex aspect-square w-9 shrink-0 items-center justify-center rounded-lg transition-colors md:w-10 ${
                             isSelected
-                              ? "bg-primary text-primary-foreground"
-                              : "bg-muted text-muted-foreground"
+                              ? 'bg-primary text-primary-foreground'
+                              : 'bg-muted text-muted-foreground'
                           }`}
                         >
                           <feature.icon className="size-4 md:size-5" />
@@ -181,13 +186,13 @@ const Feature57 = () => {
                           <h3
                             className={`mb-1 text-sm font-semibold transition-colors md:text-base lg:text-lg ${
                               isSelected
-                                ? "text-foreground"
-                                : "text-muted-foreground"
+                                ? 'text-foreground'
+                                : 'text-muted-foreground'
                             }`}
                           >
                             {feature.title}
                           </h3>
-                          <p className="line-clamp-2 text-xs text-muted-foreground transition-all md:text-sm md:group-data-open:opacity-100 lg:text-sm">
+                          <p className="text-muted-foreground line-clamp-2 text-xs transition-all md:text-sm md:group-data-open:opacity-100 lg:text-sm">
                             {feature.description}
                           </p>
                         </div>
@@ -200,7 +205,7 @@ const Feature57 = () => {
 
             {/* Desktop Image Carousel */}
             <div className="relative hidden md:block md:w-1/2 lg:w-3/5">
-              <div className="overflow-hidden rounded-xl border border-border shadow-sm">
+              <div className="border-border overflow-hidden rounded-xl border shadow-sm">
                 <Carousel
                   setApi={setCarouselApi}
                   className="aspect-4/5 max-h-[500px] w-full md:aspect-3/4 lg:aspect-4/5 [&>div]:h-full"
@@ -217,12 +222,12 @@ const Feature57 = () => {
                             alt={feature.title}
                             className="h-full w-full object-cover object-center transition-transform duration-500"
                           />
-                          <div className="absolute right-0 bottom-0 left-0 bg-linear-to-t from-background/80 via-background/40 to-transparent p-6">
+                          <div className="from-background/80 via-background/40 absolute right-0 bottom-0 left-0 bg-linear-to-t to-transparent p-6">
                             <div className="flex items-center gap-3">
-                              <div className="flex aspect-square w-10 items-center justify-center rounded-lg bg-primary text-primary-foreground">
+                              <div className="bg-primary text-primary-foreground flex aspect-square w-10 items-center justify-center rounded-lg">
                                 <feature.icon className="size-5" />
                               </div>
-                              <h3 className="text-xl font-semibold text-foreground">
+                              <h3 className="text-foreground text-xl font-semibold">
                                 {feature.title}
                               </h3>
                             </div>
@@ -241,8 +246,8 @@ const Feature57 = () => {
                     key={i}
                     className={`size-2 rounded-full transition-all ${
                       selection === i
-                        ? "w-6 bg-primary"
-                        : "bg-muted hover:bg-muted-foreground/50"
+                        ? 'bg-primary w-6'
+                        : 'bg-muted hover:bg-muted-foreground/50'
                     }`}
                     onClick={() => handleSelection(i)}
                     aria-label={`Go to slide ${i + 1}`}

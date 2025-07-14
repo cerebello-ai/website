@@ -4,7 +4,7 @@ import {
   MessageSquare,
   Star,
   Zap,
-} from "lucide-react";
+} from 'lucide-react';
 
 const Feature118 = () => {
   return (
@@ -21,10 +21,10 @@ const Feature118 = () => {
             </p>
           </div>
           <div className="grid grid-cols-1 gap-y-12 lg:grid-cols-3 lg:gap-12">
-            <div className="col-span-2 grid gap-7 rounded-lg bg-background p-7 md:grid-cols-2">
+            <div className="bg-background col-span-2 grid gap-7 rounded-lg p-7 md:grid-cols-2">
               <div className="flex h-full flex-col justify-between gap-3">
                 <div>
-                  <span className="flex size-14 items-center justify-center rounded-full bg-muted">
+                  <span className="bg-muted flex size-14 items-center justify-center rounded-full">
                     <LucideGitGraph className="h-auto w-5" />
                   </span>
                   <h2 className="mt-5 text-xl font-semibold lg:text-3xl">
@@ -42,10 +42,10 @@ const Feature118 = () => {
                 className="aspect-video h-full w-full rounded-xl object-cover md:aspect-auto"
               />
             </div>
-            <div className="rounded-lg bg-background p-7">
+            <div className="bg-background rounded-lg p-7">
               <div className="flex h-full flex-col justify-between gap-6">
                 <div>
-                  <span className="flex size-14 items-center justify-center rounded-full bg-muted">
+                  <span className="bg-muted flex size-14 items-center justify-center rounded-full">
                     <Zap className="h-auto w-5" />
                   </span>
                   <h2 className="mt-5 text-xl font-semibold lg:text-3xl">
@@ -69,7 +69,7 @@ const Feature118 = () => {
               </div>
             </div>
           </div>
-          <div className="grid items-center gap-12 rounded-lg bg-background p-7 md:p-10 lg:grid-cols-3">
+          <div className="bg-background grid items-center gap-12 rounded-lg p-7 md:p-10 lg:grid-cols-3">
             <h2 className="text-xl font-semibold lg:text-3xl">
               Generate detailed reports with just a few clicks
             </h2>

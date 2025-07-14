@@ -12,13 +12,13 @@ const Casestudies1 = () => {
               alt="placeholder"
               className="absolute inset-0 h-full w-full rounded-2xl object-cover transition-transform duration-700 group-hover:scale-105"
             />
-            <div className="absolute inset-0 bg-linear-to-t from-foreground/80 to-foreground/10"></div>
+            <div className="from-foreground/80 to-foreground/10 absolute inset-0 bg-linear-to-t"></div>
             <img
               src="https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/vercel-wordmark-white.svg"
               alt="logo"
               className="isolate h-7 w-fit"
             />
-            <h2 className="isolate max-w-sm text-lg font-semibold text-background lg:text-xl lg:font-semibold">
+            <h2 className="text-background isolate max-w-sm text-lg font-semibold lg:text-xl lg:font-semibold">
               Discover how our solutions drive business growth
             </h2>
           </a>
@@ -31,13 +31,13 @@ const Casestudies1 = () => {
               alt="placeholder"
               className="absolute inset-0 h-full w-full rounded-2xl object-cover transition-transform duration-700 group-hover:scale-105"
             />
-            <div className="absolute inset-0 bg-linear-to-t from-foreground/80 to-foreground/10"></div>
+            <div className="from-foreground/80 to-foreground/10 absolute inset-0 bg-linear-to-t"></div>
             <img
               src="https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/react-wordmark-white.svg"
               alt="logo"
               className="isolate h-9 w-fit"
             />
-            <h2 className="isolate max-w-sm text-lg font-semibold text-background lg:text-xl lg:font-semibold">
+            <h2 className="text-background isolate max-w-sm text-lg font-semibold lg:text-xl lg:font-semibold">
               Learn how our platform enhances business performance
             </h2>
           </a>
@@ -50,13 +50,13 @@ const Casestudies1 = () => {
               alt="placeholder"
               className="absolute inset-0 h-full w-full rounded-2xl object-cover transition-transform duration-700 group-hover:scale-105"
             />
-            <div className="absolute inset-0 bg-linear-to-t from-foreground/80 to-foreground/10"></div>
+            <div className="from-foreground/80 to-foreground/10 absolute inset-0 bg-linear-to-t"></div>
             <img
               src="https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/shadcn-ui-wordmark-white.svg"
               alt="logo"
               className="isolate h-8 w-fit"
             />
-            <h2 className="isolate max-w-sm text-lg font-semibold text-background lg:text-xl lg:font-semibold">
+            <h2 className="text-background isolate max-w-sm text-lg font-semibold lg:text-xl lg:font-semibold">
               Discover how our tools empower your business for the future
             </h2>
           </a>
@@ -69,13 +69,13 @@ const Casestudies1 = () => {
               alt="placeholder"
               className="absolute inset-0 h-full w-full rounded-2xl object-cover transition-transform duration-700 group-hover:scale-105"
             />
-            <div className="absolute inset-0 bg-linear-to-t from-foreground/80 to-foreground/10"></div>
+            <div className="from-foreground/80 to-foreground/10 absolute inset-0 bg-linear-to-t"></div>
             <img
               src="https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/tailwind-wordmark-white.svg"
               alt="logo"
               className="isolate h-7 w-fit"
             />
-            <h2 className="isolate max-w-sm text-lg font-semibold text-background lg:text-xl lg:font-semibold">
+            <h2 className="text-background isolate max-w-sm text-lg font-semibold lg:text-xl lg:font-semibold">
               Explore how our services can benefit your business
             </h2>
           </a>
@@ -88,13 +88,13 @@ const Casestudies1 = () => {
               alt="placeholder"
               className="absolute inset-0 h-full w-full rounded-2xl object-cover transition-transform duration-700 group-hover:scale-105"
             />
-            <div className="absolute inset-0 bg-linear-to-t from-foreground/80 to-foreground/10"></div>
+            <div className="from-foreground/80 to-foreground/10 absolute inset-0 bg-linear-to-t"></div>
             <img
               src="https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/nextjs-wordmark-white.svg"
               alt="logo"
               className="isolate h-6 w-fit"
             />
-            <h2 className="isolate max-w-sm text-lg font-semibold text-background lg:text-xl lg:font-semibold">
+            <h2 className="text-background isolate max-w-sm text-lg font-semibold lg:text-xl lg:font-semibold">
               See how our offerings boost your success in business
             </h2>
           </a>
@@ -107,13 +107,13 @@ const Casestudies1 = () => {
               alt="placeholder"
               className="absolute inset-0 h-full w-full rounded-2xl object-cover transition-transform duration-700 group-hover:scale-105"
             />
-            <div className="absolute inset-0 bg-linear-to-t from-foreground/80 to-foreground/10"></div>
+            <div className="from-foreground/80 to-foreground/10 absolute inset-0 bg-linear-to-t"></div>
             <img
               src="https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/supabase-wordmark-white.svg"
               alt="logo"
               className="isolate h-8 w-fit"
             />
-            <h2 className="isolate max-w-sm text-lg font-semibold text-background lg:text-xl lg:font-semibold">
+            <h2 className="text-background isolate max-w-sm text-lg font-semibold lg:text-xl lg:font-semibold">
               Learn how our services can elevate your success in business growth
             </h2>
           </a>

@@ -1,4 +1,4 @@
-import { Badge } from "@/components/ui/badge";
+import { Badge } from '@/components/ui/badge';
 
 const Feature206 = () => {
   return (
@@ -11,7 +11,7 @@ const Feature206 = () => {
           <h2 className="text-4xl font-medium md:text-5xl">
             Transform Your Experience
           </h2>
-          <p className="max-w-2xl text-lg text-muted-foreground">
+          <p className="text-muted-foreground max-w-2xl text-lg">
             Discover innovative solutions to elevate your journey. From basics
             to advanced features, experience excellence at each level.
           </p>
@@ -22,10 +22,10 @@ const Feature206 = () => {
             alt="placeholder"
             className="aspect-square size-full rounded-2xl object-cover md:order-1 xl:order-1"
           />
-          <div className="flex flex-col justify-between gap-20 rounded-2xl bg-muted/50 p-12 md:order-2 md:gap-32 xl:order-2">
+          <div className="bg-muted/50 flex flex-col justify-between gap-20 rounded-2xl p-12 md:order-2 md:gap-32 xl:order-2">
             <h3 className="text-2xl">Smart Solutions</h3>
             <div className="">
-              <p className="mb-8 text-muted-foreground">
+              <p className="text-muted-foreground mb-8">
                 Experience groundbreaking capabilities that redefine
                 possibilities and unlock through innovation.
               </p>
@@ -60,7 +60,7 @@ const Feature206 = () => {
           <div className="flex flex-col justify-between gap-20 rounded-2xl bg-[#d1efef] p-12 md:order-6 md:gap-32 xl:order-5">
             <h3 className="text-2xl">Custom Integration</h3>
             <div className="">
-              <p className="mb-8 text-muted-foreground">
+              <p className="text-muted-foreground mb-8">
                 Enhance your experience with advanced capabilities. Discover new
                 possibilities for growth and success.
               </p>
@@ -74,10 +74,10 @@ const Feature206 = () => {
             alt="placeholder"
             className="aspect-square size-full rounded-2xl object-cover md:order-8"
           />
-          <div className="flex flex-col justify-between gap-20 rounded-2xl bg-muted/50 p-12 md:order-7 md:gap-32">
+          <div className="bg-muted/50 flex flex-col justify-between gap-20 rounded-2xl p-12 md:order-7 md:gap-32">
             <h3 className="text-2xl">Expert Support</h3>
             <div className="">
-              <p className="mb-8 text-muted-foreground">
+              <p className="text-muted-foreground mb-8">
                 Access insights and recommendations tailored to your needs.
                 Navigate your path with confidence.
               </p>

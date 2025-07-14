@@ -1,16 +1,16 @@
-import { Banknote, Repeat, ShoppingBag, ShoppingCart } from "lucide-react";
+import { Banknote, Repeat, ShoppingBag, ShoppingCart } from 'lucide-react';
 
-import { AspectRatio } from "@/components/ui/aspect-ratio";
-import { Button } from "@/components/ui/button";
+import { AspectRatio } from '@/components/ui/aspect-ratio';
+import { Button } from '@/components/ui/button';
 
 const Hero125 = () => {
   return (
     <section className="relative overflow-hidden py-20 font-sans after:absolute after:bottom-0 after:left-0 after:block after:h-20 after:w-full after:bg-[linear-gradient(var(--color-transparent),var(--color-white))] after:content-[''] md:py-40">
-      <div className="container relative">
+      <div className="relative container">
         <img
           src="https://deifkwefumgah.cloudfront.net/shadcnblocks/block/patterns/circles.svg"
           alt=""
-          className="absolute right-[-86.25rem] top-[-68.75rem] z-[-1] block aspect-square h-auto w-[181.25rem] max-w-none"
+          className="absolute top-[-68.75rem] right-[-86.25rem] z-[-1] block aspect-square h-auto w-[181.25rem] max-w-none"
         />
         <div className="grid grid-cols-1 items-center justify-center gap-16 lg:grid-cols-2">
           <div className="flex flex-col gap-6">
@@ -18,7 +18,7 @@ const Hero125 = () => {
               <ShoppingCart className="fill-primary stroke-primary h-6 w-6" />
               <p className="text-lg font-semibold">Returns</p>
             </div>
-            <h1 className="leading-tight! text-5xl font-semibold xl:text-6xl">
+            <h1 className="text-5xl leading-tight! font-semibold xl:text-6xl">
               Go beyond managing returns, take control and perfect them.
             </h1>
             <p className="text-muted-foreground text-2xl leading-snug">
@@ -28,7 +28,7 @@ const Hero125 = () => {
             <Button
               asChild
               variant="default"
-              className="block h-fit w-fit rounded-full px-6 py-2 text-base font-semibold leading-loose"
+              className="block h-fit w-fit rounded-full px-6 py-2 text-base leading-loose font-semibold"
             >
               <a href="#">Book a demo</a>
             </Button>

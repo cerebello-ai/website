@@ -1,17 +1,19 @@
-import { format } from "date-fns";
-import { Lightbulb } from "lucide-react";
+import { format } from 'date-fns';
+import { Lightbulb } from 'lucide-react';
 
-import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert";
-import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
+import { Alert, AlertDescription, AlertTitle } from '@/components/ui/alert';
+import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
 
 const defaultPost = {
-  title: "Designing websites faster with shadcn/ui",
-  authorName: "John Doe",
-  image: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-1.svg",
+  title: 'Designing websites faster with shadcn/ui',
+  authorName: 'John Doe',
+  image:
+    'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-1.svg',
   pubDate: new Date(),
   description:
-    "A step-by-step guide to building a modern, responsive blog using React and Tailwind CSS.",
-  authorImage: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/avatar-2.webp",
+    'A step-by-step guide to building a modern, responsive blog using React and Tailwind CSS.',
+  authorImage:
+    'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/avatar-2.webp',
 };
 
 interface BlogPostData {
@@ -29,7 +31,7 @@ const Blogpost1 = ({ post = defaultPost }: { post?: BlogPostData }) => {
     <section className="py-32">
       <div className="container">
         <div className="mx-auto flex max-w-5xl flex-col items-center gap-4 text-center">
-          <h1 className="max-w-3xl text-pretty text-5xl font-semibold md:text-6xl">
+          <h1 className="max-w-3xl text-5xl font-semibold text-pretty md:text-6xl">
             {title}
           </h1>
           <h3 className="text-muted-foreground max-w-3xl text-lg md:text-xl">
@@ -44,13 +46,13 @@ const Blogpost1 = ({ post = defaultPost }: { post?: BlogPostData }) => {
               <a href="#" className="font-semibold">
                 {authorName}
               </a>
-              <span className="ml-1">on {format(pubDate, "MMMM d, yyyy")}</span>
+              <span className="ml-1">on {format(pubDate, 'MMMM d, yyyy')}</span>
             </span>
           </div>
           <img
             src={image}
             alt="placeholder"
-            className="mb-8 mt-4 aspect-video w-full rounded-lg border object-cover"
+            className="mt-4 mb-8 aspect-video w-full rounded-lg border object-cover"
           />
         </div>
       </div>
@@ -121,7 +123,7 @@ const Blogpost1 = ({ post = defaultPost }: { post?: BlogPostData }) => {
             className="my-8 aspect-video w-full rounded-md object-cover"
           />
           <p>
-            The king thought long and hard, and finally came up with{" "}
+            The king thought long and hard, and finally came up with{' '}
             <a href="#">a brilliant plan</a>: he would tax the jokes in the
             kingdom.
           </p>

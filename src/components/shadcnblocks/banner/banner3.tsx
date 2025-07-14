@@ -1,9 +1,10 @@
-"use client";
+'use client';
 
-import { ShoppingBag, X } from "lucide-react";
-import { useState } from "react";
+import { useState } from 'react';
 
-import { Button } from "@/components/ui/button";
+import { ShoppingBag, X } from 'lucide-react';
+
+import { Button } from '@/components/ui/button';
 
 interface Banner3Props {
   title: string;
@@ -14,10 +15,10 @@ interface Banner3Props {
 }
 
 const Banner3 = ({
-  title = "Black Friday Sale! 🎉",
-  description = "Up to 70% off on all components. Limited time only!",
-  buttonText = "Shop Now",
-  buttonUrl = "https://shadcnblocks.com",
+  title = 'Black Friday Sale! 🎉',
+  description = 'Up to 70% off on all components. Limited time only!',
+  buttonText = 'Shop Now',
+  buttonUrl = 'https://shadcnblocks.com',
   defaultVisible = true,
 }: Banner3Props) => {
   const [isVisible, setIsVisible] = useState(defaultVisible);
@@ -35,7 +36,7 @@ const Banner3 = ({
           <Button
             variant="ghost"
             size="icon"
-            className="absolute right-0 top-0 h-8 w-8 md:hidden"
+            className="absolute top-0 right-0 h-8 w-8 md:hidden"
             onClick={handleClose}
           >
             <X className="h-4 w-4" />

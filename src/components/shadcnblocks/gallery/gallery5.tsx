@@ -1,4 +1,6 @@
-"use client";
+'use client';
+
+import { useEffect, useState } from 'react';
 
 import {
   ArrowLeft,
@@ -8,63 +10,67 @@ import {
   Focus,
   Target,
   Users,
-} from "lucide-react";
-import { useEffect, useState } from "react";
+} from 'lucide-react';
 
-import { Button } from "@/components/ui/button";
-import type { CarouselApi } from "@/components/ui/carousel";
+import { Button } from '@/components/ui/button';
+import type { CarouselApi } from '@/components/ui/carousel';
 import {
   Carousel,
   CarouselContent,
   CarouselItem,
-} from "@/components/ui/carousel";
-import { ToggleGroup, ToggleGroupItem } from "@/components/ui/toggle-group";
+} from '@/components/ui/carousel';
+import { ToggleGroup, ToggleGroupItem } from '@/components/ui/toggle-group';
 
 const data = [
   {
-    id: "item-1",
-    title: "Task Management",
+    id: 'item-1',
+    title: 'Task Management',
     icon: CheckSquare,
     description:
-      "Organize your tasks with our intuitive interface. Create, prioritize, and track your progress with ease. Set deadlines, add labels, and never miss an important deadline again.",
-    href: "#",
-    image: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-1.svg",
+      'Organize your tasks with our intuitive interface. Create, prioritize, and track your progress with ease. Set deadlines, add labels, and never miss an important deadline again.',
+    href: '#',
+    image:
+      'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-1.svg',
   },
   {
-    id: "item-2",
-    title: "Time Tracking",
+    id: 'item-2',
+    title: 'Time Tracking',
     icon: Clock,
     description:
-      "Monitor how you spend your time with detailed analytics. Identify productivity patterns, eliminate time-wasting activities, and optimize your daily schedule for maximum efficiency.",
-    href: "#",
-    image: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-2.svg",
+      'Monitor how you spend your time with detailed analytics. Identify productivity patterns, eliminate time-wasting activities, and optimize your daily schedule for maximum efficiency.',
+    href: '#',
+    image:
+      'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-2.svg',
   },
   {
-    id: "item-3",
-    title: "Team Collaboration",
+    id: 'item-3',
+    title: 'Team Collaboration',
     icon: Users,
     description:
-      "Work seamlessly with your team in real-time. Share tasks, communicate through integrated chat, and keep everyone aligned with shared goals and milestones.",
-    href: "#",
-    image: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-3.svg",
+      'Work seamlessly with your team in real-time. Share tasks, communicate through integrated chat, and keep everyone aligned with shared goals and milestones.',
+    href: '#',
+    image:
+      'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-3.svg',
   },
   {
-    id: "item-4",
-    title: "Goal Tracking & Habits",
+    id: 'item-4',
+    title: 'Goal Tracking & Habits',
     icon: Target,
     description:
-      "Turn your aspirations into achievable goals with our habit-building system. Track your progress, maintain streaks, and visualize your journey toward lasting behavioral change.",
-    href: "#",
-    image: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-4.svg",
+      'Turn your aspirations into achievable goals with our habit-building system. Track your progress, maintain streaks, and visualize your journey toward lasting behavioral change.',
+    href: '#',
+    image:
+      'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-4.svg',
   },
   {
-    id: "item-5",
-    title: "Focus Sessions",
+    id: 'item-5',
+    title: 'Focus Sessions',
     icon: Focus,
     description:
-      "Boost your concentration with our Pomodoro-inspired focus timer. Block distractions, maintain deep work states, and balance productivity with necessary breaks.",
-    href: "#",
-    image: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-5.svg",
+      'Boost your concentration with our Pomodoro-inspired focus timer. Block distractions, maintain deep work states, and balance productivity with necessary breaks.',
+    href: '#',
+    image:
+      'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-5.svg',
   },
 ];
 
@@ -89,9 +95,9 @@ const Gallery5 = () => {
       setSelection(carouselApi.selectedScrollSnap());
     };
     updateSelection();
-    carouselApi.on("select", updateSelection);
+    carouselApi.on('select', updateSelection);
     return () => {
-      carouselApi.off("select", updateSelection);
+      carouselApi.off('select', updateSelection);
     };
   }, [carouselApi]);
   return (
@@ -164,7 +170,7 @@ const Gallery5 = () => {
           setApi={setCarouselApi}
           opts={{
             breakpoints: {
-              "(max-width: 768px)": {
+              '(max-width: 768px)': {
                 dragFree: true,
               },
             },
@@ -174,7 +180,7 @@ const Gallery5 = () => {
             {data.map((item) => (
               <CarouselItem key={item.id} className="pl-[40px]">
                 <a href={item.href} className="group rounded-xl">
-                  <div className="flex flex-col overflow-clip rounded-xl border border-border md:col-span-2 md:grid md:grid-cols-2 md:gap-6 lg:gap-8">
+                  <div className="border-border flex flex-col overflow-clip rounded-xl border md:col-span-2 md:grid md:grid-cols-2 md:gap-6 lg:gap-8">
                     <div className="md:min-h-[24rem] lg:min-h-[28rem] xl:min-h-[32rem]">
                       <img
                         src={item.image}

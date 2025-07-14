@@ -1,7 +1,7 @@
-"use client";
-import { ArrowRight } from "lucide-react";
+'use client';
+import { ArrowRight } from 'lucide-react';
 
-import { Button } from "@/components/ui/button";
+import { Button } from '@/components/ui/button';
 
 const Feature189 = () => {
   return (
@@ -47,7 +47,7 @@ const Feature189 = () => {
               <div className="flex items-start gap-4">
                 <div>
                   <p className="font-semibold text-black">Boost productivity</p>
-                  <p className="mt-1 text-sm text-muted-foreground sm:text-base">
+                  <p className="text-muted-foreground mt-1 text-sm sm:text-base">
                     Automate repetitive tasks and streamline your workflow to
                     focus on what truly matters.
                   </p>
@@ -60,7 +60,7 @@ const Feature189 = () => {
                   <p className="font-semibold text-black">
                     Real-time collaboration
                   </p>
-                  <p className="mt-1 text-sm text-muted-foreground sm:text-base">
+                  <p className="text-muted-foreground mt-1 text-sm sm:text-base">
                     Work seamlessly with your team, no matter where they are,
                     with real-time updates and communication.
                   </p>
@@ -71,7 +71,7 @@ const Feature189 = () => {
               <div className="flex items-start gap-4">
                 <div>
                   <p className="font-semibold text-black">Advanced analytics</p>
-                  <p className="mt-1 text-sm text-muted-foreground sm:text-base">
+                  <p className="text-muted-foreground mt-1 text-sm sm:text-base">
                     Gain insights into your performance with powerful analytics
                     and data-driven decision-making tools.
                   </p>

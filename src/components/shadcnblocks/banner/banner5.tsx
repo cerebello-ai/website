@@ -1,9 +1,10 @@
-"use client";
+'use client';
 
-import { X } from "lucide-react";
-import { useState } from "react";
+import { useState } from 'react';
 
-import { Button } from "@/components/ui/button";
+import { X } from 'lucide-react';
+
+import { Button } from '@/components/ui/button';
 
 interface Banner5Props {
   title: string;
@@ -14,10 +15,10 @@ interface Banner5Props {
 }
 
 const Banner5 = ({
-  title = "Version 2.0 is now available!",
-  description = "Check out all the new features.",
-  buttonText = "Learn More",
-  buttonUrl = "https://shadcnblocks.com",
+  title = 'Version 2.0 is now available!',
+  description = 'Check out all the new features.',
+  buttonText = 'Learn More',
+  buttonUrl = 'https://shadcnblocks.com',
   defaultVisible = true,
 }: Banner5Props) => {
   const [isVisible, setIsVisible] = useState(defaultVisible);
@@ -29,14 +30,14 @@ const Banner5 = ({
   if (!isVisible) return null;
 
   return (
-    <section className="animate-fade-in absolute left-0 right-0 top-4 z-50 mx-auto max-w-2xl">
+    <section className="animate-fade-in absolute top-4 right-0 left-0 z-50 mx-auto max-w-2xl">
       <div className="mx-4">
         <div className="bg-background w-full rounded-lg border p-4 shadow-md">
           <div className="relative flex flex-col gap-4 md:flex-row md:items-center md:justify-between">
             <Button
               variant="ghost"
               size="icon"
-              className="absolute right-0 top-0 h-8 w-8 md:hidden"
+              className="absolute top-0 right-0 h-8 w-8 md:hidden"
               onClick={handleClose}
             >
               <X className="h-4 w-4" />

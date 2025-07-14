@@ -1,9 +1,9 @@
-import { ArrowRight, FileText } from "lucide-react";
+import { ArrowRight, FileText } from 'lucide-react';
 
-import { Avatar, AvatarImage } from "@/components/ui/avatar";
-import { Badge } from "@/components/ui/badge";
-import { Button } from "@/components/ui/button";
-import { Separator } from "@/components/ui/separator";
+import { Avatar, AvatarImage } from '@/components/ui/avatar';
+import { Badge } from '@/components/ui/badge';
+import { Button } from '@/components/ui/button';
+import { Separator } from '@/components/ui/separator';
 
 const Blog12 = () => {
   return (
@@ -34,14 +34,14 @@ const Blog12 = () => {
               <h2 className="mb-1 font-medium">
                 How to build a successful brand and business online in 2024
               </h2>
-              <p className="line-clamp-2 text-sm text-muted-foreground">
+              <p className="text-muted-foreground line-clamp-2 text-sm">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
                 eiusmod tempor incididunt ut labore et dolore magna aliqua.
               </p>
               <Separator className="my-5" />
               <div className="flex items-center justify-between gap-4">
                 <div className="flex items-center gap-3">
-                  <Avatar className="size-9 rounded-full ring-1 ring-input">
+                  <Avatar className="ring-input size-9 rounded-full ring-1">
                     <AvatarImage
                       src="https://deifkwefumgah.cloudfront.net/shadcnblocks/block/avatar-4.webp"
                       alt="placeholder"
@@ -67,14 +67,14 @@ const Blog12 = () => {
               <h2 className="mb-1 font-medium">
                 The difference between UI and UX and how to design for both
               </h2>
-              <p className="line-clamp-2 text-sm text-muted-foreground">
+              <p className="text-muted-foreground line-clamp-2 text-sm">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
                 eiusmod tempor incididunt ut labore et dolore magna aliqua.
               </p>
               <Separator className="my-5" />
               <div className="flex items-center justify-between gap-4">
                 <div className="flex items-center gap-3">
-                  <Avatar className="size-9 rounded-full ring-1 ring-input">
+                  <Avatar className="ring-input size-9 rounded-full ring-1">
                     <AvatarImage
                       src="https://deifkwefumgah.cloudfront.net/shadcnblocks/block/avatar-1.webp"
                       alt="placeholder"
@@ -100,14 +100,14 @@ const Blog12 = () => {
               <h2 className="mb-1 font-medium">
                 Optimizing your website for SEO and getting more traffic
               </h2>
-              <p className="line-clamp-2 text-sm text-muted-foreground">
+              <p className="text-muted-foreground line-clamp-2 text-sm">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
                 eiusmod tempor incididunt ut labore et dolore magna aliqua.
               </p>
               <Separator className="my-5" />
               <div className="flex items-center justify-between gap-4">
                 <div className="flex items-center gap-3">
-                  <Avatar className="size-9 rounded-full ring-1 ring-input">
+                  <Avatar className="ring-input size-9 rounded-full ring-1">
                     <AvatarImage
                       src="https://deifkwefumgah.cloudfront.net/shadcnblocks/block/avatar-3.webp"
                       alt="placeholder"

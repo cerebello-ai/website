@@ -1,6 +1,6 @@
-import { Github, Linkedin, Twitter } from "lucide-react";
+import { Github, Linkedin, Twitter } from 'lucide-react';
 
-import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
+import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
 
 interface TeamMember {
   id: string;
@@ -20,62 +20,68 @@ interface Team1Props {
 }
 
 const Team3 = ({
-  heading = "Team",
-  description = "Our diverse team of experts brings together decades of experience in design, engineering, and product development.",
+  heading = 'Team',
+  description = 'Our diverse team of experts brings together decades of experience in design, engineering, and product development.',
   members = [
     {
-      id: "member-1",
-      name: "Sarah Chen",
-      role: "CEO & Founder",
-      avatar: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/avatar-1.webp",
-      github: "#",
-      twitter: "#",
-      linkedin: "#",
+      id: 'member-1',
+      name: 'Sarah Chen',
+      role: 'CEO & Founder',
+      avatar:
+        'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/avatar-1.webp',
+      github: '#',
+      twitter: '#',
+      linkedin: '#',
     },
     {
-      id: "member-2",
-      name: "Marcus Rodriguez",
-      role: "CTO",
-      avatar: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/avatar-2.webp",
-      github: "#",
-      twitter: "#",
-      linkedin: "#",
+      id: 'member-2',
+      name: 'Marcus Rodriguez',
+      role: 'CTO',
+      avatar:
+        'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/avatar-2.webp',
+      github: '#',
+      twitter: '#',
+      linkedin: '#',
     },
     {
-      id: "member-3",
-      name: "Emily Watson",
-      role: "Head of Design",
-      avatar: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/avatar-3.webp",
-      github: "#",
-      twitter: "#",
-      linkedin: "#",
+      id: 'member-3',
+      name: 'Emily Watson',
+      role: 'Head of Design',
+      avatar:
+        'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/avatar-3.webp',
+      github: '#',
+      twitter: '#',
+      linkedin: '#',
     },
     {
-      id: "member-4",
-      name: "David Kim",
-      role: "Lead Engineer",
-      avatar: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/avatar-4.webp",
-      github: "#",
-      twitter: "#",
-      linkedin: "#",
+      id: 'member-4',
+      name: 'David Kim',
+      role: 'Lead Engineer',
+      avatar:
+        'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/avatar-4.webp',
+      github: '#',
+      twitter: '#',
+      linkedin: '#',
     },
     {
-      id: "member-5",
-      name: "Lisa Thompson",
-      role: "Product Manager",
-      avatar: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/avatar-5.webp",
-      github: "#",
-      twitter: "#",
-      linkedin: "#",
+      id: 'member-5',
+      name: 'Lisa Thompson',
+      role: 'Product Manager',
+      avatar:
+        'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/avatar-5.webp',
+      github: '#',
+      twitter: '#',
+      linkedin: '#',
     },
     {
-      id: "member-6",
-      name: "Alex Johnson",
-      role: "UX Designer",
-      avatar: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/avatar-6.webp",
-      github: "#",
-      twitter: "#",
-      linkedin: "#",
+      id: 'member-6',
+      name: 'Alex Johnson',
+      role: 'UX Designer',
+      avatar:
+        'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/avatar-6.webp',
+      github: '#',
+      twitter: '#',
+      linkedin: '#',
     },
   ],
 }: Team1Props) => {
@@ -106,9 +112,9 @@ const Team3 = ({
                     <AvatarImage src={member.avatar} className="object-cover" />
                     <AvatarFallback className="from-primary/10 to-primary/5 bg-gradient-to-br text-xl font-semibold">
                       {member.name
-                        .split(" ")
+                        .split(' ')
                         .map((n) => n[0])
-                        .join("")}
+                        .join('')}
                     </AvatarFallback>
                   </Avatar>
                 </div>

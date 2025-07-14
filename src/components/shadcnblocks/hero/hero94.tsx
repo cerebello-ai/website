@@ -1,25 +1,25 @@
-import { Check, MoveRight } from "lucide-react";
+import { Check, MoveRight } from 'lucide-react';
 
-import { Button } from "@/components/ui/button";
+import { Button } from '@/components/ui/button';
 
 const Hero94 = () => {
   return (
     <section className="py-32">
       <div className="container">
         <div className="flex flex-col items-center text-center">
-          <span className="text-sm font-bold text-muted-foreground md:text-xl">
+          <span className="text-muted-foreground text-sm font-bold md:text-xl">
             DECOUPLED CONTENT PLATFORM, PERFECTED
           </span>
-          <h1 className="mt-7 max-w-5xl text-5xl font-bold tracking-tighter text-foreground md:text-6xl lg:text-7xl">
-            In essence, the ultimate, and high-speed{" "}
+          <h1 className="text-foreground mt-7 max-w-5xl text-5xl font-bold tracking-tighter md:text-6xl lg:text-7xl">
+            In essence, the ultimate, and high-speed{' '}
             <span className="relative">
               <span className="relative z-10 whitespace-nowrap">
                 Content System
               </span>
-              <span className="absolute bottom-0 left-0 h-1/3 w-full bg-muted-2"></span>
+              <span className="bg-muted-2 absolute bottom-0 left-0 h-1/3 w-full"></span>
             </span>
           </h1>
-          <p className="mt-14 max-w-4xl text-lg text-foreground md:text-xl lg:text-2xl">
+          <p className="text-foreground mt-14 max-w-4xl text-lg md:text-xl lg:text-2xl">
             This next-generation platform powers contemporary digital
             experiences. Over 25,000 organizations leverage this centralized
             solution to produce and distribute web content through APIs,
@@ -39,11 +39,11 @@ const Hero94 = () => {
           </div>
           <div className="mt-4 flex items-center gap-5 text-sm">
             <div className="flex items-center gap-1">
-              <Check className="size-4 stroke-foreground" />
+              <Check className="stroke-foreground size-4" />
               <span className="text-foreground">No credit card</span>
             </div>
             <div className="flex items-center gap-1">
-              <Check className="size-4 stroke-foreground" />
+              <Check className="stroke-foreground size-4" />
               <span className="text-foreground">Easy setup</span>
             </div>
           </div>

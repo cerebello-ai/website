@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 
 interface FaqItem {
   question: string;
@@ -11,42 +11,42 @@ interface Faq2Props {
 }
 
 const Faq2 = ({
-  heading = "Frequently asked questions",
+  heading = 'Frequently asked questions',
   items = [
     {
-      question: "What is a FAQ?",
+      question: 'What is a FAQ?',
       answer:
-        "A FAQ is a list of frequently asked questions and answers on a particular topic.",
+        'A FAQ is a list of frequently asked questions and answers on a particular topic.',
     },
     {
-      question: "What is the purpose of a FAQ?",
+      question: 'What is the purpose of a FAQ?',
       answer:
-        "The purpose of a FAQ is to provide answers to common questions and help users find the information they need quickly and easily.",
+        'The purpose of a FAQ is to provide answers to common questions and help users find the information they need quickly and easily.',
     },
     {
-      question: "How do I create a FAQ?",
+      question: 'How do I create a FAQ?',
       answer:
-        "To create a FAQ, you need to compile a list of common questions and answers on a particular topic and organize them in a clear and easy-to-navigate format.",
+        'To create a FAQ, you need to compile a list of common questions and answers on a particular topic and organize them in a clear and easy-to-navigate format.',
     },
     {
-      question: "What are the benefits of a FAQ?",
+      question: 'What are the benefits of a FAQ?',
       answer:
-        "The benefits of a FAQ include providing quick and easy access to information, reducing the number of support requests, and improving the overall user experience.",
+        'The benefits of a FAQ include providing quick and easy access to information, reducing the number of support requests, and improving the overall user experience.',
     },
     {
-      question: "How should I organize my FAQ?",
+      question: 'How should I organize my FAQ?',
       answer:
-        "You should organize your FAQ in a logical manner, grouping related questions together and ordering them from most basic to more advanced topics.",
+        'You should organize your FAQ in a logical manner, grouping related questions together and ordering them from most basic to more advanced topics.',
     },
     {
-      question: "How long should FAQ answers be?",
+      question: 'How long should FAQ answers be?',
       answer:
-        "FAQ answers should be concise and to the point, typically a few sentences or a short paragraph is sufficient for most questions.",
+        'FAQ answers should be concise and to the point, typically a few sentences or a short paragraph is sufficient for most questions.',
     },
     {
-      question: "Should I include links in my FAQ?",
+      question: 'Should I include links in my FAQ?',
       answer:
-        "Yes, including links to more detailed information or related resources can be very helpful for users who want to learn more about a particular topic.",
+        'Yes, including links to more detailed information or related resources can be very helpful for users who want to learn more about a particular topic.',
     },
   ],
 }: Faq2Props) => {

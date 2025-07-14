@@ -1,41 +1,68 @@
-"use client";
+'use client';
 
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useRef, useState } from 'react';
 
-import { cn } from "@/lib/utils";
+import { cn } from '@/lib/utils';
 
-const sections = [
+interface TimelineSection {
+  subTitle: string;
+  title: string;
+  description: string;
+  image: string;
+}
+
+interface Timeline2Props {
+  mainTitle?: string;
+  sections?: TimelineSection[];
+  maxWidth?: string;
+  stickyImageHeight?: string;
+  sectionHeight?: string;
+  gap?: string;
+}
+
+const defaultSections: TimelineSection[] = [
   {
-    subTitle: "Smart Dashboard",
-    title: "Streamline Your Workflow Process",
+    subTitle: 'Smart Dashboard',
+    title: 'Streamline Your Workflow Process',
     description:
-      "Leverage our intuitive interface to streamline your workflow. Access powerful tools and features designed to enhance productivity and efficiency.",
-    image: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-dark-1.svg",
+      'Leverage our intuitive interface to streamline your workflow. Access powerful tools and features designed to enhance productivity and efficiency.',
+    image:
+      'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-dark-1.svg',
   },
   {
-    subTitle: "Team Management",
-    title: "Collaborate Seamlessly with Teams",
+    subTitle: 'Team Management',
+    title: 'Collaborate Seamlessly with Teams',
     description:
-      "Enable smooth collaboration across your organization. Share resources efficiently with customizable access controls and permission settings.",
-    image: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-dark-2.svg",
+      'Enable smooth collaboration across your organization. Share resources efficiently with customizable access controls and permission settings.',
+    image:
+      'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-dark-2.svg',
   },
   {
-    subTitle: "Advanced Analytics",
-    title: "Flexible Configuration Options",
+    subTitle: 'Advanced Analytics',
+    title: 'Flexible Configuration Options',
     description:
-      "Customize your experience with advanced configuration options. Adapt the platform to your specific needs with our versatile solution.",
-    image: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-dark-3.svg",
+      'Customize your experience with advanced configuration options. Adapt the platform to your specific needs with our versatile solution.',
+    image:
+      'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-dark-3.svg',
   },
   {
-    subTitle: "Automation Tools",
-    title: "Simplified User Experience",
+    subTitle: 'Automation Tools',
+    title: 'Simplified User Experience',
     description:
-      "Experience a user-friendly interface designed for efficiency. Our intuitive building blocks make complex tasks simple and accessible.",
-    image: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-dark-1.svg",
+      'Experience a user-friendly interface designed for efficiency. Our intuitive building blocks make complex tasks simple and accessible.',
+    image:
+      'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-dark-1.svg',
   },
 ];
 
-const Timeline2 = () => {
+const Timeline2 = ({
+  mainTitle = 'Transform your workflow with our solution',
+  sections = defaultSections,
+  maxWidth = 'max-w-7xl',
+  stickyImageHeight = 'max-h-[550px]',
+  sectionHeight = 'md:h-[50vh]',
+  gap = 'gap-16',
+}: Timeline2Props) => {
   const [activeIndex, setActiveIndex] = useState(0);
   const sectionRefs = useRef<(HTMLDivElement | null)[]>([]);
 
@@ -63,36 +90,40 @@ const Timeline2 = () => {
       setActiveIndex(closestSection);
     };
 
-    window.addEventListener("scroll", handleScroll);
+    window.addEventListener('scroll', handleScroll);
     handleScroll();
 
-    return () => window.removeEventListener("scroll", handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
   }, []);
+
+  if (!sections || sections.length === 0) {
+    return null;
+  }
 
   return (
     <section className="py-32">
-      <div className="container max-w-7xl">
+      <div className={`container ${maxWidth}`}>
         <h1 className="mb-14 max-w-2xl text-4xl font-semibold text-balance md:text-5xl">
-          Transform your workflow with our solution
+          {mainTitle}
         </h1>
         <div className="flex justify-between gap-20">
-          <div className="flex flex-col gap-16 md:w-1/2">
+          <div className={`flex flex-col ${gap} md:w-1/2`}>
             {sections.map((section, index) => (
               <div
-                key={index}
+                key={`section-${index}`}
                 ref={(el) => {
                   sectionRefs.current[index] = el;
                 }}
-                className="flex flex-col gap-4 md:h-[50vh]"
+                className={`flex flex-col gap-4 ${sectionHeight}`}
               >
-                <div className="block rounded-2xl border bg-muted p-4 md:hidden">
+                <div className="bg-muted block rounded-2xl border p-4 md:hidden">
                   <img
                     src={section.image}
                     alt={section.title}
                     className="h-full max-h-full w-full max-w-full rounded-2xl object-cover"
                   />
                 </div>
-                <p className="text-sm font-semibold text-muted-foreground md:text-base">
+                <p className="text-muted-foreground text-sm font-semibold md:text-base">
                   {section.subTitle}
                 </p>
                 <h1 className="text-2xl font-semibold md:text-4xl">
@@ -106,15 +137,15 @@ const Timeline2 = () => {
             <img
               src={sections[sections.length - 1].image}
               alt={sections[sections.length - 1].title}
-              className="invisible h-full max-h-[550px] w-full max-w-full object-cover"
+              className={`invisible h-full ${stickyImageHeight} w-full max-w-full object-cover`}
             />
 
             {sections.map((item, index) => (
               <div
-                key={index}
+                key={`image-${index}`}
                 className={cn(
-                  "absolute inset-0 flex h-full items-center justify-center rounded-2xl border bg-muted p-4 transition-opacity duration-200",
-                  index === activeIndex ? "opacity-100" : "opacity-0",
+                  'bg-muted absolute inset-0 flex h-full items-center justify-center rounded-2xl border p-4 transition-opacity duration-200',
+                  index === activeIndex ? 'opacity-100' : 'opacity-0',
                 )}
               >
                 <img

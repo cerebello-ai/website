@@ -1,68 +1,68 @@
-"use client";
-import { zodResolver } from "@hookform/resolvers/zod";
-import { ArrowRight, Facebook, Github, Linkedin, Twitter } from "lucide-react";
-import { useForm } from "react-hook-form";
-import { z } from "zod";
+'use client';
+import { zodResolver } from '@hookform/resolvers/zod';
+import { ArrowRight, Facebook, Github, Linkedin, Twitter } from 'lucide-react';
+import { useForm } from 'react-hook-form';
+import { z } from 'zod';
 
-import { Badge } from "@/components/ui/badge";
-import { Button } from "@/components/ui/button";
+import { Badge } from '@/components/ui/badge';
+import { Button } from '@/components/ui/button';
 import {
   Form,
   FormControl,
   FormField,
   FormItem,
   FormMessage,
-} from "@/components/ui/form";
-import { Input } from "@/components/ui/input";
+} from '@/components/ui/form';
+import { Input } from '@/components/ui/input';
 
 const formSchema = z
   .object({
-    email: z.string().email({ message: "Invalid email address" }),
+    email: z.string().email({ message: 'Invalid email address' }),
   })
   .required({ email: true });
 
 const SOCIAL_LINKS = [
   {
     icon: Github,
-    href: "#",
+    href: '#',
   },
   {
     icon: Linkedin,
-    href: "#",
+    href: '#',
   },
   {
     icon: Facebook,
-    href: "#",
+    href: '#',
   },
   {
     icon: Twitter,
-    href: "#",
+    href: '#',
   },
 ];
 
 const NAVIGATION = [
   {
-    title: "Platform",
+    title: 'Platform',
     links: [
-      { name: "Overview", href: "#" },
-      { name: "Use Cases", href: "#" },
+      { name: 'Overview', href: '#' },
+      { name: 'Use Cases', href: '#' },
     ],
   },
   {
-    title: "About Us",
+    title: 'About Us',
     links: [
-      { name: "Team", href: "#" },
-      { name: "Support", href: "#" },
-      { name: "Legal", href: "#" },
-      { name: "Security", href: "#" },
+      { name: 'Team', href: '#' },
+      { name: 'Support', href: '#' },
+      { name: 'Legal', href: '#' },
+      { name: 'Security', href: '#' },
     ],
   },
   {
-    title: "Learn",
+    title: 'Learn',
     links: [
-      { name: "Tutorials", href: "#" },
-      { name: "API Reference", href: "#" },
-      { name: "Quickstart", href: "#" },
+      { name: 'Tutorials', href: '#' },
+      { name: 'API Reference', href: '#' },
+      { name: 'Quickstart', href: '#' },
     ],
   },
 ];
@@ -71,7 +71,7 @@ const NewsletterFrom = () => {
   const form = useForm<z.infer<typeof formSchema>>({
     resolver: zodResolver(formSchema),
     defaultValues: {
-      email: "",
+      email: '',
     },
   });
 
@@ -95,7 +95,7 @@ const NewsletterFrom = () => {
                       type="email"
                       id="emailInput"
                       placeholder="Enter your email"
-                      className="block h-9 w-full border bg-inherit p-7 text-lg placeholder-muted-foreground placeholder:text-lg"
+                      className="placeholder-muted-foreground block h-9 w-full border bg-inherit p-7 text-lg placeholder:text-lg"
                     />
                   </FormControl>
                   <FormMessage className="text-sm" />
@@ -106,11 +106,11 @@ const NewsletterFrom = () => {
           <div className="shrink-0">
             <Button
               type="submit"
-              className="h-14 w-14 rounded-lg border border-muted"
+              className="border-muted h-14 w-14 rounded-lg border"
               size="icon"
               variant="secondary"
             >
-              <ArrowRight className="size-6 stroke-foreground" />
+              <ArrowRight className="stroke-foreground size-6" />
             </Button>
           </div>
         </div>
@@ -134,7 +134,7 @@ const Footer15 = () => {
                 className="h-10"
               />
             </a>
-            <p className="w-full max-w-54 text-base leading-normal text-muted-foreground md:text-lg">
+            <p className="text-muted-foreground w-full max-w-54 text-base leading-normal md:text-lg">
               Enhance and tailor your digital experiences effortlessly, at
               scale.
             </p>
@@ -145,12 +145,12 @@ const Footer15 = () => {
                   key={`social-link-${i}`}
                   className="flex size-6 opacity-100 transition-opacity hover:opacity-50"
                 >
-                  <item.icon className="m-auto size-full stroke-foreground" />
+                  <item.icon className="stroke-foreground m-auto size-full" />
                 </a>
               ))}
             </div>
             <div className="pt-6">
-              <Badge className="rounded-full border-muted bg-background p-0 text-foreground">
+              <Badge className="border-muted bg-background text-foreground rounded-full p-0">
                 <a href="#" className="flex items-center gap-2 px-3 py-2">
                   <div className="relative size-[0.4375rem]">
                     <span className="absolute top-1/2 left-1/2 z-10 size-[0.6875rem] -translate-1/2 animate-pulse rounded-full bg-green-400/50" />
@@ -170,14 +170,14 @@ const Footer15 = () => {
                   key={section.title}
                   className="flex flex-col items-start justify-start gap-6"
                 >
-                  <p className="text-sm font-semibold text-foreground md:text-base">
+                  <p className="text-foreground text-sm font-semibold md:text-base">
                     {section.title}
                   </p>
                   {section.links.map((link, _) => (
                     <a
                       key={link.name}
                       href={link.href}
-                      className="text-sm leading-none font-medium text-foreground opacity-50 transition-opacity hover:opacity-100 md:text-base"
+                      className="text-foreground text-sm leading-none font-medium opacity-50 transition-opacity hover:opacity-100 md:text-base"
                     >
                       {link.name}
                     </a>
@@ -186,7 +186,7 @@ const Footer15 = () => {
               ))}
             </nav>
             <div className="flex w-full flex-col flex-wrap justify-between gap-x-4 gap-y-4 md:flex-row md:gap-y-0">
-              <p className="w-full text-base leading-normal font-medium text-foreground md:w-auto md:max-w-56 md:text-lg">
+              <p className="text-foreground w-full text-base leading-normal font-medium md:w-auto md:max-w-56 md:text-lg">
                 Sign up for tailored insights and updates!
               </p>
               <div className="flex-1">
@@ -196,10 +196,10 @@ const Footer15 = () => {
           </div>
         </div>
         <div className="flex flex-col justify-between gap-y-4 md:flex-row">
-          <div className="text-sm font-medium text-muted-foreground">
+          <div className="text-muted-foreground text-sm font-medium">
             © 2025 shadcnblocks.com
           </div>
-          <div className="text-sm font-medium text-muted-foreground">
+          <div className="text-muted-foreground text-sm font-medium">
             Made with ♥️ in California
           </div>
         </div>

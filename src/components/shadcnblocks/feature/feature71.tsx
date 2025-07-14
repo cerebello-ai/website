@@ -1,6 +1,6 @@
-import { ArrowDown, ArrowRight } from "lucide-react";
+import { ArrowDown, ArrowRight } from 'lucide-react';
 
-import { Button } from "@/components/ui/button";
+import { Button } from '@/components/ui/button';
 
 const Feature71 = () => {
   return (
@@ -13,7 +13,7 @@ const Feature71 = () => {
           <h3 className="mb-3 text-3xl font-semibold text-pretty md:mb-4 md:text-4xl lg:mb-6 lg:max-w-3xl lg:text-5xl">
             Feature group
           </h3>
-          <p className="mb-8 text-muted-foreground lg:max-w-2xl lg:text-lg">
+          <p className="text-muted-foreground mb-8 lg:max-w-2xl lg:text-lg">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Elig
             doloremque mollitia fugiat omnis! Porro facilis quo animi
             consequatur. Explicabo.
@@ -38,31 +38,31 @@ const Feature71 = () => {
               alt="placeholder"
               className="absolute h-full w-full object-cover object-center"
             />
-            <div className="relative flex h-full w-full flex-col items-start justify-between bg-primary/60 p-4 text-primary-foreground transition-colors hover:bg-primary/70 sm:aspect-3/2 md:p-6 lg:p-10">
+            <div className="bg-primary/60 text-primary-foreground hover:bg-primary/70 relative flex h-full w-full flex-col items-start justify-between p-4 transition-colors sm:aspect-3/2 md:p-6 lg:p-10">
               <img
                 src="https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/astro-wordmark.svg"
                 alt="placeholder logo"
                 className="mb-12 h-10 invert md:h-12"
               />
               <div className="flex items-center text-xs font-medium md:text-base lg:text-lg">
-                Read more{" "}
+                Read more{' '}
                 <ArrowRight className="ml-2 size-4 transition-transform group-hover:translate-x-1" />
               </div>
             </div>
           </a>
-          <div className="flex flex-col justify-between rounded-lg bg-accent p-4 sm:justify-end md:p-6 lg:p-10">
+          <div className="bg-accent flex flex-col justify-between rounded-lg p-4 sm:justify-end md:p-6 lg:p-10">
             <div className="mb-8 text-3xl sm:mb-2 lg:text-5xl">100+</div>
             <div className="text-xs md:text-base lg:text-lg">Metric 1</div>
           </div>
-          <div className="flex flex-col justify-between rounded-lg bg-accent p-4 sm:justify-end md:p-6 lg:p-10">
+          <div className="bg-accent flex flex-col justify-between rounded-lg p-4 sm:justify-end md:p-6 lg:p-10">
             <div className="mb-8 text-3xl sm:mb-2 lg:text-5xl">5</div>
             <div className="text-xs md:text-base lg:text-lg">Metric 2</div>
           </div>
-          <div className="flex flex-col justify-between rounded-lg bg-accent p-4 md:p-6 lg:p-10">
+          <div className="bg-accent flex flex-col justify-between rounded-lg p-4 md:p-6 lg:p-10">
             <div className="mb-8 text-3xl lg:text-5xl">150+</div>
             <div className="text-xs md:text-base lg:text-lg">Metric 3</div>
           </div>
-          <div className="flex flex-col justify-between rounded-lg bg-accent p-4 md:p-6 lg:p-10">
+          <div className="bg-accent flex flex-col justify-between rounded-lg p-4 md:p-6 lg:p-10">
             <div className="mb-8 text-3xl lg:text-5xl">10</div>
             <div className="text-xs md:text-base lg:text-lg">Metric 4</div>
           </div>
@@ -75,7 +75,7 @@ const Feature71 = () => {
               alt="placeholder"
               className="absolute h-full w-full object-cover object-center"
             />
-            <div className="relative flex h-full w-full flex-col items-start justify-between gap-4 bg-primary/50 p-4 text-primary-foreground transition-colors hover:bg-primary/70 sm:aspect-2/1 md:flex-row md:items-end md:p-6 lg:p-10">
+            <div className="bg-primary/50 text-primary-foreground hover:bg-primary/70 relative flex h-full w-full flex-col items-start justify-between gap-4 p-4 transition-colors sm:aspect-2/1 md:flex-row md:items-end md:p-6 lg:p-10">
               <div>
                 <img
                   src="https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/shadcn-ui-wordmark.svg"
@@ -84,7 +84,7 @@ const Feature71 = () => {
                 />
               </div>
               <div className="flex shrink-0 items-center text-xs font-medium md:text-base lg:text-lg">
-                Read more{" "}
+                Read more{' '}
                 <ArrowRight className="ml-2 size-4 transition-transform group-hover:translate-x-1" />
               </div>
             </div>

@@ -1,14 +1,14 @@
-"use client";
+'use client';
 
-import { ArrowRight } from "lucide-react";
+import { ArrowRight } from 'lucide-react';
 
-import { Badge } from "@/components/ui/badge";
+import { Badge } from '@/components/ui/badge';
 
 const items: string[] = [
-  "Responsive Design and Layout",
-  "Clean and Modern Design",
-  "Easy to Customize",
-  "Cross Browser Compatible",
+  'Responsive Design and Layout',
+  'Clean and Modern Design',
+  'Easy to Customize',
+  'Cross Browser Compatible',
 ];
 
 const Feature142 = () => {
@@ -16,8 +16,8 @@ const Feature142 = () => {
     <section className="py-32">
       <div className="container">
         <div className="mt-20 flex flex-col items-center justify-center gap-16 md:flex-row">
-          <div className="bg-linear-to-br relative grid w-full max-w-md grid-cols-[1fr_6fr_1fr] grid-rows-[1fr_2fr_1fr_7fr] rounded-lg from-red-100 to-blue-100 sm:max-h-[700px] md:max-w-xl">
-            <div className="border-muted-foreground/30 border-b-2 border-r-2 p-4" />
+          <div className="relative grid w-full max-w-md grid-cols-[1fr_6fr_1fr] grid-rows-[1fr_2fr_1fr_7fr] rounded-lg bg-linear-to-br from-red-100 to-blue-100 sm:max-h-[700px] md:max-w-xl">
+            <div className="border-muted-foreground/30 border-r-2 border-b-2 p-4" />
             <div className="border-muted-foreground/30 border-b-2 p-4" />
             <div className="border-muted-foreground/30 border-b-2 border-l-2 p-4" />
             <div className="border-muted-foreground/30 border-r-2 p-4" />
@@ -27,9 +27,9 @@ const Feature142 = () => {
               </p>
             </div>
             <div className="border-muted-foreground/30 border-l-2 p-4" />
-            <div className="border-muted-foreground/30 border-b-2 border-r-2 border-t-2 p-4" />
-            <div className="border-muted-foreground/30 border-b-2 border-t-2 p-4" />
-            <div className="border-muted-foreground/30 border-b-2 border-l-2 border-t-2 p-4" />
+            <div className="border-muted-foreground/30 border-t-2 border-r-2 border-b-2 p-4" />
+            <div className="border-muted-foreground/30 border-t-2 border-b-2 p-4" />
+            <div className="border-muted-foreground/30 border-t-2 border-b-2 border-l-2 p-4" />
             <div className="border-muted-foreground/30 border-r-2 p-4" />
             <div className="">
               <img
@@ -49,7 +49,7 @@ const Feature142 = () => {
               Badge
             </Badge>
 
-            <div className="bg-muted-foreground mb-4 mt-16 h-px w-full" />
+            <div className="bg-muted-foreground mt-16 mb-4 h-px w-full" />
 
             <ul className="flex flex-col gap-2">
               {items.map((item) => (

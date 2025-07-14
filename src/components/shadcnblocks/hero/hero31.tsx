@@ -1,9 +1,9 @@
-import { Button } from "@/components/ui/button";
+import { Button } from '@/components/ui/button';
 
 const Hero31 = () => {
   return (
     <section className="relative overflow-hidden py-32">
-      <div className="absolute inset-0 overflow-hidden bg-muted">
+      <div className="bg-muted absolute inset-0 overflow-hidden">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 1400 900"
@@ -83,7 +83,7 @@ const Hero31 = () => {
           <h1 className="my-6 text-4xl font-bold text-pretty lg:text-6xl">
             Welcome to Our Website
           </h1>
-          <p className="mb-8 max-w-xl text-muted-foreground lg:text-xl">
+          <p className="text-muted-foreground mb-8 max-w-xl lg:text-xl">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Elig
             doloremque mollitia fugiat omnis! Porro facilis quo animi
             consequatur. Explicabo.
@@ -98,24 +98,24 @@ const Hero31 = () => {
       </div>
       <div className="relative container">
         <div className="mt-16 -mb-48 flex justify-center gap-4 pt-4">
-          <div className="aspect-3/5 w-[320px] rounded-lg border border-border bg-background" />
+          <div className="border-border bg-background aspect-3/5 w-[320px] rounded-lg border" />
           <div className="absolute inset-0">
             <div className="hidden h-full justify-between px-32 2xl:flex">
               <div className="flex flex-col gap-8 pb-20">
-                <div className="flex h-[120px] w-[300px] justify-center overflow-clip rounded-lg border border-border bg-background"></div>
-                <div className="flex h-[190px] w-[300px] justify-center overflow-clip rounded-lg border border-border bg-background"></div>
+                <div className="border-border bg-background flex h-[120px] w-[300px] justify-center overflow-clip rounded-lg border"></div>
+                <div className="border-border bg-background flex h-[190px] w-[300px] justify-center overflow-clip rounded-lg border"></div>
               </div>
               <div className="flex flex-col gap-8 pt-20">
-                <div className="flex h-[190px] w-[300px] justify-center overflow-clip rounded-lg border border-border bg-background"></div>
-                <div className="flex h-[120px] w-[300px] justify-center overflow-clip rounded-lg border border-border bg-background"></div>
+                <div className="border-border bg-background flex h-[190px] w-[300px] justify-center overflow-clip rounded-lg border"></div>
+                <div className="border-border bg-background flex h-[120px] w-[300px] justify-center overflow-clip rounded-lg border"></div>
               </div>
             </div>
             <div className="mx-auto hidden h-full max-w-6xl items-start justify-between px-12 pt-24 md:flex 2xl:hidden">
               <div className="flex flex-col gap-8 pb-32">
-                <div className="flex h-[120px] w-[300px] justify-center overflow-clip rounded-lg border border-border bg-background"></div>
+                <div className="border-border bg-background flex h-[120px] w-[300px] justify-center overflow-clip rounded-lg border"></div>
               </div>
               <div className="flex flex-col gap-8 pt-32">
-                <div className="flex h-[190px] w-[300px] justify-center overflow-clip rounded-lg border border-border bg-background"></div>
+                <div className="border-border bg-background flex h-[190px] w-[300px] justify-center overflow-clip rounded-lg border"></div>
               </div>
             </div>
           </div>

@@ -1,14 +1,14 @@
-import type { LucideIcon } from "lucide-react";
-import { AudioLines, AudioWaveform } from "lucide-react";
+import type { LucideIcon } from 'lucide-react';
+import { AudioLines, AudioWaveform } from 'lucide-react';
 
-import { AspectRatio } from "@/components/ui/aspect-ratio";
+import { AspectRatio } from '@/components/ui/aspect-ratio';
 
 type image = {
   src: string;
   alt: string;
 };
 
-type imageVariant = "1" | "2" | "3";
+type imageVariant = '1' | '2' | '3';
 
 interface Item {
   title: string;
@@ -27,50 +27,50 @@ interface CardImageProps {
 
 const LIST: Array<Item> = [
   {
-    title: "Seamless File Upload",
+    title: 'Seamless File Upload',
     summary:
-      "Effortlessly upload your files with our intuitive drag-and-drop interface. Supports all major file formats.",
+      'Effortlessly upload your files with our intuitive drag-and-drop interface. Supports all major file formats.',
     images: [
       {
-        src: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/photos/ivan-bandura-Kj2tYAl4HZg-unsplash.jpg",
-        alt: "Upload interface",
+        src: 'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/photos/ivan-bandura-Kj2tYAl4HZg-unsplash.jpg',
+        alt: 'Upload interface',
       },
     ],
     Icon: AudioWaveform,
-    variant: "1",
+    variant: '1',
   },
   {
-    title: "Secure and Fast",
+    title: 'Secure and Fast',
     summary:
-      "Experience lightning-fast uploads with top-notch security to keep your data safe and private.",
+      'Experience lightning-fast uploads with top-notch security to keep your data safe and private.',
     images: [
       {
-        src: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/photos/ivan-bandura-3QqzCTIfUJI-unsplash.jpg",
-        alt: "Secure upload",
+        src: 'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/photos/ivan-bandura-3QqzCTIfUJI-unsplash.jpg',
+        alt: 'Secure upload',
       },
     ],
-    variant: "2",
+    variant: '2',
   },
   {
-    title: "Manage Your Files",
+    title: 'Manage Your Files',
     summary:
-      "Organize and manage your uploaded files with ease. Access them anytime, anywhere.",
+      'Organize and manage your uploaded files with ease. Access them anytime, anywhere.',
     images: [
       {
-        src: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/photos/vasilis-karkalas-qOaeVSKyhhE-unsplash.jpg",
-        alt: "File management",
+        src: 'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/photos/vasilis-karkalas-qOaeVSKyhhE-unsplash.jpg',
+        alt: 'File management',
       },
     ],
     Icon: AudioLines,
-    variant: "3",
+    variant: '3',
   },
 ];
 
 const CardImage = ({ variant, images, Icon }: CardImageProps) => {
   switch (variant) {
-    case "1":
+    case '1':
       return (
-        <div className="absolute bottom-[3.75rem] right-[30%]">
+        <div className="absolute right-[30%] bottom-[3.75rem]">
           <div className="aspect-[1.645714286] w-[25rem]">
             <div className="flex size-full items-center -space-x-[10%]">
               <div className="w-full shrink-0">
@@ -101,9 +101,9 @@ const CardImage = ({ variant, images, Icon }: CardImageProps) => {
           </div>
         </div>
       );
-    case "2":
+    case '2':
       return (
-        <div className="right-1/6 absolute -bottom-[5%]">
+        <div className="absolute right-1/6 -bottom-[5%]">
           <div className="aspect-video w-[31.25rem] overflow-hidden rounded-2xl shadow-2xl sm:w-[42.5rem]">
             <img
               src={images[0].src}
@@ -115,7 +115,7 @@ const CardImage = ({ variant, images, Icon }: CardImageProps) => {
       );
     default:
       return (
-        <div className="right-1/6 absolute -bottom-[5%]">
+        <div className="absolute right-1/6 -bottom-[5%]">
           <div className="relative aspect-[1.195592287] w-[21.25rem] sm:w-[25rem]">
             <div className="absolute bottom-0 aspect-[1.287833828] w-full overflow-hidden rounded-2xl">
               <img
@@ -124,7 +124,7 @@ const CardImage = ({ variant, images, Icon }: CardImageProps) => {
                 className="block size-full object-cover object-center"
               />
             </div>
-            <div className="bg-background absolute right-0 top-0 flex aspect-square w-[20%] translate-x-1/2 overflow-hidden rounded-lg shadow">
+            <div className="bg-background absolute top-0 right-0 flex aspect-square w-[20%] translate-x-1/2 overflow-hidden rounded-lg shadow">
               {Icon && (
                 <Icon className="stroke-muted-foreground/80 m-auto size-[65%] stroke-1" />
               )}
@@ -136,13 +136,16 @@ const CardImage = ({ variant, images, Icon }: CardImageProps) => {
 };
 
 const Card = ({ title, summary, images, Icon, number, variant }: Item) => {
-  const numberBorderColor = "var(--muted-foreground)";
+  const numberBorderColor = 'var(--muted-foreground)';
   return (
     <div
       className="bg-muted relative flex h-full min-h-[39.375rem] w-full max-w-[34rem] flex-col justify-between gap-4 overflow-hidden rounded-[0.75rem]"
-      style={{ backgroundImage: "url('https://deifkwefumgah.cloudfront.net/shadcnblocks/block/patterns/p6.png')" }}
+      style={{
+        backgroundImage:
+          "url('https://deifkwefumgah.cloudfront.net/shadcnblocks/block/patterns/p6.png')",
+      }}
     >
-      <div className="flex w-full flex-col gap-4 p-10 pb-0 pr-[3.75rem] md:p-[3.75rem]">
+      <div className="flex w-full flex-col gap-4 p-10 pr-[3.75rem] pb-0 md:p-[3.75rem]">
         <h3 className="text-2xl leading-none">{title}</h3>
         <p className="text-xl leading-normal">{summary}</p>
       </div>
@@ -150,7 +153,7 @@ const Card = ({ title, summary, images, Icon, number, variant }: Item) => {
         <CardImage images={images} Icon={Icon} variant={variant} />
       </div>
       <div
-        className="text-muted absolute right-5 top-5 size-fit text-7xl font-light leading-none opacity-25"
+        className="text-muted absolute top-5 right-5 size-fit text-7xl leading-none font-light opacity-25"
         style={{
           textShadow: `
             2px 0 ${numberBorderColor}, -2px 0 ${numberBorderColor}, 

@@ -1,14 +1,14 @@
-import { ChevronRight } from "lucide-react";
+import { ChevronRight } from 'lucide-react';
 
-import { Badge } from "@/components/ui/badge";
+import { Badge } from '@/components/ui/badge';
 
 const Feature28 = () => {
   return (
-    <section className="bg-gray-50 py-32 dark:bg-background">
+    <section className="dark:bg-background bg-gray-50 py-32">
       <div className="container">
         <div className="grid gap-10 lg:grid-cols-2 lg:gap-20">
           <div>
-            <div className="rounded-lg border bg-muted p-4 md:p-6">
+            <div className="bg-muted rounded-lg border p-4 md:p-6">
               <img
                 src="https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-dark-1.svg"
                 alt="placeholder"
@@ -30,7 +30,7 @@ const Feature28 = () => {
             </div>
           </div>
           <div>
-            <div className="rounded-lg border bg-muted p-4 md:p-6">
+            <div className="bg-muted rounded-lg border p-4 md:p-6">
               <img
                 src="https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-dark-1.svg"
                 alt="placeholder"

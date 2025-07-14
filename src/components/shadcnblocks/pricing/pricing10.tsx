@@ -1,40 +1,42 @@
-"use client";
+'use client';
 
-import { Check, X } from "lucide-react";
-import { useState } from "react";
+import { useState } from 'react';
 
-import { Badge } from "@/components/ui/badge";
-import { Button } from "@/components/ui/button";
-import { Label } from "@/components/ui/label";
-import { Switch } from "@/components/ui/switch";
+import { Check, X } from 'lucide-react';
+
+import { Badge } from '@/components/ui/badge';
+import { Button } from '@/components/ui/button';
+import { Label } from '@/components/ui/label';
+import { Switch } from '@/components/ui/switch';
 
 const plans = [
   {
-    title: "Free",
-    description: "For open source projects",
-    price: { monthly: "$9", annually: "$9" },
-    href: "#",
+    title: 'Free',
+    description: 'For open source projects',
+    price: { monthly: '$9', annually: '$9' },
+    href: '#',
     recommended: false,
-    image: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/block-1.svg",
+    image:
+      'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/block-1.svg',
     featureGroups: [
       {
-        title: "Overview",
+        title: 'Overview',
         features: [
           {
-            title: "3 users",
+            title: '3 users',
             icon: Check,
           },
         ],
       },
       {
-        title: "Highlights",
+        title: 'Highlights',
         features: [
           {
-            title: "Included feature",
+            title: 'Included feature',
             icon: Check,
           },
           {
-            title: "Not included feature",
+            title: 'Not included feature',
             icon: X,
           },
         ],
@@ -42,38 +44,39 @@ const plans = [
     ],
   },
   {
-    title: "Basic",
-    description: "For open source projects",
+    title: 'Basic',
+    description: 'For open source projects',
     price: {
-      monthly: "$50",
+      monthly: '$50',
       annually: (
         <span className="flex items-center">
           $45<Badge className="ml-1">-10%</Badge>
         </span>
       ),
     },
-    href: "#",
+    href: '#',
     recommended: false,
-    image: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/block-2.svg",
+    image:
+      'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/block-2.svg',
     featureGroups: [
       {
-        title: "Overview",
+        title: 'Overview',
         features: [
           {
-            title: "10 users",
+            title: '10 users',
             icon: Check,
           },
         ],
       },
       {
-        title: "Highlights",
+        title: 'Highlights',
         features: [
           {
-            title: "Included feature",
+            title: 'Included feature',
             icon: Check,
           },
           {
-            title: "Not included feature",
+            title: 'Not included feature',
             icon: X,
           },
         ],
@@ -81,38 +84,39 @@ const plans = [
     ],
   },
   {
-    title: "Team",
-    description: "For open source projects",
+    title: 'Team',
+    description: 'For open source projects',
     price: {
-      monthly: "$100",
+      monthly: '$100',
       annually: (
         <span className="flex items-center">
           $90<Badge className="ml-1">-10%</Badge>
         </span>
       ),
     },
-    href: "#",
+    href: '#',
     recommended: true,
-    image: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/block-3.svg",
+    image:
+      'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/block-3.svg',
     featureGroups: [
       {
-        title: "Overview",
+        title: 'Overview',
         features: [
           {
-            title: "50 users",
+            title: '50 users',
             icon: Check,
           },
         ],
       },
       {
-        title: "Highlights",
+        title: 'Highlights',
         features: [
           {
-            title: "Included feature",
+            title: 'Included feature',
             icon: Check,
           },
           {
-            title: "Not included feature",
+            title: 'Not included feature',
             icon: X,
           },
         ],
@@ -120,38 +124,39 @@ const plans = [
     ],
   },
   {
-    title: "Enterprise",
-    description: "For open source projects",
+    title: 'Enterprise',
+    description: 'For open source projects',
     price: {
-      monthly: "$200",
+      monthly: '$200',
       annually: (
         <span className="flex items-center">
           $160<Badge className="ml-1">-20%</Badge>
         </span>
       ),
     },
-    href: "#",
+    href: '#',
     recommended: false,
-    image: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/block-4.svg",
+    image:
+      'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/block-4.svg',
     featureGroups: [
       {
-        title: "Overview",
+        title: 'Overview',
         features: [
           {
-            title: "Unlimited users",
+            title: 'Unlimited users',
             icon: Check,
           },
         ],
       },
       {
-        title: "Highlights",
+        title: 'Highlights',
         features: [
           {
-            title: "Included feature",
+            title: 'Included feature',
             icon: Check,
           },
           {
-            title: "Not included feature",
+            title: 'Not included feature',
             icon: X,
           },
         ],
@@ -192,10 +197,10 @@ const Pricing10 = () => {
         {plans.map((plan) => (
           <article
             key={plan.title}
-            className={`rounded-xl border ${plan.recommended ? "border-primary" : "border-border lg:mt-7"} overflow-clip`}
+            className={`rounded-xl border ${plan.recommended ? 'border-primary' : 'border-border lg:mt-7'} overflow-clip`}
           >
             {plan.recommended && (
-              <div className="flex h-7 items-center justify-center bg-primary text-center text-xs font-semibold text-primary-foreground">
+              <div className="bg-primary text-primary-foreground flex h-7 items-center justify-center text-center text-xs font-semibold">
                 Recommended
               </div>
             )}
@@ -206,7 +211,7 @@ const Pricing10 = () => {
                     <p className="mb-1 text-xl font-medium sm:text-2xl">
                       {plan.title}
                     </p>
-                    <p className="text-xs text-muted-foreground sm:text-sm 2xl:min-h-10">
+                    <p className="text-muted-foreground text-xs sm:text-sm 2xl:min-h-10">
                       {plan.description}
                     </p>
                   </div>
@@ -220,31 +225,31 @@ const Pricing10 = () => {
                   <h2 className="mb-1 flex items-start text-2xl font-medium md:text-3xl 2xl:text-4xl">
                     {annualBilling ? plan.price.annually : plan.price.monthly}
                   </h2>
-                  <p className="text-xs font-medium text-muted-foreground">
+                  <p className="text-muted-foreground text-xs font-medium">
                     / monthly
                   </p>
                 </div>
               </div>
               <div>
                 <Button
-                  variant={plan.recommended ? "default" : "outline"}
+                  variant={plan.recommended ? 'default' : 'outline'}
                   className="w-full"
                 >
                   Get started for free
                 </Button>
               </div>
             </header>
-            <main className="space-y-6 border-t border-border p-4 sm:p-6 md:grid md:grid-cols-2 md:space-y-0 xl:block xl:space-y-6">
+            <main className="border-border space-y-6 border-t p-4 sm:p-6 md:grid md:grid-cols-2 md:space-y-0 xl:block xl:space-y-6">
               {plan.featureGroups.map((group) => (
                 <div key={group.title}>
-                  <h2 className="mb-3 text-xs font-semibold tracking-wider text-muted-foreground uppercase">
+                  <h2 className="text-muted-foreground mb-3 text-xs font-semibold tracking-wider uppercase">
                     {group.title}
                   </h2>
                   <ul className="space-y-3">
                     {group.features.map((feature) => (
                       <li
                         key={feature.title}
-                        className="flex items-center gap-x-2 text-xs font-medium text-muted-foreground"
+                        className="text-muted-foreground flex items-center gap-x-2 text-xs font-medium"
                       >
                         <feature.icon className="size-4" />
                         {feature.title}

@@ -6,7 +6,7 @@ const Feature162 = () => {
           <div className="max-w-96 text-lg">
             <span className="font-semibold">
               Always connected to your data.
-            </span>{" "}
+            </span>{' '}
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. At, cum!
           </div>
           <div className="w-full rounded-tl-[36px] rounded-br-[36px] p-1 pr-0 pb-0">
@@ -20,7 +20,7 @@ const Feature162 = () => {
         <div className="grid grid-cols-1 grid-rows-2 gap-4 md:grid-cols-2 md:grid-rows-1">
           <div className="flex flex-col rounded-[36px] border border-gray-200">
             <div className="p-10 text-lg">
-              <span className="font-semibold">A CRM for any use case.</span>{" "}
+              <span className="font-semibold">A CRM for any use case.</span>{' '}
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
               Praesentium officiis nam et deserunt, eos neque.
             </div>

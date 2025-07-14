@@ -1,6 +1,6 @@
-import { ArrowDown } from "lucide-react";
+import { ArrowDown } from 'lucide-react';
 
-import { Button } from "@/components/ui/button";
+import { Button } from '@/components/ui/button';
 
 const Hero88 = () => {
   return (
@@ -20,7 +20,7 @@ const Hero88 = () => {
               </h1>
 
               {/* Description */}
-              <p className="text-xl text-muted-foreground sm:text-3xl">
+              <p className="text-muted-foreground text-xl sm:text-3xl">
                 With over <b>20 years of expertise</b>, we specialize in
                 crafting high-quality digital products that captivate your
                 audience and drive business growth.
@@ -31,7 +31,7 @@ const Hero88 = () => {
                 <Button className="w-full rounded-full px-8 py-6 text-lg font-bold sm:w-fit sm:px-12 sm:py-8">
                   Let's Collaborate
                 </Button>
-                <span className="text-lg text-muted-foreground sm:text-xl">
+                <span className="text-muted-foreground text-lg sm:text-xl">
                   or explore our work
                 </span>
                 <ArrowDown className="h-4 w-4 sm:h-6 sm:w-6" />

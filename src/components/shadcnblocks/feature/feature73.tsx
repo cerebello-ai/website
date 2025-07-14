@@ -1,4 +1,4 @@
-import { ArrowRight } from "lucide-react";
+import { ArrowRight } from 'lucide-react';
 
 interface Feature {
   id: string;
@@ -16,31 +16,34 @@ interface Feature73Props {
 }
 
 const Feature73 = ({
-  heading = "Powerful Features",
-  description = "Discover the powerful features that make our platform stand out from the rest. Built with the latest technology and designed for maximum productivity.",
-  linkUrl = "https://www.shadcnblocks.com",
-  linkText = "Book a demo",
+  heading = 'Powerful Features',
+  description = 'Discover the powerful features that make our platform stand out from the rest. Built with the latest technology and designed for maximum productivity.',
+  linkUrl = 'https://www.shadcnblocks.com',
+  linkText = 'Book a demo',
   features = [
     {
-      id: "feature-1",
-      title: "Modern Design",
+      id: 'feature-1',
+      title: 'Modern Design',
       description:
-        "Clean and intuitive interface built with the latest design principles. Optimized for the best user experience.",
-      image: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-1.svg",
+        'Clean and intuitive interface built with the latest design principles. Optimized for the best user experience.',
+      image:
+        'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-1.svg',
     },
     {
-      id: "feature-2",
-      title: "Responsive Layout",
+      id: 'feature-2',
+      title: 'Responsive Layout',
       description:
-        "Fully responsive design that works seamlessly across all devices and screen sizes. Perfect for any platform.",
-      image: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-2.svg",
+        'Fully responsive design that works seamlessly across all devices and screen sizes. Perfect for any platform.',
+      image:
+        'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-2.svg',
     },
     {
-      id: "feature-3",
-      title: "Easy Integration",
+      id: 'feature-3',
+      title: 'Easy Integration',
       description:
-        "Simple integration process with comprehensive documentation and dedicated support team.",
-      image: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-3.svg",
+        'Simple integration process with comprehensive documentation and dedicated support team.',
+      image:
+        'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-3.svg',
     },
   ],
 }: Feature73Props) => {

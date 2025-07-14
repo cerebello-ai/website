@@ -1,43 +1,17 @@
-"use client";
+'use client';
 
-import { motion } from "framer-motion";
-import { Check, ChevronLeft, ChevronRight, Circle } from "lucide-react";
-import React, { useState } from "react";
+import React, { useState } from 'react';
 
-import { Button } from "@/components/ui/button";
+import { motion } from 'framer-motion';
+import { Check, ChevronLeft, ChevronRight, Circle } from 'lucide-react';
+
+import { Button } from '@/components/ui/button';
 
 interface StepProps {
   title: string;
   imageSrc: string;
   description: string;
 }
-
-const steps: StepProps[] = [
-  {
-    title: "Introduction",
-    imageSrc: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-1.svg",
-    description:
-      "Welcome to our step-by-step guide. This introduction will help you get started with the process and understand what to expect.",
-  },
-  {
-    title: "Personal Information",
-    imageSrc: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-2.svg",
-    description:
-      "In this section, we'll collect some basic information about you to personalize your experience and provide better recommendations.",
-  },
-  {
-    title: "Address Details",
-    imageSrc: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-3.svg",
-    description:
-      "Please provide your address details so we can deliver your products to the right location and calculate shipping costs.",
-  },
-  {
-    title: "Review & Submit",
-    imageSrc: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-4.svg",
-    description:
-      "Take a moment to review all the information you've provided before finalizing your submission. You can go back to any step.",
-  },
-];
 
 const ProcessBar: React.FC<{
   currentStep: number;
@@ -51,8 +25,8 @@ const ProcessBar: React.FC<{
             <motion.div
               className={`z-10 flex h-8 w-8 items-center justify-center rounded-full ${
                 index <= currentStep
-                  ? "bg-neutral-800 text-white"
-                  : "bg-gray-200 text-white dark:bg-gray-800 dark:text-gray-600"
+                  ? 'bg-neutral-800 text-white'
+                  : 'bg-gray-200 text-white dark:bg-gray-800 dark:text-gray-600'
               }`}
               animate={{ scale: 1.02 }}
             >
@@ -65,14 +39,14 @@ const ProcessBar: React.FC<{
           </div>
           {index < steps.length - 1 && (
             <div className="relative grow">
-              <div className="absolute -top-1 h-1.5 w-full bg-muted" />
+              <div className="bg-muted absolute -top-1 h-1.5 w-full" />
               <motion.div
-                className="absolute -top-1 h-1.5 w-full bg-primary"
-                initial={{ width: "0%" }}
+                className="bg-primary absolute -top-1 h-1.5 w-full"
+                initial={{ width: '0%' }}
                 animate={{
-                  width: index < currentStep ? "100%" : "0%",
+                  width: index < currentStep ? '100%' : '0%',
                 }}
-                transition={{ duration: 0.5, ease: "easeInOut" }}
+                transition={{ duration: 0.5, ease: 'easeInOut' }}
               />
             </div>
           )}
@@ -84,7 +58,7 @@ const ProcessBar: React.FC<{
 
 const StepperContent: React.FC<{ step: StepProps }> = ({ step }) => {
   return (
-    <div className="my-4 flex min-h-[400px] w-full flex-col items-center justify-center overflow-hidden rounded-2xl bg-muted p-6 text-center">
+    <div className="bg-muted my-4 flex min-h-[400px] w-full flex-col items-center justify-center overflow-hidden rounded-2xl p-6 text-center">
       <motion.div
         key={step.imageSrc}
         initial={{ opacity: 0, y: -10 }}
@@ -97,11 +71,12 @@ const StepperContent: React.FC<{ step: StepProps }> = ({ step }) => {
           alt={step.title}
           className="w-[500px]"
           onError={(e) => {
-            e.currentTarget.src = "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-1.svg";
+            e.currentTarget.src =
+              'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-1.svg';
           }}
         />
       </motion.div>
-      <p className="mt-6 px-10 text-base leading-snug font-normal tracking-tight text-muted-foreground">
+      <p className="text-muted-foreground mt-6 px-10 text-base leading-snug font-normal tracking-tight">
         {step.description}
       </p>
     </div>
@@ -135,8 +110,49 @@ const NavButtons: React.FC<{
   </div>
 );
 
-const Timeline7: React.FC = () => {
-  const [currentStep, setCurrentStep] = useState(1);
+interface Timeline7Props {
+  title?: string;
+  subtitle?: string;
+  steps?: StepProps[];
+  initialStep?: number;
+}
+
+const Timeline7: React.FC<Timeline7Props> = ({
+  title = 'Complete Your Journey',
+  subtitle = 'Follow these simple steps to get started',
+  steps = [
+    {
+      title: 'Introduction',
+      imageSrc:
+        'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-1.svg',
+      description:
+        'Welcome to our step-by-step guide. This introduction will help you get started with the process and understand what to expect.',
+    },
+    {
+      title: 'Personal Information',
+      imageSrc:
+        'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-2.svg',
+      description:
+        "In this section, we'll collect some basic information about you to personalize your experience and provide better recommendations.",
+    },
+    {
+      title: 'Address Details',
+      imageSrc:
+        'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-3.svg',
+      description:
+        'Please provide your address details so we can deliver your products to the right location and calculate shipping costs.',
+    },
+    {
+      title: 'Review & Submit',
+      imageSrc:
+        'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-4.svg',
+      description:
+        "Take a moment to review all the information you've provided before finalizing your submission. You can go back to any step.",
+    },
+  ],
+  initialStep = 1,
+}) => {
+  const [currentStep, setCurrentStep] = useState(initialStep);
 
   const handleNext = () => {
     setCurrentStep((prev) => Math.min(prev + 1, steps.length - 1));
@@ -149,9 +165,14 @@ const Timeline7: React.FC = () => {
   return (
     <section className="bg-background py-32">
       <div className="container flex max-w-2xl flex-col items-center gap-10 md:gap-0">
-        <h1 className="mb-10 text-center text-6xl font-bold tracking-tighter text-foreground">
-          Stepper
-        </h1>
+        <div className="mb-10 text-center">
+          <h1 className="text-foreground text-6xl font-bold tracking-tighter">
+            {title}
+          </h1>
+          {subtitle && (
+            <p className="text-muted-foreground mt-4 text-lg">{subtitle}</p>
+          )}
+        </div>
         <ProcessBar currentStep={currentStep} steps={steps} />
         <StepperContent step={steps[currentStep]} />
         <NavButtons

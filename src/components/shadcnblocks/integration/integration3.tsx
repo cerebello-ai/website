@@ -1,46 +1,46 @@
-import React from "react";
+import React from 'react';
 
 const DATA = [
   {
     id: 1,
-    icon: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/google-icon.svg",
-    title: "Google Sheets",
+    icon: 'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/google-icon.svg',
+    title: 'Google Sheets',
     description:
-      "Easily sync your data with Google Sheets for seamless automation.",
+      'Easily sync your data with Google Sheets for seamless automation.',
   },
   {
     id: 2,
-    icon: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/slack-icon.svg",
-    title: "Slack",
+    icon: 'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/slack-icon.svg',
+    title: 'Slack',
     description:
-      "Receive updates and notifications directly in your Slack channels.",
+      'Receive updates and notifications directly in your Slack channels.',
   },
   {
     id: 3,
-    icon: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/sketch-icon.svg",
-    title: "Sketch",
+    icon: 'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/sketch-icon.svg',
+    title: 'Sketch',
     description:
-      "Import your designs from Sketch and streamline your design process",
+      'Import your designs from Sketch and streamline your design process',
   },
   {
     id: 4,
-    icon: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/gatsby-icon.svg",
-    title: "Gatsby",
-    description: "Build blazing-fast websites with Gatsby integration.",
+    icon: 'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/gatsby-icon.svg',
+    title: 'Gatsby',
+    description: 'Build blazing-fast websites with Gatsby integration.',
   },
   {
     id: 5,
-    icon: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/spotify-icon.svg",
-    title: "Shopify",
+    icon: 'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/spotify-icon.svg',
+    title: 'Shopify',
     description:
-      "Sync your Shopify store data and streamline order management.",
+      'Sync your Shopify store data and streamline order management.',
   },
   {
     id: 6,
-    icon: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/github-icon.svg",
-    title: "Github",
+    icon: 'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/github-icon.svg',
+    title: 'Github',
     description:
-      "Automate your workflows and track changes with Github integration.",
+      'Automate your workflows and track changes with Github integration.',
   },
 ];
 
@@ -53,7 +53,7 @@ const Integration3 = () => {
             <h1 className="my-6 text-4xl font-bold text-pretty lg:text-6xl">
               Integrations
             </h1>
-            <h2 className="mb-8 max-w-3xl text-muted-foreground lg:text-2xl">
+            <h2 className="text-muted-foreground mb-8 max-w-3xl lg:text-2xl">
               Connect your favourite apps to your workflow.
             </h2>
           </div>
@@ -72,7 +72,7 @@ const Integration3 = () => {
                 </div>
                 <div className="text-left">
                   <div className="text-lg font-semibold">{title}</div>
-                  <div className="text-sm text-muted-foreground">
+                  <div className="text-muted-foreground text-sm">
                     {description}
                   </div>
                 </div>

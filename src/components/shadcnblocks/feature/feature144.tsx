@@ -1,7 +1,7 @@
-"use client";
+'use client';
 
-import { Badge } from "@/components/ui/badge";
-import { Card } from "@/components/ui/card";
+import { Badge } from '@/components/ui/badge';
+import { Card } from '@/components/ui/card';
 
 const Feature144 = () => {
   return (
@@ -10,7 +10,7 @@ const Feature144 = () => {
         <h2 className="text-center text-4xl">
           Build your website with UI blocks
         </h2>
-        <p className="mx-auto mt-3 max-w-3xl text-center text-2xl text-muted-foreground">
+        <p className="text-muted-foreground mx-auto mt-3 max-w-3xl text-center text-2xl">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Elig
           doloremque mollitia fugiat
         </p>
@@ -22,7 +22,7 @@ const Feature144 = () => {
             </h6>
             <Badge
               variant="outline"
-              className="mt-4 w-fit bg-muted px-4 py-3 md:text-base"
+              className="bg-muted mt-4 w-fit px-4 py-3 md:text-base"
             >
               Build website with UI blocks
             </Badge>
@@ -52,7 +52,7 @@ const Feature144 = () => {
               </h6>
               <Badge
                 variant="outline"
-                className="mt-10 w-fit bg-muted px-4 py-3 md:text-base"
+                className="bg-muted mt-10 w-fit px-4 py-3 md:text-base"
               >
                 Build website with UI blocks
               </Badge>
@@ -73,7 +73,7 @@ const Feature144 = () => {
               </h6>
               <Badge
                 variant="outline"
-                className="mt-10 w-fit bg-muted px-4 py-3 md:text-base"
+                className="bg-muted mt-10 w-fit px-4 py-3 md:text-base"
               >
                 Build website with UI blocks
               </Badge>

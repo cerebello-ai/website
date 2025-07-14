@@ -1,56 +1,55 @@
-"use client";
+'use client';
 
-import { type SVGProps, useEffect, useId, useState } from "react";
+import { type SVGProps, useEffect, useId, useState } from 'react';
 
-import { cn } from "@/lib/utils";
-
-import type { CarouselApi } from "@/components/ui/carousel";
+import type { CarouselApi } from '@/components/ui/carousel';
 import {
   Carousel,
   CarouselContent,
   CarouselItem,
-} from "@/components/ui/carousel";
+} from '@/components/ui/carousel';
+import { cn } from '@/lib/utils';
 
 const TESTIMONIALS = [
   {
     id: 1,
     quote:
       "Charter's platform delivers unmatched speed, a flexible account framework, and an API-first design. Their deep understanding of the ecosystem has been crucial for scaling our financial operations effectively.",
-    author: "Henry Francis",
-    role: "Founder, Vercel",
-    logo: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/vercel-wordmark.svg",
+    author: 'Henry Francis',
+    role: 'Founder, Vercel',
+    logo: 'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/vercel-wordmark.svg',
   },
   {
     id: 2,
     quote:
       "Charter's API-first approach and robust infrastructure have transformed our financial operations completely. The platform's flexibility and speed have enabled us to build exactly what we need efficiently and securely.",
-    author: "David Chen",
-    role: "Head of Engineering, Astro",
-    logo: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/astro-wordmark.svg",
+    author: 'David Chen',
+    role: 'Head of Engineering, Astro',
+    logo: 'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/astro-wordmark.svg',
   },
   {
     id: 3,
     quote:
       "Charter's platform has exceeded our expectations with its seamless integration process and exceptional support team. Their powerful tools and robust infrastructure have been instrumental in our scaling journey.",
-    author: "Sarah Williams",
-    role: "CTO, Figma",
-    logo: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/figma-wordmark.svg",
+    author: 'Sarah Williams',
+    role: 'CTO, Figma',
+    logo: 'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/figma-wordmark.svg',
   },
   {
     id: 4,
     quote:
-      "Charter has revolutionized how we manage our financial infrastructure effectively. Their API-first approach and robust platform capabilities have given us the flexibility to build custom solutions at scale seamlessly and efficiently.",
-    author: "Michael Ross",
-    role: "CEO, Supabase",
-    logo: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/supabase-wordmark.svg",
+      'Charter has revolutionized how we manage our financial infrastructure effectively. Their API-first approach and robust platform capabilities have given us the flexibility to build custom solutions at scale seamlessly and efficiently.',
+    author: 'Michael Ross',
+    role: 'CEO, Supabase',
+    logo: 'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/supabase-wordmark.svg',
   },
   {
     id: 5,
     quote:
       "The combination of Charter's flexible platform architecture and exceptional support team has been transformative for our operations. Their speed, reliability, and scalability are unmatched in the industry.",
-    author: "Emily Chen",
-    role: "Product Lead, Shadcn/ui",
-    logo: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/shadcn-ui-wordmark.svg",
+    author: 'Emily Chen',
+    role: 'Product Lead, Shadcn/ui',
+    logo: 'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/shadcn-ui-wordmark.svg',
   },
 ];
 
@@ -63,7 +62,7 @@ export function Testimonial26() {
       return;
     }
 
-    api.on("select", () => {
+    api.on('select', () => {
       setCurrent(api.selectedScrollSnap());
     });
   }, [api]);
@@ -73,7 +72,7 @@ export function Testimonial26() {
       <div className="container max-w-4xl">
         <Carousel
           opts={{
-            align: "center",
+            align: 'center',
             loop: true,
           }}
           setApi={setApi}
@@ -98,12 +97,12 @@ export function Testimonial26() {
                       />
                     </div>
                   )}
-                  <div className="h-8 w-[1px] bg-border" aria-hidden="true" />
+                  <div className="bg-border h-8 w-[1px]" aria-hidden="true" />
                   <div>
                     <cite className="font-semibold not-italic">
                       {testimonial.author}
                     </cite>
-                    <p className="text-sm font-medium text-muted-foreground">
+                    <p className="text-muted-foreground text-sm font-medium">
                       {testimonial.role}
                     </p>
                   </div>
@@ -121,10 +120,10 @@ export function Testimonial26() {
             <button
               key={index}
               className={cn(
-                "size-4 cursor-pointer rounded-full transition-colors duration-300",
+                'size-4 cursor-pointer rounded-full transition-colors duration-300',
                 index === current
-                  ? "bg-muted-foreground"
-                  : "bg-muted-foreground/20 hover:bg-muted-foreground/50",
+                  ? 'bg-muted-foreground'
+                  : 'bg-muted-foreground/20 hover:bg-muted-foreground/50',
               )}
               onClick={() => api?.scrollTo(index)}
               aria-label={`Go to testimonial ${index + 1}`}
@@ -135,9 +134,9 @@ export function Testimonial26() {
         </div>
       </div>
       <div className="absolute inset-x-0 top-16 isolate z-[-1] h-[300px] md:top-28 lg:top-32">
-        <div className="absolute inset-x-0 bottom-0 z-10 h-40 bg-linear-to-t from-background via-background/40 to-transparent" />
-        <div className="absolute inset-x-0 top-0 z-10 h-40 bg-linear-to-b from-background via-background/40 to-transparent" />
-        <PlusSigns className="size-full text-foreground/[0.05]" />
+        <div className="from-background via-background/40 absolute inset-x-0 bottom-0 z-10 h-40 bg-linear-to-t to-transparent" />
+        <div className="from-background via-background/40 absolute inset-x-0 top-0 z-10 h-40 bg-linear-to-b to-transparent" />
+        <PlusSigns className="text-foreground/[0.05] size-full" />
       </div>
     </section>
   );

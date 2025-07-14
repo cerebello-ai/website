@@ -1,68 +1,74 @@
-import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
-import { Badge } from "@/components/ui/badge";
-import { Button } from "@/components/ui/button";
-import { Card, CardContent } from "@/components/ui/card";
+import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
+import { Badge } from '@/components/ui/badge';
+import { Button } from '@/components/ui/button';
+import { Card, CardContent } from '@/components/ui/card';
 
 const team = [
   {
-    id: "person-1",
-    name: "Sarah Chen",
-    role: "CEO & Co-founder",
-    department: "Leadership",
+    id: 'person-1',
+    name: 'Sarah Chen',
+    role: 'CEO & Co-founder',
+    department: 'Leadership',
     description:
-      "Former Google PM with 10+ years building products that millions use daily. Passionate about creating meaningful impact through technology.",
-    expertise: ["Product Strategy", "Team Leadership", "Growth"],
-    avatar: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/avatar-1.webp",
+      'Former Google PM with 10+ years building products that millions use daily. Passionate about creating meaningful impact through technology.',
+    expertise: ['Product Strategy', 'Team Leadership', 'Growth'],
+    avatar:
+      'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/avatar-1.webp',
   },
   {
-    id: "person-2",
-    name: "Marcus Rodriguez",
-    role: "CTO & Co-founder",
-    department: "Engineering",
+    id: 'person-2',
+    name: 'Marcus Rodriguez',
+    role: 'CTO & Co-founder',
+    department: 'Engineering',
     description:
-      "Ex-Meta engineer who led teams building infrastructure that served billions of users. Loves solving complex technical challenges.",
-    expertise: ["System Architecture", "AI/ML", "Scalability"],
-    avatar: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/avatar-2.webp",
+      'Ex-Meta engineer who led teams building infrastructure that served billions of users. Loves solving complex technical challenges.',
+    expertise: ['System Architecture', 'AI/ML', 'Scalability'],
+    avatar:
+      'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/avatar-2.webp',
   },
   {
-    id: "person-3",
-    name: "Priya Patel",
-    role: "Head of Design",
-    department: "Design",
+    id: 'person-3',
+    name: 'Priya Patel',
+    role: 'Head of Design',
+    department: 'Design',
     description:
-      "Design leader with experience at Airbnb and Figma. Believes great design should be invisible and solve real user problems.",
-    expertise: ["UX Design", "Design Systems", "User Research"],
-    avatar: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/avatar-3.webp",
+      'Design leader with experience at Airbnb and Figma. Believes great design should be invisible and solve real user problems.',
+    expertise: ['UX Design', 'Design Systems', 'User Research'],
+    avatar:
+      'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/avatar-3.webp',
   },
   {
-    id: "person-4",
-    name: "David Kim",
-    role: "VP of Engineering",
-    department: "Engineering",
+    id: 'person-4',
+    name: 'David Kim',
+    role: 'VP of Engineering',
+    department: 'Engineering',
     description:
-      "Built and scaled engineering teams at Stripe and Uber. Focuses on creating high-performing teams and robust systems.",
-    expertise: ["Team Building", "Backend Systems", "DevOps"],
-    avatar: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/avatar-4.webp",
+      'Built and scaled engineering teams at Stripe and Uber. Focuses on creating high-performing teams and robust systems.',
+    expertise: ['Team Building', 'Backend Systems', 'DevOps'],
+    avatar:
+      'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/avatar-4.webp',
   },
   {
-    id: "person-5",
-    name: "Emma Thompson",
-    role: "Head of Marketing",
-    department: "Marketing",
+    id: 'person-5',
+    name: 'Emma Thompson',
+    role: 'Head of Marketing',
+    department: 'Marketing',
     description:
-      "Marketing strategist who grew multiple startups from 0 to millions in revenue. Expert in growth marketing and brand building.",
-    expertise: ["Growth Marketing", "Brand Strategy", "Content"],
-    avatar: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/avatar-5.webp",
+      'Marketing strategist who grew multiple startups from 0 to millions in revenue. Expert in growth marketing and brand building.',
+    expertise: ['Growth Marketing', 'Brand Strategy', 'Content'],
+    avatar:
+      'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/avatar-5.webp',
   },
   {
-    id: "person-6",
-    name: "Alex Johnson",
-    role: "Head of Sales",
-    department: "Sales",
+    id: 'person-6',
+    name: 'Alex Johnson',
+    role: 'Head of Sales',
+    department: 'Sales',
     description:
-      "Sales leader with a track record of building high-performing teams and exceeding revenue targets in competitive markets.",
-    expertise: ["Enterprise Sales", "Team Management", "Customer Success"],
-    avatar: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/avatar-6.webp",
+      'Sales leader with a track record of building high-performing teams and exceeding revenue targets in competitive markets.',
+    expertise: ['Enterprise Sales', 'Team Management', 'Customer Success'],
+    avatar:
+      'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/avatar-6.webp',
   },
 ];
 
@@ -95,9 +101,9 @@ const Team5 = () => {
                     <AvatarImage src={member.avatar} alt={member.name} />
                     <AvatarFallback className="from-primary/20 to-secondary/20 text-primary bg-gradient-to-br text-2xl font-bold">
                       {member.name
-                        .split(" ")
+                        .split(' ')
                         .map((n) => n[0])
-                        .join("")}
+                        .join('')}
                     </AvatarFallback>
                   </Avatar>
                 </div>

@@ -1,13 +1,12 @@
-"use client";
+'use client';
 
-import { AlignLeft, CheckCircle2, Lightbulb } from "lucide-react";
-import { useEffect, useRef, useState } from "react";
-import { FaFacebook, FaLinkedin, FaTwitter } from "react-icons/fa";
+import { useEffect, useRef, useState } from 'react';
 
-import { cn } from "@/lib/utils";
+import { AlignLeft, CheckCircle2, Lightbulb } from 'lucide-react';
+import { FaFacebook, FaLinkedin, FaTwitter } from 'react-icons/fa';
 
-import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert";
-import { Avatar, AvatarImage } from "@/components/ui/avatar";
+import { Alert, AlertDescription, AlertTitle } from '@/components/ui/alert';
+import { Avatar, AvatarImage } from '@/components/ui/avatar';
 import {
   Breadcrumb,
   BreadcrumbItem,
@@ -15,8 +14,9 @@ import {
   BreadcrumbList,
   BreadcrumbPage,
   BreadcrumbSeparator,
-} from "@/components/ui/breadcrumb";
-import { Separator } from "@/components/ui/separator";
+} from '@/components/ui/breadcrumb';
+import { Separator } from '@/components/ui/separator';
+import { cn } from '@/lib/utils';
 
 const Casestudy3 = () => {
   const [activeSection, setActiveSection] = useState<string | null>(null);
@@ -37,7 +37,7 @@ const Casestudy3 = () => {
       observerCallback,
       {
         root: null,
-        rootMargin: "0px",
+        rootMargin: '0px',
         threshold: 1,
       },
     );
@@ -76,14 +76,17 @@ const Casestudy3 = () => {
                 </BreadcrumbItem>
               </BreadcrumbList>
             </Breadcrumb>
-            <h1 className="mt-10 text-balance text-5xl font-semibold lg:text-7xl">
+            <h1 className="mt-10 text-5xl font-semibold text-balance lg:text-7xl">
               How this tool helps teams achieve efficient workflows
             </h1>
             <div className="mt-16">
               <p className="font-medium">Featuring insights from:</p>
               <div className="mt-4 flex items-center gap-4">
                 <Avatar className="size-16 rounded-xl border">
-                  <AvatarImage src="https://deifkwefumgah.cloudfront.net/shadcnblocks/block/avatar-1.webp" alt="avatar" />
+                  <AvatarImage
+                    src="https://deifkwefumgah.cloudfront.net/shadcnblocks/block/avatar-1.webp"
+                    alt="avatar"
+                  />
                 </Avatar>
                 <div className="flex flex-col">
                   <p className="font-semibold">Jane Doe</p>
@@ -226,12 +229,12 @@ const Casestudy3 = () => {
               <div className="mt-20">
                 <section
                   id="section1"
-                  ref={(ref) => addSectionRef("section1", ref)}
+                  ref={(ref) => addSectionRef('section1', ref)}
                   className="prose dark:prose-invert mb-8"
                 >
                   <h2>The King&apos;s Plan</h2>
                   <p>
-                    The king thought long and hard, and finally came up with{" "}
+                    The king thought long and hard, and finally came up with{' '}
                     <a href="#">a brilliant plan</a>: he would tax the jokes in
                     the kingdom.
                   </p>
@@ -243,7 +246,7 @@ const Casestudy3 = () => {
                 </section>
                 <section
                   id="section2"
-                  ref={(ref) => addSectionRef("section2", ref)}
+                  ref={(ref) => addSectionRef('section2', ref)}
                   className="prose dark:prose-invert mb-8"
                 >
                   <h2>The Joke Tax</h2>
@@ -265,17 +268,17 @@ const Casestudy3 = () => {
                 </section>
                 <section
                   id="section3"
-                  ref={(ref) => addSectionRef("section3", ref)}
+                  ref={(ref) => addSectionRef('section3', ref)}
                   className="prose dark:prose-invert mb-8"
                 >
                   <h2>Jokester's Revolt</h2>
-                  <p className="not-first:mt-6 leading-7">
+                  <p className="leading-7 not-first:mt-6">
                     Jokester began sneaking into the castle in the middle of the
                     night and leaving jokes all over the place: under the king's
                     pillow, in his soup, even in the royal toilet. The king was
                     furious, but he couldn't seem to stop Jokester.
                   </p>
-                  <p className="not-first:mt-6 leading-7">
+                  <p className="leading-7 not-first:mt-6">
                     And then, one day, the people of the kingdom discovered that
                     the jokes left by Jokester were so funny that they couldn't
                     help but laugh. And once they started laughing, they
@@ -285,7 +288,7 @@ const Casestudy3 = () => {
 
                 <section
                   id="section4"
-                  ref={(ref) => addSectionRef("section4", ref)}
+                  ref={(ref) => addSectionRef('section4', ref)}
                   className="prose dark:prose-invert mb-8"
                 >
                   <h2>The People&apos;s Rebellion</h2>
@@ -346,10 +349,10 @@ const Casestudy3 = () => {
                     <a
                       href="#section1"
                       className={cn(
-                        "block py-1 transition-colors duration-200",
-                        activeSection === "section1"
-                          ? "text-primary font-medium"
-                          : "text-muted-foreground hover:text-primary",
+                        'block py-1 transition-colors duration-200',
+                        activeSection === 'section1'
+                          ? 'text-primary font-medium'
+                          : 'text-muted-foreground hover:text-primary',
                       )}
                     >
                       The King's Plan
@@ -359,10 +362,10 @@ const Casestudy3 = () => {
                     <a
                       href="#section2"
                       className={cn(
-                        "block py-1 transition-colors duration-200",
-                        activeSection === "section2"
-                          ? "text-primary font-medium"
-                          : "text-muted-foreground hover:text-primary",
+                        'block py-1 transition-colors duration-200',
+                        activeSection === 'section2'
+                          ? 'text-primary font-medium'
+                          : 'text-muted-foreground hover:text-primary',
                       )}
                     >
                       The Joke Tax
@@ -372,10 +375,10 @@ const Casestudy3 = () => {
                     <a
                       href="#section3"
                       className={cn(
-                        "block py-1 transition-colors duration-200",
-                        activeSection === "section3"
-                          ? "text-primary font-medium"
-                          : "text-muted-foreground hover:text-primary",
+                        'block py-1 transition-colors duration-200',
+                        activeSection === 'section3'
+                          ? 'text-primary font-medium'
+                          : 'text-muted-foreground hover:text-primary',
                       )}
                     >
                       Jokester's Revolt
@@ -385,10 +388,10 @@ const Casestudy3 = () => {
                     <a
                       href="#section4"
                       className={cn(
-                        "block py-1 transition-colors duration-200",
-                        activeSection === "section4"
-                          ? "text-primary font-medium"
-                          : "text-muted-foreground hover:text-primary",
+                        'block py-1 transition-colors duration-200',
+                        activeSection === 'section4'
+                          ? 'text-primary font-medium'
+                          : 'text-muted-foreground hover:text-primary',
                       )}
                     >
                       The People's Rebellion

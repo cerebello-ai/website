@@ -1,9 +1,9 @@
-"use client";
+'use client';
 
-import { Star } from "lucide-react";
+import { Star } from 'lucide-react';
 
-import { Avatar, AvatarImage } from "@/components/ui/avatar";
-import { Button } from "@/components/ui/button";
+import { Avatar, AvatarImage } from '@/components/ui/avatar';
+import { Button } from '@/components/ui/button';
 
 const Hero80 = () => {
   return (
@@ -21,7 +21,7 @@ const Hero80 = () => {
           <div className="flex flex-col items-center text-center lg:items-start lg:text-left">
             <a
               href="https://www.shadcnblocks.com"
-              className="my-6 text-xs font-bold tracking-[0.3em] text-muted-foreground uppercase hover:underline"
+              className="text-muted-foreground my-6 text-xs font-bold tracking-[0.3em] uppercase hover:underline"
             >
               shadcnblocks.com
             </a>
@@ -34,7 +34,7 @@ const Hero80 = () => {
             </h1>
 
             {/* Description */}
-            <p className="my-8 max-w-xl text-muted-foreground lg:text-lg">
+            <p className="text-muted-foreground my-8 max-w-xl lg:text-lg">
               Build stunning web applications faster with our premium collection
               of ready-to-use UI components. Perfect for developers and
               designers.
@@ -57,7 +57,7 @@ const Hero80 = () => {
                 {[1, 2, 3, 4, 5].map((num) => (
                   <Avatar
                     key={num}
-                    className="size-14 border-2 border-background shadow-sm ring-1 ring-border"
+                    className="border-background ring-border size-14 border-2 shadow-sm ring-1"
                   >
                     <AvatarImage
                       src={`/images/block/avatar-${num}.webp`}
@@ -71,11 +71,11 @@ const Hero80 = () => {
               <div className="flex flex-col items-center sm:items-start">
                 <div className="flex items-center gap-1">
                   {[...Array(5)].map((_, i) => (
-                    <Star key={i} className="size-5 fill-primary" />
+                    <Star key={i} className="fill-primary size-5" />
                   ))}
                   <span className="font-semibold">5.0</span>
                 </div>
-                <p className="text-sm font-medium text-muted-foreground">
+                <p className="text-muted-foreground text-sm font-medium">
                   1000+ happy developers
                 </p>
               </div>
@@ -85,7 +85,7 @@ const Hero80 = () => {
           {/* Right Column - Images */}
           <div className="relative grid gap-4 lg:grid-cols-2">
             {/* Main Image */}
-            <div className="relative aspect-3/4 w-full overflow-hidden rounded-lg bg-muted">
+            <div className="bg-muted relative aspect-3/4 w-full overflow-hidden rounded-lg">
               <img
                 src="https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-1.svg"
                 alt="UI Components Preview"
@@ -94,7 +94,7 @@ const Hero80 = () => {
             </div>
 
             {/* Secondary Image */}
-            <div className="relative aspect-3/4 w-full overflow-hidden rounded-lg bg-muted lg:mt-8">
+            <div className="bg-muted relative aspect-3/4 w-full overflow-hidden rounded-lg lg:mt-8">
               <img
                 src="https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-2.svg"
                 alt="Component Examples"

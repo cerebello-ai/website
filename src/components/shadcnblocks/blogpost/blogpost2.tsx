@@ -1,6 +1,6 @@
-import { ChevronLeft } from "lucide-react";
+import { ChevronLeft } from 'lucide-react';
 
-import { Avatar, AvatarImage } from "@/components/ui/avatar";
+import { Avatar, AvatarImage } from '@/components/ui/avatar';
 
 const Blogpost2 = () => {
   return (
@@ -15,7 +15,7 @@ const Blogpost2 = () => {
               <ChevronLeft className="h-full w-4" />
               Return to home
             </a>
-            <h1 className="mb-5 text-balance text-3xl font-bold lg:text-4xl">
+            <h1 className="mb-5 text-3xl font-bold text-balance lg:text-4xl">
               10 Best Practices for Building a Large Scale Design System
             </h1>
             <div className="flex gap-3">
@@ -36,7 +36,7 @@ const Blogpost2 = () => {
             <img
               src="https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-1.svg"
               alt="placeholder"
-              className="mb-8 mt-0 aspect-video w-full rounded-lg object-cover"
+              className="mt-0 mb-8 aspect-video w-full rounded-lg object-cover"
             />
             <div className="prose dark:prose-invert">
               <p>
@@ -47,7 +47,7 @@ const Blogpost2 = () => {
               </p>
               <h2>The King&apos;s Plan</h2>
               <p>
-                The king thought long and hard, and finally came up with{" "}
+                The king thought long and hard, and finally came up with{' '}
                 <a href="#">a brilliant plan</a>: he would tax the jokes in the
                 kingdom.
               </p>

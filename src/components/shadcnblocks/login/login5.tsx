@@ -1,7 +1,7 @@
-import { Button } from "@/components/ui/button";
-import { Checkbox } from "@/components/ui/checkbox";
-import { Input } from "@/components/ui/input";
-import { Label } from "@/components/ui/label";
+import { Button } from '@/components/ui/button';
+import { Checkbox } from '@/components/ui/checkbox';
+import { Input } from '@/components/ui/input';
+import { Label } from '@/components/ui/label';
 
 const Login5 = () => {
   return (
@@ -22,7 +22,7 @@ const Login5 = () => {
                   />
                 </a>
               </div>
-              <div className="w-full rounded-md bg-background">
+              <div className="bg-background w-full rounded-md">
                 <div>
                   <div className="grid gap-4">
                     <div className="grid w-full max-w-sm items-center gap-1.5">
@@ -57,7 +57,7 @@ const Login5 = () => {
                           Remember me
                         </label>
                       </div>
-                      <a href="#" className="text-sm font-medium text-primary">
+                      <a href="#" className="text-primary text-sm font-medium">
                         Forgot password
                       </a>
                     </div>
@@ -75,9 +75,9 @@ const Login5 = () => {
                   </div>
                 </div>
               </div>
-              <div className="mx-auto mt-3 flex justify-center gap-1 text-sm text-muted-foreground">
+              <div className="text-muted-foreground mx-auto mt-3 flex justify-center gap-1 text-sm">
                 <p>Don&apos; have an account?</p>
-                <a href="#" className="font-medium text-primary">
+                <a href="#" className="text-primary font-medium">
                   Signup
                 </a>
               </div>

@@ -1,81 +1,91 @@
-"use client";
-import AutoScroll from "embla-carousel-auto-scroll";
-import Autoplay from "embla-carousel-autoplay";
-import { ArrowRight, Circle } from "lucide-react";
+'use client';
+import AutoScroll from 'embla-carousel-auto-scroll';
+import Autoplay from 'embla-carousel-autoplay';
+import { ArrowRight, Circle } from 'lucide-react';
 
-import { AspectRatio } from "@/components/ui/aspect-ratio";
-import { Button } from "@/components/ui/button";
+import { AspectRatio } from '@/components/ui/aspect-ratio';
+import { Button } from '@/components/ui/button';
 import {
   Carousel,
   CarouselContent,
   CarouselItem,
-} from "@/components/ui/carousel";
+} from '@/components/ui/carousel';
 
 const trustedBy = [
   {
-    image: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/company/fictional-company-logo-1.svg",
-    name: "Fictional Company 1",
+    image:
+      'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/company/fictional-company-logo-1.svg',
+    name: 'Fictional Company 1',
   },
   {
-    image: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/company/fictional-company-logo-2.svg",
-    name: "Fictional Company 2",
+    image:
+      'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/company/fictional-company-logo-2.svg',
+    name: 'Fictional Company 2',
   },
   {
-    image: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/company/fictional-company-logo-3.svg",
-    name: "Fictional Company 3",
+    image:
+      'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/company/fictional-company-logo-3.svg',
+    name: 'Fictional Company 3',
   },
   {
-    image: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/company/fictional-company-logo-4.svg",
-    name: "Fictional Company 4",
+    image:
+      'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/company/fictional-company-logo-4.svg',
+    name: 'Fictional Company 4',
   },
   {
-    image: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/company/fictional-company-logo-5.svg",
-    name: "Fictional Company 5",
+    image:
+      'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/company/fictional-company-logo-5.svg',
+    name: 'Fictional Company 5',
   },
   {
-    image: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/company/fictional-company-logo-6.svg",
-    name: "Fictional Company 6",
+    image:
+      'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/company/fictional-company-logo-6.svg',
+    name: 'Fictional Company 6',
   },
   {
-    image: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/company/fictional-company-logo-7.svg",
-    name: "Fictional Company 7",
+    image:
+      'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/company/fictional-company-logo-7.svg',
+    name: 'Fictional Company 7',
   },
   {
-    image: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/company/fictional-company-logo-1.svg",
-    name: "Fictional Company 1",
+    image:
+      'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/company/fictional-company-logo-1.svg',
+    name: 'Fictional Company 1',
   },
   {
-    image: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/company/fictional-company-logo-2.svg",
-    name: "Fictional Company 2",
+    image:
+      'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/company/fictional-company-logo-2.svg',
+    name: 'Fictional Company 2',
   },
   {
-    image: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/company/fictional-company-logo-3.svg",
-    name: "Fictional Company 3",
+    image:
+      'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/company/fictional-company-logo-3.svg',
+    name: 'Fictional Company 3',
   },
 ];
 
 const Hero118 = () => {
   return (
-    <section className="overflow-hidden bg-background py-12 font-sans md:py-20">
+    <section className="bg-background overflow-hidden py-12 font-sans md:py-20">
       <div className="container max-w-[76.5rem]">
         <div className="flex flex-col gap-20">
           <div className="grid grid-cols-1 items-center justify-center gap-10 xl:grid-cols-2">
             <div>
               <div className="mx-auto flex w-full max-w-[52.5rem] flex-col items-start justify-center gap-10 xl:max-w-full">
                 <div className="flex max-w-[42rem] flex-col items-start gap-6 xl:max-w-full">
-                  <div className="mx-auto flex w-fit items-center gap-2 rounded-md bg-muted px-[0.625rem] py-1 md:mx-0">
-                    <Circle className="h-2 w-2 fill-muted-foreground" />
-                    <div className="font-mono text-xs leading-relaxed text-muted-foreground uppercase">
+                  <div className="bg-muted mx-auto flex w-fit items-center gap-2 rounded-md px-[0.625rem] py-1 md:mx-0">
+                    <Circle className="fill-muted-foreground h-2 w-2" />
+                    <div className="text-muted-foreground font-mono text-xs leading-relaxed uppercase">
                       Coming Soon
                     </div>
                   </div>
-                  <h1 className="text-center text-4xl leading-none font-semibold tracking-tighter text-foreground md:text-left md:text-7xl">
+                  <h1 className="text-foreground text-center text-4xl leading-none font-semibold tracking-tighter md:text-left md:text-7xl">
                     <span className="text-muted-foreground">
                       Valuable insights
-                    </span>{" "}
+                    </span>{' '}
                     to uncover true opportunities
                   </h1>
-                  <div className="text-center text-base leading-snug text-foreground md:text-left md:text-lg">
+                  <div className="text-foreground text-center text-base leading-snug md:text-left md:text-lg">
                     Enter a new age of strategic decision-making. Horizon equips
                     businesses in the marketing sector with cutting-edge data
                     analytics.
@@ -115,10 +125,10 @@ const Hero118 = () => {
                       className="size-full object-cover object-center"
                     />
                     <div className="absolute top-0 left-0 z-20 h-[0.125rem] w-full">
-                      <div className="absolute h-full w-[20%] animate-slide-to-right bg-[linear-gradient(270deg,var(--color-primary)_0%,var(--color-transparent)_85%)] md:w-[14%]"></div>
+                      <div className="animate-slide-to-right absolute h-full w-[20%] bg-[linear-gradient(270deg,var(--color-primary)_0%,var(--color-transparent)_85%)] md:w-[14%]"></div>
                     </div>
                     <div className="absolute bottom-0 left-0 z-20 h-full w-[0.125rem]">
-                      <div className="absolute h-[24%] w-full animate-slide-to-top bg-[linear-gradient(180deg,var(--color-primary)_0%,var(--color-transparent)_85%)] md:h-[17%]"></div>
+                      <div className="animate-slide-to-top absolute h-[24%] w-full bg-[linear-gradient(180deg,var(--color-primary)_0%,var(--color-transparent)_85%)] md:h-[17%]"></div>
                     </div>
                   </div>
                 </AspectRatio>
@@ -130,14 +140,14 @@ const Hero118 = () => {
       <div className="mt-10 w-full bg-[radial-gradient(closest-side,var(--color-background)_54%,transparent)] bg-center py-12">
         <div className="container">
           <div className="mx-auto flex max-w-[72.5rem] flex-col gap-4">
-            <p className="text-center text-lg text-foreground">
+            <p className="text-foreground text-center text-lg">
               Already trusted by industry leaders
             </p>
             <div className="py-14">
               <Carousel
                 opts={{
                   loop: true,
-                  align: "center",
+                  align: 'center',
                 }}
                 plugins={[
                   AutoScroll({

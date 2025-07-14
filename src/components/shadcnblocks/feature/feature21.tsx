@@ -1,14 +1,14 @@
-import { Sparkles, SquareDashedMousePointer } from "lucide-react";
+import { Sparkles, SquareDashedMousePointer } from 'lucide-react';
 
-import { Badge } from "@/components/ui/badge";
-import { Card } from "@/components/ui/card";
-import { Separator } from "@/components/ui/separator";
+import { Badge } from '@/components/ui/badge';
+import { Card } from '@/components/ui/card';
+import { Separator } from '@/components/ui/separator';
 
 const Feature21 = () => {
   return (
-    <section className="bg-gray-50 py-32 dark:bg-background">
+    <section className="dark:bg-background bg-gray-50 py-32">
       <div className="container max-w-7xl">
-        <div className="flex items-center gap-2 text-muted-foreground">
+        <div className="text-muted-foreground flex items-center gap-2">
           <SquareDashedMousePointer className="size-5" />
           <p className="text-sm">Utilities</p>
         </div>

@@ -1,12 +1,13 @@
-"use client";
+'use client';
 
-import { Check } from "lucide-react";
-import { useState } from "react";
+import { useState } from 'react';
 
-import { Badge } from "@/components/ui/badge";
-import { Button } from "@/components/ui/button";
-import { Label } from "@/components/ui/label";
-import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group";
+import { Check } from 'lucide-react';
+
+import { Badge } from '@/components/ui/badge';
+import { Button } from '@/components/ui/button';
+import { Label } from '@/components/ui/label';
+import { RadioGroup, RadioGroupItem } from '@/components/ui/radio-group';
 
 const Pricing7 = () => {
   const [isAnnually, setIsAnnually] = useState(false);
@@ -27,7 +28,7 @@ const Pricing7 = () => {
               defaultValue="monthly"
               className="h-full grid-cols-2"
               onValueChange={(value) => {
-                setIsAnnually(value === "annually");
+                setIsAnnually(value === 'annually');
               }}
             >
               <div className='has-[button[data-state="checked"]]:bg-background h-full rounded-md transition-all'>
@@ -70,13 +71,13 @@ const Pricing7 = () => {
                 <div>
                   <h3 className="mb-4 text-xl font-semibold">Basic Plan</h3>
                   <span className="text-5xl font-semibold">
-                    {isAnnually ? "$63" : "$79"}
+                    {isAnnually ? '$63' : '$79'}
                   </span>
                   <span className="mb-4 block font-semibold">per month</span>
                   <p className="text-muted-foreground">
                     Good for small teams, or small businesses just starting out.
                   </p>
-                  <p className="mb-3 mt-6 font-semibold">Includes</p>
+                  <p className="mt-6 mb-3 font-semibold">Includes</p>
                   <ul className="flex flex-col gap-3">
                     <li className="flex gap-2">
                       <Check className="mt-1 size-4 shrink-0" />5 projects limit
@@ -107,14 +108,14 @@ const Pricing7 = () => {
                 <div>
                   <h3 className="mb-4 text-xl font-semibold">Pro Plan</h3>
                   <span className="text-5xl font-semibold">
-                    {isAnnually ? "$239" : "$299"}
+                    {isAnnually ? '$239' : '$299'}
                   </span>
                   <span className="mb-4 block font-semibold">per month</span>
                   <p className="text-muted-foreground">
                     Good for medium to large businesses. Get all the features
                     you need.
                   </p>
-                  <p className="mb-3 mt-6 font-semibold">
+                  <p className="mt-6 mb-3 font-semibold">
                     Everything in Basic, plus
                   </p>
                   <ul className="flex flex-col gap-3">

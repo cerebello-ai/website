@@ -1,57 +1,79 @@
-"use client";
+'use client';
 
-import Autoplay from "embla-carousel-autoplay";
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useRef, useState } from 'react';
 
-import { cn } from "@/lib/utils";
+import Autoplay from 'embla-carousel-autoplay';
 
-import type { CarouselApi } from "@/components/ui/carousel";
+import { HeroProps } from '../types/common';
+
+import type { CarouselApi } from '@/components/ui/carousel';
 import {
   Carousel,
   CarouselContent,
   CarouselItem,
-} from "@/components/ui/carousel";
+} from '@/components/ui/carousel';
+import { cn } from '@/lib/utils';
 
-const technologies = [
-  {
-    name: "Next",
-    command: "npx create-next-app my-app",
-    image: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/nextjs-icon.svg",
-  },
-  {
-    name: "Vite",
-    command: "npm create vite@latest",
-    image: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/vite-icon.svg",
-  },
-  {
-    name: "Remix",
-    command: "npx create-remix@latest my-app",
-    image: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/remix-icon.svg",
-  },
-  {
-    name: "Gatsby",
-    command: "npm init gatsby",
-    image: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/gatsby-icon.svg",
-  },
-  {
-    name: "Astro",
-    command: "npm create astro@latest",
-    image: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/astro-icon.svg",
-  },
+interface Technology {
+  name: string;
+  command: string;
+  image: string;
+}
 
+interface Hero14Props extends HeroProps {
+  technologies?: Technology[];
+}
+
+const defaultTechnologies: Technology[] = [
   {
-    name: "Laravel",
-    command: "laravel new my-app ",
-    image: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/laravel-icon.svg",
+    name: 'Next',
+    command: 'npx create-next-app my-app',
+    image:
+      'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/nextjs-icon.svg',
   },
   {
-    name: "React",
-    command: "npx create-react-app my-app",
-    image: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/react-icon.svg",
+    name: 'Vite',
+    command: 'npm create vite@latest',
+    image:
+      'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/vite-icon.svg',
+  },
+  {
+    name: 'Remix',
+    command: 'npx create-remix@latest my-app',
+    image:
+      'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/remix-icon.svg',
+  },
+  {
+    name: 'Gatsby',
+    command: 'npm init gatsby',
+    image:
+      'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/gatsby-icon.svg',
+  },
+  {
+    name: 'Astro',
+    command: 'npm create astro@latest',
+    image:
+      'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/astro-icon.svg',
+  },
+  {
+    name: 'Laravel',
+    command: 'laravel new my-app ',
+    image:
+      'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/laravel-icon.svg',
+  },
+  {
+    name: 'React',
+    command: 'npx create-react-app my-app',
+    image:
+      'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/react-icon.svg',
   },
 ];
 
-const Hero14 = () => {
+const Hero14 = ({
+  title = 'Install with one Command',
+  description = 'Our library is compatible with all popular frameworks, download our SDK and get started in minutes.',
+  technologies = defaultTechnologies,
+}: Hero14Props) => {
   const plugin = useRef(Autoplay({ delay: 4000, stopOnInteraction: false }));
   const [api, setApi] = useState<CarouselApi>();
   const [current, setCurrent] = useState(0);
@@ -74,13 +96,13 @@ const Hero14 = () => {
     };
 
     // Add event listeners for both 'select' and 'settle'
-    api.on("select", updateCurrent);
-    api.on("settle", updateCurrent);
+    api.on('select', updateCurrent);
+    api.on('settle', updateCurrent);
 
     // Clean up event listeners when component unmounts
     return () => {
-      api.off("select", updateCurrent);
-      api.off("settle", updateCurrent);
+      api.off('select', updateCurrent);
+      api.off('settle', updateCurrent);
     };
   }, [api]);
 
@@ -96,17 +118,16 @@ const Hero14 = () => {
       <div className="container">
         <div className="flex flex-col justify-center">
           <h1 className="mx-auto mb-4 max-w-2xl text-center text-4xl font-bold md:text-6xl">
-            Install with one Command
+            {title}
           </h1>
-          <p className="mx-auto mt-4 max-w-xl text-center text-lg text-muted-foreground">
-            Our library is compatible with all popular frameworks, download our
-            SDK and get started in minutes.
+          <p className="text-muted-foreground mx-auto mt-4 max-w-xl text-center text-lg">
+            {description}
           </p>
-          <div className="mx-auto mt-8 mb-12 flex h-[60px] w-fit items-center gap-2 rounded-md bg-muted px-4 py-2 text-center">
+          <div className="bg-muted mx-auto mt-8 mb-12 flex h-[60px] w-fit items-center gap-2 rounded-md px-4 py-2 text-center">
             <div
               className={cn(
-                "flex items-center gap-2 transition-opacity duration-300",
-                fadeIn ? "opacity-100" : "opacity-0",
+                'flex items-center gap-2 transition-opacity duration-300',
+                fadeIn ? 'opacity-100' : 'opacity-0',
               )}
             >
               <img
@@ -127,7 +148,7 @@ const Hero14 = () => {
           opts={{
             loop: true,
           }}
-          className="relative mx-auto w-full max-w-3xl before:absolute before:top-0 before:bottom-0 before:left-0 before:z-10 before:w-36 before:bg-linear-to-r before:from-background before:to-transparent after:absolute after:top-0 after:right-0 after:bottom-0 after:z-10 after:w-36 after:bg-linear-to-l after:from-background after:to-transparent"
+          className="before:from-background after:from-background relative mx-auto w-full max-w-3xl before:absolute before:top-0 before:bottom-0 before:left-0 before:z-10 before:w-36 before:bg-linear-to-r before:to-transparent after:absolute after:top-0 after:right-0 after:bottom-0 after:z-10 after:w-36 after:bg-linear-to-l after:to-transparent"
           onMouseEnter={plugin.current.stop}
           onMouseLeave={plugin.current.reset}
         >
@@ -139,8 +160,8 @@ const Hero14 = () => {
               >
                 <div
                   className={cn(
-                    "flex cursor-pointer items-center justify-center gap-2 rounded-md border p-6",
-                    idx === current ? "border-input" : "border-transparent",
+                    'flex cursor-pointer items-center justify-center gap-2 rounded-md border p-6',
+                    idx === current ? 'border-input' : 'border-transparent',
                   )}
                   onClick={() => selectTechnology(idx)}
                 >

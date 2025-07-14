@@ -1,13 +1,13 @@
-import { ArrowRight, ChevronRight } from "lucide-react";
+import { ArrowRight, ChevronRight } from 'lucide-react';
 
-import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
+import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
 
 const Feature80 = () => {
   return (
     <section className="py-32">
       <div className="container">
         <div className="flex flex-col gap-8 md:flex-row">
-          <div className="aspect-5/6 overflow-clip rounded-3xl bg-accent">
+          <div className="bg-accent aspect-5/6 overflow-clip rounded-3xl">
             <img
               src="https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-1.svg"
               alt="placeholder"
@@ -21,22 +21,22 @@ const Feature80 = () => {
             <h2 className="mb-6 text-3xl font-bold text-pretty lg:text-5xl">
               Feature Description
             </h2>
-            <p className="mb-6 text-muted-foreground lg:text-xl">
+            <p className="text-muted-foreground mb-6 lg:text-xl">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Elig
               doloremque mollitia fugiat omnis! Porro facilis quo animi
               consequatur. Explicabo.
             </p>
             <a
               href="#"
-              className="group mb-12 flex items-center pb-3 text-accent-foreground lg:text-xl"
+              className="group text-accent-foreground mb-12 flex items-center pb-3 lg:text-xl"
             >
-              Learn more{" "}
+              Learn more{' '}
               <ArrowRight className="ml-2 size-4 transition-transform group-hover:translate-x-1" />
             </a>
             <div className="flex flex-col gap-6 md:flex-row">
               <a
                 href="#"
-                className="group flex-1 rounded-xl border border-border p-6"
+                className="group border-border flex-1 rounded-xl border p-6"
               >
                 <div className="flex items-start justify-between">
                   <div className="flex items-center">
@@ -59,7 +59,7 @@ const Feature80 = () => {
               </a>
               <a
                 href="#"
-                className="group flex-1 rounded-xl border border-border p-6"
+                className="group border-border flex-1 rounded-xl border p-6"
               >
                 <div className="flex items-start justify-between">
                   <div className="flex items-center">

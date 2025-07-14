@@ -1,46 +1,49 @@
 const featuredAddons = [
   {
-    id: "addon-1",
-    title: "Add-on option 1",
-    description: "Lorem ipsum dolor sit amet consectetur adipisicing elit",
-    price: "$199",
+    id: 'addon-1',
+    title: 'Add-on option 1',
+    description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit',
+    price: '$199',
   },
   {
-    id: "addon-2",
-    title: "Add-on option 2",
-    description: "Lorem ipsum dolor sit amet consectetur adipisicing elit",
-    price: "$199",
+    id: 'addon-2',
+    title: 'Add-on option 2',
+    description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit',
+    price: '$199',
   },
   {
-    id: "addon-3",
-    title: "Add-on option 3",
-    description: "Lorem ipsum dolor sit amet consectetur adipisicing elit",
-    price: "$199",
+    id: 'addon-3',
+    title: 'Add-on option 3',
+    description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit',
+    price: '$199',
   },
 ];
 
 const otherAddons = [
   {
-    id: "addon-4",
-    title: "Add-on option 4",
-    description: "Lorem ipsum dolor sit amet consectetur adipisicing elit",
-    price: "$9",
-    image: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/block-2.svg",
+    id: 'addon-4',
+    title: 'Add-on option 4',
+    description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit',
+    price: '$9',
+    image:
+      'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/block-2.svg',
   },
   {
-    id: "addon-5",
-    title: "Add-on option 5",
-    description: "Lorem ipsum dolor sit amet consectetur adipisicing elit",
-    price: "$19",
-    image: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/block-3.svg",
+    id: 'addon-5',
+    title: 'Add-on option 5',
+    description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit',
+    price: '$19',
+    image:
+      'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/block-3.svg',
   },
   {
-    id: "addon-6",
-    title: "Add-on option 6",
-    description: "Lorem ipsum dolor sit amet consectetur adipisicing elit",
-    price: "$19",
-    priceFootnote: "This is a footnote.",
-    image: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/block-4.svg",
+    id: 'addon-6',
+    title: 'Add-on option 6',
+    description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit',
+    price: '$19',
+    priceFootnote: 'This is a footnote.',
+    image:
+      'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/block-4.svg',
   },
 ];
 
@@ -48,14 +51,14 @@ const Pricing12 = () => {
   return (
     <section className="py-32">
       <div className="container">
-        <div className="rounded-xl border border-border py-6 md:py-8 lg:pt-16 lg:pb-12">
+        <div className="border-border rounded-xl border py-6 md:py-8 lg:pt-16 lg:pb-12">
           <div className="px-6 md:px-8 lg:px-12">
             <div className="mb-8 md:mb-10 md:flex md:justify-between lg:mb-9">
               <div className="lg:w-2/3">
                 <h1 className="mb-4 text-2xl font-medium md:text-3xl lg:text-4xl">
                   Additional add-ons
                 </h1>
-                <p className="text-xs text-muted-foreground md:text-sm lg:text-base">
+                <p className="text-muted-foreground text-xs md:text-sm lg:text-base">
                   Curabitur egestas risus risus, consectetur vestibulum ante
                   commodo quis. Duis aliquam elit sapien, porttitor vehicula
                   purus convallis in.
@@ -71,13 +74,13 @@ const Pricing12 = () => {
               {featuredAddons.map((addon) => (
                 <div
                   key={addon.id}
-                  className="flex flex-1 flex-col rounded-lg bg-accent p-6 lg:py-8"
+                  className="bg-accent flex flex-1 flex-col rounded-lg p-6 lg:py-8"
                 >
                   <h2 className="mb-1.5 text-base font-medium lg:mb-2 lg:text-lg">
                     {addon.title}
                   </h2>
                   <div className="grid flex-1 grid-cols-1 gap-x-10 md:grid-cols-3 lg:grid-cols-1">
-                    <p className="mb-8 max-w-xs text-xs text-muted-foreground md:col-span-2 md:mb-0 lg:mb-10 lg:text-base">
+                    <p className="text-muted-foreground mb-8 max-w-xs text-xs md:col-span-2 md:mb-0 lg:mb-10 lg:text-base">
                       {addon.description}
                     </p>
                     <div className="col-span-1 md:mt-auto md:ml-auto lg:ml-0">
@@ -85,8 +88,8 @@ const Pricing12 = () => {
                         <span className="font-medium lg:text-2xl">
                           {addon.price}
                         </span>
-                        <span className="text-xs font-medium text-muted-foreground">
-                          {" "}
+                        <span className="text-muted-foreground text-xs font-medium">
+                          {' '}
                           / Month
                         </span>
                       </p>
@@ -96,8 +99,8 @@ const Pricing12 = () => {
               ))}
             </div>
           </div>
-          <div className="mt-6 border-t border-border md:mt-8 lg:mt-10">
-            <div className="divide-y divide-border px-6 md:px-8 lg:px-12">
+          <div className="border-border mt-6 border-t md:mt-8 lg:mt-10">
+            <div className="divide-border divide-y px-6 md:px-8 lg:px-12">
               {otherAddons.map((addon) => (
                 <div
                   key={addon.id}
@@ -113,7 +116,7 @@ const Pricing12 = () => {
                       <p className="mb-1.5 text-lg font-medium md:text-xl lg:mb-2 lg:text-2xl">
                         {addon.title}
                       </p>
-                      <p className="text-xs text-muted-foreground md:text-xs lg:text-base">
+                      <p className="text-muted-foreground text-xs md:text-xs lg:text-base">
                         {addon.description}
                       </p>
                     </div>
@@ -122,12 +125,12 @@ const Pricing12 = () => {
                     <span className="text-2xl font-medium md:text-3xl lg:text-4xl">
                       {addon.price}
                     </span>
-                    <span className="text-xs text-muted-foreground">
-                      {" "}
+                    <span className="text-muted-foreground text-xs">
+                      {' '}
                       / Month
                     </span>
                     {addon.priceFootnote && (
-                      <div className="mt-1 text-xs font-medium text-muted-foreground md:max-w-[8rem] lg:max-w-full">
+                      <div className="text-muted-foreground mt-1 text-xs font-medium md:max-w-[8rem] lg:max-w-full">
                         * {addon.priceFootnote}
                       </div>
                     )}

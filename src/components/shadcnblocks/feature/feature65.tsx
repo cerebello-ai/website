@@ -1,73 +1,75 @@
-"use client";
+'use client';
 
-import clsx from "clsx";
+import { useState } from 'react';
+
+import clsx from 'clsx';
 import {
   ChevronDown,
   ChevronUp,
   GanttChartSquareIcon,
   SwatchBook,
-} from "lucide-react";
-import { GitBranch, Sparkles } from "lucide-react";
-import { useState } from "react";
+  GitBranch,
+  Sparkles,
+} from 'lucide-react';
 
-import { Badge } from "@/components/ui/badge";
+import { Badge } from '@/components/ui/badge';
 
 const integrations = [
   {
-    title: "Design",
+    title: 'Design',
     description:
-      "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam, corporis!",
+      'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam, corporis!',
     image: <SwatchBook className="h-8 w-8" />,
-    color: "bg-red-400",
+    color: 'bg-red-400',
     tags: [
-      "Deliverables",
-      "Research Insights",
-      "Hi-fi Product Screens",
-      "Vision Presentations",
-      "Animated Product Walk-through",
+      'Deliverables',
+      'Research Insights',
+      'Hi-fi Product Screens',
+      'Vision Presentations',
+      'Animated Product Walk-through',
     ],
   },
   {
-    title: "Develop",
+    title: 'Develop',
     description:
-      "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam, corporis!",
+      'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam, corporis!',
     image: <GitBranch className="h-8 w-8" />,
-    color: "bg-blue-400",
+    color: 'bg-blue-400',
     tags: [
-      "Deliverables",
-      "Brand Audit",
-      "Look Book",
-      "Executive Decks",
-      "Style Guides",
-      "Design Systems",
+      'Deliverables',
+      'Brand Audit',
+      'Look Book',
+      'Executive Decks',
+      'Style Guides',
+      'Design Systems',
     ],
   },
   {
-    title: "UX",
+    title: 'UX',
     description:
-      "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam, corporis!",
+      'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam, corporis!',
     image: <Sparkles className="h-8 w-8" />,
-    color: "bg-yellow-400",
+    color: 'bg-yellow-400',
     tags: [
-      "Deliverables",
-      "Weekly Sprints",
-      "Hi-fi Product Screens",
-      "Prototyping",
-      "Walk-through Videos",
+      'Deliverables',
+      'Weekly Sprints',
+      'Hi-fi Product Screens',
+      'Prototyping',
+      'Walk-through Videos',
     ],
   },
   {
-    title: "Analytics",
+    title: 'Analytics',
     description:
-      "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam, corporis!",
+      'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam, corporis!',
     image: <GanttChartSquareIcon className="h-8 w-8" />,
-    color: "bg-green-400",
+    color: 'bg-green-400',
     tags: [
-      "Deliverables",
-      "Workshops",
-      "Tool Kits",
-      "Communications Packages",
-      "Websites",
+      'Deliverables',
+      'Workshops',
+      'Tool Kits',
+      'Communications Packages',
+      'Websites',
     ],
   },
 ];
@@ -86,7 +88,7 @@ const Feature65 = () => {
             >
               <div className="bg-muted-foreground/5 flex items-center justify-between rounded-xl p-6">
                 <div className="flex items-center gap-3">
-                  <div className={clsx("h-16 w-3 rounded-md", item.color)} />
+                  <div className={clsx('h-16 w-3 rounded-md', item.color)} />
                   <h3 className="text-xl font-bold">{item.title}</h3>
                 </div>
                 <div className="flex items-center gap-6">
@@ -106,7 +108,7 @@ const Feature65 = () => {
                 </div>
               </div>
               <div
-                className={` ${activeTabId === index ? "flex" : "hidden"} bg-muted-foreground/5 h-full flex-col items-start justify-between gap-64 rounded-xl p-6 transition-all duration-300 lg:flex`}
+                className={` ${activeTabId === index ? 'flex' : 'hidden'} bg-muted-foreground/5 h-full flex-col items-start justify-between gap-64 rounded-xl p-6 transition-all duration-300 lg:flex`}
               >
                 <div className="text-muted-foreground/90 text-xl font-medium">
                   {item.description}
@@ -115,7 +117,7 @@ const Feature65 = () => {
                   {item.tags.map((tag, index) => (
                     <Badge
                       variant="outline"
-                      className={`${index == 0 ? "bg-muted/5" : "bg-background"} rounded-2xl border-0 px-4 py-3 text-base font-medium`}
+                      className={`${index == 0 ? 'bg-muted/5' : 'bg-background'} rounded-2xl border-0 px-4 py-3 text-base font-medium`}
                       key={tag}
                     >
                       {tag}

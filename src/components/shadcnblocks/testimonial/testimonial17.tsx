@@ -1,16 +1,15 @@
-"use client";
+'use client';
 
-import { useEffect, useState } from "react";
+import { useEffect, useState } from 'react';
 
-import { cn } from "@/lib/utils";
-
-import { Avatar, AvatarImage } from "@/components/ui/avatar";
-import type { CarouselApi } from "@/components/ui/carousel";
+import { Avatar, AvatarImage } from '@/components/ui/avatar';
+import type { CarouselApi } from '@/components/ui/carousel';
 import {
   Carousel,
   CarouselContent,
   CarouselItem,
-} from "@/components/ui/carousel";
+} from '@/components/ui/carousel';
+import { cn } from '@/lib/utils';
 
 const Testimonial17 = () => {
   const [api, setApi] = useState<CarouselApi>();
@@ -25,7 +24,7 @@ const Testimonial17 = () => {
     setCount(api.scrollSnapList().length);
     setCurrent(api.selectedScrollSnap() + 1);
 
-    api.on("select", () => {
+    api.on('select', () => {
       setCurrent(api.selectedScrollSnap() + 1);
     });
   }, [api]);
@@ -51,7 +50,7 @@ const Testimonial17 = () => {
                     adopting this platform. It&apos;s a game-changer.
                   </p>
                   <div className="mb-3 flex gap-4">
-                    <Avatar className="size-12 rounded-full ring-1 ring-input">
+                    <Avatar className="ring-input size-12 rounded-full ring-1">
                       <AvatarImage
                         src="https://deifkwefumgah.cloudfront.net/shadcnblocks/block/avatar-1.webp"
                         alt="avatar"
@@ -78,7 +77,7 @@ const Testimonial17 = () => {
                     improved team collaboration like never before.
                   </p>
                   <div className="mb-3 flex gap-4">
-                    <Avatar className="size-12 rounded-full ring-1 ring-input">
+                    <Avatar className="ring-input size-12 rounded-full ring-1">
                       <AvatarImage
                         src="https://deifkwefumgah.cloudfront.net/shadcnblocks/block/avatar-2.webp"
                         alt="avatar"
@@ -103,7 +102,7 @@ const Testimonial17 = () => {
                     the efficiency this platform brings to us.
                   </p>
                   <div className="mb-3 flex gap-4">
-                    <Avatar className="size-12 rounded-full ring-1 ring-input">
+                    <Avatar className="ring-input size-12 rounded-full ring-1">
                       <AvatarImage
                         src="https://deifkwefumgah.cloudfront.net/shadcnblocks/block/avatar-3.webp"
                         alt="avatar"
@@ -124,8 +123,8 @@ const Testimonial17 = () => {
                 <span
                   key={index}
                   className={cn(
-                    "mx-2 inline-block size-3 cursor-pointer rounded-full border-2",
-                    index + 1 === current && "border-primary bg-primary",
+                    'mx-2 inline-block size-3 cursor-pointer rounded-full border-2',
+                    index + 1 === current && 'border-primary bg-primary',
                   )}
                   onClick={() => api && api.scrollTo(index)}
                 />
@@ -144,8 +143,11 @@ const Testimonial17 = () => {
                 adopting this platform. It&apos;s a game-changer for us!
               </p>
               <div className="mb-3 flex gap-4">
-                <Avatar className="size-12 rounded-full ring-1 ring-input">
-                  <AvatarImage src="https://deifkwefumgah.cloudfront.net/shadcnblocks/block/avatar-1.webp" alt="avatar" />
+                <Avatar className="ring-input size-12 rounded-full ring-1">
+                  <AvatarImage
+                    src="https://deifkwefumgah.cloudfront.net/shadcnblocks/block/avatar-1.webp"
+                    alt="avatar"
+                  />
                 </Avatar>
                 <div>
                   <p className="font-medium">Sarah Williams</p>
@@ -167,7 +169,7 @@ const Testimonial17 = () => {
                   team collaboration like never before.
                 </p>
                 <div className="mb-3 flex gap-4">
-                  <Avatar className="size-12 rounded-full ring-1 ring-input">
+                  <Avatar className="ring-input size-12 rounded-full ring-1">
                     <AvatarImage
                       src="https://deifkwefumgah.cloudfront.net/shadcnblocks/block/avatar-2.webp"
                       alt="avatar"
@@ -190,7 +192,7 @@ const Testimonial17 = () => {
                   efficiency this platform brings.
                 </p>
                 <div className="mb-3 flex gap-4">
-                  <Avatar className="size-12 rounded-full ring-1 ring-input">
+                  <Avatar className="ring-input size-12 rounded-full ring-1">
                     <AvatarImage
                       src="https://deifkwefumgah.cloudfront.net/shadcnblocks/block/avatar-3.webp"
                       alt="avatar"

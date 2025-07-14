@@ -1,6 +1,4 @@
-import { type SVGProps, useId } from "react";
-
-import { cn } from "@/lib/utils";
+import { type SVGProps, useId } from 'react';
 
 import {
   Card,
@@ -8,7 +6,8 @@ import {
   CardDescription,
   CardHeader,
   CardTitle,
-} from "@/components/ui/card";
+} from '@/components/ui/card';
+import { cn } from '@/lib/utils';
 
 const items = [
   {
@@ -20,70 +19,70 @@ const items = [
       </>
     ),
     description: [
-      "VAR is often known for its lengthy processing times. At Charter, we focus on achieving the fastest VAR transfers—often completed within hours.",
-      "Unlike traditional banks and middleware, we connect directly with the Federal Reserve to ensure the fastest, most transparent transfers possible.",
+      'VAR is often known for its lengthy processing times. At Charter, we focus on achieving the fastest VAR transfers—often completed within hours.',
+      'Unlike traditional banks and middleware, we connect directly with the Federal Reserve to ensure the fastest, most transparent transfers possible.',
     ],
     image: {
-      src: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-1.svg",
-      alt: "Code snippet",
+      src: 'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-1.svg',
+      alt: 'Code snippet',
     },
-    imagePosition: "content",
+    imagePosition: 'content',
     className:
-      "flex flex-col pl-6 py-6 overflow-hidden md:col-span-3 md:flex-row gap-6 md:gap-12",
-    headerClassName: "flex-2 p-0 md:flex-1",
+      'flex flex-col pl-6 py-6 overflow-hidden md:col-span-3 md:flex-row gap-6 md:gap-12',
+    headerClassName: 'flex-2 p-0 md:flex-1',
     contentClassName:
-      "relative w-full self-start p-0 overflow-hidden rounded-l-xl border md:flex-1",
+      'relative w-full self-start p-0 overflow-hidden rounded-l-xl border md:flex-1',
   },
   {
-    title: "Unparalleled VAR flexibility",
+    title: 'Unparalleled VAR flexibility',
     description: [
-      "VAR has a reputation for taking too long. At Charter, we optimise for the fastest VAR transfers possible — often in a matter of hours.",
-      "Unlike legacy banks and middleware providers, we have a direct connection to the Federal Reserve to facilitate the quickest transfers.",
+      'VAR has a reputation for taking too long. At Charter, we optimise for the fastest VAR transfers possible — often in a matter of hours.',
+      'Unlike legacy banks and middleware providers, we have a direct connection to the Federal Reserve to facilitate the quickest transfers.',
     ],
     image: {
-      src: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-1.svg",
-      alt: "VAR Process Flow",
-      className: "aspect-[2/1.1] rounded-xl",
+      src: 'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-1.svg',
+      alt: 'VAR Process Flow',
+      className: 'aspect-[2/1.1] rounded-xl',
     },
-    className: "md:col-span-2 flex flex-col justify-center",
-    contentClassName: "flex items-center justify-center",
-    imagePosition: "content",
+    className: 'md:col-span-2 flex flex-col justify-center',
+    contentClassName: 'flex items-center justify-center',
+    imagePosition: 'content',
   },
   {
-    title: "Unparalleled VAR flexibility",
+    title: 'Unparalleled VAR flexibility',
     description: [
-      "VAR has a reputation for taking too long. At Charter, we optimise for the fastest VAR transfers possible — often in a matter of hours.",
+      'VAR has a reputation for taking too long. At Charter, we optimise for the fastest VAR transfers possible — often in a matter of hours.',
     ],
     image: {
-      src: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-1.svg",
-      alt: "VAR Process Diagram",
-      className: "aspect-2/1 rounded-xl flex-1 self-center mb-6",
+      src: 'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-1.svg',
+      alt: 'VAR Process Diagram',
+      className: 'aspect-2/1 rounded-xl flex-1 self-center mb-6',
     },
-    className: "md:col-span-2",
-    headerClassName: "h-full",
-    imagePosition: "header",
+    className: 'md:col-span-2',
+    headerClassName: 'h-full',
+    imagePosition: 'header',
   },
   {
-    title: "Unparalleled VAR flexibility",
+    title: 'Unparalleled VAR flexibility',
     description: [
-      "Unlike traditional banks and middleware, we connect directly with the Federal Reserve to ensure the fastest, most transparent transfers possible.",
+      'Unlike traditional banks and middleware, we connect directly with the Federal Reserve to ensure the fastest, most transparent transfers possible.',
     ],
     image: {
-      src: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-1.svg",
-      alt: "Code snippet",
+      src: 'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-1.svg',
+      alt: 'Code snippet',
     },
-    imagePosition: "content",
-    className: "overflow-hidden md:col-span-3 ",
-    headerClassName: "",
+    imagePosition: 'content',
+    className: 'overflow-hidden md:col-span-3 ',
+    headerClassName: '',
     contentClassName:
-      "relative aspect-[2/1.25] mt-4 p-0 ml-8 w-full md:max-w-[400px] lg:max-w-[500px] overflow-hidden md:mx-auto rounded-t-xl",
+      'relative aspect-[2/1.25] mt-4 p-0 ml-8 w-full md:max-w-[400px] lg:max-w-[500px] overflow-hidden md:mx-auto rounded-t-xl',
   },
 ];
 
 export const Feature193 = () => {
   return (
     <section className="relative overflow-hidden py-32">
-      <h3 className="container font-mono text-sm font-semibold tracking-widest text-accent-foreground">
+      <h3 className="text-accent-foreground container font-mono text-sm font-semibold tracking-widest">
         WHY CHARTER?
       </h3>
 
@@ -91,14 +90,14 @@ export const Feature193 = () => {
         {items.map((item, index) => (
           <Card
             key={index}
-            className={cn("col-span-1 shadow-xl", item.className)}
+            className={cn('col-span-1 shadow-xl', item.className)}
           >
             <CardHeader className={item.headerClassName}>
-              {item.imagePosition === "header" && (
+              {item.imagePosition === 'header' && (
                 <img
                   src={item.image.src}
                   alt={item.image.alt}
-                  className={cn("object-cover", item.image.className)}
+                  className={cn('object-cover', item.image.className)}
                 />
               )}
               <CardTitle className="mt-0! text-3xl">{item.title}</CardTitle>
@@ -112,12 +111,12 @@ export const Feature193 = () => {
               ))}
             </CardHeader>
             <CardContent className={item.contentClassName}>
-              {item.imagePosition === "content" && (
+              {item.imagePosition === 'content' && (
                 <img
                   src={item.image.src}
                   alt={item.image.alt}
                   className={cn(
-                    "self-center object-cover",
+                    'self-center object-cover',
                     item.image.className,
                   )}
                 />
@@ -135,7 +134,7 @@ export const Feature193 = () => {
           <div className="bg-gradient-3/[0.06] absolute right-20 bottom-10 h-[500px] w-[800px] -rotate-12 rounded-full blur-[100px] will-change-transform" />
         </div>
         <div className="absolute -inset-x-20 top-0 [mask-image:radial-gradient(circle_at_center,black_0%,black_20%,transparent_85%)]">
-          <PlusSigns className="h-full w-full text-foreground/[0.05]" />
+          <PlusSigns className="text-foreground/[0.05] h-full w-full" />
         </div>
       </>
     </section>

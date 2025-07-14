@@ -1,8 +1,8 @@
-import { ChevronRight, Menu } from "lucide-react";
+import { ChevronRight, Menu } from 'lucide-react';
 
-import { Avatar, AvatarImage } from "@/components/ui/avatar";
-import { Badge } from "@/components/ui/badge";
-import { Button } from "@/components/ui/button";
+import { Avatar, AvatarImage } from '@/components/ui/avatar';
+import { Badge } from '@/components/ui/badge';
+import { Button } from '@/components/ui/button';
 
 const Feature109 = () => {
   return (
@@ -10,7 +10,7 @@ const Feature109 = () => {
       <div className="container">
         <div className="grid place-items-center gap-10 lg:grid-cols-2">
           <div className="flex flex-col gap-5">
-            <Badge variant="outline" className="w-fit bg-background">
+            <Badge variant="outline" className="bg-background w-fit">
               Modern Tactics
             </Badge>
             <h3 className="text-3xl font-semibold lg:text-5xl">
@@ -32,9 +32,9 @@ const Feature109 = () => {
               alt="placeholder"
               className="rounded-xl object-cover md:aspect-video lg:aspect-auto"
             />
-            <div className="absolute top-0 right-0 bottom-0 left-0 rounded-xl bg-linear-to-t from-primary via-transparent to-transparent"></div>
+            <div className="from-primary absolute top-0 right-0 bottom-0 left-0 rounded-xl bg-linear-to-t via-transparent to-transparent"></div>
             <div className="absolute top-0 flex h-full w-full flex-col justify-between p-7">
-              <span className="ml-auto flex w-fit items-center gap-2 rounded-full bg-background/30 px-4 py-2.5 text-sm font-semibold backdrop-blur-sm">
+              <span className="bg-background/30 ml-auto flex w-fit items-center gap-2 rounded-full px-4 py-2.5 text-sm font-semibold backdrop-blur-sm">
                 <Avatar className="size-7 rounded-full">
                   <AvatarImage
                     src="https://deifkwefumgah.cloudfront.net/shadcnblocks/block/avatar-1.webp"
@@ -43,7 +43,7 @@ const Feature109 = () => {
                 </Avatar>
                 Tailored for experts
               </span>
-              <div className="flex flex-col gap-5 text-background">
+              <div className="text-background flex flex-col gap-5">
                 <h4 className="text-lg font-semibold lg:text-3xl">
                   Elevate your platform to the next level.
                 </h4>

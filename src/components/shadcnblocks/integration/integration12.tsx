@@ -1,15 +1,15 @@
-"use client";
+'use client';
 
-import { ArrowLeftRight, Check } from "lucide-react";
+import { ArrowLeftRight, Check } from 'lucide-react';
 
-import { Button } from "@/components/ui/button";
+import { Button } from '@/components/ui/button';
 
 const permissions = [
-  "View analytics and performance metrics",
-  "Create and manage project milestones",
-  "Assign and update team responsibilities",
-  "Receive and respond to customer feedback",
-  "Manage notification preferences and alerts",
+  'View analytics and performance metrics',
+  'Create and manage project milestones',
+  'Assign and update team responsibilities',
+  'Receive and respond to customer feedback',
+  'Manage notification preferences and alerts',
 ];
 
 const Integration12 = () => {
@@ -18,7 +18,7 @@ const Integration12 = () => {
       <div className="container">
         <div className="mx-auto flex w-full max-w-md flex-col items-center gap-6 p-0">
           <div className="flex w-full flex-col items-center gap-2 border-b pb-4">
-            <div className="mb-2 mt-2 flex items-center justify-center gap-4">
+            <div className="mt-2 mb-2 flex items-center justify-center gap-4">
               <div className="bg-background flex h-12 w-12 items-center justify-center rounded-lg border p-3 shadow">
                 <img
                   src="https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/shadcn-ui-icon.svg"

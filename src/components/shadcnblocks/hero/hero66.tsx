@@ -1,8 +1,8 @@
-import { Calendar } from "lucide-react";
+import { Calendar } from 'lucide-react';
 
-import { AspectRatio } from "@/components/ui/aspect-ratio";
-import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
-import { Button } from "@/components/ui/button";
+import { AspectRatio } from '@/components/ui/aspect-ratio';
+import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
+import { Button } from '@/components/ui/button';
 
 const Hero66 = () => {
   return (
@@ -14,10 +14,10 @@ const Hero66 = () => {
           className="size-14 rounded-full shadow-xl"
         />
         <div className="flex max-w-4xl flex-col items-center gap-4">
-          <h1 className="text-4xl text-foreground lg:text-6xl">
+          <h1 className="text-foreground text-4xl lg:text-6xl">
             Outstanding Web Presence for High-Growth Ventures
           </h1>
-          <p className="font-light text-foreground">
+          <p className="text-foreground font-light">
             Attract prospects and differentiate yourself with a cutting-edge
             Construct website that aligns with your company vision and
             communicates effectively, quickly and effortlessly
@@ -30,29 +30,29 @@ const Hero66 = () => {
           </Button>
           <div className="flex flex-col gap-2">
             <div className="flex -space-x-1">
-              <Avatar className="size-8 rounded-full border border-muted object-cover">
+              <Avatar className="border-muted size-8 rounded-full border object-cover">
                 <AvatarImage src="https://deifkwefumgah.cloudfront.net/shadcnblocks/block/avatar-1.webp" />
                 <AvatarFallback>A</AvatarFallback>
               </Avatar>
-              <Avatar className="size-8 rounded-full border border-muted object-cover">
+              <Avatar className="border-muted size-8 rounded-full border object-cover">
                 <AvatarImage src="https://deifkwefumgah.cloudfront.net/shadcnblocks/block/avatar-2.webp" />
                 <AvatarFallback>B</AvatarFallback>
               </Avatar>
 
-              <Avatar className="size-8 rounded-full border border-muted object-cover">
+              <Avatar className="border-muted size-8 rounded-full border object-cover">
                 <AvatarImage src="https://deifkwefumgah.cloudfront.net/shadcnblocks/block/avatar-3.webp" />
                 <AvatarFallback>C</AvatarFallback>
               </Avatar>
-              <Avatar className="size-8 rounded-full border border-muted object-cover">
+              <Avatar className="border-muted size-8 rounded-full border object-cover">
                 <AvatarImage src="https://deifkwefumgah.cloudfront.net/shadcnblocks/block/avatar-4.webp" />
                 <AvatarFallback>D</AvatarFallback>
               </Avatar>
-              <Avatar className="size-8 rounded-full border border-muted object-cover">
+              <Avatar className="border-muted size-8 rounded-full border object-cover">
                 <AvatarImage src="https://deifkwefumgah.cloudfront.net/shadcnblocks/block/avatar-5.webp" />
                 <AvatarFallback>E</AvatarFallback>
               </Avatar>
             </div>
-            <span className="text-xs text-muted-foreground">
+            <span className="text-muted-foreground text-xs">
               Endorsed by market pioneers
             </span>
           </div>

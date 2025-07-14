@@ -1,17 +1,20 @@
-import { Button } from "@/components/ui/button";
+import { Button } from '@/components/ui/button';
 
 const integrations = [
   {
-    image: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-1.svg",
-    text: "Our innovative budgeting tool helps users track their expenses and savings effortlessly, ensuring they stay on top of their financial goals.",
+    image:
+      'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-1.svg',
+    text: 'Our innovative budgeting tool helps users track their expenses and savings effortlessly, ensuring they stay on top of their financial goals.',
   },
   {
-    image: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-2.svg",
-    text: "With our investment platform, users can easily manage their portfolios and make informed decisions to grow their wealth over time.",
+    image:
+      'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-2.svg',
+    text: 'With our investment platform, users can easily manage their portfolios and make informed decisions to grow their wealth over time.',
   },
   {
-    image: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-3.svg",
-    text: "Our secure payment solutions provide a seamless experience for both individuals and businesses, making transactions quick and reliable.",
+    image:
+      'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-3.svg',
+    text: 'Our secure payment solutions provide a seamless experience for both individuals and businesses, making transactions quick and reliable.',
   },
 ];
 
@@ -20,7 +23,7 @@ const Feature158 = () => {
     <section className="py-32">
       <div className="container">
         <div className="mb-12 flex flex-col items-center">
-          <h4 className="mb-4 text-muted-foreground/50">
+          <h4 className="text-muted-foreground/50 mb-4">
             Welcome to FinTech Innovations
           </h4>
           <h1 className="mb-6 text-center text-4xl font-semibold sm:text-5xl lg:text-[56px]">

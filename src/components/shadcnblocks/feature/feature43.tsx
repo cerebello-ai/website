@@ -5,7 +5,7 @@ import {
   RadioTower,
   SquareKanban,
   WandSparkles,
-} from "lucide-react";
+} from 'lucide-react';
 
 interface Reason {
   title: string;
@@ -19,42 +19,42 @@ interface Feature43Props {
 }
 
 const Feature43 = ({
-  heading = "Why Work With Us?",
+  heading = 'Why Work With Us?',
   reasons = [
     {
-      title: "Quality",
+      title: 'Quality',
       description:
-        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe est aliquid exercitationem, quos explicabo repellat?",
+        'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe est aliquid exercitationem, quos explicabo repellat?',
       icon: <GitPullRequest className="size-6" />,
     },
     {
-      title: "Experience",
+      title: 'Experience',
       description:
-        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe est aliquid exercitationem, quos explicabo repellat?",
+        'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe est aliquid exercitationem, quos explicabo repellat?',
       icon: <SquareKanban className="size-6" />,
     },
     {
-      title: "Support",
+      title: 'Support',
       description:
-        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe est aliquid exercitationem, quos explicabo repellat?",
+        'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe est aliquid exercitationem, quos explicabo repellat?',
       icon: <RadioTower className="size-6" />,
     },
     {
-      title: "Innovation",
+      title: 'Innovation',
       description:
-        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe est aliquid exercitationem, quos explicabo repellat?",
+        'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe est aliquid exercitationem, quos explicabo repellat?',
       icon: <WandSparkles className="size-6" />,
     },
     {
-      title: "Results",
+      title: 'Results',
       description:
-        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe est aliquid exercitationem, quos explicabo repellat?",
+        'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe est aliquid exercitationem, quos explicabo repellat?',
       icon: <Layers className="size-6" />,
     },
     {
-      title: "Efficiency",
+      title: 'Efficiency',
       description:
-        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe est aliquid exercitationem, quos explicabo repellat?",
+        'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe est aliquid exercitationem, quos explicabo repellat?',
       icon: <BatteryCharging className="size-6" />,
     },
   ],
@@ -70,7 +70,7 @@ const Feature43 = ({
         <div className="grid gap-10 md:grid-cols-2 lg:grid-cols-3">
           {reasons.map((reason, i) => (
             <div key={i} className="flex flex-col">
-              <div className="mb-5 flex size-16 items-center justify-center rounded-full bg-accent">
+              <div className="bg-accent mb-5 flex size-16 items-center justify-center rounded-full">
                 {reason.icon}
               </div>
               <h3 className="mb-2 text-xl font-semibold">{reason.title}</h3>

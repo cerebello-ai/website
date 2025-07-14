@@ -1,5 +1,5 @@
-import { Avatar, AvatarImage } from "@/components/ui/avatar";
-import { Card, CardContent, CardFooter } from "@/components/ui/card";
+import { Avatar, AvatarImage } from '@/components/ui/avatar';
+import { Card, CardContent, CardFooter } from '@/components/ui/card';
 
 const Testimonial4 = () => {
   return (
@@ -28,7 +28,7 @@ const Testimonial4 = () => {
           </div>
           <div className="grid grid-cols-1 gap-4 lg:grid-cols-3">
             <Card>
-              <CardContent className="px-6 pt-6 leading-7 text-foreground/70">
+              <CardContent className="text-foreground/70 px-6 pt-6 leading-7">
                 <q>
                   Lorem ipsum dolor, sit amet consectetur adipisicing elit.
                   Ipsa, eveniet inventore! Omnis incidunt vel iste.
@@ -36,7 +36,7 @@ const Testimonial4 = () => {
               </CardContent>
               <CardFooter>
                 <div className="flex gap-4 leading-5">
-                  <Avatar className="size-9 rounded-full ring-1 ring-input">
+                  <Avatar className="ring-input size-9 rounded-full ring-1">
                     <AvatarImage
                       src="https://deifkwefumgah.cloudfront.net/shadcnblocks/block/avatar-1.webp"
                       alt="placeholder"
@@ -50,7 +50,7 @@ const Testimonial4 = () => {
               </CardFooter>
             </Card>
             <Card>
-              <CardContent className="px-6 pt-6 leading-7 text-foreground/70">
+              <CardContent className="text-foreground/70 px-6 pt-6 leading-7">
                 <q>
                   Lorem ipsum dolor, sit amet consectetur adipisicing elit.
                   Ipsa, eveniet inventore! Omnis incidunt vel iste.
@@ -58,7 +58,7 @@ const Testimonial4 = () => {
               </CardContent>
               <CardFooter>
                 <div className="flex gap-4 leading-5">
-                  <Avatar className="size-9 rounded-full ring-1 ring-input">
+                  <Avatar className="ring-input size-9 rounded-full ring-1">
                     <AvatarImage
                       src="https://deifkwefumgah.cloudfront.net/shadcnblocks/block/avatar-1.webp"
                       alt="placeholder"
@@ -72,7 +72,7 @@ const Testimonial4 = () => {
               </CardFooter>
             </Card>
             <Card>
-              <CardContent className="px-6 pt-6 leading-7 text-foreground/70">
+              <CardContent className="text-foreground/70 px-6 pt-6 leading-7">
                 <q>
                   Lorem ipsum dolor, sit amet consectetur adipisicing elit.
                   Ipsa, eveniet inventore! Omnis incidunt vel iste.
@@ -80,7 +80,7 @@ const Testimonial4 = () => {
               </CardContent>
               <CardFooter>
                 <div className="flex gap-4 leading-5">
-                  <Avatar className="size-9 rounded-full ring-1 ring-input">
+                  <Avatar className="ring-input size-9 rounded-full ring-1">
                     <AvatarImage
                       src="https://deifkwefumgah.cloudfront.net/shadcnblocks/block/avatar-1.webp"
                       alt="placeholder"

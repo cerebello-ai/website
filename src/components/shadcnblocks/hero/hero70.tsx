@@ -1,19 +1,19 @@
-"use client";
-import AutoScroll from "embla-carousel-auto-scroll";
-import Autoplay from "embla-carousel-autoplay";
-import { ArrowUpRight, CheckCircle } from "lucide-react";
+'use client';
+import AutoScroll from 'embla-carousel-auto-scroll';
+import Autoplay from 'embla-carousel-autoplay';
+import { ArrowUpRight, CheckCircle } from 'lucide-react';
 
-import { Button } from "@/components/ui/button";
+import { Button } from '@/components/ui/button';
 import {
   Carousel,
   CarouselContent,
   CarouselItem,
-} from "@/components/ui/carousel";
+} from '@/components/ui/carousel';
 
 const Hero70 = () => {
   return (
     <section className="bg-background relative py-14">
-      <div className="container relative z-10 mx-auto">
+      <div className="relative z-10 container mx-auto">
         <div className="py-8">
           <img
             src="https://deifkwefumgah.cloudfront.net/shadcnblocks/block/block-1.svg"
@@ -42,7 +42,7 @@ const Hero70 = () => {
                 The All You Can Design buffet to fuel your business growth
               </h1>
               <p className="text-foreground text-lg lg:text-2xl">
-                Enjoy professional design expertise —{" "}
+                Enjoy professional design expertise —{' '}
                 <span className="font-semibold">
                   without the hefty price tag
                 </span>
@@ -66,7 +66,7 @@ const Hero70 = () => {
         <Carousel
           opts={{
             loop: true,
-            align: "center",
+            align: 'center',
           }}
           plugins={[
             AutoScroll({
@@ -77,7 +77,7 @@ const Hero70 = () => {
               delay: 1000,
             }),
           ]}
-          className="before:bg-linear-to-r after:bg-linear-to-l relative mx-auto w-full max-w-full overflow-hidden from-white to-transparent before:absolute before:left-0 before:top-0 before:z-10 before:h-full before:w-[20%] before:content-[''] after:absolute after:right-0 after:top-0 after:z-10 after:h-full after:w-[20%] after:from-white after:to-transparent after:content-['']"
+          className="relative mx-auto w-full max-w-full overflow-hidden from-white to-transparent before:absolute before:top-0 before:left-0 before:z-10 before:h-full before:w-[20%] before:bg-linear-to-r before:content-[''] after:absolute after:top-0 after:right-0 after:z-10 after:h-full after:w-[20%] after:bg-linear-to-l after:from-white after:to-transparent after:content-['']"
         >
           <CarouselContent className="ml-5 flex gap-5 pl-4">
             <CarouselItem className="bg-background basis-[496px]">

@@ -1,12 +1,13 @@
 'use client';
 
+import { Fragment, useState } from 'react';
+
 import {
   AppWindow,
   ArrowLeft,
   ArrowRight,
   ArrowRightLeft,
   Book,
-  Building,
   Building2,
   Calendar,
   CheckCircle2,
@@ -31,17 +32,12 @@ import {
   Puzzle,
   Pyramid,
   Rocket,
-  Scale,
   Search,
   ShieldCheck,
-  Speech,
-  Table,
-  UserPlus,
   UserRound,
   Users,
   X,
 } from 'lucide-react';
-import { Fragment, useState } from 'react';
 
 import { Button } from '@/components/ui/button';
 import {
@@ -52,81 +48,89 @@ import {
   NavigationMenuList,
   NavigationMenuTrigger,
 } from '@/components/ui/navigation-menu';
+import {
+  generateSolutionSlug,
+  generateServiceSlug,
+  generateAboutSlug,
+  generateResourceSlug,
+  generateCaseStudySlug,
+  generateAICenterSlug,
+} from '@/lib/utils/slugify';
 
 const solutions = [
   {
     id: 'solution-1',
-    title: 'AI Scans',
+    title: 'AI Integration',
     description:
-      'In-depth assessment to identify optimal AI implementation opportunities.',
-    href: '#',
+      'Seamlessly integrate AI solutions into your existing business processes.',
+    href: generateSolutionSlug('AI Integration'),
     subpages: [
       {
         id: 'subpage-1',
         title: 'Process Analysis',
-        href: '#',
+        href: '/solutions/process-analysis',
         icon: Search,
       },
       {
         id: 'subpage-2',
-        title: 'Data Assessment',
-        href: '#',
-        icon: Building,
+        title: 'AI Strategy Development',
+        href: generateSolutionSlug('AI Strategy Development'),
+        icon: Lightbulb,
       },
       {
         id: 'subpage-3',
-        title: 'ROI Evaluation',
-        href: '#',
+        title: 'ROI Optimization',
+        href: generateSolutionSlug('ROI Optimization'),
         icon: DollarSign,
       },
       {
         id: 'subpage-4',
         title: 'Implementation Roadmap',
-        href: '#',
+        href: generateSolutionSlug('Implementation Roadmap'),
         icon: Clock,
       },
       {
         id: 'subpage-5',
-        title: 'Risk Analysis',
-        href: '#',
+        title: 'Change Management',
+        href: generateSolutionSlug('Change Management'),
         icon: ShieldCheck,
       },
     ],
   },
   {
     id: 'solution-2',
-    title: 'Custom AI Solutions',
+    title: 'Business Automation',
     description:
-      'Tailored AI solutions designed for your specific business needs.',
-    href: '#',
+      'End-to-end automation solutions that streamline your operations.',
+    href: generateSolutionSlug('Business Automation'),
     subpages: [
       {
         id: 'subpage-6',
-        title: 'Machine Learning Models',
+        title: 'Workflow Automation',
         href: '#',
         icon: CheckCircle2,
       },
       {
         id: 'subpage-7',
-        title: 'Natural Language Processing',
+        title: 'Intelligent Document Processing',
         href: '#',
-        icon: Speech,
+        icon: File,
       },
       {
         id: 'subpage-8',
-        title: 'Computer Vision',
+        title: 'Customer Service AI',
         href: '#',
         icon: UserRound,
       },
       {
         id: 'subpage-9',
-        title: 'Predictive Analytics',
+        title: 'Data Analytics & Insights',
         href: '#',
         icon: PieChart,
       },
       {
         id: 'subpage-10',
-        title: 'AI Integration',
+        title: 'API Integration',
         href: '#',
         icon: Globe,
       },
@@ -134,102 +138,75 @@ const solutions = [
   },
   {
     id: 'solution-3',
-    title: 'Process Automation',
-    description: 'Intelligent automation that transforms your workflows.',
-    href: '#',
+    title: 'Strategic Consulting',
+    description: 'Expert guidance for your AI transformation journey.',
+    href: generateSolutionSlug('Strategic Consulting'),
     subpages: [
       {
         id: 'subpage-11',
-        title: 'Robotic Process Automation',
+        title: 'Digital Transformation',
         href: '#',
-        icon: Globe2,
+        icon: Rocket,
       },
       {
         id: 'subpage-12',
-        title: 'Workflow Optimization',
+        title: 'Process Optimization',
         href: '#',
         icon: Clock,
       },
       {
         id: 'subpage-13',
-        title: 'Business Rules Engine',
+        title: 'Business Model Innovation',
         href: '#',
-        icon: Building,
+        icon: Lightbulb,
       },
       {
         id: 'subpage-14',
-        title: 'System Integration',
+        title: 'Technology Assessment',
         href: '#',
-        icon: Phone,
+        icon: Search,
       },
       {
         id: 'subpage-15',
-        title: 'API Management',
+        title: 'Implementation Support',
         href: '#',
-        icon: File,
+        icon: CheckCircle2,
       },
     ],
   },
   {
     id: 'solution-4',
-    title: 'AI Center of Excellence',
-    description: 'Establish internal AI competency to lead your industry.',
-    href: '#',
+    title: 'Custom Development',
+    description: 'Bespoke AI-powered applications tailored to your needs.',
+    href: generateSolutionSlug('Custom Development'),
     subpages: [
       {
         id: 'subpage-16',
-        title: 'AI Strategy Development',
-        href: '#',
-        icon: Scale,
-      },
-      {
-        id: 'subpage-17',
-        title: 'Team Training & Upskilling',
-        href: '#',
-        icon: UserPlus,
-      },
-      {
-        id: 'subpage-18',
-        title: 'Governance Framework',
-        href: '#',
-        icon: Table,
-      },
-    ],
-  },
-  {
-    id: 'solution-5',
-    title: 'Custom Portals & Applications',
-    description:
-      'Tailored digital solutions built for your specific business needs.',
-    href: '#',
-    subpages: [
-      {
-        id: 'subpage-19',
-        title: 'Web Portals',
+        title: 'AI-Powered Web Apps',
         href: '#',
         icon: Globe2,
       },
       {
-        id: 'subpage-20',
-        title: 'Mobile Applications',
+        id: 'subpage-17',
+        title: 'Mobile Solutions',
         href: '#',
         icon: Phone,
       },
       {
-        id: 'subpage-21',
-        title: 'Dashboard Development',
+        id: 'subpage-18',
+        title: 'Data Dashboards',
         href: '#',
         icon: PieChart,
       },
       {
-        id: 'subpage-22',
+        id: 'subpage-19',
         title: 'System Integration',
         href: '#',
         icon: AppWindow,
       },
       {
-        id: 'subpage-23',
-        title: 'User Experience Design',
+        id: 'subpage-20',
+        title: 'UX/UI Design',
         href: '#',
         icon: UserRound,
       },
@@ -240,19 +217,19 @@ const solutions = [
 const solutionTechnologies = [
   {
     id: 'technology-1',
-    title: 'AI Platform',
+    title: 'AI & Machine Learning',
     href: '#',
     icon: Puzzle,
   },
   {
     id: 'technology-2',
-    title: 'Data Security',
+    title: 'Secure & Compliant',
     href: '#',
     icon: Lock,
   },
   {
     id: 'technology-3',
-    title: 'Custom Development',
+    title: 'Human-Centered Design',
     href: '#',
     icon: Code,
   },
@@ -260,50 +237,50 @@ const solutionTechnologies = [
 
 const productCategories = [
   {
-    title: 'Core Products',
+    title: 'AI Solutions',
     products: [
       {
         id: 'product-1',
-        title: 'Task Management',
-        description: 'Organize and track work efficiently.',
-        href: '#',
+        title: 'Process Mining & Analysis',
+        description: 'Discover optimization opportunities with AI.',
+        href: generateServiceSlug('Process Mining & Analysis'),
         image:
           'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/block-1.svg',
       },
       {
         id: 'product-2',
-        title: 'Team Calendar',
-        description: 'Coordinate schedules and deadlines.',
-        href: '#',
+        title: 'Intelligent Automation',
+        description: 'Automate complex business processes.',
+        href: generateServiceSlug('Intelligent Automation'),
         image:
           'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/block-2.svg',
       },
       {
         id: 'product-3',
-        title: 'Workflows',
-        description: 'Automate your business processes.',
-        href: '#',
+        title: 'Predictive Analytics',
+        description: 'Make data-driven decisions with AI insights.',
+        href: generateServiceSlug('Predictive Analytics'),
         image:
           'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/block-3.svg',
       },
     ],
   },
   {
-    title: 'Advanced Features',
+    title: 'Business Services',
     products: [
       {
         id: 'product-4',
-        title: 'Portfolio Management',
-        description: 'Track and optimize project portfolios at scale.',
-        href: '#',
+        title: 'Strategic Consulting',
+        description: 'Expert guidance for AI transformation.',
+        href: generateServiceSlug('Strategic Consulting'),
         image:
           'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/block-4.svg',
       },
       {
         id: 'product-5',
-        title: 'Resource Planning',
-        description: 'Optimize team workload and capacity.',
-        href: '#',
+        title: 'Implementation Support',
+        description: 'End-to-end deployment and integration.',
+        href: generateServiceSlug('Implementation Support'),
         image:
           'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/block-5.svg',
       },
@@ -488,42 +465,42 @@ const resources = [
     id: 'resource-1',
     title: 'Events & Webinars',
     description: 'Learn from industry experts.',
-    href: '#',
+    href: generateResourceSlug('Events & Webinars'),
     icon: Calendar,
   },
   {
     id: 'resource-2',
     title: 'Podcasts',
     description: 'Insights on productivity and leadership.',
-    href: '#',
+    href: generateResourceSlug('Podcasts'),
     icon: Mic,
   },
   {
     id: 'resource-3',
     title: 'Blog',
     description: 'Latest updates and best practices.',
-    href: '#',
+    href: generateResourceSlug('Blog'),
     icon: Newspaper,
   },
   {
     id: 'resource-4',
     title: 'Video Tutorials',
     description: 'Get started with guided videos.',
-    href: '#',
+    href: generateResourceSlug('Video Tutorials'),
     icon: PlayCircle,
   },
   {
     id: 'resource-5',
     title: 'Knowledge Base',
     description: 'Detailed guides and documentation.',
-    href: '#',
+    href: generateResourceSlug('Knowledge Base'),
     icon: Book,
   },
   {
     id: 'resource-6',
     title: 'Success Stories',
     description: 'See how others achieve more.',
-    href: '#',
+    href: generateCaseStudySlug('Success Stories'),
     icon: Lightbulb,
   },
 ];
@@ -580,26 +557,30 @@ const topicGroups = [
 const SolutionsMenu = () => (
   <div className="grid gap-8 sm:grid-cols-2">
     <a
-      href="#"
+      href="/services/implementation"
       className="group bg-primary text-primary-foreground relative flex h-full flex-row overflow-hidden rounded-lg px-0 pt-8 lg:rounded-xl lg:px-6"
     >
       <div className="relative flex w-full flex-col space-y-12 text-left md:space-y-8 lg:w-full lg:flex-row lg:justify-between lg:space-y-0 lg:space-x-6 xl:space-x-12">
         <div className="relative flex flex-col px-6 lg:mb-6 lg:px-0">
           <span className="mb-6 text-xs font-medium tracking-wider uppercase md:mb-8">
-            Transform Your Workflow
+            AI Implementation Scan
           </span>
           <div className="mt-auto flex items-center space-x-1 text-xs">
-            Discover Our Platform
+            Start Your AI Journey
             <ArrowRight className="ml-1 size-4 transition-transform group-hover:translate-x-1" />
           </div>
           <p className="text-primary-foreground/85 mt-2 text-xs">
-            Streamline collaboration, automate workflows, and boost productivity
-            across your organization.
+            Discover your AI potential with our comprehensive implementation
+            scan.{' '}
+            <span className="md:hidden">
+              We analyze your processes to identify high-impact automation
+              opportunities.
+            </span>
           </p>
         </div>
         <div className="relative aspect-2/1 overflow-clip rounded-t pl-6 lg:max-w-[22rem] lg:pl-0">
           <img
-            src="https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-1.svg"
+            src="https://cdn.prod.website-files.com/659093fbff862aa0bca7bda4/65a684432fb07002b7c1385c_campaign-creators-e6n7uoEnYbA-unsplash%20(1)-p-800.jpg"
             alt="placeholder"
             className="aspect-2/1 h-full w-full translate-y-px object-cover object-center"
           />
@@ -610,7 +591,7 @@ const SolutionsMenu = () => (
     <div className="order-last mt-3 sm:order-none sm:mt-0 sm:py-2 md:p-6">
       <div className="mb-4 text-left leading-none md:col-span-2 lg:col-span-4 lg:mb-6">
         <strong className="text-muted-foreground text-left text-xs font-medium tracking-wider uppercase">
-          Developer Platform
+          Our Approach
         </strong>
       </div>
       <div className="grid gap-4 lg:grid-cols-2">
@@ -681,11 +662,11 @@ const ProductsMenu = () => (
           </div>
           <div className="bg-primary relative z-20 flex flex-col rounded-b-xl p-6">
             <div className="flex items-center space-x-1 text-xs">
-              Enterprise Solutions
+              Enterprise AI Solutions
               <ArrowRight className="ml-1 size-4 transition-transform group-hover:translate-x-1" />
             </div>
             <p className="text-primary-foreground/70 mt-2 text-xs">
-              Scale your business with enterprise-grade features and support.
+              Transform your business with scalable AI and automation solutions.
             </p>
           </div>
         </div>
@@ -745,11 +726,12 @@ const GlobalGuidanceMenu = () => (
             </div>
             <div className="bg-primary relative z-20 mt-auto flex flex-col rounded-b-xl p-6">
               <div className="flex items-center space-x-1 text-xs">
-                Enterprise Solutions
+                AI Transformation Journey
                 <ArrowRight className="ml-1 size-4 transition-transform group-hover:translate-x-1" />
               </div>
               <p className="text-primary-foreground/85 mt-2 text-xs">
-                Scale your business with enterprise-grade features and support.
+                Empower your business to work smarter with tailored AI
+                solutions.
               </p>
             </div>
           </div>
@@ -789,42 +771,6 @@ const GlobalGuidanceMenu = () => (
         ))}
       </div>
     </div>
-    <div className="mt-8">
-      <div className="border-border mb-6 pb-1 text-left lg:border-b">
-        <strong className="text-muted-foreground text-left text-xs font-medium tracking-wider uppercase">
-          Popular Locations
-        </strong>
-      </div>
-      <div className="grid gap-6 md:grid-cols-3 lg:grid-cols-4">
-        {regions.map((region) => (
-          <div
-            key={region.title}
-            className="border-border space-y-6 rounded-md border p-6 lg:border-0 lg:p-0"
-          >
-            <div className="text-muted-foreground text-left text-xs">
-              {region.title}
-            </div>
-            <menu className="border-border grid gap-y-3 border-t pt-6 lg:border-0 lg:pt-0">
-              {region.locations.map((location) => (
-                <NavigationMenuLink
-                  key={location.title}
-                  href={location.href}
-                  className="group text-foreground/85 hover:text-foreground flex flex-row items-center space-x-4 text-left lg:space-x-4 lg:border-0 lg:py-0"
-                >
-                  <div className="flex size-4 items-center justify-center">
-                    {location.icon}
-                  </div>
-                  <div className="flex-1 text-sm font-medium">
-                    {location.title}
-                  </div>
-                  <ArrowRight className="size-4 transition-transform group-hover:translate-x-1 lg:hidden" />
-                </NavigationMenuLink>
-              ))}
-            </menu>
-          </div>
-        ))}
-      </div>
-    </div>
   </div>
 );
 
@@ -838,20 +784,20 @@ const CustomersMenu = () => (
         <div className="relative z-10 flex w-full flex-col text-left sm:flex-row sm:items-end sm:justify-between">
           <div className="relative z-20 flex max-w-[18rem] flex-col py-6 pt-6 pb-10 pl-6 sm:pt-16 sm:pb-6 sm:pl-0 md:max-w-[16rem] lg:pt-6">
             <div className="mt-auto flex items-center space-x-1 text-xs font-medium">
-              Customer Success Stories
+              Success Stories
               <ArrowRight className="ml-1 size-4 transition-transform group-hover:translate-x-1" />
             </div>
             <p className="mt-2 text-xs">
-              Discover how leading companies are transforming their businesses
-              with our innovative solutions.
+              See how organizations are achieving operational excellence through
+              AI-driven automation and strategic consulting.
             </p>
           </div>
           <div className="border-border flex h-full border-t sm:mr-[20%] sm:w-[110px] sm:border-none">
             <div className="border-border relative grid w-1/2 border-x sm:w-full">
               <div className="relative flex items-center justify-center border-b p-4">
                 <img
-                  src="https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/astro-wordmark.svg"
-                  alt="placeholder"
+                  src="/images/clients/samsung.svg"
+                  alt="Samsung logo"
                   className="h-4 w-full"
                 />
                 <div className="bg-accent absolute top-0 left-0 flex translate-x-[-50%] translate-y-[-50%] items-center justify-center p-2">
@@ -869,8 +815,8 @@ const CustomersMenu = () => (
               </div>
               <div className="relative flex items-center justify-center border-b p-4">
                 <img
-                  src="https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/vercel-wordmark.svg"
-                  alt="placeholder"
+                  src="/images/clients/ziggo.svg"
+                  alt="Ziggo logo"
                   className="h-4 w-full"
                 />
                 <div className="bg-accent absolute bottom-0 left-0 flex translate-x-[-50%] translate-y-[50%] items-center justify-center p-2">
@@ -882,8 +828,8 @@ const CustomersMenu = () => (
               </div>
               <div className="relative flex items-center justify-center border-b p-4">
                 <img
-                  src="https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/shadcn-ui-wordmark.svg"
-                  alt="placeholder"
+                  src="/images/clients/stadswerk072.svg"
+                  alt="Stadswerk072 logo"
                   className="h-4 w-full"
                 />
                 <div className="bg-accent absolute bottom-0 left-0 flex translate-x-[-50%] translate-y-[50%] items-center justify-center p-2">
@@ -917,7 +863,7 @@ const CustomersMenu = () => (
     >
       <div className="mt-6 px-6 pb-6 text-left lg:mt-12 lg:pb-6">
         <span className="inline-block max-w-[12rem] text-xs/5 font-medium">
-          Discover innovative technology for modern web development.
+          Unlock innovation with cutting-edge AI solutions.
         </span>
       </div>
       <div className="mb-6 flex whitespace-nowrap lg:mb-0">
@@ -930,8 +876,8 @@ const CustomersMenu = () => (
             <div className="bg-primary-foreground size-1 rounded-full"></div>
           </div>
           <img
-            src="https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/astro-wordmark.svg"
-            alt="placeholder"
+            src="/images/clients/samsung.svg"
+            alt="Samsung logo"
             className="w-1/2 object-contain object-center opacity-100 invert transition-all duration-100 group-hover:scale-[1.1]"
           />
         </div>
@@ -974,11 +920,11 @@ const CustomersMenu = () => (
         </div>
         <div className="p-6 text-left md:mt-auto">
           <div className="mt-auto flex items-center space-x-1 text-xs font-medium">
-            Start Your Journey
+            Start Your AI Journey
             <ArrowRight className="ml-1 size-4 transition-transform group-hover:translate-x-1" />
           </div>
           <p className="text-muted-foreground mt-2 text-xs">
-            Get started with our powerful productivity platform today.
+            Transform your business with AI-driven automation today.
           </p>
         </div>
       </a>
@@ -996,12 +942,12 @@ const PartnersMenu = () => (
         <div className="relative z-10 flex w-full flex-col-reverse text-left">
           <div className="relative z-20 flex flex-col px-6 pt-6 pb-[14rem] md:pt-40 md:pb-6">
             <div className="mt-auto flex items-center space-x-1 text-xs font-medium">
-              Partner Program
+              AI Center of Excellence
               <ArrowRight className="ml-1 size-4 transition-transform group-hover:translate-x-1" />
             </div>
             <p className="mt-2 text-xs">
-              Join our partner network and grow your business with our leading
-              productivity platform.
+              Build internal AI competency and lead your industry with our
+              comprehensive training and support programs.
             </p>
           </div>
           <div className="bg-accent absolute inset-0 top-[32%] invert md:top-0">
@@ -1022,11 +968,11 @@ const PartnersMenu = () => (
         <div className="relative z-10 flex w-full flex-col-reverse text-left">
           <div className="relative z-20 flex flex-col px-6 pt-6 pb-[14rem] md:pt-40 md:pb-6">
             <div className="mt-auto flex items-center space-x-1 text-xs font-medium">
-              Solution Partners
+              Strategic Partners
               <ArrowRight className="ml-1 size-4 transition-transform group-hover:translate-x-1" />
             </div>
             <p className="text-muted-foreground mt-2 text-xs">
-              Build and deliver solutions that help customers achieve more.
+              Collaborate with us to deliver innovative AI solutions.
             </p>
           </div>
           <div className="absolute inset-0 top-[32%] md:top-0">
@@ -1051,7 +997,7 @@ const PartnersMenu = () => (
               Implementation Partners
             </div>
             <p className="text-muted-foreground group-hover:text-foreground text-xs">
-              Velit incididunt duis id consequat elit.
+              Expert partners for seamless AI deployment.
             </p>
           </div>
         </div>
@@ -1067,7 +1013,7 @@ const PartnersMenu = () => (
               Technology Partners
             </div>
             <p className="text-muted-foreground group-hover:text-foreground text-xs">
-              Consequat nulla ex culpa aliquip ad.
+              Leading-edge technology for optimal results.
             </p>
           </div>
         </div>
@@ -1090,15 +1036,15 @@ const ResourcesMenu = () => (
               <ArrowRight className="ml-1 size-4 transition-transform group-hover:translate-x-1" />
             </div>
             <p className="mt-2 text-xs">
-              Access guides, tutorials, and best practices to maximize your
-              success.
+              Access whitepapers, case studies, and AI implementation guides to
+              accelerate your transformation.
             </p>
           </div>
           <div className="absolute inset-0">
             <img
-              src="https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-4.svg"
+              src="https://cdn.prod.website-files.com/659093fbff862aa0bca7bda4/65a684432fb07002b7c1385c_campaign-creators-e6n7uoEnYbA-unsplash%20(1)-p-800.jpg"
               alt="placeholder"
-              className="h-full w-full object-cover object-center invert"
+              className="h-full w-full object-cover object-center"
             />
           </div>
           <div className="absolute inset-x-0 top-0 z-10 h-[60%] bg-[linear-gradient(hsl(var(--color-primary))_50%,transparent)] md:top-auto md:bottom-[-10%] md:h-[50%] md:bg-[linear-gradient(transparent,hsl(var(--color-primary))_50%)]"></div>
@@ -1187,9 +1133,9 @@ const Navbar4 = () => {
                 alt="Streamline"
                 className="h-7 w-auto"
               />
-              <span className="text-lg font-semibold tracking-tighter">
+              {/* <span className="text-lg font-semibold tracking-tighter">
                 Cerbello
-              </span>
+              </span> */}
             </a>
             <div className="flex items-center gap-2 xl:gap-8">
               <NavigationMenuList className="hidden lg:flex">
@@ -1210,13 +1156,21 @@ const Navbar4 = () => {
                   </NavigationMenuContent>
                 </NavigationMenuItem>
                 <NavigationMenuItem>
+                  <NavigationMenuLink
+                    href="/about"
+                    className="group bg-background hover:bg-muted hover:text-accent-foreground inline-flex h-10 w-max items-center justify-center rounded-md px-4 py-2 text-sm font-medium transition-colors"
+                  >
+                    About
+                  </NavigationMenuLink>
+                </NavigationMenuItem>
+                {/* <NavigationMenuItem>
                   <NavigationMenuTrigger className="text-xs xl:text-sm">
                     About
                   </NavigationMenuTrigger>
                   <NavigationMenuContent className="min-w-[calc(100vw-4rem)] p-12 2xl:min-w-[calc(1400px-4rem)]">
                     <GlobalGuidanceMenu />
                   </NavigationMenuContent>
-                </NavigationMenuItem>
+                </NavigationMenuItem> */}
                 <NavigationMenuItem>
                   <NavigationMenuTrigger className="text-xs xl:text-sm">
                     Case Studies
@@ -1245,7 +1199,7 @@ const Navbar4 = () => {
             </div>
             <div className="flex items-center gap-2">
               <Button className="hidden md:block" size="sm">
-                Schedule AI Scan
+                Get Started
               </Button>
               <Button
                 variant="ghost"
@@ -1388,7 +1342,7 @@ const Navbar4 = () => {
               )}
               {/* Mobile menu footer */}
               <div className="mx-[2rem] mt-auto flex flex-col items-center gap-8 py-24">
-                <Button size="sm">Schedule AI Scan</Button>
+                <Button size="sm">Get Started</Button>
                 <div className="flex flex-col items-center gap-2">
                   <a
                     href="/contact"

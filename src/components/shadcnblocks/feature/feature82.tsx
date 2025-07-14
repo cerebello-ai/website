@@ -1,32 +1,36 @@
-import { ArrowRight } from "lucide-react";
+import { ArrowRight } from 'lucide-react';
 
-import { Button } from "@/components/ui/button";
-import { Separator } from "@/components/ui/separator";
+import { Button } from '@/components/ui/button';
+import { Separator } from '@/components/ui/separator';
 
 const integrartions = [
   {
-    title: "Slack",
+    title: 'Slack',
     description:
-      "Seamlessly communicate with your team, share updates, and streamline project discussions all in one place.",
-    image: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/block-1.svg",
+      'Seamlessly communicate with your team, share updates, and streamline project discussions all in one place.',
+    image:
+      'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/block-1.svg',
   },
   {
-    title: "Google Drive",
+    title: 'Google Drive',
     description:
-      "Store, access, and collaborate on files with ease. Keep all your important documents organized in the cloud.",
-    image: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/block-2.svg",
+      'Store, access, and collaborate on files with ease. Keep all your important documents organized in the cloud.',
+    image:
+      'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/block-2.svg',
   },
   {
-    title: "Dropbox",
+    title: 'Dropbox',
     description:
-      "A reliable solution for file storage and sharing, perfect for teams needing to collaborate from anywhere.",
-    image: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/block-3.svg",
+      'A reliable solution for file storage and sharing, perfect for teams needing to collaborate from anywhere.',
+    image:
+      'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/block-3.svg',
   },
   {
-    title: "Github",
+    title: 'Github',
     description:
-      "Manage your code repositories and collaborate on development projects with powerful version control.",
-    image: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/block-4.svg",
+      'Manage your code repositories and collaborate on development projects with powerful version control.',
+    image:
+      'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/block-4.svg',
   },
 ];
 
@@ -38,7 +42,7 @@ const Feature82 = () => {
           <h1 className="text-center text-4xl font-semibold text-balance lg:col-span-2 lg:text-left lg:text-5xl">
             Unify Your flow with Integrations
           </h1>
-          <p className="text-center text-lg text-muted-foreground lg:col-span-2 lg:text-left">
+          <p className="text-muted-foreground text-center text-lg lg:col-span-2 lg:text-left">
             Streamline your processes and enhance productivity by connecting all
             your favorite apps into one unified platform.
           </p>
@@ -57,7 +61,7 @@ const Feature82 = () => {
                   className="h-auto w-16"
                 />
                 <h3 className="my-2 text-2xl font-bold">{integration.title}</h3>
-                <p className="text-sm text-muted-foreground">
+                <p className="text-muted-foreground text-sm">
                   {integration.description}
                 </p>
               </div>

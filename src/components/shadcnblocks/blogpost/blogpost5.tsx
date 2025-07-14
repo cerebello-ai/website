@@ -1,12 +1,11 @@
-"use client";
+'use client';
 
-import { Facebook, Home, Lightbulb, Linkedin, Twitter } from "lucide-react";
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useRef, useState } from 'react';
 
-import { cn } from "@/lib/utils";
+import { Facebook, Home, Lightbulb, Linkedin, Twitter } from 'lucide-react';
 
-import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert";
-import { Avatar, AvatarImage } from "@/components/ui/avatar";
+import { Alert, AlertDescription, AlertTitle } from '@/components/ui/alert';
+import { Avatar, AvatarImage } from '@/components/ui/avatar';
 import {
   Breadcrumb,
   BreadcrumbItem,
@@ -14,9 +13,10 @@ import {
   BreadcrumbList,
   BreadcrumbPage,
   BreadcrumbSeparator,
-} from "@/components/ui/breadcrumb";
-import { Button } from "@/components/ui/button";
-import { Separator } from "@/components/ui/separator";
+} from '@/components/ui/breadcrumb';
+import { Button } from '@/components/ui/button';
+import { Separator } from '@/components/ui/separator';
+import { cn } from '@/lib/utils';
 
 const Blogpost5 = () => {
   const [activeSection, setActiveSection] = useState<string | null>(null);
@@ -37,7 +37,7 @@ const Blogpost5 = () => {
       observerCallback,
       {
         root: null,
-        rootMargin: "0px",
+        rootMargin: '0px',
         threshold: 1,
       },
     );
@@ -80,7 +80,7 @@ const Blogpost5 = () => {
             </BreadcrumbItem>
           </BreadcrumbList>
         </Breadcrumb>
-        <h1 className="mb-7 mt-9 max-w-3xl text-4xl font-bold md:mb-10 md:text-7xl">
+        <h1 className="mt-9 mb-7 max-w-3xl text-4xl font-bold md:mb-10 md:text-7xl">
           The royal decree that made everyone laugh
         </h1>
         <div className="flex items-center gap-3 text-sm md:text-base">
@@ -102,7 +102,7 @@ const Blogpost5 = () => {
               <img
                 src="https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-1.svg"
                 alt="placeholder"
-                className="mb-8 mt-0 aspect-video w-full rounded-lg border object-cover"
+                className="mt-0 mb-8 aspect-video w-full rounded-lg border object-cover"
               />
               <p className="text-muted-foreground text-sm">
                 In a kingdom far away, there lived a ruler who faced a peculiar
@@ -112,12 +112,12 @@ const Blogpost5 = () => {
             </div>
             <section
               id="section1"
-              ref={(ref) => addSectionRef("section1", ref)}
+              ref={(ref) => addSectionRef('section1', ref)}
               className="prose dark:prose-invert my-8"
             >
               <h2>How Taxes Work and Why They Matter</h2>
               <p>
-                The king thought long and hard, and finally came up with{" "}
+                The king thought long and hard, and finally came up with{' '}
                 <a href="#">a brilliant plan</a>: he would tax the jokes in the
                 kingdom.
               </p>
@@ -142,7 +142,7 @@ const Blogpost5 = () => {
 
             <section
               id="section2"
-              ref={(ref) => addSectionRef("section2", ref)}
+              ref={(ref) => addSectionRef('section2', ref)}
               className="prose dark:prose-invert mb-8"
             >
               <h2>The Great People&apos;s Rebellion</h2>
@@ -184,12 +184,12 @@ const Blogpost5 = () => {
 
             <section
               id="section3"
-              ref={(ref) => addSectionRef("section3", ref)}
+              ref={(ref) => addSectionRef('section3', ref)}
               className="prose dark:prose-invert mb-8"
             >
               <h2>The King&apos;s Plan</h2>
               <p>
-                The king thought long and hard, and finally came up with{" "}
+                The king thought long and hard, and finally came up with{' '}
                 <a href="#">a brilliant plan</a>: he would tax the jokes in the
                 kingdom.
               </p>
@@ -224,10 +224,10 @@ const Blogpost5 = () => {
                     <a
                       href="#section1"
                       className={cn(
-                        "block py-1 transition-colors duration-200",
-                        activeSection === "section1"
-                          ? "text-muted-foreground lg:text-primary"
-                          : "text-muted-foreground hover:text-primary",
+                        'block py-1 transition-colors duration-200',
+                        activeSection === 'section1'
+                          ? 'text-muted-foreground lg:text-primary'
+                          : 'text-muted-foreground hover:text-primary',
                       )}
                     >
                       How Taxes Work and Why They Matter
@@ -237,10 +237,10 @@ const Blogpost5 = () => {
                     <a
                       href="#section2"
                       className={cn(
-                        "block py-1 transition-colors duration-200",
-                        activeSection === "section2"
-                          ? "text-muted-foreground lg:text-primary"
-                          : "text-muted-foreground hover:text-primary",
+                        'block py-1 transition-colors duration-200',
+                        activeSection === 'section2'
+                          ? 'text-muted-foreground lg:text-primary'
+                          : 'text-muted-foreground hover:text-primary',
                       )}
                     >
                       The Great People&apos;s Rebellion
@@ -250,10 +250,10 @@ const Blogpost5 = () => {
                     <a
                       href="#section3"
                       className={cn(
-                        "block py-1 transition-colors duration-200",
-                        activeSection === "section3"
-                          ? "text-muted-foreground lg:text-primary"
-                          : "text-muted-foreground hover:text-primary",
+                        'block py-1 transition-colors duration-200',
+                        activeSection === 'section3'
+                          ? 'text-muted-foreground lg:text-primary'
+                          : 'text-muted-foreground hover:text-primary',
                       )}
                     >
                       The King&apos;s Plan
@@ -262,7 +262,7 @@ const Blogpost5 = () => {
                 </ul>
               </nav>
             </div>
-            <Separator className="order-2 mb-11 mt-8 lg:hidden" />
+            <Separator className="order-2 mt-8 mb-11 lg:hidden" />
             <div className="order-1 flex flex-col gap-2 lg:order-none lg:mt-9">
               <p className="text-muted-foreground font-medium">
                 Share this article:

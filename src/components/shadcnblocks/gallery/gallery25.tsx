@@ -1,73 +1,74 @@
-"use client";
+'use client';
 
-import { motion } from "framer-motion";
-import React from "react";
+import React from 'react';
+
+import { motion } from 'framer-motion';
 
 const Gallery25 = () => {
   const column1Images = [
     {
-      src: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/lummi/bw1.jpeg",
-      alt: "Gallery Image 1",
-      height: "23rem",
+      src: 'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/lummi/bw1.jpeg',
+      alt: 'Gallery Image 1',
+      height: '23rem',
     },
     {
-      src: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/lummi/bw2.jpeg",
-      alt: "Gallery Image 2",
-      height: "28rem",
+      src: 'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/lummi/bw2.jpeg',
+      alt: 'Gallery Image 2',
+      height: '28rem',
     },
     {
-      src: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/lummi/bw3.jpeg",
-      alt: "Gallery Image 3",
-      height: "12rem",
+      src: 'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/lummi/bw3.jpeg',
+      alt: 'Gallery Image 3',
+      height: '12rem',
     },
   ];
 
   const column2Images = [
     {
-      src: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/lummi/bw4.jpeg",
-      alt: "Gallery Image 4",
-      height: "13rem",
+      src: 'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/lummi/bw4.jpeg',
+      alt: 'Gallery Image 4',
+      height: '13rem',
     },
     {
-      src: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/lummi/bw5.jpeg",
-      alt: "Gallery Image 5",
-      height: "32rem",
+      src: 'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/lummi/bw5.jpeg',
+      alt: 'Gallery Image 5',
+      height: '32rem',
     },
     {
-      src: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/lummi/bw6.jpeg",
-      alt: "Gallery Image 6",
-      height: "18rem",
+      src: 'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/lummi/bw6.jpeg',
+      alt: 'Gallery Image 6',
+      height: '18rem',
     },
   ];
 
   const column3Images = [
     {
-      src: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/lummi/bw7.jpeg",
-      alt: "Gallery Image 7",
-      height: "32rem",
+      src: 'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/lummi/bw7.jpeg',
+      alt: 'Gallery Image 7',
+      height: '32rem',
     },
     {
-      src: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/lummi/bw8.jpeg",
-      alt: "Gallery Image 8",
-      height: "32rem",
+      src: 'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/lummi/bw8.jpeg',
+      alt: 'Gallery Image 8',
+      height: '32rem',
     },
   ];
 
   const column4Images = [
     {
-      src: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/lummi/bw9.jpeg",
-      alt: "Gallery Image 9",
-      height: "13rem",
+      src: 'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/lummi/bw9.jpeg',
+      alt: 'Gallery Image 9',
+      height: '13rem',
     },
     {
-      src: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/lummi/bw10.jpeg",
-      alt: "Gallery Image 10",
-      height: "22.5rem",
+      src: 'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/lummi/bw10.jpeg',
+      alt: 'Gallery Image 10',
+      height: '22.5rem',
     },
     {
-      src: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/lummi/bw11.jpeg",
-      alt: "Gallery Image 11",
-      height: "22rem",
+      src: 'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/lummi/bw11.jpeg',
+      alt: 'Gallery Image 11',
+      height: '22rem',
     },
   ];
 
@@ -94,7 +95,7 @@ const Gallery25 = () => {
                   delay: index * 0.1,
                 }}
                 key={index}
-                className="w-full overflow-hidden rounded-2xl bg-muted"
+                className="bg-muted w-full overflow-hidden rounded-2xl"
                 style={{ height: image.height }}
               >
                 <img
@@ -125,7 +126,7 @@ const Gallery25 = () => {
                   delay: index * 0.1,
                 }}
                 key={index}
-                className="w-full overflow-hidden rounded-2xl bg-muted"
+                className="bg-muted w-full overflow-hidden rounded-2xl"
                 style={{ height: image.height }}
               >
                 <img
@@ -156,7 +157,7 @@ const Gallery25 = () => {
                   delay: index * 0.1,
                 }}
                 key={index}
-                className="w-full overflow-hidden rounded-2xl bg-muted"
+                className="bg-muted w-full overflow-hidden rounded-2xl"
                 style={{ height: image.height }}
               >
                 <img
@@ -187,7 +188,7 @@ const Gallery25 = () => {
                   delay: index * 0.1,
                 }}
                 key={index}
-                className="w-full overflow-hidden rounded-2xl bg-muted"
+                className="bg-muted w-full overflow-hidden rounded-2xl"
                 style={{ height: image.height }}
               >
                 <img
@@ -197,7 +198,7 @@ const Gallery25 = () => {
                 />
               </motion.div>
             ))}
-            <div className="h-17 w-full rounded-2xl bg-muted"></div>
+            <div className="bg-muted h-17 w-full rounded-2xl"></div>
           </div>
         </div>
         <div className="mt-4 grid grid-cols-2 gap-4 md:grid-cols-4">
@@ -220,7 +221,7 @@ const Gallery25 = () => {
                   delay: index * 0.1,
                 }}
                 key={index}
-                className="w-full overflow-hidden rounded-2xl bg-muted"
+                className="bg-muted w-full overflow-hidden rounded-2xl"
                 style={{ height: image.height }}
               >
                 <img
@@ -251,7 +252,7 @@ const Gallery25 = () => {
                   delay: index * 0.1,
                 }}
                 key={index}
-                className="w-full overflow-hidden rounded-2xl bg-muted"
+                className="bg-muted w-full overflow-hidden rounded-2xl"
                 style={{ height: image.height }}
               >
                 <img
@@ -282,7 +283,7 @@ const Gallery25 = () => {
                   delay: index * 0.1,
                 }}
                 key={index}
-                className="w-full overflow-hidden rounded-2xl bg-muted"
+                className="bg-muted w-full overflow-hidden rounded-2xl"
                 style={{ height: image.height }}
               >
                 <img
@@ -313,7 +314,7 @@ const Gallery25 = () => {
                   delay: index * 0.1,
                 }}
                 key={index}
-                className="w-full overflow-hidden rounded-2xl bg-muted"
+                className="bg-muted w-full overflow-hidden rounded-2xl"
                 style={{ height: image.height }}
               >
                 <img
@@ -323,7 +324,7 @@ const Gallery25 = () => {
                 />
               </motion.div>
             ))}
-            <div className="h-17 w-full rounded-2xl bg-muted"></div>
+            <div className="bg-muted h-17 w-full rounded-2xl"></div>
           </div>
         </div>
       </div>

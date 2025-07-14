@@ -5,7 +5,7 @@ const Feature163 = () => {
         <div className="grid grid-cols-1 grid-rows-4 gap-4 lg:grid-cols-5 lg:grid-rows-2">
           <div className="col-span-1 row-span-1 flex flex-col rounded-[36px] border border-gray-200 lg:col-span-3">
             <div className="max-w-md px-10 pt-10 pb-16 text-lg">
-              <span className="font-semibold">Real-time collaboration.</span>{" "}
+              <span className="font-semibold">Real-time collaboration.</span>{' '}
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi
               deserunt enim iste nihil! Voluptatem
             </div>

@@ -1,16 +1,17 @@
-"use client";
-import { ArrowRight, Play } from "lucide-react";
-import { Fragment, useState } from "react";
+'use client';
+import { Fragment, useState } from 'react';
 
-import { AspectRatio } from "@/components/ui/aspect-ratio";
-import { Badge } from "@/components/ui/badge";
-import { Button } from "@/components/ui/button";
+import { ArrowRight, Play } from 'lucide-react';
+
+import { AspectRatio } from '@/components/ui/aspect-ratio';
+import { Badge } from '@/components/ui/badge';
+import { Button } from '@/components/ui/button';
 import {
   Dialog,
   DialogContent,
   DialogHeader,
   DialogTitle,
-} from "@/components/ui/dialog";
+} from '@/components/ui/dialog';
 
 const Hero126 = () => {
   const [isVideoOpen, setIsVideoOpen] = useState(false);
@@ -21,7 +22,7 @@ const Hero126 = () => {
         <div className="container mx-auto h-full bg-[url('https://deifkwefumgah.cloudfront.net/shadcnblocks/block/patterns/grid-2.svg')] bg-[length:83.75rem_83.75rem] bg-[center_top] bg-no-repeat py-12 md:py-20">
           <div className="flex flex-col items-center justify-center gap-16 md:gap-28">
             <div className="flex max-w-[47.5rem] flex-col items-center justify-center gap-8">
-              <Badge className="h-fit! bg-background/10 hover:bg-background/10 flex w-fit items-center gap-2 rounded-full border border-white/20 px-3 py-1">
+              <Badge className="bg-background/10 hover:bg-background/10 flex h-fit! w-fit items-center gap-2 rounded-full border border-white/20 px-3 py-1">
                 <span className="text-foreground text-xs font-normal md:text-sm">
                   Announcing our next project.
                 </span>
@@ -35,10 +36,10 @@ const Hero126 = () => {
               </Badge>
               <div>
                 <h1 className="flex flex-col items-center text-center text-3xl font-semibold tracking-tighter text-transparent sm:text-4xl md:text-5xl md:leading-tight lg:text-[3.6rem] lg:leading-snug">
-                  <div className="w-fit bg-[linear-gradient(0deg,theme(colors.muted2.foreground)_0%,var(--color-foreground)_100%)] bg-clip-text">
+                  <div className="bg-[linear-gradient(0deg,theme(colors.muted2.foreground)_0%,var(--color-foreground)_100%)] w-fit bg-clip-text">
                     Bring your next idea to life and
                   </div>
-                  <div className="w-fit bg-[linear-gradient(0deg,theme(colors.muted2.foreground)_0%,var(--color-foreground)_100%)] bg-clip-text">
+                  <div className="bg-[linear-gradient(0deg,theme(colors.muted2.foreground)_0%,var(--color-foreground)_100%)] w-fit bg-clip-text">
                     launch your dream website.
                   </div>
                 </h1>
@@ -50,7 +51,7 @@ const Hero126 = () => {
               <div className="flex w-full flex-wrap items-center gap-5 md:w-fit">
                 <Button
                   asChild
-                  className="block h-fit w-fit flex-1 text-nowrap rounded-md px-4 py-[0.625rem] text-center text-sm font-semibold"
+                  className="block h-fit w-fit flex-1 rounded-md px-4 py-[0.625rem] text-center text-sm font-semibold text-nowrap"
                 >
                   <a href="#">Get Started</a>
                 </Button>

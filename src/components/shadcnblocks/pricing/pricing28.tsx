@@ -1,6 +1,8 @@
-"use client";
+'use client';
 
-import type { LucideIcon } from "lucide-react";
+import { useState } from 'react';
+
+import type { LucideIcon } from 'lucide-react';
 import {
   Bell,
   Clock,
@@ -33,20 +35,19 @@ import {
   UserPlus,
   Users,
   VoicemailIcon,
-} from "lucide-react";
-import { useState } from "react";
+} from 'lucide-react';
 
-import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
-import { Badge } from "@/components/ui/badge";
-import { Button } from "@/components/ui/button";
-import { Label } from "@/components/ui/label";
-import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group";
+import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
+import { Badge } from '@/components/ui/badge';
+import { Button } from '@/components/ui/button';
+import { Label } from '@/components/ui/label';
+import { RadioGroup, RadioGroupItem } from '@/components/ui/radio-group';
 import {
   Tooltip,
   TooltipContent,
   TooltipProvider,
   TooltipTrigger,
-} from "@/components/ui/tooltip";
+} from '@/components/ui/tooltip';
 
 // Interface for Pricing Package Data
 interface PricingPackage {
@@ -67,207 +68,207 @@ const Pricing28 = () => {
   // Pricing packages data
   const packages: PricingPackage[] = [
     {
-      title: "Basic Plan",
-      monthlyPrice: "$79",
-      annualPrice: "$63",
-      description: "10 credit total",
+      title: 'Basic Plan',
+      monthlyPrice: '$79',
+      annualPrice: '$63',
+      description: '10 credit total',
       features: [
         {
-          title: "Security",
+          title: 'Security',
           items: [
-            { icon: ShieldCheck, text: "Standard security" },
-            { icon: Lock, text: "Basic encryption" },
-            { icon: Key, text: "Two-factor authentication" },
+            { icon: ShieldCheck, text: 'Standard security' },
+            { icon: Lock, text: 'Basic encryption' },
+            { icon: Key, text: 'Two-factor authentication' },
           ],
         },
         {
-          title: "Style",
+          title: 'Style',
           items: [
-            { icon: Palette, text: "Basic branding" },
-            { icon: Eye, text: "Limited style customization" },
+            { icon: Palette, text: 'Basic branding' },
+            { icon: Eye, text: 'Limited style customization' },
           ],
         },
         {
-          title: "Storage",
+          title: 'Storage',
           items: [
-            { icon: HardDrive, text: "5GB storage" },
-            { icon: FileText, text: "File versioning" },
+            { icon: HardDrive, text: '5GB storage' },
+            { icon: FileText, text: 'File versioning' },
           ],
         },
         {
-          title: "Support",
+          title: 'Support',
           items: [
-            { icon: Mail, text: "Support by email only" },
-            { icon: Clock, text: "Basic time tracking" },
+            { icon: Mail, text: 'Support by email only' },
+            { icon: Clock, text: 'Basic time tracking' },
           ],
         },
         {
-          title: "Collaboration",
+          title: 'Collaboration',
           items: [
-            { icon: Users, text: "Up to 3 users" },
-            { icon: UserPlus, text: "Basic team collaboration" },
+            { icon: Users, text: 'Up to 3 users' },
+            { icon: UserPlus, text: 'Basic team collaboration' },
           ],
         },
       ],
     },
     {
-      title: "Pro Plan",
-      monthlyPrice: "$299",
-      annualPrice: "$239",
-      description: "50 credit total",
+      title: 'Pro Plan',
+      monthlyPrice: '$299',
+      annualPrice: '$239',
+      description: '50 credit total',
       features: [
         {
-          title: "Security",
+          title: 'Security',
           items: [
-            { icon: ShieldPlus, text: "Enhanced security" },
-            { icon: Shield, text: "Advanced encryption" },
-            { icon: Key, text: "Two-factor authentication" },
-            { icon: ShieldAlert, text: "Data loss prevention" },
+            { icon: ShieldPlus, text: 'Enhanced security' },
+            { icon: Shield, text: 'Advanced encryption' },
+            { icon: Key, text: 'Two-factor authentication' },
+            { icon: ShieldAlert, text: 'Data loss prevention' },
           ],
         },
         {
-          title: "Style",
+          title: 'Style',
           items: [
-            { icon: Palette, text: "Custom branding" },
-            { icon: Eye, text: "Advanced style customization" },
-            { icon: Star, text: "Custom themes" },
+            { icon: Palette, text: 'Custom branding' },
+            { icon: Eye, text: 'Advanced style customization' },
+            { icon: Star, text: 'Custom themes' },
           ],
         },
         {
-          title: "Storage",
+          title: 'Storage',
           items: [
-            { icon: HardDrive, text: "50GB storage" },
-            { icon: FilePlus, text: "File versioning" },
-            { icon: Cloud, text: "Backup and restore" },
+            { icon: HardDrive, text: '50GB storage' },
+            { icon: FilePlus, text: 'File versioning' },
+            { icon: Cloud, text: 'Backup and restore' },
           ],
         },
         {
-          title: "Support",
+          title: 'Support',
           items: [
-            { icon: Bell, text: "Priority support" },
-            { icon: Clock, text: "24/7 priority support" },
-            { icon: Mail, text: "Email and chat support" },
+            { icon: Bell, text: 'Priority support' },
+            { icon: Clock, text: '24/7 priority support' },
+            { icon: Mail, text: 'Email and chat support' },
           ],
         },
         {
-          title: "Collaboration",
+          title: 'Collaboration',
           items: [
-            { icon: Users, text: "Unlimited users" },
-            { icon: UserCheck, text: "Advanced team collaboration" },
-            { icon: UserCog, text: "Role-based access control" },
+            { icon: Users, text: 'Unlimited users' },
+            { icon: UserCheck, text: 'Advanced team collaboration' },
+            { icon: UserCog, text: 'Role-based access control' },
           ],
         },
       ],
     },
     {
-      title: "Business Plan",
-      monthlyPrice: "$599",
-      annualPrice: "$479",
-      description: "100 credit total",
+      title: 'Business Plan',
+      monthlyPrice: '$599',
+      annualPrice: '$479',
+      description: '100 credit total',
       features: [
         {
-          title: "Security",
+          title: 'Security',
           items: [
-            { icon: ShieldPlus, text: "Advanced security" },
-            { icon: ShieldCheck, text: "Enterprise-grade encryption" },
-            { icon: Key, text: "Two-factor authentication" },
-            { icon: ShieldAlert, text: "Data loss prevention" },
-            { icon: LifeBuoy, text: "Dedicated security team" },
+            { icon: ShieldPlus, text: 'Advanced security' },
+            { icon: ShieldCheck, text: 'Enterprise-grade encryption' },
+            { icon: Key, text: 'Two-factor authentication' },
+            { icon: ShieldAlert, text: 'Data loss prevention' },
+            { icon: LifeBuoy, text: 'Dedicated security team' },
           ],
         },
         {
-          title: "Style",
+          title: 'Style',
           items: [
-            { icon: Palette, text: "Custom branding" },
-            { icon: Eye, text: "Advanced style customization" },
-            { icon: Star, text: "Custom themes" },
-            { icon: Star, text: "White-labeling" },
+            { icon: Palette, text: 'Custom branding' },
+            { icon: Eye, text: 'Advanced style customization' },
+            { icon: Star, text: 'Custom themes' },
+            { icon: Star, text: 'White-labeling' },
           ],
         },
         {
-          title: "Storage",
+          title: 'Storage',
           items: [
-            { icon: HardDrive, text: "500GB storage" },
-            { icon: FileSearch, text: "File versioning" },
-            { icon: CloudRain, text: "Backup and restore" },
-            { icon: CloudSnow, text: "Unlimited file uploads" },
+            { icon: HardDrive, text: '500GB storage' },
+            { icon: FileSearch, text: 'File versioning' },
+            { icon: CloudRain, text: 'Backup and restore' },
+            { icon: CloudSnow, text: 'Unlimited file uploads' },
           ],
         },
         {
-          title: "Support",
+          title: 'Support',
           items: [
-            { icon: Bell, text: "Priority support" },
-            { icon: Clock, text: "24/7 priority support" },
-            { icon: Mail, text: "Email, chat, and phone support" },
-            { icon: Star, text: "Dedicated account manager" },
+            { icon: Bell, text: 'Priority support' },
+            { icon: Clock, text: '24/7 priority support' },
+            { icon: Mail, text: 'Email, chat, and phone support' },
+            { icon: Star, text: 'Dedicated account manager' },
           ],
         },
         {
-          title: "Collaboration",
+          title: 'Collaboration',
           items: [
-            { icon: Users, text: "Unlimited team members" },
-            { icon: UserCheck, text: "Advanced team collaboration" },
-            { icon: UserCog, text: "Role-based access control" },
-            { icon: Clock11Icon, text: "Custom workflows" },
+            { icon: Users, text: 'Unlimited team members' },
+            { icon: UserCheck, text: 'Advanced team collaboration' },
+            { icon: UserCog, text: 'Role-based access control' },
+            { icon: Clock11Icon, text: 'Custom workflows' },
           ],
         },
       ],
       isPopular: true, // Mark as popular
     },
     {
-      title: "Enterprise Plan",
-      monthlyPrice: "$1199",
-      annualPrice: "$959",
-      description: "Unlimited credits",
+      title: 'Enterprise Plan',
+      monthlyPrice: '$1199',
+      annualPrice: '$959',
+      description: 'Unlimited credits',
       features: [
         {
-          title: "Security",
+          title: 'Security',
           items: [
-            { icon: ShieldPlus, text: "Enterprise-grade security" },
-            { icon: ShieldCheck, text: "Advanced encryption" },
-            { icon: Key, text: "Two-factor authentication" },
-            { icon: ShieldAlert, text: "Data loss prevention" },
-            { icon: LifeBuoy, text: "Dedicated security team" },
-            { icon: ShieldQuestion, text: "Compliance certifications" },
+            { icon: ShieldPlus, text: 'Enterprise-grade security' },
+            { icon: ShieldCheck, text: 'Advanced encryption' },
+            { icon: Key, text: 'Two-factor authentication' },
+            { icon: ShieldAlert, text: 'Data loss prevention' },
+            { icon: LifeBuoy, text: 'Dedicated security team' },
+            { icon: ShieldQuestion, text: 'Compliance certifications' },
           ],
         },
         {
-          title: "Style",
+          title: 'Style',
           items: [
-            { icon: Palette, text: "Custom branding" },
-            { icon: Eye, text: "Advanced style customization" },
-            { icon: Star, text: "Custom themes" },
-            { icon: Star, text: "White-labeling" },
-            { icon: Star, text: "Custom animations" },
+            { icon: Palette, text: 'Custom branding' },
+            { icon: Eye, text: 'Advanced style customization' },
+            { icon: Star, text: 'Custom themes' },
+            { icon: Star, text: 'White-labeling' },
+            { icon: Star, text: 'Custom animations' },
           ],
         },
         {
-          title: "Storage",
+          title: 'Storage',
           items: [
-            { icon: HardDrive, text: "1TB storage" },
-            { icon: FileInput, text: "File versioning" },
-            { icon: CloudLightning, text: "Backup and restore" },
-            { icon: CloudDrizzle, text: "Unlimited file uploads" },
-            { icon: CloudSun, text: "Custom storage solutions" },
+            { icon: HardDrive, text: '1TB storage' },
+            { icon: FileInput, text: 'File versioning' },
+            { icon: CloudLightning, text: 'Backup and restore' },
+            { icon: CloudDrizzle, text: 'Unlimited file uploads' },
+            { icon: CloudSun, text: 'Custom storage solutions' },
           ],
         },
         {
-          title: "Support",
+          title: 'Support',
           items: [
-            { icon: Bell, text: "24/7 premium support" },
-            { icon: Clock, text: "Dedicated account manager" },
-            { icon: Mail, text: "Email, chat, and phone support" },
-            { icon: Star, text: "Custom SLA agreements" },
+            { icon: Bell, text: '24/7 premium support' },
+            { icon: Clock, text: 'Dedicated account manager' },
+            { icon: Mail, text: 'Email, chat, and phone support' },
+            { icon: Star, text: 'Custom SLA agreements' },
           ],
         },
         {
-          title: "Collaboration",
+          title: 'Collaboration',
           items: [
-            { icon: Users, text: "Unlimited users" },
-            { icon: UserCheck, text: "Advanced team collaboration" },
-            { icon: UserCog, text: "Role-based access control" },
-            { icon: Clock11Icon, text: "Custom workflows" },
-            { icon: VoicemailIcon, text: "Unlimited integrations" },
+            { icon: Users, text: 'Unlimited users' },
+            { icon: UserCheck, text: 'Advanced team collaboration' },
+            { icon: UserCog, text: 'Role-based access control' },
+            { icon: Clock11Icon, text: 'Custom workflows' },
+            { icon: VoicemailIcon, text: 'Unlimited integrations' },
           ],
         },
       ],
@@ -319,7 +320,7 @@ const Pricing28 = () => {
               defaultValue="monthly"
               className="h-full grid-cols-2"
               onValueChange={(value) => {
-                setIsAnnually(value === "annually");
+                setIsAnnually(value === 'annually');
               }}
             >
               <div className='has-[button[data-state="checked"]]:bg-background h-full rounded-full transition-all'>
@@ -373,7 +374,7 @@ const Pricing28 = () => {
                       {isAnnually ? pkg.annualPrice : pkg.monthlyPrice}
                     </span>
                     <span className="text-muted-foreground">
-                      {isAnnually ? "/mo, billed annually" : "/mo"}
+                      {isAnnually ? '/mo, billed annually' : '/mo'}
                     </span>
                   </div>
                   <TooltipProvider delayDuration={100}>
@@ -389,9 +390,9 @@ const Pricing28 = () => {
                     </Tooltip>
                   </TooltipProvider>
                   <Button className="mt-6 w-full rounded-full">
-                    {pkg.title === "Enterprise Plan"
-                      ? "Contact Sale"
-                      : "Get " + pkg.title}
+                    {pkg.title === 'Enterprise Plan'
+                      ? 'Contact Sale'
+                      : 'Get ' + pkg.title}
                   </Button>
                   <div className="mt-6">
                     {pkg.features.map((feature, i) => (
@@ -418,7 +419,7 @@ const Pricing28 = () => {
         <div className="text-muted-foreground mt-8 flex items-center justify-center">
           <Lock className="size-4" />
           <span className="ml-2 text-sm">
-            Secure payment. Powered by{" "}
+            Secure payment. Powered by{' '}
             <a href="https://shadcnblocks.com" className="underline">
               shadcnblocks.com
             </a>

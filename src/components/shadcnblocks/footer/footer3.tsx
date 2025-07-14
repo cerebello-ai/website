@@ -4,42 +4,42 @@ import {
   FaRedditAlien,
   FaTelegramPlane,
   FaTwitter,
-} from "react-icons/fa";
+} from 'react-icons/fa';
 
-import { Logo, LogoImage, LogoText } from "@/components/shadcnblocks/logo";
-import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
-import { Label } from "@/components/ui/label";
+import { Logo, LogoImage, LogoText } from '@/components/shadcnblocks/logo';
+import { Button } from '@/components/ui/button';
+import { Input } from '@/components/ui/input';
+import { Label } from '@/components/ui/label';
 
 const sections = [
   {
-    title: "Product",
+    title: 'Product',
     links: [
-      { name: "Overview", href: "#" },
-      { name: "Pricing", href: "#" },
-      { name: "Marketplace", href: "#" },
-      { name: "Features", href: "#" },
-      { name: "Integrations", href: "#" },
-      { name: "Pricing", href: "#" },
+      { name: 'Overview', href: '#' },
+      { name: 'Pricing', href: '#' },
+      { name: 'Marketplace', href: '#' },
+      { name: 'Features', href: '#' },
+      { name: 'Integrations', href: '#' },
+      { name: 'Pricing', href: '#' },
     ],
   },
   {
-    title: "Company",
+    title: 'Company',
     links: [
-      { name: "About", href: "#" },
-      { name: "Team", href: "#" },
-      { name: "Blog", href: "#" },
-      { name: "Careers", href: "#" },
-      { name: "Contact", href: "#" },
-      { name: "Privacy", href: "#" },
+      { name: 'About', href: '#' },
+      { name: 'Team', href: '#' },
+      { name: 'Blog', href: '#' },
+      { name: 'Careers', href: '#' },
+      { name: 'Contact', href: '#' },
+      { name: 'Privacy', href: '#' },
     ],
   },
   {
-    title: "Resources",
+    title: 'Resources',
     links: [
-      { name: "Help", href: "#" },
-      { name: "Sales", href: "#" },
-      { name: "Advertise", href: "#" },
+      { name: 'Help', href: '#' },
+      { name: 'Sales', href: '#' },
+      { name: 'Advertise', href: '#' },
     ],
   },
 ];
@@ -54,10 +54,10 @@ interface Footer3Props {
 }
 const Footer3 = ({
   logo = {
-    url: "https://www.shadcnblocks.com",
-    src: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/shadcnblockscom-icon.svg",
-    alt: "logo",
-    title: "Shadcnblocks.com",
+    url: 'https://www.shadcnblocks.com',
+    src: 'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/shadcnblockscom-icon.svg',
+    alt: 'logo',
+    title: 'Shadcnblocks.com',
   },
 }: Footer3Props) => {
   return (

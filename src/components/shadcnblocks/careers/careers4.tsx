@@ -1,4 +1,4 @@
-import { Button } from "@/components/ui/button";
+import { Button } from '@/components/ui/button';
 
 interface JobOpening {
   title: string;
@@ -17,45 +17,45 @@ interface Careers4Props {
 }
 
 const Careers4 = ({
-  heading = "Job Openings",
+  heading = 'Job Openings',
   jobs = [
     {
-      category: "Engineering",
+      category: 'Engineering',
       openings: [
         {
-          title: "Senior Frontend Developer",
-          location: "Remote",
-          url: "#",
+          title: 'Senior Frontend Developer',
+          location: 'Remote',
+          url: '#',
         },
         {
-          title: "UI/UX Designer",
-          location: "San Francisco",
-          url: "#",
+          title: 'UI/UX Designer',
+          location: 'San Francisco',
+          url: '#',
         },
         {
-          title: "React Developer",
-          location: "Remote",
-          url: "#",
+          title: 'React Developer',
+          location: 'Remote',
+          url: '#',
         },
         {
-          title: "Technical Lead",
-          location: "London",
-          url: "#",
+          title: 'Technical Lead',
+          location: 'London',
+          url: '#',
         },
       ],
     },
     {
-      category: "Design",
+      category: 'Design',
       openings: [
         {
-          title: "Product Designer",
-          location: "Remote",
-          url: "#",
+          title: 'Product Designer',
+          location: 'Remote',
+          url: '#',
         },
         {
-          title: "Visual Designer",
-          location: "Berlin",
-          url: "#",
+          title: 'Visual Designer',
+          location: 'Berlin',
+          url: '#',
         },
       ],
     },

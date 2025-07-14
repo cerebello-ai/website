@@ -1,12 +1,12 @@
-import React from "react";
+import React from 'react';
 
-import { Button } from "@/components/ui/button";
+import { Button } from '@/components/ui/button';
 import {
   Card,
   CardDescription,
   CardHeader,
   CardTitle,
-} from "@/components/ui/card";
+} from '@/components/ui/card';
 interface DataItem {
   id: number;
   icon: string;
@@ -17,44 +17,44 @@ interface DataItem {
 const DATA: DataItem[] = [
   {
     id: 1,
-    icon: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/google-icon.svg",
-    title: "Google Sheets",
+    icon: 'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/google-icon.svg',
+    title: 'Google Sheets',
     description:
-      "Easily sync your data with Google Sheets for seamless automation.",
+      'Easily sync your data with Google Sheets for seamless automation.',
   },
   {
     id: 2,
-    icon: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/slack-icon.svg",
-    title: "Slack",
+    icon: 'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/slack-icon.svg',
+    title: 'Slack',
     description:
-      "Receive updates and notifications directly in your Slack channels.",
+      'Receive updates and notifications directly in your Slack channels.',
   },
   {
     id: 3,
-    icon: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/sketch-icon.svg",
-    title: "Sketch",
+    icon: 'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/sketch-icon.svg',
+    title: 'Sketch',
     description:
-      "Import your designs from Sketch and streamline your design process",
+      'Import your designs from Sketch and streamline your design process',
   },
   {
     id: 4,
-    icon: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/gatsby-icon.svg",
-    title: "Gatsby",
-    description: "Build blazing-fast websites with Gatsby integration.",
+    icon: 'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/gatsby-icon.svg',
+    title: 'Gatsby',
+    description: 'Build blazing-fast websites with Gatsby integration.',
   },
   {
     id: 5,
-    icon: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/spotify-icon.svg",
-    title: "Shopify",
+    icon: 'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/spotify-icon.svg',
+    title: 'Shopify',
     description:
-      "Sync your Shopify store data and streamline order management.",
+      'Sync your Shopify store data and streamline order management.',
   },
   {
     id: 6,
-    icon: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/github-icon.svg",
-    title: "Github",
+    icon: 'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/github-icon.svg',
+    title: 'Github',
     description:
-      "Automate your workflows and track changes with Github integration.",
+      'Automate your workflows and track changes with Github integration.',
   },
 ];
 
@@ -88,15 +88,16 @@ const Integration1 = () => {
       {/* Background pattern container */}
       <div className="absolute inset-0 -z-10 overflow-hidden">
         <div
-          className="absolute inset-0 bg-[length:60px_60px] opacity-[0.03] [-webkit-mask-image:radial-gradient(ellipse_at_top,black_30%,transparent_70%)] [mask-image:radial-gradient(ellipse_at_top,black_30%,transparent_70%)]"
+          className="absolute inset-0 [mask-image:radial-gradient(ellipse_at_top,black_30%,transparent_70%)] bg-[length:60px_60px] opacity-[0.03] [-webkit-mask-image:radial-gradient(ellipse_at_top,black_30%,transparent_70%)]"
           style={{
-            backgroundImage: "url('https://deifkwefumgah.cloudfront.net/shadcnblocks/block/patterns/pie-factory.svg')",
+            backgroundImage:
+              "url('https://deifkwefumgah.cloudfront.net/shadcnblocks/block/patterns/pie-factory.svg')",
           }}
         />
       </div>
 
-      <div className="container relative flex max-w-5xl flex-col items-center text-center">
-        <h1 className="my-6 text-pretty text-4xl font-bold lg:text-6xl">
+      <div className="relative container flex max-w-5xl flex-col items-center text-center">
+        <h1 className="my-6 text-4xl font-bold text-pretty lg:text-6xl">
           Integrate Your Favourite Apps
         </h1>
         <h2 className="text-muted-foreground mb-8 max-w-3xl lg:text-2xl">

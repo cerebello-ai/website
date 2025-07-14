@@ -27,7 +27,9 @@ export const Feature1 = () => {
             AI & Automation tailored for modern enterprises
           </h2>
           <p className="text-muted-foreground flex-1 text-lg font-medium md:max-w-md md:self-end">
-            Cerbello merges AI with data management to transform challenges into growth opportunities. Our tailored, ethical solutions unlock insights and drive sustainable success.
+            Cerbello merges AI with data management to transform challenges into
+            growth opportunities. Our tailored, ethical solutions unlock
+            insights and drive sustainable success.
           </p>
         </div>
 

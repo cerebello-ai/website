@@ -1,3 +1,5 @@
+import React from 'react';
+
 import {
   Accessibility,
   BadgeCheck,
@@ -8,74 +10,74 @@ import {
   Moon,
   Settings2,
   Type,
-} from "lucide-react";
-import { Check, X } from "lucide-react";
-import React from "react";
+  Check,
+  X,
+} from 'lucide-react';
 
 type Feature = {
   icon: React.ReactNode;
   label: string;
   description: string;
-  shadcn: true | false | "partial";
-  bootstrap: true | false | "partial";
+  shadcn: true | false | 'partial';
+  bootstrap: true | false | 'partial';
   tooltip?: { content: React.ReactNode };
 };
 
 const features: Feature[] = [
   {
     icon: <LayoutDashboard className="text-gray-500" />,
-    label: "Design System",
-    description: "Modern, utility-first vs classic, component-based.",
+    label: 'Design System',
+    description: 'Modern, utility-first vs classic, component-based.',
     shadcn: true,
     bootstrap: true,
   },
   {
     icon: <Settings2 className="text-gray-500" />,
-    label: "Customization",
-    description: "Highly customizable vs limited by default.",
+    label: 'Customization',
+    description: 'Highly customizable vs limited by default.',
     shadcn: true,
     bootstrap: false,
   },
   {
     icon: <Moon className="text-gray-500" />,
-    label: "Dark Mode",
-    description: "Built-in dark mode vs requires extra setup.",
+    label: 'Dark Mode',
+    description: 'Built-in dark mode vs requires extra setup.',
     shadcn: true,
     bootstrap: false,
   },
   {
     icon: <Type className="text-gray-500" />,
-    label: "TypeScript Support",
-    description: "First-class TypeScript support vs partial support.",
+    label: 'TypeScript Support',
+    description: 'First-class TypeScript support vs partial support.',
     shadcn: true,
-    bootstrap: "partial",
+    bootstrap: 'partial',
   },
   {
     icon: <Accessibility className="text-gray-500" />,
-    label: "Accessibility",
-    description: "Focus on accessibility (a11y) vs basic support.",
+    label: 'Accessibility',
+    description: 'Focus on accessibility (a11y) vs basic support.',
     shadcn: true,
     bootstrap: false,
   },
   {
     icon: <ListChecks className="text-gray-500" />,
-    label: "Component Count",
-    description: "30+ components vs 25+ components.",
+    label: 'Component Count',
+    description: '30+ components vs 25+ components.',
     shadcn: true,
     bootstrap: true,
   },
   {
     icon: <BadgeCheck className="text-gray-500" />,
-    label: "License",
-    description: "MIT license for both.",
+    label: 'License',
+    description: 'MIT license for both.',
     shadcn: true,
     bootstrap: true,
   },
   {
     icon: <Gem className="text-gray-500" />,
-    label: "Premium Components",
+    label: 'Premium Components',
     description:
-      "Premium components available in Shadcn, not included in Bootstrap.",
+      'Premium components available in Shadcn, not included in Bootstrap.',
     shadcn: true,
     bootstrap: false,
     tooltip: {
@@ -90,8 +92,8 @@ const features: Feature[] = [
   },
   {
     icon: <Figma className="text-gray-500" />,
-    label: "Figma Kit",
-    description: "Official Figma kit available for Shadcn, not for Bootstrap.",
+    label: 'Figma Kit',
+    description: 'Official Figma kit available for Shadcn, not for Bootstrap.',
     shadcn: true,
     bootstrap: false,
     tooltip: {
@@ -137,14 +139,14 @@ const Compare8 = () => {
               </div>
               <div className="w-full flex-1 px-6 pb-2 sm:py-4">
                 <div className="hidden font-medium sm:block">{row.label}</div>
-                <div className="text-muted-foreground mb-2 mt-2 text-sm sm:mb-0">
+                <div className="text-muted-foreground mt-2 mb-2 text-sm sm:mb-0">
                   {row.description}
                 </div>
               </div>
               <div className="flex w-full items-center justify-start px-6 pb-2 sm:w-40 sm:justify-center sm:py-4">
                 {row.shadcn === true ? (
                   <Check className="size-5 text-green-600" />
-                ) : row.shadcn === "partial" ? (
+                ) : row.shadcn === 'partial' ? (
                   <Check className="size-5 text-yellow-500" />
                 ) : (
                   <X className="text-destructive size-5" />
@@ -156,7 +158,7 @@ const Compare8 = () => {
               <div className="border-border flex w-full items-center justify-start px-6 pb-4 sm:w-40 sm:justify-center sm:border-0 sm:py-4">
                 {row.bootstrap === true ? (
                   <Check className="size-5 text-green-600" />
-                ) : row.bootstrap === "partial" ? (
+                ) : row.bootstrap === 'partial' ? (
                   <Check className="size-5 text-yellow-500" />
                 ) : row.bootstrap === false && row.tooltip ? (
                   <span className="inline-block h-5">—</span>

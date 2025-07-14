@@ -1,36 +1,37 @@
-import { ArrowRight } from "lucide-react";
+import { ArrowRight } from 'lucide-react';
 
-import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
-import { Button } from "@/components/ui/button";
+import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
+import { Button } from '@/components/ui/button';
 
 const CUSTOMER_DATA = {
   company: {
-    logo: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/company/fictional-company-logo-8.svg",
-    name: "",
+    logo: 'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/company/fictional-company-logo-8.svg',
+    name: '',
   },
   stats: [
     {
-      number: "45%",
-      text: "improvement in onboarding completion",
+      number: '45%',
+      text: 'improvement in onboarding completion',
     },
     {
-      number: "61%",
-      text: "reduction in time-to-value",
+      number: '61%',
+      text: 'reduction in time-to-value',
     },
     {
-      number: "3x",
-      text: "increase in user activation",
+      number: '3x',
+      text: 'increase in user activation',
     },
   ],
   author: {
-    name: "Sarah Williams",
-    image: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/avatar-1.webp",
-    role: "CTO, monzo",
+    name: 'Sarah Williams',
+    image:
+      'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/avatar-1.webp',
+    role: 'CTO, monzo',
   },
-  title: "How We Optimized Our Onboarding Flow to Triple User Activation",
+  title: 'How We Optimized Our Onboarding Flow to Triple User Activation',
   summary:
-    "Learn how we revamped our product onboarding experience using our in-house toolkit and reduced time-to-value by over 60%.",
-  link: "#",
+    'Learn how we revamped our product onboarding experience using our in-house toolkit and reduced time-to-value by over 60%.',
+  link: '#',
 };
 
 interface AuthorProps {
@@ -42,7 +43,7 @@ interface AuthorProps {
 const Author = ({ image, name, role }: AuthorProps) => {
   return (
     <div className="flex items-center gap-2.5">
-      <Avatar className="size-10 rounded-[.5rem] border bg-background">
+      <Avatar className="bg-background size-10 rounded-[.5rem] border">
         <AvatarImage src={image} alt={name} />
         <AvatarFallback>{name}</AvatarFallback>
       </Avatar>
@@ -58,8 +59,8 @@ const Casestudies4 = () => {
   return (
     <section className="py-32">
       <div className="container">
-        <div className="flex w-full flex-col items-stretch justify-between gap-10 rounded-[.5rem] bg-muted p-10 lg:flex-row">
-          <div className="flex w-full max-w-[30rem] flex-col gap-10 rounded-[.5rem] bg-background p-5">
+        <div className="bg-muted flex w-full flex-col items-stretch justify-between gap-10 rounded-[.5rem] p-10 lg:flex-row">
+          <div className="bg-background flex w-full max-w-[30rem] flex-col gap-10 rounded-[.5rem] p-5">
             <div className="max-w-[4.875rem]">
               <img
                 src={CUSTOMER_DATA.company.logo}
@@ -74,7 +75,7 @@ const Casestudies4 = () => {
                   key={`stats-use-case-${i}`}
                 >
                   <div className="text-xl font-semibold">{item.number}</div>
-                  <div className="text-sm font-medium text-muted-foreground">
+                  <div className="text-muted-foreground text-sm font-medium">
                     {item.text}
                   </div>
                 </div>
@@ -86,7 +87,7 @@ const Casestudies4 = () => {
             <h2 className="text-2xl leading-none font-bold md:text-3xl lg:text-4xl">
               {CUSTOMER_DATA.title}
             </h2>
-            <p className="text-base font-medium text-foreground">
+            <p className="text-foreground text-base font-medium">
               {CUSTOMER_DATA.summary}
             </p>
             <div className="shrink-0">

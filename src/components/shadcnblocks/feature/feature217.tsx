@@ -1,6 +1,6 @@
-import { Eye, Keyboard, LucideIcon, Volume2 } from "lucide-react";
+import { Eye, Keyboard, LucideIcon, Volume2 } from 'lucide-react';
 
-import { AspectRatio } from "@/components/ui/aspect-ratio";
+import { AspectRatio } from '@/components/ui/aspect-ratio';
 
 interface Item {
   title: string;
@@ -10,21 +10,21 @@ interface Item {
 
 const FEATURES: Array<Item> = [
   {
-    title: "Keyboard Navigation Support",
+    title: 'Keyboard Navigation Support',
     summary:
-      "Ensure all interactive elements are accessible via keyboard alone, allowing users with motor impairments to navigate easily and efficiently without a mouse.",
+      'Ensure all interactive elements are accessible via keyboard alone, allowing users with motor impairments to navigate easily and efficiently without a mouse.',
     icon: Keyboard,
   },
   {
-    title: "Screen Reader Friendly",
+    title: 'Screen Reader Friendly',
     summary:
-      "Use semantic HTML and proper ARIA labels to help screen readers convey structure and meaning clearly to users with visual impairments.",
+      'Use semantic HTML and proper ARIA labels to help screen readers convey structure and meaning clearly to users with visual impairments.',
     icon: Volume2,
   },
   {
-    title: "Color Contrast Check",
+    title: 'Color Contrast Check',
     summary:
-      "Maintain strong color contrast between text and background to support users with low vision and improve readability across different lighting conditions.",
+      'Maintain strong color contrast between text and background to support users with low vision and improve readability across different lighting conditions.',
     icon: Eye,
   },
 ];
@@ -32,11 +32,11 @@ const FEATURES: Array<Item> = [
 const FeatureItem = ({ title, summary, icon: Icon }: Item) => {
   return (
     <div className="flex flex-col items-center justify-center gap-4">
-      <Icon className="size-7 stroke-muted-foreground" />
+      <Icon className="stroke-muted-foreground size-7" />
       <div className="max-w-[17.5rem] text-center text-[1.375rem] font-semibold">
         {title}
       </div>
-      <div className="max-w-[31.25rem] text-center text-base text-muted-foreground">
+      <div className="text-muted-foreground max-w-[31.25rem] text-center text-base">
         {summary}
       </div>
     </div>
@@ -46,7 +46,7 @@ const FeatureItem = ({ title, summary, icon: Icon }: Item) => {
 const Feature217 = () => {
   return (
     <section className="">
-      <div className="relative bg-muted bg-cover bg-center bg-no-repeat py-10 after:absolute after:inset-0 after:z-10 after:block after:size-full after:bg-black/40 after:content-[''] md:py-16 xl:px-6 xl:py-[7.5rem]">
+      <div className="bg-muted relative bg-cover bg-center bg-no-repeat py-10 after:absolute after:inset-0 after:z-10 after:block after:size-full after:bg-black/40 after:content-[''] md:py-16 xl:px-6 xl:py-[7.5rem]">
         <div className="relative z-20 container">
           <div className="grid items-start justify-start gap-14 xl:grid-cols-[0.75fr_1fr] xl:items-center xl:justify-center">
             <div className="flex flex-col gap-4.5">
