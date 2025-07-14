@@ -88,7 +88,7 @@ export const Feature145 = () => {
         <div className="mx-auto grid max-w-6xl gap-8 lg:grid-cols-2">
           {/* Accordion */}
           <div>
-            <Accordion value={activeFeature} onValueChange={setActiveFeature}>
+            <Accordion type="single" value={activeFeature} onValueChange={setActiveFeature}>
               {features.map((feature) => (
                 <AccordionItem key={feature.id} value={feature.id}>
                   <AccordionTrigger className="text-left">
