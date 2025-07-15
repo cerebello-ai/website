@@ -71,7 +71,7 @@ const Cta22 = ({
           <div className="dark bg-background relative h-[350px] overflow-hidden rounded-xl text-white md:col-span-2">
             <div className="flex h-full flex-row p-4 sm:p-8 md:p-12">
               <div className="relative z-10 w-full self-center px-2 text-center sm:w-auto sm:flex-1 sm:px-0 md:text-left">
-                <h1 className="mb-4 text-3xl font-bold sm:mb-6 sm:text-2xl md:text-3xl">
+                <h1 className="mb-4 text-3xl font-semibold sm:mb-6 sm:text-2xl md:text-3xl">
                   {downloadTitle}
                 </h1>
                 <div className="flex flex-col justify-center gap-3 sm:flex-row sm:gap-4 md:justify-start">

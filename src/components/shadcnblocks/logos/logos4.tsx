@@ -42,7 +42,7 @@ const Logos4 = () => {
       <div className="container">
         <div className="text-center">
           <Badge variant="outline">Referral Partners</Badge>
-          <h1 className="mx-auto mt-8 mb-5 max-w-3xl text-4xl font-bold text-balance md:text-6xl">
+          <h1 className="mx-auto mt-8 mb-5 max-w-3xl text-4xl font-semibold text-balance md:text-6xl">
             Join our partner network. Grow together with us.
           </h1>
           <p className="mx-auto max-w-3xl text-xl font-medium text-balance">

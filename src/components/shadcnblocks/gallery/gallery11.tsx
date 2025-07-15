@@ -92,7 +92,7 @@ const Gallery11 = () => {
                           {item.title}
                         </h5>
                         <div className="flex items-center gap-4">
-                          <h4 className="text-sm font-bold md:text-lg lg:text-xl">
+                          <h4 className="text-sm font-semibold md:text-lg lg:text-xl">
                             {item.description}
                           </h4>
                           <ArrowRight className="size-4 transition-transform group-hover:translate-x-1" />

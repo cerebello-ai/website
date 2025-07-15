@@ -1008,7 +1008,7 @@ const PartnersMenu = () => (
         <div className="flex items-start p-6 text-left">
           <Users className="size-8" />
           <div className="ml-4">
-            <div className="text-foreground/85 hover:text-foreground mt-auto mb-1 text-sm font-bold">
+            <div className="text-foreground/85 hover:text-foreground mt-auto mb-1 text-sm font-semibold">
               Implementation Partners
             </div>
             <p className="text-muted-foreground group-hover:text-foreground text-xs">
@@ -1024,7 +1024,7 @@ const PartnersMenu = () => (
         <div className="flex items-start p-6 text-left">
           <Computer className="size-8" />
           <div className="ml-4">
-            <div className="text-foreground/85 hover:text-foreground mt-auto mb-1 text-sm font-bold">
+            <div className="text-foreground/85 hover:text-foreground mt-auto mb-1 text-sm font-semibold">
               Technology Partners
             </div>
             <p className="text-muted-foreground group-hover:text-foreground text-xs">

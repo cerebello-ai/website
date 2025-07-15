@@ -26,7 +26,7 @@ const Hero109 = () => {
             <div className="flex items-center gap-2">
               <CreditCard className="stroke-foreground max-xl:size-7 max-lg:size-5" />
 
-              <span className="text-foreground text-sm font-bold lg:text-lg xl:text-2xl">
+              <span className="text-foreground text-sm font-semibold lg:text-lg xl:text-2xl">
                 Worldwide
               </span>
             </div>
@@ -40,7 +40,7 @@ const Hero109 = () => {
           <span className="text-muted-foreground text-sm font-semibold">
             #1 Fintech App
           </span>
-          <h1 className="bg-[linear-gradient(282deg,var(--color-muted-foreground)_0%,var(--color-foreground)_100%)] bg-clip-text text-[60px] leading-[1em] font-bold tracking-tighter text-transparent lg:text-[76px] xl:text-[110px]">
+          <h1 className="bg-[linear-gradient(282deg,var(--color-muted-foreground)_0%,var(--color-foreground)_100%)] bg-clip-text text-[60px] leading-[1em] font-semibold tracking-tighter text-transparent lg:text-[76px] xl:text-[110px]">
             Own Your Finances
           </h1>
           <p className="text-muted-foreground max-w-lg text-lg">

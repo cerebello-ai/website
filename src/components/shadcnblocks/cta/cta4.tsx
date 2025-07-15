@@ -32,7 +32,9 @@ const Cta4 = ({
           <div className="max-w-5xl">
             <div className="bg-muted flex flex-col items-start justify-between gap-8 rounded-lg px-6 py-10 md:flex-row lg:px-20 lg:py-16">
               <div className="md:w-1/2">
-                <h4 className="mb-1 text-2xl font-bold md:text-3xl">{title}</h4>
+                <h4 className="mb-1 text-2xl font-semibold md:text-3xl">
+                  {title}
+                </h4>
                 <p className="text-muted-foreground">{description}</p>
                 <Button className="mt-6" asChild>
                   <a href={buttonUrl} target="_blank">

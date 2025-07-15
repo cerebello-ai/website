@@ -21,7 +21,7 @@ const Hero80 = () => {
           <div className="flex flex-col items-center text-center lg:items-start lg:text-left">
             <a
               href="https://www.shadcnblocks.com"
-              className="text-muted-foreground my-6 text-xs font-bold tracking-[0.3em] uppercase hover:underline"
+              className="text-muted-foreground my-6 text-xs font-semibold tracking-[0.3em] uppercase hover:underline"
             >
               shadcnblocks.com
             </a>

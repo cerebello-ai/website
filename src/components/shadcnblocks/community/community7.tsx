@@ -62,7 +62,7 @@ const Community7 = () => {
   return (
     <section className="py-32">
       <div className="container flex flex-col items-center justify-center">
-        <h2 className="mb-4 text-center text-4xl font-bold tracking-tight md:text-5xl xl:text-6xl">
+        <h2 className="mb-4 text-center text-4xl font-semibold tracking-tight md:text-5xl xl:text-6xl">
           Find Us Online
         </h2>
         <p className="text-muted-foreground mb-8 max-w-2xl text-center text-lg font-normal md:text-xl">

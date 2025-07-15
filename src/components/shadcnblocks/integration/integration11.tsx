@@ -161,7 +161,7 @@ const Integration11 = () => {
   return (
     <section className="py-32">
       <div className="container">
-        <h1 className="mb-6 text-2xl font-bold">Integrations</h1>
+        <h1 className="mb-6 text-2xl font-semibold">Integrations</h1>
         <Tabs value={tab} onValueChange={setTab}>
           <TabsList className="mb-8">
             {TABS.map((t) => (

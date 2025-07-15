@@ -26,7 +26,7 @@ const Changelog4 = () => {
       <div className="container">
         <div className="mx-auto w-full max-w-5xl md:px-10">
           <div className="flex flex-col gap-16">
-            <h1 className="text-5xl font-bold">Changelog</h1>
+            <h1 className="text-5xl font-semibold">Changelog</h1>
             <div className="bg-muted mx-auto flex w-full items-center justify-center gap-2 rounded-2xl p-3 md:gap-4">
               <a href="#">
                 <FaLinkedin className="text-muted-foreground hover:text-primary size-6 duration-150" />

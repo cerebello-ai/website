@@ -65,7 +65,7 @@ const Feature182 = () => {
                 alt={feature.title}
                 className="h-64 w-full rounded-lg object-cover"
               />
-              <p className="mt-4 mb-2 text-xl font-bold">{feature.title}</p>
+              <p className="mt-4 mb-2 text-xl font-semibold">{feature.title}</p>
               <p className="text-muted-foreground mb-6 text-sm">
                 {feature.description}
               </p>

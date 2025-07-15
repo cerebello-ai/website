@@ -180,7 +180,7 @@ const Hero32 = ({
           <div className="bg-background z-20 -mx-4 w-full shrink-0 px-4 pt-32 md:w-1/2 md:bg-transparent md:pb-32">
             <div className="flex flex-col items-start text-left">
               <div className="max-w-sm">
-                <h1 className="my-6 text-4xl font-bold text-pretty lg:text-6xl">
+                <h1 className="my-6 text-4xl font-semibold text-pretty lg:text-6xl">
                   {heading}
                 </h1>
                 <p className="text-muted-foreground">{description}</p>

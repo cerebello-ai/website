@@ -25,7 +25,7 @@ export const Hero27 = ({ solution }: Hero27Props) => {
             AI Solution
           </Badge>
 
-          <h1 className="font-inter-tight text-foreground mb-6 text-4xl font-bold tracking-tight sm:text-5xl md:text-6xl lg:text-7xl">
+          <h1 className="font-inter-tight text-foreground mb-6 text-4xl font-semibold tracking-tight sm:text-5xl md:text-6xl lg:text-7xl">
             {solution.title}
           </h1>
 

@@ -213,7 +213,7 @@ const Feature199 = () => {
   return (
     <section className="py-32">
       <div className="container">
-        <h1 className="mb-10 text-4xl font-bold md:text-5xl lg:mb-20 lg:text-6xl">
+        <h1 className="mb-10 text-4xl font-semibold md:text-5xl lg:mb-20 lg:text-6xl">
           Discover Our Powerful Features
         </h1>
         <div className="relative gap-6 pb-72 md:grid md:grid-cols-5 md:pb-0">
@@ -234,7 +234,7 @@ const Feature199 = () => {
                     ></span>
                     <h2
                       className={cn(
-                        'text-muted-foreground text-[clamp(1.65rem,3vw,2.15rem)] font-bold',
+                        'text-muted-foreground text-[clamp(1.65rem,3vw,2.15rem)] font-semibold',
                         activeFeature === index && 'text-primary',
                       )}
                     >

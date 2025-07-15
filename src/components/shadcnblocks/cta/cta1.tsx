@@ -20,7 +20,7 @@ const Cta1 = ({
               <span className="bg-muted flex size-7 items-center justify-center rounded-full">
                 <Sparkles className="size-4" strokeWidth={1.5} />
               </span>
-              <h4 className="text-2xl font-bold">{title}</h4>
+              <h4 className="text-2xl font-semibold">{title}</h4>
             </div>
             <p className="text-muted-foreground">{description}</p>
             {buttons && buttons[0] && (

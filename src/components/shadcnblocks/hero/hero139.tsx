@@ -8,7 +8,7 @@ const Hero139 = () => {
           <span className="border-muted-foreground/20 bg-muted/80 text-muted-foreground rounded-full border px-3 py-1 text-sm">
             Introducing
           </span>
-          <h1 className="text-foreground text-4xl font-bold tracking-tighter sm:text-8xl">
+          <h1 className="text-foreground text-4xl font-semibold tracking-tighter sm:text-8xl">
             Unleash your data with insights
           </h1>
           <p className="text-muted-foreground mt-6 mb-14 text-lg leading-8">

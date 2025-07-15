@@ -198,7 +198,7 @@ const Gallery12 = () => {
           </Button>
 
           <div className="flex flex-col items-center gap-4 md:flex-row">
-            <Button size="lg" className="font-bold shadow-lg">
+            <Button size="lg" className="font-semibold shadow-lg">
               <Sparkles /> Download Now
             </Button>
           </div>

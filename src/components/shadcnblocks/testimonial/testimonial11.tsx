@@ -128,7 +128,7 @@ const Testimonial11 = ({
       <div className="container pb-16">
         <div className="flex flex-col items-start gap-12 sm:flex-row sm:items-center sm:justify-between sm:gap-32">
           <div className="flex flex-1 flex-col items-start text-left">
-            <h2 className="my-6 text-2xl font-bold text-pretty lg:text-4xl">
+            <h2 className="my-6 text-2xl font-semibold text-pretty lg:text-4xl">
               {title}
             </h2>
             <p className="text-muted-foreground max-w-3xl lg:text-xl">

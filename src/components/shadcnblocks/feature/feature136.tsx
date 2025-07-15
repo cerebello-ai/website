@@ -29,12 +29,12 @@ const Feature136 = () => {
             <div className="mt-9 flex w-full flex-col justify-center gap-6 md:flex-row lg:justify-start">
               <div className="flex justify-between gap-6">
                 <div className="mx-auto">
-                  <p className="mb-1.5 text-3xl font-bold">4.2M+</p>
+                  <p className="mb-1.5 text-3xl font-semibold">4.2M+</p>
                   <p className="text-muted-foreground">Installs</p>
                 </div>
                 <Separator orientation="vertical" className="h-auto" />
                 <div className="mx-auto">
-                  <p className="mb-1.5 text-3xl font-bold">221k+</p>
+                  <p className="mb-1.5 text-3xl font-semibold">221k+</p>
                   <p className="text-muted-foreground">Users Active</p>
                 </div>
               </div>
@@ -45,12 +45,12 @@ const Feature136 = () => {
               <Separator orientation="horizontal" className="block md:hidden" />
               <div className="flex justify-between gap-6">
                 <div className="mx-auto">
-                  <p className="mb-1.5 text-3xl font-bold">4.9</p>
+                  <p className="mb-1.5 text-3xl font-semibold">4.9</p>
                   <p className="text-muted-foreground">User Rating</p>
                 </div>
                 <Separator orientation="vertical" className="h-auto" />
                 <div className="mx-auto">
-                  <p className="mb-1.5 text-3xl font-bold">40+</p>
+                  <p className="mb-1.5 text-3xl font-semibold">40+</p>
                   <p className="text-muted-foreground">Countries</p>
                 </div>
               </div>

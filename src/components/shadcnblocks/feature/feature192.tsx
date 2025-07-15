@@ -85,7 +85,7 @@ export function Feature192() {
                   className="border-black/20 dark:border-white/20"
                 >
                   <AccordionTrigger className="px-5 text-start hover:no-underline sm:px-0">
-                    <h3 className="text-xl font-bold opacity-80">
+                    <h3 className="text-xl font-semibold opacity-80">
                       {feature.title}
                     </h3>
                   </AccordionTrigger>

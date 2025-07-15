@@ -31,7 +31,9 @@ const Careers2 = () => {
             <Badge variant="outline" className="w-fit">
               Job openings
             </Badge>
-            <h1 className="text-2xl font-bold md:text-4xl">Openings at Acme</h1>
+            <h1 className="text-2xl font-semibold md:text-4xl">
+              Openings at Acme
+            </h1>
             <p className="text-muted-foreground">
               Don&apos;t see a role for you?
               <a href="#" className="ml-1 underline">

@@ -33,7 +33,7 @@ const Testimonial17 = () => {
     <section className="py-32">
       <div className="container">
         <div className="flex flex-col gap-14 lg:grid lg:grid-cols-3 lg:gap-0">
-          <h2 className="text-center text-3xl font-bold lg:text-left lg:text-4xl">
+          <h2 className="text-center text-3xl font-semibold lg:text-left lg:text-4xl">
             Teams are thriving with our platform
           </h2>
           <Carousel setApi={setApi} className="w-full lg:hidden">

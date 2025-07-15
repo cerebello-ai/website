@@ -73,7 +73,7 @@ const Careers4 = ({
           <div className="mx-auto mt-6 flex flex-col gap-16 md:mt-14">
             {jobs.map((jobCategory) => (
               <div key={jobCategory.category} className="grid">
-                <h2 className="border-b pb-4 text-xl font-bold">
+                <h2 className="border-b pb-4 text-xl font-semibold">
                   {jobCategory.category}
                 </h2>
                 {jobCategory.openings.map((job) => (

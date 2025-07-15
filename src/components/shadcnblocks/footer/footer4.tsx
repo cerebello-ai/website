@@ -98,7 +98,7 @@ const Footer4 = ({
             <Separator className="col-span-2 my-6 lg:hidden" />
             {sections.map((section, sectionIdx) => (
               <div key={sectionIdx}>
-                <h3 className="mb-4 font-bold">{section.title}</h3>
+                <h3 className="mb-4 font-semibold">{section.title}</h3>
                 <ul className="text-muted-foreground space-y-4">
                   {section.links.map((link, linkIdx) => (
                     <li

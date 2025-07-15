@@ -166,7 +166,7 @@ const Timeline7: React.FC<Timeline7Props> = ({
     <section className="bg-background py-32">
       <div className="container flex max-w-2xl flex-col items-center gap-10 md:gap-0">
         <div className="mb-10 text-center">
-          <h1 className="text-foreground text-6xl font-bold tracking-tighter">
+          <h1 className="text-foreground text-6xl font-semibold tracking-tighter">
             {title}
           </h1>
           {subtitle && (

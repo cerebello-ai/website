@@ -18,7 +18,7 @@ const Feature80 = () => {
             <p className="mb-6 text-xs font-medium tracking-wider uppercase">
               Tag Line
             </p>
-            <h2 className="mb-6 text-3xl font-bold text-pretty lg:text-5xl">
+            <h2 className="mb-6 text-3xl font-semibold text-pretty lg:text-5xl">
               Feature Description
             </h2>
             <p className="text-muted-foreground mb-6 lg:text-xl">

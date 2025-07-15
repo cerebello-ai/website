@@ -51,7 +51,7 @@ const Cta3 = ({
       <div className="container">
         <div className="grid grid-cols-1 flex-col gap-10 rounded-lg border p-6 shadow-sm lg:grid-cols-2 lg:px-20 lg:py-16">
           <div>
-            <h4 className="mb-2 text-2xl font-bold lg:text-4xl">{title}</h4>
+            <h4 className="mb-2 text-2xl font-semibold lg:text-4xl">{title}</h4>
             <p className="text-muted-foreground">{description}</p>
             <div className="mt-8 flex flex-col items-center gap-2 sm:flex-row">
               {buttons &&

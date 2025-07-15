@@ -78,7 +78,7 @@ const Feature90 = () => {
         </div>
         <div className="text-center text-sm">
           and more than
-          <a href="#" className="ml-1 font-bold underline">
+          <a href="#" className="ml-1 font-semibold underline">
             120+ integrations available
           </a>
         </div>

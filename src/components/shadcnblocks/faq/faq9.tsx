@@ -37,7 +37,7 @@ const Faq9 = () => {
   return (
     <section className="py-32">
       <div className="container">
-        <h2 className="mt-2 mb-12 text-3xl font-bold md:text-6xl">FAQ</h2>
+        <h2 className="mt-2 mb-12 text-3xl font-semibold md:text-6xl">FAQ</h2>
         <Accordion type="multiple">
           {faqs.map((faq, index) => (
             <AccordionItem

@@ -44,7 +44,7 @@ const Hero4 = ({
           />
         </div>
         <div className="flex flex-col items-center text-center lg:max-w-3xl lg:items-start lg:text-left">
-          <h1 className="my-6 text-4xl font-bold text-pretty lg:text-6xl xl:text-7xl">
+          <h1 className="my-6 text-4xl font-semibold text-pretty lg:text-6xl xl:text-7xl">
             {title}
           </h1>
           <p className="text-muted-foreground mb-8 max-w-xl lg:text-xl">

@@ -66,7 +66,7 @@ const Hero29 = () => {
         </div>
       </div>
       <div className="relative container flex flex-col items-center text-center">
-        <h1 className="my-3 text-2xl font-bold text-pretty sm:text-4xl md:my-6 lg:text-5xl">
+        <h1 className="my-3 text-2xl font-semibold text-pretty sm:text-4xl md:my-6 lg:text-5xl">
           Welcome to Our Website
         </h1>
         <p className="text-muted-foreground mb-6 max-w-xl md:mb-12 lg:text-xl">

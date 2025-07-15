@@ -92,7 +92,7 @@ const Stadswerk072CaseStudy = () => {
                   </p>
                   <div className="mb-12 grid grid-cols-2 gap-6 lg:grid-cols-4">
                     <div className="flex flex-col gap-3">
-                      <p className="font-inter-tight text-foreground text-4xl font-bold sm:text-5xl">
+                      <p className="font-inter-tight text-foreground text-4xl font-semibold sm:text-5xl">
                         70%
                       </p>
                       <p className="text-muted-foreground text-sm">
@@ -100,7 +100,7 @@ const Stadswerk072CaseStudy = () => {
                       </p>
                     </div>
                     <div className="flex flex-col gap-3">
-                      <p className="font-inter-tight text-foreground text-4xl font-bold sm:text-5xl">
+                      <p className="font-inter-tight text-foreground text-4xl font-semibold sm:text-5xl">
                         24/7
                       </p>
                       <p className="text-muted-foreground text-sm">
@@ -108,7 +108,7 @@ const Stadswerk072CaseStudy = () => {
                       </p>
                     </div>
                     <div className="flex flex-col gap-3">
-                      <p className="font-inter-tight text-foreground text-4xl font-bold sm:text-5xl">
+                      <p className="font-inter-tight text-foreground text-4xl font-semibold sm:text-5xl">
                         3
                       </p>
                       <p className="text-muted-foreground text-sm">
@@ -116,7 +116,7 @@ const Stadswerk072CaseStudy = () => {
                       </p>
                     </div>
                     <div className="flex flex-col gap-3">
-                      <p className="font-inter-tight text-foreground text-4xl font-bold sm:text-5xl">
+                      <p className="font-inter-tight text-foreground text-4xl font-semibold sm:text-5xl">
                         100%
                       </p>
                       <p className="text-muted-foreground text-sm">

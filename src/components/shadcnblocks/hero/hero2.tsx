@@ -33,7 +33,7 @@ const Hero2 = ({
                 <ArrowDownRight className="ml-2 size-4" />
               </Badge>
             )}
-            <h1 className="my-6 text-4xl font-bold text-pretty md:text-5xl">
+            <h1 className="my-6 text-4xl font-semibold text-pretty md:text-5xl">
               {title}
             </h1>
             <p className="text-muted-foreground mb-8 max-w-xl lg:text-xl">

@@ -172,7 +172,7 @@ const Pricing10 = () => {
       <div className="container mb-8 lg:mb-0">
         <div className="flex flex-col gap-y-12 md:gap-y-16">
           <div className="flex flex-col">
-            <h1 className="my-6 text-3xl font-bold text-pretty md:text-4xl xl:text-5xl">
+            <h1 className="my-6 text-3xl font-semibold text-pretty md:text-4xl xl:text-5xl">
               Pricing Plans
             </h1>
             <p className="text-muted-foreground lg:text-xl">

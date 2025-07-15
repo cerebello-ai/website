@@ -15,7 +15,7 @@ const Blogpost2 = () => {
               <ChevronLeft className="h-full w-4" />
               Return to home
             </a>
-            <h1 className="mb-5 text-3xl font-bold text-balance lg:text-4xl">
+            <h1 className="mb-5 text-3xl font-semibold text-balance lg:text-4xl">
               10 Best Practices for Building a Large Scale Design System
             </h1>
             <div className="flex gap-3">

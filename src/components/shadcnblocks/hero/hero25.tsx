@@ -70,7 +70,7 @@ const Hero25 = ({
               {badge}
             </span>
           )}
-          <h1 className="mt-4 text-4xl leading-tight font-bold text-balance md:text-5xl lg:text-7xl lg:leading-[1.1]">
+          <h1 className="mt-4 text-4xl leading-tight font-semibold text-balance md:text-5xl lg:text-7xl lg:leading-[1.1]">
             {title}
           </h1>
           {buttons && buttons.length > 0 && (

@@ -89,7 +89,7 @@ const Hero127 = () => {
                 </div>
               </a>
             </Button>
-            <h1 className="w-[80%] text-5xl leading-[1.2] font-bold text-black md:text-6xl xl:w-full xl:text-7xl">
+            <h1 className="w-[80%] text-5xl leading-[1.2] font-semibold text-black md:text-6xl xl:w-full xl:text-7xl">
               Introducing the{' '}
               <span className="text-primary/50">world's best</span>{' '}
               <span className="text-primary">marketing</span> degree.
@@ -126,11 +126,11 @@ const Hero127 = () => {
                 <div className="flex items-center gap-12">
                   <div>
                     <p className="text-sm font-medium">Active Users</p>
-                    <div className="text-3xl font-bold">24 K+</div>
+                    <div className="text-3xl font-semibold">24 K+</div>
                   </div>
                   <div>
                     <p className="text-sm font-medium">Episodes</p>
-                    <div className="text-3xl font-bold">43 K+</div>
+                    <div className="text-3xl font-semibold">43 K+</div>
                   </div>
                 </div>
                 <Avatars avatars={avatars} />

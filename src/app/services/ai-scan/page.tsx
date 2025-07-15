@@ -1,4 +1,11 @@
-import { Search, ChartBar, FileText, Clock, CheckCircle, ArrowRight } from 'lucide-react';
+import {
+  Search,
+  ChartBar,
+  FileText,
+  Clock,
+  CheckCircle,
+  ArrowRight,
+} from 'lucide-react';
 import { Metadata } from 'next';
 
 import { Alert, AlertDescription, AlertTitle } from '@/components/ui/alert';
@@ -11,9 +18,16 @@ import {
   BreadcrumbSeparator,
 } from '@/components/ui/breadcrumb';
 import { Button } from '@/components/ui/button';
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardHeader,
+  CardTitle,
+} from '@/components/ui/card';
 import { Separator } from '@/components/ui/separator';
 import { Badge } from '@/components/ui/badge';
+import Link from 'next/link';
 
 export const metadata: Metadata = {
   title: 'AI Scan Service - Discover AI Opportunities | Cerebello',
@@ -62,59 +76,60 @@ const AIScanPage = () => {
           {/* Overlay for better text readability */}
           <div className="absolute inset-0 bg-black/40" />
         </div>
-        
-        <div className="container relative">
-          <Breadcrumb className="mb-6">
-            <BreadcrumbList>
-              <BreadcrumbItem>
-                <BreadcrumbLink href="/">Home</BreadcrumbLink>
-              </BreadcrumbItem>
-              <BreadcrumbSeparator>/</BreadcrumbSeparator>
-              <BreadcrumbItem>
-                <BreadcrumbLink href="/services">Services</BreadcrumbLink>
-              </BreadcrumbItem>
-              <BreadcrumbSeparator>/</BreadcrumbSeparator>
-              <BreadcrumbItem>
-                <BreadcrumbPage>AI Scan</BreadcrumbPage>
-              </BreadcrumbItem>
-            </BreadcrumbList>
-          </Breadcrumb>
-          
+
+        <div className="relative container">
           <div className="mx-auto max-w-4xl text-center">
-            <Badge variant="outline" className="border-white/20 bg-white/10 mb-4 text-white">
-              <Search className="mr-2 h-3 w-3" />
-              Assessment Service
-            </Badge>
-            <h1 className="font-inter-tight text-white mb-6 text-4xl font-bold tracking-tight sm:text-5xl md:text-6xl lg:text-7xl">
+            <h1 className="font-inter-tight mb-6 text-4xl font-semibold tracking-tight text-white drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)] sm:text-5xl md:text-6xl lg:text-7xl">
               Discover Your AI Transformation Opportunities
             </h1>
-            <p className="font-inter text-white/90 mx-auto mb-8 max-w-2xl text-lg md:text-xl">
-              Our AI Scan service evaluates your operations and data to uncover high-impact opportunities 
-              for AI-driven automation. Get a strategic roadmap that aligns with your business goals in just 4-6 weeks.
+            <p className="font-inter mx-auto mb-8 max-w-2xl text-lg text-white/90 md:text-xl">
+              Our AI Scan service evaluates your operations and data to uncover
+              high-impact opportunities for AI-driven automation. Get a
+              strategic roadmap that aligns with your business goals in just 4-6
+              weeks.
             </p>
             <div className="flex flex-col items-center justify-center gap-4 sm:flex-row">
-              <Button size="lg" className="bg-primary text-primary-foreground hover:bg-primary/90">
-                Schedule AI Scan
-                <ArrowRight className="ml-2 h-4 w-4" />
+              <Button
+                asChild
+                size="lg"
+                className="bg-primary text-primary-foreground hover:bg-primary/90"
+              >
+                <Link href="/contact">
+                  Schedule AI Scan
+                  <ArrowRight className="ml-2 h-4 w-4" />
+                </Link>
               </Button>
-              <Button variant="outline" size="lg" className="border-white/20 bg-white/10 text-white hover:bg-white/20">
+              <Button
+                variant="outline"
+                size="lg"
+                className="border-white/20 bg-white/10 text-white hover:bg-white/20"
+              >
                 Download Sample Report
               </Button>
             </div>
-            
+
             <div className="mx-auto mt-12 grid max-w-2xl gap-4 sm:grid-cols-3">
-              <div className="text-white/80 flex items-center justify-center gap-2 text-sm">
-                <CheckCircle className="text-primary h-5 w-5" />
+              <Badge
+                variant="outline"
+                className="flex items-center justify-center gap-2 border-white/20 bg-white/10 text-white"
+              >
+                <CheckCircle className="h-5 w-5 text-white" />
                 <span>4-6 Week Timeline</span>
-              </div>
-              <div className="text-white/80 flex items-center justify-center gap-2 text-sm">
-                <CheckCircle className="text-primary h-5 w-5" />
+              </Badge>
+              <Badge
+                variant="outline"
+                className="flex items-center justify-center gap-2 border-white/20 bg-white/10 text-white"
+              >
+                <CheckCircle className="h-5 w-5 text-white" />
                 <span>Executive-Ready Report</span>
-              </div>
-              <div className="text-white/80 flex items-center justify-center gap-2 text-sm">
-                <CheckCircle className="text-primary h-5 w-5" />
+              </Badge>
+              <Badge
+                variant="outline"
+                className="flex items-center justify-center gap-2 border-white/20 bg-white/10 text-white"
+              >
+                <CheckCircle className="h-5 w-5 text-white" />
                 <span>Actionable Roadmap</span>
-              </div>
+              </Badge>
             </div>
           </div>
         </div>
@@ -131,19 +146,25 @@ const AIScanPage = () => {
             </div>
             <div className="grid gap-8 md:grid-cols-3">
               <div className="text-center">
-                <p className="font-inter-tight text-foreground mb-2 text-5xl font-bold">66%</p>
+                <p className="font-inter-tight text-foreground font-l mb-2 text-5xl font-semibold">
+                  66%
+                </p>
                 <p className="text-muted-foreground">
                   of companies have automated at least one process by 2024
                 </p>
               </div>
               <div className="text-center">
-                <p className="font-inter-tight text-foreground mb-2 text-5xl font-bold">75%</p>
+                <p className="font-inter-tight text-foreground mb-2 text-5xl font-semibold">
+                  75%
+                </p>
                 <p className="text-muted-foreground">
                   of executives report AI has improved decision-making
                 </p>
               </div>
               <div className="text-center">
-                <p className="font-inter-tight text-foreground mb-2 text-5xl font-bold">200%</p>
+                <p className="font-inter-tight text-foreground mb-2 text-5xl font-semibold">
+                  200%
+                </p>
                 <p className="text-muted-foreground">
                   average ROI achieved in the first year of AI implementation
                 </p>
@@ -158,14 +179,15 @@ const AIScanPage = () => {
         <div className="container">
           <div className="mx-auto max-w-5xl">
             <div className="mb-12 text-center">
-              <h2 className="text-3xl font-semibold tracking-tight text-balance sm:text-4xl md:text-5xl lg:text-6xl">
+              <h2 className="font-inter-tight text-3xl font-semibold tracking-tight text-balance sm:text-4xl md:text-5xl lg:text-6xl">
                 Our Proven Methodology
               </h2>
-              <p className="text-lg font-medium text-gray-700 dark:text-gray-300 mt-4 max-w-2xl mx-auto">
-                We follow a clear, phased approach to ensure thorough and collaborative assessment
+              <p className="mx-auto mt-4 max-w-2xl text-lg font-medium text-gray-700 dark:text-gray-300">
+                We follow a clear, phased approach to ensure thorough and
+                collaborative assessment
               </p>
             </div>
-            
+
             <div className="grid gap-8 md:grid-cols-3">
               <Card>
                 <CardHeader>
@@ -175,39 +197,47 @@ const AIScanPage = () => {
                 </CardHeader>
                 <CardContent>
                   <p className="text-muted-foreground">
-                    We conduct stakeholder interviews, workshops, and documentation reviews to grasp 
-                    your current processes, pain points, and objectives. Our team learns your operations 
-                    in depth because a solution is only as good as our understanding of the problem.
+                    We conduct stakeholder interviews, workshops, and
+                    documentation reviews to grasp your current processes, pain
+                    points, and objectives. Our team learns your operations in
+                    depth because a solution is only as good as our
+                    understanding of the problem.
                   </p>
                 </CardContent>
               </Card>
-              
+
               <Card>
                 <CardHeader>
                   <ChartBar className="text-primary mb-4 h-8 w-8" />
                   <CardTitle>Analysis Phase</CardTitle>
-                  <CardDescription>Identifying AI opportunities</CardDescription>
+                  <CardDescription>
+                    Identifying AI opportunities
+                  </CardDescription>
                 </CardHeader>
                 <CardContent>
                   <p className="text-muted-foreground">
-                    Our experts analyze findings to spot where AI could make a difference. We prioritize 
-                    use cases using an impact/feasibility matrix, separating quick wins from long-term 
-                    initiatives to deliver the most immediate value.
+                    Our experts analyze findings to spot where AI could make a
+                    difference. We prioritize use cases using an
+                    impact/feasibility matrix, separating quick wins from
+                    long-term initiatives to deliver the most immediate value.
                   </p>
                 </CardContent>
               </Card>
-              
+
               <Card>
                 <CardHeader>
                   <FileText className="text-primary mb-4 h-8 w-8" />
                   <CardTitle>Reporting Phase</CardTitle>
-                  <CardDescription>Delivering actionable insights</CardDescription>
+                  <CardDescription>
+                    Delivering actionable insights
+                  </CardDescription>
                 </CardHeader>
                 <CardContent>
                   <p className="text-muted-foreground">
-                    We synthesize insights into an executive-ready report and presentation with clear 
-                    recommendations, measurable KPIs, and a step-by-step implementation roadmap that 
-                    fits your budget and capacity.
+                    We synthesize insights into an executive-ready report and
+                    presentation with clear recommendations, measurable KPIs,
+                    and a step-by-step implementation roadmap that fits your
+                    budget and capacity.
                   </p>
                 </CardContent>
               </Card>
@@ -224,108 +254,148 @@ const AIScanPage = () => {
               <h2 className="text-3xl font-semibold tracking-tight text-balance sm:text-4xl md:text-5xl lg:text-6xl">
                 What You'll Receive
               </h2>
-              <p className="text-lg font-medium text-gray-700 dark:text-gray-300 mt-4 max-w-2xl mx-auto">
-                Comprehensive analysis package with big-picture strategy and concrete details
+              <p className="mx-auto mt-4 max-w-2xl text-lg font-medium text-gray-700 dark:text-gray-300">
+                Comprehensive analysis package with big-picture strategy and
+                concrete details
               </p>
             </div>
-            
+
             <div className="grid gap-6 lg:grid-cols-2">
               <div className="bg-background rounded-lg p-6">
-                <h3 className="text-xl font-semibold mb-3">AI Scan Report</h3>
+                <h3 className="mb-3 text-xl font-semibold">AI Scan Report</h3>
                 <p className="text-muted-foreground mb-4">
-                  Detailed 20-30 page report documenting our findings, including:
+                  Detailed 20-30 page report documenting our findings,
+                  including:
                 </p>
                 <ul className="space-y-2">
                   <li className="flex items-start gap-2">
-                    <CheckCircle className="text-primary h-5 w-5 mt-0.5 shrink-0" />
-                    <span className="text-muted-foreground">Executive summary of key insights</span>
+                    <CheckCircle className="text-primary mt-0.5 h-5 w-5 shrink-0" />
+                    <span className="text-muted-foreground">
+                      Executive summary of key insights
+                    </span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <CheckCircle className="text-primary h-5 w-5 mt-0.5 shrink-0" />
-                    <span className="text-muted-foreground">Analysis of current state and pain points</span>
+                    <CheckCircle className="text-primary mt-0.5 h-5 w-5 shrink-0" />
+                    <span className="text-muted-foreground">
+                      Analysis of current state and pain points
+                    </span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <CheckCircle className="text-primary h-5 w-5 mt-0.5 shrink-0" />
-                    <span className="text-muted-foreground">Identified AI use cases with expected benefits</span>
+                    <CheckCircle className="text-primary mt-0.5 h-5 w-5 shrink-0" />
+                    <span className="text-muted-foreground">
+                      Identified AI use cases with expected benefits
+                    </span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <CheckCircle className="text-primary h-5 w-5 mt-0.5 shrink-0" />
-                    <span className="text-muted-foreground">Detailed recommendations and next steps</span>
+                    <CheckCircle className="text-primary mt-0.5 h-5 w-5 shrink-0" />
+                    <span className="text-muted-foreground">
+                      Detailed recommendations and next steps
+                    </span>
                   </li>
                 </ul>
               </div>
-              
+
               <div className="bg-background rounded-lg p-6">
-                <h3 className="text-xl font-semibold mb-3">Strategic Roadmap</h3>
+                <h3 className="mb-3 text-xl font-semibold">
+                  Strategic Roadmap
+                </h3>
                 <p className="text-muted-foreground mb-4">
                   Phased implementation plan that includes:
                 </p>
                 <ul className="space-y-2">
                   <li className="flex items-start gap-2">
-                    <CheckCircle className="text-primary h-5 w-5 mt-0.5 shrink-0" />
-                    <span className="text-muted-foreground">Prioritized AI initiatives with timelines</span>
+                    <CheckCircle className="text-primary mt-0.5 h-5 w-5 shrink-0" />
+                    <span className="text-muted-foreground">
+                      Prioritized AI initiatives with timelines
+                    </span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <CheckCircle className="text-primary h-5 w-5 mt-0.5 shrink-0" />
-                    <span className="text-muted-foreground">Quick wins vs. long-term projects</span>
+                    <CheckCircle className="text-primary mt-0.5 h-5 w-5 shrink-0" />
+                    <span className="text-muted-foreground">
+                      Quick wins vs. long-term projects
+                    </span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <CheckCircle className="text-primary h-5 w-5 mt-0.5 shrink-0" />
-                    <span className="text-muted-foreground">Resource and budget estimates</span>
+                    <CheckCircle className="text-primary mt-0.5 h-5 w-5 shrink-0" />
+                    <span className="text-muted-foreground">
+                      Resource and budget estimates
+                    </span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <CheckCircle className="text-primary h-5 w-5 mt-0.5 shrink-0" />
-                    <span className="text-muted-foreground">6, 12, and 24-month strategic planning</span>
+                    <CheckCircle className="text-primary mt-0.5 h-5 w-5 shrink-0" />
+                    <span className="text-muted-foreground">
+                      6, 12, and 24-month strategic planning
+                    </span>
                   </li>
                 </ul>
               </div>
-              
+
               <div className="bg-background rounded-lg p-6">
-                <h3 className="text-xl font-semibold mb-3">Presentation & Readout</h3>
+                <h3 className="mb-3 text-xl font-semibold">
+                  Presentation & Readout
+                </h3>
                 <p className="text-muted-foreground mb-4">
                   Executive presentation featuring:
                 </p>
                 <ul className="space-y-2">
                   <li className="flex items-start gap-2">
-                    <CheckCircle className="text-primary h-5 w-5 mt-0.5 shrink-0" />
-                    <span className="text-muted-foreground">Visual charts and opportunity matrices</span>
+                    <CheckCircle className="text-primary mt-0.5 h-5 w-5 shrink-0" />
+                    <span className="text-muted-foreground">
+                      Visual charts and opportunity matrices
+                    </span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <CheckCircle className="text-primary h-5 w-5 mt-0.5 shrink-0" />
-                    <span className="text-muted-foreground">Before/after process illustrations</span>
+                    <CheckCircle className="text-primary mt-0.5 h-5 w-5 shrink-0" />
+                    <span className="text-muted-foreground">
+                      Before/after process illustrations
+                    </span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <CheckCircle className="text-primary h-5 w-5 mt-0.5 shrink-0" />
-                    <span className="text-muted-foreground">ROI projections and KPIs</span>
+                    <CheckCircle className="text-primary mt-0.5 h-5 w-5 shrink-0" />
+                    <span className="text-muted-foreground">
+                      ROI projections and KPIs
+                    </span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <CheckCircle className="text-primary h-5 w-5 mt-0.5 shrink-0" />
-                    <span className="text-muted-foreground">Live presentation to stakeholders</span>
+                    <CheckCircle className="text-primary mt-0.5 h-5 w-5 shrink-0" />
+                    <span className="text-muted-foreground">
+                      Live presentation to stakeholders
+                    </span>
                   </li>
                 </ul>
               </div>
-              
+
               <div className="bg-background rounded-lg p-6">
-                <h3 className="text-xl font-semibold mb-3">Supporting Materials</h3>
+                <h3 className="mb-3 text-xl font-semibold">
+                  Supporting Materials
+                </h3>
                 <p className="text-muted-foreground mb-4">
                   Additional documentation including:
                 </p>
                 <ul className="space-y-2">
                   <li className="flex items-start gap-2">
-                    <CheckCircle className="text-primary h-5 w-5 mt-0.5 shrink-0" />
-                    <span className="text-muted-foreground">Process maps and workflow diagrams</span>
+                    <CheckCircle className="text-primary mt-0.5 h-5 w-5 shrink-0" />
+                    <span className="text-muted-foreground">
+                      Process maps and workflow diagrams
+                    </span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <CheckCircle className="text-primary h-5 w-5 mt-0.5 shrink-0" />
-                    <span className="text-muted-foreground">Data quality assessment results</span>
+                    <CheckCircle className="text-primary mt-0.5 h-5 w-5 shrink-0" />
+                    <span className="text-muted-foreground">
+                      Data quality assessment results
+                    </span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <CheckCircle className="text-primary h-5 w-5 mt-0.5 shrink-0" />
-                    <span className="text-muted-foreground">AI readiness scorecard</span>
+                    <CheckCircle className="text-primary mt-0.5 h-5 w-5 shrink-0" />
+                    <span className="text-muted-foreground">
+                      AI readiness scorecard
+                    </span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <CheckCircle className="text-primary h-5 w-5 mt-0.5 shrink-0" />
-                    <span className="text-muted-foreground">Workshop notes and findings</span>
+                    <CheckCircle className="text-primary mt-0.5 h-5 w-5 shrink-0" />
+                    <span className="text-muted-foreground">
+                      Workshop notes and findings
+                    </span>
                   </li>
                 </ul>
               </div>
@@ -342,56 +412,65 @@ const AIScanPage = () => {
               <h2 className="text-3xl font-semibold tracking-tight text-balance sm:text-4xl md:text-5xl lg:text-6xl">
                 Timeline & Process
               </h2>
-              <p className="text-lg font-medium text-gray-700 dark:text-gray-300 mt-4 max-w-2xl mx-auto">
+              <p className="mx-auto mt-4 max-w-2xl text-lg font-medium text-gray-700 dark:text-gray-300">
                 Get actionable insights fast with our agile assessment process
               </p>
             </div>
-            
+
             <Alert className="mb-8">
               <Clock className="h-4 w-4" />
               <AlertTitle>Typical Duration: 4-6 Weeks</AlertTitle>
               <AlertDescription>
-                Timeline varies based on scope. Simple department scans can be completed in 2-3 weeks, 
-                while enterprise-wide assessments may extend to 8 weeks.
+                Timeline varies based on scope. Simple department scans can be
+                completed in 2-3 weeks, while enterprise-wide assessments may
+                extend to 8 weeks.
               </AlertDescription>
             </Alert>
-            
+
             <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-4">
               <div className="text-center">
-                <div className="bg-mint/20 dark:bg-mint/10 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
-                  <span className="font-inter-tight text-foreground text-xl font-bold">1</span>
+                <div className="bg-mint/20 dark:bg-mint/10 mx-auto mb-4 flex h-16 w-16 items-center justify-center rounded-full">
+                  <span className="font-inter-tight text-foreground text-xl font-semibold">
+                    1
+                  </span>
                 </div>
-                <h3 className="font-semibold mb-2">Week 1</h3>
+                <h3 className="mb-2 font-semibold">Week 1</h3>
                 <p className="text-muted-foreground text-sm">
                   Kickoff workshop and initial discovery sessions
                 </p>
               </div>
-              
+
               <div className="text-center">
-                <div className="bg-mint/20 dark:bg-mint/10 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
-                  <span className="font-inter-tight text-foreground text-xl font-bold">2-3</span>
+                <div className="bg-mint/20 dark:bg-mint/10 mx-auto mb-4 flex h-16 w-16 items-center justify-center rounded-full">
+                  <span className="font-inter-tight text-foreground text-xl font-semibold">
+                    2-3
+                  </span>
                 </div>
-                <h3 className="font-semibold mb-2">Weeks 2-3</h3>
+                <h3 className="mb-2 font-semibold">Weeks 2-3</h3>
                 <p className="text-muted-foreground text-sm">
                   Analysis and opportunity identification
                 </p>
               </div>
-              
+
               <div className="text-center">
-                <div className="bg-mint/20 dark:bg-mint/10 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
-                  <span className="font-inter-tight text-foreground text-xl font-bold">4-5</span>
+                <div className="bg-mint/20 dark:bg-mint/10 mx-auto mb-4 flex h-16 w-16 items-center justify-center rounded-full">
+                  <span className="font-inter-tight text-foreground text-xl font-semibold">
+                    4-5
+                  </span>
                 </div>
-                <h3 className="font-semibold mb-2">Weeks 4-5</h3>
+                <h3 className="mb-2 font-semibold">Weeks 4-5</h3>
                 <p className="text-muted-foreground text-sm">
                   Report preparation and roadmap development
                 </p>
               </div>
-              
+
               <div className="text-center">
-                <div className="bg-mint/20 dark:bg-mint/10 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
-                  <span className="font-inter-tight text-foreground text-xl font-bold">6</span>
+                <div className="bg-mint/20 dark:bg-mint/10 mx-auto mb-4 flex h-16 w-16 items-center justify-center rounded-full">
+                  <span className="font-inter-tight text-foreground text-xl font-semibold">
+                    6
+                  </span>
                 </div>
-                <h3 className="font-semibold mb-2">Week 6</h3>
+                <h3 className="mb-2 font-semibold">Week 6</h3>
                 <p className="text-muted-foreground text-sm">
                   Final presentation and readout session
                 </p>
@@ -407,62 +486,84 @@ const AIScanPage = () => {
           <div className="mx-auto max-w-5xl">
             <div className="mb-12 text-center">
               <h2 className="text-3xl font-semibold tracking-tight text-balance sm:text-4xl md:text-5xl lg:text-6xl">
-                Success Story: OceanicTransCo
+                Success Story: Samsung
               </h2>
-              <p className="text-lg font-medium text-gray-700 dark:text-gray-300 mt-4 max-w-2xl mx-auto">
-                From AI Scan to multi-million euro transformation program
+              <p className="mx-auto mt-4 max-w-2xl text-lg font-medium text-gray-700 dark:text-gray-300">
+                From AI Scan to enterprise-wide email automation transformation
               </p>
             </div>
-            
+
             <div className="bg-background rounded-lg p-8 md:p-12">
               <div className="grid gap-8 md:grid-cols-2">
                 <div>
-                  <h3 className="text-2xl font-semibold mb-4">The Challenge</h3>
+                  <h3 className="mb-4 text-2xl font-semibold">The Challenge</h3>
                   <p className="text-muted-foreground mb-4">
-                    OceanicTransCo, a large international shipping company, faced operational inefficiencies:
+                    Samsung, a global technology leader, faced major
+                    communication and operational inefficiencies:
                   </p>
-                  <ul className="space-y-2 text-muted-foreground">
-                    <li>• Unexpected equipment failures causing costly delays</li>
-                    <li>• Manual route planning increasing fuel consumption</li>
-                    <li>• Mountains of paperwork processed by hand</li>
-                    <li>• No clear AI strategy despite sensing its potential</li>
+                  <ul className="text-muted-foreground space-y-2">
+                    <li>• Email overload across all departments</li>
+                    <li>• Sensitive data requiring on-premise solutions</li>
+                    <li>• Repetitive email tasks consuming valuable time</li>
+                    <li>• Need for secure, department-specific AI tools</li>
                   </ul>
                 </div>
-                
+
                 <div>
-                  <h3 className="text-2xl font-semibold mb-4">Our AI Scan Results</h3>
+                  <h3 className="mb-4 text-2xl font-semibold">
+                    Our AI Scan Results
+                  </h3>
                   <p className="text-muted-foreground mb-4">
-                    Over 5 weeks, we identified three high-impact initiatives:
+                    Over 4 weeks, we identified department-specific AI
+                    opportunities:
                   </p>
-                  <ul className="space-y-2 text-muted-foreground">
-                    <li>• AI-driven predictive maintenance for ships</li>
-                    <li>• Route optimization using real-time data</li>
-                    <li>• Intelligent document processing automation</li>
-                    <li>• Phased 3-year implementation roadmap</li>
+                  <ul className="text-muted-foreground space-y-2">
+                    <li>
+                      • Customer Support: AI email classification and routing
+                    </li>
+                    <li>• Legal: Contract analysis and risk flagging</li>
+                    <li>• R&D: Thread summarization and action extraction</li>
+                    <li>
+                      • Marketing: Sentiment analysis and campaign insights
+                    </li>
                   </ul>
                 </div>
               </div>
-              
+
               <Separator className="my-8" />
-              
-              <div className="grid gap-4 sm:grid-cols-3 text-center">
+
+              <div className="grid gap-4 text-center sm:grid-cols-3">
                 <div>
-                  <p className="font-inter-tight text-foreground text-3xl font-bold">60%</p>
-                  <p className="text-muted-foreground text-sm">reduction in unplanned downtime</p>
+                  <p className="font-inter-tight text-foreground text-3xl font-semibold">
+                    50%
+                  </p>
+                  <p className="text-muted-foreground text-sm">
+                    reduction in response time
+                  </p>
                 </div>
                 <div>
-                  <p className="font-inter-tight text-foreground text-3xl font-bold">12%</p>
-                  <p className="text-muted-foreground text-sm">fuel savings per voyage</p>
+                  <p className="font-inter-tight text-foreground text-3xl font-semibold">
+                    4
+                  </p>
+                  <p className="text-muted-foreground text-sm">
+                    departments transformed
+                  </p>
                 </div>
                 <div>
-                  <p className="font-inter-tight text-foreground text-3xl font-bold">200%</p>
-                  <p className="text-muted-foreground text-sm">ROI in first year</p>
+                  <p className="font-inter-tight text-foreground text-3xl font-semibold">
+                    100%
+                  </p>
+                  <p className="text-muted-foreground text-sm">
+                    data security maintained
+                  </p>
                 </div>
               </div>
-              
-              <blockquote className="mt-8 text-lg leading-7 font-semibold tracking-tight text-balance text-center">
-                "The AI Scan gave us clarity and confidence. We moved from uncertainty to having a 
-                concrete, evidence-based strategy that delivered tangible results within months."
+
+              <blockquote className="mt-8 text-center text-lg leading-7 font-semibold tracking-tight text-balance">
+                "The AI Scan identified precisely where AI could add value while
+                respecting our security requirements. The custom on-premise
+                solution delivered immediate productivity gains across all
+                departments."
               </blockquote>
             </div>
           </div>
@@ -473,23 +574,29 @@ const AIScanPage = () => {
       <section className="py-24 md:py-32">
         <div className="container">
           <div className="mx-auto max-w-3xl text-center">
-            <h2 className="text-3xl font-semibold tracking-tight text-balance sm:text-4xl md:text-5xl lg:text-6xl mb-6">
+            <h2 className="mb-6 text-3xl font-semibold tracking-tight text-balance sm:text-4xl md:text-5xl lg:text-6xl">
               Ready to Discover Your AI Opportunities?
             </h2>
-            <p className="text-lg font-medium text-gray-700 dark:text-gray-300 mb-8">
-              Join the 75% of executives who say AI has given them a competitive edge. 
-              Let's explore how AI can transform your operations.
+            <p className="mb-8 text-lg font-medium text-gray-700 dark:text-gray-300">
+              Join the 75% of executives who say AI has given them a competitive
+              edge. Let's explore how AI can transform your operations.
             </p>
             <div className="flex flex-col items-center justify-center gap-4 sm:flex-row">
-              <Button size="lg" className="bg-primary text-primary-foreground hover:bg-primary/90">
-                Schedule Free Consultation
-                <ArrowRight className="ml-2 h-4 w-4" />
+              <Button
+                size="lg"
+                className="bg-primary text-primary-foreground hover:bg-primary/90"
+                asChild
+              >
+                <Link href="/contact">
+                  Schedule Free Consultation
+                  <ArrowRight className="ml-2 h-4 w-4" />
+                </Link>
               </Button>
-              <Button variant="outline" size="lg">
-                Contact Our Team
+              <Button variant="outline" size="lg" asChild>
+                <Link href="/contact">Contact Our Team</Link>
               </Button>
             </div>
-            <p className="text-muted-foreground text-sm mt-6">
+            <p className="text-muted-foreground mt-6 text-sm">
               30-60 minute consultation • No obligation • Expert insights
             </p>
           </div>

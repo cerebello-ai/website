@@ -31,7 +31,7 @@ export const Feature187 = () => {
     <section className="bg-background py-16 md:py-24">
       <div className="container">
         <div className="mx-auto max-w-3xl text-center">
-          <h2 className="font-inter-tight text-foreground mb-4 text-3xl font-bold tracking-tight sm:text-4xl md:text-5xl">
+          <h2 className="font-inter-tight text-foreground mb-4 text-3xl font-semibold tracking-tight sm:text-4xl md:text-5xl">
             How Our AI Scan Works
           </h2>
           <p className="font-inter text-muted-foreground mb-12 text-lg">
@@ -50,7 +50,7 @@ export const Feature187 = () => {
                 <div className="flex flex-col items-center text-center">
                   {/* Step number */}
                   <div className="bg-primary text-primary-foreground relative mb-4 flex h-16 w-16 items-center justify-center rounded-full">
-                    <span className="font-inter-tight text-xl font-bold">
+                    <span className="font-inter-tight text-xl font-semibold">
                       {step.number}
                     </span>
                     {/* Decorative dot */}

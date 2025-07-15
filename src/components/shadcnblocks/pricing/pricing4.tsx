@@ -16,7 +16,7 @@ const Pricing4 = () => {
     <section className="py-32">
       <div className="container">
         <div className="mx-auto flex max-w-7xl flex-col gap-6">
-          <h2 className="text-4xl font-bold text-pretty lg:text-6xl">
+          <h2 className="text-4xl font-semibold text-pretty lg:text-6xl">
             Pricing
           </h2>
           <div className="flex flex-col justify-between gap-10 md:flex-row">

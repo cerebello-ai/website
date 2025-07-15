@@ -96,7 +96,7 @@ const Changelog1 = ({
     <section className="py-32">
       <div className="container">
         <div className="mx-auto max-w-3xl">
-          <h1 className="mb-4 text-3xl font-bold tracking-tight md:text-5xl">
+          <h1 className="mb-4 text-3xl font-semibold tracking-tight md:text-5xl">
             {title}
           </h1>
           <p className="text-muted-foreground mb-6 text-base md:text-lg">
@@ -118,7 +118,7 @@ const Changelog1 = ({
                 </span>
               </div>
               <div className="flex flex-col">
-                <h2 className="text-foreground/90 mb-3 text-lg leading-tight font-bold md:text-2xl">
+                <h2 className="text-foreground/90 mb-3 text-lg leading-tight font-semibold md:text-2xl">
                   {entry.title}
                 </h2>
                 <p className="text-muted-foreground text-sm md:text-base">

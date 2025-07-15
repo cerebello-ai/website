@@ -17,7 +17,7 @@ export const Hero95 = () => {
             AI Implementation Scan
           </Badge>
 
-          <h1 className="font-inter-tight text-foreground mb-6 text-4xl font-bold tracking-tight sm:text-5xl md:text-6xl lg:text-7xl">
+          <h1 className="font-inter-tight text-foreground mb-6 text-4xl font-semibold tracking-tight sm:text-5xl md:text-6xl lg:text-7xl">
             Discover Your <span className="text-primary">AI Potential</span>
           </h1>
 

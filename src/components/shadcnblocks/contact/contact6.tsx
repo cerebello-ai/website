@@ -109,7 +109,7 @@ const Contact6 = () => {
         <div className="mx-auto max-w-4xl">
           {/* Header */}
           <div className="mb-16 text-center">
-            <h1 className="mb-4 text-3xl font-bold tracking-tight sm:text-4xl md:text-5xl">
+            <h1 className="mb-4 text-3xl font-semibold tracking-tight sm:text-4xl md:text-5xl">
               Contact Us
             </h1>
             <p className="text-muted-foreground mx-auto max-w-2xl text-lg">

@@ -37,17 +37,17 @@ const Contact2 = ({
               </h3>
               <ul className="ml-4 list-disc">
                 <li>
-                  <span className="font-bold">Phone: </span>
+                  <span className="font-semibold">Phone: </span>
                   {phone}
                 </li>
                 <li>
-                  <span className="font-bold">Email: </span>
+                  <span className="font-semibold">Email: </span>
                   <a href={`mailto:${email}`} className="underline">
                     {email}
                   </a>
                 </li>
                 <li>
-                  <span className="font-bold">Web: </span>
+                  <span className="font-semibold">Web: </span>
                   <a href={web.url} target="_blank" className="underline">
                     {web.label}
                   </a>

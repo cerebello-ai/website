@@ -10,7 +10,7 @@ const Pricing14 = () => {
       <div className="container">
         <div className="bg-muted mx-auto max-w-5xl rounded-lg p-6 md:p-10">
           <div className="mb-12 flex items-center gap-3">
-            <span className="text-2xl font-bold">Standard Plan</span>
+            <span className="text-2xl font-semibold">Standard Plan</span>
             <Badge
               variant="outline"
               className="border-green-200 bg-green-100 text-green-600"
@@ -19,11 +19,11 @@ const Pricing14 = () => {
             </Badge>
           </div>
           <div className="flex flex-col justify-between gap-6 md:flex-row">
-            <h2 className="max-w-xl text-3xl font-bold md:text-4xl">
+            <h2 className="max-w-xl text-3xl font-semibold md:text-4xl">
               Launch your idea in minutes with this plan
             </h2>
             <div className="md:text-right">
-              <span className="text-3xl font-bold md:text-5xl">$1999</span>
+              <span className="text-3xl font-semibold md:text-5xl">$1999</span>
               <p className="text-muted-foreground">
                 Starting price per project
               </p>

@@ -44,7 +44,7 @@ const Stats5 = ({
       className={`${backgroundColor ? 'bg-background/50' : ''} py-20 md:py-32 ${className || ''}`}
     >
       <div className="container flex flex-col items-start text-left">
-        <h2 className="mb-12 w-full max-w-[24rem] text-3xl font-bold text-pretty sm:text-4xl md:mb-20 md:max-w-[30rem] lg:max-w-[40rem] lg:text-5xl lg:leading-[4rem]">
+        <h2 className="mb-12 w-full max-w-[24rem] text-3xl font-semibold text-pretty sm:text-4xl md:mb-20 md:max-w-[30rem] lg:max-w-[40rem] lg:text-5xl lg:leading-[4rem]">
           {title}
         </h2>
         <div
@@ -58,7 +58,7 @@ const Stats5 = ({
                 className={`${hoverAnimation ? 'group' : ''} w-full`}
               >
                 <div
-                  className={`text-primary relative mb-4 text-6xl font-bold md:mb-6 lg:text-7xl ${hoverAnimation ? 'transition-transform duration-300 group-hover:scale-105' : ''}`}
+                  className={`text-primary relative mb-4 text-6xl font-semibold md:mb-6 lg:text-7xl ${hoverAnimation ? 'transition-transform duration-300 group-hover:scale-105' : ''}`}
                 >
                   <span>{numeric}</span>
                   <span className="text-4xl lg:text-5xl">{suffix}</span>

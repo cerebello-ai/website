@@ -117,7 +117,7 @@ const Hero14 = ({
     <section className="py-32">
       <div className="container">
         <div className="flex flex-col justify-center">
-          <h1 className="mx-auto mb-4 max-w-2xl text-center text-4xl font-bold md:text-6xl">
+          <h1 className="mx-auto mb-4 max-w-2xl text-center text-4xl font-semibold md:text-6xl">
             {title}
           </h1>
           <p className="text-muted-foreground mx-auto mt-4 max-w-xl text-center text-lg">

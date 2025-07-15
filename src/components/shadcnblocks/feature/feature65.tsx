@@ -89,7 +89,7 @@ const Feature65 = () => {
               <div className="bg-muted-foreground/5 flex items-center justify-between rounded-xl p-6">
                 <div className="flex items-center gap-3">
                   <div className={clsx('h-16 w-3 rounded-md', item.color)} />
-                  <h3 className="text-xl font-bold">{item.title}</h3>
+                  <h3 className="text-xl font-semibold">{item.title}</h3>
                 </div>
                 <div className="flex items-center gap-6">
                   {item.image}

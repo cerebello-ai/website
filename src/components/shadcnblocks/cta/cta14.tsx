@@ -28,7 +28,7 @@ const Cta14 = ({
           }}
         >
           <div className="flex flex-col gap-8 p-4 text-center">
-            <h2 className="text-primary-foreground text-5xl font-bold">
+            <h2 className="text-primary-foreground text-5xl font-semibold">
               {title}
             </h2>
             <p className="text-primary-foreground text-lg">{description}</p>

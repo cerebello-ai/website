@@ -49,7 +49,7 @@ const Cta16 = ({
                 {icon} {badgeText}
               </div>
             )}
-            <h2 className="text-5xl font-bold">{title}</h2>
+            <h2 className="text-5xl font-semibold">{title}</h2>
             {buttons && buttons.length > 0 && (
               <div className="flex flex-col justify-center gap-2 sm:flex-row">
                 {buttons.map((button, index) => (

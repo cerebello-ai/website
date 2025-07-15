@@ -11,7 +11,7 @@ const Feature92 = () => {
     <section className="bg-muted/50 border-y py-32">
       <div className="container">
         <div>
-          <h2 className="text-3xl font-bold lg:text-4xl">
+          <h2 className="text-3xl font-semibold lg:text-4xl">
             Versatile connections.
           </h2>
           <p className="text-muted-foreground text-3xl lg:text-4xl">

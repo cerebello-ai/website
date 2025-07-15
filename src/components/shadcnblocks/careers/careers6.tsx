@@ -88,7 +88,9 @@ const Careers6 = () => {
         <div className="mx-auto max-w-4xl">
           {/* Header */}
           <div className="mb-16 text-center">
-            <h1 className="mb-4 text-4xl font-bold tracking-tight">Careers</h1>
+            <h1 className="mb-4 text-4xl font-semibold tracking-tight">
+              Careers
+            </h1>
             <p className="text-muted-foreground mx-auto max-w-2xl text-lg">
               We're building the future of technology. Find your perfect role
               and grow with us.

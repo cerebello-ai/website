@@ -60,7 +60,9 @@ const Feature82 = () => {
                   alt={integration.title}
                   className="h-auto w-16"
                 />
-                <h3 className="my-2 text-2xl font-bold">{integration.title}</h3>
+                <h3 className="my-2 text-2xl font-semibold">
+                  {integration.title}
+                </h3>
                 <p className="text-muted-foreground text-sm">
                   {integration.description}
                 </p>

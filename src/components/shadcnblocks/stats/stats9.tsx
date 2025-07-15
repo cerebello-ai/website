@@ -58,7 +58,7 @@ const Stats9 = ({
               {stats.map((stat, index) => (
                 <div key={index}>
                   <div className="flex flex-col gap-1.5">
-                    <p className="text-foreground text-2xl font-bold sm:text-3xl">
+                    <p className="text-foreground text-2xl font-semibold sm:text-3xl">
                       {stat.value}
                     </p>
                     <p className="text-muted-foreground">{stat.label}</p>

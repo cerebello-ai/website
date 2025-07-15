@@ -111,7 +111,7 @@ const Gallery24 = () => {
                         <p className="text-left text-xs text-white/50">
                           {image.code}
                         </p>
-                        <h3 className="w-42 text-right text-3xl font-bold text-white lg:w-fit lg:whitespace-nowrap">
+                        <h3 className="w-42 text-right text-3xl font-semibold text-white lg:w-fit lg:whitespace-nowrap">
                           {image.title.split(' ')[0]}
                           <span className="font-playfair italic">
                             {' '}

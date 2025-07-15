@@ -61,7 +61,7 @@ const Careers3 = () => {
     <section className="py-32">
       <div className="container">
         <div className="mx-auto max-w-5xl">
-          <h1 className="text-3xl font-bold md:text-5xl">Open Positions</h1>
+          <h1 className="text-3xl font-semibold md:text-5xl">Open Positions</h1>
           <div className="mx-auto mt-14 flex flex-col gap-16">
             {jobs.map((jobCategory) => (
               <div key={jobCategory.category}>

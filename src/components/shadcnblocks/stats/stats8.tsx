@@ -30,12 +30,12 @@ const Stats8 = ({
     <section className={`py-32 ${className || ''}`}>
       <div className="container">
         <div className="flex flex-col gap-4">
-          <h2 className="text-2xl font-bold md:text-4xl">{title}</h2>
+          <h2 className="text-2xl font-semibold md:text-4xl">{title}</h2>
           <p>{description}</p>
           {link && (
             <a
               href={link.url}
-              className="flex items-center gap-1 font-bold hover:underline"
+              className="flex items-center gap-1 font-semibold hover:underline"
             >
               {link.text}
               <ArrowRight className="h-auto w-4" />
@@ -47,7 +47,7 @@ const Stats8 = ({
         >
           {stats?.map((stat, index) => (
             <div key={`stat-${index}`} className="flex flex-col gap-5">
-              <div className="text-6xl font-bold">{stat.value}</div>
+              <div className="text-6xl font-semibold">{stat.value}</div>
               <p>{stat.label}</p>
             </div>
           ))}

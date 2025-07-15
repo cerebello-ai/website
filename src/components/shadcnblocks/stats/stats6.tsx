@@ -33,7 +33,7 @@ const Stats6 = ({
     >
       <div className="container flex flex-col items-start text-left">
         <div className="mb-12 w-full md:mb-16">
-          <h2 className="mb-8 w-full max-w-[24rem] text-3xl font-bold text-pretty sm:text-4xl md:max-w-[30rem] lg:max-w-[37rem] lg:text-5xl">
+          <h2 className="mb-8 w-full max-w-[24rem] text-3xl font-semibold text-pretty sm:text-4xl md:max-w-[30rem] lg:max-w-[37rem] lg:text-5xl">
             {title}
           </h2>
           {buttons && buttons.length > 0 && (

@@ -9,7 +9,7 @@ const Hero34 = () => {
         <div className="bg-muted-2 grid items-center gap-8 lg:grid-cols-2">
           <div className="flex flex-col items-center p-16 text-center lg:items-start lg:text-left">
             <p>New Release</p>
-            <h1 className="my-6 text-4xl font-bold text-pretty lg:text-6xl">
+            <h1 className="my-6 text-4xl font-semibold text-pretty lg:text-6xl">
               Welcome to Our Website
             </h1>
             <p className="text-muted-foreground mb-8 max-w-xl lg:text-xl">

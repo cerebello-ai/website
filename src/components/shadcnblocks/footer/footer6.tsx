@@ -58,7 +58,7 @@ const Footer6 = () => {
                     className="size-12 h-full w-full object-contain object-center"
                   />
                 </div>
-                <h3 className="text-xl font-bold">Shadcnblocks.com</h3>
+                <h3 className="text-xl font-semibold">Shadcnblocks.com</h3>
               </div>
               <p className="text-muted-foreground text-base font-medium">
                 Components made easy.

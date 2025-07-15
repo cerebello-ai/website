@@ -97,7 +97,7 @@ const Feature57 = () => {
           <Badge variant="outline" className="mb-3">
             Powerful Features
           </Badge>
-          <h2 className="text-3xl leading-tight font-bold md:text-4xl lg:text-5xl">
+          <h2 className="text-3xl leading-tight font-semibold md:text-4xl lg:text-5xl">
             Discover What Makes Us Different
           </h2>
           <p className="text-muted-foreground mx-auto mt-3 max-w-2xl text-sm md:mt-4 md:text-base">

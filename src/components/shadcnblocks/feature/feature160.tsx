@@ -48,7 +48,7 @@ const Feature160 = () => {
     <section className="py-32">
       <div className="container">
         <div className="mb-20 max-w-lg">
-          <h1 className="mb-4 text-6xl font-bold lg:text-[52px]">
+          <h1 className="mb-4 text-6xl font-semibold lg:text-[52px]">
             A CRM created to be your own.
           </h1>
           <h3 className="text-2xl">

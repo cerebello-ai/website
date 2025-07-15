@@ -116,7 +116,7 @@ const Pricing9 = () => {
     <section className="py-24 sm:py-32">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto max-w-4xl text-center">
-          <p className="mt-2 text-4xl font-bold tracking-tight sm:text-5xl">
+          <p className="mt-2 text-4xl font-semibold tracking-tight sm:text-5xl">
             Choose Your Plan
           </p>
         </div>
@@ -140,7 +140,7 @@ const Pricing9 = () => {
             <Card key={tier.name} className="p-8">
               <CardHeader className="p-0">
                 <div className="flex flex-col gap-2 text-center">
-                  <span className="text-xl leading-7 font-bold uppercase">
+                  <span className="text-xl leading-7 font-semibold uppercase">
                     <CardTitle className="text-xl">{tier.name}</CardTitle>
                   </span>
                   <span className="text-muted-foreground text-sm font-normal">
@@ -148,7 +148,7 @@ const Pricing9 = () => {
                   </span>
                 </div>
                 <div className="flex flex-col justify-center gap-x-1 pt-8 text-center">
-                  <span className="text-4xl font-bold">
+                  <span className="text-4xl font-semibold">
                     {isAnnual ? tier.annualPrice : tier.price}
                   </span>
                   <span className="text-muted-foreground text-sm leading-6">
@@ -219,7 +219,7 @@ const Pricing9 = () => {
                   {tiers.map((tier) => (
                     <th key={tier.name} className="px-6 pt-6 xl:px-8 xl:pt-8">
                       <div className="flex flex-col gap-2 text-center">
-                        <span className="text-xl leading-7 font-bold uppercase">
+                        <span className="text-xl leading-7 font-semibold uppercase">
                           {tier.name}
                         </span>
                         <span className="text-muted-foreground text-sm font-normal">
@@ -250,7 +250,7 @@ const Pricing9 = () => {
                   {tiers.map((tier) => (
                     <td key={tier.name} className="px-6 pt-10 xl:px-8">
                       <div className="flex flex-col justify-center gap-x-1 text-center">
-                        <span className="text-4xl font-bold">
+                        <span className="text-4xl font-semibold">
                           {isAnnual ? tier.annualPrice : tier.price}
                         </span>
                         <span className="text-muted-foreground text-sm leading-6">

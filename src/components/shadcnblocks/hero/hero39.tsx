@@ -10,7 +10,7 @@ const Hero39 = () => {
           <div className="grid items-center gap-8 lg:grid-cols-2">
             <div className="container flex flex-col items-center px-[4rem] py-16 text-center lg:mx-auto lg:items-start lg:px-[4rem] lg:py-32 lg:text-left">
               <p>New Release</p>
-              <h1 className="my-6 text-4xl font-bold text-pretty lg:text-6xl">
+              <h1 className="my-6 text-4xl font-semibold text-pretty lg:text-6xl">
                 Welcome to Our Website
               </h1>
               <p className="text-muted-foreground mb-8 max-w-xl lg:text-xl">

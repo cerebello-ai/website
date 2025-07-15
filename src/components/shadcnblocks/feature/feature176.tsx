@@ -64,7 +64,7 @@ const Feature176 = () => {
           <div className="bg-background/50 flex h-fit flex-col gap-4 rounded-lg p-4">
             <div className="bg-card flex flex-row items-center gap-x-2 rounded-lg border p-4 shadow-sm">
               <ChartNoAxesColumnIncreasing className="size-6" />
-              <h1 className="truncate text-xl font-bold sm:text-2xl">
+              <h1 className="truncate text-xl font-semibold sm:text-2xl">
                 Analytics Snapshot
               </h1>
               <span className="text-muted-foreground ml-auto shrink-0 font-mono text-sm uppercase">
@@ -146,7 +146,7 @@ const Feature176 = () => {
             <div className="bg-background/50 mt-24 flex flex-col gap-4 rounded-lg p-4">
               <div className="bg-card flex flex-row items-center gap-x-2 rounded-lg border p-4 shadow-sm">
                 <ChartNoAxesColumnIncreasing className="size-6" />
-                <h1 className="truncate text-xl font-bold sm:text-2xl">
+                <h1 className="truncate text-xl font-semibold sm:text-2xl">
                   Data Metrics
                 </h1>
                 <span className="text-muted-foreground ml-auto shrink-0 font-mono text-sm uppercase">
@@ -201,7 +201,7 @@ const Feature176 = () => {
                   {/* Card 1 */}
                   <div className="bg-card rounded-lg border p-4 shadow-sm">
                     <div className="flex items-start justify-between">
-                      <h2 className="text-3xl font-bold">2.5K</h2>
+                      <h2 className="text-3xl font-semibold">2.5K</h2>
                       <ArrowUpRight className="text-success size-6" />
                     </div>
                     <p className="text-muted-foreground mt-2 text-sm">
@@ -212,7 +212,7 @@ const Feature176 = () => {
                   {/* Card 2 */}
                   <div className="bg-card rounded-lg border p-4 shadow-sm">
                     <div className="flex items-start justify-between">
-                      <h2 className="text-3xl font-bold">$8.1K</h2>
+                      <h2 className="text-3xl font-semibold">$8.1K</h2>
                       <ArrowUpRight className="text-success size-6" />
                     </div>
                     <p className="text-muted-foreground mt-2 text-sm">
@@ -223,7 +223,7 @@ const Feature176 = () => {
                   {/* Card 3 */}
                   <div className="bg-card rounded-lg border p-4 shadow-sm">
                     <div className="flex items-start justify-between">
-                      <h2 className="text-3xl font-bold">92%</h2>
+                      <h2 className="text-3xl font-semibold">92%</h2>
                       <ArrowUp className="text-success size-6" />
                     </div>
                     <p className="text-muted-foreground mt-2 text-sm">

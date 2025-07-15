@@ -8,7 +8,7 @@ const Hero53 = () => {
     <section className="relative py-32">
       <div className="container px-4 sm:px-6 md:px-8">
         <div className="absolute inset-0 -z-10 h-full w-full bg-[radial-gradient(var(--muted-foreground)_1px,transparent_1px)] [background-size:14px_14px] opacity-35"></div>
-        <h1 className="text-5xl font-bold tracking-tight md:text-6xl lg:text-7xl xl:text-8xl">
+        <h1 className="text-5xl font-semibold tracking-tight md:text-6xl lg:text-7xl xl:text-8xl">
           Simplifying maintenance for efficient code management.
         </h1>
         <div className="mt-10 flex flex-col-reverse gap-8 md:mt-12 md:flex-row md:items-center md:gap-10 lg:mt-14">

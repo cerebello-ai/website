@@ -12,7 +12,7 @@ const Signup7 = () => {
           <div className="mx-auto flex max-w-xl flex-col justify-between lg:px-20">
             <div className="lg:mt-24">
               <div className="flex flex-col gap-2">
-                <h1 className="text-2xl font-bold">
+                <h1 className="text-2xl font-semibold">
                   Create your account today
                 </h1>
                 <p className="text-muted-foreground font-medium">

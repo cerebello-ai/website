@@ -41,7 +41,7 @@ const Hero36 = () => {
         >
           New Release
         </Badge>
-        <h1 className="my-4 max-w-3xl text-2xl font-bold text-pretty sm:text-4xl md:my-6 lg:text-5xl">
+        <h1 className="my-4 max-w-3xl text-2xl font-semibold text-pretty sm:text-4xl md:my-6 lg:text-5xl">
           Our blocks help global companies expand into new markets
         </h1>
         <p className="text-muted-foreground max-w-2xl">

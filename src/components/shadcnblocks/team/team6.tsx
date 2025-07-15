@@ -99,7 +99,7 @@ const Team6 = () => {
       <div className="container mx-auto px-4">
         {/* Header Section */}
         <div className="mb-16 text-center">
-          <h2 className="mb-6 text-4xl font-bold tracking-tight lg:text-5xl">
+          <h2 className="mb-6 text-4xl font-semibold tracking-tight lg:text-5xl">
             Team
           </h2>
           <p className="text-muted-foreground mx-auto max-w-3xl text-xl leading-relaxed">
@@ -119,7 +119,7 @@ const Team6 = () => {
               <div className="relative mb-6">
                 <Avatar className="mx-auto h-20 w-20">
                   <AvatarImage src={member.avatar} alt={member.name} />
-                  <AvatarFallback className="from-primary/20 to-secondary/20 text-primary bg-gradient-to-br text-2xl font-bold">
+                  <AvatarFallback className="from-primary/20 to-secondary/20 text-primary bg-gradient-to-br text-2xl font-semibold">
                     {member.name
                       .split(' ')
                       .map((n) => n[0])

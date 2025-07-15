@@ -12,7 +12,7 @@ const Feature38 = () => {
             <span className="bg-accent flex size-14 items-center justify-center rounded-full">
               <NotebookText className="text-primary size-6" />
             </span>
-            <h1 className="mt-8 mb-2 text-2xl font-bold text-pretty lg:text-4xl">
+            <h1 className="mt-8 mb-2 text-2xl font-semibold text-pretty lg:text-4xl">
               Build your perfect website in a minute
             </h1>
             <p className="text-muted-foreground mb-5">
@@ -26,15 +26,15 @@ const Feature38 = () => {
             <ul className="space-y-4">
               <li className="flex items-center gap-3">
                 <NotebookText className="size-5" />
-                <p className="font-bold">Lorem ipsum dolor sit.</p>
+                <p className="font-semibold">Lorem ipsum dolor sit.</p>
               </li>
               <li className="flex items-center gap-3">
                 <Globe className="size-5" />
-                <p className="font-bold">Lorem ipsum dolor sit amet.</p>
+                <p className="font-semibold">Lorem ipsum dolor sit amet.</p>
               </li>
               <li className="flex items-center gap-3">
                 <Hash className="size-5" />
-                <p className="font-bold">Lorem ipsum dolor sit.</p>
+                <p className="font-semibold">Lorem ipsum dolor sit.</p>
               </li>
             </ul>
           </div>

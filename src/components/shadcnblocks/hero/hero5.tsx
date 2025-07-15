@@ -15,7 +15,7 @@ const Hero5 = ({
       <div className="container">
         <div className="flex flex-col items-center justify-between gap-20 lg:flex-row">
           <div className="flex flex-col items-center gap-6 text-center lg:items-start lg:text-left">
-            <h1 className="text-4xl font-bold text-pretty lg:max-w-md lg:text-7xl">
+            <h1 className="text-4xl font-semibold text-pretty lg:max-w-md lg:text-7xl">
               {title}
             </h1>
             <p className="max-w-xl text-xl font-medium lg:text-2xl">

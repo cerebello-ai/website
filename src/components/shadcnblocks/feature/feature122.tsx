@@ -75,7 +75,7 @@ const Feature122 = () => {
         />
         <div className="bg-accent/80 hover:bg-accent flex w-full grow flex-col gap-6 rounded-lg p-6 transition-all md:col-span-2 md:col-start-2 md:row-span-2 md:row-start-2 lg:p-10">
           <div className="flex flex-col items-start justify-between gap-5 md:flex-row md:items-center">
-            <h3 className="max-w-[85%] text-xl font-bold tracking-tight md:max-w-[60%] lg:text-3xl">
+            <h3 className="max-w-[85%] text-xl font-semibold tracking-tight md:max-w-[60%] lg:text-3xl">
               Powerful Features
             </h3>
             <Button className="w-full sm:w-auto" size="lg">
@@ -106,7 +106,7 @@ const DataBlock: React.FC<DataBlockProps> = ({ title, description, icon }) => {
       onMouseOut={() => setBlockHover(false)}
     >
       <h3
-        className={`mb-3 w-fit border-b border-solid border-transparent text-lg font-bold tracking-tight transition lg:text-xl ${isBlockHover && 'border-primary/80!'}`}
+        className={`mb-3 w-fit border-b border-solid border-transparent text-lg font-semibold tracking-tight transition lg:text-xl ${isBlockHover && 'border-primary/80!'}`}
       >
         {title}
       </h3>

@@ -16,7 +16,7 @@ const Pricing15 = () => {
       <div className="container">
         <div className="flex flex-col gap-10 md:flex-row">
           <div className="w-auto md:w-1/2 lg:w-2/3">
-            <h2 className="mb-4 text-4xl font-bold text-balance md:text-5xl">
+            <h2 className="mb-4 text-4xl font-semibold text-balance md:text-5xl">
               One Plan, Unlimited Access
             </h2>
             <p className="text-muted-foreground mb-4 text-lg">
@@ -30,7 +30,7 @@ const Pricing15 = () => {
             </Button>
           </div>
           <div className="w-auth bg-muted rounded-md border p-11 md:w-1/2 lg:w-1/3">
-            <p className="text-5xl font-bold">
+            <p className="text-5xl font-semibold">
               $199<span className="text-lg">/mo</span>
             </p>
             <ul className="space-y-4 pt-5 font-medium">

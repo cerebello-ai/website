@@ -53,7 +53,8 @@ export const metadata: Metadata = {
 
 const workflowAutomationData = {
   title: 'Workflow Automation',
-  subtitle: 'Empower Your Enterprise with AI-Driven, End-to-End Workflow Automation',
+  subtitle:
+    'Empower Your Enterprise with AI-Driven, End-to-End Workflow Automation',
   introduction:
     "Cerebello's Workflow Automation service transforms how work gets done. We combine artificial intelligence with human-centric design to automate entire business processes from start to finish. The result? Faster cycle times, dramatic cost savings, and happier teams.",
   content:
@@ -241,7 +242,8 @@ const workflowAutomationData = {
   },
   callToAction: {
     title: 'Ready to Transform Your Workflows?',
-    subtitle: 'Discover how AI-powered automation can revolutionize your business processes',
+    subtitle:
+      'Discover how AI-powered automation can revolutionize your business processes',
     description:
       "Don't let outdated processes hold your enterprise back. Embrace the future of work with Cerebello's Workflow Automation and join industry leaders who have already saved thousands of hours and cut process times in half.",
     buttonText: 'Start Your AI Implementation Scan',
@@ -253,15 +255,15 @@ export default function WorkflowAutomationPage() {
   return (
     <>
       {/* Hero Section */}
-      <section className="from-blue-50 to-blue-100 relative overflow-hidden bg-gradient-to-br py-24 md:py-32">
+      <section className="relative overflow-hidden bg-gradient-to-br from-blue-50 to-blue-100 py-24 md:py-32">
         <div className="container">
           <div className="mx-auto max-w-6xl">
             <div className="grid items-center gap-12 lg:grid-cols-2 lg:gap-16">
               <div>
-                <div className="bg-blue-100 text-blue-900 mb-6 inline-flex items-center rounded-full px-4 py-2 text-sm font-medium">
+                <div className="mb-6 inline-flex items-center rounded-full bg-blue-100 px-4 py-2 text-sm font-medium text-blue-900">
                   AI-Powered Process Automation
                 </div>
-                <h1 className="mb-6 text-4xl font-bold tracking-tight sm:text-5xl md:text-6xl">
+                <h1 className="mb-6 text-4xl font-semibold tracking-tight sm:text-5xl md:text-6xl">
                   {workflowAutomationData.title}
                 </h1>
                 <p className="text-muted-foreground mb-4 text-xl">
@@ -282,7 +284,7 @@ export default function WorkflowAutomationPage() {
                 </div>
               </div>
               <div className="relative">
-                <div className="from-blue-200 to-blue-300 absolute inset-0 bg-gradient-to-tr opacity-30 blur-3xl" />
+                <div className="absolute inset-0 bg-gradient-to-tr from-blue-200 to-blue-300 opacity-30 blur-3xl" />
                 <Image
                   src="/images/workflow-automation-hero.jpg"
                   alt="Workflow Automation Dashboard"
@@ -300,10 +302,10 @@ export default function WorkflowAutomationPage() {
       <section id="overview" className="py-24 md:py-32">
         <div className="container">
           <div className="mx-auto mb-12 max-w-4xl text-center">
-            <div className="bg-blue-100 text-blue-900 mb-4 inline-flex items-center rounded-full px-4 py-2 text-sm font-medium">
+            <div className="mb-4 inline-flex items-center rounded-full bg-blue-100 px-4 py-2 text-sm font-medium text-blue-900">
               Our Approach
             </div>
-            <h2 className="mb-4 text-3xl font-bold tracking-tight sm:text-4xl md:text-5xl">
+            <h2 className="mb-4 text-3xl font-semibold tracking-tight sm:text-4xl md:text-5xl">
               AI-Powered & Human-Centered Automation
             </h2>
             <p className="text-muted-foreground mb-4 text-lg">
@@ -326,14 +328,15 @@ export default function WorkflowAutomationPage() {
       <section className="py-24 md:py-32">
         <div className="container">
           <div className="mx-auto mb-12 max-w-4xl text-center">
-            <div className="bg-blue-100 text-blue-900 mb-4 inline-flex items-center rounded-full px-4 py-2 text-sm font-medium">
+            <div className="mb-4 inline-flex items-center rounded-full bg-blue-100 px-4 py-2 text-sm font-medium text-blue-900">
               Key Capabilities
             </div>
-            <h2 className="mb-4 text-3xl font-bold tracking-tight sm:text-4xl md:text-5xl">
+            <h2 className="mb-4 text-3xl font-semibold tracking-tight sm:text-4xl md:text-5xl">
               Intelligent Automation in Action
             </h2>
             <p className="text-muted-foreground text-lg">
-              Our Workflow Automation offering includes a rich set of capabilities to streamline complex processes
+              Our Workflow Automation offering includes a rich set of
+              capabilities to streamline complex processes
             </p>
           </div>
           <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
@@ -343,7 +346,9 @@ export default function WorkflowAutomationPage() {
                   {capability.icon}
                   <h3 className="text-xl font-semibold">{capability.title}</h3>
                 </div>
-                <p className="text-muted-foreground">{capability.description}</p>
+                <p className="text-muted-foreground">
+                  {capability.description}
+                </p>
               </div>
             ))}
           </div>

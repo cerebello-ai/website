@@ -38,7 +38,7 @@ const Hero27 = ({
         <div
           className={`mx-auto flex ${maxWidth} flex-col items-start justify-between gap-10 md:gap-20 lg:flex-row lg:items-end`}
         >
-          <h1 className="relative text-6xl font-bold tracking-tighter md:text-[8vw] lg:w-3/5 2xl:text-9xl">
+          <h1 className="relative text-6xl font-semibold tracking-tighter md:text-[8vw] lg:w-3/5 2xl:text-9xl">
             {titleWords.map((word, index) => (
               <span key={`word-${index}`}>
                 <span className={`relative inline-block ${hoverClass}`}>
@@ -50,7 +50,7 @@ const Hero27 = ({
           </h1>
           <div className="lg:max-w-auto max-w-lg space-y-5 lg:mb-4 lg:w-2/5">
             {subtitle && (
-              <p className="text-xl font-bold md:text-4xl">
+              <p className="text-xl font-semibold md:text-4xl">
                 {subtitle.split('\n').map((line, index, array) => (
                   <span key={`subtitle-${index}`}>
                     {line}

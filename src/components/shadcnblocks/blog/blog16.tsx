@@ -59,7 +59,7 @@ const Blog16 = () => {
   return (
     <section className="py-32">
       <div className="px-0">
-        <h1 className="container text-3xl font-bold lg:text-5xl">
+        <h1 className="container text-3xl font-semibold lg:text-5xl">
           <span className="text-muted-foreground">Blog.</span>
           <br />
           Latest insights & updates
@@ -88,7 +88,7 @@ const Blog16 = () => {
                       {item.date}
                       <span className="inline lg:hidden"> - {item.team}</span>
                     </span>
-                    <h3 className="text-2xl font-bold hover:underline lg:text-3xl">
+                    <h3 className="text-2xl font-semibold hover:underline lg:text-3xl">
                       <a href={item.link}>{item.title}</a>
                     </h3>
                     <div className="mt-5 flex flex-wrap gap-2">

@@ -62,7 +62,7 @@ const Compare5 = () => {
             </div>
           </div>
 
-          <span className="bg-background absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 rounded-full px-4 py-2 text-sm font-bold shadow-lg sm:px-6 sm:py-4 sm:text-base lg:px-8 lg:py-6">
+          <span className="bg-background absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 rounded-full px-4 py-2 text-sm font-semibold shadow-lg sm:px-6 sm:py-4 sm:text-base lg:px-8 lg:py-6">
             OR
           </span>
         </div>

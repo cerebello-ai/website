@@ -7,7 +7,7 @@ const Hero59 = () => {
         <span className="text-muted-foreground text-xs">
           BETA RELEASE AVAILABLE
         </span>
-        <h1 className="text-foreground text-5xl font-bold lg:text-[4.2rem]">
+        <h1 className="text-foreground text-5xl font-semibold lg:text-[4.2rem]">
           Unveiling MyBusiness Edition 1
         </h1>
         <p className="text-muted-foreground text-lg">

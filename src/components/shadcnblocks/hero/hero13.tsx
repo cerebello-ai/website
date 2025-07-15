@@ -40,7 +40,7 @@ const Hero13 = ({
             <p className="truncate whitespace-nowrap">{badge.text}</p>
           </Badge>
         )}
-        <h1 className="mb-6 text-4xl leading-none font-bold tracking-tighter md:text-[7vw] lg:text-8xl">
+        <h1 className="mb-6 text-4xl leading-none font-semibold tracking-tighter md:text-[7vw] lg:text-8xl">
           {title}
         </h1>
         <p className="text-muted-foreground max-w-2xl md:text-[2vw] lg:text-xl">

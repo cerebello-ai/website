@@ -38,7 +38,7 @@ const Feature68 = () => {
     <section className="bg-background py-32">
       <div className="container">
         <div className="flex flex-col gap-4">
-          <h2 className="text-2xl font-bold tracking-tight md:text-3xl lg:text-4xl">
+          <h2 className="text-2xl font-semibold tracking-tight md:text-3xl lg:text-4xl">
             Features
           </h2>
           <p className="text-muted-foreground max-w-prose text-base md:text-lg">

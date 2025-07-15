@@ -19,7 +19,7 @@ const Hero132 = () => {
             {/* White Card - Left Side Corner */}
             <div className="bg-background absolute top-4 left-4 rounded-lg p-6">
               <p className="text-muted-foreground text-sm">Total Enrollments</p>
-              <p className="text-2xl font-bold">15,000+</p>
+              <p className="text-2xl font-semibold">15,000+</p>
             </div>
 
             {/* White Card - Left Bottom Corner */}
@@ -32,7 +32,7 @@ const Hero132 = () => {
                   />
                 </Avatar>
                 <div>
-                  <p className="text-3xl font-bold">100+ Courses</p>
+                  <p className="text-3xl font-semibold">100+ Courses</p>
                 </div>
               </div>
               <div className="mt-24">
@@ -99,7 +99,7 @@ const Hero132 = () => {
         <h2 className="text-muted-foreground mb-12 text-2xl font-medium">
           FEATURES
         </h2>
-        <h2 className="mb-6 text-4xl font-bold">Why Choose Us?</h2>
+        <h2 className="mb-6 text-4xl font-semibold">Why Choose Us?</h2>
         <div className="mx-auto mt-10 flex max-w-5xl flex-col md:flex-row">
           <div className="flex grow basis-0 flex-col items-center p-4">
             <div className="mb-6 flex size-14 items-center justify-center rounded-md bg-black">

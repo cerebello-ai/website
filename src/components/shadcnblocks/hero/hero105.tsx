@@ -75,7 +75,7 @@ const Hero105 = () => {
         <div className="container mx-auto">
           <div className="mx-auto mt-36 grid max-w-[67.5rem] grid-cols-[repeat(1,1fr)] items-start pb-20 md:grid-cols-[repeat(2,1fr)]">
             <div className="flex w-full max-w-[33.75rem] flex-col gap-8">
-              <h1 className="relative font-sans text-[4rem] leading-none font-bold tracking-tighter sm:text-[4.5rem] md:text-[4.2rem] lg:text-[5rem] xl:text-[5.5rem]">
+              <h1 className="relative font-sans text-[4rem] leading-none font-semibold tracking-tighter sm:text-[4.5rem] md:text-[4.2rem] lg:text-[5rem] xl:text-[5.5rem]">
                 <div className="relative z-20 text-black mix-blend-overlay">
                   Use tools to speed up your revenue growth
                 </div>

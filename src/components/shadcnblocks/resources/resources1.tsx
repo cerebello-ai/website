@@ -585,7 +585,7 @@ const ResourcesCard = ({
             />
           </AspectRatio>
           <div className="flex w-full flex-col gap-5 p-5">
-            <h2 className="text-lg leading-none font-bold md:text-2xl">
+            <h2 className="text-lg leading-none font-semibold md:text-2xl">
               {title}
             </h2>
             <div className="w-full max-w-[20rem]">

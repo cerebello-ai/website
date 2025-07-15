@@ -85,7 +85,7 @@ const Feature70 = () => {
             </Carousel>
           </div>
           <div className="flex shrink-0 flex-col md:w-1/2 md:pr-8 lg:pl-24 lg:text-left 2xl:pl-32">
-            <h2 className="mb-6 text-3xl font-bold text-pretty lg:text-5xl">
+            <h2 className="mb-6 text-3xl font-semibold text-pretty lg:text-5xl">
               Features
             </h2>
             <p className="text-muted-foreground mb-16 lg:text-xl">

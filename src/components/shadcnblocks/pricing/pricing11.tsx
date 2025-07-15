@@ -173,7 +173,7 @@ const Pricing11 = () => {
         <div className="container mb-8 lg:mb-0">
           <div className="grid grid-cols-2 gap-y-12 md:gap-y-16">
             <div className="col-span-2 flex flex-col lg:col-span-1">
-              <h1 className="my-6 text-3xl font-bold text-pretty md:text-4xl xl:text-5xl">
+              <h1 className="my-6 text-3xl font-semibold text-pretty md:text-4xl xl:text-5xl">
                 Pricing Plans
               </h1>
               <p className="text-muted-foreground lg:text-xl">

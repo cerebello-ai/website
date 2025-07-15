@@ -100,7 +100,7 @@ const Footer1 = ({
           <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-4">
             {sections.map((section, sectionIdx) => (
               <div key={sectionIdx}>
-                <h3 className="mb-4 font-bold">{section.title}</h3>
+                <h3 className="mb-4 font-semibold">{section.title}</h3>
                 <ul className="text-muted-foreground space-y-4">
                   {section.links.map((link, linkIdx) => (
                     <li
@@ -114,7 +114,7 @@ const Footer1 = ({
               </div>
             ))}
             <div>
-              <h3 className="mb-4 font-bold">Legal</h3>
+              <h3 className="mb-4 font-semibold">Legal</h3>
               <ul className="text-muted-foreground space-y-4">
                 <li className="hover:text-primary font-medium">
                   <a href="#">Term of Services</a>
@@ -123,7 +123,7 @@ const Footer1 = ({
                   <a href="#">Privacy Policy</a>
                 </li>
               </ul>
-              <h3 className="mt-8 mb-4 font-bold">Social</h3>
+              <h3 className="mt-8 mb-4 font-semibold">Social</h3>
               <ul className="text-muted-foreground flex items-center space-x-6">
                 <li className="hover:text-primary font-medium">
                   <a href="#">

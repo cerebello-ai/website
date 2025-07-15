@@ -40,7 +40,7 @@ export const Feature51 = () => {
     <section className="bg-background py-16 md:py-24">
       <div className="container">
         <div className="mx-auto max-w-3xl text-center">
-          <h2 className="font-inter-tight text-foreground mb-4 text-3xl font-bold tracking-tight sm:text-4xl md:text-5xl">
+          <h2 className="font-inter-tight text-foreground mb-4 text-3xl font-semibold tracking-tight sm:text-4xl md:text-5xl">
             Our Core AI Solutions
           </h2>
           <p className="font-inter text-muted-foreground mb-12 text-lg">

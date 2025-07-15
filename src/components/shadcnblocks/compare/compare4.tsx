@@ -54,7 +54,7 @@ const Compare4 = () => {
       <div className="container grid grid-cols-4 gap-x-4 gap-y-8 md:grid-cols-8 lg:grid-cols-12">
         {/* Header */}
         <div className="col-span-4 mb-8 max-w-3xl md:col-span-8 md:mb-12 lg:col-span-10 lg:col-start-2 lg:mb-16">
-          <h2 className="mb-4 text-center text-3xl font-bold sm:text-left md:text-4xl lg:text-6xl">
+          <h2 className="mb-4 text-center text-3xl font-semibold sm:text-left md:text-4xl lg:text-6xl">
             Compare Cloud vs On-site Infrastructure
           </h2>
         </div>
@@ -64,12 +64,12 @@ const Compare4 = () => {
           <div className="grid grid-cols-4 items-center gap-4 md:grid-cols-8">
             <div className="col-span-4 md:col-span-2"></div>
             <div className="col-span-2 ml-0 md:col-span-3 md:ml-32 lg:ml-40 xl:ml-48 2xl:ml-56">
-              <h4 className="text-muted-foreground text-xs font-bold tracking-wider uppercase md:text-sm">
+              <h4 className="text-muted-foreground text-xs font-semibold tracking-wider uppercase md:text-sm">
                 Traditional
               </h4>
             </div>
             <div className="col-span-2 ml-0 md:col-span-3 md:ml-32 lg:ml-40 xl:ml-48 2xl:ml-56">
-              <h4 className="text-xs font-bold tracking-wider uppercase md:text-sm">
+              <h4 className="text-xs font-semibold tracking-wider uppercase md:text-sm">
                 Cloud-Native
               </h4>
             </div>
@@ -84,14 +84,14 @@ const Compare4 = () => {
               className="group hover:bg-muted/50 border-t px-4 transition-colors first:rounded-t-xl first:border-t-0 last:rounded-b-xl"
             >
               <div className="grid grid-cols-4 items-start gap-4 py-6 md:grid-cols-8 md:py-8">
-                <h3 className="col-span-4 mt-2 text-base font-bold md:col-span-2 md:text-lg">
+                <h3 className="col-span-4 mt-2 text-base font-semibold md:col-span-2 md:text-lg">
                   {row.title}
                 </h3>
 
                 {/* Traditional Stat */}
                 <div className="col-span-2 flex flex-col md:col-span-3">
                   <div className="group-hover:text-foreground ml-0 transition-colors md:ml-32 lg:ml-40 xl:ml-48 2xl:ml-56">
-                    <p className="text-foreground mb-1 flex items-baseline text-2xl font-bold md:mb-2 md:text-5xl">
+                    <p className="text-foreground mb-1 flex items-baseline text-2xl font-semibold md:mb-2 md:text-5xl">
                       {row.brick.value}
                       {row.brick.unit && (
                         <sup className="text-foreground ml-0.5 text-xs md:text-sm">
@@ -108,7 +108,7 @@ const Compare4 = () => {
                 {/* Cloud-Native Stat */}
                 <div className="col-span-2 flex flex-col md:col-span-3">
                   <div className="group-hover:text-accent-foreground ml-0 transition-colors md:ml-32 lg:ml-40 xl:ml-48 2xl:ml-56">
-                    <p className="text-foreground mb-1 flex items-baseline text-2xl font-bold md:mb-2 md:text-5xl">
+                    <p className="text-foreground mb-1 flex items-baseline text-2xl font-semibold md:mb-2 md:text-5xl">
                       {row.ghost.value}
                       {row.ghost.unit && (
                         <sup className="text-foreground ml-0.5 text-xs md:text-sm">

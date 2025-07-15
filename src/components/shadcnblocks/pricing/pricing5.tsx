@@ -71,7 +71,7 @@ const Pricing5 = () => {
               <p className="text-muted-foreground">Lorem ipsum dolor sit.</p>
             </CardHeader>
             <CardContent>
-              <span className="text-5xl font-bold">$10</span>
+              <span className="text-5xl font-semibold">$10</span>
               <p className="text-muted-foreground mt-3">per user per month</p>
             </CardContent>
             <CardFooter>
@@ -88,7 +88,7 @@ const Pricing5 = () => {
               <p className="text-muted-foreground">Lorem ipsum dolor sit.</p>
             </CardHeader>
             <CardContent>
-              <span className="text-4xl font-bold">Contact us</span>
+              <span className="text-4xl font-semibold">Contact us</span>
               <p className="text-muted-foreground mt-3">Get in touch with us</p>
             </CardContent>
             <CardFooter>
@@ -102,8 +102,8 @@ const Pricing5 = () => {
           <TableHeader>
             <TableRow className="hover:bg-background">
               <TableHead></TableHead>
-              <TableHead className="text-primary font-bold">Pro</TableHead>
-              <TableHead className="text-primary font-bold">
+              <TableHead className="text-primary font-semibold">Pro</TableHead>
+              <TableHead className="text-primary font-semibold">
                 Entreprise
               </TableHead>
             </TableRow>

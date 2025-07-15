@@ -44,7 +44,7 @@ const Compare1 = () => {
   return (
     <section className="py-32">
       <div className="container">
-        <h1 className="mb-8 text-3xl font-bold md:mb-12 md:text-5xl">
+        <h1 className="mb-8 text-3xl font-semibold md:mb-12 md:text-5xl">
           Compare us with others.
         </h1>
         <div className="-mr-4 overflow-x-auto">

@@ -369,7 +369,9 @@ const DesktopMenuItem = ({ item, index }: DesktopMenuItemProps) => {
               ))}
             </div>
             <div>
-              <div className="p-4 leading-normal font-bold">{item.title}</div>
+              <div className="p-4 leading-normal font-semibold">
+                {item.title}
+              </div>
               <ul>
                 {item.links.map((link, index) => (
                   <li key={`desktop-nav-sublink-${index}`}>

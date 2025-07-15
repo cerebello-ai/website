@@ -102,7 +102,7 @@ const Gallery23 = () => {
                       <p className="text-left text-xs text-white/50">
                         {image.code}
                       </p>
-                      <h3 className="text-3xl font-bold text-white">
+                      <h3 className="text-3xl font-semibold text-white">
                         {image.title.split(' ')[0]}
                         <span className="font-playfair italic">
                           {' '}

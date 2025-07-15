@@ -75,7 +75,7 @@ const Timeline8 = ({
     <section className="bg-background py-32">
       <div className="container">
         <div className="mb-10 text-center">
-          <h1 className="text-foreground text-3xl font-bold tracking-tighter lg:text-6xl">
+          <h1 className="text-foreground text-3xl font-semibold tracking-tighter lg:text-6xl">
             {title}
           </h1>
           {subtitle && (

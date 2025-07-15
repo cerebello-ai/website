@@ -80,7 +80,7 @@ const Hero31 = () => {
       </div>
       <div className="relative container">
         <div className="flex flex-col items-center text-center">
-          <h1 className="my-6 text-4xl font-bold text-pretty lg:text-6xl">
+          <h1 className="my-6 text-4xl font-semibold text-pretty lg:text-6xl">
             Welcome to Our Website
           </h1>
           <p className="text-muted-foreground mb-8 max-w-xl lg:text-xl">

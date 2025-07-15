@@ -14,7 +14,7 @@ const Feature125 = () => {
   return (
     <section className="m-x-auto container flex flex-col items-start gap-20 py-32 md:flex-row md:items-center">
       <div className="w-full lg:w-[40%]">
-        <h2 className="mb-8 text-3xl font-bold">
+        <h2 className="mb-8 text-3xl font-semibold">
           Build faster with our blocks built for shadcn/ui
         </h2>
         <p className="mb-10">

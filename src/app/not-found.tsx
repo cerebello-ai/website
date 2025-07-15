@@ -8,7 +8,7 @@ export default function NotFound() {
   return (
     <div className="container flex min-h-[70vh] flex-col items-center justify-center py-28 text-center lg:min-h-[80vh] lg:py-32">
       <div className="relative z-10 max-w-2xl">
-        <h1 className="from-foreground to-foreground/70 relative mb-6 bg-linear-to-br bg-clip-text py-2 text-5xl font-bold text-transparent sm:text-6xl lg:text-7xl">
+        <h1 className="from-foreground to-foreground/70 relative mb-6 bg-linear-to-br bg-clip-text py-2 text-5xl font-semibold text-transparent sm:text-6xl lg:text-7xl">
           Page Not Found
         </h1>
 

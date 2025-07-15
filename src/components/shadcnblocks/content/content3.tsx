@@ -263,7 +263,7 @@ const Content3 = ({
             ))}
           </BreadcrumbList>
         </Breadcrumb>
-        <h1 className="mt-10 text-4xl font-bold text-balance md:text-5xl lg:text-6xl">
+        <h1 className="mt-10 text-4xl font-semibold text-balance md:text-5xl lg:text-6xl">
           {title}
         </h1>
         {subtitle && (

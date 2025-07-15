@@ -6,7 +6,7 @@ const Feature94 = () => {
       <div className="container">
         <div className="mx-auto max-w-7xl">
           <div className="flex flex-col items-center justify-between gap-y-4 md:flex-row">
-            <h2 className="text-center text-2xl font-bold md:text-left md:text-4xl">
+            <h2 className="text-center text-2xl font-semibold md:text-left md:text-4xl">
               Make better decisions
               <br /> across your entire workflow
             </h2>

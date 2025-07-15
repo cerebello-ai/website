@@ -100,7 +100,7 @@ const Hero18 = ({
   return (
     <section className="py-32">
       <div className="container flex flex-col items-center text-center">
-        <h1 className="my-6 text-4xl font-bold text-pretty lg:text-6xl">
+        <h1 className="my-6 text-4xl font-semibold text-pretty lg:text-6xl">
           {title}
         </h1>
         <p className="text-muted-foreground mb-8 max-w-3xl lg:text-xl">

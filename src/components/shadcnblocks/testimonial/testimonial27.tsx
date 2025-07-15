@@ -117,7 +117,7 @@ const Testimonial27 = () => {
       <div className="container flex flex-col gap-6">
         <div className="flex flex-col justify-between gap-6 md:flex-row md:items-end">
           <div className="flex flex-col gap-4">
-            <h2 className="text-4xl font-bold tracking-tight md:text-5xl">
+            <h2 className="text-4xl font-semibold tracking-tight md:text-5xl">
               What people think
             </h2>
             <div className="max-w-[28.75rem]">
@@ -172,7 +172,7 @@ const Testimonial27 = () => {
                 style={{ backgroundImage: `url(${caseStudy.background})` }}
               />
               <div className="relative flex flex-col gap-3">
-                <div className="text-foreground group-hover:text-background text-5xl font-bold tracking-tight transition-colors duration-300">
+                <div className="text-foreground group-hover:text-background text-5xl font-semibold tracking-tight transition-colors duration-300">
                   {caseStudy.stats[0].number}
                 </div>
                 <p className="text-muted-foreground group-hover:text-background/80 text-sm font-medium transition-colors duration-300">

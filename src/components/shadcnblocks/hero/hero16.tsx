@@ -14,7 +14,7 @@ const Hero16 = ({
   return (
     <section className="py-32">
       <div className="container flex flex-col items-center text-center">
-        <h1 className="my-3 text-3xl font-bold text-pretty sm:text-4xl md:my-6 lg:text-6xl">
+        <h1 className="my-3 text-3xl font-semibold text-pretty sm:text-4xl md:my-6 lg:text-6xl">
           {title}
         </h1>
         <p className="text-muted-foreground mb-6 max-w-xl lg:mb-12 lg:text-2xl">

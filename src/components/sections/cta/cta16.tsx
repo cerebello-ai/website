@@ -19,7 +19,7 @@ export const Cta16 = () => {
           <div className="absolute inset-0 bg-[linear-gradient(45deg,transparent_25%,rgba(255,255,255,0.1)_25%,rgba(255,255,255,0.1)_50%,transparent_50%,transparent_75%,rgba(255,255,255,0.1)_75%)] bg-[length:32px_32px]" />
 
           <div className="relative z-10 mx-auto max-w-4xl text-center">
-            <h2 className="font-inter-tight text-primary-foreground mb-4 text-3xl font-bold tracking-tight sm:text-4xl md:text-5xl">
+            <h2 className="font-inter-tight text-primary-foreground mb-4 text-3xl font-semibold tracking-tight sm:text-4xl md:text-5xl">
               Ready to Transform Your Business?
             </h2>
             <p className="font-inter text-primary-foreground/90 mb-8 text-lg md:text-xl">

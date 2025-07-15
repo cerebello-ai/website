@@ -9,7 +9,7 @@ const Hero33 = () => {
         <div className="grid items-center gap-8 lg:grid-cols-2">
           <div className="container flex flex-col items-center py-12 text-center lg:mx-auto lg:items-start lg:px-0 lg:text-left">
             <p>New Release</p>
-            <h1 className="my-6 text-4xl font-bold text-pretty lg:text-6xl">
+            <h1 className="my-6 text-4xl font-semibold text-pretty lg:text-6xl">
               Welcome to Our Website
             </h1>
             <p className="text-muted-foreground mb-8 max-w-xl lg:text-xl">
@@ -29,8 +29,8 @@ const Hero33 = () => {
             <div className="border-border rounded border px-8 py-6">
               <p className="mb-2 text-xl font-medium">Now starting at</p>
               <div className="mb-4 flex items-baseline justify-center lg:justify-start">
-                <div className="text-4xl font-bold lg:text-6xl">$99</div>
-                <div className="text-xl leading-none font-bold lg:text-2xl lg:leading-none">
+                <div className="text-4xl font-semibold lg:text-6xl">$99</div>
+                <div className="text-xl leading-none font-semibold lg:text-2xl lg:leading-none">
                   /user
                 </div>
               </div>

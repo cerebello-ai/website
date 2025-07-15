@@ -34,7 +34,7 @@ const Feature83 = () => {
             <Badge variant="outline" className="w-fit">
               Key Advantages
             </Badge>
-            <h2 className="text-4xl font-bold">Simplified Solutions</h2>
+            <h2 className="text-4xl font-semibold">Simplified Solutions</h2>
             <p className="text-muted-foreground text-lg">
               Access comprehensive solutions for managing payments,
               collaboration, and support—all in one unified platform.

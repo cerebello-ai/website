@@ -11,7 +11,7 @@ const Testimonial20 = () => {
             <p className="mb-6 text-center font-medium md:text-xl">
               “The platform has exceeded our expectations in every way. The
               implementation was smooth and
-              <strong className="ml-1 font-bold">
+              <strong className="ml-1 font-semibold">
                 the results are outstanding!”
               </strong>
             </p>
@@ -27,7 +27,9 @@ const Testimonial20 = () => {
           <div className="px-6 py-12 text-center md:px-12 md:py-16">
             <p className="mb-6 text-center font-medium md:text-xl">
               “The team delivered
-              <strong className="mx-1 font-bold">exceptional quality</strong>
+              <strong className="mx-1 font-semibold">
+                exceptional quality
+              </strong>
               throughout the entire process. The support has been remarkable at
               every step.”
             </p>

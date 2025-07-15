@@ -25,7 +25,7 @@ const Hero140 = () => {
                 </a>
               </div>
             </div>
-            <h1 className="text-foreground text-center text-4xl leading-none font-bold md:text-[3.5rem]">
+            <h1 className="text-foreground text-center text-4xl leading-none font-semibold md:text-[3.5rem]">
               Launch with ease, Scale with no limits
             </h1>
             <div className="max-w-[30rem] pb-2">
@@ -36,7 +36,7 @@ const Hero140 = () => {
             </div>
             <Button
               asChild
-              className="block h-fit w-fit rounded-full px-9 py-3 text-sm font-bold"
+              className="block h-fit w-fit rounded-full px-9 py-3 text-sm font-semibold"
             >
               <a href="#">Get Started</a>
             </Button>

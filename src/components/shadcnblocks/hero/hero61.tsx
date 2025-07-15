@@ -13,7 +13,7 @@ const Hero61 = () => {
             <Boxes className="size-5 stroke-[1.5px]" />
             <span>Collaborative Hub</span>
           </Badge>
-          <h1 className="text-foreground max-w-3xl text-4xl font-bold lg:text-7xl">
+          <h1 className="text-foreground max-w-3xl text-4xl font-semibold lg:text-7xl">
             Centralize your group's projects and tasks
           </h1>
           <div className="flex flex-col items-start justify-between gap-5 self-stretch lg:flex-row lg:items-center">

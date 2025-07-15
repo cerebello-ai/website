@@ -22,7 +22,7 @@ const Hero75 = () => {
               Enhance your career hunt with increased visibility, first-look
               opportunities and monetary incentives!
             </p>
-            <Button className="mt-10 flex h-fit items-center gap-2.5 rounded-xl px-5 py-4 font-bold">
+            <Button className="mt-10 flex h-fit items-center gap-2.5 rounded-xl px-5 py-4 font-semibold">
               <span>Upgrade to premium </span>
               <ChevronRight className="size-5!" />
             </Button>

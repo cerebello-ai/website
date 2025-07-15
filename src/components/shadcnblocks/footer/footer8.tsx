@@ -121,7 +121,7 @@ const Footer8 = ({
           </div>
           <div className="text-muted-foreground mt-20 flex flex-col justify-between gap-4 border-t pt-8 text-sm font-medium lg:flex-row lg:items-center lg:text-left">
             <p>
-              <span className="text-primary mr-1 font-bold">
+              <span className="text-primary mr-1 font-semibold">
                 Shadcnblocks.com
               </span>
               © All rights reserved.

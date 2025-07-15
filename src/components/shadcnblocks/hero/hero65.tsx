@@ -7,7 +7,7 @@ const Hero65 = () => {
   return (
     <section className="to-muted2 from-muted bg-linear-to-b pt-16 text-center">
       <div className="container mx-auto flex max-w-3xl flex-col items-center">
-        <h1 className="text-foreground [&>span]:bg-foreground [&>span]:text-background text-4xl leading-normal font-bold md:text-5xl md:leading-relaxed lg:text-6xl lg:leading-[1.5] [&>span]:p-1">
+        <h1 className="text-foreground [&>span]:bg-foreground [&>span]:text-background text-4xl leading-normal font-semibold md:text-5xl md:leading-relaxed lg:text-6xl lg:leading-[1.5] [&>span]:p-1">
           Create solutions for <span>humans</span> not <span>statistics</span>
         </h1>
         <p className="text-foreground mt-6 text-lg md:text-2xl">

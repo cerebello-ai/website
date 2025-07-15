@@ -27,7 +27,7 @@ const Feature93 = () => {
               />
             </Avatar>
           </span>
-          <h2 className="mt-12 text-4xl font-bold lg:text-5xl">
+          <h2 className="mt-12 text-4xl font-semibold lg:text-5xl">
             Outstanding customer care
           </h2>
           <div className="mt-20 grid justify-center gap-16 lg:grid-cols-3">

@@ -781,7 +781,7 @@ const CustomersMenu = () => (
     </a>
     <div className="col-span-1">
       <a
-        href="#"
+        href="/services/ai-scan"
         className="group bg-accent text-accent-foreground flex h-full flex-col-reverse overflow-hidden rounded-lg md:flex-col lg:rounded-xl"
       >
         <div className="border-border mb-5 flex justify-between border-y pl-6 md:mt-12 md:mb-0">
@@ -831,7 +831,7 @@ const PartnersMenu = () => (
   <div className="grid gap-y-6 md:grid-cols-2 md:gap-x-6 lg:grid-cols-4">
     <div className="md:col-span-2">
       <a
-        href="#"
+        href="/ai-center-of-excellence"
         className="group bg-primary text-primary-foreground relative flex h-full flex-row overflow-hidden rounded-lg p-0 lg:rounded-xl"
       >
         <div className="relative z-10 flex w-full flex-col-reverse text-left">
@@ -857,7 +857,7 @@ const PartnersMenu = () => (
     </div>
     <div className="md:col-span-1">
       <a
-        href="#"
+        href="/strategic-partners"
         className="group bg-accent text-accent-foreground relative flex h-full flex-row overflow-hidden rounded-lg p-0 lg:rounded-xl"
       >
         <div className="relative z-10 flex w-full flex-col-reverse text-left">
@@ -882,13 +882,13 @@ const PartnersMenu = () => (
     </div>
     <div className="grid gap-4 md:col-span-1">
       <NavigationMenuLink
-        href="#"
+        href="/implementation-partners"
         className="group border-border flex w-full flex-row items-center rounded-lg border lg:rounded-xl"
       >
         <div className="flex items-start p-6 text-left">
           <Users className="size-8" />
           <div className="ml-4">
-            <div className="text-foreground/85 hover:text-foreground mt-auto mb-1 text-sm font-bold">
+            <div className="text-foreground/85 hover:text-foreground mt-auto mb-1 text-sm font-semibold">
               Implementation Partners
             </div>
             <p className="text-muted-foreground group-hover:text-foreground text-xs">
@@ -898,13 +898,13 @@ const PartnersMenu = () => (
         </div>
       </NavigationMenuLink>
       <NavigationMenuLink
-        href="#"
+        href="/technology-partners"
         className="group border-border flex w-full flex-row items-center rounded-lg border lg:rounded-xl"
       >
         <div className="flex items-start p-6 text-left">
           <Computer className="size-8" />
           <div className="ml-4">
-            <div className="text-foreground/85 hover:text-foreground mt-auto mb-1 text-sm font-bold">
+            <div className="text-foreground/85 hover:text-foreground mt-auto mb-1 text-sm font-semibold">
               Technology Partners
             </div>
             <p className="text-muted-foreground group-hover:text-foreground text-xs">

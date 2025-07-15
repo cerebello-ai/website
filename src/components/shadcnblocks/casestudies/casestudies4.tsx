@@ -84,7 +84,7 @@ const Casestudies4 = () => {
             <Author {...CUSTOMER_DATA.author} />
           </div>
           <div className="flex max-w-[32rem] flex-col gap-5">
-            <h2 className="text-2xl leading-none font-bold md:text-3xl lg:text-4xl">
+            <h2 className="text-2xl leading-none font-semibold md:text-3xl lg:text-4xl">
               {CUSTOMER_DATA.title}
             </h2>
             <p className="text-foreground text-base font-medium">

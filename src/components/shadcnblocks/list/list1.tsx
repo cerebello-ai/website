@@ -84,24 +84,24 @@ const List1 = () => {
           <TableHeader>
             <TableRow>
               <TableHead></TableHead>
-              <TableHead className="text-primary hidden font-bold md:table-cell">
+              <TableHead className="text-primary hidden font-semibold md:table-cell">
                 Category
               </TableHead>
               <TableHead>
-                <span className="text-primary hidden font-bold md:block">
+                <span className="text-primary hidden font-semibold md:block">
                   Description
                 </span>
-                <span className="text-primary block font-bold md:hidden">
+                <span className="text-primary block font-semibold md:hidden">
                   Project
                 </span>
               </TableHead>
-              <TableHead className="text-primary hidden text-right font-bold md:table-cell">
+              <TableHead className="text-primary hidden text-right font-semibold md:table-cell">
                 Year
               </TableHead>
-              <TableHead className="text-primary hidden font-bold md:table-cell">
+              <TableHead className="text-primary hidden font-semibold md:table-cell">
                 Offer
               </TableHead>
-              <TableHead className="text-primary hidden font-bold md:table-cell">
+              <TableHead className="text-primary hidden font-semibold md:table-cell">
                 Segment
               </TableHead>
             </TableRow>

@@ -133,7 +133,7 @@ const Content2 = ({
             />
           </div>
           <section className="mb-8">
-            <h2 className="mb-6 text-2xl font-bold">Content Types</h2>
+            <h2 className="mb-6 text-2xl font-semibold">Content Types</h2>
             <div className={`grid gap-4 ${gridColumns}`}>
               {contentTypes.map((contentType, index) => (
                 <a

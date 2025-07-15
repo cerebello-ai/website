@@ -31,7 +31,7 @@ const Gallery7 = () => {
       <div className="container">
         <div className="mb-12 grid grid-cols-1 gap-x-12 gap-y-6 md:mb-16 md:grid-cols-2 md:gap-x-24">
           <div className="flex flex-col gap-8 md:gap-12">
-            <h1 className="text-3xl font-bold md:text-4xl">
+            <h1 className="text-3xl font-semibold md:text-4xl">
               Bringing your data to life with the power of AI
             </h1>
           </div>

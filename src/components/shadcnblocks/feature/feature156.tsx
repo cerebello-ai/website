@@ -44,7 +44,7 @@ const Feature156 = () => {
 
       <div className="relative container">
         <div className="mb-16 flex flex-col items-center gap-8">
-          <h1 className="max-w-3xl text-center text-4xl font-bold tracking-tight md:text-6xl lg:text-7xl">
+          <h1 className="max-w-3xl text-center text-4xl font-semibold tracking-tight md:text-6xl lg:text-7xl">
             Build better software with shadcn/ui blocks
           </h1>
         </div>

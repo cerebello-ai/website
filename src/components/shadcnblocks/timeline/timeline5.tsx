@@ -51,7 +51,7 @@ const Timeline5 = ({
           {/* Left Column - Fixed Content */}
           <div className="lg:sticky lg:top-24 lg:self-start">
             <div className="max-w-lg">
-              <h2 className="text-primary text-3xl font-bold tracking-tight sm:text-4xl lg:text-5xl">
+              <h2 className="text-primary text-3xl font-semibold tracking-tight sm:text-4xl lg:text-5xl">
                 {title.split(highlightWord).map((part, index, array) => (
                   <span key={index}>
                     {part}

@@ -32,7 +32,7 @@ const Integration5 = () => {
             <p className="text-muted-foreground font-mono text-sm">
               INTEGRATIONS
             </p>
-            <h1 className="mt-4 mb-10 text-3xl font-bold text-pretty md:text-4xl">
+            <h1 className="mt-4 mb-10 text-3xl font-semibold text-pretty md:text-4xl">
               Explore integrations for your next project
             </h1>
             <p className="text-muted-foreground text-xl">

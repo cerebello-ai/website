@@ -10,7 +10,7 @@ const Hero84 = () => {
             Uniqueness
           </Badge>
           <div>
-            <h1 className="text-foreground mb-5 text-center text-5xl font-bold">
+            <h1 className="text-foreground mb-5 text-center text-5xl font-semibold">
               Unify everything in one space
             </h1>
             <p className="text-foreground max-w-[820px] text-center text-xl font-medium">

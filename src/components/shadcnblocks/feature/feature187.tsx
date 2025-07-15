@@ -45,7 +45,7 @@ const StepItem: React.FC<StepItemProps> = ({ step, isLast }) => {
           }`}
         />
         <div className="bg-background relative z-0 grid size-11 place-content-center rounded-full border-4">
-          <p className="text-lg font-bold">{step.id}</p>
+          <p className="text-lg font-semibold">{step.id}</p>
         </div>
       </div>
       <div className="max-lg:mt-2">

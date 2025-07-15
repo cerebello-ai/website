@@ -76,7 +76,7 @@ export const Feature145 = () => {
           <Badge variant="outline" className="border-border bg-background mb-4">
             AI Solutions
           </Badge>
-          <h2 className="font-inter-tight text-foreground mb-4 text-3xl font-bold tracking-tight sm:text-4xl md:text-5xl">
+          <h2 className="font-inter-tight text-foreground mb-4 text-3xl font-semibold tracking-tight sm:text-4xl md:text-5xl">
             Tailored AI Solutions for Your Business
           </h2>
           <p className="font-inter text-muted-foreground mb-12 text-lg">
@@ -128,7 +128,7 @@ export const Feature145 = () => {
                   <Badge className="bg-primary text-primary-foreground mb-2">
                     {active.metrics}
                   </Badge>
-                  <h3 className="font-inter-tight text-foreground text-2xl font-bold">
+                  <h3 className="font-inter-tight text-foreground text-2xl font-semibold">
                     {active.title}
                   </h3>
                 </div>
@@ -140,7 +140,7 @@ export const Feature145 = () => {
                 <div className="from-mint/30 to-mint/10 dark:from-mint/20 dark:to-mint/5 aspect-video rounded-lg bg-gradient-to-br p-8">
                   <div className="flex h-full items-center justify-center">
                     <div className="text-center">
-                      <div className="font-inter-tight text-primary mb-4 text-6xl font-bold">
+                      <div className="font-inter-tight text-primary mb-4 text-6xl font-semibold">
                         {active.metrics}
                       </div>
                       <p className="font-inter text-muted-foreground text-sm">

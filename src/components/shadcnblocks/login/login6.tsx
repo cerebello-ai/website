@@ -20,7 +20,7 @@ const Login6 = () => {
                   alt="Shadcn UI Navbar"
                 />
               </a>
-              <h1 className="text-2xl font-bold">Login</h1>
+              <h1 className="text-2xl font-semibold">Login</h1>
             </div>
             <div>
               <div className="grid gap-4">

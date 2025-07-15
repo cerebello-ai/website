@@ -114,7 +114,7 @@ const Footer7 = ({
           <div className="grid w-full gap-6 md:grid-cols-3 lg:gap-20">
             {sections.map((section, sectionIdx) => (
               <div key={sectionIdx}>
-                <h3 className="mb-4 font-bold">{section.title}</h3>
+                <h3 className="mb-4 font-semibold">{section.title}</h3>
                 <ul className="text-muted-foreground space-y-3 text-sm">
                   {section.links.map((link, linkIdx) => (
                     <li

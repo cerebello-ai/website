@@ -89,7 +89,7 @@ const Team3 = ({
     <section className="from-background to-muted/20 bg-gradient-to-b py-24 lg:py-32">
       <div className="container mx-auto px-4">
         <div className="mb-20 text-center">
-          <h2 className="from-foreground to-muted-foreground mb-6 bg-gradient-to-r bg-clip-text text-4xl font-bold tracking-tight text-transparent lg:text-6xl">
+          <h2 className="from-foreground to-muted-foreground mb-6 bg-gradient-to-r bg-clip-text text-4xl font-semibold tracking-tight text-transparent lg:text-6xl">
             {heading}
           </h2>
           <p className="text-muted-foreground mx-auto max-w-3xl text-xl leading-relaxed">
@@ -120,7 +120,7 @@ const Team3 = ({
                 </div>
 
                 <div className="mb-6">
-                  <h3 className="group-hover:text-primary mb-2 text-xl font-bold transition-colors duration-300">
+                  <h3 className="group-hover:text-primary mb-2 text-xl font-semibold transition-colors duration-300">
                     {member.name}
                   </h3>
                   <p className="text-muted-foreground bg-muted/50 inline-block rounded-full px-4 py-1.5 text-sm font-medium">

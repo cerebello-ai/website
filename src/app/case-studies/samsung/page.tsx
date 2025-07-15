@@ -86,7 +86,7 @@ const SamsungCaseStudy = () => {
                   </p>
                   <div className="mb-12 grid grid-cols-2 gap-6 lg:grid-cols-4">
                     <div className="flex flex-col gap-3">
-                      <p className="font-inter-tight text-foreground text-4xl font-bold sm:text-5xl">
+                      <p className="font-inter-tight text-foreground text-4xl font-semibold sm:text-5xl">
                         50%
                       </p>
                       <p className="text-muted-foreground text-sm">
@@ -94,7 +94,7 @@ const SamsungCaseStudy = () => {
                       </p>
                     </div>
                     <div className="flex flex-col gap-3">
-                      <p className="font-inter-tight text-foreground text-4xl font-bold sm:text-5xl">
+                      <p className="font-inter-tight text-foreground text-4xl font-semibold sm:text-5xl">
                         100%
                       </p>
                       <p className="text-muted-foreground text-sm">
@@ -102,7 +102,7 @@ const SamsungCaseStudy = () => {
                       </p>
                     </div>
                     <div className="flex flex-col gap-3">
-                      <p className="font-inter-tight text-foreground text-4xl font-bold sm:text-5xl">
+                      <p className="font-inter-tight text-foreground text-4xl font-semibold sm:text-5xl">
                         4
                       </p>
                       <p className="text-muted-foreground text-sm">
@@ -110,7 +110,7 @@ const SamsungCaseStudy = () => {
                       </p>
                     </div>
                     <div className="flex flex-col gap-3">
-                      <p className="font-inter-tight text-foreground text-4xl font-bold sm:text-5xl">
+                      <p className="font-inter-tight text-foreground text-4xl font-semibold sm:text-5xl">
                         &gt;90%
                       </p>
                       <p className="text-muted-foreground text-sm">

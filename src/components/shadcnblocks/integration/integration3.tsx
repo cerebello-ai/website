@@ -50,7 +50,7 @@ const Integration3 = () => {
       <div className="container">
         <div className="mx-auto flex flex-col items-center text-center">
           <div className="flex max-w-5xl flex-col items-center text-center">
-            <h1 className="my-6 text-4xl font-bold text-pretty lg:text-6xl">
+            <h1 className="my-6 text-4xl font-semibold text-pretty lg:text-6xl">
               Integrations
             </h1>
             <h2 className="text-muted-foreground mb-8 max-w-3xl lg:text-2xl">

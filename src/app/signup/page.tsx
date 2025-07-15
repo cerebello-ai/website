@@ -21,7 +21,9 @@ const Signup = () => {
                 height={32}
                 className="mb-7 dark:invert"
               />
-              <p className="mb-2 text-2xl font-bold">Start your free trial</p>
+              <p className="mb-2 text-2xl font-semibold">
+                Start your free trial
+              </p>
               <p className="text-muted-foreground">
                 Sign up in less than 2 minutes.
               </p>

@@ -171,7 +171,7 @@ const Gallery19 = () => {
                     />
                     <div className="absolute h-full w-full bg-gradient-to-t from-black/80 to-transparent" />
                     <div className="absolute flex h-full w-full flex-col justify-end p-4">
-                      <h3 className="text-2xl font-bold text-white">
+                      <h3 className="text-2xl font-semibold text-white">
                         {image.name.split(' ')[0]}
                         <span className="font-playfair italic">
                           {' '}

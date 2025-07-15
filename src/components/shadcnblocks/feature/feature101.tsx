@@ -10,7 +10,9 @@ const Feature101 = ({
     <section className="py-32">
       <div className="container">
         <div className="gap mx-auto flex max-w-xl flex-col justify-center gap-4 text-center">
-          <h1 className="text-4xl font-bold md:text-5xl">Our Capabilities</h1>
+          <h1 className="text-4xl font-semibold md:text-5xl">
+            Our Capabilities
+          </h1>
           <p className="text-muted-foreground text-xl">
             Discover the full potential of our platform&apos;s advanced
             capabilities

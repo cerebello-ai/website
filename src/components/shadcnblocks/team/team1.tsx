@@ -65,7 +65,7 @@ const Team1 = ({
   return (
     <section className="py-32">
       <div className="container flex flex-col items-center text-center">
-        <h2 className="my-6 text-2xl font-bold text-pretty lg:text-4xl">
+        <h2 className="my-6 text-2xl font-semibold text-pretty lg:text-4xl">
           {heading}
         </h2>
         <p className="text-muted-foreground mb-8 max-w-3xl lg:text-xl">

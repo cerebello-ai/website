@@ -98,7 +98,7 @@ const Feature186 = () => {
                           {feature.icon}
                         </div>
                         <div className="my-4 md:my-8">
-                          <h1 className="text-lg font-bold sm:text-xl lg:text-2xl">
+                          <h1 className="text-lg font-semibold sm:text-xl lg:text-2xl">
                             {feature.title}
                           </h1>
                           <span className="text-muted-foreground text-base sm:text-lg lg:text-xl">

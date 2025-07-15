@@ -12,7 +12,7 @@ const Signup5 = () => {
           <div className="py-10">
             <div className="mx-auto my-auto flex h-full w-full max-w-md flex-col justify-center gap-4 p-6">
               <div className="ite flex flex-col pb-6">
-                <p className="mb-2 text-3xl font-bold">Signup</p>
+                <p className="mb-2 text-3xl font-semibold">Signup</p>
                 <p className="text-muted-foreground">
                   Start your 30-day free trial.
                 </p>

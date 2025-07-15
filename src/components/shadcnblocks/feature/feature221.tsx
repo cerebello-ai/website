@@ -55,7 +55,7 @@ const Feature221 = () => {
       <div className="container">
         <div className="flex w-full flex-col items-start justify-between gap-4 pb-16 lg:flex-row lg:items-end">
           <div className="flex w-full max-w-[32rem] flex-1 flex-col items-start gap-5">
-            <h2 className="text-[2rem] leading-none font-bold tracking-tight md:text-[2.75rem] lg:text-5xl">
+            <h2 className="text-[2rem] leading-none font-semibold tracking-tight md:text-[2.75rem] lg:text-5xl">
               Discover how companies use Our Services
             </h2>
             <p className="text-muted-foreground w-full max-w-[30rem] text-[1.15rem] leading-normal font-medium sm:text-xl">
@@ -78,7 +78,7 @@ const Feature221 = () => {
             >
               <CardHeader className="flex w-full flex-col justify-between gap-4 p-0 lg:flex-row lg:items-center">
                 <CardTitle className="flex w-fit items-center justify-start gap-2.5">
-                  <h3 className="text-[1.75rem] leading-none font-bold tracking-tight">
+                  <h3 className="text-[1.75rem] leading-none font-semibold tracking-tight">
                     {feature.title}
                   </h3>
                 </CardTitle>

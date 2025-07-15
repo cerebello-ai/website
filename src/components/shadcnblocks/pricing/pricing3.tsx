@@ -14,7 +14,7 @@ const Pricing3 = () => {
     <section className="py-32">
       <div className="container">
         <div className="flex flex-col items-center text-center">
-          <h2 className="mb-6 text-4xl font-bold text-pretty lg:text-6xl">
+          <h2 className="mb-6 text-4xl font-semibold text-pretty lg:text-6xl">
             Our affordable pricing
           </h2>
           <p className="text-muted-foreground lg:text-xl">

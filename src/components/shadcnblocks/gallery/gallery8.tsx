@@ -60,7 +60,7 @@ const Gallery8 = () => {
   return (
     <section className="overflow-hidden py-32">
       <div className="container">
-        <h2 className="text-2xl font-bold text-pretty">
+        <h2 className="text-2xl font-semibold text-pretty">
           Start building with our template collection
         </h2>
         <Carousel>

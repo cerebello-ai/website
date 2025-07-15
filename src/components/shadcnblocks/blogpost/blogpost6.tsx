@@ -148,19 +148,19 @@ const Blogpost6 = () => {
             <div className="flex flex-col gap-2 pt-2 pl-2">
               <a
                 href="#heading-1"
-                className={`text-muted-foreground block text-sm leading-normal font-medium transition duration-300 ${activeId === 'heading-1' ? 'lg:bg-muted lg:!text-primary lg:rounded-md lg:p-2 lg:font-bold' : 'text-muted-foreground'}`}
+                className={`text-muted-foreground block text-sm leading-normal font-medium transition duration-300 ${activeId === 'heading-1' ? 'lg:bg-muted lg:!text-primary lg:rounded-md lg:p-2 lg:font-semibold' : 'text-muted-foreground'}`}
               >
                 The Role of UI Components in Development
               </a>
               <a
                 href="#heading-2"
-                className={`text-muted-foreground block text-sm leading-normal font-medium transition duration-300 ${activeId === 'heading-2' ? 'lg:bg-muted lg:!text-primary lg:rounded-md lg:p-2 lg:font-bold' : 'text-muted-foreground'}`}
+                className={`text-muted-foreground block text-sm leading-normal font-medium transition duration-300 ${activeId === 'heading-2' ? 'lg:bg-muted lg:!text-primary lg:rounded-md lg:p-2 lg:font-semibold' : 'text-muted-foreground'}`}
               >
                 Core Types of UI Components
               </a>
               <a
                 href="#heading-3"
-                className={`text-muted-foreground block text-sm leading-normal font-medium transition duration-300 ${activeId === 'heading-3' ? 'lg:bg-muted lg:!text-primary lg:rounded-md lg:p-2 lg:font-bold' : 'text-muted-foreground'}`}
+                className={`text-muted-foreground block text-sm leading-normal font-medium transition duration-300 ${activeId === 'heading-3' ? 'lg:bg-muted lg:!text-primary lg:rounded-md lg:p-2 lg:font-semibold' : 'text-muted-foreground'}`}
               >
                 End Paragraph
               </a>

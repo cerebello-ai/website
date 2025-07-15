@@ -43,7 +43,7 @@ const StatCard = ({ title, value, description }: StatCardProps) => {
   return (
     <div className="flex max-w-52 flex-col gap-4">
       <span className="font-medium">{title}</span>
-      <div className="text-7xl font-bold">
+      <div className="text-7xl font-semibold">
         {value}
         <span className="text-muted-foreground">+</span>
       </div>

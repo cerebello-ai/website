@@ -145,7 +145,7 @@ function AnimatedNumberCountdown({
         />
         <span className="text-sm text-gray-500">Days</span>
       </div>
-      <div className="text-2xl font-bold">:</div>
+      <div className="text-2xl font-semibold">:</div>
       <div className="flex flex-col items-center">
         <MotionNumberFlow
           value={timeLeft.hours}
@@ -154,7 +154,7 @@ function AnimatedNumberCountdown({
         />
         <span className="text-sm text-gray-500">Hours</span>
       </div>
-      <div className="text-2xl font-bold">:</div>
+      <div className="text-2xl font-semibold">:</div>
       <div className="flex flex-col items-center">
         <MotionNumberFlow
           value={timeLeft.minutes}
@@ -163,7 +163,7 @@ function AnimatedNumberCountdown({
         />
         <span className="text-sm text-gray-500">Minutes</span>
       </div>
-      <div className="text-2xl font-bold">:</div>
+      <div className="text-2xl font-semibold">:</div>
       <div className="flex flex-col items-center">
         <MotionNumberFlow
           value={timeLeft.seconds}

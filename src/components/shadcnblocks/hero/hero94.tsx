@@ -7,10 +7,10 @@ const Hero94 = () => {
     <section className="py-32">
       <div className="container">
         <div className="flex flex-col items-center text-center">
-          <span className="text-muted-foreground text-sm font-bold md:text-xl">
+          <span className="text-muted-foreground text-sm font-semibold md:text-xl">
             DECOUPLED CONTENT PLATFORM, PERFECTED
           </span>
-          <h1 className="text-foreground mt-7 max-w-5xl text-5xl font-bold tracking-tighter md:text-6xl lg:text-7xl">
+          <h1 className="text-foreground mt-7 max-w-5xl text-5xl font-semibold tracking-tighter md:text-6xl lg:text-7xl">
             In essence, the ultimate, and high-speed{' '}
             <span className="relative">
               <span className="relative z-10 whitespace-nowrap">
@@ -25,13 +25,13 @@ const Hero94 = () => {
             solution to produce and distribute web content through APIs,
             enabling seamless scalability.
           </p>
-          <div className="mt-14 flex flex-col items-stretch gap-2.5 font-bold md:text-2xl lg:flex-row">
-            <Button className="h-fit rounded px-8 py-5 text-2xl font-bold">
+          <div className="mt-14 flex flex-col items-stretch gap-2.5 font-semibold md:text-2xl lg:flex-row">
+            <Button className="h-fit rounded px-8 py-5 text-2xl font-semibold">
               Sign up for free
             </Button>
             <Button
               variant="outline"
-              className="flex h-fit items-center gap-2 rounded px-8 py-5 text-2xl font-bold"
+              className="flex h-fit items-center gap-2 rounded px-8 py-5 text-2xl font-semibold"
             >
               <span>Learn more</span>
               <MoveRight className="size-6!" />

@@ -12,7 +12,7 @@ const Feature161 = () => {
           <div className="border-muted-foreground/25 relative border-b p-6 md:p-16 lg:border-r lg:border-b-0">
             <div className="bg-muted-foreground/25 absolute top-[-16px] right-[-1px] hidden h-4 w-[1px] lg:block" />
             <div className="bg-muted-foreground/25 absolute right-[-1px] bottom-[-16px] h-4 w-[1px]" />
-            <h1 className="flex-row text-4xl font-bold">
+            <h1 className="flex-row text-4xl font-semibold">
               Award winning components
             </h1>
             <h3 className="text-muted-foreground mt-2 mb-6 text-xl">

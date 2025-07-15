@@ -57,7 +57,7 @@ const Footer5 = () => {
           <div className="grid grid-cols-2 gap-8 lg:grid-cols-4">
             {sections.map((section, sectionIdx) => (
               <div key={sectionIdx}>
-                <h3 className="mb-4 font-bold">{section.title}</h3>
+                <h3 className="mb-4 font-semibold">{section.title}</h3>
                 <ul className="text-muted-foreground space-y-4">
                   {section.links.map((link, linkIdx) => (
                     <li
@@ -74,7 +74,7 @@ const Footer5 = () => {
           <div className="mt-10 gap-10">
             <div className="grid gap-8 lg:grid-cols-4 lg:flex-row">
               <div className="col-span-3">
-                <p className="mb-3 font-bold">Follow us</p>
+                <p className="mb-3 font-semibold">Follow us</p>
                 <ul className="text-muted-foreground flex items-center gap-2">
                   <li className="font-medium">
                     <a href="#">
@@ -114,7 +114,7 @@ const Footer5 = () => {
                 </ul>
               </div>
               <div>
-                <p className="mb-3 font-bold">Mobile App</p>
+                <p className="mb-3 font-semibold">Mobile App</p>
                 <ul className="text-muted-foreground flex items-center gap-2">
                   <li className="font-medium">
                     <a href="#">

@@ -58,7 +58,9 @@ const Stats10 = ({
         {(title || description) && (
           <div className="mb-10 text-center">
             {title && (
-              <h2 className="mb-4 text-3xl font-bold md:text-4xl">{title}</h2>
+              <h2 className="mb-4 text-3xl font-semibold md:text-4xl">
+                {title}
+              </h2>
             )}
             {description && (
               <p className="text-muted-foreground text-lg">{description}</p>

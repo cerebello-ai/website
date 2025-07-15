@@ -61,7 +61,7 @@ const Timeline10 = ({
     <section className="bg-background py-32">
       <div className="container flex flex-col items-center">
         <div className="mb-10 text-center">
-          <h1 className="text-foreground text-3xl font-bold tracking-tighter sm:text-6xl">
+          <h1 className="text-foreground text-3xl font-semibold tracking-tighter sm:text-6xl">
             {title}
           </h1>
           {subtitle && (
@@ -112,7 +112,7 @@ const Timeline10 = ({
                       <p className="text-muted-foreground text-sm">
                         {phase.date}
                       </p>
-                      <h2 className="text-foreground text-xl font-bold tracking-tighter">
+                      <h2 className="text-foreground text-xl font-semibold tracking-tighter">
                         {phase.title}
                       </h2>
                       <p className="text-muted-foreground text-sm">

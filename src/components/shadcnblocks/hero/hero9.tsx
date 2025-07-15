@@ -35,7 +35,7 @@ const Hero9 = ({
       <div className="relative container">
         <div className="flex flex-col items-start text-left">
           {badge && <Badge variant="outline">{badge}</Badge>}
-          <h1 className="my-6 text-4xl font-bold text-pretty lg:text-6xl">
+          <h1 className="my-6 text-4xl font-semibold text-pretty lg:text-6xl">
             {title}
           </h1>
           <p className="text-muted-foreground mb-8 max-w-3xl lg:text-xl">

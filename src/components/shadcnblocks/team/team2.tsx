@@ -89,7 +89,7 @@ const Team2 = ({
     <section className="py-24 lg:py-32">
       <div className="container mx-auto px-4">
         <div className="mb-16 text-center">
-          <h2 className="mb-6 text-3xl font-bold tracking-tight lg:text-5xl">
+          <h2 className="mb-6 text-3xl font-semibold tracking-tight lg:text-5xl">
             {heading}
           </h2>
           <p className="text-muted-foreground mx-auto max-w-2xl text-lg leading-relaxed">

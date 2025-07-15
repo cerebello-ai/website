@@ -205,7 +205,7 @@ export default function ROIOptimizationPage() {
                 <div className="bg-mint-100 text-mint-900 mb-6 inline-flex items-center rounded-full px-4 py-2 text-sm font-medium">
                   Maximize Your AI Returns
                 </div>
-                <h1 className="mb-6 text-4xl font-bold tracking-tight sm:text-5xl md:text-6xl">
+                <h1 className="mb-6 text-4xl font-semibold tracking-tight sm:text-5xl md:text-6xl">
                   {roiOptimizationData.title}
                 </h1>
                 <p className="text-muted-foreground mb-4 text-xl">
@@ -247,7 +247,7 @@ export default function ROIOptimizationPage() {
             <div className="bg-mint-100 text-mint-900 mb-4 inline-flex items-center rounded-full px-4 py-2 text-sm font-medium">
               Overview
             </div>
-            <h2 className="mb-4 text-3xl font-bold tracking-tight sm:text-4xl md:text-5xl">
+            <h2 className="mb-4 text-3xl font-semibold tracking-tight sm:text-4xl md:text-5xl">
               Making AI Integration Pay Dividends
             </h2>
             <p className="text-muted-foreground mb-4 text-lg">

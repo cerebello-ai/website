@@ -6,7 +6,7 @@ const Testimonial2 = () => {
     <section className="py-32">
       <div className="container">
         <div className="text-center">
-          <div className="text-3xl font-bold md:text-5xl lg:text-7xl">
+          <div className="text-3xl font-semibold md:text-5xl lg:text-7xl">
             <p className="flex flex-wrap items-center justify-center">
               Begin hiring
               <span className="mx-4 inline-flex items-center -space-x-4">

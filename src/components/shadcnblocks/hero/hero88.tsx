@@ -9,7 +9,7 @@ const Hero88 = () => {
         <div className="grid grid-cols-1 gap-20">
           <div>
             <div className="flex w-full flex-col gap-6">
-              <h1 className="text-4xl font-bold sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl">
+              <h1 className="text-4xl font-semibold sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl">
                 <span className="bg-linear-to-t from-green-500 to-green-300 bg-clip-text text-transparent">
                   Hi, we're Company
                 </span>
@@ -28,7 +28,7 @@ const Hero88 = () => {
 
               {/* Buttons and Links */}
               <div className="flex flex-col items-center gap-4 py-4 sm:flex-row">
-                <Button className="w-full rounded-full px-8 py-6 text-lg font-bold sm:w-fit sm:px-12 sm:py-8">
+                <Button className="w-full rounded-full px-8 py-6 text-lg font-semibold sm:w-fit sm:px-12 sm:py-8">
                   Let's Collaborate
                 </Button>
                 <span className="text-muted-foreground text-lg sm:text-xl">

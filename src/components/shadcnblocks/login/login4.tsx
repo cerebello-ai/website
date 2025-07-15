@@ -46,7 +46,9 @@ const Login4 = () => {
               alt="logo"
               className="mb-7 h-10 w-auto"
             />
-            <h1 className="mb-2 text-2xl font-bold">Login to your account</h1>
+            <h1 className="mb-2 text-2xl font-semibold">
+              Login to your account
+            </h1>
             <p className="text-muted-foreground">
               Welcome back! Please enter your details.
             </p>

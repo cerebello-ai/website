@@ -1,5 +1,5 @@
 import { Button } from '@/components/ui/button';
-
+import Image from 'next/image';
 const Hero49 = () => {
   return (
     <section className="bg-background">
@@ -14,7 +14,7 @@ const Hero49 = () => {
             offers insights for smarter financial decisions.
           </p>
           <Button className="flex h-fit w-fit items-center gap-[8px] rounded-full px-8 py-5 text-base font-medium transition-all hover:scale-95">
-            <img
+            <Image
               alt="google play and app store download icons"
               loading="lazy"
               width="44"
@@ -29,14 +29,16 @@ const Hero49 = () => {
         <div className="relative translate-x-[14.7%]">
           {/* Image inside Iphone */}
           <div className="bg-muted-2 absolute top-[12%] left-[36.5%]! h-[67%]! w-[31%]! -translate-x-[52%] overflow-hidden rounded-[10px]">
-            <img
+            <Image
               className="min-h-full min-w-full"
               src="https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-dark-7-tall.svg"
               alt=""
+              width="1008.71"
+              height="857"
             />
           </div>
           {/* Iphone Image  */}
-          <img
+          <Image
             alt=""
             src="https://deifkwefumgah.cloudfront.net/shadcnblocks/block/hero49/iphone.png"
             className="relative z-10"

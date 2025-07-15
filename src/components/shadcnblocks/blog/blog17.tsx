@@ -128,7 +128,7 @@ const Blog17 = () => {
       <div className="container">
         <div className="flex flex-col items-center gap-6 text-center">
           <Badge variant="secondary">Blog</Badge>
-          <h1 className="text-4xl font-bold lg:text-7xl">
+          <h1 className="text-4xl font-semibold lg:text-7xl">
             Latest Insights & Updates
           </h1>
           <p className="text-balance lg:text-xl">

@@ -3,7 +3,7 @@ const Contact8 = () => {
     <section className="py-32">
       <div className="container">
         <div className="text-center">
-          <h1 className="mb-3 text-5xl font-bold">Contact</h1>
+          <h1 className="mb-3 text-5xl font-semibold">Contact</h1>
           <p className="text-muted-foreground text-lg">
             Find the right solution
           </p>

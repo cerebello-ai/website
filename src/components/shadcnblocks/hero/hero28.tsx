@@ -141,7 +141,7 @@ const Hero28 = ({
         </div>
       )}
       <div className="relative container flex flex-col items-center text-center">
-        <h1 className="my-6 text-4xl font-bold text-pretty lg:text-6xl">
+        <h1 className="my-6 text-4xl font-semibold text-pretty lg:text-6xl">
           {title}
         </h1>
         {description && (

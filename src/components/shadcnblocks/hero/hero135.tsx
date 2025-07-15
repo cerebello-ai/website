@@ -23,7 +23,7 @@ const Hero135 = () => {
             <div className="flex flex-1 flex-col gap-10">
               <div className="bg-muted-2 flex w-fit items-center gap-2 rounded-md py-2 pr-3 pl-4">
                 <MessagesSquare className="stroke-primary h-7 w-7" />
-                <div className="text-foreground text-lg font-bold">
+                <div className="text-foreground text-lg font-semibold">
                   Customer Stories
                 </div>
               </div>

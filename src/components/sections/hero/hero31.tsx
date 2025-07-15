@@ -17,7 +17,7 @@ export const Hero31 = () => {
             Netherlands-based AI Consultancy
           </Badge>
 
-          <h1 className="font-inter-tight text-foreground mb-6 text-4xl font-bold tracking-tight sm:text-5xl md:text-6xl lg:text-7xl">
+          <h1 className="font-inter-tight text-foreground mb-6 text-4xl font-semibold tracking-tight sm:text-5xl md:text-6xl lg:text-7xl">
             Empowering Businesses to{' '}
             <span className="text-primary">Work Smarter</span>
           </h1>

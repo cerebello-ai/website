@@ -49,7 +49,7 @@ const Timeline9 = ({
     <section className="bg-background py-32">
       <div className="container">
         <div className="mb-10 text-center">
-          <h1 className="text-foreground text-3xl font-bold tracking-tighter sm:text-6xl">
+          <h1 className="text-foreground text-3xl font-semibold tracking-tighter sm:text-6xl">
             {title}
           </h1>
           {subtitle && (
@@ -64,7 +64,7 @@ const Timeline9 = ({
           {timelineData.map((entry, index) => (
             <div key={index} className="relative mb-10 pl-8">
               <div className="bg-foreground absolute top-3.5 left-0 flex size-4 items-center justify-center rounded-full" />
-              <h4 className="rounded-xl py-2 text-xl font-bold tracking-tight xl:mb-4 xl:px-3">
+              <h4 className="rounded-xl py-2 text-xl font-semibold tracking-tight xl:mb-4 xl:px-3">
                 {entry.title}
               </h4>
 

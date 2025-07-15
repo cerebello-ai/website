@@ -50,7 +50,7 @@ const Hero15 = ({
             <ArrowRight className="ml-2 inline size-4 transition-transform group-hover:translate-x-0.5" />
           </a>
         )}
-        <h1 className="mx-auto my-4 mb-6 max-w-3xl text-center text-3xl font-bold lg:text-5xl">
+        <h1 className="mx-auto my-4 mb-6 max-w-3xl text-center text-3xl font-semibold lg:text-5xl">
           {title}
         </h1>
         <p className="text-muted-foreground mx-auto mb-8 max-w-2xl text-center lg:text-xl">

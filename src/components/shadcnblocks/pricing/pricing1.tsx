@@ -185,7 +185,7 @@ const Pricing1 = ({
     <section className="py-32">
       <div className="container">
         <div className="mx-auto mb-20 max-w-5xl text-center">
-          <h2 className="mb-3 text-4xl font-bold text-pretty lg:text-6xl">
+          <h2 className="mb-3 text-4xl font-semibold text-pretty lg:text-6xl">
             {title}
           </h2>
           {description && (

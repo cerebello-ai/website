@@ -106,7 +106,7 @@ const Hero64 = () => {
         <div className="flex flex-col gap-8 md:flex-row">
           <div className="mx-auto flex items-start md:mx-0 md:w-1/2 md:items-center">
             <div className="text-center md:text-left">
-              <h1 className="text-foreground text-4xl font-bold tracking-tight sm:text-5xl/tight md:text-6xl/tight">
+              <h1 className="text-foreground text-4xl font-semibold tracking-tight sm:text-5xl/tight md:text-6xl/tight">
                 Leverage the{' '}
                 <span className="bg-linear-to-tr from-gray-600 to-gray-500 bg-clip-text text-transparent">
                   influence of testimonials

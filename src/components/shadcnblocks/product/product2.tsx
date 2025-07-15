@@ -159,7 +159,9 @@ const Product2 = () => {
   return (
     <section className="py-20">
       <div className="container">
-        <h2 className="mb-12 text-3xl font-bold tracking-tight">Packages</h2>
+        <h2 className="mb-12 text-3xl font-semibold tracking-tight">
+          Packages
+        </h2>
         <div className="mt-12 space-y-2">
           {products.map((item, index) => (
             <Accordion

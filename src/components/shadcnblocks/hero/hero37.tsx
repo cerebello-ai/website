@@ -7,7 +7,7 @@ const Hero37 = () => {
     <section className="overflow-hidden py-32">
       <div className="container flex flex-col items-center text-center">
         <p className="text-xs uppercase">New Release</p>
-        <h1 className="my-3 text-2xl font-bold text-pretty sm:text-4xl md:my-6 lg:text-5xl">
+        <h1 className="my-3 text-2xl font-semibold text-pretty sm:text-4xl md:my-6 lg:text-5xl">
           Welcome to Our Website
         </h1>
         <p className="text-muted-foreground mb-6 max-w-xl md:mb-12 lg:text-xl">

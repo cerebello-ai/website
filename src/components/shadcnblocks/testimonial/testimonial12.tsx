@@ -87,7 +87,7 @@ const Testimonial12 = ({
         {(title || description) && (
           <div className="mb-12 text-center">
             {title && (
-              <h2 className="text-3xl font-bold md:text-4xl">{title}</h2>
+              <h2 className="text-3xl font-semibold md:text-4xl">{title}</h2>
             )}
             {description && (
               <p className="text-muted-foreground mt-4 text-lg">

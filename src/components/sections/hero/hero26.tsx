@@ -17,7 +17,7 @@ export const Hero26 = () => {
             AI Solutions
           </Badge>
 
-          <h1 className="font-inter-tight text-foreground mb-6 text-4xl font-bold tracking-tight sm:text-5xl md:text-6xl lg:text-7xl">
+          <h1 className="font-inter-tight text-foreground mb-6 text-4xl font-semibold tracking-tight sm:text-5xl md:text-6xl lg:text-7xl">
             Transform Your Business with{' '}
             <span className="text-primary">AI Solutions</span>
           </h1>

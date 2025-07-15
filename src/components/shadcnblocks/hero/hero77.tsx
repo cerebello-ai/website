@@ -6,7 +6,7 @@ const Hero77 = () => {
     <section className="bg-background container mx-auto py-36 text-center">
       <div className="flex flex-col gap-10">
         <div className="mx-auto flex w-full max-w-7xl flex-col items-center gap-4 px-4 pt-8 text-center md:px-6 lg:px-8 lg:pt-0">
-          <h1 className="text-foreground text-[clamp(2.1rem,7vw,4.2rem)] leading-[1.1] font-bold -tracking-[1.7px] text-balance">
+          <h1 className="text-foreground text-[clamp(2.1rem,7vw,4.2rem)] leading-[1.1] font-semibold -tracking-[1.7px] text-balance">
             Master message mayhem
           </h1>
           <h2 className="text-foreground max-w-[48rem] text-[clamp(1.2rem,3.8vw,1.7rem)] leading-[1.4] font-medium tracking-tight text-balance lg:text-wrap">

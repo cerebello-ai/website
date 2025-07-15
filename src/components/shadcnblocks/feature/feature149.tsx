@@ -28,7 +28,7 @@ const Feature149 = () => {
             >
               CRM Software
             </Button>
-            <h1 className="text-3xl font-bold text-white md:text-5xl">
+            <h1 className="text-3xl font-semibold text-white md:text-5xl">
               Streamline Sales
             </h1>
             <p className="max-w-md text-left text-white/90">
@@ -59,7 +59,7 @@ const Feature149 = () => {
             >
               Analytics Suite
             </Button>
-            <h1 className="text-left text-3xl font-bold text-white md:text-right md:text-5xl">
+            <h1 className="text-left text-3xl font-semibold text-white md:text-right md:text-5xl">
               Measure Success
             </h1>
             <p className="max-w-md text-left text-white/90 md:text-right">

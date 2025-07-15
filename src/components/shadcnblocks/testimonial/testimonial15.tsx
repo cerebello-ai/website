@@ -7,7 +7,7 @@ const Testimonial15 = () => {
       <div className="container">
         <div className="grid gap-20 lg:grid-cols-2 lg:gap-32">
           <div className="text-center lg:text-left">
-            <h1 className="mb-4 text-3xl font-bold text-balance lg:text-4xl">
+            <h1 className="mb-4 text-3xl font-semibold text-balance lg:text-4xl">
               Explore the Innovators Community Today
             </h1>
             <p className="text-muted-foreground mb-8">

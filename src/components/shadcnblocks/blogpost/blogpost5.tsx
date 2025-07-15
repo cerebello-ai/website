@@ -80,7 +80,7 @@ const Blogpost5 = () => {
             </BreadcrumbItem>
           </BreadcrumbList>
         </Breadcrumb>
-        <h1 className="mt-9 mb-7 max-w-3xl text-4xl font-bold md:mb-10 md:text-7xl">
+        <h1 className="mt-9 mb-7 max-w-3xl text-4xl font-semibold md:mb-10 md:text-7xl">
           The royal decree that made everyone laugh
         </h1>
         <div className="flex items-center gap-3 text-sm md:text-base">

@@ -117,7 +117,7 @@ const Integration6 = () => {
           <div className="flex w-full flex-col justify-between gap-5 px-10 py-5 lg:flex-row lg:items-end">
             <div className="flex-1">
               <div className="flex w-full max-w-[32rem] flex-col gap-5">
-                <h2 className="text-foreground text-[2rem] leading-none font-bold tracking-tight md:text-[2.75rem] lg:text-5xl">
+                <h2 className="text-foreground text-[2rem] leading-none font-semibold tracking-tight md:text-[2.75rem] lg:text-5xl">
                   Build Beautiful Interfaces Fast
                 </h2>
                 <p className="text-muted-foreground leading-[1.4]">

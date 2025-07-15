@@ -5,7 +5,7 @@ const About6 = () => {
         <div className="flex flex-col items-center justify-start gap-6 lg:flex-row">
           <div className="flex w-full flex-col items-start justify-start gap-24 lg:w-1/2">
             <div className="pr-6">
-              <h1 className="mb-6 text-4xl font-bold md:text-5xl lg:mb-10 lg:text-6xl">
+              <h1 className="mb-6 text-4xl font-semibold md:text-5xl lg:mb-10 lg:text-6xl">
                 Our Story
               </h1>
               <p className="mb-9 lg:text-xl">

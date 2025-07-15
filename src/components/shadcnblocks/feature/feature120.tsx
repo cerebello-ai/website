@@ -8,7 +8,7 @@ const Feature120 = () => {
       <div className="container">
         <div className="grid items-center gap-10 md:gap-20 lg:grid-cols-2">
           <div className="flex flex-col gap-2.5 py-8">
-            <h1 className="text-4xl font-bold lg:text-5xl">
+            <h1 className="text-4xl font-semibold lg:text-5xl">
               Empower your business with the best tools
             </h1>
             <p className="text-muted-foreground">

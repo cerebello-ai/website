@@ -61,7 +61,9 @@ const Feature213 = () => {
                   key={`tab-trigger-${i}`}
                   value={item.value}
                 >
-                  <div className="leading-normal font-bold">{item.title}</div>
+                  <div className="leading-normal font-semibold">
+                    {item.title}
+                  </div>
                   <div className="text-muted-foreground leading-normal">
                     {item.summary}
                   </div>
