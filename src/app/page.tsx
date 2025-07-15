@@ -1,10 +1,11 @@
+import { Brain, Zap, TrendingUp } from 'lucide-react';
+
 import { FAQ } from '@/components/sections/faq';
 import { Feature1 } from '@/components/sections/feature1';
 import Hero from '@/components/sections/hero';
 import Logos from '@/components/sections/logos';
 import Testimonials from '@/components/sections/testimonials';
 import { Logos2 } from '@/components/shadcnblocks/logos/logos2';
-import { Brain, Zap, TrendingUp } from 'lucide-react';
 
 export default function Home() {
   return (
@@ -96,7 +97,8 @@ export default function Home() {
         ]}
         rightQuestions={[
           {
-            question: 'Do you only implement AI, or do you also provide strategy?',
+            question:
+              'Do you only implement AI, or do you also provide strategy?',
             answer:
               'We offer end-to-end support from high-level strategy consulting to hands-on implementation. Unlike firms that only advise, we combine strategic insight with technical execution, ensuring continuity from AI roadmap to deployed solutions.',
           },
@@ -106,7 +108,8 @@ export default function Home() {
               'Integration is one of our core strengths. We specialize in connecting AI solutions with existing IT systems (ERP, CRM, databases) through APIs and middleware. We ensure new tools work seamlessly with your current technology stack without disrupting operations.',
           },
           {
-            question: 'What makes Cerebello different from other AI consultancies?',
+            question:
+              'What makes Cerebello different from other AI consultancies?',
             answer:
               'We combine the agility of a boutique firm with enterprise-grade professionalism. Our unique blend includes end-to-end expertise, ethical AI leadership, focus on integration & adoption, and tailored solutions instead of one-size-fits-all approaches.',
           },

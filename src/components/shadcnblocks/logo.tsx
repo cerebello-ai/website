@@ -56,8 +56,8 @@ const LogoBrandDownload = ({
       link.click();
       document.body.removeChild(link);
       window.URL.revokeObjectURL(url);
-    } catch (error) {
-      console.error('Failed to download file:', error);
+    } catch {
+      // Failed to download file
     }
   };
 

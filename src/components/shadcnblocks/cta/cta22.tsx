@@ -60,7 +60,7 @@ const Cta22 = ({
     if (onSubmit) {
       onSubmit(values);
     } else {
-      console.log(values);
+      // Handle form submission
     }
   }
 

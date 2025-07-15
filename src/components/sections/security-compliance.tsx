@@ -72,7 +72,7 @@ const SecurityCompliance = () => {
             </div>
           </div>
           <div className="grid grid-cols-3 border-t border-slate-800 md:border-t-0 md:border-l md:border-slate-800">
-            {certifications.map((cert, index) => {
+            {certifications.map((cert) => {
               const IconComponent = cert.icon;
               return (
                 <div
