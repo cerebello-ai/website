@@ -105,7 +105,7 @@ const solutions = [
       {
         id: 'subpage-6',
         title: 'Workflow Automation',
-        href: '#',
+        href: '/solutions/workflow-automation',
         icon: CheckCircle2,
       },
       {
@@ -452,7 +452,7 @@ const topicGroups = [
 const SolutionsMenu = () => (
   <div className="grid gap-8 sm:grid-cols-2">
     <a
-      href="/services/implementation"
+      href="/services/ai-scan"
       className="group bg-primary text-primary-foreground relative flex h-full flex-row overflow-hidden rounded-lg px-0 pt-8 lg:rounded-xl lg:px-6"
     >
       <div className="relative flex w-full flex-col space-y-12 text-left md:space-y-8 lg:w-full lg:flex-row lg:justify-between lg:space-y-0 lg:space-x-6 xl:space-x-12">
@@ -673,7 +673,7 @@ const CustomersMenu = () => (
   <div className="md:grid-col-2 grid gap-y-8 md:gap-x-6 lg:grid-cols-4">
     <div className="md:col-span-2">
       <a
-        href="#"
+        href="/case-studies"
         className="group bg-accent text-accent-foreground relative flex h-full flex-row overflow-hidden rounded-lg p-0 pr-0 pl-0 sm:pl-6 md:pr-6 lg:rounded-xl lg:px-6"
       >
         <div className="relative z-10 flex w-full flex-col text-left sm:flex-row sm:items-end sm:justify-between">
@@ -753,7 +753,7 @@ const CustomersMenu = () => (
       </a>
     </div>
     <a
-      href="#"
+      href="/case-studies/samsung"
       className="group bg-primary text-primary-foreground flex flex-row overflow-clip rounded-lg lg:flex lg:flex-col-reverse lg:rounded-xl"
     >
       <div className="mt-6 px-6 pb-6 text-left lg:mt-12 lg:pb-6">
@@ -937,7 +937,7 @@ const ResourcesMenu = () => (
           </div>
           <div className="absolute inset-0">
             <img
-              src="https://cdn.prod.website-files.com/659093fbff862aa0bca7bda4/65a684432fb07002b7c1385c_campaign-creators-e6n7uoEnYbA-unsplash%20(1)-p-800.jpg"
+              src="/images/layout/banner-navabar.jpg"
               alt="placeholder"
               className="h-full w-full object-cover object-center"
             />

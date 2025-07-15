@@ -5,60 +5,14 @@ import {
   AccordionTrigger,
 } from '../ui/accordion';
 
-const leftQuestions = [
-  {
-    question: 'What is Streamline?',
-    answer:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus voluptates deserunt officia temporibus dignissimos.',
-  },
-  {
-    question: 'How is Streamline different Linear and Jira?',
-    answer:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus voluptates deserunt officia temporibus dignissimos.',
-  },
-  {
-    question: 'How do I update my account ?',
-    answer:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus voluptates deserunt officia temporibus dignissimos.',
-  },
-  {
-    question: 'Is support free, or do I need to Google everything?',
-    answer:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus voluptates deserunt officia temporibus dignissimos.',
-  },
-  {
-    question: 'Are you going to be subsumed by AI?',
-    answer:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus voluptates deserunt officia temporibus dignissimos.',
-  },
-];
+interface FAQProps {
+  leftQuestions: { question: string; answer: string }[];
+  rightQuestions: { question: string; answer: string }[];
+}
 
-const rightQuestions = [
-  {
-    question: 'Are you going to be subsumed by AI?',
-    answer:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus voluptates deserunt officia temporibus dignissimos.',
-  },
-  {
-    question: 'How do I update my account?',
-    answer:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus voluptates deserunt officia temporibus dignissimos.',
-  },
-  {
-    question: 'What if I break my laptop using this app?',
-    answer:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus voluptates deserunt officia temporibus dignissimos.',
-  },
-  {
-    question: 'What is the best metaphor for using LLMs?',
-    answer:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus voluptates deserunt officia temporibus dignissimos.',
-  },
-];
-
-export const FAQ = () => {
+export const FAQ = ({ leftQuestions, rightQuestions }: FAQProps) => {
   return (
-    <section className={'pb-16 md:pb-28 lg:pb-32'}>
+    <section className={'py-16 md:py-28 lg:py-32'}>
       <div className="container mx-auto lg:max-w-5xl">
         <h2 className="text-center text-2xl font-semibold tracking-tight lg:text-3xl">
           Frequently Asked Questions

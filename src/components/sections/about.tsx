@@ -45,25 +45,28 @@ const About = () => {
         {/* Text Below Image */}
         <div className="mt-28 max-w-xl lg:mt-10 lg:translate-x-24">
           <p className="text-lg leading-6">
-            In today&apos;s rapidly evolving business landscape, AI and automation
-            are no longer optional — they&apos;re essential. We help organizations
-            navigate this transformation with confidence, turning complex technologies
-            into practical solutions that drive real results.
+            In today&apos;s rapidly evolving business landscape, AI and
+            automation are no longer optional — they&apos;re essential. We help
+            organizations navigate this transformation with confidence, turning
+            complex technologies into practical solutions that drive real
+            results.
           </p>
         </div>
 
         <div className="mt-6 space-y-6 md:mt-8 md:space-y-8 lg:mt-10 lg:space-y-10">
           {/* Dynamic System Section */}
           <h2 className="max-w-xl text-2xl leading-8 font-semibold md:text-3xl lg:translate-x-24">
-            We saw businesses struggling with outdated processes and untapped potential.
+            We saw businesses struggling with outdated processes and untapped
+            potential.
           </h2>
           <p className="max-w-xl text-lg lg:translate-x-24">
-            Traditional consulting approaches weren&apos;t delivering the transformation
-            businesses needed. We&apos;ve spent years implementing AI and automation
-            solutions across industries, witnessing firsthand how the right technology
-            can revolutionize operations. We believe every business deserves access to
-            intelligent automation that actually works. That&apos;s why we built Cerebello
-            — to bridge the gap between AI&apos;s promise and practical reality.
+            Traditional consulting approaches weren&apos;t delivering the
+            transformation businesses needed. We&apos;ve spent years
+            implementing AI and automation solutions across industries,
+            witnessing firsthand how the right technology can revolutionize
+            operations. We believe every business deserves access to intelligent
+            automation that actually works. That&apos;s why we built Cerebello —
+            to bridge the gap between AI&apos;s promise and practical reality.
           </p>
           <div className="grid gap-6 py-6 md:grid-cols-2 lg:py-10">
             <Image
@@ -82,11 +85,12 @@ const About = () => {
 
           {/* Timeline Section */}
           <p className="ml-auto max-w-xl text-lg leading-6 lg:-translate-x-24">
-            Founded in 2019, Cerebello emerged from a simple observation: while AI
-            was transforming industries, most businesses were being left behind.
-            We&apos;ve grown from a small team of AI enthusiasts to a trusted partner
-            for organizations worldwide, helping them harness the power of intelligent
-            automation to achieve operational excellence.
+            Founded in 2019, Cerebello emerged from a simple observation: while
+            AI was transforming industries, most businesses were being left
+            behind. We&apos;ve grown from a small team of AI enthusiasts to a
+            trusted partner for organizations worldwide, helping them harness
+            the power of intelligent automation to achieve operational
+            excellence.
           </p>
 
           {/* Team Section */}

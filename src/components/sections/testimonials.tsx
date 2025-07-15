@@ -23,50 +23,19 @@ import {
 } from '@/components/ui/carousel';
 import { cn } from '@/lib/utils';
 
-const TESTIMONIALS = [
-  {
-    quote:
-      "Thanks to Streamline, we're finding new leads that we never would have found with legal methods.",
-    author: 'Amy Chase, PM',
-    company: 'Mercury Finance',
-    image: '/images/homepage/testimonials/amy-chase.webp',
-    className: 'object-top',
-  },
+interface Testimonial {
+  quote: string;
+  author: string;
+  company: string;
+  image: string;
+  className?: string;
+}
 
-  {
-    quote:
-      'Founder Mode is hard enough without having a really nice project management app.',
-    author: 'Victoria Smith & Henry Vargas, Founders',
-    company: 'Mercury Finance',
-    image: '/images/homepage/testimonials/victoria-smith.webp',
-  },
-  {
-    quote:
-      'Founder Mode is hard enough without having a really nice project management app.',
-    author: 'Victoria Smith',
-    company: 'Mercury Finance',
-    image: '/images/homepage/testimonials/kevin-yam.webp',
-    className: 'object-top',
-  },
-  {
-    quote:
-      'Founder Mode is hard enough without having a really nice project management app.',
-    author: 'Henry Vargas',
-    company: 'Mercury Finance',
-    image: '/images/homepage/testimonials/kundo-marta.webp',
-    className: 'object-top',
-  },
-  {
-    quote:
-      'I was able to replace 80% of my team with Streamline bots so I can spend more time on my body.',
-    author: 'Jonas Kotara, Lead Engineer',
-    company: 'Mercury Finance',
-    image: '/images/homepage/testimonials/jonas-kotara.webp',
-    className: 'object-top',
-  },
-];
+interface TestimonialsProps {
+  testimonials: Testimonial[];
+}
 
-export default function Testimonials() {
+export default function Testimonials({ testimonials }: TestimonialsProps) {
   const [api, setApi] = useState<CarouselApi>();
   const [current, setCurrent] = useState(0);
 
@@ -113,7 +82,7 @@ export default function Testimonials() {
           >
             <div className="relative -mr-[max(2rem,calc((100vw-80rem)/2+5rem))]">
               <CarouselContent className="">
-                {TESTIMONIALS.map((testimonial, index) => (
+                {testimonials.map((testimonial, index) => (
                   <CarouselItem
                     key={index}
                     className="basis-4/5 md:basis-1/2 lg:basis-[34%]"
@@ -167,7 +136,7 @@ export default function Testimonials() {
             <div className="container">
               <div className="mt-8 flex items-center justify-between gap-4">
                 <div className="flex gap-2">
-                  {TESTIMONIALS.map((_, index) => (
+                  {testimonials.map((_, index) => (
                     <button
                       key={index}
                       className={`size-4 rounded-full transition-colors ${

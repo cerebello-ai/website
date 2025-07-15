@@ -25,7 +25,7 @@ npm run lint
 
 ## Architecture Overview
 
-This is the Cerbello website - an AI & Automation solutions company. Built with Next.js 15 App Router, the project uses static export (`output: 'export'` in next.config.ts) which generates static HTML/CSS/JS files suitable for deployment to any static hosting service.
+This is the Cerebello website - an AI & Automation solutions company. Built with Next.js 15 App Router, the project uses static export (`output: 'export'` in next.config.ts) which generates static HTML/CSS/JS files suitable for deployment to any static hosting service.
 
 ### Key Technologies
 - **Next.js 15** with App Router and Turbopack
@@ -64,3 +64,27 @@ This is the Cerbello website - an AI & Automation solutions company. Built with 
 - Images are unoptimized due to static export
 - MDX enabled for `.mdx` file support
 - ESLint configured with Prettier integration
+
+## Content Directory
+
+The `content/` directory contains markdown files with information about Cerebello's company, services, and case studies. These files are used as reference material for the website content:
+
+### Company Information
+- `COMPANY.md` - Comprehensive company profile including:
+  - Mission, vision, and core values
+  - Target industries (Manufacturing, Healthcare, Public Sector, Professional Services)
+  - Unique value proposition and brand identity
+  - Detailed services overview across AI Solutions, Process Automation, Strategy & Consultancy, and Integrations
+  - Example client scenarios and use cases
+
+### Services Documentation
+- `aI-scan-service-guide.md` - AI Scan assessment service details
+- `roi-optimization.md` - ROI Optimization service for maximizing AI investment returns
+
+### Case Studies
+Located in `content/case-studies/`:
+- `stadswerk072.md` - Municipal services automation for city of Alkmaar
+- `samssung.md` - Enterprise case study
+- `ziggo.md` - Telecommunications automation implementation
+
+These content files provide the foundation for understanding Cerebello's offerings and can be referenced when creating or updating website pages and components.

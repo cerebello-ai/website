@@ -32,7 +32,21 @@ const formFields = [
   {
     label: 'Number of employees',
     name: 'employees',
-    placeholder: 'Company name',
+    placeholder: 'e.g., 50-200',
+    type: 'text',
+    optional: true,
+  },
+  {
+    label: 'Industry',
+    name: 'industry',
+    placeholder: 'e.g., Manufacturing, Healthcare, Finance',
+    type: 'text',
+    optional: true,
+  },
+  {
+    label: 'How can we help you?',
+    name: 'helpType',
+    placeholder: 'e.g., AI Implementation Scan, Process Automation, Strategic Consulting',
     type: 'text',
     optional: true,
   },
@@ -49,43 +63,52 @@ export default function Contact() {
     <section className="py-16 md:py-28 lg:py-32">
       <div className="container max-w-4xl">
         <h1 className="text-center text-4xl font-semibold tracking-tight sm:text-5xl">
-          Contact us
+          Contact Cerebello
         </h1>
         <p className="text-muted-foreground mt-4 text-center">
-          Hopefully this form gets through our spam filters.
+          Ready to transform your business with AI-powered automation? Get in touch with our team of experts.
         </p>
 
         <div className="mt-8 flex max-md:flex-col md:mt-12 md:divide-x lg:mt-20">
           {/* Contact Information */}
           <div className="space-y-10 md:pe-14">
             <div>
-              <h2 className="text-lg font-semibold">Corporate office</h2>
+              <h2 className="text-lg font-semibold">Netherlands Office</h2>
               <p className="text-muted-foreground mt-3 text-lg font-medium tracking-tight">
-                1 Carlsberg Close
+                Amsterdam, Netherlands
                 <br />
-                1260 Hillview, Australia
+                Serving clients across Europe and globally
               </p>
             </div>
 
             <div>
-              <h2 className="text-lg font-semibold">Email us</h2>
+              <h2 className="text-lg font-semibold">Get in touch</h2>
               <div className="mt-3 space-y-2">
                 <div>
-                  <p>Careers</p>
+                  <p>General inquiries</p>
                   <Link
-                    href="mailto:careers@streamline.com"
+                    href="mailto:info@cerebello.nl"
                     className="text-muted-foreground mt-3 text-lg font-medium tracking-tight"
                   >
-                    careers@streamline.com
+                    info@cerebello.nl
                   </Link>
                 </div>
                 <div>
-                  <p>Press</p>
+                  <p>AI Implementation Scan</p>
                   <Link
-                    href="mailto:press@streamline.com"
+                    href="mailto:scan@cerebello.nl"
                     className="text-muted-foreground mt-3 text-lg font-medium tracking-tight"
                   >
-                    press@streamline.com
+                    scan@cerebello.nl
+                  </Link>
+                </div>
+                <div>
+                  <p>Partnership opportunities</p>
+                  <Link
+                    href="mailto:partners@cerebello.nl"
+                    className="text-muted-foreground mt-3 text-lg font-medium tracking-tight"
+                  >
+                    partners@cerebello.nl
                   </Link>
                 </div>
               </div>
@@ -118,7 +141,10 @@ export default function Contact() {
 
           {/* Inquiry Form */}
           <div className="flex-1 md:ps-8">
-            <h2 className="text-lg font-semibold">Inquiries</h2>
+            <h2 className="text-lg font-semibold">Start Your AI Journey</h2>
+            <p className="text-muted-foreground mt-2 text-sm">
+              Tell us about your business challenges and we'll show you how AI and automation can help.
+            </p>
             <form className="mt-5 space-y-5">
               {formFields.map((field) => (
                 <div key={field.name} className="flex flex-col gap-2">

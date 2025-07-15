@@ -120,7 +120,9 @@ const Hero = () => {
           </div>
 
           <div className="flex flex-wrap items-center gap-4">
-            <Button aria-label="Schedule AI Scan">Schedule AI Scan</Button>
+            <Button asChild aria-label="Schedule AI Scan">
+              <Link href="/service/ai-scan">Schedule AI Scan</Link>
+            </Button>
             <Link href="#cerbello-solutions">
               <Button
                 aria-label="Learn about our AI Center of Excellence"
