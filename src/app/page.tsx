@@ -28,40 +28,40 @@ export default function Home() {
         testimonials={[
           {
             quote:
-              "Thanks to Streamline, we're finding new leads that we never would have found with legal methods.",
-            author: 'Amy Chase, PM',
-            company: 'Mercury Finance',
+              "Cerebello's AI-powered email solution reduced our response times by 75% while maintaining 100% data security compliance. A game-changer for our operations.",
+            author: 'Park Min-jun, IT Director',
+            company: 'Samsung Electronics',
             image: '/images/homepage/testimonials/amy-chase.webp',
             className: 'object-top',
           },
           {
             quote:
-              'Founder Mode is hard enough without having a really nice project management app.',
-            author: 'Victoria Smith & Henry Vargas, Founders',
-            company: 'Mercury Finance',
+              'The AI-driven automation implemented by Cerebello cut our processing time by 60% and improved response times by 40%. Exceptional results.',
+            author: 'Sophie van der Berg, Operations Manager',
+            company: 'Ziggo',
             image: '/images/homepage/testimonials/victoria-smith.webp',
           },
           {
             quote:
-              'Founder Mode is hard enough without having a really nice project management app.',
-            author: 'Victoria Smith',
-            company: 'Mercury Finance',
+              'Our AI assistant now handles 70% of citizen queries autonomously, dramatically improving resident satisfaction and freeing our team for complex cases.',
+            author: 'Jan de Vries, Digital Innovation Lead',
+            company: 'Stadswerk072 (City of Alkmaar)',
             image: '/images/homepage/testimonials/kevin-yam.webp',
             className: 'object-top',
           },
           {
             quote:
-              'Founder Mode is hard enough without having a really nice project management app.',
-            author: 'Henry Vargas',
-            company: 'Mercury Finance',
+              "Cerebello's strategic approach to AI implementation delivered 200% ROI in the first year. Their expertise in both technology and business transformation is unmatched.",
+            author: 'Emma Thompson, CEO',
+            company: 'TechFlow Solutions',
             image: '/images/homepage/testimonials/kundo-marta.webp',
             className: 'object-top',
           },
           {
             quote:
-              'I was able to replace 80% of my team with Streamline bots so I can spend more time on my body.',
-            author: 'Jonas Kotara, Lead Engineer',
-            company: 'Mercury Finance',
+              'From AI scan to deployment, Cerebello guided us through every step. Their ethical AI approach and GDPR compliance gave us complete confidence.',
+            author: 'Dr. Hendrik Muller, CTO',
+            company: 'MedCare Netherlands',
             image: '/images/homepage/testimonials/jonas-kotara.webp',
             className: 'object-top',
           },
