@@ -2,6 +2,7 @@
 
 import { Fragment, useState } from 'react';
 
+import Link from 'next/link';
 import {
   AppWindow,
   ArrowLeft,
@@ -1093,8 +1094,11 @@ const Navbar4 = () => {
               </NavigationMenuList>
             </div>
             <div className="flex items-center gap-2">
-              <Button className="hidden md:block" size="sm">
-                Get Started
+              <Button asChild className="hidden md:flex" size="sm">
+                <Link href="/services/ai-scan">
+                  Schedule AI Scan
+                  <ArrowRight className="ml-2 h-4 w-4" />
+                </Link>
               </Button>
               <Button
                 variant="ghost"

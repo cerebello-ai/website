@@ -7,6 +7,13 @@ import Logos from '@/components/sections/logos';
 import Testimonials from '@/components/sections/testimonials';
 import { Logos2 } from '@/components/shadcnblocks/logos/logos2';
 
+// Environment-based client filtering
+const VISIBLE_CLIENTS = process.env.NEXT_PUBLIC_VISIBLE_CLIENTS
+  ? process.env.NEXT_PUBLIC_VISIBLE_CLIENTS.split(',').map((client) =>
+      client.trim(),
+    )
+  : ['samsung', 'ziggo', 'stadswerk072', 'techflow', 'medcare']; // default to all clients
+
 export default function Home() {
   return (
     <>
@@ -27,6 +34,7 @@ export default function Home() {
       <Testimonials
         testimonials={[
           {
+            slug: 'samsung',
             quote:
               "Cerebello's AI-powered email solution reduced our response times by 75% while maintaining 100% data security compliance. A game-changer for our operations.",
             author: 'Park Min-jun, IT Director',
@@ -35,6 +43,7 @@ export default function Home() {
             className: 'object-top',
           },
           {
+            slug: 'ziggo',
             quote:
               'The AI-driven automation implemented by Cerebello cut our processing time by 60% and improved response times by 40%. Exceptional results.',
             author: 'Sophie van der Berg, Operations Manager',
@@ -42,6 +51,7 @@ export default function Home() {
             image: '/images/homepage/testimonials/victoria-smith.webp',
           },
           {
+            slug: 'stadswerk072',
             quote:
               'Our AI assistant now handles 70% of citizen queries autonomously, dramatically improving resident satisfaction and freeing our team for complex cases.',
             author: 'Jan de Vries, Digital Innovation Lead',
@@ -50,6 +60,7 @@ export default function Home() {
             className: 'object-top',
           },
           {
+            slug: 'techflow',
             quote:
               "Cerebello's strategic approach to AI implementation delivered 200% ROI in the first year. Their expertise in both technology and business transformation is unmatched.",
             author: 'Emma Thompson, CEO',
@@ -58,6 +69,7 @@ export default function Home() {
             className: 'object-top',
           },
           {
+            slug: 'medcare',
             quote:
               'From AI scan to deployment, Cerebello guided us through every step. Their ethical AI approach and GDPR compliance gave us complete confidence.',
             author: 'Dr. Hendrik Muller, CTO',
@@ -65,7 +77,7 @@ export default function Home() {
             image: '/images/homepage/testimonials/jonas-kotara.webp',
             className: 'object-top',
           },
-        ]}
+        ].filter((testimonial) => VISIBLE_CLIENTS.includes(testimonial.slug))}
       />
       <FAQ
         leftQuestions={[

@@ -24,6 +24,7 @@ import {
 import { cn } from '@/lib/utils';
 
 interface Testimonial {
+  slug: string;
   quote: string;
   author: string;
   company: string;
@@ -58,8 +59,8 @@ export default function Testimonials({ testimonials }: TestimonialsProps) {
           </h2>
           <div className="flex flex-1 flex-col items-start gap-3 md:max-w-md md:self-end">
             <p className="text-lg font-medium text-gray-700 dark:text-gray-300">
-              Cerebello empowers organizations across industries to harness AI and
-              automation for operational excellence, driving efficiency and
+              Cerebello empowers organizations across industries to harness AI
+              and automation for operational excellence, driving efficiency and
               sustainable growth.
             </p>
             <Button asChild variant="outline" className="group">
