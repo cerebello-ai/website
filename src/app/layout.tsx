@@ -61,7 +61,7 @@ export const metadata: Metadata = {
     siteName: 'Cerbello',
     images: [
       {
-        url: '/og-image.jpg',
+        url: '/og-image.png',
         width: 1200,
         height: 630,
         alt: 'Cerbello - AI & Automation Solutions',
@@ -73,7 +73,7 @@ export const metadata: Metadata = {
     title: 'Cerbello - AI & Automation Solutions',
     description:
       'Empower your company to work smarter through automation and AI. Custom AI & Automation solutions that drive efficiency and unlock growth opportunities.',
-    images: ['/og-image.jpg'],
+    images: ['/og-image.png'],
     creator: '@cerbello',
   },
 };

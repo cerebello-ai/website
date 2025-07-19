@@ -7,7 +7,7 @@ Streamline NextJS Template is a premium template built by https://www.shadcnbloc
 
 ## Screenshot
 
-![Streamline NextJS Template screenshot](./public/og-image.jpg)
+![Streamline NextJS Template screenshot](./public/og-image.png)
 
 ## Getting Started
 
