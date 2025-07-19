@@ -19,8 +19,8 @@ const interTight = Inter_Tight({
 
 export const metadata: Metadata = {
   title: {
-    default: 'Cerbello - AI & Automation Solutions',
-    template: '%s | Cerbello',
+    default: 'Cerebello - AI & Automation Solutions',
+    template: '%s | Cerebello',
   },
   description:
     'Empower your company to work smarter through automation and AI. Custom AI & Automation solutions that drive efficiency and unlock growth opportunities.',
@@ -36,9 +36,9 @@ export const metadata: Metadata = {
     'Low-code Development',
     'iPaaS Integration',
   ],
-  authors: [{ name: 'Cerbello Team' }],
-  creator: 'Cerbello',
-  publisher: 'Cerbello',
+  authors: [{ name: 'Cerebello Team' }],
+  creator: 'Cerebello',
+  publisher: 'Cerebello',
   robots: {
     index: true,
     follow: true,
@@ -55,26 +55,26 @@ export const metadata: Metadata = {
     shortcut: [{ url: '/favicon/favicon.ico' }],
   },
   openGraph: {
-    title: 'Cerbello - AI & Automation Solutions',
+    title: 'Cerebello - AI & Automation Solutions',
     description:
       'Empower your company to work smarter through automation and AI. Custom AI & Automation solutions that drive efficiency and unlock growth opportunities.',
-    siteName: 'Cerbello',
+    siteName: 'Cerebello',
     images: [
       {
         url: '/og-image.png',
         width: 1200,
         height: 630,
-        alt: 'Cerbello - AI & Automation Solutions',
+        alt: 'Cerebello - AI & Automation Solutions',
       },
     ],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Cerbello - AI & Automation Solutions',
+    title: 'Cerebello - AI & Automation Solutions',
     description:
       'Empower your company to work smarter through automation and AI. Custom AI & Automation solutions that drive efficiency and unlock growth opportunities.',
     images: ['/og-image.png'],
-    creator: '@cerbello',
+    creator: '@Cerebello',
   },
 };
 

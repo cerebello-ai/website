@@ -1030,7 +1030,7 @@ const Navbar4 = () => {
                 className="h-7 w-auto"
               />
               {/* <span className="text-lg font-semibold tracking-tighter">
-                Cerbello
+                Cerebello
               </span> */}
             </a>
             <div className="flex items-center gap-2 xl:gap-8">

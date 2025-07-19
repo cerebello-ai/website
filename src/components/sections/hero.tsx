@@ -123,7 +123,7 @@ const Hero = () => {
             <Button asChild aria-label="Schedule AI Scan">
               <Link href="/service/ai-scan">Schedule AI Scan</Link>
             </Button>
-            <Link href="#cerbello-solutions">
+            <Link href="#Cerebello-solutions">
               <Button
                 aria-label="Learn about our AI Center of Excellence"
                 variant="outline"
@@ -161,7 +161,7 @@ const Hero = () => {
                   <div className="relative size-full min-h-[30rem] overflow-hidden rounded-t-xl">
                     <Image
                       src={slide.image}
-                      alt={`Cerbello AI platform showing ${slide.label}`}
+                      alt={`Cerebello AI platform showing ${slide.label}`}
                       fill
                       className="object-cover object-left-top"
                       priority={index === 0}

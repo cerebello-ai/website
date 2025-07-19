@@ -21,7 +21,7 @@ export default function Home() {
       <Logos />
       <Feature1
         title="AI & Automation tailored for modern enterprises"
-        description="Cerbello merges AI with data management to transform challenges into growth opportunities. Our tailored, ethical solutions unlock insights and drive sustainable success."
+        description="Cerebello merges AI with data management to transform challenges into growth opportunities. Our tailored, ethical solutions unlock insights and drive sustainable success."
         metrics={[
           { value: '75%', label: 'Efficiency Increase', icon: Zap },
           { value: '60%', label: 'Cost Reduction', icon: TrendingUp },

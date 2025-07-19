@@ -90,7 +90,7 @@ export const Footer = () => {
         <div className="container py-8">
           <div className="flex flex-wrap items-center justify-between gap-2">
             <p className="font-medium">
-              © {new Date().getFullYear()} Cerbello. All rights reserved.
+              © {new Date().getFullYear()} Cerebello. All rights reserved.
             </p>
             <div className="flex items-center gap-6">
               {socialLinks.map((link) => (
