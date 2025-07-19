@@ -3,8 +3,9 @@
 export interface ButtonProps {
   text?: string;
   href?: string;
-  variant?: 'primary' | 'secondary' | 'outline';
+  variant?: 'primary' | 'secondary' | 'outline' | 'ghost';
   size?: 'sm' | 'md' | 'lg';
+  icon?: string;
 }
 
 export interface FeatureItem {

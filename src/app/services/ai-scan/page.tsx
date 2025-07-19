@@ -1,3 +1,5 @@
+import Link from 'next/link';
+
 import {
   Search,
   ChartBar,
@@ -9,14 +11,7 @@ import {
 import { Metadata } from 'next';
 
 import { Alert, AlertDescription, AlertTitle } from '@/components/ui/alert';
-import {
-  Breadcrumb,
-  BreadcrumbItem,
-  BreadcrumbLink,
-  BreadcrumbList,
-  BreadcrumbPage,
-  BreadcrumbSeparator,
-} from '@/components/ui/breadcrumb';
+import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
 import {
   Card,
@@ -26,8 +21,6 @@ import {
   CardTitle,
 } from '@/components/ui/card';
 import { Separator } from '@/components/ui/separator';
-import { Badge } from '@/components/ui/badge';
-import Link from 'next/link';
 
 export const metadata: Metadata = {
   title: 'AI Scan Service - Discover AI Opportunities | Cerebello',

@@ -28,6 +28,7 @@ const eslintConfig = [
   {
     rules: {
       '@next/next/no-html-link-for-pages': 'off',
+      '@next/next/no-img-element': 'off',
       'react/jsx-key': 'off',
       'react/display-name': 'off',
       'import/no-named-as-default-member': 'off',
@@ -46,38 +47,6 @@ const eslintConfig = [
       '@typescript-eslint/no-empty-object-type': 'off',
       'react/no-unescaped-entities': 'off',
       'no-console': 'error',
-      'import/order': [
-        'error',
-        {
-          groups: [
-            ['builtin', 'external'],
-            ['internal', 'parent', 'sibling', 'index'],
-          ],
-          pathGroups: [
-            {
-              pattern: 'react',
-              group: 'builtin',
-              position: 'before',
-            },
-            {
-              pattern: 'next/**',
-              group: 'builtin',
-              position: 'before',
-            },
-            {
-              pattern: '@/**',
-              group: 'internal',
-              position: 'after',
-            },
-          ],
-          pathGroupsExcludedImportTypes: ['builtin'],
-          'newlines-between': 'always',
-          alphabetize: {
-            order: 'asc',
-            caseInsensitive: true,
-          },
-        },
-      ],
     },
   },
 ];

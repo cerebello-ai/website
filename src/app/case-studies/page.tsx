@@ -1,12 +1,11 @@
 import Image from 'next/image';
 import Link from 'next/link';
 
+import { Euro, Clock, CheckCircle } from 'lucide-react';
 import { Metadata } from 'next';
 
-import { Cta4 } from '@/components/shadcnblocks/cta/cta4';
 import { Feature1 } from '@/components/sections/feature1';
-import { LucideIcon } from 'lucide-react';
-import { Euro, Clock, CheckCircle, Star } from 'lucide-react';
+import { Cta4 } from '@/components/shadcnblocks/cta/cta4';
 
 export const metadata: Metadata = {
   title: 'Case Studies | Real AI Success Stories | Cerebello',
@@ -137,13 +136,6 @@ const caseStudiesData = {
       'ROI projections',
     ],
   },
-};
-
-const additionalMetricsIcons: Record<string, LucideIcon> = {
-  'Total Cost Savings': Euro,
-  'Hours Automated': Clock,
-  'Implementation Success': CheckCircle,
-  'Client Rating': Star,
 };
 
 export default function CaseStudiesPage() {

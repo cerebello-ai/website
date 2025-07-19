@@ -24,6 +24,7 @@ import {
 import { cn } from '@/lib/utils';
 
 interface Testimonial {
+  slug: string;
   quote: string;
   author: string;
   company: string;
@@ -54,17 +55,17 @@ export default function Testimonials({ testimonials }: TestimonialsProps) {
           <h2 className="flex-1 text-3xl font-semibold tracking-tight text-balance sm:text-4xl md:text-5xl lg:text-6xl">
             Trusted by
             <br />
-            product builders
+            forward-thinking businesses
           </h2>
           <div className="flex flex-1 flex-col items-start gap-3 md:max-w-md md:self-end">
             <p className="text-lg font-medium text-gray-700 dark:text-gray-300">
-              Streamline is built on the habits that make the best product teams
-              successful: staying focused, moving quickly, and always aiming for
-              high-quality work.
+              Cerebello empowers organizations across industries to harness AI
+              and automation for operational excellence, driving efficiency and
+              sustainable growth.
             </p>
             <Button asChild variant="outline" className="group">
-              <Link href="/customer-stories">
-                Read our Customer Stories
+              <Link href="/case-studies">
+                View Our Case Studies
                 <ArrowRight className="ml-2 size-4 transition-transform group-hover:translate-x-1" />
               </Link>
             </Button>

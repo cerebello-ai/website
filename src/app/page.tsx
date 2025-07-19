@@ -1,10 +1,18 @@
+import { Brain, Zap, TrendingUp } from 'lucide-react';
+
 import { FAQ } from '@/components/sections/faq';
 import { Feature1 } from '@/components/sections/feature1';
 import Hero from '@/components/sections/hero';
 import Logos from '@/components/sections/logos';
 import Testimonials from '@/components/sections/testimonials';
 import { Logos2 } from '@/components/shadcnblocks/logos/logos2';
-import { Brain, Zap, TrendingUp } from 'lucide-react';
+
+// Environment-based client filtering
+const VISIBLE_CLIENTS = process.env.NEXT_PUBLIC_VISIBLE_CLIENTS
+  ? process.env.NEXT_PUBLIC_VISIBLE_CLIENTS.split(',').map((client) =>
+      client.trim(),
+    )
+  : ['samsung', 'ziggo', 'stadswerk072', 'techflow', 'medcare']; // default to all clients
 
 export default function Home() {
   return (
@@ -26,45 +34,50 @@ export default function Home() {
       <Testimonials
         testimonials={[
           {
+            slug: 'samsung',
             quote:
-              "Thanks to Streamline, we're finding new leads that we never would have found with legal methods.",
-            author: 'Amy Chase, PM',
-            company: 'Mercury Finance',
+              "Cerebello's AI-powered email solution reduced our response times by 75% while maintaining 100% data security compliance. A game-changer for our operations.",
+            author: 'Park Min-jun, IT Director',
+            company: 'Samsung Electronics',
             image: '/images/homepage/testimonials/amy-chase.webp',
             className: 'object-top',
           },
           {
+            slug: 'ziggo',
             quote:
-              'Founder Mode is hard enough without having a really nice project management app.',
-            author: 'Victoria Smith & Henry Vargas, Founders',
-            company: 'Mercury Finance',
+              'The AI-driven automation implemented by Cerebello cut our processing time by 60% and improved response times by 40%. Exceptional results.',
+            author: 'Sophie van der Berg, Operations Manager',
+            company: 'Ziggo',
             image: '/images/homepage/testimonials/victoria-smith.webp',
           },
           {
+            slug: 'stadswerk072',
             quote:
-              'Founder Mode is hard enough without having a really nice project management app.',
-            author: 'Victoria Smith',
-            company: 'Mercury Finance',
+              'Our AI assistant now handles 70% of citizen queries autonomously, dramatically improving resident satisfaction and freeing our team for complex cases.',
+            author: 'Jan de Vries, Digital Innovation Lead',
+            company: 'Stadswerk072 (City of Alkmaar)',
             image: '/images/homepage/testimonials/kevin-yam.webp',
             className: 'object-top',
           },
           {
+            slug: 'techflow',
             quote:
-              'Founder Mode is hard enough without having a really nice project management app.',
-            author: 'Henry Vargas',
-            company: 'Mercury Finance',
+              "Cerebello's strategic approach to AI implementation delivered 200% ROI in the first year. Their expertise in both technology and business transformation is unmatched.",
+            author: 'Emma Thompson, CEO',
+            company: 'TechFlow Solutions',
             image: '/images/homepage/testimonials/kundo-marta.webp',
             className: 'object-top',
           },
           {
+            slug: 'medcare',
             quote:
-              'I was able to replace 80% of my team with Streamline bots so I can spend more time on my body.',
-            author: 'Jonas Kotara, Lead Engineer',
-            company: 'Mercury Finance',
+              'From AI scan to deployment, Cerebello guided us through every step. Their ethical AI approach and GDPR compliance gave us complete confidence.',
+            author: 'Dr. Hendrik Muller, CTO',
+            company: 'MedCare Netherlands',
             image: '/images/homepage/testimonials/jonas-kotara.webp',
             className: 'object-top',
           },
-        ]}
+        ].filter((testimonial) => VISIBLE_CLIENTS.includes(testimonial.slug))}
       />
       <FAQ
         leftQuestions={[
@@ -96,7 +109,8 @@ export default function Home() {
         ]}
         rightQuestions={[
           {
-            question: 'Do you only implement AI, or do you also provide strategy?',
+            question:
+              'Do you only implement AI, or do you also provide strategy?',
             answer:
               'We offer end-to-end support from high-level strategy consulting to hands-on implementation. Unlike firms that only advise, we combine strategic insight with technical execution, ensuring continuity from AI roadmap to deployed solutions.',
           },
@@ -106,7 +120,8 @@ export default function Home() {
               'Integration is one of our core strengths. We specialize in connecting AI solutions with existing IT systems (ERP, CRM, databases) through APIs and middleware. We ensure new tools work seamlessly with your current technology stack without disrupting operations.',
           },
           {
-            question: 'What makes Cerebello different from other AI consultancies?',
+            question:
+              'What makes Cerebello different from other AI consultancies?',
             answer:
               'We combine the agility of a boutique firm with enterprise-grade professionalism. Our unique blend includes end-to-end expertise, ethical AI leadership, focus on integration & adoption, and tailored solutions instead of one-size-fits-all approaches.',
           },

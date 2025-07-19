@@ -46,7 +46,8 @@ const formFields = [
   {
     label: 'How can we help you?',
     name: 'helpType',
-    placeholder: 'e.g., AI Implementation Scan, Process Automation, Strategic Consulting',
+    placeholder:
+      'e.g., AI Implementation Scan, Process Automation, Strategic Consulting',
     type: 'text',
     optional: true,
   },
@@ -66,7 +67,8 @@ export default function Contact() {
           Contact Cerebello
         </h1>
         <p className="text-muted-foreground mt-4 text-center">
-          Ready to transform your business with AI-powered automation? Get in touch with our team of experts.
+          Ready to transform your business with AI-powered automation? Get in
+          touch with our team of experts.
         </p>
 
         <div className="mt-8 flex max-md:flex-col md:mt-12 md:divide-x lg:mt-20">
@@ -143,7 +145,8 @@ export default function Contact() {
           <div className="flex-1 md:ps-8">
             <h2 className="text-lg font-semibold">Start Your AI Journey</h2>
             <p className="text-muted-foreground mt-2 text-sm">
-              Tell us about your business challenges and we'll show you how AI and automation can help.
+              Tell us about your business challenges and we'll show you how AI
+              and automation can help.
             </p>
             <form className="mt-5 space-y-5">
               {formFields.map((field) => (
