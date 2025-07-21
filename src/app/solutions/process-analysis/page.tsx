@@ -37,21 +37,24 @@ export const metadata: Metadata = {
 const testimonials = [
   {
     slug: 'manufacturing-excellence',
-    quote: 'Cerebello\'s process analysis revealed inefficiencies we never knew existed. Their methodology helped us achieve 35% efficiency gains and identified multiple automation opportunities.',
+    quote:
+      "Cerebello's process analysis revealed inefficiencies we never knew existed. Their methodology helped us achieve 35% efficiency gains and identified multiple automation opportunities.",
     author: 'Sarah Johnson',
     company: 'Manufacturing Excellence Corp',
     image: '/images/homepage/testimonials/amy-chase.webp',
   },
   {
     slug: 'global-logistics',
-    quote: 'The detailed process mapping and analysis transformed our operations. We eliminated major bottlenecks and streamlined our workflows significantly.',
+    quote:
+      'The detailed process mapping and analysis transformed our operations. We eliminated major bottlenecks and streamlined our workflows significantly.',
     author: 'Michael Chen',
     company: 'Global Logistics Solutions',
     image: '/images/homepage/testimonials/victoria-smith.webp',
   },
   {
     slug: 'financial-services',
-    quote: 'Their systematic approach to process analysis provided us with clear, data-driven insights. The automation opportunities they identified are delivering excellent ROI.',
+    quote:
+      'Their systematic approach to process analysis provided us with clear, data-driven insights. The automation opportunities they identified are delivering excellent ROI.',
     author: 'Emily Rodriguez',
     company: 'Premier Financial Services',
     image: '/images/homepage/testimonials/kevin-yam.webp',
@@ -64,37 +67,43 @@ const methodologySteps = [
     step: '01',
     title: 'Discovery',
     subtitle: 'Business Context Analysis',
-    description: 'Understand your business goals and identify target processes for analysis through stakeholder interviews and documentation review. We combine documented facts with on-the-ground insights to build a complete picture.',
+    description:
+      'Understand your business goals and identify target processes for analysis through stakeholder interviews and documentation review. We combine documented facts with on-the-ground insights to build a complete picture.',
   },
   {
     step: '02',
     title: 'Mapping',
     subtitle: 'Process Visualization',
-    description: 'Create detailed flowcharts and BPMN diagrams to document every step, decision point, and handoff in your workflows. This makes the invisible visible and helps spot bottlenecks.',
+    description:
+      'Create detailed flowcharts and BPMN diagrams to document every step, decision point, and handoff in your workflows. This makes the invisible visible and helps spot bottlenecks.',
   },
   {
     step: '03',
     title: 'Assessment',
     subtitle: 'Performance Evaluation',
-    description: 'Analyze cycle times, throughput, error rates, and other metrics to quantify current performance and identify improvement areas. We establish baselines for measuring future improvements.',
+    description:
+      'Analyze cycle times, throughput, error rates, and other metrics to quantify current performance and identify improvement areas. We establish baselines for measuring future improvements.',
   },
   {
     step: '04',
     title: 'Engagement',
     subtitle: 'Stakeholder Collaboration',
-    description: 'Hold collaborative workshops with cross-functional teams to validate findings and get input on solutions. This builds buy-in and ensures all perspectives are considered.',
+    description:
+      'Hold collaborative workshops with cross-functional teams to validate findings and get input on solutions. This builds buy-in and ensures all perspectives are considered.',
   },
   {
     step: '05',
     title: 'Automation',
     subtitle: 'AI Opportunity Identification',
-    description: 'Identify specific tasks ideal for automation using our expertise in RPA and intelligent automation. We assess feasibility and potential ROI for each opportunity.',
+    description:
+      'Identify specific tasks ideal for automation using our expertise in RPA and intelligent automation. We assess feasibility and potential ROI for each opportunity.',
   },
   {
     step: '06',
     title: 'Roadmap',
     subtitle: 'Implementation Plan',
-    description: 'Deliver a data-backed improvement roadmap with prioritized initiatives, automation opportunities, and expected ROI. Includes detailed implementation timelines and resource requirements.',
+    description:
+      'Deliver a data-backed improvement roadmap with prioritized initiatives, automation opportunities, and expected ROI. Includes detailed implementation timelines and resource requirements.',
   },
 ];
 
@@ -109,7 +118,8 @@ const processStats = [
 const processBenefits = [
   {
     title: 'Process Optimization',
-    description: 'Streamline workflows for maximum efficiency and reduced waste',
+    description:
+      'Streamline workflows for maximum efficiency and reduced waste',
   },
   {
     title: 'Bottleneck Identification',
@@ -142,20 +152,37 @@ export default function ProcessAnalysisPage() {
 
             <div className="font-inter space-y-6 text-lg leading-relaxed">
               <p>
-                At Cerebello, we help you uncover how work really happens inside your business so you can make it faster, smarter, and ready for automation. Our Process Analysis service dives deep into your operations to identify inefficiencies, map out workflows, and highlight opportunities for AI and automation. The result? Leaner processes, fewer bottlenecks, and better alignment with your strategic goals.
+                At Cerebello, we help you uncover how work really happens inside
+                your business so you can make it faster, smarter, and ready for
+                automation. Our Process Analysis service dives deep into your
+                operations to identify inefficiencies, map out workflows, and
+                highlight opportunities for AI and automation. The result?
+                Leaner processes, fewer bottlenecks, and better alignment with
+                your strategic goals.
               </p>
 
               <p>
-                Whether you're dealing with delays, manual work, or unclear handoffs, we bring clarity and actionable insights. We work closely with your team to visualize current workflows, analyze performance, and co-create an improvement roadmap, often pinpointing areas where automation or intelligent tooling can deliver immediate value.
+                Whether you're dealing with delays, manual work, or unclear
+                handoffs, we bring clarity and actionable insights. We work
+                closely with your team to visualize current workflows, analyze
+                performance, and co-create an improvement roadmap, often
+                pinpointing areas where automation or intelligent tooling can
+                deliver immediate value.
               </p>
 
               <p>
-                What sets us apart is our blend of business insight and technical expertise. We don't just recommend change, we design it with your people in mind. Every analysis is practical, data-driven, and built to support long-term transformation. If you're looking to streamline operations, reduce cost, and prepare for scalable AI adoption, it starts here.
+                What sets us apart is our blend of business insight and
+                technical expertise. We don't just recommend change, we design
+                it with your people in mind. Every analysis is practical,
+                data-driven, and built to support long-term transformation. If
+                you're looking to streamline operations, reduce cost, and
+                prepare for scalable AI adoption, it starts here.
               </p>
 
               <div className="bg-sand-50 mt-8 rounded-lg p-6">
                 <p className="font-inter-tight text-sand-900 text-xl font-medium">
-                  Let's simplify what's slowing you down. Book a free consultation today.
+                  Let's simplify what's slowing you down. Book a free
+                  consultation today.
                 </p>
                 <Button
                   variant="outline"

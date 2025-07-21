@@ -52,18 +52,18 @@ const defaultStages: Stage[] = [
     number: '05',
     title: 'Post-Implementation Support',
     description:
-      'Our engagement doesn\'t end at go-live. We provide ongoing support, monitoring, and continuous improvement. We ensure knowledge transfer for long-term self-sufficiency while remaining available for periodic health checks, scalability planning, and enhancements as your business evolves.',
+      "Our engagement doesn't end at go-live. We provide ongoing support, monitoring, and continuous improvement. We ensure knowledge transfer for long-term self-sufficiency while remaining available for periodic health checks, scalability planning, and enhancements as your business evolves.",
     icon: HeadphonesIcon,
   },
 ];
 
 export const FeatureRoadmapStages = ({
-  badge = "Full Project Lifecycle",
-  title = "Our Implementation Roadmap Stages",
-  description = "From discovery to support, we cover every phase of your transformation journey",
+  badge = 'Full Project Lifecycle',
+  title = 'Our Implementation Roadmap Stages',
+  description = 'From discovery to support, we cover every phase of your transformation journey',
   stages = defaultStages,
-  imageUrl = "https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=2370&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-  imageAlt = "Team collaboration on implementation roadmap"
+  imageUrl = 'https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=2370&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+  imageAlt = 'Team collaboration on implementation roadmap',
 }: FeatureRoadmapStagesProps) => {
   return (
     <section className="bg-sand-50 dark:bg-sand-50/5 py-16 md:py-24">
@@ -71,7 +71,7 @@ export const FeatureRoadmapStages = ({
         <div className="grid gap-12 lg:grid-cols-2 lg:gap-16">
           <div>
             <div className="mb-6">
-              <span className="font-inter text-primary mb-2 text-sm font-medium uppercase tracking-wider">
+              <span className="font-inter text-primary mb-2 text-sm font-medium tracking-wider uppercase">
                 {badge}
               </span>
               <h2 className="font-inter-tight text-foreground mb-4 text-3xl font-semibold tracking-tight sm:text-4xl md:text-5xl">
@@ -85,7 +85,7 @@ export const FeatureRoadmapStages = ({
             <div className="space-y-8">
               {stages.map((stage, index) => (
                 <div key={index} className="flex gap-4">
-                  <div className="bg-primary text-primary-foreground flex h-12 w-12 shrink-0 items-center justify-center rounded-full font-inter-tight text-sm font-semibold">
+                  <div className="bg-primary text-primary-foreground font-inter-tight flex h-12 w-12 shrink-0 items-center justify-center rounded-full text-sm font-semibold">
                     {stage.number}
                   </div>
                   <div className="flex-1">

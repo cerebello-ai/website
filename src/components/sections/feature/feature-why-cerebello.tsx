@@ -50,9 +50,9 @@ const defaultBenefits: Benefit[] = [
 ];
 
 export const FeatureWhyCerebello = ({
-  title = "Why Choose Cerebello?",
-  description = "Choosing the right partner for implementation is as important as the technology itself. Cerebello stands out through a combination of approach and experience that de-risks your initiatives and maximizes value.",
-  benefits = defaultBenefits
+  title = 'Why Choose Cerebello?',
+  description = 'Choosing the right partner for implementation is as important as the technology itself. Cerebello stands out through a combination of approach and experience that de-risks your initiatives and maximizes value.',
+  benefits = defaultBenefits,
 }: FeatureWhyCerebelloProps) => {
   return (
     <section className="bg-background py-16 md:py-24">

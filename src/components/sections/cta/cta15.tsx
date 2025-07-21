@@ -22,13 +22,13 @@ const defaultBenefits = [
 ];
 
 export const Cta15 = ({
-  title = "Ready to Transform Your Business with AI?",
-  description = "Get your free AI Implementation Scan and discover how automation can revolutionize your operations",
+  title = 'Ready to Transform Your Business with AI?',
+  description = 'Get your free AI Implementation Scan and discover how automation can revolutionize your operations',
   benefits = defaultBenefits,
-  primaryButtonText = "Start Your Free Scan",
-  primaryButtonHref = "/services/ai-scan",
-  secondaryButtonText = "Schedule a Consultation",
-  secondaryButtonHref = "/contact"
+  primaryButtonText = 'Start Your Free Scan',
+  primaryButtonHref = '/services/ai-scan',
+  secondaryButtonText = 'Schedule a Consultation',
+  secondaryButtonHref = '/contact',
 }: Cta15Props) => {
   return (
     <section className="bg-background py-16 md:py-24">
@@ -75,9 +75,7 @@ export const Cta15 = ({
                 variant="outline"
                 className="border-primary-foreground/20 text-primary-foreground hover:bg-primary-foreground/10 font-inter bg-transparent"
               >
-                <a href={secondaryButtonHref}>
-                  {secondaryButtonText}
-                </a>
+                <a href={secondaryButtonHref}>{secondaryButtonText}</a>
               </Button>
             </div>
           </div>

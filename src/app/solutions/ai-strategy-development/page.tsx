@@ -5,24 +5,28 @@ import { TrendingUp, Target, Zap } from 'lucide-react';
 import { CtaSimple } from '@/components/sections/cta/cta-simple';
 import { FeatureAiBenefits } from '@/components/sections/feature/feature-ai-benefits';
 import { FeatureAiMethodology } from '@/components/sections/feature/feature-ai-methodology';
-import { OverviewSection } from '@/components/sections/overview-section';
 import { RelatedSolutions } from '@/components/sections/related-solutions';
 import Testimonials from '@/components/sections/testimonials';
 
 export const metadata: Metadata = {
-  title: 'AI Strategy Development | Strategic AI Planning & Implementation | Cerebello',
-  description: 'Develop a comprehensive AI strategy that aligns with your business goals. Our expert team helps you create actionable AI roadmaps that drive tangible results and competitive advantage.',
-  keywords: 'AI strategy development, artificial intelligence planning, AI roadmap, strategic AI consulting, AI implementation strategy, business AI transformation, Cerebello',
+  title:
+    'AI Strategy Development | Strategic AI Planning & Implementation | Cerebello',
+  description:
+    'Develop a comprehensive AI strategy that aligns with your business goals. Our expert team helps you create actionable AI roadmaps that drive tangible results and competitive advantage.',
+  keywords:
+    'AI strategy development, artificial intelligence planning, AI roadmap, strategic AI consulting, AI implementation strategy, business AI transformation, Cerebello',
   openGraph: {
     title: 'AI Strategy Development | Cerebello',
-    description: 'Develop a comprehensive AI strategy that aligns with your business goals and drives tangible results.',
+    description:
+      'Develop a comprehensive AI strategy that aligns with your business goals and drives tangible results.',
     type: 'article',
     url: 'https://cerebello.nl/solutions/ai-strategy-development',
   },
   twitter: {
     card: 'summary_large_image',
     title: 'AI Strategy Development | Cerebello',
-    description: 'Develop a comprehensive AI strategy that aligns with your business goals and drives tangible results.',
+    description:
+      'Develop a comprehensive AI strategy that aligns with your business goals and drives tangible results.',
   },
   alternates: {
     canonical: 'https://cerebello.nl/solutions/ai-strategy-development',
@@ -33,21 +37,24 @@ export const metadata: Metadata = {
 const testimonials = [
   {
     slug: 'tech-innovate',
-    quote: 'Cerebello\'s AI Strategy helped us identify the right opportunities and avoid costly mistakes. We achieved 30% efficiency gains in our first year.',
+    quote:
+      "Cerebello's AI Strategy helped us identify the right opportunities and avoid costly mistakes. We achieved 30% efficiency gains in our first year.",
     author: 'Sarah Chen',
     company: 'TechInnovate Solutions',
     image: '/images/homepage/testimonials/amy-chase.webp',
   },
   {
     slug: 'global-manufacturing',
-    quote: 'The strategic roadmap provided clear direction for our AI initiatives. We now have a competitive edge that our competitors struggle to match.',
+    quote:
+      'The strategic roadmap provided clear direction for our AI initiatives. We now have a competitive edge that our competitors struggle to match.',
     author: 'Michael Rodriguez',
     company: 'Global Manufacturing Corp',
     image: '/images/homepage/testimonials/victoria-smith.webp',
   },
   {
     slug: 'financial-services',
-    quote: 'Our AI transformation was seamless thanks to Cerebello\'s methodology. The governance framework has been essential for maintaining trust.',
+    quote:
+      "Our AI transformation was seamless thanks to Cerebello's methodology. The governance framework has been essential for maintaining trust.",
     author: 'Emily Watson',
     company: 'Premier Financial Services',
     image: '/images/homepage/testimonials/kevin-yam.webp',
@@ -58,17 +65,20 @@ const testimonials = [
 const aiBenefits = [
   {
     title: 'Increased Efficiency & Productivity',
-    description: 'By streamlining workflows with AI, your organization can significantly boost productivity (studies show AI can improve employee productivity by up to 40%). Automating repetitive tasks and augmenting human work with AI leads to faster processes, reduced costs, and employees freed to focus on higher-value activities.',
+    description:
+      'By streamlining workflows with AI, your organization can significantly boost productivity (studies show AI can improve employee productivity by up to 40%). Automating repetitive tasks and augmenting human work with AI leads to faster processes, reduced costs, and employees freed to focus on higher-value activities.',
     icon: <Zap className="h-6 w-6" />,
   },
   {
     title: 'Competitive Advantage',
-    description: 'Harnessing AI strategically helps you leapfrog competitors. Nearly 90% of organizations see AI as key to gaining a competitive edge. A well-defined AI strategy enables you to embed AI into core products and operations, optimizing services and creating customer experiences that competitors struggle to match.',
+    description:
+      'Harnessing AI strategically helps you leapfrog competitors. Nearly 90% of organizations see AI as key to gaining a competitive edge. A well-defined AI strategy enables you to embed AI into core products and operations, optimizing services and creating customer experiences that competitors struggle to match.',
     icon: <Target className="h-6 w-6" />,
   },
   {
     title: 'Future Readiness',
-    description: 'An AI roadmap essentially future-proofs your company. It prepares your business and workforce for industry disruptions by ensuring you can adapt to emerging technologies and evolving market demands. With a forward-looking AI strategy, you build the agility and capabilities to thrive in a rapidly changing, AI-driven world.',
+    description:
+      'An AI roadmap essentially future-proofs your company. It prepares your business and workforce for industry disruptions by ensuring you can adapt to emerging technologies and evolving market demands. With a forward-looking AI strategy, you build the agility and capabilities to thrive in a rapidly changing, AI-driven world.',
     icon: <TrendingUp className="h-6 w-6" />,
   },
 ];
@@ -117,14 +127,36 @@ export default function AIStrategyDevelopmentPage() {
               Introduction
             </h2>
             <div className="font-inter space-y-6 text-lg leading-6">
-              <p>In today's fast-paced digital landscape, a well-crafted AI strategy is no longer a luxury—it's a necessity. Artificial intelligence has gone mainstream, with 77% of companies now using or exploring AI and 83% naming AI as a top strategic priority. Forward-thinking organizations are leveraging AI to reshape customer experiences and operations – achieving significant revenue growth, cost savings, and competitive advantages in the process.</p>
-              <p>Developing a clear strategy is key to capturing these benefits by aligning AI initiatives with business goals and laying out a roadmap for implementation. Yet without a well-defined strategy, even the most promising AI projects can lose focus or stall in pilot mode. In fact, organizations that follow a structured AI roadmap report 62% higher success rates in AI implementation compared to those taking an ad-hoc approach.</p>
-              <p>Our company helps you avoid these pitfalls by collaborating closely to define a tailored, actionable AI roadmap. We cut through the hype to identify real opportunities and create a step-by-step plan that drives tangible results for your business.</p>
+              <p>
+                In today's fast-paced digital landscape, a well-crafted AI
+                strategy is no longer a luxury—it's a necessity. Artificial
+                intelligence has gone mainstream, with 77% of companies now
+                using or exploring AI and 83% naming AI as a top strategic
+                priority. Forward-thinking organizations are leveraging AI to
+                reshape customer experiences and operations – achieving
+                significant revenue growth, cost savings, and competitive
+                advantages in the process.
+              </p>
+              <p>
+                Developing a clear strategy is key to capturing these benefits
+                by aligning AI initiatives with business goals and laying out a
+                roadmap for implementation. Yet without a well-defined strategy,
+                even the most promising AI projects can lose focus or stall in
+                pilot mode. In fact, organizations that follow a structured AI
+                roadmap report 62% higher success rates in AI implementation
+                compared to those taking an ad-hoc approach.
+              </p>
+              <p>
+                Our company helps you avoid these pitfalls by collaborating
+                closely to define a tailored, actionable AI roadmap. We cut
+                through the hype to identify real opportunities and create a
+                step-by-step plan that drives tangible results for your
+                business.
+              </p>
             </div>
           </div>
         </div>
       </section>
-
 
       {/* Benefits Section */}
       <FeatureAiBenefits

@@ -27,7 +27,8 @@ const defaultSolutions: Solution[] = [
   },
   {
     title: 'Change Management',
-    description: 'Ensure successful adoption with our comprehensive change support',
+    description:
+      'Ensure successful adoption with our comprehensive change support',
     href: '/solutions/change-management',
     icon: Users,
   },
@@ -40,9 +41,9 @@ const defaultSolutions: Solution[] = [
 ];
 
 export const RelatedSolutions = ({
-  title = "Complete Your Transformation Journey",
-  description = "Our Implementation Roadmap works seamlessly with our other strategic solutions",
-  solutions = defaultSolutions
+  title = 'Complete Your Transformation Journey',
+  description = 'Our Implementation Roadmap works seamlessly with our other strategic solutions',
+  solutions = defaultSolutions,
 }: RelatedSolutionsProps) => {
   return (
     <section className="bg-sand-100 py-16 md:py-24">
@@ -55,14 +56,14 @@ export const RelatedSolutions = ({
             {description}
           </p>
         </div>
-        <div className="mx-auto max-w-5xl grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+        <div className="mx-auto grid max-w-5xl gap-8 md:grid-cols-2 lg:grid-cols-3">
           {solutions.map((solution, index) => (
             <Link key={index} href={solution.href}>
-              <Card className="border-border hover:shadow-lg transition-shadow h-full bg-background">
+              <Card className="border-border bg-background h-full transition-shadow hover:shadow-lg">
                 <CardContent className="p-6">
                   <div className="mb-4 flex items-center gap-3">
                     <div className="bg-sand-100 dark:bg-sand-50 inline-flex h-10 w-10 items-center justify-center rounded-lg">
-                      <solution.icon className="h-5 w-5 text-foreground" />
+                      <solution.icon className="text-foreground h-5 w-5" />
                     </div>
                     <h3 className="font-inter-tight text-foreground text-xl font-semibold">
                       {solution.title}
@@ -71,8 +72,10 @@ export const RelatedSolutions = ({
                   <p className="font-inter text-muted-foreground mb-4">
                     {solution.description}
                   </p>
-                  <div className="flex items-center text-primary">
-                    <span className="font-inter text-sm font-medium">Learn more</span>
+                  <div className="text-primary flex items-center">
+                    <span className="font-inter text-sm font-medium">
+                      Learn more
+                    </span>
                     <ArrowRight className="ml-2 h-4 w-4" />
                   </div>
                 </CardContent>

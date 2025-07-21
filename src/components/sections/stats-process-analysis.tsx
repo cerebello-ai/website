@@ -28,7 +28,8 @@ const defaultStats: Stat[] = [
 const defaultBenefits: Benefit[] = [
   {
     title: 'Process Optimization',
-    description: 'Streamline workflows for maximum efficiency and reduced waste',
+    description:
+      'Streamline workflows for maximum efficiency and reduced waste',
   },
   {
     title: 'Bottleneck Identification',
@@ -45,18 +46,18 @@ const defaultBenefits: Benefit[] = [
 ];
 
 export const StatsProcessAnalysis = ({
-  title = "Proven Results Across Industries",
-  description = "Our process analysis delivers measurable improvements for organizations worldwide",
-  badge = "Performance Metrics",
+  title = 'Proven Results Across Industries',
+  description = 'Our process analysis delivers measurable improvements for organizations worldwide',
+  badge = 'Performance Metrics',
   stats = defaultStats,
-  benefits = defaultBenefits
+  benefits = defaultBenefits,
 }: StatsProcessAnalysisProps) => {
   return (
     <section className="bg-mint py-24 md:py-32">
       <div className="container">
         <div className="mx-auto max-w-6xl">
           <div className="mb-12 text-center">
-            <div className="inline-flex w-fit items-center rounded-full border bg-mint-50 px-3 py-1 text-xs font-medium text-mint-900 shadow-sm">
+            <div className="bg-mint-50 text-mint-900 inline-flex w-fit items-center rounded-full border px-3 py-1 text-xs font-medium shadow-sm">
               {badge}
             </div>
             <h2 className="font-inter-tight mt-4 text-3xl font-semibold tracking-tight text-balance sm:text-4xl md:text-5xl lg:text-6xl">
@@ -72,7 +73,7 @@ export const StatsProcessAnalysis = ({
             {stats.map((stat, index) => (
               <div key={index} className="text-center">
                 <div className="bg-background mb-4 rounded-lg p-6">
-                  <p className="font-inter-tight text-4xl font-bold text-foreground md:text-5xl">
+                  <p className="font-inter-tight text-foreground text-4xl font-bold md:text-5xl">
                     {stat.value}
                   </p>
                 </div>

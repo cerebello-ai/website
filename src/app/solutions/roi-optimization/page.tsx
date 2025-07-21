@@ -1,8 +1,7 @@
 import Link from 'next/link';
 import type { Metadata } from 'next';
-import { ArrowRight } from 'lucide-react';
-
 import {
+  ArrowRight,
   BarChart3,
   DollarSign,
   Gauge,
@@ -46,21 +45,24 @@ export const metadata: Metadata = {
 const testimonials = [
   {
     slug: 'oceanic-transco',
-    quote: 'Cerebello\'s ROI Optimization service delivered exactly what they promised. We achieved 200% ROI in our first year and continue to see improvements.',
+    quote:
+      "Cerebello's ROI Optimization service delivered exactly what they promised. We achieved 200% ROI in our first year and continue to see improvements.",
     author: 'Maria Santos',
     company: 'OceanicTransCo',
     image: '/images/homepage/testimonials/victoria-smith.webp',
   },
   {
     slug: 'manufacturing-corp',
-    quote: 'The methodology was thorough and the results speak for themselves. Our predictive maintenance system has saved us millions in unplanned downtime.',
+    quote:
+      'The methodology was thorough and the results speak for themselves. Our predictive maintenance system has saved us millions in unplanned downtime.',
     author: 'Robert Chen',
     company: 'Global Manufacturing Corp',
     image: '/images/homepage/testimonials/amy-chase.webp',
   },
   {
     slug: 'logistics-solutions',
-    quote: 'From pilot to full implementation, Cerebello guided us every step of the way. The ROI optimization approach ensured we focused on what mattered most.',
+    quote:
+      'From pilot to full implementation, Cerebello guided us every step of the way. The ROI optimization approach ensured we focused on what mattered most.',
     author: 'Jennifer Martinez',
     company: 'Premier Logistics Solutions',
     image: '/images/homepage/testimonials/kevin-yam.webp',
@@ -71,27 +73,32 @@ const testimonials = [
 const roiBenefits = [
   {
     title: 'Clear ROI & Value',
-    description: 'Define solid business cases and KPIs upfront so you have a clear value target',
+    description:
+      'Define solid business cases and KPIs upfront so you have a clear value target',
     icon: <BarChart3 className="h-6 w-6" />,
   },
   {
     title: 'Reduced Costs & Complexity',
-    description: 'Prioritize high-ROI use cases and quick wins, ensuring early results fund future phases',
+    description:
+      'Prioritize high-ROI use cases and quick wins, ensuring early results fund future phases',
     icon: <DollarSign className="h-6 w-6" />,
   },
   {
     title: 'Measurable Intangibles',
-    description: 'Capture hidden returns using proxy metrics and executive-friendly dashboards',
+    description:
+      'Capture hidden returns using proxy metrics and executive-friendly dashboards',
     icon: <Gauge className="h-6 w-6" />,
   },
   {
     title: 'Data Quality & Integration',
-    description: 'Address data readiness early so AI insights are reliable and comprehensive',
+    description:
+      'Address data readiness early so AI insights are reliable and comprehensive',
     icon: <Shield className="h-6 w-6" />,
   },
   {
     title: 'User Adoption & Training',
-    description: 'Human-centered rollout with stakeholder involvement and comprehensive training',
+    description:
+      'Human-centered rollout with stakeholder involvement and comprehensive training',
     icon: <Users className="h-6 w-6" />,
   },
 ];
@@ -101,22 +108,26 @@ const methodologySteps = [
   {
     number: '01',
     title: 'Discover & Benchmark',
-    description: 'We begin with a deep dive into your business. Our consultants conduct workshops and on-site observations to map processes, pain points, and opportunities. We quantify the status quo and define clear success KPIs.',
+    description:
+      'We begin with a deep dive into your business. Our consultants conduct workshops and on-site observations to map processes, pain points, and opportunities. We quantify the status quo and define clear success KPIs.',
   },
   {
     number: '02',
     title: 'Pilot & Validate',
-    description: 'Rather than a big bang, we prove the value on a small scale first. The pilot lets us validate ROI assumptions in real conditions and gather user feedback early. Seeing a successful pilot builds confidence for broader roll-out.',
+    description:
+      'Rather than a big bang, we prove the value on a small scale first. The pilot lets us validate ROI assumptions in real conditions and gather user feedback early. Seeing a successful pilot builds confidence for broader roll-out.',
   },
   {
     number: '03',
     title: 'Implement & Integrate',
-    description: 'Once a solution is proven, we scale it up seamlessly across your organization. We prefer to augment your current workflows rather than force new ones – embedding AI recommendations into the software your team already uses.',
+    description:
+      'Once a solution is proven, we scale it up seamlessly across your organization. We prefer to augment your current workflows rather than force new ones – embedding AI recommendations into the software your team already uses.',
   },
   {
     number: '04',
     title: 'Monitor & Optimize',
-    description: "ROI Optimization isn't a one-off project, it's an ongoing discipline. We set up real-time dashboards for key performance indicators so you can monitor impact at a glance. This ensures ROI improves over time.",
+    description:
+      "ROI Optimization isn't a one-off project, it's an ongoing discipline. We set up real-time dashboards for key performance indicators so you can monitor impact at a glance. This ensures ROI improves over time.",
   },
 ];
 
@@ -143,7 +154,8 @@ const caseStudyStats = [
 const caseStudyFeatures = [
   {
     title: 'Predictive Maintenance',
-    description: 'AI-driven predictive maintenance dramatically cut unplanned downtime',
+    description:
+      'AI-driven predictive maintenance dramatically cut unplanned downtime',
   },
   {
     title: 'Route Optimization',
@@ -151,11 +163,13 @@ const caseStudyFeatures = [
   },
   {
     title: 'Process Automation',
-    description: 'Automated paperwork and data entry, eliminating thousands of hours of manual work',
+    description:
+      'Automated paperwork and data entry, eliminating thousands of hours of manual work',
   },
   {
     title: 'Cultural Transformation',
-    description: 'Organization embraced human-AI collaboration through proactive change management',
+    description:
+      'Organization embraced human-AI collaboration through proactive change management',
   },
 ];
 
@@ -176,20 +190,34 @@ export default function ROIOptimizationPage() {
 
             <div className="font-inter space-y-6 text-lg leading-relaxed">
               <p>
-                Cerebello's ROI Optimization service ensures your AI and automation projects deliver measurable value to your business. We identify high-impact opportunities, validate outcomes with data, and fine-tune implementations so that every initiative pays off.
+                Cerebello's ROI Optimization service ensures your AI and
+                automation projects deliver measurable value to your business.
+                We identify high-impact opportunities, validate outcomes with
+                data, and fine-tune implementations so that every initiative
+                pays off.
               </p>
 
               <p>
-                ROI Optimization at Cerebello is all about making AI integration pay dividends. Too often, companies embark on AI projects without a clear line of sight to business value. Our approach flips the script: we start with your goals and work backward to ensure every automation or AI initiative is linked to concrete return on investment.
+                ROI Optimization at Cerebello is all about making AI integration
+                pay dividends. Too often, companies embark on AI projects
+                without a clear line of sight to business value. Our approach
+                flips the script: we start with your goals and work backward to
+                ensure every automation or AI initiative is linked to concrete
+                return on investment.
               </p>
 
               <p>
-                Done right, AI can deliver quick, significant returns – organizations implementing automation often see 30–200% ROI improvements in the first year. Cerebello's team makes sure you hit those kinds of numbers by choosing the right projects, measuring the right things, and executing flawlessly.
+                Done right, AI can deliver quick, significant returns –
+                organizations implementing automation often see 30–200% ROI
+                improvements in the first year. Cerebello's team makes sure you
+                hit those kinds of numbers by choosing the right projects,
+                measuring the right things, and executing flawlessly.
               </p>
 
               <div className="bg-sand-50 mt-8 rounded-lg p-6">
                 <p className="font-inter-tight text-sand-900 text-xl font-medium">
-                  Ready to maximize your AI investment returns? Book a free consultation today.
+                  Ready to maximize your AI investment returns? Book a free
+                  consultation today.
                 </p>
                 <Button
                   variant="outline"
@@ -208,7 +236,6 @@ export default function ROIOptimizationPage() {
           </div>
         </div>
       </section>
-
 
       {/* Benefits Section */}
       <FeatureRoiBenefits

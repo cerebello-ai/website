@@ -17,35 +17,40 @@ interface FeatureWorkflowBenefitsProps {
 const defaultBenefits: Benefit[] = [
   {
     title: 'AI-Infused Intelligence',
-    description: 'Beyond rule-based automation - our AI understands documents, emails, and unstructured data to make intelligent decisions',
+    description:
+      'Beyond rule-based automation - our AI understands documents, emails, and unstructured data to make intelligent decisions',
     icon: <Bot className="h-6 w-6" />,
   },
   {
     title: 'Human-Centered Design',
-    description: 'Workflows designed with your teams in mind, keeping people in the loop where it counts for oversight and final approvals',
+    description:
+      'Workflows designed with your teams in mind, keeping people in the loop where it counts for oversight and final approvals',
     icon: <Users className="h-6 w-6" />,
   },
   {
     title: 'End-to-End Automation',
-    description: 'Complete workflow pipelines that orchestrate all steps across systems and teams, from intake to fulfillment',
+    description:
+      'Complete workflow pipelines that orchestrate all steps across systems and teams, from intake to fulfillment',
     icon: <ArrowRightLeft className="h-6 w-6" />,
   },
   {
     title: 'Integration-First Approach',
-    description: 'Seamless integration with your existing IT landscape - no rip-and-replace required',
+    description:
+      'Seamless integration with your existing IT landscape - no rip-and-replace required',
     icon: <Cog className="h-6 w-6" />,
   },
   {
     title: 'Responsible AI & Governance',
-    description: 'Ethical, transparent, and accountable AI with strong governance, audit trails, and compliance safeguards',
+    description:
+      'Ethical, transparent, and accountable AI with strong governance, audit trails, and compliance safeguards',
     icon: <Shield className="h-6 w-6" />,
   },
 ];
 
 export const FeatureWorkflowBenefits = ({
-  title = "Why Choose Our Workflow Automation",
-  description = "Transform your business processes with AI-powered automation designed for the enterprise",
-  benefits = defaultBenefits
+  title = 'Why Choose Our Workflow Automation',
+  description = 'Transform your business processes with AI-powered automation designed for the enterprise',
+  benefits = defaultBenefits,
 }: FeatureWorkflowBenefitsProps) => {
   return (
     <section className="py-24 md:py-32">
@@ -63,10 +68,8 @@ export const FeatureWorkflowBenefits = ({
           <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
             {benefits.map((benefit, index) => (
               <div key={index} className="text-center">
-                <div className="mx-auto mb-4 flex h-16 w-16 items-center justify-center rounded-full bg-sand-100">
-                  <div className="text-sand-600">
-                    {benefit.icon}
-                  </div>
+                <div className="bg-sand-100 mx-auto mb-4 flex h-16 w-16 items-center justify-center rounded-full">
+                  <div className="text-sand-600">{benefit.icon}</div>
                 </div>
                 <h3 className="font-inter-tight mb-3 text-xl font-semibold">
                   {benefit.title}

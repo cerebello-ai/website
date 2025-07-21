@@ -10,7 +10,8 @@ import Testimonials from '@/components/sections/testimonials';
 import { Button } from '@/components/ui/button';
 
 export const metadata: Metadata = {
-  title: 'Data Analytics & Insights | AI-Driven Business Intelligence | Cerebello',
+  title:
+    'Data Analytics & Insights | AI-Driven Business Intelligence | Cerebello',
   description:
     'Transform data into actionable intelligence with AI-driven analytics, real-time dashboards, and predictive modeling. Unlock the full value of your enterprise data with advanced analytics and business intelligence.',
   keywords:
@@ -37,21 +38,24 @@ export const metadata: Metadata = {
 const testimonials = [
   {
     slug: 'samsung-ai-analytics',
-    quote: 'Cerebello helped Samsung implement analytics dashboards to monitor AI model performance in production. The real-time insights into model accuracy and user behavior created a continuous feedback loop that accelerated our AI development.',
+    quote:
+      'Cerebello helped Samsung implement analytics dashboards to monitor AI model performance in production. The real-time insights into model accuracy and user behavior created a continuous feedback loop that accelerated our AI development.',
     author: 'Dr. Kim Taehyung',
     company: 'Samsung Electronics',
     image: '/images/homepage/testimonials/amy-chase.webp',
   },
   {
     slug: 'global-shipping',
-    quote: 'Our real-time supply chain dashboard consolidates data from ports, vessels, and GPS trackers. We now see container locations, delays, and bottlenecks instantly, enabling proactive rerouting and better customer service.',
+    quote:
+      'Our real-time supply chain dashboard consolidates data from ports, vessels, and GPS trackers. We now see container locations, delays, and bottlenecks instantly, enabling proactive rerouting and better customer service.',
     author: 'Elena Rodriguez',
     company: 'Global Maritime Logistics',
     image: '/images/homepage/testimonials/victoria-smith.webp',
   },
   {
     slug: 'state-health-dept',
-    quote: 'The real-time analytics dashboard helped us monitor critical public health metrics and coordinate rapid response during crisis situations. It transformed our reactive approach into proactive governance.',
+    quote:
+      'The real-time analytics dashboard helped us monitor critical public health metrics and coordinate rapid response during crisis situations. It transformed our reactive approach into proactive governance.',
     author: 'Dr. Michael Thompson',
     company: 'State Health Department',
     image: '/images/homepage/testimonials/kevin-yam.webp',
@@ -64,37 +68,43 @@ const analyticsMethodologySteps = [
     step: '01',
     title: 'Discovery & Strategy',
     subtitle: 'Business-Driven Analytics Planning',
-    description: 'We conduct stakeholder workshops to understand business objectives, pain points, and opportunities where data can make a difference. Our team audits your current data landscape and defines high-value use cases with clear success metrics.',
+    description:
+      'We conduct stakeholder workshops to understand business objectives, pain points, and opportunities where data can make a difference. Our team audits your current data landscape and defines high-value use cases with clear success metrics.',
   },
   {
     step: '02',
     title: 'Architecture & Integration',
     subtitle: 'Scalable Data Foundation',
-    description: 'We design target data architecture and plan integration of all data sources into a unified pipeline. Our integration-first approach connects databases, APIs, and streaming data while addressing quality issues and governance frameworks.',
+    description:
+      'We design target data architecture and plan integration of all data sources into a unified pipeline. Our integration-first approach connects databases, APIs, and streaming data while addressing quality issues and governance frameworks.',
   },
   {
     step: '03',
     title: 'Advanced Analytics Development',
     subtitle: 'AI-Powered Modeling',
-    description: 'Our data scientists develop predictive models and analytics algorithms tailored to your use cases - from customer segmentation to predictive maintenance. We iterate using your data to ensure accurate, interpretable insights.',
+    description:
+      'Our data scientists develop predictive models and analytics algorithms tailored to your use cases - from customer segmentation to predictive maintenance. We iterate using your data to ensure accurate, interpretable insights.',
   },
   {
     step: '04',
     title: 'Dashboard & Solution Development',
     subtitle: 'Intuitive Visualization',
-    description: 'We create user-friendly dashboards and reports with role-based visualizations. From executive KPI summaries to detailed analytical dashboards, we focus on clarity and actionable insights.',
+    description:
+      'We create user-friendly dashboards and reports with role-based visualizations. From executive KPI summaries to detailed analytical dashboards, we focus on clarity and actionable insights.',
   },
   {
     step: '05',
     title: 'Training & Enablement',
     subtitle: 'Data-Driven Culture',
-    description: 'We develop customized training programs for different user groups and identify analytics champions. Our focus is on helping users ask the right questions and incorporate analytics into decision processes.',
+    description:
+      'We develop customized training programs for different user groups and identify analytics champions. Our focus is on helping users ask the right questions and incorporate analytics into decision processes.',
   },
   {
     step: '06',
     title: 'Continuous Improvement',
     subtitle: 'Evolving Analytics',
-    description: 'We establish feedback loops to monitor system performance and model accuracy. Regular reviews identify new insights and opportunities, ensuring your analytics platform evolves with your business.',
+    description:
+      'We establish feedback loops to monitor system performance and model accuracy. Regular reviews identify new insights and opportunities, ensuring your analytics platform evolves with your business.',
   },
 ];
 
@@ -109,19 +119,23 @@ const analyticsStats = [
 const analyticsBenefits = [
   {
     title: 'Data Integration & Single Source of Truth',
-    description: 'Break down data silos by integrating all sources into a unified platform for 360° organizational visibility',
+    description:
+      'Break down data silos by integrating all sources into a unified platform for 360° organizational visibility',
   },
   {
     title: 'Predictive Analytics & AI Modeling',
-    description: 'Move from reactive to proactive operations with AI-powered forecasting and pattern recognition',
+    description:
+      'Move from reactive to proactive operations with AI-powered forecasting and pattern recognition',
   },
   {
     title: 'Real-Time Dashboards & KPI Tracking',
-    description: 'Interactive dashboards with role-based insights, mobile reports, and alerting systems for immediate action',
+    description:
+      'Interactive dashboards with role-based insights, mobile reports, and alerting systems for immediate action',
   },
   {
     title: 'Embedded Analytics Integration',
-    description: 'Integrate analytics directly into existing workflows and applications for seamless adoption',
+    description:
+      'Integrate analytics directly into existing workflows and applications for seamless adoption',
   },
 ];
 
@@ -142,20 +156,39 @@ export default function DataAnalyticsInsightsPage() {
 
             <div className="font-inter space-y-6 text-lg leading-relaxed">
               <p>
-                Cerebello's Data Analytics & Insights service helps medium to large enterprises unlock the full value of their data through AI-driven analytics, cloud innovation, and real-time dashboards. In today's landscape, businesses collect vast amounts of data, yet studies show over two-thirds of enterprise data goes untapped. Our mission is to convert this dormant data into strategic assets that drive smarter decisions, efficiencies, and competitive advantage.
+                Cerebello's Data Analytics & Insights service helps medium to
+                large enterprises unlock the full value of their data through
+                AI-driven analytics, cloud innovation, and real-time dashboards.
+                In today's landscape, businesses collect vast amounts of data,
+                yet studies show over two-thirds of enterprise data goes
+                untapped. Our mission is to convert this dormant data into
+                strategic assets that drive smarter decisions, efficiencies, and
+                competitive advantage.
               </p>
 
               <p>
-                By integrating data across silos and applying advanced analytics, we empower organizations to move from hindsight reports to foresight and real-time insight, all through a pragmatic, business-focused approach. We embed data and AI at the heart of operations and decision-making, designing solutions that turn raw data into actionable insights using artificial intelligence, machine learning, and intuitive dashboards.
+                By integrating data across silos and applying advanced
+                analytics, we empower organizations to move from hindsight
+                reports to foresight and real-time insight, all through a
+                pragmatic, business-focused approach. We embed data and AI at
+                the heart of operations and decision-making, designing solutions
+                that turn raw data into actionable insights using artificial
+                intelligence, machine learning, and intuitive dashboards.
               </p>
 
               <p>
-                Our focus is not on tech for tech's sake, but on pragmatic business outcomes – from identifying cost-saving opportunities and predicting market trends to streamlining processes and enhancing customer experiences. We help you build a data-driven culture where KPIs are tracked in real time, predictions replace guesses, and every decision is backed by insights.
+                Our focus is not on tech for tech's sake, but on pragmatic
+                business outcomes – from identifying cost-saving opportunities
+                and predicting market trends to streamlining processes and
+                enhancing customer experiences. We help you build a data-driven
+                culture where KPIs are tracked in real time, predictions replace
+                guesses, and every decision is backed by insights.
               </p>
 
               <div className="bg-sand-50 mt-8 rounded-lg p-6">
                 <p className="font-inter-tight text-sand-900 text-xl font-medium">
-                  Ready to unlock the full value of your data? Discover how AI-driven analytics can transform your decision-making.
+                  Ready to unlock the full value of your data? Discover how
+                  AI-driven analytics can transform your decision-making.
                 </p>
                 <Button
                   variant="outline"

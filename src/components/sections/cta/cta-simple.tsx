@@ -16,13 +16,13 @@ interface CtaSimpleProps {
 }
 
 export const CtaSimple = ({
-  title = "Ready to Discover Your AI Opportunities?",
+  title = 'Ready to Discover Your AI Opportunities?',
   description = "Join the 75% of executives who say AI has given them a competitive edge. Let's explore how AI can transform your operations.",
-  primaryButtonText = "Schedule Free Consultation",
-  primaryButtonHref = "/contact",
-  secondaryButtonText = "Contact Our Team",
-  secondaryButtonHref = "/contact",
-  footerText = "30-60 minute consultation • No obligation • Expert insights"
+  primaryButtonText = 'Schedule Free Consultation',
+  primaryButtonHref = '/contact',
+  secondaryButtonText = 'Contact Our Team',
+  secondaryButtonHref = '/contact',
+  footerText = '30-60 minute consultation • No obligation • Expert insights',
 }: CtaSimpleProps) => {
   return (
     <section className="py-24 md:py-32">
@@ -49,9 +49,7 @@ export const CtaSimple = ({
               <Link href={secondaryButtonHref}>{secondaryButtonText}</Link>
             </Button>
           </div>
-          <p className="text-muted-foreground mt-6 text-sm">
-            {footerText}
-          </p>
+          <p className="text-muted-foreground mt-6 text-sm">{footerText}</p>
         </div>
       </div>
     </section>

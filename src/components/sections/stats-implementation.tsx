@@ -62,10 +62,10 @@ const defaultCaseStudies: CaseStudy[] = [
 ];
 
 export const StatsImplementation = ({
-  title = "Proven Results Across Industries",
-  description = "Our Implementation Roadmap delivers measurable impact for enterprises worldwide",
+  title = 'Proven Results Across Industries',
+  description = 'Our Implementation Roadmap delivers measurable impact for enterprises worldwide',
   stats = defaultStats,
-  caseStudies = defaultCaseStudies
+  caseStudies = defaultCaseStudies,
 }: StatsImplementationProps) => {
   return (
     <section className="bg-mint py-16 md:py-24">
@@ -83,7 +83,10 @@ export const StatsImplementation = ({
           {/* Stats Grid */}
           <div className="mb-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
             {stats.map((stat, index) => (
-              <Card key={index} className="border-border text-center bg-background">
+              <Card
+                key={index}
+                className="border-border bg-background text-center"
+              >
                 <CardContent className="p-6">
                   <div className="font-inter-tight text-primary mb-2 text-4xl font-bold">
                     {stat.value}

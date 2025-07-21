@@ -21,16 +21,16 @@ interface HeroImplementationRoadmapProps {
 }
 
 export const HeroImplementationRoadmap = ({
-  badge = "End-to-End Delivery Model",
-  title = "Implementation Roadmap",
-  subtitle = "Your Strategic Partner from Concept to Reality",
+  badge = 'End-to-End Delivery Model',
+  title = 'Implementation Roadmap',
+  subtitle = 'Your Strategic Partner from Concept to Reality',
   description = "Cerebello's Implementation Roadmap is a comprehensive, step-by-step delivery model designed to take your strategic innovations from concept to reality. Aimed at CIOs, innovation managers, and operational decision-makers in medium to large enterprises.",
-  primaryButtonText = "Start Your Implementation Journey",
-  primaryButtonHref = "/services/ai-scan",
-  secondaryButtonText = "Learn More",
-  secondaryButtonHref = "#overview",
-  imageUrl = "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?q=80&w=2370&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-  imageAlt = "Strategic Planning and Implementation"
+  primaryButtonText = 'Start Your Implementation Journey',
+  primaryButtonHref = '/services/ai-scan',
+  secondaryButtonText = 'Learn More',
+  secondaryButtonHref = '#overview',
+  imageUrl = 'https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?q=80&w=2370&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+  imageAlt = 'Strategic Planning and Implementation',
 }: HeroImplementationRoadmapProps) => {
   return (
     <section className="bg-sand-100 relative overflow-hidden py-24 md:py-32">
@@ -38,7 +38,10 @@ export const HeroImplementationRoadmap = ({
         <div className="mx-auto max-w-6xl">
           <div className="grid items-center gap-12 lg:grid-cols-2 lg:gap-16">
             <div>
-              <Badge variant="outline" className="border-border bg-background mb-6">
+              <Badge
+                variant="outline"
+                className="border-border bg-background mb-6"
+              >
                 <Map className="mr-2 h-3 w-3" />
                 {badge}
               </Badge>
@@ -64,7 +67,7 @@ export const HeroImplementationRoadmap = ({
               </div>
             </div>
             <div className="relative">
-              <div className="absolute inset-0 bg-gradient-to-tr from-sand-200 to-sand-300 opacity-30 blur-3xl" />
+              <div className="from-sand-200 to-sand-300 absolute inset-0 bg-gradient-to-tr opacity-30 blur-3xl" />
               <Image
                 src={imageUrl}
                 alt={imageAlt}

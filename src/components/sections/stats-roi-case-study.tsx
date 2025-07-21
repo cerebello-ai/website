@@ -39,7 +39,8 @@ const defaultStats: Stat[] = [
 const defaultFeatures: Feature[] = [
   {
     title: 'Predictive Maintenance',
-    description: 'AI-driven predictive maintenance dramatically cut unplanned downtime',
+    description:
+      'AI-driven predictive maintenance dramatically cut unplanned downtime',
   },
   {
     title: 'Route Optimization',
@@ -47,19 +48,21 @@ const defaultFeatures: Feature[] = [
   },
   {
     title: 'Process Automation',
-    description: 'Automated paperwork and data entry, eliminating thousands of hours of manual work',
+    description:
+      'Automated paperwork and data entry, eliminating thousands of hours of manual work',
   },
   {
     title: 'Cultural Transformation',
-    description: 'Organization embraced human-AI collaboration through proactive change management',
+    description:
+      'Organization embraced human-AI collaboration through proactive change management',
   },
 ];
 
 export const StatsRoiCaseStudy = ({
   title = "OceanicTransCo's ROI Transformation",
-  description = "A global shipping and logistics company achieved outstanding results with our ROI Optimization service",
+  description = 'A global shipping and logistics company achieved outstanding results with our ROI Optimization service',
   stats = defaultStats,
-  features = defaultFeatures
+  features = defaultFeatures,
 }: StatsRoiCaseStudyProps) => {
   return (
     <section className="bg-mint py-24 md:py-32">
@@ -79,7 +82,7 @@ export const StatsRoiCaseStudy = ({
             {stats.map((stat, index) => (
               <div key={index} className="text-center">
                 <div className="bg-background mb-4 rounded-lg p-6">
-                  <p className="font-inter-tight text-4xl font-bold text-foreground md:text-5xl">
+                  <p className="font-inter-tight text-foreground text-4xl font-bold md:text-5xl">
                     {stat.value}
                   </p>
                 </div>

@@ -1,16 +1,13 @@
 'use client';
 
-import { Fragment, useState } from 'react';
+import { useState } from 'react';
 
 import Link from 'next/link';
 import {
   AppWindow,
   ArrowLeft,
   ArrowRight,
-  ArrowRightLeft,
-  Book,
   Building2,
-  Calendar,
   CheckCircle2,
   Clock,
   Code,
@@ -24,14 +21,9 @@ import {
   Lightbulb,
   Lock,
   Menu,
-  Mic,
-  Newspaper,
   Phone,
   PieChart,
-  Play,
-  PlayCircle,
   Puzzle,
-  Pyramid,
   Rocket,
   Search,
   ShieldCheck,
@@ -49,12 +41,7 @@ import {
   NavigationMenuList,
   NavigationMenuTrigger,
 } from '@/components/ui/navigation-menu';
-import {
-  generateSolutionSlug,
-  generateServiceSlug,
-  generateResourceSlug,
-  generateCaseStudySlug,
-} from '@/lib/utils/slugify';
+import { generateSolutionSlug, generateServiceSlug } from '@/lib/utils/slugify';
 
 const solutions = [
   {
@@ -356,99 +343,99 @@ const globalCategories = [
   },
 ];
 
-const resources = [
-  {
-    id: 'resource-1',
-    title: 'Events & Webinars',
-    description: 'Learn from industry experts.',
-    href: generateResourceSlug('Events & Webinars'),
-    icon: Calendar,
-  },
-  {
-    id: 'resource-2',
-    title: 'Podcasts',
-    description: 'Insights on productivity and leadership.',
-    href: generateResourceSlug('Podcasts'),
-    icon: Mic,
-  },
-  {
-    id: 'resource-3',
-    title: 'Blog',
-    description: 'Latest updates and best practices.',
-    href: generateResourceSlug('Blog'),
-    icon: Newspaper,
-  },
-  {
-    id: 'resource-4',
-    title: 'Video Tutorials',
-    description: 'Get started with guided videos.',
-    href: generateResourceSlug('Video Tutorials'),
-    icon: PlayCircle,
-  },
-  {
-    id: 'resource-5',
-    title: 'Knowledge Base',
-    description: 'Detailed guides and documentation.',
-    href: generateResourceSlug('Knowledge Base'),
-    icon: Book,
-  },
-  {
-    id: 'resource-6',
-    title: 'Success Stories',
-    description: 'See how others achieve more.',
-    href: generateCaseStudySlug('Success Stories'),
-    icon: Lightbulb,
-  },
-];
+// const resources = [
+//   {
+//     id: 'resource-1',
+//     title: 'Events & Webinars',
+//     description: 'Learn from industry experts.',
+//     href: generateResourceSlug('Events & Webinars'),
+//     icon: Calendar,
+//   },
+//   {
+//     id: 'resource-2',
+//     title: 'Podcasts',
+//     description: 'Insights on productivity and leadership.',
+//     href: generateResourceSlug('Podcasts'),
+//     icon: Mic,
+//   },
+//   {
+//     id: 'resource-3',
+//     title: 'Blog',
+//     description: 'Latest updates and best practices.',
+//     href: generateResourceSlug('Blog'),
+//     icon: Newspaper,
+//   },
+//   {
+//     id: 'resource-4',
+//     title: 'Video Tutorials',
+//     description: 'Get started with guided videos.',
+//     href: generateResourceSlug('Video Tutorials'),
+//     icon: PlayCircle,
+//   },
+//   {
+//     id: 'resource-5',
+//     title: 'Knowledge Base',
+//     description: 'Detailed guides and documentation.',
+//     href: generateResourceSlug('Knowledge Base'),
+//     icon: Book,
+//   },
+//   {
+//     id: 'resource-6',
+//     title: 'Success Stories',
+//     description: 'See how others achieve more.',
+//     href: generateCaseStudySlug('Success Stories'),
+//     icon: Lightbulb,
+//   },
+// ];
 
-const topicGroups = [
-  {
-    title: 'Learning Resources',
-    topics: [
-      {
-        id: 'topic-1',
-        title: 'Getting Started Guide',
-        href: '#',
-        icon: Globe,
-      },
-      {
-        id: 'topic-2',
-        title: 'Product Updates',
-        href: '#',
-        icon: Rocket,
-      },
-      {
-        id: 'topic-3',
-        title: 'Best Practices',
-        href: '#',
-        icon: Pyramid,
-      },
-      {
-        id: 'topic-4',
-        title: 'Integrations',
-        href: '#',
-        icon: ArrowRightLeft,
-      },
-      {
-        id: 'topic-5',
-        title: 'API Documentation',
-        href: '#',
-        icon: AppWindow,
-      },
-    ],
-  },
-  {
-    title: 'Community',
-    topics: [
-      {
-        id: 'topic-6',
-        title: 'Community Forum',
-        href: '#',
-        icon: Play,
-      },
-    ],
-  },
-];
+// const topicGroups = [
+//   {
+//     title: 'Learning Resources',
+//     topics: [
+//       {
+//         id: 'topic-1',
+//         title: 'Getting Started Guide',
+//         href: '#',
+//         icon: Globe,
+//       },
+//       {
+//         id: 'topic-2',
+//         title: 'Product Updates',
+//         href: '#',
+//         icon: Rocket,
+//       },
+//       {
+//         id: 'topic-3',
+//         title: 'Best Practices',
+//         href: '#',
+//         icon: Pyramid,
+//       },
+//       {
+//         id: 'topic-4',
+//         title: 'Integrations',
+//         href: '#',
+//         icon: ArrowRightLeft,
+//       },
+//       {
+//         id: 'topic-5',
+//         title: 'API Documentation',
+//         href: '#',
+//         icon: AppWindow,
+//       },
+//     ],
+//   },
+//   {
+//     title: 'Community',
+//     topics: [
+//       {
+//         id: 'topic-6',
+//         title: 'Community Forum',
+//         href: '#',
+//         icon: Play,
+//       },
+//     ],
+//   },
+// ];
 
 const SolutionsMenu = () => (
   <div className="grid gap-8 sm:grid-cols-2">

@@ -37,21 +37,24 @@ export const metadata: Metadata = {
 const testimonials = [
   {
     slug: 'samsung',
-    quote: 'Cerebello\'s AI customer service tools transformed our support operations. We now classify emails automatically, generate response drafts, and route queries intelligently - reducing response times by 50% while improving consistency.',
+    quote:
+      "Cerebello's AI customer service tools transformed our support operations. We now classify emails automatically, generate response drafts, and route queries intelligently - reducing response times by 50% while improving consistency.",
     author: 'David Park',
     company: 'Samsung Electronics',
     image: '/images/homepage/testimonials/amy-chase.webp',
   },
   {
     slug: 'municipality',
-    quote: 'Our bilingual AI chatbot handles thousands of citizen inquiries 24/7 - from waste schedules to permit applications. It dramatically reduced call volumes and in-person visits while boosting citizen satisfaction.',
+    quote:
+      'Our bilingual AI chatbot handles thousands of citizen inquiries 24/7 - from waste schedules to permit applications. It dramatically reduced call volumes and in-person visits while boosting citizen satisfaction.',
     author: 'Maria van der Berg',
     company: 'Municipality of Amsterdam',
     image: '/images/homepage/testimonials/victoria-smith.webp',
   },
   {
     slug: 'healthcare-clinic',
-    quote: 'The AI assistant answers patient FAQs about appointments and insurance instantly, allowing our medical staff to focus on patient care instead of phone calls. It\'s been transformative for our clinic operations.',
+    quote:
+      "The AI assistant answers patient FAQs about appointments and insurance instantly, allowing our medical staff to focus on patient care instead of phone calls. It's been transformative for our clinic operations.",
     author: 'Dr. Jennifer Martinez',
     company: 'Regional Healthcare Network',
     image: '/images/homepage/testimonials/kevin-yam.webp',
@@ -64,37 +67,43 @@ const customerServiceMethodologySteps = [
     step: '01',
     title: 'Discovery & Planning',
     subtitle: 'Understanding Your Support Ecosystem',
-    description: 'We run collaborative workshops to understand support workflows, volumes, tone-of-voice, escalation rules, and integration points. This comprehensive analysis ensures the AI solution aligns perfectly with your brand and processes.',
+    description:
+      'We run collaborative workshops to understand support workflows, volumes, tone-of-voice, escalation rules, and integration points. This comprehensive analysis ensures the AI solution aligns perfectly with your brand and processes.',
   },
   {
     step: '02',
     title: 'Prototype & Pilot',
     subtitle: 'Focused Initial Deployment',
-    description: 'We launch a pilot AI agent in a focused area (e.g., one channel or department). Early results help fine-tune intents, responses, and triage logic before broader rollout, ensuring optimal performance.',
+    description:
+      'We launch a pilot AI agent in a focused area (e.g., one channel or department). Early results help fine-tune intents, responses, and triage logic before broader rollout, ensuring optimal performance.',
   },
   {
     step: '03',
     title: 'Full Deployment & Integration',
     subtitle: 'Seamless System Connection',
-    description: 'We roll out the AI solution across channels and integrate with your tools (ticketing systems, CRM, knowledge bases). Whether SaaS or on-premise, we ensure seamless connectivity and data flow.',
+    description:
+      'We roll out the AI solution across channels and integrate with your tools (ticketing systems, CRM, knowledge bases). Whether SaaS or on-premise, we ensure seamless connectivity and data flow.',
   },
   {
     step: '04',
     title: 'Training & Change Management',
     subtitle: 'Empowering Your Team',
-    description: 'We prepare support teams with documentation, train-the-trainer sessions, and transition plans. We emphasize co-working with AI, not replacement, ensuring high adoption and team alignment.',
+    description:
+      'We prepare support teams with documentation, train-the-trainer sessions, and transition plans. We emphasize co-working with AI, not replacement, ensuring high adoption and team alignment.',
   },
   {
     step: '05',
     title: 'Ongoing Optimization',
     subtitle: 'Continuous Improvement',
-    description: 'Post-launch, we monitor accuracy, feedback, and satisfaction scores. We refine the AI with real data and scale it to other domains or languages, ensuring continuous improvement.',
+    description:
+      'Post-launch, we monitor accuracy, feedback, and satisfaction scores. We refine the AI with real data and scale it to other domains or languages, ensuring continuous improvement.',
   },
   {
     step: '06',
     title: 'Performance Analytics',
     subtitle: 'Measuring Success',
-    description: 'Track key metrics like resolution times, customer satisfaction, and automation rates. Regular performance reviews ensure the system continues to deliver value and adapt to changing needs.',
+    description:
+      'Track key metrics like resolution times, customer satisfaction, and automation rates. Regular performance reviews ensure the system continues to deliver value and adapt to changing needs.',
   },
 ];
 
@@ -109,19 +118,23 @@ const customerServiceStats = [
 const customerServiceBenefits = [
   {
     title: 'AI-Powered Chatbots',
-    description: 'Conversational bots handle repetitive questions 24/7 across web chat, WhatsApp, email, and other channels',
+    description:
+      'Conversational bots handle repetitive questions 24/7 across web chat, WhatsApp, email, and other channels',
   },
   {
     title: 'Intelligent Triage & Routing',
-    description: 'Automatically classify requests, assess urgency and sentiment, and assign tickets to the right team instantly',
+    description:
+      'Automatically classify requests, assess urgency and sentiment, and assign tickets to the right team instantly',
   },
   {
     title: 'Suggested Replies & Knowledge',
-    description: 'Generative AI proposes accurate, brand-aligned responses based on knowledge bases and past interactions',
+    description:
+      'Generative AI proposes accurate, brand-aligned responses based on knowledge bases and past interactions',
   },
   {
     title: 'Multilingual Capabilities',
-    description: 'Handle conversations in multiple languages automatically, improving accessibility and global reach',
+    description:
+      'Handle conversations in multiple languages automatically, improving accessibility and global reach',
   },
 ];
 
@@ -142,20 +155,43 @@ export default function CustomerServiceAIPage() {
 
             <div className="font-inter space-y-6 text-lg leading-relaxed">
               <p>
-                Cerebello's Customer Service AI solution enhances how organizations engage with their customers, citizens, or users by combining natural language processing (NLP), AI-powered chatbots, generative AI, and intelligent triage systems into a cohesive support experience. Whether it's answering customer questions, assisting employees, or handling citizen inquiries, our AI solutions reduce support volumes, accelerate response times, and elevate satisfaction – all while ensuring human oversight, regulatory compliance, and seamless system integration.
+                Cerebello's Customer Service AI solution enhances how
+                organizations engage with their customers, citizens, or users by
+                combining natural language processing (NLP), AI-powered
+                chatbots, generative AI, and intelligent triage systems into a
+                cohesive support experience. Whether it's answering customer
+                questions, assisting employees, or handling citizen inquiries,
+                our AI solutions reduce support volumes, accelerate response
+                times, and elevate satisfaction – all while ensuring human
+                oversight, regulatory compliance, and seamless system
+                integration.
               </p>
 
               <p>
-                Our approach is human-centered and outcome-driven. We design AI-powered support agents that understand your workflows, speak your brand's voice, and integrate deeply into your knowledge base, CRM, or internal systems. From instantly answering FAQs to helping agents resolve complex tickets faster, our Customer Service AI can transform both internal efficiency and the external user experience. And with on-premise deployment options, your data stays secure – a necessity for public sector and highly regulated environments.
+                Our approach is human-centered and outcome-driven. We design
+                AI-powered support agents that understand your workflows, speak
+                your brand's voice, and integrate deeply into your knowledge
+                base, CRM, or internal systems. From instantly answering FAQs to
+                helping agents resolve complex tickets faster, our Customer
+                Service AI can transform both internal efficiency and the
+                external user experience. And with on-premise deployment
+                options, your data stays secure – a necessity for public sector
+                and highly regulated environments.
               </p>
 
               <p>
-                What sets us apart is our focus on customization and responsible AI. Every solution is custom-trained on your data, policies, and workflows – not just a plug-and-play tool. We prioritize explainability, data protection, and compliance while ensuring seamless integration with your existing stack. The result is AI support that's smart, secure, and aligned with your mission.
+                What sets us apart is our focus on customization and responsible
+                AI. Every solution is custom-trained on your data, policies, and
+                workflows – not just a plug-and-play tool. We prioritize
+                explainability, data protection, and compliance while ensuring
+                seamless integration with your existing stack. The result is AI
+                support that's smart, secure, and aligned with your mission.
               </p>
 
               <div className="bg-sand-50 mt-8 rounded-lg p-6">
                 <p className="font-inter-tight text-sand-900 text-xl font-medium">
-                  Ready to transform your customer service with AI? Discover how intelligent automation can elevate your support experience.
+                  Ready to transform your customer service with AI? Discover how
+                  intelligent automation can elevate your support experience.
                 </p>
                 <Button
                   variant="outline"
