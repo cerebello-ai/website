@@ -112,25 +112,25 @@ const solutions = [
       {
         id: 'subpage-7',
         title: 'Intelligent Document Processing',
-        href: '#',
+        href: '/solutions/intelligent-document-processing',
         icon: File,
       },
       {
         id: 'subpage-8',
         title: 'Customer Service AI',
-        href: '#',
+        href: '/solutions/customer-service-ai',
         icon: UserRound,
       },
       {
         id: 'subpage-9',
         title: 'Data Analytics & Insights',
-        href: '#',
+        href: '/solutions/data-analytics-insights',
         icon: PieChart,
       },
       {
         id: 'subpage-10',
         title: 'API Integration',
-        href: '#',
+        href: '/solutions/api-integration',
         icon: Globe,
       },
     ],
@@ -918,94 +918,94 @@ const PartnersMenu = () => (
   </div>
 );
 
-const ResourcesMenu = () => (
-  <div className="grid gap-y-12 md:grid-cols-2 md:gap-x-6 lg:grid-cols-4 lg:gap-6">
-    <div className="col-span-1">
-      <a
-        href="#"
-        className="group bg-primary text-primary-foreground relative flex h-full flex-row overflow-hidden rounded-lg p-0 lg:rounded-xl"
-      >
-        <div className="relative z-10 flex w-full flex-col-reverse text-left">
-          <div className="relative z-20 flex flex-col px-6 pt-6 pb-[14rem] md:pt-40 md:pb-6">
-            <div className="mt-auto flex items-center space-x-1 text-xs">
-              Resource Center
-              <ArrowRight className="ml-1 size-4 transition-transform group-hover:translate-x-1" />
-            </div>
-            <p className="mt-2 text-xs">
-              Access whitepapers, case studies, and AI implementation guides to
-              accelerate your transformation.
-            </p>
-          </div>
-          <div className="absolute inset-0">
-            <img
-              src="/images/layout/banner-navabar.jpg"
-              alt="placeholder"
-              className="h-full w-full object-cover object-center"
-            />
-          </div>
-          <div className="absolute inset-x-0 top-0 z-10 h-[60%] bg-[linear-gradient(hsl(var(--color-primary))_50%,transparent)] md:top-auto md:bottom-[-10%] md:h-[50%] md:bg-[linear-gradient(transparent,hsl(var(--color-primary))_50%)]"></div>
-        </div>
-      </a>
-    </div>
-    <div className="lg:col-span-2 lg:flex lg:flex-col">
-      <div>
-        <div className="border-border mb-4 pb-3 text-left md:mb-6 lg:border-b">
-          <strong className="text-muted-foreground text-left text-xs font-medium tracking-wider uppercase">
-            Featured Resources
-          </strong>
-        </div>
-      </div>
-      <menu className="grid gap-y-4 lg:h-full lg:grid-cols-2 lg:gap-6">
-        {resources.map((resource) => (
-          <NavigationMenuLink
-            key={resource.id}
-            href={resource.href}
-            className="group border-border bg-accent lg:bg-background flex flex-row items-center space-x-4 rounded-md px-6 py-5 text-left md:space-x-5 lg:border lg:p-5"
-          >
-            <resource.icon className="size-6 sm:size-7" />
-            <div className="ml-4 flex-1">
-              <div className="text-foreground/85 group-hover:text-foreground text-sm font-medium">
-                {resource.title}
-              </div>
-              <p className="text-muted-foreground group-hover:text-foreground mt-1 text-xs">
-                {resource.description}
-              </p>
-            </div>
-            <ArrowRight className="size-4 transition-transform group-hover:translate-x-1 lg:hidden" />
-          </NavigationMenuLink>
-        ))}
-      </menu>
-    </div>
-    <div className="col-span-1 md:col-span-2 lg:col-span-1">
-      {topicGroups.map((group) => (
-        <Fragment key={group.title}>
-          <div className="border-border mb-4 pb-3 text-left md:col-span-2 md:mb-7 lg:border-b">
-            <strong className="text-muted-foreground text-left text-xs font-medium tracking-wider uppercase">
-              Learning & Support
-            </strong>
-          </div>
-          <menu className="mb-7 grid md:grid-cols-2 md:gap-x-6 lg:grid-cols-1 lg:gap-x-0">
-            {group.topics.map((topic) => (
-              <NavigationMenuLink
-                key={topic.id}
-                href={topic.href}
-                className="group border-border flex flex-row items-center space-x-6 border-b py-5 text-left sm:py-8 lg:space-x-4 lg:border-0 lg:py-0"
-              >
-                <div className="flex aspect-square size-9 shrink-0 items-center justify-center">
-                  <topic.icon className="size-5" />
-                </div>
-                <div className="text-foreground/85 group-hover:text-foreground flex-1 text-xs font-medium md:text-sm">
-                  {topic.title}
-                </div>
-                <ArrowRight className="size-4 transition-transform group-hover:translate-x-1 lg:hidden" />
-              </NavigationMenuLink>
-            ))}
-          </menu>
-        </Fragment>
-      ))}
-    </div>
-  </div>
-);
+// const ResourcesMenu = () => (
+//   <div className="grid gap-y-12 md:grid-cols-2 md:gap-x-6 lg:grid-cols-4 lg:gap-6">
+//     <div className="col-span-1">
+//       <a
+//         href="#"
+//         className="group bg-primary text-primary-foreground relative flex h-full flex-row overflow-hidden rounded-lg p-0 lg:rounded-xl"
+//       >
+//         <div className="relative z-10 flex w-full flex-col-reverse text-left">
+//           <div className="relative z-20 flex flex-col px-6 pt-6 pb-[14rem] md:pt-40 md:pb-6">
+//             <div className="mt-auto flex items-center space-x-1 text-xs">
+//               Resource Center
+//               <ArrowRight className="ml-1 size-4 transition-transform group-hover:translate-x-1" />
+//             </div>
+//             <p className="mt-2 text-xs">
+//               Access whitepapers, case studies, and AI implementation guides to
+//               accelerate your transformation.
+//             </p>
+//           </div>
+//           <div className="absolute inset-0">
+//             <img
+//               src="/images/layout/banner-navabar.jpg"
+//               alt="placeholder"
+//               className="h-full w-full object-cover object-center"
+//             />
+//           </div>
+//           <div className="absolute inset-x-0 top-0 z-10 h-[60%] bg-[linear-gradient(hsl(var(--color-primary))_50%,transparent)] md:top-auto md:bottom-[-10%] md:h-[50%] md:bg-[linear-gradient(transparent,hsl(var(--color-primary))_50%)]"></div>
+//         </div>
+//       </a>
+//     </div>
+//     <div className="lg:col-span-2 lg:flex lg:flex-col">
+//       <div>
+//         <div className="border-border mb-4 pb-3 text-left md:mb-6 lg:border-b">
+//           <strong className="text-muted-foreground text-left text-xs font-medium tracking-wider uppercase">
+//             Featured Resources
+//           </strong>
+//         </div>
+//       </div>
+//       <menu className="grid gap-y-4 lg:h-full lg:grid-cols-2 lg:gap-6">
+//         {resources.map((resource) => (
+//           <NavigationMenuLink
+//             key={resource.id}
+//             href={resource.href}
+//             className="group border-border bg-accent lg:bg-background flex flex-row items-center space-x-4 rounded-md px-6 py-5 text-left md:space-x-5 lg:border lg:p-5"
+//           >
+//             <resource.icon className="size-6 sm:size-7" />
+//             <div className="ml-4 flex-1">
+//               <div className="text-foreground/85 group-hover:text-foreground text-sm font-medium">
+//                 {resource.title}
+//               </div>
+//               <p className="text-muted-foreground group-hover:text-foreground mt-1 text-xs">
+//                 {resource.description}
+//               </p>
+//             </div>
+//             <ArrowRight className="size-4 transition-transform group-hover:translate-x-1 lg:hidden" />
+//           </NavigationMenuLink>
+//         ))}
+//       </menu>
+//     </div>
+//     <div className="col-span-1 md:col-span-2 lg:col-span-1">
+//       {topicGroups.map((group) => (
+//         <Fragment key={group.title}>
+//           <div className="border-border mb-4 pb-3 text-left md:col-span-2 md:mb-7 lg:border-b">
+//             <strong className="text-muted-foreground text-left text-xs font-medium tracking-wider uppercase">
+//               Learning & Support
+//             </strong>
+//           </div>
+//           <menu className="mb-7 grid md:grid-cols-2 md:gap-x-6 lg:grid-cols-1 lg:gap-x-0">
+//             {group.topics.map((topic) => (
+//               <NavigationMenuLink
+//                 key={topic.id}
+//                 href={topic.href}
+//                 className="group border-border flex flex-row items-center space-x-6 border-b py-5 text-left sm:py-8 lg:space-x-4 lg:border-0 lg:py-0"
+//               >
+//                 <div className="flex aspect-square size-9 shrink-0 items-center justify-center">
+//                   <topic.icon className="size-5" />
+//                 </div>
+//                 <div className="text-foreground/85 group-hover:text-foreground flex-1 text-xs font-medium md:text-sm">
+//                   {topic.title}
+//                 </div>
+//                 <ArrowRight className="size-4 transition-transform group-hover:translate-x-1 lg:hidden" />
+//               </NavigationMenuLink>
+//             ))}
+//           </menu>
+//         </Fragment>
+//       ))}
+//     </div>
+//   </div>
+// );
 
 const Navbar4 = () => {
   const [open, setOpen] = useState(false);
@@ -1083,14 +1083,14 @@ const Navbar4 = () => {
                     <PartnersMenu />
                   </NavigationMenuContent>
                 </NavigationMenuItem>
-                <NavigationMenuItem>
+                {/* <NavigationMenuItem>
                   <NavigationMenuTrigger className="text-xs xl:text-sm">
                     Resources
                   </NavigationMenuTrigger>
                   <NavigationMenuContent className="min-w-[calc(100vw-4rem)] p-12 2xl:min-w-[calc(1400px-4rem)]">
                     <ResourcesMenu />
                   </NavigationMenuContent>
-                </NavigationMenuItem>
+                </NavigationMenuItem> */}
               </NavigationMenuList>
             </div>
             <div className="flex items-center gap-2">
@@ -1189,7 +1189,7 @@ const Navbar4 = () => {
                       <ArrowRight className="size-4" />
                     </span>
                   </button>
-                  <button
+                  {/* <button
                     type="button"
                     className="border-border flex w-full items-center border-b px-8 py-6 text-left"
                     onClick={() => setSubmenu('resources')}
@@ -1200,7 +1200,7 @@ const Navbar4 = () => {
                     <span className="shrink-0">
                       <ArrowRight className="size-4" />
                     </span>
-                  </button>
+                  </button> */}
                 </div>
               )}
               {submenu === 'solutions' && (
@@ -1233,12 +1233,12 @@ const Navbar4 = () => {
                   <PartnersMenu />
                 </div>
               )}
-              {submenu === 'resources' && (
+              {/* {submenu === 'resources' && (
                 <div className="container">
                   <h2 className="pt-4 pb-6 text-lg font-medium">Resources</h2>
                   <ResourcesMenu />
                 </div>
-              )}
+              )} */}
               {/* Mobile menu footer */}
               <div className="mx-[2rem] mt-auto flex flex-col items-center gap-8 py-24">
                 <Button size="sm">Get Started</Button>

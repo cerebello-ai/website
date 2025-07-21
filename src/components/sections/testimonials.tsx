@@ -34,9 +34,63 @@ interface Testimonial {
 
 interface TestimonialsProps {
   testimonials: Testimonial[];
+  title?: string;
+  description?: string;
 }
 
-export default function Testimonials({ testimonials }: TestimonialsProps) {
+// Example testimonials array with Unsplash image URLs
+const exampleTestimonials: Testimonial[] = [
+  {
+    slug: 'samsung',
+    quote:
+      "Cerebello's AI solution cut our response times by 75% with full data security.",
+    author: 'Park Min-jun, IT Director',
+    company: 'Samsung Electronics',
+    image: '/images/homepage/testimonials/amy-chase.webp',
+    className: 'object-top',
+  },
+  {
+    slug: 'ziggo',
+    quote:
+      'AI automation reduced processing time by 60% and improved response times by 40%.',
+    author: 'Sophie van der Berg, Operations Manager',
+    company: 'Ziggo',
+    image: '/images/homepage/testimonials/victoria-smith.webp',
+  },
+  {
+    slug: 'stadswerk072',
+    quote:
+      'Our AI assistant handles 70% of queries, boosting satisfaction and freeing our team.',
+    author: 'Jan de Vries, Digital Innovation Lead',
+    company: 'Stadswerk072 (City of Alkmaar)',
+    image: '/images/homepage/testimonials/kevin-yam.webp',
+    className: 'object-top',
+  },
+  {
+    slug: 'techflow',
+    quote: "Cerebello's AI strategy delivered 200% ROI in the first year.",
+    author: 'Emma Thompson, CEO',
+    company: 'TechFlow Solutions',
+    image: '/images/homepage/testimonials/kundo-marta.webp',
+    className: 'object-top',
+  },
+  {
+    slug: 'medcare',
+    quote:
+      'Cerebello guided us through AI deployment with ethical and GDPR-compliant solutions.',
+    author: 'Dr. Hendrik Muller, CTO',
+    company: 'MedCare Netherlands',
+    image: '/images/homepage/testimonials/jonas-kotara.webp',
+    className: 'object-top',
+  },
+];
+
+// Use the exampleTestimonials array in the component
+export default function Testimonials({
+  testimonials = exampleTestimonials,
+  title = 'Trusted by\nforward-thinking businesses',
+  description = 'Cerebello empowers organizations across industries to harness AI and automation for operational excellence, driving efficiency and sustainable growth.',
+}: TestimonialsProps) {
   const [api, setApi] = useState<CarouselApi>();
   const [current, setCurrent] = useState(0);
 
@@ -53,15 +107,16 @@ export default function Testimonials({ testimonials }: TestimonialsProps) {
       <div className="container">
         <div className="flex flex-col gap-3 md:flex-row">
           <h2 className="flex-1 text-3xl font-semibold tracking-tight text-balance sm:text-4xl md:text-5xl lg:text-6xl">
-            Trusted by
-            <br />
-            forward-thinking businesses
+            {title.split('\n').map((line, index) => (
+              <span key={index}>
+                {line}
+                {index < title.split('\n').length - 1 && <br />}
+              </span>
+            ))}
           </h2>
           <div className="flex flex-1 flex-col items-start gap-3 md:max-w-md md:self-end">
             <p className="text-lg font-medium text-gray-700 dark:text-gray-300">
-              Cerebello empowers organizations across industries to harness AI
-              and automation for operational excellence, driving efficiency and
-              sustainable growth.
+              {description}
             </p>
             <Button asChild variant="outline" className="group">
               <Link href="/case-studies">
@@ -116,7 +171,7 @@ export default function Testimonials({ testimonials }: TestimonialsProps) {
                         </div>
                       </CardHeader>
                       <CardContent className="pt-5 pb-7">
-                        <blockquote className="text-lg leading-7 font-semibold tracking-tight text-balance md:text-xl lg:text-2xl">
+                        <blockquote className="text-base leading-6 font-medium tracking-tight text-balance md:text-lg lg:text-xl">
                           {testimonial.quote}
                         </blockquote>
                       </CardContent>
