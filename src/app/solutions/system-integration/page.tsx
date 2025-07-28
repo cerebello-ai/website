@@ -37,21 +37,24 @@ export const metadata: Metadata = {
 const testimonials = [
   {
     slug: 'erp-crm-integration',
-    quote: 'Cerebello unified our ERP, CRM, and analytics platforms into one seamless ecosystem. We eliminated manual data entry and reduced processing time by 60% while maintaining complete data consistency across departments.',
+    quote:
+      'Cerebello unified our ERP, CRM, and analytics platforms into one seamless ecosystem. We eliminated manual data entry and reduced processing time by 60% while maintaining complete data consistency across departments.',
     author: 'Alexandra Martinez',
     company: 'Manufacturing Enterprise',
     image: '/images/homepage/testimonials/amy-chase.webp',
   },
   {
     slug: 'legacy-modernization',
-    quote: 'Our 20-year-old legacy system now works seamlessly with modern cloud applications. The API wrapper approach preserved our critical operations while enabling new digital capabilities without massive capital expenditure.',
+    quote:
+      'Our 20-year-old legacy system now works seamlessly with modern cloud applications. The API wrapper approach preserved our critical operations while enabling new digital capabilities without massive capital expenditure.',
     author: 'Thomas Chen',
     company: 'Financial Services Group',
     image: '/images/homepage/testimonials/victoria-smith.webp',
   },
   {
     slug: 'hybrid-cloud-integration',
-    quote: 'The hybrid integration solution bridges our on-premise database with cloud-based SaaS platforms flawlessly. Secure, high-performance data flow enables real-time decision-making across all business units.',
+    quote:
+      'The hybrid integration solution bridges our on-premise database with cloud-based SaaS platforms flawlessly. Secure, high-performance data flow enables real-time decision-making across all business units.',
     author: 'Jennifer Rodriguez',
     company: 'Healthcare Network',
     image: '/images/homepage/testimonials/kevin-yam.webp',
@@ -64,37 +67,43 @@ const systemIntegrationMethodologySteps = [
     step: '01',
     title: 'Architecture Analysis',
     subtitle: 'Comprehensive IT Assessment',
-    description: 'Thoroughly analyze current IT architecture, business workflows, and requirements. Identify all systems, data sources, and pain points to design optimal integration architecture.',
+    description:
+      'Thoroughly analyze current IT architecture, business workflows, and requirements. Identify all systems, data sources, and pain points to design optimal integration architecture.',
   },
   {
     step: '02',
     title: 'Connector Design',
     subtitle: 'Integration Interface Planning',
-    description: 'Design connectors and interfaces for each integration point using RESTful APIs, web services, or middleware. Ensure compatibility and optimal performance between systems.',
+    description:
+      'Design connectors and interfaces for each integration point using RESTful APIs, web services, or middleware. Ensure compatibility and optimal performance between systems.',
   },
   {
     step: '03',
     title: 'Data Mapping & Transformation',
     subtitle: 'Unified Data Language',
-    description: 'Map data fields and business logic between systems, creating transformation rules to ensure information is interpretable across all applications with maintained integrity.',
+    description:
+      'Map data fields and business logic between systems, creating transformation rules to ensure information is interpretable across all applications with maintained integrity.',
   },
   {
     step: '04',
     title: 'Implementation & Security',
     subtitle: 'Robust Solution Development',
-    description: 'Implement integration solutions with custom code, middleware components, and security measures including authentication, encryption, and access controls.',
+    description:
+      'Implement integration solutions with custom code, middleware components, and security measures including authentication, encryption, and access controls.',
   },
   {
     step: '05',
     title: 'Testing & Validation',
     subtitle: 'Comprehensive Quality Assurance',
-    description: 'Conduct rigorous testing including unit tests, integration tests, and user acceptance testing to verify data integrity, performance, and business process functionality.',
+    description:
+      'Conduct rigorous testing including unit tests, integration tests, and user acceptance testing to verify data integrity, performance, and business process functionality.',
   },
   {
     step: '06',
     title: 'Optimization & Deployment',
     subtitle: 'Production Excellence',
-    description: 'Deploy to production with performance monitoring and optimization. Provide ongoing support, documentation, and continuous improvement as business needs evolve.',
+    description:
+      'Deploy to production with performance monitoring and optimization. Provide ongoing support, documentation, and continuous improvement as business needs evolve.',
   },
 ];
 
@@ -109,19 +118,23 @@ const systemIntegrationStats = [
 const systemIntegrationBenefits = [
   {
     title: 'Seamless Enterprise Connectivity',
-    description: 'Robust integrations linking core systems (ERP, CRM, databases) and SaaS applications into one interoperable network with unified data views',
+    description:
+      'Robust integrations linking core systems (ERP, CRM, databases) and SaaS applications into one interoperable network with unified data views',
   },
   {
     title: 'API Orchestration & Middleware',
-    description: 'Custom APIs and middleware that orchestrate communication between services with standardized, real-time interactions and easy scalability',
+    description:
+      'Custom APIs and middleware that orchestrate communication between services with standardized, real-time interactions and easy scalability',
   },
   {
     title: 'Legacy System Modernization',
-    description: 'Extend legacy system value through API wrappers and modern interfaces without altering core code or requiring costly full replacements',
+    description:
+      'Extend legacy system value through API wrappers and modern interfaces without altering core code or requiring costly full replacements',
   },
   {
     title: 'Secure Hybrid Cloud Integration',
-    description: 'Bridge cloud and on-premise environments with encrypted data pipelines, access controls, and compliance-ready security frameworks',
+    description:
+      'Bridge cloud and on-premise environments with encrypted data pipelines, access controls, and compliance-ready security frameworks',
   },
 ];
 
@@ -142,20 +155,38 @@ export default function SystemIntegrationPage() {
 
             <div className="font-inter space-y-6 text-lg leading-relaxed">
               <p>
-                In today's complex IT landscape, businesses rely on a multitude of applications – from ERPs and CRMs to data analytics tools, RPA bots, and AI models – that often operate in isolation. System Integration is the process of unifying these disparate systems into a cohesive workflow, making data sharing seamless and ensuring consistency across your organization.
+                In today's complex IT landscape, businesses rely on a multitude
+                of applications – from ERPs and CRMs to data analytics tools,
+                RPA bots, and AI models – that often operate in isolation.
+                System Integration is the process of unifying these disparate
+                systems into a cohesive workflow, making data sharing seamless
+                and ensuring consistency across your organization.
               </p>
 
               <p>
-                Cerebello's System Integration services connect all your enterprise systems, data platforms, automation tools, AI components, and third-party services into a unified ecosystem. By connecting different systems, organizations can eliminate manual data entry, reduce duplicate efforts, and automate repetitive tasks – saving time and minimizing errors while creating a single source of truth for better decision-making.
+                Cerebello's System Integration services connect all your
+                enterprise systems, data platforms, automation tools, AI
+                components, and third-party services into a unified ecosystem.
+                By connecting different systems, organizations can eliminate
+                manual data entry, reduce duplicate efforts, and automate
+                repetitive tasks – saving time and minimizing errors while
+                creating a single source of truth for better decision-making.
               </p>
 
               <p>
-                Our integration solutions emphasize secure data flow across cloud and on-premises environments, ensuring legacy and modern platforms work together seamlessly. We break down data silos and unify processes, enabling real-time information exchange through robust APIs, middleware, and hybrid cloud integration approaches that scale with your business needs.
+                Our integration solutions emphasize secure data flow across
+                cloud and on-premises environments, ensuring legacy and modern
+                platforms work together seamlessly. We break down data silos and
+                unify processes, enabling real-time information exchange through
+                robust APIs, middleware, and hybrid cloud integration approaches
+                that scale with your business needs.
               </p>
 
               <div className="bg-sand-50 mt-8 rounded-lg p-6">
                 <p className="font-inter-tight text-sand-900 text-xl font-medium">
-                  Ready to unify your enterprise systems? Discover how comprehensive integration can transform your operational efficiency.
+                  Ready to unify your enterprise systems? Discover how
+                  comprehensive integration can transform your operational
+                  efficiency.
                 </p>
                 <Button
                   variant="outline"

@@ -37,21 +37,24 @@ export const metadata: Metadata = {
 const testimonials = [
   {
     slug: 'operations-dashboard-success',
-    quote: 'Our real-time operations dashboard transformed decision-making across departments. Interactive visualizations and KPI monitoring enabled 40% faster response times to operational issues and improved overall efficiency.',
+    quote:
+      'Our real-time operations dashboard transformed decision-making across departments. Interactive visualizations and KPI monitoring enabled 40% faster response times to operational issues and improved overall efficiency.',
     author: 'Maria González',
     company: 'Manufacturing Enterprise',
     image: '/images/homepage/testimonials/amy-chase.webp',
   },
   {
     slug: 'executive-analytics-portal',
-    quote: 'The executive dashboard provides instant visibility into company-wide performance metrics. High-level summaries and drill-down capabilities support strategic decisions with confidence and speed.',
+    quote:
+      'The executive dashboard provides instant visibility into company-wide performance metrics. High-level summaries and drill-down capabilities support strategic decisions with confidence and speed.',
     author: 'Robert Chen',
     company: 'Financial Services Group',
     image: '/images/homepage/testimonials/victoria-smith.webp',
   },
   {
     slug: 'multi-source-integration',
-    quote: 'Consolidating data from multiple systems into one coherent dashboard eliminated information silos. Our teams now have unified visibility across finance, operations, and customer metrics in real-time.',
+    quote:
+      'Consolidating data from multiple systems into one coherent dashboard eliminated information silos. Our teams now have unified visibility across finance, operations, and customer metrics in real-time.',
     author: 'Jennifer Park',
     company: 'Retail Corporation',
     image: '/images/homepage/testimonials/kevin-yam.webp',
@@ -64,37 +67,43 @@ const dataDashboardsMethodologySteps = [
     step: '01',
     title: 'Requirements Discovery',
     subtitle: 'Goals & Success Criteria',
-    description: 'Conduct in-depth consultations to understand your goals, data sources, and success criteria. Identify key metrics, end-users, and critical decisions the dashboard should support.',
+    description:
+      'Conduct in-depth consultations to understand your goals, data sources, and success criteria. Identify key metrics, end-users, and critical decisions the dashboard should support.',
   },
   {
     step: '02',
     title: 'UX Design & Prototyping',
     subtitle: 'User-Centric Interface',
-    description: 'Create intuitive UX layouts and wireframes with design-first philosophy. Develop interactive prototypes for early feedback, ensuring user-friendly and aligned final product.',
+    description:
+      'Create intuitive UX layouts and wireframes with design-first philosophy. Develop interactive prototypes for early feedback, ensuring user-friendly and aligned final product.',
   },
   {
     step: '03',
     title: 'Data Integration',
     subtitle: 'Seamless Connectivity',
-    description: 'Connect dashboard to all relevant data sources with secure integrations. Consolidate and transform data from multiple systems, setting up pipelines for accurate real-time reporting.',
+    description:
+      'Connect dashboard to all relevant data sources with secure integrations. Consolidate and transform data from multiple systems, setting up pipelines for accurate real-time reporting.',
   },
   {
     step: '04',
     title: 'Dashboard Development',
     subtitle: 'Interactive Implementation',
-    description: 'Build interactive visualizations, filters, and custom features through iterative agile sprints. Develop role-based views and drill-down analytics tailored to specifications.',
+    description:
+      'Build interactive visualizations, filters, and custom features through iterative agile sprints. Develop role-based views and drill-down analytics tailored to specifications.',
   },
   {
     step: '05',
     title: 'Validation & Testing',
     subtitle: 'Quality Assurance',
-    description: 'Rigorously test for accuracy, performance, and usability. Verify data calculations, KPI formulas, and real-time updates through comprehensive user acceptance testing.',
+    description:
+      'Rigorously test for accuracy, performance, and usability. Verify data calculations, KPI formulas, and real-time updates through comprehensive user acceptance testing.',
   },
   {
     step: '06',
     title: 'Deployment & Enhancement',
     subtitle: 'Ongoing Evolution',
-    description: 'Deploy to production environment with smooth rollout and user training. Provide continuous support, monitoring, and iterative improvements as business needs evolve.',
+    description:
+      'Deploy to production environment with smooth rollout and user training. Provide continuous support, monitoring, and iterative improvements as business needs evolve.',
   },
 ];
 
@@ -109,19 +118,23 @@ const dataDashboardsStats = [
 const dataDashboardsBenefits = [
   {
     title: 'Real-Time Data Visibility',
-    description: 'Live data feeds ensure dashboards always reflect current information, enabling immediate action on issues and opportunities as they happen',
+    description:
+      'Live data feeds ensure dashboards always reflect current information, enabling immediate action on issues and opportunities as they happen',
   },
   {
     title: 'Interactive Visualizations',
-    description: 'Rich charts, graphs, and maps with drill-down capabilities that transform raw data into clear visuals highlighting patterns and insights',
+    description:
+      'Rich charts, graphs, and maps with drill-down capabilities that transform raw data into clear visuals highlighting patterns and insights',
   },
   {
     title: 'Executive Summary Views',
-    description: 'High-level summaries and snapshots tailored for quick leadership review, distilling critical metrics and trends in concise format',
+    description:
+      'High-level summaries and snapshots tailored for quick leadership review, distilling critical metrics and trends in concise format',
   },
   {
     title: 'Comprehensive KPI Monitoring',
-    description: 'Track Key Performance Indicators with targets, thresholds, and alert indicators to immediately see performance status and trigger responses',
+    description:
+      'Track Key Performance Indicators with targets, thresholds, and alert indicators to immediately see performance status and trigger responses',
   },
 ];
 
@@ -142,20 +155,40 @@ export default function DataDashboardsPage() {
 
             <div className="font-inter space-y-6 text-lg leading-relaxed">
               <p>
-                Cerebello's Data Dashboards service focuses on designing and developing custom dashboards that turn raw data into actionable insights. Our dashboards provide a consolidated, real-time view of key metrics and performance indicators, enabling quick, data-driven decisions at every level. Instead of sifting through spreadsheets or static reports, your team gets an interactive visual interface where complex data is presented clearly and intuitively.
+                Cerebello's Data Dashboards service focuses on designing and
+                developing custom dashboards that turn raw data into actionable
+                insights. Our dashboards provide a consolidated, real-time view
+                of key metrics and performance indicators, enabling quick,
+                data-driven decisions at every level. Instead of sifting through
+                spreadsheets or static reports, your team gets an interactive
+                visual interface where complex data is presented clearly and
+                intuitively.
               </p>
 
               <p>
-                Our solutions are versatile and industry-agnostic, building operational dashboards for day-to-day performance tracking, executive dashboards offering high-level summaries for leadership, and comprehensive analytics portals that aggregate enterprise-wide data. Whether you need company-wide visibility or department-specific reporting, each solution is tailored to deliver the right information to the right people.
+                Our solutions are versatile and industry-agnostic, building
+                operational dashboards for day-to-day performance tracking,
+                executive dashboards offering high-level summaries for
+                leadership, and comprehensive analytics portals that aggregate
+                enterprise-wide data. Whether you need company-wide visibility
+                or department-specific reporting, each solution is tailored to
+                deliver the right information to the right people.
               </p>
 
               <p>
-                Every dashboard is crafted with intuitive user experience in mind, ensuring insights are not only available but easily accessible and meaningful for all stakeholders. We combine innovative visualization, solid data engineering, and thoughtful design to deliver dashboards that drive informed decisions and measurable business outcomes, transforming your data into a strategic asset.
+                Every dashboard is crafted with intuitive user experience in
+                mind, ensuring insights are not only available but easily
+                accessible and meaningful for all stakeholders. We combine
+                innovative visualization, solid data engineering, and thoughtful
+                design to deliver dashboards that drive informed decisions and
+                measurable business outcomes, transforming your data into a
+                strategic asset.
               </p>
 
               <div className="bg-sand-50 mt-8 rounded-lg p-6">
                 <p className="font-inter-tight text-sand-900 text-xl font-medium">
-                  Ready to visualize your data insights? Discover how custom dashboards can accelerate your decision-making processes.
+                  Ready to visualize your data insights? Discover how custom
+                  dashboards can accelerate your decision-making processes.
                 </p>
                 <Button
                   variant="outline"

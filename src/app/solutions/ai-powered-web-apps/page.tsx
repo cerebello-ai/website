@@ -37,21 +37,24 @@ export const metadata: Metadata = {
 const testimonials = [
   {
     slug: 'samsung-intelligent-email',
-    quote: 'Cerebello developed a secure, AI-enhanced email platform deployed entirely on-premises. Department-specific AI capabilities reduced email handling time by 50% while maintaining 100% data privacy on our servers.',
+    quote:
+      'Cerebello developed a secure, AI-enhanced email platform deployed entirely on-premises. Department-specific AI capabilities reduced email handling time by 50% while maintaining 100% data privacy on our servers.',
     author: 'James Park',
     company: 'Samsung Electronics',
     image: '/images/homepage/testimonials/amy-chase.webp',
   },
   {
     slug: 'enterprise-customer-portal',
-    quote: 'Our AI-powered customer portal with intelligent chatbots and recommendation engine increased user engagement by 40% and reduced support ticket volume by 35% through automated assistance.',
+    quote:
+      'Our AI-powered customer portal with intelligent chatbots and recommendation engine increased user engagement by 40% and reduced support ticket volume by 35% through automated assistance.',
     author: 'Lisa Rodriguez',
     company: 'Enterprise Software Company',
     image: '/images/homepage/testimonials/victoria-smith.webp',
   },
   {
     slug: 'healthcare-workflow-app',
-    quote: 'The intelligent document processing and classification system streamlined our patient record workflows. NLP-powered automation reduced manual processing time by 60% while improving accuracy.',
+    quote:
+      'The intelligent document processing and classification system streamlined our patient record workflows. NLP-powered automation reduced manual processing time by 60% while improving accuracy.',
     author: 'Dr. Michael Thompson',
     company: 'Healthcare Network',
     image: '/images/homepage/testimonials/kevin-yam.webp',
@@ -64,37 +67,43 @@ const aiWebAppsMethodologySteps = [
     step: '01',
     title: 'Discovery & Planning',
     subtitle: 'Requirements & AI Strategy',
-    description: 'Collaborate with your team through workshops and research to understand business needs, define project scope, and identify the best opportunities where AI can add value.',
+    description:
+      'Collaborate with your team through workshops and research to understand business needs, define project scope, and identify the best opportunities where AI can add value.',
   },
   {
     step: '02',
     title: 'Design & Prototyping',
     subtitle: 'User-Centered Architecture',
-    description: 'Design application architecture and user interface with wireframes and prototypes. Human-centered design approach ensures intuitive, user-friendly experience with early feedback incorporation.',
+    description:
+      'Design application architecture and user interface with wireframes and prototypes. Human-centered design approach ensures intuitive, user-friendly experience with early feedback incorporation.',
   },
   {
     step: '03',
     title: 'AI Model Integration',
     subtitle: 'Intelligence Implementation',
-    description: 'Develop and adapt AI models including machine learning, NLP algorithms, and embed them into the application. Train models on relevant data for accuracy and contextual alignment.',
+    description:
+      'Develop and adapt AI models including machine learning, NLP algorithms, and embed them into the application. Train models on relevant data for accuracy and contextual alignment.',
   },
   {
     step: '04',
     title: 'Testing & Quality Assurance',
     subtitle: 'Comprehensive Validation',
-    description: 'Rigorously test software functionality and AI outputs through functional, security, and user acceptance testing. Verify AI predictions and recommendations for reliability and accuracy.',
+    description:
+      'Rigorously test software functionality and AI outputs through functional, security, and user acceptance testing. Verify AI predictions and recommendations for reliability and accuracy.',
   },
   {
     step: '05',
     title: 'Deployment & Launch',
     subtitle: 'Production Excellence',
-    description: 'Deploy to your chosen environment following DevOps best practices for scalability and security. Coordinate launch to minimize disruption with all components running smoothly.',
+    description:
+      'Deploy to your chosen environment following DevOps best practices for scalability and security. Coordinate launch to minimize disruption with all components running smoothly.',
   },
   {
     step: '06',
     title: 'Ongoing Support & Enhancement',
     subtitle: 'Continuous Optimization',
-    description: 'Provide continuous support, performance monitoring, and updates. Include training, documentation, and iterative improvements to maximize long-term benefits and user adoption.',
+    description:
+      'Provide continuous support, performance monitoring, and updates. Include training, documentation, and iterative improvements to maximize long-term benefits and user adoption.',
   },
 ];
 
@@ -109,19 +118,23 @@ const aiWebAppsStats = [
 const aiWebAppsBenefits = [
   {
     title: 'Conversational AI & Virtual Assistants',
-    description: 'Interactive chatbots and virtual assistants providing real-time support through natural language dialogue for customer service or internal helpdesk',
+    description:
+      'Interactive chatbots and virtual assistants providing real-time support through natural language dialogue for customer service or internal helpdesk',
   },
   {
     title: 'Natural Language Processing (NLP)',
-    description: 'Advanced text analysis and understanding capabilities for document processing, intelligent search, content categorization, and automated insights',
+    description:
+      'Advanced text analysis and understanding capabilities for document processing, intelligent search, content categorization, and automated insights',
   },
   {
     title: 'Predictive Analytics & Recommendations',
-    description: 'Machine learning models for forecasting trends, personalizing user experiences, and delivering intelligent recommendations based on data patterns',
+    description:
+      'Machine learning models for forecasting trends, personalizing user experiences, and delivering intelligent recommendations based on data patterns',
   },
   {
     title: 'Intelligent Classification & Automation',
-    description: 'AI-powered systems that automatically classify, route, and process information to streamline operations and ensure nothing falls through cracks',
+    description:
+      'AI-powered systems that automatically classify, route, and process information to streamline operations and ensure nothing falls through cracks',
   },
 ];
 
@@ -142,20 +155,39 @@ export default function AiPoweredWebAppsPage() {
 
             <div className="font-inter space-y-6 text-lg leading-relaxed">
               <p>
-                Cerebello's AI-Powered Web Apps service delivers bespoke web applications enriched with artificial intelligence. Every solution is custom-built and tailored to your organization's needs, ensuring seamless alignment with your workflows and goals. By embedding AI capabilities directly into these applications, we help you automate complex tasks, deliver smarter user experiences, and generate real-time insights.
+                Cerebello's AI-Powered Web Apps service delivers bespoke web
+                applications enriched with artificial intelligence. Every
+                solution is custom-built and tailored to your organization's
+                needs, ensuring seamless alignment with your workflows and
+                goals. By embedding AI capabilities directly into these
+                applications, we help you automate complex tasks, deliver
+                smarter user experiences, and generate real-time insights.
               </p>
 
               <p>
-                Our development approach blends strategic planning, robust full-stack engineering, and advanced AI integration. We design each application with scalability, security, and usability in mind, making platforms both powerful and intuitive. From conversational chatbots and natural language processing to predictive analytics and intelligent automation, we create comprehensive solutions that augment your team's capabilities.
+                Our development approach blends strategic planning, robust
+                full-stack engineering, and advanced AI integration. We design
+                each application with scalability, security, and usability in
+                mind, making platforms both powerful and intuitive. From
+                conversational chatbots and natural language processing to
+                predictive analytics and intelligent automation, we create
+                comprehensive solutions that augment your team's capabilities.
               </p>
 
               <p>
-                Whether you need an AI-driven customer portal, intelligent internal workflow tool, or specialized business application, we combine strategy, software engineering, and artificial intelligence to deliver high-impact, secure solutions. Our focus is on AI that enhances human capabilities rather than replaces them, creating applications that drive efficiency, innovation, and measurable business value.
+                Whether you need an AI-driven customer portal, intelligent
+                internal workflow tool, or specialized business application, we
+                combine strategy, software engineering, and artificial
+                intelligence to deliver high-impact, secure solutions. Our focus
+                is on AI that enhances human capabilities rather than replaces
+                them, creating applications that drive efficiency, innovation,
+                and measurable business value.
               </p>
 
               <div className="bg-sand-50 mt-8 rounded-lg p-6">
                 <p className="font-inter-tight text-sand-900 text-xl font-medium">
-                  Ready to build intelligent applications? Discover how custom AI-powered web apps can transform your business operations.
+                  Ready to build intelligent applications? Discover how custom
+                  AI-powered web apps can transform your business operations.
                 </p>
                 <Button
                   variant="outline"

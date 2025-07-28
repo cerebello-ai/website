@@ -37,21 +37,24 @@ export const metadata: Metadata = {
 const testimonials = [
   {
     slug: 'enterprise-dashboard-redesign',
-    quote: 'The dashboard redesign transformed our complex data into intuitive visualizations. User satisfaction increased by 85% and training time decreased by 60% thanks to the thoughtful UX architecture.',
+    quote:
+      'The dashboard redesign transformed our complex data into intuitive visualizations. User satisfaction increased by 85% and training time decreased by 60% thanks to the thoughtful UX architecture.',
     author: 'Sarah Mitchell',
     company: 'Financial Analytics Platform',
     image: '/images/homepage/testimonials/amy-chase.webp',
   },
   {
     slug: 'mobile-app-ux-success',
-    quote: 'Our mobile app\'s user-centered design resulted in 50% higher engagement and 4.8-star ratings. The design system ensures consistency across all features while maintaining brand identity.',
+    quote:
+      "Our mobile app's user-centered design resulted in 50% higher engagement and 4.8-star ratings. The design system ensures consistency across all features while maintaining brand identity.",
     author: 'Marcus Lee',
     company: 'Healthcare Mobile Solutions',
     image: '/images/homepage/testimonials/victoria-smith.webp',
   },
   {
     slug: 'enterprise-system-transformation',
-    quote: 'Cerebello transformed our legacy enterprise system into a modern, accessible interface. Employee productivity increased by 40% and support tickets decreased dramatically thanks to intuitive design.',
+    quote:
+      'Cerebello transformed our legacy enterprise system into a modern, accessible interface. Employee productivity increased by 40% and support tickets decreased dramatically thanks to intuitive design.',
     author: 'Jennifer Adams',
     company: 'Manufacturing Corporation',
     image: '/images/homepage/testimonials/kevin-yam.webp',
@@ -64,37 +67,43 @@ const uxuiDesignMethodologySteps = [
     step: '01',
     title: 'Discovery & Requirements',
     subtitle: 'Understanding Your Vision',
-    description: 'Understand business goals, technical constraints, and audience needs through stakeholder interviews and requirements gathering to frame the design challenge properly.',
+    description:
+      'Understand business goals, technical constraints, and audience needs through stakeholder interviews and requirements gathering to frame the design challenge properly.',
   },
   {
     step: '02',
     title: 'User Research & Empathy',
     subtitle: 'Know Your Users',
-    description: 'Conduct interviews, create personas, and analyze competitors to uncover user needs, expectations, and pain points that guide design priorities.',
+    description:
+      'Conduct interviews, create personas, and analyze competitors to uncover user needs, expectations, and pain points that guide design priorities.',
   },
   {
     step: '03',
     title: 'UX Architecture & Flow',
     subtitle: 'Structure & Navigation',
-    description: 'Define navigation patterns and user journeys through wireframes, flow diagrams, and information architecture ensuring logical structure and ease of use.',
+    description:
+      'Define navigation patterns and user journeys through wireframes, flow diagrams, and information architecture ensuring logical structure and ease of use.',
   },
   {
     step: '04',
     title: 'Visual Design & Branding',
     subtitle: 'Bringing Ideas to Life',
-    description: 'Create polished UI mockups and scalable design systems with modern, brand-aligned visuals that ensure cohesive and intuitive experiences across devices.',
+    description:
+      'Create polished UI mockups and scalable design systems with modern, brand-aligned visuals that ensure cohesive and intuitive experiences across devices.',
   },
   {
     step: '05',
     title: 'Prototyping & Interaction',
     subtitle: 'Interactive Validation',
-    description: 'Build interactive prototypes simulating real user behavior for testing, feedback, and iteration before development resources are committed.',
+    description:
+      'Build interactive prototypes simulating real user behavior for testing, feedback, and iteration before development resources are committed.',
   },
   {
     step: '06',
     title: 'Validation & Hand-Off',
     subtitle: 'From Design to Development',
-    description: 'Test with users, refine based on feedback, and prepare organized design assets with documentation for smooth developer handoff and implementation support.',
+    description:
+      'Test with users, refine based on feedback, and prepare organized design assets with documentation for smooth developer handoff and implementation support.',
   },
 ];
 
@@ -109,19 +118,23 @@ const uxuiDesignStats = [
 const uxuiDesignBenefits = [
   {
     title: 'User Experience Architecture',
-    description: 'Define structure and flow of applications including navigation patterns, user journeys, and key interactions for optimal usability',
+    description:
+      'Define structure and flow of applications including navigation patterns, user journeys, and key interactions for optimal usability',
   },
   {
     title: 'Wireframes & Interactive Prototypes',
-    description: 'Early-stage visual blueprints and clickable prototypes enable testing and refinement before full development begins',
+    description:
+      'Early-stage visual blueprints and clickable prototypes enable testing and refinement before full development begins',
   },
   {
     title: 'High-Fidelity Visual Design',
-    description: 'Polished UI designs reflecting your brand with typography, color systems, iconography, and micro-interactions that delight users',
+    description:
+      'Polished UI designs reflecting your brand with typography, color systems, iconography, and micro-interactions that delight users',
   },
   {
     title: 'Scalable Design Systems',
-    description: 'Reusable component libraries maintaining consistency across pages, devices, and future product iterations',
+    description:
+      'Reusable component libraries maintaining consistency across pages, devices, and future product iterations',
   },
 ];
 
@@ -142,20 +155,37 @@ export default function UxUiDesignPage() {
 
             <div className="font-inter space-y-6 text-lg leading-relaxed">
               <p>
-                At Cerebello, we believe exceptional user experience is central to successful digital products. Our UX/UI Design service focuses on crafting intuitive, accessible, and visually elegant interfaces for mobile apps, dashboards, and enterprise systems. Whether launching a new product or refreshing an existing one, our design team works closely with you to turn complex requirements into clarity, usability, and delight.
+                At Cerebello, we believe exceptional user experience is central
+                to successful digital products. Our UX/UI Design service focuses
+                on crafting intuitive, accessible, and visually elegant
+                interfaces for mobile apps, dashboards, and enterprise systems.
+                Whether launching a new product or refreshing an existing one,
+                our design team works closely with you to turn complex
+                requirements into clarity, usability, and delight.
               </p>
 
               <p>
-                We design with empathy, blending business goals with user needs. Every interface we create is tailored, responsive, and built with consistency, accessibility, and performance in mind. By focusing on the entire experience – not just aesthetics – we help you deliver tools that users actually enjoy using, driving engagement and adoption through thoughtful design.
+                We design with empathy, blending business goals with user needs.
+                Every interface we create is tailored, responsive, and built
+                with consistency, accessibility, and performance in mind. By
+                focusing on the entire experience – not just aesthetics – we
+                help you deliver tools that users actually enjoy using, driving
+                engagement and adoption through thoughtful design.
               </p>
 
               <p>
-                Our collaborative, user-centered process ensures every design decision is rooted in user goals while aligning with your business objectives. From wireframes and prototypes to polished visual designs and scalable design systems, we deliver all the assets needed to bring exceptional digital experiences to life with confidence and efficiency.
+                Our collaborative, user-centered process ensures every design
+                decision is rooted in user goals while aligning with your
+                business objectives. From wireframes and prototypes to polished
+                visual designs and scalable design systems, we deliver all the
+                assets needed to bring exceptional digital experiences to life
+                with confidence and efficiency.
               </p>
 
               <div className="bg-sand-50 mt-8 rounded-lg p-6">
                 <p className="font-inter-tight text-sand-900 text-xl font-medium">
-                  Ready to create exceptional user experiences? Discover how thoughtful design can transform your digital products.
+                  Ready to create exceptional user experiences? Discover how
+                  thoughtful design can transform your digital products.
                 </p>
                 <Button
                   variant="outline"

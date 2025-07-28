@@ -10,7 +10,8 @@ import Testimonials from '@/components/sections/testimonials';
 import { Button } from '@/components/ui/button';
 
 export const metadata: Metadata = {
-  title: 'Business Model Innovation | AI-Driven Strategy Consulting | Cerebello',
+  title:
+    'Business Model Innovation | AI-Driven Strategy Consulting | Cerebello',
   description:
     'Reimagine your business model with AI and intelligent automation. Transform how you create value, generate revenue, and compete in the AI-driven economy through strategic innovation.',
   keywords:
@@ -37,21 +38,24 @@ export const metadata: Metadata = {
 const testimonials = [
   {
     slug: 'professional-services-saas',
-    quote: 'Cerebello helped us transform our internal AI tool into a client-facing SaaS offering. This productization of our services opened a fresh revenue stream and positioned us as a tech-enabled leader in our industry.',
+    quote:
+      'Cerebello helped us transform our internal AI tool into a client-facing SaaS offering. This productization of our services opened a fresh revenue stream and positioned us as a tech-enabled leader in our industry.',
     author: 'Alexandra Davis',
     company: 'Professional Services Provider',
     image: '/images/homepage/testimonials/amy-chase.webp',
   },
   {
     slug: 'logistics-data-monetization',
-    quote: 'We turned our operational data into a customer-facing analytics service. By leveraging AI to generate predictive insights, we converted data exhaust into profit while strengthening customer loyalty.',
+    quote:
+      'We turned our operational data into a customer-facing analytics service. By leveraging AI to generate predictive insights, we converted data exhaust into profit while strengthening customer loyalty.',
     author: 'Thomas Rodriguez',
     company: 'Global Logistics Company',
     image: '/images/homepage/testimonials/victoria-smith.webp',
   },
   {
     slug: 'manufacturing-outcome-based',
-    quote: 'Moving from selling machines to guaranteeing uptime as a service transformed our relationship with customers. AI-driven predictive maintenance enables us to deliver on our promises while creating recurring revenue.',
+    quote:
+      'Moving from selling machines to guaranteeing uptime as a service transformed our relationship with customers. AI-driven predictive maintenance enables us to deliver on our promises while creating recurring revenue.',
     author: 'Jennifer Kim',
     company: 'Industrial Manufacturing Corp',
     image: '/images/homepage/testimonials/kevin-yam.webp',
@@ -64,37 +68,43 @@ const businessModelInnovationMethodologySteps = [
     step: '01',
     title: 'Opportunity Identification',
     subtitle: 'Strategic Market Analysis',
-    description: 'Analyze your business and market for transformative opportunities. Assess emerging technologies, customer pain points, and untapped data assets where AI and automation could enable new models.',
+    description:
+      'Analyze your business and market for transformative opportunities. Assess emerging technologies, customer pain points, and untapped data assets where AI and automation could enable new models.',
   },
   {
     step: '02',
     title: 'Strategic Framing',
     subtitle: 'Business Model Design',
-    description: 'Shape high-potential ideas into viable business models. Define value propositions, revenue mechanisms, and cost structures while ensuring alignment with your overall strategy.',
+    description:
+      'Shape high-potential ideas into viable business models. Define value propositions, revenue mechanisms, and cost structures while ensuring alignment with your overall strategy.',
   },
   {
     step: '03',
     title: 'Rapid Experimentation',
     subtitle: 'MVP Development',
-    description: 'Build minimal viable products and simulations with intelligent technology. Employ rapid prototyping and pilot programs to test new models quickly and cost-effectively.',
+    description:
+      'Build minimal viable products and simulations with intelligent technology. Employ rapid prototyping and pilot programs to test new models quickly and cost-effectively.',
   },
   {
     step: '04',
     title: 'Validation & Refinement',
     subtitle: 'Evidence-Driven Optimization',
-    description: 'Evaluate pilot results against success metrics. Interpret customer response data, validate assumptions, and adjust the model through evidence-driven refinement.',
+    description:
+      'Evaluate pilot results against success metrics. Interpret customer response data, validate assumptions, and adjust the model through evidence-driven refinement.',
   },
   {
     step: '05',
     title: 'Execution & Integration',
     subtitle: 'Full-Scale Implementation',
-    description: 'Transform validated models into reality with detailed implementation roadmaps. Support technology integration, change management, and staff training for seamless deployment.',
+    description:
+      'Transform validated models into reality with detailed implementation roadmaps. Support technology integration, change management, and staff training for seamless deployment.',
   },
   {
     step: '06',
     title: 'Continuous Optimization',
     subtitle: 'Ongoing Innovation',
-    description: 'Monitor performance and market evolution to continuously refine and expand your innovation. Establish feedback loops for sustained competitive advantage.',
+    description:
+      'Monitor performance and market evolution to continuously refine and expand your innovation. Establish feedback loops for sustained competitive advantage.',
   },
 ];
 
@@ -109,19 +119,23 @@ const businessModelInnovationStats = [
 const businessModelInnovationBenefits = [
   {
     title: 'AI-as-a-Service Models',
-    description: 'Transform products into continuous service offerings with subscription or usage-based revenue models and latest intelligent features',
+    description:
+      'Transform products into continuous service offerings with subscription or usage-based revenue models and latest intelligent features',
   },
   {
     title: 'Data Monetization',
-    description: 'Convert operational data into valuable insights and analytics services, creating new revenue streams from existing information assets',
+    description:
+      'Convert operational data into valuable insights and analytics services, creating new revenue streams from existing information assets',
   },
   {
     title: 'Platform Business Models',
-    description: 'Build intelligent platforms that connect stakeholders using AI to match supply and demand or personalize offerings in real-time',
+    description:
+      'Build intelligent platforms that connect stakeholders using AI to match supply and demand or personalize offerings in real-time',
   },
   {
     title: 'Outcome-Based Services',
-    description: 'Shift from selling products to guaranteeing outcomes using AI-driven predictive capabilities and intelligent automation',
+    description:
+      'Shift from selling products to guaranteeing outcomes using AI-driven predictive capabilities and intelligent automation',
   },
 ];
 
@@ -142,20 +156,39 @@ export default function BusinessModelInnovationPage() {
 
             <div className="font-inter space-y-6 text-lg leading-relaxed">
               <p>
-                In today's AI and automation-driven landscape, business reinvention is not optional – it's essential. Artificial intelligence is reshaping industries, offering unprecedented opportunities for growth, innovation, and efficiency. The organizations that thrive are those willing to rethink how they create and capture value, fundamentally reimagining their business rather than just automating the status quo.
+                In today's AI and automation-driven landscape, business
+                reinvention is not optional – it's essential. Artificial
+                intelligence is reshaping industries, offering unprecedented
+                opportunities for growth, innovation, and efficiency. The
+                organizations that thrive are those willing to rethink how they
+                create and capture value, fundamentally reimagining their
+                business rather than just automating the status quo.
               </p>
 
               <p>
-                However, leveraging AI is not just a tech upgrade – it requires strategic alignment. Without adapting the underlying business model, even advanced AI initiatives can stall. Studies show up to 80% of AI pilot projects fail to scale due to misalignment with broader business strategy. Business Model Innovation means exploring new ways of delivering value and generating revenue enabled by intelligent technology.
+                However, leveraging AI is not just a tech upgrade – it requires
+                strategic alignment. Without adapting the underlying business
+                model, even advanced AI initiatives can stall. Studies show up
+                to 80% of AI pilot projects fail to scale due to misalignment
+                with broader business strategy. Business Model Innovation means
+                exploring new ways of delivering value and generating revenue
+                enabled by intelligent technology.
               </p>
 
               <p>
-                From AI-as-a-Service offerings and data monetization to platform business models and outcome-based services, we help you evolve your business model to fully harness AI and automation. Our strategic consulting ensures your innovation investments translate into tangible results, unlocking new value streams and competitive advantages in the AI-driven economy.
+                From AI-as-a-Service offerings and data monetization to platform
+                business models and outcome-based services, we help you evolve
+                your business model to fully harness AI and automation. Our
+                strategic consulting ensures your innovation investments
+                translate into tangible results, unlocking new value streams and
+                competitive advantages in the AI-driven economy.
               </p>
 
               <div className="bg-sand-50 mt-8 rounded-lg p-6">
                 <p className="font-inter-tight text-sand-900 text-xl font-medium">
-                  Ready to reimagine your business with AI? Discover how strategic innovation can transform your value creation and competitive position.
+                  Ready to reimagine your business with AI? Discover how
+                  strategic innovation can transform your value creation and
+                  competitive position.
                 </p>
                 <Button
                   variant="outline"

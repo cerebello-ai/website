@@ -37,21 +37,24 @@ export const metadata: Metadata = {
 const testimonials = [
   {
     slug: 'logistics-shipping-process',
-    quote: 'Cerebello streamlined our shipping workflow by digitizing forms and integrating customs data. We eliminated paper-based bottlenecks and manual data entry, enabling faster turnarounds and setting the stage for RPA automation.',
+    quote:
+      'Cerebello streamlined our shipping workflow by digitizing forms and integrating customs data. We eliminated paper-based bottlenecks and manual data entry, enabling faster turnarounds and setting the stage for RPA automation.',
     author: 'Michael Chen',
     company: 'Global Logistics Provider',
     image: '/images/homepage/testimonials/amy-chase.webp',
   },
   {
     slug: 'healthcare-billing-optimization',
-    quote: 'Our patient billing process was causing frustration for staff and patients. Cerebello eliminated duplicate data entry and introduced electronic billing, significantly reducing denial rates and improving patient satisfaction.',
+    quote:
+      'Our patient billing process was causing frustration for staff and patients. Cerebello eliminated duplicate data entry and introduced electronic billing, significantly reducing denial rates and improving patient satisfaction.',
     author: 'Dr. Sarah Johnson',
     company: 'Regional Hospital Network',
     image: '/images/homepage/testimonials/victoria-smith.webp',
   },
   {
     slug: 'insurance-claims-reengineering',
-    quote: 'Claims that used to take weeks now settle in days. Cerebello unified our fragmented systems and automated routine verification, removing manual re-entry at each step. This transformation enabled AI-driven fraud detection.',
+    quote:
+      'Claims that used to take weeks now settle in days. Cerebello unified our fragmented systems and automated routine verification, removing manual re-entry at each step. This transformation enabled AI-driven fraud detection.',
     author: 'Robert Williams',
     company: 'Major Insurance Company',
     image: '/images/homepage/testimonials/kevin-yam.webp',
@@ -64,37 +67,43 @@ const processOptimizationMethodologySteps = [
     step: '01',
     title: 'Discovery & Assessment',
     subtitle: 'Deep Operational Analysis',
-    description: 'We engage stakeholders and front-line staff to understand how work really gets done. Define clear objectives like reducing turnaround time by 50% and identify key processes aligned to business goals.',
+    description:
+      'We engage stakeholders and front-line staff to understand how work really gets done. Define clear objectives like reducing turnaround time by 50% and identify key processes aligned to business goals.',
   },
   {
     step: '02',
     title: 'Process Mapping & Analysis',
     subtitle: 'Value Stream Mapping',
-    description: 'Map current workflows using value stream mapping to pinpoint waste, bottlenecks, and delays. Analyze cycle times, handoff points, error rates, and root causes through data-driven analysis.',
+    description:
+      'Map current workflows using value stream mapping to pinpoint waste, bottlenecks, and delays. Analyze cycle times, handoff points, error rates, and root causes through data-driven analysis.',
   },
   {
     step: '03',
     title: 'Process Redesign & Reengineering',
     subtitle: 'Future State Design',
-    description: 'Apply Lean principles to eliminate non-value steps and Six Sigma to reduce variation. Design AI-ready processes that integrate smoothly with automation, RPA, and intelligent tools.',
+    description:
+      'Apply Lean principles to eliminate non-value steps and Six Sigma to reduce variation. Design AI-ready processes that integrate smoothly with automation, RPA, and intelligent tools.',
   },
   {
     step: '04',
     title: 'Automation Enablement',
     subtitle: 'Technology Implementation',
-    description: 'Implement optimized workflows with appropriate technology. Enable automation where it adds value, ensuring process and technology work hand-in-hand to multiply benefits.',
+    description:
+      'Implement optimized workflows with appropriate technology. Enable automation where it adds value, ensuring process and technology work hand-in-hand to multiply benefits.',
   },
   {
     step: '05',
     title: 'Change Management & Training',
     subtitle: 'Organizational Adoption',
-    description: 'Clear communication, training, and support help teams adopt new ways of working. Emphasize organizational change management to ensure successful implementation.',
+    description:
+      'Clear communication, training, and support help teams adopt new ways of working. Emphasize organizational change management to ensure successful implementation.',
   },
   {
     step: '06',
     title: 'Continuous Improvement',
     subtitle: 'Performance Monitoring',
-    description: 'Establish metrics and dashboards to track impact over time. Set up feedback loops and periodic audits to foster a culture of continuous improvement and measurable ROI.',
+    description:
+      'Establish metrics and dashboards to track impact over time. Set up feedback loops and periodic audits to foster a culture of continuous improvement and measurable ROI.',
   },
 ];
 
@@ -109,19 +118,23 @@ const processOptimizationStats = [
 const processOptimizationBenefits = [
   {
     title: 'Eliminate Manual Bottlenecks',
-    description: 'Remove paperwork, manual data entry, and redundant handoffs that slow operations and introduce errors',
+    description:
+      'Remove paperwork, manual data entry, and redundant handoffs that slow operations and introduce errors',
   },
   {
     title: 'AI & Automation Readiness',
-    description: 'Design processes with future automation in mind, ensuring smooth integration with RPA, AI, and intelligent tools',
+    description:
+      'Design processes with future automation in mind, ensuring smooth integration with RPA, AI, and intelligent tools',
   },
   {
     title: 'Break Down Silos',
-    description: 'Connect fragmented workflows and systems to create unified, end-to-end processes with clear ownership',
+    description:
+      'Connect fragmented workflows and systems to create unified, end-to-end processes with clear ownership',
   },
   {
     title: 'Measurable Performance Gains',
-    description: 'Track cycle time reductions, error rates, cost savings, and customer satisfaction through established KPIs',
+    description:
+      'Track cycle time reductions, error rates, cost savings, and customer satisfaction through established KPIs',
   },
 ];
 
@@ -142,20 +155,39 @@ export default function ProcessOptimizationPage() {
 
             <div className="font-inter space-y-6 text-lg leading-relaxed">
               <p>
-                In the quest for efficiency and agility, many organizations find their processes riddled with waste and delays. Process Optimization is Cerebello's service to help clients fundamentally reengineer business processes to eliminate inefficiencies, improve outcomes, and prepare for AI and automation. Studies show companies lose 20-30% of their revenue each year due to inefficient processes.
+                In the quest for efficiency and agility, many organizations find
+                their processes riddled with waste and delays. Process
+                Optimization is Cerebello's service to help clients
+                fundamentally reengineer business processes to eliminate
+                inefficiencies, improve outcomes, and prepare for AI and
+                automation. Studies show companies lose 20-30% of their revenue
+                each year due to inefficient processes.
               </p>
 
               <p>
-                By optimizing processes before layering on new technologies, we ensure automation yields true gains instead of just speeding up bad workflows. Our approach aligns with Business Process Reengineering (BPR) principles, aiming for dramatic improvements in cost, quality, service, and speed by redesigning underlying workflows. Smart transformation requires rethinking how work gets done, not just adding new tools.
+                By optimizing processes before layering on new technologies, we
+                ensure automation yields true gains instead of just speeding up
+                bad workflows. Our approach aligns with Business Process
+                Reengineering (BPR) principles, aiming for dramatic improvements
+                in cost, quality, service, and speed by redesigning underlying
+                workflows. Smart transformation requires rethinking how work
+                gets done, not just adding new tools.
               </p>
 
               <p>
-                Through Process Optimization, we help clients streamline end-to-end operations for seamless workflow. Efficient processes reduce costs and cycle times while improving quality and customer experience. Crucially, process improvement lays the groundwork for successful automation and AI, delivering immediate performance gains and maximizing ROI on subsequent technology investments.
+                Through Process Optimization, we help clients streamline
+                end-to-end operations for seamless workflow. Efficient processes
+                reduce costs and cycle times while improving quality and
+                customer experience. Crucially, process improvement lays the
+                groundwork for successful automation and AI, delivering
+                immediate performance gains and maximizing ROI on subsequent
+                technology investments.
               </p>
 
               <div className="bg-sand-50 mt-8 rounded-lg p-6">
                 <p className="font-inter-tight text-sand-900 text-xl font-medium">
-                  Ready to eliminate inefficiencies and prepare for automation? Discover how process optimization transforms your operations.
+                  Ready to eliminate inefficiencies and prepare for automation?
+                  Discover how process optimization transforms your operations.
                 </p>
                 <Button
                   variant="outline"

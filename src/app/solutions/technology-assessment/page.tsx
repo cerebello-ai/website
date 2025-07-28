@@ -37,21 +37,24 @@ export const metadata: Metadata = {
 const testimonials = [
   {
     slug: 'government-legacy-modernization',
-    quote: 'Cerebello\'s assessment of our decades-old systems provided a clear modernization roadmap. We successfully migrated from COBOL mainframes to secure cloud environments while maintaining compliance and citizen services.',
+    quote:
+      "Cerebello's assessment of our decades-old systems provided a clear modernization roadmap. We successfully migrated from COBOL mainframes to secure cloud environments while maintaining compliance and citizen services.",
     author: 'Patricia Williams',
     company: 'Government Agency',
     image: '/images/homepage/testimonials/amy-chase.webp',
   },
   {
     slug: 'logistics-cloud-migration',
-    quote: 'The Technology Assessment revealed critical bandwidth and scalability constraints before our AI implementation. The phased cloud migration strategy enabled us to process IoT data and run real-time routing algorithms without bottlenecks.',
+    quote:
+      'The Technology Assessment revealed critical bandwidth and scalability constraints before our AI implementation. The phased cloud migration strategy enabled us to process IoT data and run real-time routing algorithms without bottlenecks.',
     author: 'Roberto Martinez',
     company: 'Global Logistics Company',
     image: '/images/homepage/testimonials/victoria-smith.webp',
   },
   {
     slug: 'healthcare-interoperability-audit',
-    quote: 'Our interoperability assessment identified gaps in data exchange across multiple EHR systems. Implementing FHIR-standard APIs and integration middleware enabled real-time AI analytics while maintaining HIPAA compliance.',
+    quote:
+      'Our interoperability assessment identified gaps in data exchange across multiple EHR systems. Implementing FHIR-standard APIs and integration middleware enabled real-time AI analytics while maintaining HIPAA compliance.',
     author: 'Dr. Michelle Chen',
     company: 'Healthcare Network',
     image: '/images/homepage/testimonials/kevin-yam.webp',
@@ -64,37 +67,43 @@ const technologyAssessmentMethodologySteps = [
     step: '01',
     title: 'Discovery & Inventory',
     subtitle: 'Comprehensive System Analysis',
-    description: 'Conduct stakeholder interviews and inventory all systems, data, and infrastructure. Understand business goals, current architecture, pain points, and ongoing digital initiatives.',
+    description:
+      'Conduct stakeholder interviews and inventory all systems, data, and infrastructure. Understand business goals, current architecture, pain points, and ongoing digital initiatives.',
   },
   {
     step: '02',
     title: 'Architecture Mapping',
     subtitle: 'Infrastructure Documentation',
-    description: 'Document existing IT architecture including hardware, software, integrations, and data flows. Identify legacy platforms, data silos, and potential AI use cases with significant ROI.',
+    description:
+      'Document existing IT architecture including hardware, software, integrations, and data flows. Identify legacy platforms, data silos, and potential AI use cases with significant ROI.',
   },
   {
     step: '03',
     title: 'Gap Analysis',
     subtitle: 'AI Readiness Evaluation',
-    description: 'Compare current state against AI readiness criteria across cloud scalability, data quality, interoperability standards, and security protocols. Identify critical gaps and dependencies.',
+    description:
+      'Compare current state against AI readiness criteria across cloud scalability, data quality, interoperability standards, and security protocols. Identify critical gaps and dependencies.',
   },
   {
     step: '04',
     title: 'AI-Readiness Scoring',
     subtitle: 'Maturity Assessment',
-    description: 'Assign quantitative AI-readiness scores across key domains like data infrastructure, compute capacity, integration capability, and governance. Provide clear benchmarks for transformation.',
+    description:
+      'Assign quantitative AI-readiness scores across key domains like data infrastructure, compute capacity, integration capability, and governance. Provide clear benchmarks for transformation.',
   },
   {
     step: '05',
     title: 'Roadmap Generation',
     subtitle: 'Strategic Action Plan',
-    description: 'Deliver tailored Technology Improvement Roadmap with prioritized initiatives, quick wins, and long-term projects. Include concrete recommendations tied to business outcomes and timelines.',
+    description:
+      'Deliver tailored Technology Improvement Roadmap with prioritized initiatives, quick wins, and long-term projects. Include concrete recommendations tied to business outcomes and timelines.',
   },
   {
     step: '06',
     title: 'Implementation Support',
     subtitle: 'Execution Guidance',
-    description: 'Provide ongoing support for roadmap execution including system upgrades, data pipeline enhancements, security fixes, and new platform integration as needed.',
+    description:
+      'Provide ongoing support for roadmap execution including system upgrades, data pipeline enhancements, security fixes, and new platform integration as needed.',
   },
 ];
 
@@ -109,19 +118,23 @@ const technologyAssessmentStats = [
 const technologyAssessmentBenefits = [
   {
     title: 'Legacy System Compatibility',
-    description: 'Evaluate existing systems for AI integration potential and identify modernization requirements or API bridge solutions',
+    description:
+      'Evaluate existing systems for AI integration potential and identify modernization requirements or API bridge solutions',
   },
   {
     title: 'Cloud Infrastructure Readiness',
-    description: 'Assess scalability, compute capacity, and hybrid cloud capabilities needed for AI workloads and data processing',
+    description:
+      'Assess scalability, compute capacity, and hybrid cloud capabilities needed for AI workloads and data processing',
   },
   {
     title: 'Data Architecture & Quality',
-    description: 'Analyze data silos, quality issues, and integration maturity to ensure AI models have access to reliable, unified data',
+    description:
+      'Analyze data silos, quality issues, and integration maturity to ensure AI models have access to reliable, unified data',
   },
   {
     title: 'Security & Compliance Posture',
-    description: 'Review security protocols, compliance requirements, and governance frameworks needed for responsible AI deployment',
+    description:
+      'Review security protocols, compliance requirements, and governance frameworks needed for responsible AI deployment',
   },
 ];
 
@@ -142,20 +155,40 @@ export default function TechnologyAssessmentPage() {
 
             <div className="font-inter space-y-6 text-lg leading-relaxed">
               <p>
-                In today's AI-driven landscape, many core systems powering businesses were never built to support modern technologies, making integration with AI solutions complex. Cerebello's Technology Assessment provides structured evaluation of your current technology landscape – systems, infrastructure, data, and tools – to map capabilities, pinpoint gaps, and recommend fixes for successful AI and automation adoption.
+                In today's AI-driven landscape, many core systems powering
+                businesses were never built to support modern technologies,
+                making integration with AI solutions complex. Cerebello's
+                Technology Assessment provides structured evaluation of your
+                current technology landscape – systems, infrastructure, data,
+                and tools – to map capabilities, pinpoint gaps, and recommend
+                fixes for successful AI and automation adoption.
               </p>
 
               <p>
-                Even the most ambitious AI initiative can stall if the underlying tech foundation isn't prepared. Our comprehensive assessment identifies hidden pitfalls like siloed data or brittle legacy apps before they derail projects. This upfront diligence aligns investments with strategy, ensuring resources target areas of highest impact rather than spreading efforts too thin.
+                Even the most ambitious AI initiative can stall if the
+                underlying tech foundation isn't prepared. Our comprehensive
+                assessment identifies hidden pitfalls like siloed data or
+                brittle legacy apps before they derail projects. This upfront
+                diligence aligns investments with strategy, ensuring resources
+                target areas of highest impact rather than spreading efforts too
+                thin.
               </p>
 
               <p>
-                We examine everything from legacy system compatibility and cloud infrastructure readiness to data architecture, API integration maturity, and security compliance posture. The result is clear understanding of risks and opportunities, feeding into a strategic roadmap that transforms your technology landscape from current state to an AI-enabled future with confidence and minimal disruption.
+                We examine everything from legacy system compatibility and cloud
+                infrastructure readiness to data architecture, API integration
+                maturity, and security compliance posture. The result is clear
+                understanding of risks and opportunities, feeding into a
+                strategic roadmap that transforms your technology landscape from
+                current state to an AI-enabled future with confidence and
+                minimal disruption.
               </p>
 
               <div className="bg-sand-50 mt-8 rounded-lg p-6">
                 <p className="font-inter-tight text-sand-900 text-xl font-medium">
-                  Ready to evaluate your AI readiness? Discover how comprehensive technology assessment can de-risk your transformation.
+                  Ready to evaluate your AI readiness? Discover how
+                  comprehensive technology assessment can de-risk your
+                  transformation.
                 </p>
                 <Button
                   variant="outline"

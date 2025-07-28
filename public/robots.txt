@@ -3,7 +3,7 @@ User-agent: *
 Allow: /
 
 # Host
-Host: http://cerebello.ai
+Host: https://www.cerebello.ai
 
 # Sitemaps
-Sitemap: http://cerebello.ai/sitemap.xml
+Sitemap: https://www.cerebello.ai/sitemap.xml

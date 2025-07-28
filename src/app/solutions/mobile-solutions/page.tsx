@@ -37,21 +37,24 @@ export const metadata: Metadata = {
 const testimonials = [
   {
     slug: 'field-operations-app',
-    quote: 'Our mobile field operations app transformed how our technicians access critical systems on-the-go. The intuitive design and offline capabilities increased productivity by 30% while reducing paperwork and errors.',
+    quote:
+      'Our mobile field operations app transformed how our technicians access critical systems on-the-go. The intuitive design and offline capabilities increased productivity by 30% while reducing paperwork and errors.',
     author: 'Mark Johnson',
     company: 'Industrial Services Company',
     image: '/images/homepage/testimonials/amy-chase.webp',
   },
   {
     slug: 'customer-engagement-app',
-    quote: 'The cross-platform customer app we built increased user engagement by 45% and drove 25% more conversions. The smooth performance across iOS and Android exceeded our expectations.',
+    quote:
+      'The cross-platform customer app we built increased user engagement by 45% and drove 25% more conversions. The smooth performance across iOS and Android exceeded our expectations.',
     author: 'Sarah Chen',
     company: 'Retail Enterprise',
     image: '/images/homepage/testimonials/victoria-smith.webp',
   },
   {
     slug: 'executive-dashboard-mobile',
-    quote: 'Our mobile executive dashboard provides real-time access to critical metrics anywhere. The intuitive interface and rich visualizations enable faster decision-making for our leadership team.',
+    quote:
+      'Our mobile executive dashboard provides real-time access to critical metrics anywhere. The intuitive interface and rich visualizations enable faster decision-making for our leadership team.',
     author: 'David Rodriguez',
     company: 'Manufacturing Corporation',
     image: '/images/homepage/testimonials/kevin-yam.webp',
@@ -64,37 +67,43 @@ const mobileSolutionsMethodologySteps = [
     step: '01',
     title: 'Discovery & UX Design',
     subtitle: 'User-Centered Foundation',
-    description: 'Understand your vision, business requirements, and end-user needs through stakeholder workshops. Create wireframes and interactive prototypes to validate app concept and workflows.',
+    description:
+      'Understand your vision, business requirements, and end-user needs through stakeholder workshops. Create wireframes and interactive prototypes to validate app concept and workflows.',
   },
   {
     step: '02',
     title: 'Architecture Planning',
     subtitle: 'Technical Foundation Design',
-    description: 'Plan scalable, maintainable architecture with strategic decisions on native vs cross-platform development. Design app structure, tech stack, data storage, and integration points.',
+    description:
+      'Plan scalable, maintainable architecture with strategic decisions on native vs cross-platform development. Design app structure, tech stack, data storage, and integration points.',
   },
   {
     step: '03',
     title: 'Iterative Development',
     subtitle: 'Agile Implementation',
-    description: 'Implement app features in agile sprints with continuous feedback. Cross-functional teams ensure each feature meets specifications and aligns with desired user experience.',
+    description:
+      'Implement app features in agile sprints with continuous feedback. Cross-functional teams ensure each feature meets specifications and aligns with desired user experience.',
   },
   {
     step: '04',
     title: 'Testing & Quality Assurance',
     subtitle: 'Comprehensive Validation',
-    description: 'Rigorous testing across devices and operating systems including functional, usability, performance, and security assessments to ensure stability and reliability.',
+    description:
+      'Rigorous testing across devices and operating systems including functional, usability, performance, and security assessments to ensure stability and reliability.',
   },
   {
     step: '05',
     title: 'Deployment & Launch',
     subtitle: 'App Store Success',
-    description: 'Handle App Store and Google Play submission process including assets preparation, review guidelines compliance, and smooth rollout management for successful launch.',
+    description:
+      'Handle App Store and Google Play submission process including assets preparation, review guidelines compliance, and smooth rollout management for successful launch.',
   },
   {
     step: '06',
     title: 'Support & Maintenance',
     subtitle: 'Ongoing Partnership',
-    description: 'Provide long-term support with regular updates for OS compatibility, security patches, and feature enhancements to keep your mobile solution valuable and current.',
+    description:
+      'Provide long-term support with regular updates for OS compatibility, security patches, and feature enhancements to keep your mobile solution valuable and current.',
   },
 ];
 
@@ -109,19 +118,23 @@ const mobileSolutionsStats = [
 const mobileSolutionsBenefits = [
   {
     title: 'Native & Cross-Platform Expertise',
-    description: 'Deep platform-specific knowledge for iOS and Android with cross-platform frameworks like React Native and Flutter for optimal solution choice',
+    description:
+      'Deep platform-specific knowledge for iOS and Android with cross-platform frameworks like React Native and Flutter for optimal solution choice',
   },
   {
     title: 'User-Centered Design Excellence',
-    description: 'Intuitive interfaces backed by UX research, creating mobile apps that are simple, enjoyable, and highly interactive for maximum user adoption',
+    description:
+      'Intuitive interfaces backed by UX research, creating mobile apps that are simple, enjoyable, and highly interactive for maximum user adoption',
   },
   {
     title: 'Enterprise-Grade Performance',
-    description: 'Scalable architecture designed for fast load times, smooth performance, and growth in users and data volume without degradation',
+    description:
+      'Scalable architecture designed for fast load times, smooth performance, and growth in users and data volume without degradation',
   },
   {
     title: 'Robust Security & Integration',
-    description: 'Secure mobile architecture with encryption, authentication, and seamless integration with backend systems and enterprise platforms',
+    description:
+      'Secure mobile architecture with encryption, authentication, and seamless integration with backend systems and enterprise platforms',
   },
 ];
 
@@ -142,20 +155,38 @@ export default function MobileSolutionsPage() {
 
             <div className="font-inter space-y-6 text-lg leading-relaxed">
               <p>
-                In today's mobile-first world, robust mobile applications are essential for engaging customers and empowering employees. Cerebello's Mobile Solutions service focuses on designing and building high-quality native and cross-platform mobile applications tailored to your business needs, emphasizing user-centered design and enterprise-grade performance.
+                In today's mobile-first world, robust mobile applications are
+                essential for engaging customers and empowering employees.
+                Cerebello's Mobile Solutions service focuses on designing and
+                building high-quality native and cross-platform mobile
+                applications tailored to your business needs, emphasizing
+                user-centered design and enterprise-grade performance.
               </p>
 
               <p>
-                Our team has deep expertise in both native iOS/Android development and modern cross-platform frameworks. We choose the best approach for each project – leveraging native development for maximum performance or using cross-platform development to accelerate delivery and reduce costs. This flexibility allows us to rapidly bring your ideas to life on all major platforms without compromising quality.
+                Our team has deep expertise in both native iOS/Android
+                development and modern cross-platform frameworks. We choose the
+                best approach for each project – leveraging native development
+                for maximum performance or using cross-platform development to
+                accelerate delivery and reduce costs. This flexibility allows us
+                to rapidly bring your ideas to life on all major platforms
+                without compromising quality.
               </p>
 
               <p>
-                From operational tools and customer-facing apps to internal productivity solutions and mobile dashboards, we build each mobile solution with a user-first mindset, performant and scalable technical foundation, and secure architecture that protects data. We deliver mobile apps that fulfill immediate requirements while delighting end-users and evolving with your business.
+                From operational tools and customer-facing apps to internal
+                productivity solutions and mobile dashboards, we build each
+                mobile solution with a user-first mindset, performant and
+                scalable technical foundation, and secure architecture that
+                protects data. We deliver mobile apps that fulfill immediate
+                requirements while delighting end-users and evolving with your
+                business.
               </p>
 
               <div className="bg-sand-50 mt-8 rounded-lg p-6">
                 <p className="font-inter-tight text-sand-900 text-xl font-medium">
-                  Ready to build your mobile solution? Discover how custom mobile app development can transform your business operations.
+                  Ready to build your mobile solution? Discover how custom
+                  mobile app development can transform your business operations.
                 </p>
                 <Button
                   variant="outline"

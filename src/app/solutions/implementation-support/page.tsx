@@ -37,21 +37,24 @@ export const metadata: Metadata = {
 const testimonials = [
   {
     slug: 'government-automation-rollout',
-    quote: 'Cerebello managed our end-to-end implementation of AI-powered document processing. From secure cloud setup to training hundreds of employees, they ensured smooth rollout with faster service delivery and reduced manual workload.',
+    quote:
+      'Cerebello managed our end-to-end implementation of AI-powered document processing. From secure cloud setup to training hundreds of employees, they ensured smooth rollout with faster service delivery and reduced manual workload.',
     author: 'David Thompson',
     company: 'Government Agency',
     image: '/images/homepage/testimonials/amy-chase.webp',
   },
   {
     slug: 'logistics-ai-deployment',
-    quote: 'The phased deployment of our AI-driven route optimization system across global hubs was flawless. Cerebello\'s on-site training and continuous monitoring helped us achieve improved delivery times and lower fuel costs.',
+    quote:
+      "The phased deployment of our AI-driven route optimization system across global hubs was flawless. Cerebello's on-site training and continuous monitoring helped us achieve improved delivery times and lower fuel costs.",
     author: 'Maria Santos',
     company: 'Global Shipping Company',
     image: '/images/homepage/testimonials/victoria-smith.webp',
   },
   {
     slug: 'healthcare-rpa-launch',
-    quote: 'Our RPA implementation for appointment scheduling and patient records was executed with minimal disruption. Post-launch optimization allowed our healthcare staff to focus more on patient care rather than administrative tasks.',
+    quote:
+      'Our RPA implementation for appointment scheduling and patient records was executed with minimal disruption. Post-launch optimization allowed our healthcare staff to focus more on patient care rather than administrative tasks.',
     author: 'Dr. Robert Kim',
     company: 'Hospital Network',
     image: '/images/homepage/testimonials/kevin-yam.webp',
@@ -64,37 +67,43 @@ const implementationSupportMethodologySteps = [
     step: '01',
     title: 'Implementation Planning',
     subtitle: 'Strategic Execution Framework',
-    description: 'Translate strategy into detailed implementation plan with project roadmap, timeline, resource allocation, and risk mitigation strategies. Align stakeholders and establish governance.',
+    description:
+      'Translate strategy into detailed implementation plan with project roadmap, timeline, resource allocation, and risk mitigation strategies. Align stakeholders and establish governance.',
   },
   {
     step: '02',
     title: 'Phased Deployment',
     subtitle: 'Risk-Managed Rollout',
-    description: 'Use iterative deployment starting with pilots or proof-of-concept, gather feedback, and scale in stages. Ensure issues are addressed early and solutions refined before broader rollout.',
+    description:
+      'Use iterative deployment starting with pilots or proof-of-concept, gather feedback, and scale in stages. Ensure issues are addressed early and solutions refined before broader rollout.',
   },
   {
     step: '03',
     title: 'Integration & Testing',
     subtitle: 'System Validation',
-    description: 'Integrate solutions with existing systems and processes, configure interfaces and data flows, then rigorously test end-to-end functionality through user acceptance testing.',
+    description:
+      'Integrate solutions with existing systems and processes, configure interfaces and data flows, then rigorously test end-to-end functionality through user acceptance testing.',
   },
   {
     step: '04',
     title: 'Training & User Enablement',
     subtitle: 'Capability Building',
-    description: 'Execute comprehensive training programs for end-users, IT teams, and administrators. Build user confidence through hands-on workshops and establish support channels.',
+    description:
+      'Execute comprehensive training programs for end-users, IT teams, and administrators. Build user confidence through hands-on workshops and establish support channels.',
   },
   {
     step: '05',
     title: 'Go-Live Support',
     subtitle: 'Launch Excellence',
-    description: 'Provide hands-on support during solution launch with close monitoring, immediate issue resolution, and expert guidance during the critical adoption period.',
+    description:
+      'Provide hands-on support during solution launch with close monitoring, immediate issue resolution, and expert guidance during the critical adoption period.',
   },
   {
     step: '06',
     title: 'Ongoing Optimization',
     subtitle: 'Continuous Improvement',
-    description: 'Continue post-rollout optimization through performance monitoring, user feedback analysis, and solution enhancements to deliver sustained value and increasing ROI.',
+    description:
+      'Continue post-rollout optimization through performance monitoring, user feedback analysis, and solution enhancements to deliver sustained value and increasing ROI.',
   },
 ];
 
@@ -109,19 +118,23 @@ const implementationSupportStats = [
 const implementationSupportBenefits = [
   {
     title: 'Technical Deployment & Configuration',
-    description: 'Set up AI and automation solutions with best-practice architecture, security, and infrastructure configuration in cloud or on-premises environments',
+    description:
+      'Set up AI and automation solutions with best-practice architecture, security, and infrastructure configuration in cloud or on-premises environments',
   },
   {
     title: 'Systems Integration & Validation',
-    description: 'Seamlessly integrate new solutions with existing IT landscape through APIs, databases, and legacy applications with rigorous testing',
+    description:
+      'Seamlessly integrate new solutions with existing IT landscape through APIs, databases, and legacy applications with rigorous testing',
   },
   {
     title: 'User Training & Change Management',
-    description: 'Comprehensive training programs, workshops, and change enablement to drive user adoption and build organizational capabilities',
+    description:
+      'Comprehensive training programs, workshops, and change enablement to drive user adoption and build organizational capabilities',
   },
   {
     title: 'Performance Monitoring & Optimization',
-    description: 'Continuous monitoring of KPIs, performance metrics, and user feedback with ongoing tuning and optimization for peak results',
+    description:
+      'Continuous monitoring of KPIs, performance metrics, and user feedback with ongoing tuning and optimization for peak results',
   },
 ];
 
@@ -142,20 +155,37 @@ export default function ImplementationSupportPage() {
 
             <div className="font-inter space-y-6 text-lg leading-relaxed">
               <p>
-                Cerebello's Implementation Support service ensures your AI, automation, and digital transformation initiatives are not only well-planned but successfully executed and adopted. We guide you through the full execution and rollout of new solutions, acting as a hands-on partner alongside your team from initial deployment to organization-wide adoption.
+                Cerebello's Implementation Support service ensures your AI,
+                automation, and digital transformation initiatives are not only
+                well-planned but successfully executed and adopted. We guide you
+                through the full execution and rollout of new solutions, acting
+                as a hands-on partner alongside your team from initial
+                deployment to organization-wide adoption.
               </p>
 
               <p>
-                Our experts combine technical know-how with change management to bridge the gap between strategy and real-world results. From technical deployment and systems integration to user training and performance monitoring, we focus on delivering tangible impact and ensuring innovative technologies seamlessly integrate into your business operations.
+                Our experts combine technical know-how with change management to
+                bridge the gap between strategy and real-world results. From
+                technical deployment and systems integration to user training
+                and performance monitoring, we focus on delivering tangible
+                impact and ensuring innovative technologies seamlessly integrate
+                into your business operations.
               </p>
 
               <p>
-                Unlike firms that deliver plans and step away, we provide end-to-end engagement with continuity and accountability at every step. Our pragmatic, results-driven approach prioritizes high-impact actions, quick wins, and iterative improvements, ensuring your investment in AI and automation translates into lasting value with measurable business outcomes.
+                Unlike firms that deliver plans and step away, we provide
+                end-to-end engagement with continuity and accountability at
+                every step. Our pragmatic, results-driven approach prioritizes
+                high-impact actions, quick wins, and iterative improvements,
+                ensuring your investment in AI and automation translates into
+                lasting value with measurable business outcomes.
               </p>
 
               <div className="bg-sand-50 mt-8 rounded-lg p-6">
                 <p className="font-inter-tight text-sand-900 text-xl font-medium">
-                  Ready to execute your transformation strategy? Discover how expert implementation support ensures successful deployment and adoption.
+                  Ready to execute your transformation strategy? Discover how
+                  expert implementation support ensures successful deployment
+                  and adoption.
                 </p>
                 <Button
                   variant="outline"
