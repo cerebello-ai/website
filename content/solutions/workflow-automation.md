@@ -5,7 +5,7 @@ Cerebello’s Workflow Automation service transforms how work gets done. We comb
 
 ## Our Approach: AI-Powered & Human-Centered Automation
 
-**AI-Infused, Beyond RPA:** Cerebello goes beyond basic RPA bots. We infuse workflows with cognitive AI capabilities so the automation isn’t just rule-based, but intelligent and adaptive. That means our digital “assistants” can understand documents, emails, and unstructured data, make context-aware decisions, and even learn from exceptions – not simply follow _if-then_ scripts. This elevates automation from task-level to process-level, handling complex scenarios that traditional RPA alone would miss.
+**AI-Infused, Beyond RPA:** Cerebello goes beyond basic RPA bots. We infuse workflows with cognitive AI capabilities so the automation isn’t just rule-based, but intelligent and adaptive. That means our digital “assistants” can understand documents, emails, and unstructured data, make context-aware decisions, and even learn from exceptions – not simply follow _if-then_ scripts. This elevates automation from task-level to process-level, handling complex scenarios that traditional RPA alone would miss. nie
 
 **Human-Centered Design:** We keep people in the loop where it counts. Cerebello designs automation _with_ your teams in mind, not around them. Our workflows are **human-centered**, meaning they are intuitive to use and often include a human-in-the-loop for oversight or final approvals when needed. By preserving human judgment in the right places and making AI assistance feel natural, we drive higher adoption and trust. The goal is to _augment_ employees, not replace them – freeing your talent from drudgery so they can focus on high-value work.
 
