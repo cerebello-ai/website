@@ -1,7 +1,3 @@
-Great — I’ll craft a structured service page for 'Workflow Automation' that aligns with Cerebello’s brand, tone, and offerings. It will highlight your AI-driven, human-centric approach, showcase key capabilities, and reflect your positioning as a boutique but enterprise-capable partner.
-
-I'll format the page into distinct sections covering your approach, benefits, capabilities, and industry relevance, with space for case studies or visuals as needed. I’ll let you know as soon as it’s ready for your review.
-
 # Workflow Automation by Cerebello
 
 **Empower Your Enterprise with AI-Driven, End-to-End Workflow Automation**

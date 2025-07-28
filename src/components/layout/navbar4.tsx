@@ -131,31 +131,31 @@ const solutions = [
       {
         id: 'subpage-11',
         title: 'Digital Transformation',
-        href: '#',
+        href: generateSolutionSlug('Digital Transformation'),
         icon: Rocket,
       },
       {
         id: 'subpage-12',
         title: 'Process Optimization',
-        href: '#',
+        href: generateSolutionSlug('Process Optimization'),
         icon: Clock,
       },
       {
         id: 'subpage-13',
         title: 'Business Model Innovation',
-        href: '#',
+        href: generateSolutionSlug('Business Model Innovation'),
         icon: Lightbulb,
       },
       {
         id: 'subpage-14',
         title: 'Technology Assessment',
-        href: '#',
+        href: generateSolutionSlug('Technology Assessment'),
         icon: Search,
       },
       {
         id: 'subpage-15',
         title: 'Implementation Support',
-        href: '#',
+        href: generateSolutionSlug('Implementation Support'),
         icon: CheckCircle2,
       },
     ],
@@ -169,31 +169,31 @@ const solutions = [
       {
         id: 'subpage-16',
         title: 'AI-Powered Web Apps',
-        href: '#',
+        href: generateSolutionSlug('AI-Powered Web Apps'),
         icon: Globe2,
       },
       {
         id: 'subpage-17',
         title: 'Mobile Solutions',
-        href: '#',
+        href: generateSolutionSlug('Mobile Solutions'),
         icon: Phone,
       },
       {
         id: 'subpage-18',
         title: 'Data Dashboards',
-        href: '#',
+        href: generateSolutionSlug('Data Dashboards'),
         icon: PieChart,
       },
       {
         id: 'subpage-19',
         title: 'System Integration',
-        href: '#',
+        href: generateSolutionSlug('System Integration'),
         icon: AppWindow,
       },
       {
         id: 'subpage-20',
         title: 'UX/UI Design',
-        href: '#',
+        href: generateSolutionSlug('UX/UI Design'),
         icon: UserRound,
       },
     ],
@@ -227,48 +227,109 @@ const productCategories = [
     products: [
       {
         id: 'product-1',
-        title: 'Process Mining & Analysis',
-        description: 'Discover optimization opportunities with AI.',
-        href: generateServiceSlug('Process Mining & Analysis'),
+        title: 'Custom AI Development',
+        description: 'Tailor-made AI models for specific business problems.',
+        href: generateServiceSlug('Custom AI Development'),
         image:
           'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/block-1.svg',
       },
       {
         id: 'product-2',
-        title: 'Intelligent Automation',
-        description: 'Automate complex business processes.',
-        href: generateServiceSlug('Intelligent Automation'),
+        title: 'NLP & Chatbots',
+        description: 'Intelligent chatbots and text analytics solutions.',
+        href: generateServiceSlug('NLP & Chatbots'),
         image:
           'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/block-2.svg',
       },
       {
         id: 'product-3',
-        title: 'Predictive Analytics',
-        description: 'Make data-driven decisions with AI insights.',
-        href: generateServiceSlug('Predictive Analytics'),
+        title: 'Computer Vision & IoT',
+        description: 'Visual data interpretation and IoT sensor analytics.',
+        href: generateServiceSlug('Computer Vision & IoT'),
+        image:
+          'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/block-3.svg',
+      },
+      {
+        id: 'product-4',
+        title: 'Generative AI & Advisory',
+        description: 'Enterprise GPT solutions and AI adoption guidance.',
+        href: generateServiceSlug('Generative AI & Advisory'),
+        image:
+          'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/block-4.svg',
+      },
+    ],
+  },
+  {
+    title: 'Process Automation',
+    products: [
+      {
+        id: 'product-5',
+        title: 'Robotic Process Automation',
+        description: 'Automate repetitive, rule-based tasks with RPA bots.',
+        href: generateServiceSlug('Robotic Process Automation'),
+        image:
+          'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/block-5.svg',
+      },
+      {
+        id: 'product-6',
+        title: 'Intelligent Workflow Automation',
+        description: 'AI-infused workflows for decision-making and processing.',
+        href: generateServiceSlug('Intelligent Workflow Automation'),
+        image:
+          'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/block-1.svg',
+      },
+      {
+        id: 'product-7',
+        title: 'Process Optimization',
+        description: 'Redesign business processes for maximum efficiency.',
+        href: generateServiceSlug('Process Optimization'),
+        image:
+          'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/block-2.svg',
+      },
+      {
+        id: 'product-8',
+        title: 'Document Processing AI',
+        description: 'AI-powered data extraction from documents.',
+        href: generateServiceSlug('Document Processing AI'),
         image:
           'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/block-3.svg',
       },
     ],
   },
   {
-    title: 'Business Services',
+    title: 'Integration & Development',
     products: [
       {
-        id: 'product-4',
-        title: 'Strategic Consulting',
-        description: 'Expert guidance for AI transformation.',
-        href: generateServiceSlug('Strategic Consulting'),
+        id: 'product-9',
+        title: 'Enterprise System Integration',
+        description: 'Connect AI solutions with existing IT systems.',
+        href: generateServiceSlug('Enterprise System Integration'),
         image:
           'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/block-4.svg',
       },
       {
-        id: 'product-5',
-        title: 'Implementation Support',
-        description: 'End-to-end deployment and integration.',
-        href: generateServiceSlug('Implementation Support'),
+        id: 'product-10',
+        title: 'Custom Software Development',
+        description: 'Bespoke applications and tools for automation needs.',
+        href: generateServiceSlug('Custom Software Development'),
         image:
           'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/block-5.svg',
+      },
+      {
+        id: 'product-11',
+        title: 'API Integration & Orchestration',
+        description: 'Extend platforms with AI capabilities and integrations.',
+        href: generateServiceSlug('API Integration & Orchestration'),
+        image:
+          'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/block-1.svg',
+      },
+      {
+        id: 'product-12',
+        title: 'Cloud & IoT Integration',
+        description: 'Connect cloud services and IoT devices into workflows.',
+        href: generateServiceSlug('Cloud & IoT Integration'),
+        image:
+          'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/block-2.svg',
       },
     ],
   },
@@ -1030,14 +1091,14 @@ const Navbar4 = () => {
                     <SolutionsMenu />
                   </NavigationMenuContent>
                 </NavigationMenuItem>
-                <NavigationMenuItem>
+                {/* <NavigationMenuItem>
                   <NavigationMenuTrigger className="text-xs xl:text-sm">
                     Services
                   </NavigationMenuTrigger>
                   <NavigationMenuContent className="min-w-[calc(100vw-4rem)] p-12 2xl:min-w-[calc(1400px-4rem)]">
                     <ProductsMenu />
                   </NavigationMenuContent>
-                </NavigationMenuItem>
+                </NavigationMenuItem> */}
                 <NavigationMenuItem>
                   <NavigationMenuLink
                     href="/about"

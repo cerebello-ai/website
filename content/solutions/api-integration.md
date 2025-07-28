@@ -1,7 +1,3 @@
-Perfect. I’ll create a deeply researched, branded service page for Cerebello’s 'API Integration' offering, covering both internal development and third-party system integration as part of your end-to-end business automation strategy.
-
-I’ll let you know once the page is ready for your review.
-
 # API Integration
 
 ## Overview

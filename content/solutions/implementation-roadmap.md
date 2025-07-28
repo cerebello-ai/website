@@ -1,7 +1,3 @@
-Great — I’ll create a structured and compelling page describing Cerebello’s 'Implementation Roadmap' service. This will align with your company’s tone, core messaging, and strategic positioning, and cover everything from planning through to change management and post-deployment support. I’ll also include examples and highlight industry-agnostic relevance.
-
-I’ll let you know as soon as it’s ready for your review.
-
 # Cerebello Implementation Roadmap
 
 ## Overview

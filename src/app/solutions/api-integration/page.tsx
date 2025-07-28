@@ -243,7 +243,7 @@ export default function ApiIntegrationPage() {
         primaryButtonText="Start Your Integration Journey"
         primaryButtonHref="/contact"
         secondaryButtonText="Schedule Demo"
-        secondaryButtonHref="/services/ai-scan"
+        secondaryButtonHref="/contact"
         footerText="Integration strategy consultation • Custom APIs • Seamless connectivity"
       />
     </>

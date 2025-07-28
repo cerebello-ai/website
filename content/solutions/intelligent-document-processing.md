@@ -1,7 +1,3 @@
-Thanks! I’ll create a full, on-brand service page for Cerebello’s 'Intelligent Document Processing' (IDP) offering. It will follow the same format and tone as your Implementation Roadmap page, reference key industry use cases (healthcare, logistics, finance, public sector), and highlight relevant Cerebello capabilities like OCR, NLP, AI integration, and legacy system compatibility.
-
-I'll let you know as soon as it's ready for review.
-
 # Intelligent Document Processing (IDP)
 
 ## Overview

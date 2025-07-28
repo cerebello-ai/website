@@ -242,8 +242,8 @@ export default function DigitalTransformationPage() {
         description="Join leading organizations that have moved beyond AI experiments to achieve scaled, transformative impact. Let our strategic consulting guide your journey from vision to enterprise-wide AI capability."
         primaryButtonText="Start Your Transformation"
         primaryButtonHref="/contact"
-        secondaryButtonText="AI Readiness Assessment"
-        secondaryButtonHref="/services/ai-scan"
+        secondaryButtonText="Strategy Consultation"
+        secondaryButtonHref="/contact"
         footerText="Strategic consulting • AI readiness assessment • Transformation roadmap"
       />
     </>
