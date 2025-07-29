@@ -2,25 +2,26 @@ import Link from 'next/link';
 
 import { Facebook, Linkedin, Twitter } from 'lucide-react';
 
-import { Button } from '@/components/ui/button';
-
 const navigation = [
   {
     title: 'AI Solutions',
     links: [
-      { name: 'AI Scans', href: '/ai-scans' },
-      { name: 'Custom AI Solutions', href: '/custom-ai' },
+      { name: 'AI Scans', href: '/services/ai-scan' },
+      { name: 'Custom AI Solutions', href: '/solutions' },
       { name: 'AI Center of Excellence', href: '/ai-center' },
-      { name: 'Automation', href: '/automation' },
+      { name: 'Automation', href: '/solutions/workflow-automation' },
     ],
   },
   {
     title: 'Services',
     links: [
-      { name: 'Artificial Intelligence', href: '/services/ai' },
-      { name: 'Robotic Process Automation', href: '/services/rpa' },
-      { name: 'Low-code Apps', href: '/services/low-code' },
-      { name: 'Integration iPaaS', href: '/services/ipaas' },
+      {
+        name: 'AI Strategy Development',
+        href: '/solutions/ai-strategy-development',
+      },
+      { name: 'Process Automation', href: '/solutions/workflow-automation' },
+      { name: 'Custom Development', href: '/solutions/ai-powered-web-apps' },
+      { name: 'System Integration', href: '/solutions/system-integration' },
     ],
   },
   {
@@ -51,7 +52,7 @@ export const Footer = () => {
   return (
     <footer className="bg-primary text-primary-foreground">
       <div className="bg-primary">
-        <div className="border-sand-600 mx-auto flex max-w-[95vw] flex-col items-center border-b py-10 text-center md:py-14 lg:py-20">
+        {/* <div className="border-sand-600 mx-auto flex max-w-[95vw] flex-col items-center border-b py-10 text-center md:py-14 lg:py-20">
           <h2 className="max-w-[800px] text-5xl leading-none font-semibold tracking-tight text-balance lg:text-6xl">
             Transform your business with AI.{' '}
             <span className="text-sand-600">
@@ -61,7 +62,7 @@ export const Footer = () => {
           <Button asChild variant="secondary" size="lg" className="mt-9">
             <Link href="/contact">Schedule Your AI Scan</Link>
           </Button>
-        </div>
+        </div> */}
 
         {/* Navigation Section */}
         <nav className="border-sand-600/50 mx-auto max-w-[95vw] border-b py-6">

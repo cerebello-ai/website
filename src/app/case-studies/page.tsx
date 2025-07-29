@@ -6,6 +6,8 @@ import { Metadata } from 'next';
 
 import { Feature1 } from '@/components/sections/feature1';
 import { Cta4 } from '@/components/shadcnblocks/cta/cta4';
+import { StructuredData } from '@/components/structured-data';
+import { generateWebPageSchema } from '@/lib/schema';
 
 export const metadata: Metadata = {
   title: 'Case Studies | Real AI Success Stories | Cerebello',
@@ -128,7 +130,7 @@ const caseStudiesData = {
     description:
       'Get a personalized AI assessment and discover how your business can achieve similar results with our proven methodology.',
     buttonText: 'Start Free AI Scan',
-    buttonUrl: '/ai-scan',
+    buttonUrl: '/services/ai-scan',
     items: [
       '10-minute assessment',
       'Personalized recommendations',
@@ -139,8 +141,21 @@ const caseStudiesData = {
 };
 
 export default function CaseStudiesPage() {
+  const structuredData = [
+    generateWebPageSchema({
+      name: 'Case Studies | Real AI Success Stories | Cerebello',
+      description: 'Explore real-world success stories and see how organizations across the Netherlands are achieving operational excellence through AI-driven automation.',
+      url: '/case-studies',
+      breadcrumb: [
+        { name: 'Home', url: '/' },
+        { name: 'Case Studies', url: '/case-studies' },
+      ],
+    }),
+  ];
+
   return (
     <>
+      <StructuredData data={structuredData} />
       {/* Page Header */}
       <section className="from-mint-50 to-mint-100 bg-gradient-to-br py-16 md:py-24">
         <div className="container">

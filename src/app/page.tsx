@@ -6,6 +6,8 @@ import Hero from '@/components/sections/hero';
 import Logos from '@/components/sections/logos';
 import Testimonials from '@/components/sections/testimonials';
 import { Logos2 } from '@/components/shadcnblocks/logos/logos2';
+import { StructuredData } from '@/components/structured-data';
+import { generateHomepageSchema } from '@/lib/schema';
 
 // Environment-based client filtering
 const VISIBLE_CLIENTS = process.env.NEXT_PUBLIC_VISIBLE_CLIENTS
@@ -15,8 +17,11 @@ const VISIBLE_CLIENTS = process.env.NEXT_PUBLIC_VISIBLE_CLIENTS
   : ['samsung', 'ziggo', 'stadswerk072', 'techflow', 'medcare']; // default to all clients
 
 export default function Home() {
+  const structuredData = generateHomepageSchema();
+
   return (
     <>
+      <StructuredData data={structuredData} />
       <Hero />
       <Logos />
       <Feature1

@@ -1,3 +1,5 @@
+import Link from 'next/link';
+
 import { ArrowRight, Check } from 'lucide-react';
 
 import { Button } from '@/components/ui/button';
@@ -37,9 +39,9 @@ const Cta4 = ({
                 </h4>
                 <p className="text-muted-foreground">{description}</p>
                 <Button className="mt-6" asChild>
-                  <a href={buttonUrl} target="_blank">
+                  <Link href={buttonUrl}>
                     {buttonText} <ArrowRight className="size-4" />
-                  </a>
+                  </Link>
                 </Button>
               </div>
               <div className="md:w-1/3">

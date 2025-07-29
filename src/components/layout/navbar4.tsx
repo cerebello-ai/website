@@ -880,7 +880,7 @@ const PartnersMenu = () => (
   <div className="grid gap-y-6 md:grid-cols-2 md:gap-x-6 lg:grid-cols-4">
     <div className="md:col-span-2">
       <a
-        href="/ai-center-of-excellence"
+        href="/services/ai-center-of-excellence"
         className="group bg-primary text-primary-foreground relative flex h-full flex-row overflow-hidden rounded-lg p-0 lg:rounded-xl"
       >
         <div className="relative z-10 flex w-full flex-col-reverse text-left">
@@ -921,7 +921,7 @@ const PartnersMenu = () => (
           </div>
           <div className="absolute inset-0 top-[32%] md:top-0">
             <img
-              src="https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-2.svg"
+              src="https://c.stocksy.com/a/MP6O00/z9/5744508.jpg"
               alt="placeholder"
               className="object-fit h-full w-full object-top-right md:h-2/3 md:object-top"
             />

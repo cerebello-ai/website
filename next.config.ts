@@ -13,6 +13,16 @@ const nextConfig: NextConfig = {
     // imageSizes: [16, 32, 48, 64, 96, 128, 256, 384],
     // deviceSizes: [640, 750, 828, 1080, 1200, 1920, 2048, 3840],
   },
+  experimental: {
+    turbo: {
+      rules: {
+        '*.mdx': {
+          loaders: ['@mdx-js/loader'],
+          as: '*.js',
+        },
+      },
+    },
+  },
 };
 const withMDX = createMDX({
   // Add markdown plugins here, if needed

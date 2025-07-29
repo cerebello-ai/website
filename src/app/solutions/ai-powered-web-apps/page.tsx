@@ -8,6 +8,8 @@ import { RelatedSolutions } from '@/components/sections/related-solutions';
 import { StatsProcessAnalysis } from '@/components/sections/stats-process-analysis';
 import Testimonials from '@/components/sections/testimonials';
 import { Button } from '@/components/ui/button';
+import { StructuredData } from '@/components/structured-data';
+import { generateServiceSchema, generateWebPageSchema } from '@/lib/schema';
 
 export const metadata: Metadata = {
   title: 'AI-Powered Web Apps | Custom Intelligent Applications | Cerebello',
@@ -32,6 +34,41 @@ export const metadata: Metadata = {
     canonical: 'https://cerebello.nl/solutions/ai-powered-web-apps',
   },
 };
+
+// Generate structured data
+const structuredData = [
+  generateServiceSchema({
+    name: 'AI-Powered Web Apps',
+    description: 'Custom-built web applications enriched with AI capabilities. From conversational chatbots to predictive analytics, we create intelligent platforms tailored to your business needs.',
+    url: '/solutions/ai-powered-web-apps',
+    category: 'Web Development',
+    serviceType: 'AI-Powered Web Applications',
+    offers: [
+      {
+        name: 'Conversational AI & Virtual Assistants',
+        description: 'Interactive chatbots and virtual assistants providing real-time support through natural language dialogue'
+      },
+      {
+        name: 'Natural Language Processing Integration',
+        description: 'Advanced text analysis and understanding capabilities for document processing and intelligent search'
+      },
+      {
+        name: 'Predictive Analytics & Recommendations',
+        description: 'Machine learning models for forecasting trends and delivering intelligent recommendations'
+      }
+    ],
+  }),
+  generateWebPageSchema({
+    name: 'AI-Powered Web Apps | Custom Intelligent Applications | Cerebello',
+    description: 'Custom-built web applications enriched with AI capabilities. From conversational chatbots to predictive analytics, we create intelligent platforms tailored to your business needs.',
+    url: '/solutions/ai-powered-web-apps',
+    breadcrumb: [
+      { name: 'Home', url: '/' },
+      { name: 'Solutions', url: '/solutions' },
+      { name: 'AI-Powered Web Apps', url: '/solutions/ai-powered-web-apps' },
+    ],
+  }),
+];
 
 // Testimonials data
 const testimonials = [
@@ -141,6 +178,7 @@ const aiWebAppsBenefits = [
 export default function AiPoweredWebAppsPage() {
   return (
     <>
+      <StructuredData data={structuredData} />
       {/* Hero Section */}
       <section className="bg-sand-100 py-24 md:py-32">
         <div className="container">

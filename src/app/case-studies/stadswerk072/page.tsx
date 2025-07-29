@@ -12,6 +12,8 @@ import {
 } from '@/components/ui/breadcrumb';
 import { Button } from '@/components/ui/button';
 import { Separator } from '@/components/ui/separator';
+import { StructuredData } from '@/components/structured-data';
+import { generateArticleSchema, generateWebPageSchema } from '@/lib/schema';
 
 export const metadata: Metadata = {
   title: 'Stadswerk072 Case Study - Smart Public Services with AI | Cerebello',
@@ -56,8 +58,31 @@ export const metadata: Metadata = {
 };
 
 const Stadswerk072CaseStudy = () => {
+  const structuredData = [
+    generateArticleSchema({
+      headline: 'Stadswerk072 Case Study - Smart Public Services with AI',
+      description: 'Discover how Cerebello helped Stadswerk072 transform municipal services in Alkmaar with AI automation, handling 70% of citizen queries autonomously while improving satisfaction.',
+      url: '/case-studies/stadswerk072',
+      datePublished: '2024-01-18',
+      dateModified: '2024-01-18',
+      image: '/images/case-studies/stadswerk072-hero.jpg',
+    }),
+    generateWebPageSchema({
+      name: 'Stadswerk072 Case Study - Smart Public Services',
+      description: 'How Cerebello helped Stadswerk072 automate 70% of citizen queries and transform public services in Alkmaar through smart AI solutions.',
+      url: '/case-studies/stadswerk072',
+      breadcrumb: [
+        { name: 'Home', url: '/' },
+        { name: 'Case Studies', url: '/case-studies' },
+        { name: 'Stadswerk072', url: '/case-studies/stadswerk072' },
+      ],
+    }),
+  ];
+
   return (
-    <section className="py-24 md:py-32">
+    <>
+      <StructuredData data={structuredData} />
+      <section className="py-24 md:py-32">
       <div className="container">
         <div className="mx-auto max-w-7xl">
           <Breadcrumb className="mb-6 lg:mb-10">
@@ -353,6 +378,7 @@ const Stadswerk072CaseStudy = () => {
         </div>
       </div>
     </section>
+    </>
   );
 };
 

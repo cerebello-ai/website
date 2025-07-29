@@ -1,3 +1,5 @@
+import Link from 'next/link';
+
 import { Mail, Shield, Zap, Users } from 'lucide-react';
 import { Metadata } from 'next';
 
@@ -12,6 +14,8 @@ import {
 } from '@/components/ui/breadcrumb';
 import { Button } from '@/components/ui/button';
 import { Separator } from '@/components/ui/separator';
+import { StructuredData } from '@/components/structured-data';
+import { generateArticleSchema, generateWebPageSchema } from '@/lib/schema';
 
 export const metadata: Metadata = {
   title: 'Samsung Case Study - AI Email Platform | Cerebello',
@@ -50,8 +54,31 @@ export const metadata: Metadata = {
 };
 
 const SamsungCaseStudy = () => {
+  const structuredData = [
+    generateArticleSchema({
+      headline: 'Samsung Case Study - AI Email Platform Transformation',
+      description: 'Discover how Cerebello helped Samsung transform enterprise email with a secure, on-premise AI platform that reduced workload by 50% while maintaining complete data privacy.',
+      url: '/case-studies/samsung',
+      datePublished: '2024-01-15',
+      dateModified: '2024-01-15',
+      image: '/images/case-studies/samsung-hero.jpg',
+    }),
+    generateWebPageSchema({
+      name: 'Samsung Case Study - AI Email Platform',
+      description: 'How Cerebello helped Samsung revolutionize internal communications with a secure, AI-powered email platform.',
+      url: '/case-studies/samsung',
+      breadcrumb: [
+        { name: 'Home', url: '/' },
+        { name: 'Case Studies', url: '/case-studies' },
+        { name: 'Samsung', url: '/case-studies/samsung' },
+      ],
+    }),
+  ];
+
   return (
-    <section className="py-16 md:py-24">
+    <>
+      <StructuredData data={structuredData} />
+      <section className="py-16 md:py-24">
       <div className="container">
         <div className="mx-auto max-w-7xl">
           <Breadcrumb className="mb-6 lg:mb-10">
@@ -303,8 +330,8 @@ const SamsungCaseStudy = () => {
               <p className="mb-4 text-sm font-semibold">
                 Ready to transform your enterprise?
               </p>
-              <Button size="sm" className="w-full">
-                Schedule AI Scan
+              <Button size="sm" className="w-full" asChild>
+                <Link href="/services/ai-scan">Schedule AI Scan</Link>
               </Button>
             </div>
           </div>

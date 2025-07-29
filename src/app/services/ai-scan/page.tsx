@@ -22,6 +22,8 @@ import {
 } from '@/components/ui/card';
 import { Separator } from '@/components/ui/separator';
 import { CtaSimple } from '@/components/sections/cta/cta-simple';
+import { StructuredData } from '@/components/structured-data';
+import { generateServiceSchema, generateWebPageSchema } from '@/lib/schema';
 
 export const metadata: Metadata = {
   title: 'AI Scan Service - Discover AI Opportunities | Cerebello',
@@ -56,8 +58,52 @@ export const metadata: Metadata = {
 };
 
 const AIScanPage = () => {
+  const structuredData = [
+    generateServiceSchema({
+      name: 'AI Scan Service',
+      description: 'Comprehensive AI assessment service that evaluates your operations to uncover AI automation opportunities and provides a strategic roadmap.',
+      url: '/services/ai-scan',
+      category: 'AI Assessment',
+      serviceType: 'AI Consulting',
+      offers: [
+        {
+          name: 'Business Process Analysis',
+          description: 'In-depth analysis of current processes and pain points',
+        },
+        {
+          name: 'AI Opportunity Identification',
+          description: 'Identify high-impact AI use cases for your business',
+        },
+        {
+          name: 'Strategic Roadmap',
+          description: 'Phased implementation plan with timelines and priorities',
+        },
+        {
+          name: 'Executive Presentation',
+          description: 'Executive-ready report and presentation with clear recommendations',
+        },
+      ],
+      aggregateRating: {
+        ratingValue: '4.8',
+        ratingCount: '89',
+        bestRating: '5',
+      },
+    }),
+    generateWebPageSchema({
+      name: 'AI Scan Service - Discover AI Opportunities',
+      description: 'Cerebello AI Scan evaluates your operations to uncover AI automation opportunities. Get a strategic roadmap in 4-6 weeks with actionable insights.',
+      url: '/services/ai-scan',
+      breadcrumb: [
+        { name: 'Home', url: '/' },
+        { name: 'Services', url: '/services' },
+        { name: 'AI Scan', url: '/services/ai-scan' },
+      ],
+    }),
+  ];
+
   return (
     <>
+      <StructuredData data={structuredData} />
       {/* Hero Section */}
       <section className="relative overflow-hidden py-24 md:py-32">
         {/* Background Image */}

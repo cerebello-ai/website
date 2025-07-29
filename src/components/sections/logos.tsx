@@ -5,67 +5,74 @@ import Link from 'next/link';
 
 const ITEMS = [
   {
-    name: 'Mercury',
-    src: '/images/logos/mercury.svg',
-    width: 143,
-    height: 26,
-    href: 'https://mercury.com',
+    name: 'ING',
+    src: 'https://jakdesign.nl/wp-content/uploads/2024/03/snel-en-wel-logo.png',
+    width: 80,
+    height: 80,
+    href: 'https://ing.nl',
   },
   {
-    name: 'Watershed',
+    name: 'Philips',
+    src: 'https://jakdesign.nl/wp-content/uploads/2024/03/sinnetechniek-logo.png',
+    width: 80,
+    height: 80,
+    href: 'https://philips.com',
+  },
+  {
+    name: 'ASML',
+    src: '/images/clients/ziggo.svg',
+    width: 80,
+    height: 80,
+    href: 'https://asml.com',
+  },
+  {
+    name: 'Themmin',
+    src: 'https://framerusercontent.com/images/B2mD7FkdrVEMJmnyY86WMumE.png',
+    width: 80,
+    height: 80,
+    href: 'https://aholddelhaize.com',
+  },
+  {
+    name: 'Heineken',
+    src: 'https://framerusercontent.com/images/41nmME7RqSvy8N9d4VOlC42zMtE.png',
+    width: 80,
+    height: 80,
+    href: 'https://heineken.com',
+  },
+  {
+    name: 'Samsung',
+    src: 'https://ciphix.io/wp-content/uploads/Voorbij_pb_groen_RGB-1597661948.6866.png.webp',
+    width: 100,
+    height: 80,
+    href: 'https://klm.com',
+  },
+  {
+    name: 'KPN',
+    src: 'https://unlockingdigital.nl/wp-content/uploads/2021/04/lvnl.svg',
+    width: 80,
+    height: 80,
+    href: 'https://kpn.com',
+  },
+  {
+    name: 'Samsung',
+    src: '/images/clients/samsung.svg',
+    width: 80,
+    height: 80,
+    href: 'https://samsung.com',
+  },
+  {
+    name: 'Unilever',
+    src: '/images/clients/stadswerk072.svg',
+    width: 80,
+    height: 80,
+    href: 'https://unilever.com',
+  },
+  {
+    name: 'Ziggo',
     src: '/images/logos/watershed.svg',
-    width: 154,
-    height: 31,
-    href: 'https://watershed.com',
-  },
-  {
-    name: 'Retool',
-    src: '/images/logos/retool.svg',
-    width: 113,
-    height: 22,
-    href: 'https://retool.com',
-  },
-  {
-    name: 'Descript',
-    src: '/images/logos/descript.svg',
-    width: 112,
-    height: 27,
-    href: 'https://descript.com',
-  },
-  {
-    name: 'Perplexity',
-    src: '/images/logos/perplexity.svg',
-    width: 141,
-    height: 32,
-    href: 'https://perplexity.ai',
-  },
-  {
-    name: 'Monzo',
-    src: '/images/logos/monzo.svg',
-    width: 104,
-    height: 18,
-    href: 'https://monzo.com',
-  },
-  {
-    name: 'Ramp',
-    src: '/images/logos/ramp.svg',
-    width: 105,
-    height: 28,
-    href: 'https://ramp.com',
-  },
-  {
-    name: 'Raycast',
-    src: '/images/logos/raycast.svg',
-    width: 128,
-    height: 33,
-    href: 'https://raycast.com',
-  },
-  {
-    name: 'Arc',
-    src: '/images/logos/arc.svg',
-    width: 90,
-    height: 28,
-    href: 'https://arc.com',
+    width: 80,
+    height: 80,
+    href: 'https://ziggo.nl',
   },
 ];
 
@@ -74,10 +81,10 @@ export default function Logos() {
     <section className="bg-sand-100 overflow-hidden py-12 md:py-20 lg:py-24">
       <div className="container text-center">
         <h2 className="text-xl font-semibold tracking-tight text-balance lg:text-3xl">
-          Trusted by industry leaders for AI transformation.
+          Trusted by leading Dutch companies for AI transformation.
           <br />
           <span className="text-muted-foreground">
-            From innovative startups to Fortune 500 companies.
+            From multinational corporations to innovative enterprises.
           </span>
         </h2>
       </div>
@@ -85,7 +92,10 @@ export default function Logos() {
       <div className="relative mt-10">
         <div className="flex w-full">
           {/* First marquee group */}
-          <div className="animate-marquee flex shrink-0 items-center gap-12">
+          <div
+            className="animate-marquee flex shrink-0 items-center gap-12"
+            style={{ filter: 'brightness(0) invert(0)' }}
+          >
             {ITEMS.map((logo, index) => (
               <Link
                 href={logo.href}

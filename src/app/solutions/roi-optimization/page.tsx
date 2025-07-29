@@ -16,6 +16,8 @@ import { RelatedSolutions } from '@/components/sections/related-solutions';
 import { StatsRoiCaseStudy } from '@/components/sections/stats-roi-case-study';
 import Testimonials from '@/components/sections/testimonials';
 import { Button } from '@/components/ui/button';
+import { StructuredData } from '@/components/structured-data';
+import { generateServiceSchema, generateWebPageSchema } from '@/lib/schema';
 
 export const metadata: Metadata = {
   title: 'ROI Optimization | Maximize AI Investment Returns | Cerebello',
@@ -40,6 +42,41 @@ export const metadata: Metadata = {
     canonical: 'https://cerebello.nl/solutions/roi-optimization',
   },
 };
+
+// Generate structured data
+const structuredData = [
+  generateServiceSchema({
+    name: 'ROI Optimization',
+    description: "Maximize the returns of your AI investments with Cerebello's ROI Optimization service. We ensure your AI and automation projects deliver measurable value through data-driven validation and continuous optimization.",
+    url: '/solutions/roi-optimization',
+    category: 'AI Consulting',
+    serviceType: 'ROI Optimization',
+    offers: [
+      {
+        name: 'ROI Assessment & Benchmarking',
+        description: 'Deep analysis of current AI investments and identification of high-ROI optimization opportunities'
+      },
+      {
+        name: 'Pilot & Validation Programs',
+        description: 'Proof-of-concept implementations to validate ROI assumptions before full-scale deployment'
+      },
+      {
+        name: 'Continuous Optimization',
+        description: 'Ongoing monitoring and optimization to ensure sustained returns and improved performance over time'
+      }
+    ],
+  }),
+  generateWebPageSchema({
+    name: 'ROI Optimization | Maximize AI Investment Returns | Cerebello',
+    description: "Maximize the returns of your AI investments with Cerebello's ROI Optimization service. We ensure your AI and automation projects deliver measurable value through data-driven validation and continuous optimization.",
+    url: '/solutions/roi-optimization',
+    breadcrumb: [
+      { name: 'Home', url: '/' },
+      { name: 'Solutions', url: '/solutions' },
+      { name: 'ROI Optimization', url: '/solutions/roi-optimization' },
+    ],
+  }),
+];
 
 // Testimonials data
 const testimonials = [
@@ -176,6 +213,7 @@ const caseStudyFeatures = [
 export default function ROIOptimizationPage() {
   return (
     <>
+      <StructuredData data={structuredData} />
       {/* Hero Section - Keep original design */}
       <section className="bg-sand-100 py-24 md:py-32">
         <div className="container">

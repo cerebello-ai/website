@@ -8,6 +8,8 @@ import { RelatedSolutions } from '@/components/sections/related-solutions';
 import { StatsProcessAnalysis } from '@/components/sections/stats-process-analysis';
 import Testimonials from '@/components/sections/testimonials';
 import { Button } from '@/components/ui/button';
+import { StructuredData } from '@/components/structured-data';
+import { generateServiceSchema, generateWebPageSchema } from '@/lib/schema';
 
 export const metadata: Metadata = {
   title: 'Customer Service AI | AI-Powered Support Automation | Cerebello',
@@ -32,6 +34,41 @@ export const metadata: Metadata = {
     canonical: 'https://cerebello.nl/solutions/customer-service-ai',
   },
 };
+
+// Generate structured data
+const structuredData = [
+  generateServiceSchema({
+    name: 'Customer Service AI',
+    description: 'Transform customer service with AI-powered chatbots, intelligent triage, and automated support. Reduce support volumes, accelerate response times, and elevate satisfaction with human-centered AI solutions.',
+    url: '/solutions/customer-service-ai',
+    category: 'AI Solutions',
+    serviceType: 'Customer Service Automation',
+    offers: [
+      {
+        name: 'AI Chatbots & Virtual Assistants',
+        description: 'Intelligent conversational AI that handles customer inquiries 24/7 with natural language understanding'
+      },
+      {
+        name: 'Automated Ticket Routing',
+        description: 'Smart classification and routing of customer support tickets to the right agents and departments'
+      },
+      {
+        name: 'Sentiment Analysis & Insights',
+        description: 'Real-time analysis of customer sentiment and feedback to improve service quality'
+      }
+    ],
+  }),
+  generateWebPageSchema({
+    name: 'Customer Service AI | AI-Powered Support Automation | Cerebello',
+    description: 'Transform customer service with AI-powered chatbots, intelligent triage, and automated support. Reduce support volumes, accelerate response times, and elevate satisfaction with human-centered AI solutions.',
+    url: '/solutions/customer-service-ai',
+    breadcrumb: [
+      { name: 'Home', url: '/' },
+      { name: 'Solutions', url: '/solutions' },
+      { name: 'Customer Service AI', url: '/solutions/customer-service-ai' },
+    ],
+  }),
+];
 
 // Testimonials data
 const testimonials = [
@@ -141,6 +178,7 @@ const customerServiceBenefits = [
 export default function CustomerServiceAIPage() {
   return (
     <>
+      <StructuredData data={structuredData} />
       {/* Hero Section - Following Process Analysis pattern */}
       <section className="bg-sand-100 py-24 md:py-32">
         <div className="container">

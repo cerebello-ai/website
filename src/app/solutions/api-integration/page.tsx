@@ -8,6 +8,8 @@ import { RelatedSolutions } from '@/components/sections/related-solutions';
 import { StatsProcessAnalysis } from '@/components/sections/stats-process-analysis';
 import Testimonials from '@/components/sections/testimonials';
 import { Button } from '@/components/ui/button';
+import { StructuredData } from '@/components/structured-data';
+import { generateServiceSchema, generateWebPageSchema } from '@/lib/schema';
 
 export const metadata: Metadata = {
   title: 'API Integration | Enterprise System Integration | Cerebello',
@@ -32,6 +34,41 @@ export const metadata: Metadata = {
     canonical: 'https://cerebello.nl/solutions/api-integration',
   },
 };
+
+// Generate structured data
+const structuredData = [
+  generateServiceSchema({
+    name: 'API Integration',
+    description: 'Connect and orchestrate your enterprise systems through robust, secure APIs. Enable seamless data exchange, automate workflows, and break down data silos with our API integration services.',
+    url: '/solutions/api-integration',
+    category: 'System Integration',
+    serviceType: 'API Integration & Development',
+    offers: [
+      {
+        name: 'Custom API Development',
+        description: 'Seamlessly integrate internal applications and external platforms with robust RESTful APIs'
+      },
+      {
+        name: 'Legacy System Integration',
+        description: 'Unlock the value in existing systems by connecting legacy platforms with modern applications'
+      },
+      {
+        name: 'Real-Time Data Synchronization',
+        description: 'Support both instant updates and scheduled data transfers with consistent data integrity'
+      }
+    ],
+  }),
+  generateWebPageSchema({
+    name: 'API Integration | Enterprise System Integration | Cerebello',
+    description: 'Connect and orchestrate your enterprise systems through robust, secure APIs. Enable seamless data exchange, automate workflows, and break down data silos with our API integration services.',
+    url: '/solutions/api-integration',
+    breadcrumb: [
+      { name: 'Home', url: '/' },
+      { name: 'Solutions', url: '/solutions' },
+      { name: 'API Integration', url: '/solutions/api-integration' },
+    ],
+  }),
+];
 
 // Testimonials data
 const testimonials = [
@@ -141,6 +178,7 @@ const apiIntegrationBenefits = [
 export default function ApiIntegrationPage() {
   return (
     <>
+      <StructuredData data={structuredData} />
       {/* Hero Section */}
       <section className="bg-sand-100 py-24 md:py-32">
         <div className="container">

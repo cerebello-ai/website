@@ -8,6 +8,8 @@ import { RelatedSolutions } from '@/components/sections/related-solutions';
 import { StatsProcessAnalysis } from '@/components/sections/stats-process-analysis';
 import Testimonials from '@/components/sections/testimonials';
 import { Button } from '@/components/ui/button';
+import { StructuredData } from '@/components/structured-data';
+import { generateServiceSchema, generateWebPageSchema } from '@/lib/schema';
 
 export const metadata: Metadata = {
   title:
@@ -33,6 +35,41 @@ export const metadata: Metadata = {
     canonical: 'https://cerebello.nl/solutions/business-model-innovation',
   },
 };
+
+// Generate structured data
+const structuredData = [
+  generateServiceSchema({
+    name: 'Business Model Innovation',
+    description: 'Reimagine your business model with AI and intelligent automation. Transform how you create value, generate revenue, and compete in the AI-driven economy through strategic innovation.',
+    url: '/solutions/business-model-innovation',
+    category: 'Strategic Consulting',
+    serviceType: 'Business Model Innovation',
+    offers: [
+      {
+        name: 'AI-as-a-Service Model Development',
+        description: 'Transform products into continuous service offerings with subscription or usage-based revenue models'
+      },
+      {
+        name: 'Data Monetization Strategy',
+        description: 'Convert operational data into valuable insights and analytics services, creating new revenue streams'
+      },
+      {
+        name: 'Platform Business Model Design',
+        description: 'Build intelligent platforms that connect stakeholders using AI to match supply and demand'
+      }
+    ],
+  }),
+  generateWebPageSchema({
+    name: 'Business Model Innovation | AI-Driven Strategy Consulting | Cerebello',
+    description: 'Reimagine your business model with AI and intelligent automation. Transform how you create value, generate revenue, and compete in the AI-driven economy through strategic innovation.',
+    url: '/solutions/business-model-innovation',
+    breadcrumb: [
+      { name: 'Home', url: '/' },
+      { name: 'Solutions', url: '/solutions' },
+      { name: 'Business Model Innovation', url: '/solutions/business-model-innovation' },
+    ],
+  }),
+];
 
 // Testimonials data
 const testimonials = [
@@ -142,6 +179,7 @@ const businessModelInnovationBenefits = [
 export default function BusinessModelInnovationPage() {
   return (
     <>
+      <StructuredData data={structuredData} />
       {/* Hero Section */}
       <section className="bg-sand-100 py-24 md:py-32">
         <div className="container">

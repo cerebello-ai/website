@@ -12,6 +12,8 @@ import {
 } from '@/components/ui/breadcrumb';
 import { Button } from '@/components/ui/button';
 import { Separator } from '@/components/ui/separator';
+import { StructuredData } from '@/components/structured-data';
+import { generateArticleSchema, generateWebPageSchema } from '@/lib/schema';
 
 export const metadata: Metadata = {
   title: 'Ziggo Case Study - AI-Powered Telecom Operations | Cerebello',
@@ -56,8 +58,31 @@ export const metadata: Metadata = {
 };
 
 const ZiggoCaseStudy = () => {
+  const structuredData = [
+    generateArticleSchema({
+      headline: 'Ziggo Case Study - AI-Powered Telecom Operations',
+      description: 'Learn how Cerebello helped Ziggo transform customer service and operations with integrated AI automation, achieving 40% faster response times and 60% reduction in contract processing.',
+      url: '/case-studies/ziggo',
+      datePublished: '2024-01-20',
+      dateModified: '2024-01-20',
+      image: '/images/case-studies/ziggo-hero.jpg',
+    }),
+    generateWebPageSchema({
+      name: 'Ziggo Case Study - AI-Powered Telecom Operations',
+      description: 'How Cerebello helped Ziggo achieve 40% faster customer response times and 60% reduction in contract processing through integrated AI automation.',
+      url: '/case-studies/ziggo',
+      breadcrumb: [
+        { name: 'Home', url: '/' },
+        { name: 'Case Studies', url: '/case-studies' },
+        { name: 'Ziggo', url: '/case-studies/ziggo' },
+      ],
+    }),
+  ];
+
   return (
-    <section className="py-24 md:py-32">
+    <>
+      <StructuredData data={structuredData} />
+      <section className="py-24 md:py-32">
       <div className="container">
         <div className="mx-auto max-w-7xl">
           <Breadcrumb className="mb-6 lg:mb-10">
@@ -330,6 +355,7 @@ const ZiggoCaseStudy = () => {
         </div>
       </div>
     </section>
+    </>
   );
 };
 

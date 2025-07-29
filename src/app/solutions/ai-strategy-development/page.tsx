@@ -7,6 +7,8 @@ import { FeatureAiBenefits } from '@/components/sections/feature/feature-ai-bene
 import { FeatureAiMethodology } from '@/components/sections/feature/feature-ai-methodology';
 import { RelatedSolutions } from '@/components/sections/related-solutions';
 import Testimonials from '@/components/sections/testimonials';
+import { StructuredData } from '@/components/structured-data';
+import { generateServiceSchema, generateWebPageSchema } from '@/lib/schema';
 
 export const metadata: Metadata = {
   title:
@@ -32,6 +34,41 @@ export const metadata: Metadata = {
     canonical: 'https://cerebello.nl/solutions/ai-strategy-development',
   },
 };
+
+// Generate structured data
+const structuredData = [
+  generateServiceSchema({
+    name: 'AI Strategy Development',
+    description: 'Develop a comprehensive AI strategy that aligns with your business goals. Our expert team helps you create actionable AI roadmaps that drive tangible results and competitive advantage.',
+    url: '/solutions/ai-strategy-development',
+    category: 'AI Consulting',
+    serviceType: 'Strategic AI Planning',
+    offers: [
+      {
+        name: 'AI Roadmap Creation',
+        description: 'Strategic planning and roadmap development for AI implementation across your organization'
+      },
+      {
+        name: 'Business-AI Alignment',
+        description: 'Ensuring AI initiatives align with business objectives and deliver measurable value'
+      },
+      {
+        name: 'AI Governance Framework',
+        description: 'Establishing governance structures and best practices for responsible AI deployment'
+      }
+    ],
+  }),
+  generateWebPageSchema({
+    name: 'AI Strategy Development | Strategic AI Planning & Implementation | Cerebello',
+    description: 'Develop a comprehensive AI strategy that aligns with your business goals. Our expert team helps you create actionable AI roadmaps that drive tangible results and competitive advantage.',
+    url: '/solutions/ai-strategy-development',
+    breadcrumb: [
+      { name: 'Home', url: '/' },
+      { name: 'Solutions', url: '/solutions' },
+      { name: 'AI Strategy Development', url: '/solutions/ai-strategy-development' },
+    ],
+  }),
+];
 
 // Testimonials data
 const testimonials = [
@@ -86,6 +123,7 @@ const aiBenefits = [
 export default function AIStrategyDevelopmentPage() {
   return (
     <>
+      <StructuredData data={structuredData} />
       {/* Hero Section - Based on about.tsx structure */}
       <section className="bg-sand-100 py-24 md:py-32">
         <div className="container">

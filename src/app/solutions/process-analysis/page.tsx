@@ -8,6 +8,8 @@ import { RelatedSolutions } from '@/components/sections/related-solutions';
 import { StatsProcessAnalysis } from '@/components/sections/stats-process-analysis';
 import Testimonials from '@/components/sections/testimonials';
 import { Button } from '@/components/ui/button';
+import { StructuredData } from '@/components/structured-data';
+import { generateServiceSchema, generateWebPageSchema } from '@/lib/schema';
 
 export const metadata: Metadata = {
   title: 'Process Analysis | AI-Powered Business Optimization | Cerebello',
@@ -32,6 +34,41 @@ export const metadata: Metadata = {
     canonical: 'https://cerebello.nl/solutions/process-analysis',
   },
 };
+
+// Generate structured data
+const structuredData = [
+  generateServiceSchema({
+    name: 'Process Analysis',
+    description: 'Systematic analysis of business workflows to identify AI automation opportunities and efficiency improvements. Discover hidden inefficiencies through comprehensive process analysis.',
+    url: '/solutions/process-analysis',
+    category: 'Business Consulting',
+    serviceType: 'Process Analysis & Optimization',
+    offers: [
+      {
+        name: 'Workflow Assessment',
+        description: 'Comprehensive analysis of business processes to identify bottlenecks and improvement opportunities'
+      },
+      {
+        name: 'Automation Opportunity Identification',
+        description: 'Strategic identification of processes suitable for AI and automation implementation'
+      },
+      {
+        name: 'Efficiency Optimization',
+        description: 'Data-driven recommendations to improve process efficiency and reduce operational costs'
+      }
+    ],
+  }),
+  generateWebPageSchema({
+    name: 'Process Analysis | AI-Powered Business Optimization | Cerebello',
+    description: 'Systematic analysis of business workflows to identify AI automation opportunities and efficiency improvements. Discover hidden inefficiencies through comprehensive process analysis.',
+    url: '/solutions/process-analysis',
+    breadcrumb: [
+      { name: 'Home', url: '/' },
+      { name: 'Solutions', url: '/solutions' },
+      { name: 'Process Analysis', url: '/solutions/process-analysis' },
+    ],
+  }),
+];
 
 // Testimonials data
 const testimonials = [
@@ -138,6 +175,7 @@ const processBenefits = [
 export default function ProcessAnalysisPage() {
   return (
     <>
+      <StructuredData data={structuredData} />
       {/* Hero Section - Keep original design */}
       <section className="bg-sand-100 py-24 md:py-32">
         <div className="container">

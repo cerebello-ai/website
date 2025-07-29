@@ -8,6 +8,8 @@ import { RelatedSolutions } from '@/components/sections/related-solutions';
 import { StatsProcessAnalysis } from '@/components/sections/stats-process-analysis';
 import Testimonials from '@/components/sections/testimonials';
 import { Button } from '@/components/ui/button';
+import { StructuredData } from '@/components/structured-data';
+import { generateServiceSchema, generateWebPageSchema } from '@/lib/schema';
 
 export const metadata: Metadata = {
   title:
@@ -33,6 +35,41 @@ export const metadata: Metadata = {
     canonical: 'https://cerebello.nl/solutions/change-management',
   },
 };
+
+// Generate structured data
+const structuredData = [
+  generateServiceSchema({
+    name: 'Change Management for AI & Automation',
+    description: 'Guide your organization through successful AI and automation adoption with strategic change management. Address resistance, build trust, and ensure lasting transformation through human-centered approach.',
+    url: '/solutions/change-management',
+    category: 'Change Management',
+    serviceType: 'AI Adoption & Change Management',
+    offers: [
+      {
+        name: 'AI Adoption Strategy',
+        description: 'Strategic planning and implementation support for successful AI and automation adoption'
+      },
+      {
+        name: 'Employee Training & Enablement',
+        description: 'Comprehensive training programs to build AI literacy and ensure effective tool utilization'
+      },
+      {
+        name: 'Cultural Transformation',
+        description: 'Organizational culture change initiatives to embrace AI-human collaboration'
+      }
+    ],
+  }),
+  generateWebPageSchema({
+    name: 'Change Management for AI & Automation | Adoption Strategy | Cerebello',
+    description: 'Guide your organization through successful AI and automation adoption with strategic change management. Address resistance, build trust, and ensure lasting transformation through human-centered approach.',
+    url: '/solutions/change-management',
+    breadcrumb: [
+      { name: 'Home', url: '/' },
+      { name: 'Solutions', url: '/solutions' },
+      { name: 'Change Management', url: '/solutions/change-management' },
+    ],
+  }),
+];
 
 // Testimonials data
 const testimonials = [
@@ -142,6 +179,7 @@ const changeManagementBenefits = [
 export default function ChangeManagementPage() {
   return (
     <>
+      <StructuredData data={structuredData} />
       {/* Hero Section */}
       <section className="bg-sand-100 py-24 md:py-32">
         <div className="container">
