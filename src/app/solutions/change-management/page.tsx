@@ -40,28 +40,33 @@ export const metadata: Metadata = {
 const structuredData = [
   generateServiceSchema({
     name: 'Change Management for AI & Automation',
-    description: 'Guide your organization through successful AI and automation adoption with strategic change management. Address resistance, build trust, and ensure lasting transformation through human-centered approach.',
+    description:
+      'Guide your organization through successful AI and automation adoption with strategic change management. Address resistance, build trust, and ensure lasting transformation through human-centered approach.',
     url: '/solutions/change-management',
     category: 'Change Management',
     serviceType: 'AI Adoption & Change Management',
     offers: [
       {
         name: 'AI Adoption Strategy',
-        description: 'Strategic planning and implementation support for successful AI and automation adoption'
+        description:
+          'Strategic planning and implementation support for successful AI and automation adoption',
       },
       {
         name: 'Employee Training & Enablement',
-        description: 'Comprehensive training programs to build AI literacy and ensure effective tool utilization'
+        description:
+          'Comprehensive training programs to build AI literacy and ensure effective tool utilization',
       },
       {
         name: 'Cultural Transformation',
-        description: 'Organizational culture change initiatives to embrace AI-human collaboration'
-      }
+        description:
+          'Organizational culture change initiatives to embrace AI-human collaboration',
+      },
     ],
   }),
   generateWebPageSchema({
     name: 'Change Management for AI & Automation | Adoption Strategy | Cerebello',
-    description: 'Guide your organization through successful AI and automation adoption with strategic change management. Address resistance, build trust, and ensure lasting transformation through human-centered approach.',
+    description:
+      'Guide your organization through successful AI and automation adoption with strategic change management. Address resistance, build trust, and ensure lasting transformation through human-centered approach.',
     url: '/solutions/change-management',
     breadcrumb: [
       { name: 'Home', url: '/' },

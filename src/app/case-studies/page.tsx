@@ -144,7 +144,8 @@ export default function CaseStudiesPage() {
   const structuredData = [
     generateWebPageSchema({
       name: 'Case Studies | Real AI Success Stories | Cerebello',
-      description: 'Explore real-world success stories and see how organizations across the Netherlands are achieving operational excellence through AI-driven automation.',
+      description:
+        'Explore real-world success stories and see how organizations across the Netherlands are achieving operational excellence through AI-driven automation.',
       url: '/case-studies',
       breadcrumb: [
         { name: 'Home', url: '/' },

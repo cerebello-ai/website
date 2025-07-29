@@ -9,7 +9,8 @@ const page = () => {
     generateContactPageSchema(),
     generateWebPageSchema({
       name: 'Contact Cerebello',
-      description: 'Get in touch with Cerebello for AI and automation consulting services.',
+      description:
+        'Get in touch with Cerebello for AI and automation consulting services.',
       url: '/contact',
       breadcrumb: [
         { name: 'Home', url: '/' },

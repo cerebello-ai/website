@@ -39,28 +39,33 @@ export const metadata: Metadata = {
 const structuredData = [
   generateServiceSchema({
     name: 'Process Analysis',
-    description: 'Systematic analysis of business workflows to identify AI automation opportunities and efficiency improvements. Discover hidden inefficiencies through comprehensive process analysis.',
+    description:
+      'Systematic analysis of business workflows to identify AI automation opportunities and efficiency improvements. Discover hidden inefficiencies through comprehensive process analysis.',
     url: '/solutions/process-analysis',
     category: 'Business Consulting',
     serviceType: 'Process Analysis & Optimization',
     offers: [
       {
         name: 'Workflow Assessment',
-        description: 'Comprehensive analysis of business processes to identify bottlenecks and improvement opportunities'
+        description:
+          'Comprehensive analysis of business processes to identify bottlenecks and improvement opportunities',
       },
       {
         name: 'Automation Opportunity Identification',
-        description: 'Strategic identification of processes suitable for AI and automation implementation'
+        description:
+          'Strategic identification of processes suitable for AI and automation implementation',
       },
       {
         name: 'Efficiency Optimization',
-        description: 'Data-driven recommendations to improve process efficiency and reduce operational costs'
-      }
+        description:
+          'Data-driven recommendations to improve process efficiency and reduce operational costs',
+      },
     ],
   }),
   generateWebPageSchema({
     name: 'Process Analysis | AI-Powered Business Optimization | Cerebello',
-    description: 'Systematic analysis of business workflows to identify AI automation opportunities and efficiency improvements. Discover hidden inefficiencies through comprehensive process analysis.',
+    description:
+      'Systematic analysis of business workflows to identify AI automation opportunities and efficiency improvements. Discover hidden inefficiencies through comprehensive process analysis.',
     url: '/solutions/process-analysis',
     breadcrumb: [
       { name: 'Home', url: '/' },

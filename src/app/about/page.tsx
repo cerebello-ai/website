@@ -15,7 +15,8 @@ export default function AboutPage() {
     generateAboutPageSchema(),
     generateWebPageSchema({
       name: 'About Cerebello',
-      description: 'Learn about Cerebello, a Netherlands-based AI consultancy specializing in business automation and strategic tech solutions.',
+      description:
+        'Learn about Cerebello, a Netherlands-based AI consultancy specializing in business automation and strategic tech solutions.',
       url: '/about',
       breadcrumb: [
         { name: 'Home', url: '/' },

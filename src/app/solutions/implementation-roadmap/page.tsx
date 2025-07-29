@@ -40,33 +40,41 @@ export const metadata: Metadata = {
 const structuredData = [
   generateServiceSchema({
     name: 'Implementation Roadmap',
-    description: "Transform your strategic innovations from concept to reality with Cerebello's comprehensive Implementation Roadmap. Our proven methodology ensures successful digital transformation with clear planning, seamless deployment, and sustained support.",
+    description:
+      "Transform your strategic innovations from concept to reality with Cerebello's comprehensive Implementation Roadmap. Our proven methodology ensures successful digital transformation with clear planning, seamless deployment, and sustained support.",
     url: '/solutions/implementation-roadmap',
     category: 'Digital Transformation',
     serviceType: 'Implementation & Delivery',
     offers: [
       {
         name: 'Strategic Planning & Roadmapping',
-        description: 'Comprehensive planning and roadmap development for successful digital transformation initiatives'
+        description:
+          'Comprehensive planning and roadmap development for successful digital transformation initiatives',
       },
       {
         name: 'Change Management & Training',
-        description: 'End-to-end change management support and training to ensure smooth organizational transition'
+        description:
+          'End-to-end change management support and training to ensure smooth organizational transition',
       },
       {
         name: 'Deployment & Integration',
-        description: 'Seamless deployment and system integration with minimal disruption to existing operations'
-      }
+        description:
+          'Seamless deployment and system integration with minimal disruption to existing operations',
+      },
     ],
   }),
   generateWebPageSchema({
     name: 'Implementation Roadmap | End-to-End Delivery Model | Cerebello',
-    description: "Transform your strategic innovations from concept to reality with Cerebello's comprehensive Implementation Roadmap. Our proven methodology ensures successful digital transformation with clear planning, seamless deployment, and sustained support.",
+    description:
+      "Transform your strategic innovations from concept to reality with Cerebello's comprehensive Implementation Roadmap. Our proven methodology ensures successful digital transformation with clear planning, seamless deployment, and sustained support.",
     url: '/solutions/implementation-roadmap',
     breadcrumb: [
       { name: 'Home', url: '/' },
       { name: 'Solutions', url: '/solutions' },
-      { name: 'Implementation Roadmap', url: '/solutions/implementation-roadmap' },
+      {
+        name: 'Implementation Roadmap',
+        url: '/solutions/implementation-roadmap',
+      },
     ],
   }),
 ];

@@ -40,33 +40,41 @@ export const metadata: Metadata = {
 const structuredData = [
   generateServiceSchema({
     name: 'Business Model Innovation',
-    description: 'Reimagine your business model with AI and intelligent automation. Transform how you create value, generate revenue, and compete in the AI-driven economy through strategic innovation.',
+    description:
+      'Reimagine your business model with AI and intelligent automation. Transform how you create value, generate revenue, and compete in the AI-driven economy through strategic innovation.',
     url: '/solutions/business-model-innovation',
     category: 'Strategic Consulting',
     serviceType: 'Business Model Innovation',
     offers: [
       {
         name: 'AI-as-a-Service Model Development',
-        description: 'Transform products into continuous service offerings with subscription or usage-based revenue models'
+        description:
+          'Transform products into continuous service offerings with subscription or usage-based revenue models',
       },
       {
         name: 'Data Monetization Strategy',
-        description: 'Convert operational data into valuable insights and analytics services, creating new revenue streams'
+        description:
+          'Convert operational data into valuable insights and analytics services, creating new revenue streams',
       },
       {
         name: 'Platform Business Model Design',
-        description: 'Build intelligent platforms that connect stakeholders using AI to match supply and demand'
-      }
+        description:
+          'Build intelligent platforms that connect stakeholders using AI to match supply and demand',
+      },
     ],
   }),
   generateWebPageSchema({
     name: 'Business Model Innovation | AI-Driven Strategy Consulting | Cerebello',
-    description: 'Reimagine your business model with AI and intelligent automation. Transform how you create value, generate revenue, and compete in the AI-driven economy through strategic innovation.',
+    description:
+      'Reimagine your business model with AI and intelligent automation. Transform how you create value, generate revenue, and compete in the AI-driven economy through strategic innovation.',
     url: '/solutions/business-model-innovation',
     breadcrumb: [
       { name: 'Home', url: '/' },
       { name: 'Solutions', url: '/solutions' },
-      { name: 'Business Model Innovation', url: '/solutions/business-model-innovation' },
+      {
+        name: 'Business Model Innovation',
+        url: '/solutions/business-model-innovation',
+      },
     ],
   }),
 ];

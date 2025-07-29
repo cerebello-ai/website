@@ -54,28 +54,33 @@ export const metadata: Metadata = {
 const structuredData = [
   generateServiceSchema({
     name: 'Workflow Automation',
-    description: "Transform your business processes with Cerebello's AI-powered workflow automation. From document processing to intelligent approvals, we deliver end-to-end automation that saves time, reduces errors, and drives results.",
+    description:
+      "Transform your business processes with Cerebello's AI-powered workflow automation. From document processing to intelligent approvals, we deliver end-to-end automation that saves time, reduces errors, and drives results.",
     url: '/solutions/workflow-automation',
     category: 'Process Automation',
     serviceType: 'AI-Powered Workflow Automation',
     offers: [
       {
         name: 'Intelligent Workflow Pipelines',
-        description: 'Orchestrated workflows connecting bots, AI services, and human tasks with automated hand-offs and progress tracking'
+        description:
+          'Orchestrated workflows connecting bots, AI services, and human tasks with automated hand-offs and progress tracking',
       },
       {
         name: 'Document Processing Automation',
-        description: 'AI-powered document processing that reads, understands, and extracts key information from invoices, contracts, and forms'
+        description:
+          'AI-powered document processing that reads, understands, and extracts key information from invoices, contracts, and forms',
       },
       {
         name: 'Approval & Exception Handling',
-        description: 'Smart approval routing with AI decision support and automated exception handling for faster cycle times'
-      }
+        description:
+          'Smart approval routing with AI decision support and automated exception handling for faster cycle times',
+      },
     ],
   }),
   generateWebPageSchema({
     name: 'Workflow Automation | AI-Powered Process Automation | Cerebello',
-    description: "Transform your business processes with Cerebello's AI-powered workflow automation. From document processing to intelligent approvals, we deliver end-to-end automation that saves time, reduces errors, and drives results.",
+    description:
+      "Transform your business processes with Cerebello's AI-powered workflow automation. From document processing to intelligent approvals, we deliver end-to-end automation that saves time, reduces errors, and drives results.",
     url: '/solutions/workflow-automation',
     breadcrumb: [
       { name: 'Home', url: '/' },

@@ -61,7 +61,8 @@ const AIScanPage = () => {
   const structuredData = [
     generateServiceSchema({
       name: 'AI Scan Service',
-      description: 'Comprehensive AI assessment service that evaluates your operations to uncover AI automation opportunities and provides a strategic roadmap.',
+      description:
+        'Comprehensive AI assessment service that evaluates your operations to uncover AI automation opportunities and provides a strategic roadmap.',
       url: '/services/ai-scan',
       category: 'AI Assessment',
       serviceType: 'AI Consulting',
@@ -76,11 +77,13 @@ const AIScanPage = () => {
         },
         {
           name: 'Strategic Roadmap',
-          description: 'Phased implementation plan with timelines and priorities',
+          description:
+            'Phased implementation plan with timelines and priorities',
         },
         {
           name: 'Executive Presentation',
-          description: 'Executive-ready report and presentation with clear recommendations',
+          description:
+            'Executive-ready report and presentation with clear recommendations',
         },
       ],
       aggregateRating: {
@@ -91,7 +94,8 @@ const AIScanPage = () => {
     }),
     generateWebPageSchema({
       name: 'AI Scan Service - Discover AI Opportunities',
-      description: 'Cerebello AI Scan evaluates your operations to uncover AI automation opportunities. Get a strategic roadmap in 4-6 weeks with actionable insights.',
+      description:
+        'Cerebello AI Scan evaluates your operations to uncover AI automation opportunities. Get a strategic roadmap in 4-6 weeks with actionable insights.',
       url: '/services/ai-scan',
       breadcrumb: [
         { name: 'Home', url: '/' },
