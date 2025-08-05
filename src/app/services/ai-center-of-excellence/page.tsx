@@ -101,7 +101,8 @@ const AICenterOfExcellencePage = () => {
   const structuredData = [
     generateServiceSchema({
       name: 'AI Center of Excellence',
-      description: 'Strategic AI governance and enterprise transformation service to establish a world-class AI Center of Excellence',
+      description:
+        'Strategic AI governance and enterprise transformation service to establish a world-class AI Center of Excellence',
       url: '/services/ai-center-of-excellence',
       category: 'AI Transformation',
       serviceType: 'AI Consulting',
@@ -112,11 +113,13 @@ const AICenterOfExcellencePage = () => {
         },
         {
           name: 'Innovation & Research Hub',
-          description: 'Foster AI innovation and emerging technology evaluation',
+          description:
+            'Foster AI innovation and emerging technology evaluation',
         },
         {
           name: 'Talent & Capability Development',
-          description: 'Build internal AI capabilities through training programs',
+          description:
+            'Build internal AI capabilities through training programs',
         },
         {
           name: 'Strategic AI Planning',
@@ -131,12 +134,16 @@ const AICenterOfExcellencePage = () => {
     }),
     generateWebPageSchema({
       name: 'AI Center of Excellence - Strategic AI Governance',
-      description: 'Build a world-class AI Center of Excellence with expert guidance. Establish governance, drive adoption, and accelerate innovation.',
+      description:
+        'Build a world-class AI Center of Excellence with expert guidance. Establish governance, drive adoption, and accelerate innovation.',
       url: '/services/ai-center-of-excellence',
       breadcrumb: [
         { name: 'Home', url: '/' },
         { name: 'Services', url: '/services' },
-        { name: 'AI Center of Excellence', url: '/services/ai-center-of-excellence' },
+        {
+          name: 'AI Center of Excellence',
+          url: '/services/ai-center-of-excellence',
+        },
       ],
     }),
   ];

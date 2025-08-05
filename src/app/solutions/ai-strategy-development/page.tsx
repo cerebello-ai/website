@@ -39,33 +39,41 @@ export const metadata: Metadata = {
 const structuredData = [
   generateServiceSchema({
     name: 'AI Strategy Development',
-    description: 'Develop a comprehensive AI strategy that aligns with your business goals. Our expert team helps you create actionable AI roadmaps that drive tangible results and competitive advantage.',
+    description:
+      'Develop a comprehensive AI strategy that aligns with your business goals. Our expert team helps you create actionable AI roadmaps that drive tangible results and competitive advantage.',
     url: '/solutions/ai-strategy-development',
     category: 'AI Consulting',
     serviceType: 'Strategic AI Planning',
     offers: [
       {
         name: 'AI Roadmap Creation',
-        description: 'Strategic planning and roadmap development for AI implementation across your organization'
+        description:
+          'Strategic planning and roadmap development for AI implementation across your organization',
       },
       {
         name: 'Business-AI Alignment',
-        description: 'Ensuring AI initiatives align with business objectives and deliver measurable value'
+        description:
+          'Ensuring AI initiatives align with business objectives and deliver measurable value',
       },
       {
         name: 'AI Governance Framework',
-        description: 'Establishing governance structures and best practices for responsible AI deployment'
-      }
+        description:
+          'Establishing governance structures and best practices for responsible AI deployment',
+      },
     ],
   }),
   generateWebPageSchema({
     name: 'AI Strategy Development | Strategic AI Planning & Implementation | Cerebello',
-    description: 'Develop a comprehensive AI strategy that aligns with your business goals. Our expert team helps you create actionable AI roadmaps that drive tangible results and competitive advantage.',
+    description:
+      'Develop a comprehensive AI strategy that aligns with your business goals. Our expert team helps you create actionable AI roadmaps that drive tangible results and competitive advantage.',
     url: '/solutions/ai-strategy-development',
     breadcrumb: [
       { name: 'Home', url: '/' },
       { name: 'Solutions', url: '/solutions' },
-      { name: 'AI Strategy Development', url: '/solutions/ai-strategy-development' },
+      {
+        name: 'AI Strategy Development',
+        url: '/solutions/ai-strategy-development',
+      },
     ],
   }),
 ];

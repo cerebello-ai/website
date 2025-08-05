@@ -39,28 +39,33 @@ export const metadata: Metadata = {
 const structuredData = [
   generateServiceSchema({
     name: 'Customer Service AI',
-    description: 'Transform customer service with AI-powered chatbots, intelligent triage, and automated support. Reduce support volumes, accelerate response times, and elevate satisfaction with human-centered AI solutions.',
+    description:
+      'Transform customer service with AI-powered chatbots, intelligent triage, and automated support. Reduce support volumes, accelerate response times, and elevate satisfaction with human-centered AI solutions.',
     url: '/solutions/customer-service-ai',
     category: 'AI Solutions',
     serviceType: 'Customer Service Automation',
     offers: [
       {
         name: 'AI Chatbots & Virtual Assistants',
-        description: 'Intelligent conversational AI that handles customer inquiries 24/7 with natural language understanding'
+        description:
+          'Intelligent conversational AI that handles customer inquiries 24/7 with natural language understanding',
       },
       {
         name: 'Automated Ticket Routing',
-        description: 'Smart classification and routing of customer support tickets to the right agents and departments'
+        description:
+          'Smart classification and routing of customer support tickets to the right agents and departments',
       },
       {
         name: 'Sentiment Analysis & Insights',
-        description: 'Real-time analysis of customer sentiment and feedback to improve service quality'
-      }
+        description:
+          'Real-time analysis of customer sentiment and feedback to improve service quality',
+      },
     ],
   }),
   generateWebPageSchema({
     name: 'Customer Service AI | AI-Powered Support Automation | Cerebello',
-    description: 'Transform customer service with AI-powered chatbots, intelligent triage, and automated support. Reduce support volumes, accelerate response times, and elevate satisfaction with human-centered AI solutions.',
+    description:
+      'Transform customer service with AI-powered chatbots, intelligent triage, and automated support. Reduce support volumes, accelerate response times, and elevate satisfaction with human-centered AI solutions.',
     url: '/solutions/customer-service-ai',
     breadcrumb: [
       { name: 'Home', url: '/' },

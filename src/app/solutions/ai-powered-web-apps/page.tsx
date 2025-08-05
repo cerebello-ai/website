@@ -39,28 +39,33 @@ export const metadata: Metadata = {
 const structuredData = [
   generateServiceSchema({
     name: 'AI-Powered Web Apps',
-    description: 'Custom-built web applications enriched with AI capabilities. From conversational chatbots to predictive analytics, we create intelligent platforms tailored to your business needs.',
+    description:
+      'Custom-built web applications enriched with AI capabilities. From conversational chatbots to predictive analytics, we create intelligent platforms tailored to your business needs.',
     url: '/solutions/ai-powered-web-apps',
     category: 'Web Development',
     serviceType: 'AI-Powered Web Applications',
     offers: [
       {
         name: 'Conversational AI & Virtual Assistants',
-        description: 'Interactive chatbots and virtual assistants providing real-time support through natural language dialogue'
+        description:
+          'Interactive chatbots and virtual assistants providing real-time support through natural language dialogue',
       },
       {
         name: 'Natural Language Processing Integration',
-        description: 'Advanced text analysis and understanding capabilities for document processing and intelligent search'
+        description:
+          'Advanced text analysis and understanding capabilities for document processing and intelligent search',
       },
       {
         name: 'Predictive Analytics & Recommendations',
-        description: 'Machine learning models for forecasting trends and delivering intelligent recommendations'
-      }
+        description:
+          'Machine learning models for forecasting trends and delivering intelligent recommendations',
+      },
     ],
   }),
   generateWebPageSchema({
     name: 'AI-Powered Web Apps | Custom Intelligent Applications | Cerebello',
-    description: 'Custom-built web applications enriched with AI capabilities. From conversational chatbots to predictive analytics, we create intelligent platforms tailored to your business needs.',
+    description:
+      'Custom-built web applications enriched with AI capabilities. From conversational chatbots to predictive analytics, we create intelligent platforms tailored to your business needs.',
     url: '/solutions/ai-powered-web-apps',
     breadcrumb: [
       { name: 'Home', url: '/' },

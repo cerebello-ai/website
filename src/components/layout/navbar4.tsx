@@ -41,7 +41,7 @@ import {
   NavigationMenuList,
   NavigationMenuTrigger,
 } from '@/components/ui/navigation-menu';
-import { generateSolutionSlug, generateServiceSlug } from '@/lib/utils/slugify';
+import { generateSolutionSlug } from '@/lib/utils/slugify';
 
 const solutions = [
   {
@@ -223,113 +223,34 @@ const solutionTechnologies = [
 
 const productCategories = [
   {
-    title: 'AI Solutions',
+    title: 'Standalone Products', //
     products: [
       {
         id: 'product-1',
-        title: 'Custom AI Development',
-        description: 'Tailor-made AI models for specific business problems.',
-        href: generateServiceSlug('Custom AI Development'),
+        title: 'Enterprise Search & AI Assistant',
+        description:
+          'Search across internal tools (Notion, Confluence, etc.) and get instant answers from documents.',
         image:
           'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/block-1.svg',
+        href: '/products/enterprise-search',
       },
       {
         id: 'product-2',
-        title: 'NLP & Chatbots',
-        description: 'Intelligent chatbots and text analytics solutions.',
-        href: generateServiceSlug('NLP & Chatbots'),
+        title: 'AI-Powered Help Desk Platform',
+        description:
+          'AI-driven customer support that automates FAQs, integrates with CRMs, and escalates to human agents.',
         image:
           'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/block-2.svg',
+        href: '/products/ai-helpdesk',
       },
       {
-        id: 'product-3',
-        title: 'Computer Vision & IoT',
-        description: 'Visual data interpretation and IoT sensor analytics.',
-        href: generateServiceSlug('Computer Vision & IoT'),
+        id: 'product-1',
+        title: 'Enterprise Search & AI Assistant',
+        description:
+          'Search across internal tools (Notion, Confluence, etc.) and get instant answers from documents.',
         image:
           'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/block-3.svg',
-      },
-      {
-        id: 'product-4',
-        title: 'Generative AI & Advisory',
-        description: 'Enterprise GPT solutions and AI adoption guidance.',
-        href: generateServiceSlug('Generative AI & Advisory'),
-        image:
-          'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/block-4.svg',
-      },
-    ],
-  },
-  {
-    title: 'Process Automation',
-    products: [
-      {
-        id: 'product-5',
-        title: 'Robotic Process Automation',
-        description: 'Automate repetitive, rule-based tasks with RPA bots.',
-        href: generateServiceSlug('Robotic Process Automation'),
-        image:
-          'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/block-5.svg',
-      },
-      {
-        id: 'product-6',
-        title: 'Intelligent Workflow Automation',
-        description: 'AI-infused workflows for decision-making and processing.',
-        href: generateServiceSlug('Intelligent Workflow Automation'),
-        image:
-          'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/block-1.svg',
-      },
-      {
-        id: 'product-7',
-        title: 'Process Optimization',
-        description: 'Redesign business processes for maximum efficiency.',
-        href: generateServiceSlug('Process Optimization'),
-        image:
-          'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/block-2.svg',
-      },
-      {
-        id: 'product-8',
-        title: 'Document Processing AI',
-        description: 'AI-powered data extraction from documents.',
-        href: generateServiceSlug('Document Processing AI'),
-        image:
-          'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/block-3.svg',
-      },
-    ],
-  },
-  {
-    title: 'Integration & Development',
-    products: [
-      {
-        id: 'product-9',
-        title: 'Enterprise System Integration',
-        description: 'Connect AI solutions with existing IT systems.',
-        href: generateServiceSlug('Enterprise System Integration'),
-        image:
-          'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/block-4.svg',
-      },
-      {
-        id: 'product-10',
-        title: 'Custom Software Development',
-        description: 'Bespoke applications and tools for automation needs.',
-        href: generateServiceSlug('Custom Software Development'),
-        image:
-          'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/block-5.svg',
-      },
-      {
-        id: 'product-11',
-        title: 'API Integration & Orchestration',
-        description: 'Extend platforms with AI capabilities and integrations.',
-        href: generateServiceSlug('API Integration & Orchestration'),
-        image:
-          'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/block-1.svg',
-      },
-      {
-        id: 'product-12',
-        title: 'Cloud & IoT Integration',
-        description: 'Connect cloud services and IoT devices into workflows.',
-        href: generateServiceSlug('Cloud & IoT Integration'),
-        image:
-          'https://deifkwefumgah.cloudfront.net/shadcnblocks/block/block-2.svg',
+        href: '/products/enterprise-search',
       },
     ],
   },
@@ -624,11 +545,11 @@ const ProductsMenu = () => (
               {category.title}
             </strong>
           </div>
-          <menu className="grid md:grid-cols-3 md:gap-x-5 lg:gap-y-7">
+          <menu className="grid md:grid-cols-2 md:gap-x-5 lg:gap-y-7">
             {category.products.map((product) => (
               <NavigationMenuLink
                 key={product.id}
-                href="#"
+                href={product.href}
                 className="group border-border flex flex-row items-center space-x-6 border-b py-5 text-left sm:py-7 lg:space-x-4 lg:border-0 lg:py-2"
               >
                 <div className="relative flex aspect-square w-6 shrink-0 items-center justify-center overflow-clip rounded md:size-9 md:p-2">
@@ -1091,18 +1012,18 @@ const Navbar4 = () => {
                     <SolutionsMenu />
                   </NavigationMenuContent>
                 </NavigationMenuItem>
-                {/* <NavigationMenuItem>
+                <NavigationMenuItem>
                   <NavigationMenuTrigger className="text-xs xl:text-sm">
-                    Services
+                    Products
                   </NavigationMenuTrigger>
                   <NavigationMenuContent className="min-w-[calc(100vw-4rem)] p-12 2xl:min-w-[calc(1400px-4rem)]">
                     <ProductsMenu />
                   </NavigationMenuContent>
-                </NavigationMenuItem> */}
+                </NavigationMenuItem>
                 <NavigationMenuItem>
                   <NavigationMenuLink
                     href="/about"
-                    className="group bg-background hover:bg-muted hover:text-accent-foreground inline-flex h-10 w-max items-center justify-center rounded-md px-4 py-2 text-sm font-medium transition-colors"
+                    className="group bg-background hover:bg-muted hover:text-accent-foreground inline-flex w-max items-center justify-center rounded-md px-4 py-2 text-sm font-medium transition-colors"
                   >
                     About
                   </NavigationMenuLink>
@@ -1198,7 +1119,7 @@ const Navbar4 = () => {
                     className="border-border flex w-full items-center border-b px-8 py-6 text-left"
                     onClick={() => setSubmenu('products')}
                   >
-                    <span className="flex-1 text-sm font-medium">Services</span>
+                    <span className="flex-1 text-sm font-medium">Products</span>
                     <span className="shrink-0">
                       <ArrowRight className="size-4" />
                     </span>

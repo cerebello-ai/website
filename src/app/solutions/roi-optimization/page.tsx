@@ -47,28 +47,33 @@ export const metadata: Metadata = {
 const structuredData = [
   generateServiceSchema({
     name: 'ROI Optimization',
-    description: "Maximize the returns of your AI investments with Cerebello's ROI Optimization service. We ensure your AI and automation projects deliver measurable value through data-driven validation and continuous optimization.",
+    description:
+      "Maximize the returns of your AI investments with Cerebello's ROI Optimization service. We ensure your AI and automation projects deliver measurable value through data-driven validation and continuous optimization.",
     url: '/solutions/roi-optimization',
     category: 'AI Consulting',
     serviceType: 'ROI Optimization',
     offers: [
       {
         name: 'ROI Assessment & Benchmarking',
-        description: 'Deep analysis of current AI investments and identification of high-ROI optimization opportunities'
+        description:
+          'Deep analysis of current AI investments and identification of high-ROI optimization opportunities',
       },
       {
         name: 'Pilot & Validation Programs',
-        description: 'Proof-of-concept implementations to validate ROI assumptions before full-scale deployment'
+        description:
+          'Proof-of-concept implementations to validate ROI assumptions before full-scale deployment',
       },
       {
         name: 'Continuous Optimization',
-        description: 'Ongoing monitoring and optimization to ensure sustained returns and improved performance over time'
-      }
+        description:
+          'Ongoing monitoring and optimization to ensure sustained returns and improved performance over time',
+      },
     ],
   }),
   generateWebPageSchema({
     name: 'ROI Optimization | Maximize AI Investment Returns | Cerebello',
-    description: "Maximize the returns of your AI investments with Cerebello's ROI Optimization service. We ensure your AI and automation projects deliver measurable value through data-driven validation and continuous optimization.",
+    description:
+      "Maximize the returns of your AI investments with Cerebello's ROI Optimization service. We ensure your AI and automation projects deliver measurable value through data-driven validation and continuous optimization.",
     url: '/solutions/roi-optimization',
     breadcrumb: [
       { name: 'Home', url: '/' },
