@@ -45,7 +45,7 @@ const defaultCaseStudies: CaseStudy[] = [
       '25% supply chain efficiency improvement through phased global automation rollout with seamless ERP integration',
   },
   {
-    title: 'OceanicTransCo - Logistics',
+    title: 'Wagenborg - Logistics',
     description:
       '40% reduction in manual work by modernizing legacy systems incrementally without disruption',
   },

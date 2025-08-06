@@ -90,7 +90,7 @@ const testimonials = [
     quote:
       "Cerebello's ROI Optimization service delivered exactly what they promised. We achieved 200% ROI in our first year and continue to see improvements.",
     author: 'Maria Santos',
-    company: 'OceanicTransCo',
+    company: 'Wagenborg',
     image: '/images/homepage/testimonials/victoria-smith.webp',
   },
   {
@@ -297,7 +297,7 @@ export default function ROIOptimizationPage() {
 
       {/* Case Study Section */}
       <StatsRoiCaseStudy
-        title="OceanicTransCo's ROI Transformation"
+        title="Wagenborg's ROI Transformation"
         description="A global shipping and logistics company achieved outstanding results with our ROI Optimization service"
         stats={caseStudyStats}
         features={caseStudyFeatures}
