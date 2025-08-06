@@ -109,7 +109,7 @@ export default function Home() {
           {
             question: 'What kind of ROI can I expect from AI implementation?',
             answer:
-              'Our clients typically see 30-200% ROI in the first year. For example, Samsung reduced email workload by 50%, Ziggo achieved 40% faster response times, and OceanicTransCo saw 200% ROI with 60% reduction in breakdowns through predictive maintenance.',
+              'Our clients typically see 30-200% ROI in the first year. For example, Samsung reduced email workload by 50%, Ziggo achieved 40% faster response times, and Wagenborg saw 200% ROI with 60% reduction in breakdowns through predictive maintenance.',
           },
         ]}
         rightQuestions={[

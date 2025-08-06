@@ -59,7 +59,7 @@ const defaultFeatures: Feature[] = [
 ];
 
 export const StatsRoiCaseStudy = ({
-  title = "OceanicTransCo's ROI Transformation",
+  title = "Wagenborg's ROI Transformation",
   description = 'A global shipping and logistics company achieved outstanding results with our ROI Optimization service',
   stats = defaultStats,
   features = defaultFeatures,

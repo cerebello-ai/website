@@ -93,7 +93,7 @@ const testimonials = [
     quote:
       "Cerebello's roadmap helped us modernize our legacy systems incrementally, achieving 40% reduction in manual work while maintaining full operational continuity.",
     author: 'Maria Santos',
-    company: 'OceanicTransCo',
+    company: 'Wagenborg',
     image: '/images/homepage/testimonials/victoria-smith.webp',
   },
   {

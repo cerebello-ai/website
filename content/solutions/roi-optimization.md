@@ -43,16 +43,16 @@ Engaging Cerebello for ROI Optimization means you receive **tangible deliverable
 
 By the end of the engagement, you’ll have not only a successful AI solution in place, but also a clear understanding of its value and a framework to sustain and grow that value.
 
-## Use Case Snapshot: OceanicTransCo’s ROI Transformation
+## Use Case Snapshot: Wagenborg’s ROI Transformation
 
-_See how ROI Optimization drives real results._ One of our clients, **OceanicTransCo**, a global shipping and logistics company, faced rising costs and operational bottlenecks. They engaged Cerebello to boost their ROI through AI and automation. **Our joint initiative delivered outstanding results:**
+_See how ROI Optimization drives real results._ One of our clients, **Wagenborg**, a global shipping and logistics company, faced rising costs and operational bottlenecks. They engaged Cerebello to boost their ROI through AI and automation. **Our joint initiative delivered outstanding results:**
 
 - **Predictive Maintenance:** We implemented AI-driven predictive maintenance for their fleet. This cut unplanned downtime dramatically – **unexpected ship breakdowns dropped by 60%** in the first year. Fewer breakdowns meant more on-time deliveries and happier customers.
 - **Optimized Operations:** Using AI route optimization, we helped reduce fuel consumption by **about 12% per voyage**, saving the company **millions of dollars annually**. Voyages were faster and more efficient, even allowing extra trips per year thanks to time saved.
 - **Process Automation:** We automated paperwork and data entry tasks (like digitizing shipping documents and syncing systems). This eliminated thousands of hours of manual work and errors. In fact, over **15,000 employee hours per year** were redeployed to higher-value activities once tedious tasks were automated.
-- **ROI Impact:** The combined improvements translated to a significant financial win. OceanicTransCo achieved **over 200% ROI in the first year** of the program – the project paid for itself **twice over within 12 months**, far exceeding expectations. (For context, such results aren’t an outlier; many well-executed AI initiatives see triple-digit ROI in year one when value is carefully tracked.)
+- **ROI Impact:** The combined improvements translated to a significant financial win. Wagenborg achieved **over 200% ROI in the first year** of the program – the project paid for itself **twice over within 12 months**, far exceeding expectations. (For context, such results aren’t an outlier; many well-executed AI initiatives see triple-digit ROI in year one when value is carefully tracked.)
 
-Beyond the numbers, the organization became more agile and tech-driven. Importantly, we worked closely with OceanicTransCo’s people throughout – from ship engineers to operations staff – to ensure the solutions fit their needs and that they felt empowered, not threatened, by the new technology. By project’s end, the company’s culture had shifted to embrace human-AI collaboration, thanks to proactive change management and training. This use case highlights how Cerebello doesn’t just drop in technology; **we partner in transformation**, aligning innovations to real business outcomes.
+Beyond the numbers, the organization became more agile and tech-driven. Importantly, we worked closely with Wagenborg’s people throughout – from ship engineers to operations staff – to ensure the solutions fit their needs and that they felt empowered, not threatened, by the new technology. By project’s end, the company’s culture had shifted to embrace human-AI collaboration, thanks to proactive change management and training. This use case highlights how Cerebello doesn’t just drop in technology; **we partner in transformation**, aligning innovations to real business outcomes.
 
 _(A visual idea: a before-and-after infographic showing key metrics – e.g. downtime, cost per shipment – and how they improved after Cerebello’s intervention. Possibly use icons like a ship for the maritime context, a gauge for downtime, a fuel pump for fuel usage, etc., alongside the stats.)_
 

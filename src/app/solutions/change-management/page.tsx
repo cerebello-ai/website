@@ -91,7 +91,7 @@ const testimonials = [
     quote:
       "Our workforce initially resisted AI-driven scheduling automation. Cerebello's human-centric approach turned skeptical operations crews into advocates, reporting that AI made their jobs safer and more efficient.",
     author: 'Captain Elena Rodriguez',
-    company: 'OceanicTransCo Global Shipping',
+    company: 'Wagenborg Global Shipping',
     image: '/images/homepage/testimonials/victoria-smith.webp',
   },
   {
