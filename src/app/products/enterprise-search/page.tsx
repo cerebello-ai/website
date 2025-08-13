@@ -21,6 +21,8 @@ import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { CtaSimple } from '@/components/sections/cta/cta-simple';
 import { StructuredData } from '@/components/structured-data';
 import { generateServiceSchema, generateWebPageSchema } from '@/lib/schema';
+import { Marquee } from '@/components/magicui/marquee';
+import { cn } from '@/lib/utils';
 
 export const metadata: Metadata = {
   title: 'Enterprise Search & AI Assistant | Cerebello',
@@ -105,14 +107,54 @@ const EnterpriseSearchPage = () => {
   ];
 
   const integrations = [
-    { name: 'Notion', logo: '/images/integrations/notion.svg' },
-    { name: 'Confluence', logo: '/images/integrations/confluence.svg' },
-    { name: 'Google Drive', logo: '/images/integrations/google-drive.svg' },
-    { name: 'Slack', logo: '/images/integrations/slack.svg' },
-    { name: 'GitHub', logo: '/images/integrations/github.svg' },
-    { name: 'Jira', logo: '/images/integrations/jira.svg' },
-    { name: 'SharePoint', logo: '/images/integrations/sharepoint.svg' },
-    { name: 'Dropbox', logo: '/images/integrations/dropbox.svg' },
+    {
+      image:
+        'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/slack/slack-original.svg',
+      name: 'Slack',
+      className: '',
+    },
+    {
+      image:
+        'https://upload.wikimedia.org/wikipedia/commons/4/45/Notion_app_logo.png',
+      name: 'Notion',
+      className: '',
+    },
+    {
+      image:
+        'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg',
+      name: 'GitHub',
+      className: 'dark:invert',
+    },
+    {
+      image:
+        'https://upload.wikimedia.org/wikipedia/commons/1/12/Google_Drive_icon_%282020%29.svg',
+      name: 'Google Drive',
+      className: '',
+    },
+    {
+      image:
+        'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/confluence/confluence-original.svg',
+      name: 'Confluence',
+      className: '',
+    },
+    {
+      image:
+        'https://upload.wikimedia.org/wikipedia/commons/4/48/Teams_Windows_11.svg',
+      name: 'Microsoft Teams',
+      className: '',
+    },
+    {
+      image:
+        'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jira/jira-original.svg',
+      name: 'Jira',
+      className: '',
+    },
+    {
+      image:
+        'https://upload.wikimedia.org/wikipedia/commons/c/cb/Dropbox_logo_2017.svg',
+      name: 'Dropbox',
+      className: '',
+    },
   ];
 
   const features = [
@@ -162,7 +204,7 @@ const EnterpriseSearchPage = () => {
       <section className="relative overflow-hidden py-24 md:py-32">
         <div className="absolute inset-0">
           <img
-            src="/images/products/search-hero-bg.jpg"
+            src="https://c.stocksy.com/a/0NGO00/z9/5782802.jpg"
             alt="Team collaboration with technology"
             className="h-full w-full object-cover"
           />
@@ -299,47 +341,79 @@ const EnterpriseSearchPage = () => {
       </section>
 
       {/* Integrations Section */}
-      <section className="bg-sand-100 py-24 md:py-32">
+      <section className="py-32">
         <div className="container">
-          <div className="mx-auto max-w-5xl">
-            <div className="mb-12 text-center">
-              <h2 className="text-3xl font-semibold tracking-tight text-balance sm:text-4xl md:text-5xl lg:text-6xl">
-                Connects With Your Favorite Tools
-              </h2>
-              <p className="mx-auto mt-4 max-w-2xl text-lg font-medium text-gray-700 dark:text-gray-300">
-                Seamlessly integrate with 40+ popular business applications
-              </p>
-            </div>
+          <h2 className="font-inter-tight text-center text-5xl font-medium tracking-tight md:text-7xl">
+            Integrated with Your Favorite Apps
+          </h2>
+          <p className="font-inter text-muted-foreground/80 mx-auto mt-4 max-w-xl text-center tracking-tight md:text-lg">
+            Seamlessly connect with 40+ popular business applications to unify
+            your team's knowledge base and accelerate productivity.
+          </p>
 
-            <div className="grid grid-cols-2 gap-6 md:grid-cols-4 lg:grid-cols-4">
+          <div className="relative mt-12">
+            <Marquee pauseOnHover className="[--duration:20s]">
               {integrations.map((integration, index) => (
                 <div
                   key={index}
-                  className="bg-background rounded-lg p-6 text-center"
+                  className="bg-muted flex items-center justify-center gap-4 rounded-full px-5 py-2"
                 >
                   <img
-                    src={integration.logo}
-                    alt={`${integration.name} logo`}
-                    className="mx-auto mb-4 h-12 w-auto opacity-70 transition-opacity hover:opacity-100"
+                    src={integration.image}
+                    alt={integration.name}
+                    className={cn('size-5', integration?.className)}
                   />
-                  <p className="text-muted-foreground text-sm font-medium">
-                    {integration.name}
-                  </p>
+                  <p className="text-lg">{integration.name}</p>
                 </div>
               ))}
-            </div>
-
-            <div className="mt-8 text-center">
-              <p className="text-muted-foreground">
-                And many more... Can't find your tool?
-                <Link
-                  href="/contact"
-                  className="text-primary ml-1 hover:underline"
+            </Marquee>
+            <Marquee pauseOnHover reverse className="[--duration:20s]">
+              {integrations.map((integration, index) => (
+                <div
+                  key={index}
+                  className="bg-muted flex items-center justify-center gap-4 rounded-full px-5 py-2"
                 >
-                  Contact us for custom integrations
-                </Link>
-              </p>
-            </div>
+                  <img
+                    src={integration.image}
+                    alt={integration.name}
+                    className={cn('size-5', integration?.className)}
+                  />
+                  <p className="text-lg">{integration.name}</p>
+                </div>
+              ))}
+            </Marquee>
+            <Marquee pauseOnHover className="[--duration:20s]">
+              {[...integrations].reverse().map((integration, index) => (
+                <div
+                  key={index}
+                  className="bg-muted flex items-center justify-center gap-4 rounded-full px-5 py-2"
+                >
+                  <img
+                    src={integration.image}
+                    alt={integration.name}
+                    className={cn('size-5', integration?.className)}
+                  />
+                  <p className="text-lg">{integration.name}</p>
+                </div>
+              ))}
+            </Marquee>
+            <Marquee pauseOnHover reverse className="[--duration:20s]">
+              {[...integrations].reverse().map((integration, index) => (
+                <div
+                  key={index}
+                  className="bg-muted flex items-center justify-center gap-4 rounded-full px-5 py-2"
+                >
+                  <img
+                    src={integration.image}
+                    alt={integration.name}
+                    className={cn('size-5', integration?.className)}
+                  />
+                  <p className="text-lg">{integration.name}</p>
+                </div>
+              ))}
+            </Marquee>
+            <div className="from-background pointer-events-none absolute inset-y-0 left-0 w-36 bg-gradient-to-r"></div>
+            <div className="from-background pointer-events-none absolute inset-y-0 right-0 w-36 bg-gradient-to-l"></div>
           </div>
         </div>
       </section>
@@ -607,8 +681,8 @@ const EnterpriseSearchPage = () => {
         primaryButtonText="Get Started Today"
         primaryButtonHref="/contact"
         secondaryButtonText="View Demo"
-        secondaryButtonHref="/products/enterprise-search-visual"
-        footerText="Free 14-day trial • No credit card required • Custom deployment options available"
+        secondaryButtonHref="http://chatemployee.com/"
+        footerText="Works out of the box, syncs in real time, with document level access."
       />
     </>
   );
