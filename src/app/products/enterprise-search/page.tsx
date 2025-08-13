@@ -139,8 +139,7 @@ const EnterpriseSearchPage = () => {
       className: '',
     },
     {
-      image:
-        'https://upload.wikimedia.org/wikipedia/commons/4/48/Teams_Windows_11.svg',
+      image: 'https://www.svgrepo.com/show/448240/microsoft-teams.svg',
       name: 'Microsoft Teams',
       className: '',
     },
@@ -151,8 +150,7 @@ const EnterpriseSearchPage = () => {
       className: '',
     },
     {
-      image:
-        'https://upload.wikimedia.org/wikipedia/commons/c/cb/Dropbox_logo_2017.svg',
+      image: 'https://www.svgrepo.com/show/353674/dropbox.svg',
       name: 'Dropbox',
       className: '',
     },
