@@ -9,7 +9,9 @@
     "start": "next start",
     "lint": "next lint --fix",
     "postbuild": "next-sitemap",
-    "next-sitemap": "next-sitemap"
+    "next-sitemap": "next-sitemap",
+    "sitemap": "npm run build && npm run next-sitemap",
+    "prepush": "npm run sitemap && git add public/sitemap*.xml && git commit -m 'Update sitemap' || true"
   },
   "dependencies": {
     "@hookform/resolvers": "^3.10.0",

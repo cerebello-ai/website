@@ -1,0 +1,19 @@
+#!/bin/sh
+. "$(dirname "$0")/_/husky.sh"
+
+# Generate sitemap before push
+echo "Generating sitemap..."
+npm run sitemap
+
+# Add sitemap files to git
+git add public/sitemap*.xml
+
+# Check if there are changes to commit
+if git diff --cached --quiet; then
+  echo "No sitemap changes to commit"
+else
+  echo "Committing sitemap updates..."
+  git commit -m "chore: update sitemap" --no-verify
+fi
+
+echo "Sitemap generation complete!"
