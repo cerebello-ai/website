@@ -23,6 +23,7 @@ import { StructuredData } from '@/components/structured-data';
 import { generateServiceSchema, generateWebPageSchema } from '@/lib/schema';
 import { Marquee } from '@/components/magicui/marquee';
 import { cn } from '@/lib/utils';
+import AnimatedTeamHeading from '@/components/animated-team-heading';
 
 export const metadata: Metadata = {
   title: 'Enterprise Search & AI Assistant | Cerebello',
@@ -213,10 +214,8 @@ const EnterpriseSearchPage = () => {
 
         <div className="relative container">
           <div className="mx-auto max-w-4xl text-center">
-            <h1 className="font-inter-tight mb-6 text-4xl font-semibold tracking-tight text-white drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)] sm:text-5xl md:text-6xl lg:text-7xl">
-              Find Information Faster Than Ever
-            </h1>
-            <p className="font-inter mx-auto mb-8 max-w-2xl text-lg text-white/90 md:text-xl">
+            <AnimatedTeamHeading />
+            <p className="font-inter mx-auto mb-8 mt-6 max-w-2xl text-lg text-white/90 md:text-xl">
               Transform how your team works with our Enterprise Search & AI
               Assistant. Search across Notion, Confluence, Google Drive, and
               more to get instant answers from all your company documents.
@@ -241,27 +240,27 @@ const EnterpriseSearchPage = () => {
               </Button>
             </div>
 
-            <div className="mx-auto mt-12 grid max-w-3xl gap-4 sm:grid-cols-3">
+            <div className="mx-auto mt-12 flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-4 max-w-3xl">
               <Badge
                 variant="outline"
-                className="flex items-center justify-center gap-2 border-white/20 bg-white/10 text-white"
+                className="flex items-center justify-center gap-2 border-white/20 bg-white/10 text-white px-4 py-2"
               >
-                <CheckCircle className="h-5 w-5 text-white" />
-                <span>40+ Integrations</span>
+                <CheckCircle className="h-4 w-4 text-white shrink-0" />
+                <span className="whitespace-nowrap">40+ Integrations</span>
               </Badge>
               <Badge
                 variant="outline"
-                className="flex items-center justify-center gap-2 border-white/20 bg-white/10 text-white"
+                className="flex items-center justify-center gap-2 border-white/20 bg-white/10 text-white px-4 py-2"
               >
-                <CheckCircle className="h-5 w-5 text-white" />
-                <span>Enterprise Security</span>
+                <CheckCircle className="h-4 w-4 text-white shrink-0" />
+                <span className="whitespace-nowrap">Enterprise Security</span>
               </Badge>
               <Badge
                 variant="outline"
-                className="flex items-center justify-center gap-2 border-white/20 bg-white/10 text-white"
+                className="flex items-center justify-center gap-2 border-white/20 bg-white/10 text-white px-4 py-2"
               >
-                <CheckCircle className="h-5 w-5 text-white" />
-                <span>Custom Deployment</span>
+                <CheckCircle className="h-4 w-4 text-white shrink-0" />
+                <span className="whitespace-nowrap">Custom Deployment</span>
               </Badge>
             </div>
           </div>

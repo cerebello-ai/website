@@ -445,7 +445,7 @@ const SolutionsMenu = () => (
         </div>
         <div className="relative aspect-2/1 overflow-clip rounded-t pl-6 lg:max-w-[22rem] lg:pl-0">
           <img
-            src="https://cdn.prod.website-files.com/659093fbff862aa0bca7bda4/65a684432fb07002b7c1385c_campaign-creators-e6n7uoEnYbA-unsplash%20(1)-p-800.jpg"
+            src="https://c.stocksy.com/a/2PGO00/z9/5782928.jpg"
             alt="placeholder"
             className="aspect-2/1 h-full w-full translate-y-px object-cover object-center"
           />
@@ -520,7 +520,7 @@ const ProductsMenu = () => (
         <div className="relative z-10 flex w-full flex-col space-y-12 text-left lg:space-y-0">
           <div className="relative flex aspect-2/1 max-h-[11rem] w-full flex-1 justify-center">
             <img
-              src="https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-2.svg"
+              src="https://c.stocksy.com/a/joGO00/z9/5784521.jpg"
               alt="placeholder"
               className="h-full w-full object-cover object-center"
             />
@@ -842,7 +842,7 @@ const PartnersMenu = () => (
           </div>
           <div className="absolute inset-0 top-[32%] md:top-0">
             <img
-              src="https://c.stocksy.com/a/MP6O00/z9/5744508.jpg"
+              src="https://c.stocksy.com/a/Gi7O00/z9/5749524.jpg"
               alt="placeholder"
               className="object-fit h-full w-full object-top-right md:h-2/3 md:object-top"
             />
