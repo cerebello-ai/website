@@ -215,7 +215,7 @@ const EnterpriseSearchPage = () => {
         <div className="relative container">
           <div className="mx-auto max-w-4xl text-center">
             <AnimatedTeamHeading />
-            <p className="font-inter mx-auto mb-8 mt-6 max-w-2xl text-lg text-white/90 md:text-xl">
+            <p className="font-inter mx-auto mt-6 mb-8 max-w-2xl text-lg text-white/90 md:text-xl">
               Transform how your team works with our Enterprise Search & AI
               Assistant. Search across Notion, Confluence, Google Drive, and
               more to get instant answers from all your company documents.
@@ -240,26 +240,26 @@ const EnterpriseSearchPage = () => {
               </Button>
             </div>
 
-            <div className="mx-auto mt-12 flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-4 max-w-3xl">
+            <div className="mx-auto mt-12 flex max-w-3xl flex-col items-center justify-center gap-3 sm:flex-row sm:gap-4">
               <Badge
                 variant="outline"
-                className="flex items-center justify-center gap-2 border-white/20 bg-white/10 text-white px-4 py-2"
+                className="flex items-center justify-center gap-2 border-white/20 bg-white/10 px-4 py-2 text-white"
               >
-                <CheckCircle className="h-4 w-4 text-white shrink-0" />
+                <CheckCircle className="h-4 w-4 shrink-0 text-white" />
                 <span className="whitespace-nowrap">40+ Integrations</span>
               </Badge>
               <Badge
                 variant="outline"
-                className="flex items-center justify-center gap-2 border-white/20 bg-white/10 text-white px-4 py-2"
+                className="flex items-center justify-center gap-2 border-white/20 bg-white/10 px-4 py-2 text-white"
               >
-                <CheckCircle className="h-4 w-4 text-white shrink-0" />
+                <CheckCircle className="h-4 w-4 shrink-0 text-white" />
                 <span className="whitespace-nowrap">Enterprise Security</span>
               </Badge>
               <Badge
                 variant="outline"
-                className="flex items-center justify-center gap-2 border-white/20 bg-white/10 text-white px-4 py-2"
+                className="flex items-center justify-center gap-2 border-white/20 bg-white/10 px-4 py-2 text-white"
               >
-                <CheckCircle className="h-4 w-4 text-white shrink-0" />
+                <CheckCircle className="h-4 w-4 shrink-0 text-white" />
                 <span className="whitespace-nowrap">Custom Deployment</span>
               </Badge>
             </div>

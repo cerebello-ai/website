@@ -12,12 +12,12 @@ const AnimatedTeamHeading = () => {
     }, 2000);
 
     return () => clearInterval(interval);
-  }, []);
+  }, [teams.length]);
 
   return (
-    <h1 className="text-[35px] sm:text-[48px] lg:text-5xl font-normal leading-[64px] tracking-tight whitespace-normal text-white drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]">
+    <h1 className="text-[35px] leading-[64px] font-normal tracking-tight whitespace-normal text-white drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)] sm:text-[48px] lg:text-5xl">
       Help your{' '}
-      <span className="relative w-[150px] sm:w-[200px] inline-block">
+      <span className="relative inline-block w-[150px] sm:w-[200px]">
         <span className="opacity-0">°</span>
         {teams.map((team, index) => {
           const position = (index - currentIndex + teams.length) % teams.length;
@@ -51,9 +51,10 @@ const AnimatedTeamHeading = () => {
               }}
             >
               <span
-                className="bg-clip-text inline-block"
+                className="inline-block bg-clip-text"
                 style={{
-                  background: 'linear-gradient(135deg, hsl(162, 17%, 86%) 0%, hsl(162, 30%, 70%) 50%, hsl(162, 40%, 55%) 100%)',
+                  background:
+                    'linear-gradient(135deg, hsl(162, 17%, 86%) 0%, hsl(162, 30%, 70%) 50%, hsl(162, 40%, 55%) 100%)',
                   WebkitBackgroundClip: 'text',
                   backgroundClip: 'text',
                   WebkitTextFillColor: 'transparent',
@@ -65,8 +66,8 @@ const AnimatedTeamHeading = () => {
             </div>
           );
         })}
-      </span>
-      {' '}team
+      </span>{' '}
+      team
       <br />
       <p className="pt-[.2em]">find information faster</p>
     </h1>
